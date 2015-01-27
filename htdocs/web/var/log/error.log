@@ -1,0 +1,9 @@
+[ Nov 16 2014 14:36:34 ] [] eZExtension::activeExtensions:
+Extension 'ezcommentsbundle' does not exist, looked for directory 'extension/ezcommentsbundle'
+[ Nov 16 2014 14:36:34 ] [] eZDir::recursiveDelete:
+The path: var/cache/template/compiled is not a folder
+[ Nov 16 2014 14:36:34 ] [] eZDir::recursiveDelete:
+The path: var/cache/override is not a folder
+[ Jan 27 2015 13:09:31 ] [217.78.29.146] eZMySQLiDB:
+Connection error: Couldn't connect to database server. Please try again later or inform the system administrator.
+Access denied for user 'newscenter'@'localhost' (using password: YES)

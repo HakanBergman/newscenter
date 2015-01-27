@@ -1,0 +1,53 @@
+
+            <!-- Extra area: START -->
+                        <!-- Extra area: END -->
+        </div>
+    </div>
+    <!-- Columns area: END -->
+
+    <!-- Footer area: START -->
+    <!-- Footer area: START --><footer>
+    <div class="claim-wrapper">
+        <div class="container">
+            <div class="nav-collapse">
+                Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&#8482; CMS Open Source Web Content Management">eZ Publish&#8482; CMS Open Source Web Content Management</a>.
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <h3>Get in touch</h3>
+<address>
+    
+<p>eZ is a global company with offices around the world including Skien (Norway), New York (USA), Oslo (Norway), Cologne (Germany), Paris (France), Lyon (France), Beijing (China), Tokyo (Japan), Singapore, London (UK)</p><p><a href="http://ez.no/About-eZ/Contact-Us" target="_self">Contact us</a> for more information!</p></address>
+            </div>
+            <div class="span4 nav-collapse">
+                <h3>Latest News</h3>
+<ul>
+    </ul>            </div>
+            <div class="span4 nav-collapse">
+                <h3>eZ Links</h3>
+
+<ul>
+
+<li>eZ Official site: <a href="http://ez.no" target="_self">http://ez.no</a></li>
+
+<li>eZ Community site: <a href="http://share.ez.no" target="_self">http://share.ez.no</a></li>
+
+<li>Documentation: <a href="http://doc.ez.no" target="_self">http://doc.ez.no</a></li>
+
+<li>Follow us on <a href="https://twitter.com/eZSystems" target="_self">Twitter</a>, <a href="http://www.facebook.com/eZPublishEnterprise" target="_self">Facebook</a> and <a href="https://www.linkedin.com/company/ez-systems" target="_self">LinkedIn</a></li>
+
+</ul>
+<p>Copyright © 2014 eZ Systems AS (except where otherwise noted). All rights reserved.</p>            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer area: END -->    <!-- Footer area: END -->
+
+</div>
+<!-- Complete page area: END -->
+
+<!-- Footer script area: START -->
+<!-- Footer script area: END -->

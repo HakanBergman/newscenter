@@ -1,0 +1,149 @@
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Home - eZ Publish Demo Site (without demo content)</title>
+
+    
+    
+                <meta name="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta name="Content-language" content="swe-SE" />
+
+                    <meta name="author" content="eZ Systems" />
+    
+                <meta name="copyright" content="eZ Systems" />
+    
+                <meta name="description" content="Content Management System" />
+    
+                <meta name="keywords" content="cms, publish, e-commerce, content management, development framework" />
+    
+    
+    <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+    <meta name="generator" content="eZ Publish" />
+        
+<link rel="Home" href="/index.php" title="eZ Publish Demo Site (without demo content) startsida" />
+<link rel="Index" href="/index.php" />
+<link rel="Top"  href="/index.php" title="Home - eZ Publish Demo Site (without demo content)" />
+<link rel="Search" href="/index.php/content/advancedsearch" title="Sök eZ Publish Demo Site (without demo content)" />
+<link rel="Shortcut icon" href="/design/standard/images/favicon.ico" type="image/x-icon" />
+<link rel="Copyright" href="/index.php/ezinfo/copyright" />
+<link rel="Author" href="/index.php/ezinfo/about" />
+<link rel="Alternate" type="application/rss+xml" title="RSS" href="/index.php/rss/feed/my_feed" />
+
+<script type="text/javascript">
+(function() {
+    var head = document.getElementsByTagName('head')[0];
+    var printNode = document.createElement('link');
+    printNode.rel = 'Alternate';
+    printNode.href = "/index.php/layout/set/print" + document.location.search;
+    printNode.media = 'print';
+    printNode.title = "Utskriftsvänlig version";
+    head.appendChild(printNode);
+})();
+</script>      <link rel="stylesheet" type="text/css" href="/var/ezdemo_site/cache/public/stylesheets/94a4ecc9a574a9334f6727ba87936490_all.css" />
+<link rel="stylesheet" type="text/css" href="/extension/ezdemo/design/ezdemo/stylesheets/print.css" media="print" />
+
+<script type="text/javascript" src="/var/ezdemo_site/cache/public/javascript/248d8d436ce9e87dbd6321bba83bf74a.js" charset="utf-8"></script>
+
+</head>
+<body>
+<!-- Complete page area: START -->
+
+<div id="page" class=" section_id_1 subtree_level_0_node_id_2">
+
+    
+    <!-- Header area: START -->
+    <header>
+    <div class="container">
+        <div class="navbar extra-navi">
+            <div class="nav-collapse row">
+                <div id="lang-selector" class="transition-showed">    </div>
+
+                <ul class="nav">
+    <li id="tagcloud"><a href="/index.php/content/view/tagcloud/2" title="Tag cloud">Tag cloud</a></li>
+    <li id="sitemap"><a href="/index.php/content/view/sitemap/2" title="Sitemap">Sitemap</a></li>
+            <li id="registeruser"><a href="/index.php/user/register" title="Registrera">Registrera</a></li>
+        <li id="login" class="transition-showed">
+        <a href="#login" title="show login form" class="show-login-form">Logga in</a>
+        <a href="#" title="hide login form" class="hide-login-form">Logga in</a>
+        <form class="login-form span3" action="/index.php/user/login" method="post">
+            <fieldset>
+                <label>
+                    <span class="hidden">Användarnamn</span>
+                    <input type="text" name="Login" id="login-username" placeholder="Username">
+                </label>
+                <label>
+                    <span class="hidden">Lösenord</span>
+                    <input type="password" name="Password" id="login-password" placeholder="Password">
+                </label>
+                <div class="clearfix">
+                    <a href="/index.php/user/forgotpassword" class="forgot-password">Glömt ditt lösenord?</a>
+                    <button class="btn btn-warning pull-right" type="submit">
+                        Logga in
+                    </button>
+                </div>
+            </fieldset>
+            <input type="hidden" name="RedirectURI" value="" />
+        </form>
+    </li></ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span8">
+    <a href="/index.php" title="eZ Publish Demo Site (without demo content)" class="logo"><img src="/extension/ezdemo/design/ezdemo/images/logo-ez.png" alt="eZ Publish Demo Site (without demo content)" /></a>
+</div>
+
+            <form class="span4 form-search" method="get" action="/index.php/content/search" id="site-wide-search">
+    <label class="pull-right">
+        <span class="hidden">Sök</span>
+                    <input class="search-query span3" type="search" name="SearchText" id="site-wide-search-field" placeholder="Search text" />
+                        </label>
+</form>
+        </div>
+    </div>
+</header>
+    <!-- Header area: END -->
+
+    
+    <div class="navbar main-navi">
+        <!-- Top menu area: START -->
+                    <!-- Top menu content: START -->
+<div class="navbar-inner">
+    <div class="container">
+
+        <a class="btn btn-navbar" data-action="toggleclass" data-class="nav-collapse" data-target=".main-navi .nav-collapse">Navigation</a>
+
+        <div class="nav-collapse">
+            <ul class="nav">
+                
+                            </ul>
+        </div>
+
+    </div>
+</div>
+<!-- Top menu content: END -->
+                <!-- Top menu area: END -->
+
+        <!-- Path area: START -->
+                    <div class="breadcrumb-wrapper nav-collapse">
+    <!-- Path content: START -->
+<div class="container">
+    <ul class="breadcrumb">
+                <li class="active">
+            Home
+        </li>
+            </ul>
+</div>
+<!-- Path content: END -->
+</div>
+                <!-- Path area: END -->
+    </div>
+
+    <!-- Toolbar area: START -->
+        <!-- Toolbar area: END -->
+
+    <!-- Columns area: START -->
+    <div class="container">
+        <div class="row">
+            <!-- Side menu area: START -->
+                        <!-- Side menu area: END -->
+        
