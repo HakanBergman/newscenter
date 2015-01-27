@@ -1,21 +1,5 @@
 <?php /* #?ini charset="utf-8"?
 
-[DatabaseSettings]
-DatabaseImplementation=ezmysqli
-Server=localhost
-Port=
-User=NewsCenter
-Password=test
-Database=NewsCenter
-Charset=
-Socket=disabled
-
-[InformationCollectionSettings]
-EmailReceiver=
-
-[Session]
-SessionNamePerSiteAccess=disabled
-
 [SiteSettings]
 SiteName=This is News Center
 SiteURL=swe.1/index.php
