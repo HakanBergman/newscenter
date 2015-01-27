@@ -21,7 +21,7 @@ ActiveExtensions[]=ezautosave
 SessionNameHandler=custom
 
 [SiteSettings]
-DefaultAccess=swe
+DefaultAccess=www.datadelen.se
 SiteList[]
 RootNodeDepth=1
 
