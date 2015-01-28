@@ -345,32 +345,6 @@ PolicyOmitList[]=oauth/authorize
 # Should we try to show reason for access denied in view
 ShowAccessDeniedReason=disabled
 
-[SiteAccessRules]
-Rules[]
-# Set access policy to allowed
-# Rules[]=access;enable
-# # Special syntax which means any module
-# # This means that for now all modules are enabled
-# Rules[]=moduleall
-# # Set policy to denied
-Rules[]=access;disable
-# # If content/search module use current policy (denied)
-Rules[]=user/register
-Rules[]=user/activate
-Rules[]=user/success
-
-[DesignSettings]
-# The standard design, is used as fallback design
-# if the element is not in the sitedesign
-StandardDesign=standard
-# The design of the site
-SiteDesign=admin
-# AdditionalSiteDesignArray contains an array
-# of sitedesigns. These sitedesigns will be used
-# if the design was not found in the main
-# sitedesign. StandardDesign is the fallback design.
-AdditionalSiteDesignList[]
-
 # Whether to cache location of design directories
 # Please note that if you use Database clustering :
 # file.ini/[ClusteringSettings]/FileSettings=eZDBFileHandler
