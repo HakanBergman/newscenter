@@ -281,10 +281,12 @@ RequireUserLogin=false
 # A list over current active siteaccesses
 AvailableSiteAccessList[]
 AvailableSiteAccessList[]=newscenter.drumedar.net
+AvailableSiteAccessList[]=www.maltimportoren.se
 
 # A list of related siteaccesses sharing the same database
 RelatedSiteAccessList[]
 RelatedSiteAccessList[]=newscenter.drumedar.net
+RelatedSiteAccessList[]=www.maltimportoren.se
 
 # A list of module or module/views that don't require user login
 AnonymousAccessList[]
@@ -306,6 +308,7 @@ HostMatchSubtextPre=
 HostMatchSubtextPost=.example.com
 # Add array entries here if you chose HostMatchType=map
 # Each entry consists of the hostname;accessname
+HostMatchMapItems[]=maltimportoren.datadelenhc.com;www.maltimportoren.se
 HostMatchMapItems[]=newscenter.drumedar.net;newscenter.drumedar.net
 HostMatchMapItems[]=admin.newscenter.drumedar.net;admin
 # Hides this part from the start of the url alias
