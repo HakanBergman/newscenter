@@ -363,11 +363,7 @@ Rules[]=access;disable
 Rules[]=user/register
 Rules[]=user/activate
 Rules[]=user/success
-Rules[]=layout
-Rules[]=manual
 Rules[]=ezinfo
-Rules[]=paypal/notify_url
-Rules[]=switchlanguage
 
 [DesignSettings]
 # The standard design, is used as fallback design
