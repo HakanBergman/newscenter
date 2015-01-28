@@ -11,7 +11,7 @@ RelatedSiteAccessList[]
 ShowHiddenNodes=false
 
 [DesignSettings]
-SiteDesign=mysite
+SiteDesign=newscenter
 AdditionalSiteDesignList[]
 AdditionalSiteDesignList[]=base
 AdditionalSiteDesignList[]=standard
