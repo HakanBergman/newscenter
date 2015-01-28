@@ -58,19 +58,19 @@ BasketCleanupFetchLimit=3000
 BasketCleanupAverageFrequency=10
 
 [DebugSettings]
-DebugOutput=disabled
+DebugOutput=enabled
 AlwaysLog[]
 AlwaysLog[]=error
-ScriptDebugOutput=disabled
+ScriptDebugOutput=enabled
 DebugByIP=disabled
 DebugIPList[]
 DebugByUser=disabled
 DebugUserIDList[]
 DebugRedirection=disabled
-DisplayDebugWarnings=disabled
+DisplayDebugWarnings=enabled
 DebugLogOnly=disabled
-DebugToolbar=disabled
-DisplayIncludedFiles=disabled
+DebugToolbar=enabled
+DisplayIncludedFiles=enabled
 
 [URLTranslator]
 Translation=enabled
