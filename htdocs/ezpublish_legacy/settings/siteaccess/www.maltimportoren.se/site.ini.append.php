@@ -1,7 +1,7 @@
 <?php /* #?ini charset="utf-8"?
 
 [SiteSettings]
-SiteName=Maltimportören
+SiteName=MaltimportÃ¶ren
 SiteURL=maltimportoren.datadelenhc.com
 LoginPage=embedded
 
@@ -25,7 +25,6 @@ SiteLanguageList[]=swe-SE
 TextTranslation=enabled
 
 [FileSettings]
-VarDir=var/www.maltimportoren.com
-
+VarDir=var/www.maltimportoren.com     
 
 */ ?>
