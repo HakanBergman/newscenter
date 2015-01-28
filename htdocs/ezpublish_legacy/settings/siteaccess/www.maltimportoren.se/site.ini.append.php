@@ -13,8 +13,8 @@ ShowHiddenNodes=false
 [DesignSettings]
 SiteDesign=newscenter
 AdditionalSiteDesignList[]
-AdditionalSiteDesignList[]=base
-AdditionalSiteDesignList[]=standard
+#AdditionalSiteDesignList[]=base
+#AdditionalSiteDesignList[]=standard
 
 [RegionalSettings]
 Locale=swe-SE
