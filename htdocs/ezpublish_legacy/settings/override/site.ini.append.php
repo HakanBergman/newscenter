@@ -338,7 +338,6 @@ PolicyOmitList[]=user/success
 PolicyOmitList[]=user/forgotpassword
 PolicyOmitList[]=layout
 PolicyOmitList[]=manual
-PolicyOmitList[]=ezinfo
 PolicyOmitList[]=paypal/notify_url
 PolicyOmitList[]=switchlanguage
 # This is a fake omission: we need a manual policy check, therefore implemented directly in oauth/authorize.php
@@ -359,7 +358,6 @@ Rules[]=access;disable
 Rules[]=user/register
 Rules[]=user/activate
 Rules[]=user/success
-Rules[]=ezinfo
 
 [DesignSettings]
 # The standard design, is used as fallback design
