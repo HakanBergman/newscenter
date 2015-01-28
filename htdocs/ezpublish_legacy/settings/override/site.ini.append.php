@@ -280,9 +280,11 @@ RequireUserLogin=false
 
 # A list over current active siteaccesses
 AvailableSiteAccessList[]
+AvailableSiteAccessList[]=newscenter.drumedar.net
 
 # A list of related siteaccesses sharing the same database
 RelatedSiteAccessList[]
+RelatedSiteAccessList[]=newscenter.drumedar.net
 
 # A list of module or module/views that don't require user login
 AnonymousAccessList[]
