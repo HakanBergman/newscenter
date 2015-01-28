@@ -351,184 +351,31 @@ ShowAccessDeniedReason=disabled
 # the cache of design locations will automatically disabled
 DesignLocationCache=enabled
 
-[RegionalSettings]
-# The locale for your site
-Locale=swe-SE
-# Set this if the http locale in the locale is wrong
-HTTPLocale=
-# Set this if you want to run the entire PHP system in a given
-# locale, this means that PHP will be locale aware when dealing
-# with strings (e.g making characters in a string into lowercase). (C is a
-# special locale meaning 7-bit ASCII). Examples for this setting include
-# "german", "de_DE.ISO-8859-1"; depending on your operating system.
-SystemLocale=
-# The default language for content objects
-# Note: Changing this can have catastrophic consequences
-#       since there might not be any content objects with
-#       the selected language. Instead the content/translations
-#       page should be used for adding/removing translations.
-ContentObjectLocale=swe-SE
-# If enabled, ShowUntranslatedObjects will force showing the objects
-# existing in other languages than those specified in SiteLanguageList
-ShowUntranslatedObjects=disabled
-# Prioritized list of languages. Only objects existing in these
-# languages will be shown (unless ShowUntranslatedObjects is enabled).
-# If an object exists in more languages, that one which is first in
-# SiteLanguageList will be used to render it.
-SiteLanguageList[]
-# Controls how xml is stored in content objects.
-# disabled - Store with utf8
-# enabled  - Store with current charset
-# if any other text is entered it is assumed to be a charset and will be used
-ContentXMLCharset=enabled
-# Use either disabled to disable all text translation (faster) or enabled.
-# Text translation is automatically disabled when the Locale is set to eng-GB
-TextTranslation=enabled
-TranslationCache=enabled
-# Translation cache files will be stored in the directory located outside of the
-# siteaccess VarDir. Empty value disables sharing of translation cache.
-# Useful if you want to share translation cache between siteaccesses that
-# only differes by content, db and var directory.
-SharedTranslationCacheDir=
-# Sets if modified time should be checked or not on ts files when checking
-# if translation cache is valid
-TranslationCheckMTime=enabled
-# Use either enabled to see which locale files are loaded or disabled to supress debug
-Debug=disabled
-# By enabling development mode all untranslated texts will be translated
-# using the bork rules.
-# See lib/ezi18n/classes/ezborktranslator.php for more information.
-DevelopmentMode=disabled
-TranslationRepository=share/translations/
-TranslationExtensions[]
-
-# NOTE: The LanguageSwitcher settings are not frozen, meaning they might still change.
-# The class which is used in the language switcher module to forward users to
-# selected translation siteaccesses.
-LanguageSwitcherClass=ezpLanguageSwitcher
-# Example mapping between translation siteaccesses and the name to use for the
-# language switcher link, e.g. the name which will be used when making links to
-# these siteaccesses.
-# Example: TranslationSA[<name of siteaccess>]=<name of language switcher link, pointing to this siteaccess>
-# TranslationSA[]
-# TranslationSA[eng]=English
-# TranslationSA[nor]=Norwegian
-# TranslationSA[fre]=French
-
-# Example mapping between languages and siteaccess, mapping is done by convention if not defined
-# like eg: eng-GB => eng
-# In both cases sa name needs to be present in [SiteAccessSettings]\RelatedSiteAccessList[]
-# Example: LanguageSA[<language>]=<name of siteaccess>
-# LanguageSA[]
-# LanguageSA[eng-GB]=site1_eng
-# LanguageSA[nor-NB]=site1_nor
-# LanguageSA[fre-FR]=site1_fre
-
 [FileSettings]
-# The directory eZ Publish should use when creating temporary files.
-# e.g when creating an image variation
 TemporaryDir=/tmp/
-# Permission for temporary files, setting it to 0777 means that anyone
-# can read and write the files and can be considered a security risk.
-# It's preferred to use 0770 and make sure the web server has correct
-# user/group access.
 TemporaryPermissions=0777
-# Where to place new files for storage, it's relative to var directory
 StorageDir=storage
-# Permission for storage directories, setting it to 0777 means that anyone
-# can read and write the directories and can be considered a security risk.
-# It's preferred to use 0770 and make sure the web server has correct
-# user/group access.
 StorageDirPermissions=0777
-# Permission for storage files, setting it to 0666 means that anyone
-# can read and write the files and can be considered a security risk.
-# It's preferred to use 0660 and make sure the web server has correct
-# user/group access.
 StorageFilePermissions=0666
-# Permission for log files, setting it to 0666 means that anyone
-# can read and write the files and can be considered a security risk.
-# It's preferred to use 0660 and make sure the web server has correct
-# user/group access.
 LogFilePermissions=0666
-# Directory depth for storing files, this means that it will create
-# directories out of the first n characters to make sure not too
-# many files are placed in one directory. For instance a file name
-# newfile.png will be placed in n/e/w/newfile.png.
 DirDepth=3
 
 [TemplateSettings]
-# A list of directories to look for eztemplateautoload.php files
-# These files will be used to automatically load in template functions and operators
-# You can new ones if you create custom template code.
-AutoloadPathList[]
-AutoloadPathList[]=lib/eztemplate/classes/
-AutoloadPathList[]=kernel/common/
-AutoloadPathList[]=lib/ezpdf/classes/
-AutoloadPathList[]=kernel/private/eztemplate/
-# A list of extensions which have template autoloads.
-# Only specify the extension name, not the path.
-# The extension must contain a subdirectory called autoloads.
-ExtensionAutoloadPath[]
-# Enabled to see which template files are loaded or disabled to supress debug
-# Warning: Will add debug xhtml comments to your source code, including mails!
-# Note: No debug on templates starting with <!DOCTYPE to not trigger quirks mode!
 Debug=disabled
-# If enabled will add code to display the template name in the browser
-# If Debug is disabled then nothing happens
 ShowXHTMLCode=disabled
-# Whether to show debug of functions and operators when
-# processing nodes.
-# This only meant for kernel developers to check which
-# operators and functions are called.
-# Note: Will only work when template compiler is off
 ShowMethodDebug=disabled
-# If enabled will add a table with templates used to render a page.
-# DebugOutput should be enabled too.
 ShowUsedTemplates=disabled
-# Determines whether the internal node tree should be cached, by enabling this the loading
-# and parsing of templates is significantly reduced.
 NodeTreeCaching=disabled
-# Determines whether the templates should be compiled to PHP code, by enabling this the loading
-# and parsing of templates is omitted and template processing is significantly reduced.
-# Note: The first time the templates are compiled it will take a long time, use the
-#       bin/php/eztc.php script to prepare all your templates.
 TemplateCompile=enabled
-# If you share compiled templates with other site accesses
-ShareCompiledTemplates=disabled
-# Where to store shared compiled templates
-SharedCompiledTemplatesDir=
-# Controls whether further optimizations should be performed on compiled
-# templates
 TemplateOptimization=enabled
-# Controls whether to include formatting in compiled templates or not.
 UseFormatting=disabled
-# Controls all template base caching mechanisms, if disabled they will never be
-# used.
-# The elements currently controlled by this is:
-# - cache-block
 TemplateCache=enabled
-# Controls whether expired cache-blocks with 'subtree_expiry' parameter will
-# be removed from disk immediately or not.
-# If enabled it should increase performance of large sites but you should remove
-# expired caches manually or using cronjob 'cronjobs/subtreeexpirycleanup.php'.
-# Since 4.6, this cronjob is not activated by default.
 DelayedCacheBlockCleanup=disabled
-# Controls whether compiled templates should be stored gzip compressed on disk.
-# This drastically reduces disk usage.
 TemplateCompression=disabled
-# Controls if development is enabled or not.
-# When enabled the system will perform more checks like modification time on
-# compiled vs source file and will reduce need for clearing template compiled
-# files.
-# Note: Live sites should not have this enabled since it increases file access
-#       and can be slower.
-# Note: When switching this setting the template compiled files must be cleared.
 DevelopmentMode=disabled
 
 [ContentSettings]
-# Whether to use view caching or not
 ViewCaching=enabled
-# A list of viewmodes which will be cached
 CachedViewModes=full;sitemap;pdf
 
 [MailSettings]
