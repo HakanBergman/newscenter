@@ -294,26 +294,20 @@ AnonymousAccessList[]=user/activate
 AnonymousAccessList[]=user/forgotpassword
 
 # An array of access types which are tried, possible entries are: host, host_uri, uri, port and servervar
-MatchOrder=servervar
+MatchOrder=host
 
-# MatchOrder : servervar
-# Set name of server variable used to match a siteaccess
-ServerVariableName=SITEACCESS
-
-# Wheter to add siteaccess to the url if current siteaccess
-# is the same as default siteaccess. Changing this setting will
-# require clearing the cache.
-#
-# This setting also works with host_uri matching removing uri part
-# from url if it's default siteacces. In this case, make sure
-# host name without url part goes to same siteaccess in your
-# match order chain.
-#
-# For instance if the default siteaccess is 'en' and you enable
-# this you can access the siteacccess with 'index.php' instead of
-# 'index.php/en/'.
-RemoveSiteAccessIfDefaultAccess=disabled
-
+# MatchOrder : host
+# Use either disabled, map, element, text or regexp
+HostMatchType=map
+HostMatchElement=0
+HostMatchRegexp=^(.+)\.example\.com$
+HostMatchRegexpItem=1
+HostMatchSubtextPre=
+HostMatchSubtextPost=.example.com
+# Add array entries here if you chose HostMatchType=map
+# Each entry consists of the hostname;accessname
+HostMatchMapItems[]=newscenter.drumedar.net;newscenter.drumedar.net
+HostMatchMapItems[]=admin.newscenter.drumedar.net;admin
 # Hides this part from the start of the url alias
 # If you use this setting, you also need to use the PathPrefix setting in logfile.ini.
 PathPrefix=
