@@ -15,9 +15,8 @@ RelatedSiteAccessList[]
 ShowHiddenNodes=false
 
 [DesignSettings]
-SiteDesign=ezdemo_site_clean
+SiteDesign=mysite
 AdditionalSiteDesignList[]
-AdditionalSiteDesignList[]=ezflow
 AdditionalSiteDesignList[]=base
 AdditionalSiteDesignList[]=standard
 
