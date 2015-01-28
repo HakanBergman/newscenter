@@ -1,13 +1,9 @@
 <?php /* #?ini charset="utf-8"?
 
 [SiteSettings]
-SiteName=This is News Center
-SiteURL=swe.1/index.php
+SiteName=Maltimportören
+SiteURL=maltimportoren.datadelenhc.com
 LoginPage=embedded
-AdditionalLoginFormActionURL=http://admin.newscenter.drumedar.net/index.php/user/login
-
-[UserSettings]
-RegistrationEmail=
 
 [SiteAccessSettings]
 RequireUserLogin=false
@@ -29,12 +25,7 @@ SiteLanguageList[]=swe-SE
 TextTranslation=enabled
 
 [FileSettings]
-VarDir=var/ezdemo_site_clean
+VarDir=var/www.maltimportoren.com
 
-[ContentSettings]
-TranslationList=
 
-[MailSettings]
-AdminEmail=hakan.bergman@drumedar.se
-EmailSender=
 */ ?>
