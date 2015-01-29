@@ -55,8 +55,9 @@
 	</head>
 	
 	<body class="bg-grey">
-		<!-- Används ej 
-		<div class="container">
+	
+		{* Page Landscape disable *}
+		{*<div class="container">
 			<div class="landscape thumbnail alert-warning hidden">
 				<p>Du försöker se hemsidan i ett format som inte stöds.</p>
 				<small>Det kan bero på följande orsaker:</small>
@@ -68,12 +69,12 @@
 				<small>Om din enhet inte roterar när du vänder den i porträttläge så kan den vara låst.</small>
 			</div>
 		</div>
-		-->
+		*}
 		
 		<div class="container-fluid website">
 
 			{* Include Headers *}
-			require_once("page_header.tpl");
+			{include uri='design:page_header.tpl'}
 
 			{* Include Headers *}
 			#require_once("widgets/cookies/cookies.tpl");
