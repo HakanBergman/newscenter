@@ -1,110 +1,96 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="unsupported-ie ie" lang="{$site.http_equiv.Content-language|wash}"><![endif]-->
-<!--[if IE 9 ]><html class="ie ie9" lang="{$site.http_equiv.Content-language|wash}"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="{$site.http_equiv.Content-language|wash}"><!--<![endif]-->
-<head>
-{def $basket_is_empty   = cond( $current_user.is_logged_in, fetch( shop, basket ).is_empty, 1 )
-     $user_hash         = concat( $current_user.role_id_list|implode( ',' ), ',', $current_user.limited_assignment_value_list|implode( ',' ) )}
+<html lang="sv">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-{include uri='design:page_head_displaystyles.tpl'}
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="Startsidans titel">
 
-{if is_set( $extra_cache_key )|not}
-    {def $extra_cache_key = ''}
-{/if}
+		<!-- Apple devices icons -->
+		<link rel="apple-touch-icon" href="img/apple-touch-dhc-logo.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-dhc-logo.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-dhc-logo.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-dhc-logo.png">
+		
 
-{def $pagedata        = ezpagedata()
-     $inner_column_size = $pagedata.inner_column_size
-     $outer_column_size = $pagedata.outer_column_size}
+		<title>Bootstrap 101 Template</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">	
 
-{cache-block keys=array( $module_result.uri, $basket_is_empty, $current_user.contentobject_id, $extra_cache_key )}
-{def $pagestyle        = $pagedata.css_classes
-     $locales          = fetch( 'content', 'translation_list' )
-     $current_node_id  = $pagedata.node_id}
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/font-size.css">
+		<link rel="stylesheet" href="css/top-navigation.css">	
+		<link rel="stylesheet" href="css/navigation.css">
+		<link rel="stylesheet" href="css/bg-colors.css">
+		<link rel="stylesheet" href="css/borders.css">
+		<link rel="stylesheet" href="css/orientation.css">
+		<link rel="stylesheet" href="css/homescreen.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/block/input/widget-select.css">
+		<link rel="stylesheet" href="css/block/product/product.css">
+		<link rel="stylesheet" href="css/block/news/news-block.css">
+		<link rel="stylesheet" href="css/block/ads/ads-block.css">
 
-{include uri='design:page_head.tpl'}
-{include uri='design:page_head_style.tpl'}
-{include uri='design:page_head_script.tpl'}
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-</head>
-<body>
-<!-- Complete page area: START -->
+		<!-- Enable Mmenu -->
+		<link rel="stylesheet" href="js/mmenu/src/css/jquery.mmenu.all.css">
+		<script type="text/javascript" src="js/mmenu/src/js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript" src="js/mmenu.js"></script>
+		<script type="text/javascript" src="js/orientation.js"></script>
+						
+	</head>
+	
+	<body class="bg-grey">
+		<!-- Används ej 
+		<div class="container">
+			<div class="landscape thumbnail alert-warning hidden">
+				<p>Du försöker se hemsidan i ett format som inte stöds.</p>
+				<small>Det kan bero på följande orsaker:</small>
+				<ul>
+					<li>Du använder din enhet i landskapsläge</li>
+					<li>Din webbläsare/enhet behöver uppdateras</li>
+				</ul>
+				<p>Om din enhet är i landskapsläge, var vänlig att rotera den till porträttläge för att se hemsidan igen.</p>
+				<small>Om din enhet inte roterar när du vänder den i porträttläge så kan den vara låst.</small>
+			</div>
+		</div>
+		-->
+		
+		<div class="container-fluid website">
 
-<div id="page" class="{$pagestyle}">
+			{* Include Headers *}
+			require_once("page_header.tpl");
 
-    {if and( is_set( $pagedata.persistent_variable.extra_template_list ),
-             $pagedata.persistent_variable.extra_template_list|count() )}
-    {foreach $pagedata.persistent_variable.extra_template_list as $extra_template}
-        {include uri=concat('design:extra/', $extra_template)}
-    {/foreach}
-    {/if}
+			{* Include Headers *}
+			#require_once("widgets/cookies/cookies.tpl");
 
-    <!-- Header area: START -->
-    {include uri='design:page_header.tpl'}
-    <!-- Header area: END -->
+			{* Include Zone *}
+			require_once("zone/zone-left.tpl");
+			
+		</div>
 
-    {cache-block keys=array( $module_result.uri, $user_hash, $extra_cache_key )}
+		<nav class="navbar navbar-default navbar-fixed-bottom hidden" id="homescreen">
+			<div class="container">
+				<div class="thumbnail alert-warning">
+					Spara appen på hemskärmen för en bättre upplevelse.
+				</div>
+			</div>
+		</nav>
 
-    <div class="navbar main-navi">
-        <!-- Top menu area: START -->
-        {if $pagedata.top_menu}
-            {include uri='design:page_topmenu.tpl'}
-        {/if}
-        <!-- Top menu area: END -->
+	</body>
 
-        <!-- Path area: START -->
-        {if $pagedata.show_path}
-            {include uri='design:page_toppath.tpl'}
-        {/if}
-        <!-- Path area: END -->
-    </div>
-
-    <!-- Toolbar area: START -->
-    {if and( $pagedata.website_toolbar, $pagedata.is_edit|not)}
-        {include uri='design:page_toolbar.tpl'}
-    {/if}
-    <!-- Toolbar area: END -->
-
-    <!-- Columns area: START -->
-    <div class="container">
-        <div class="row">
-            <!-- Side menu area: START -->
-            {if $pagedata.left_menu}
-                {include uri='design:page_leftmenu.tpl'}
-            {/if}
-            <!-- Side menu area: END -->
-    {/cache-block}
-    {/cache-block}
-            <!-- Main area: START -->
-            {include uri='design:page_mainarea.tpl'}
-            <!-- Main area: END -->
-            {cache-block keys=array( $module_result.uri, $user_hash, $access_type.name, $extra_cache_key )}
-
-            <!-- Extra area: START -->
-            {if $pagedata.extra_menu}
-                {include uri='design:page_extramenu.tpl'}
-            {/if}
-            <!-- Extra area: END -->
-        </div>
-    </div>
-    <!-- Columns area: END -->
-
-    <!-- Footer area: START -->
-    {include uri='design:page_footer.tpl'}
-    <!-- Footer area: END -->
-
-</div>
-<!-- Complete page area: END -->
-
-<!-- Footer script area: START -->
-{include uri='design:page_footer_script.tpl'}
-<!-- Footer script area: END -->
-
-{/cache-block}
-
-{* This comment will be replaced with actual debug report (if debug is on). *}
-<!--DEBUG_REPORT-->
-
-</body>
 </html>
