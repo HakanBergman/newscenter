@@ -21,6 +21,7 @@
   <div class="container">
 
 			{* Top Navigation *}
+      {include uri="design:newscenter/full/navigation/top-navigation.tpl"}
 			require_once("widgets/top-navigation/top-navigation.tpl");
 
 			{* Mobile Navigation *}
