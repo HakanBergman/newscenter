@@ -1,0 +1,15 @@
+
+/* Container Rules */
+.container-fluid { padding: 0; }
+section .row { margin: 0; padding: 0; padding: 0; margin: 0; }
+section .container { padding: 0; padding-left: 15px; padding-right: 15px; }
+section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
+
+/* List Rules */
+.nav-tabs>li { margin: 0; }
+
+/* Link Rules */
+a, a:visited, a:active { text-decoration: none; }
+
+/* Input Rules */
+.input-group-addon { text-align: left; }

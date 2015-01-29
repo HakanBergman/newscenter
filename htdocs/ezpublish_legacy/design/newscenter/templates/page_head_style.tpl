@@ -1,25 +1,7 @@
-{if is_unset( $load_css_file_list )}
-    {def $load_css_file_list = true()}
-{/if}
+{* Load Bootstrap *}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">	
 
-{if $load_css_file_list}
-  {ezcss_load( array( 'bootstrap.css',
-                      'responsive.css',
-                      'debug.css',
-                      'websitetoolbar.css',
-                      ezini( 'StylesheetSettings', 'CSSFileList', 'design.ini' ),
-                      ezini( 'StylesheetSettings', 'FrontendCSSFileList', 'design.ini' ) ) )}
-{else}
-  {ezcss_load( array( 'bootstrap.css',
-                      'responsive.css',
-                      'debug.css',
-                      'websitetoolbar.css' ) )}
-{/if}
-
-{if ne(ezini('StylesheetSettings','ClassesCSS','design.ini'), '')}
-<link rel="stylesheet" type="text/css" href={ezini('StylesheetSettings','ClassesCSS','design.ini')|ezroot()} />
-{/if}
-{if ne(ezini('StylesheetSettings','SiteCSS','design.ini'), '')}
-<link rel="stylesheet" type="text/css" href={ezini('StylesheetSettings','SiteCSS','design.ini')|ezroot()} />
-{/if}
+{* Dynamically load CSS files from the override INI *}
+{ezcss_load( array( ezini( 'StylesheetSettings', 'CSSFileList', 'design.ini' ), ezini( 'StylesheetSettings', 'FrontendCSSFileList', 'design.ini' ) ) )}
 <link rel="stylesheet" type="text/css" href={"stylesheets/print.css"|ezdesign} media="print" />

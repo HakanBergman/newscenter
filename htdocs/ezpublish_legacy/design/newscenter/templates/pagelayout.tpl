@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="{$site.http_equiv.Content-language|wash}">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-title" content="Startsidans titel">
+		{* Some Basket Logic *}
+		{def $basket_is_empty   = cond( $current_user.is_logged_in, fetch( shop, basket ).is_empty, 1 )
+			 $user_hash         = concat( $current_user.role_id_list|implode( ',' ), ',', $current_user.limited_assignment_value_list|implode( ',' ) )}
 
-		<!-- Apple devices icons -->
+		{* Include Page Head Display Styles *}
+		{include uri='design:page_head_displaystyles.tpl'}
+
+		{* Set some extra cache if needed *}
+		{if is_set( $extra_cache_key )|not}{def $extra_cache_key = ''}{/if}
+
+		{* Pagedata *}
+		{def $pagedata        = ezpagedata()
+			 $inner_column_size = $pagedata.inner_column_size
+			 $outer_column_size = $pagedata.outer_column_size}
+
+		{* Create a cache-block *}
+		{cache-block keys=array( $module_result.uri, $basket_is_empty, $current_user.contentobject_id, $extra_cache_key )}
+
+		{* Page Styles *}
+		{def $pagestyle        = $pagedata.css_classes
+			 $locales          = fetch( 'content', 'translation_list' )
+			 $current_node_id  = $pagedata.node_id}
+
+		{* Include Page Head *}	
+		{include uri='design:page_head.tpl'}
+
+		{* Apple Device Icons *}
 		<link rel="apple-touch-icon" href="img/apple-touch-dhc-logo.png">
 		<link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-dhc-logo.png">
 		<link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-dhc-logo.png">
 		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-dhc-logo.png">
 		
-
-		<title>Bootstrap 101 Template</title>
-		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">	
-
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/responsive.css">
-		<link rel="stylesheet" href="css/font-size.css">
-		<link rel="stylesheet" href="css/top-navigation.css">	
-		<link rel="stylesheet" href="css/navigation.css">
-		<link rel="stylesheet" href="css/bg-colors.css">
-		<link rel="stylesheet" href="css/borders.css">
-		<link rel="stylesheet" href="css/orientation.css">
-		<link rel="stylesheet" href="css/homescreen.css">
-
-		<link rel="stylesheet" href="css/block/input/widget-select.css">
-		<link rel="stylesheet" href="css/block/product/product.css">
-		<link rel="stylesheet" href="css/block/news/news-block.css">
-		<link rel="stylesheet" href="css/block/ads/ads-block.css">
+		{include uri='design:page_head_style.tpl'}
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,11 +46,11 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-		<!-- Enable Mmenu -->
-		<link rel="stylesheet" href="js/mmenu/src/css/jquery.mmenu.all.css">
-		<script type="text/javascript" src="js/mmenu/src/js/jquery.mmenu.min.all.js"></script>
-		<script type="text/javascript" src="js/mmenu.js"></script>
-		<script type="text/javascript" src="js/orientation.js"></script>
+		{* Enable MMENU *}
+		<link rel="stylesheet" href="{"javascript/mmenu/src/css/jquery.mmenu.all.css"|ezdesign}">
+		<script type="text/javascript" src="{"javascript/mmenu/src/js/jquery.mmenu.min.all.js"|ezdesign}"></script>
+		<script type="text/javascript" src="{"javascript/mmenu.js"|ezdesign}"></script>
+		<script type="text/javascript" src="{"javascript/orientation.js"|ezdesign}"></script>
 						
 	</head>
 	
