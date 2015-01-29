@@ -282,9 +282,11 @@ RequireUserLogin=false
 AvailableSiteAccessList[]
 AvailableSiteAccessList[]=newscenter.drumedar.net
 AvailableSiteAccessList[]=www.maltimportoren.se
+AvailableSiteAccessList[]=ezdemo_site_clean_admin
 
 # A list of related siteaccesses sharing the same database
 RelatedSiteAccessList[]
+RelatedSiteAccessList[]=ezdemo_site_clean_admin
 RelatedSiteAccessList[]=newscenter.drumedar.net
 RelatedSiteAccessList[]=www.maltimportoren.se
 
@@ -310,7 +312,7 @@ HostMatchSubtextPost=.example.com
 # Each entry consists of the hostname;accessname
 HostMatchMapItems[]=maltimportoren.datadelenhc.com;www.maltimportoren.se
 HostMatchMapItems[]=newscenter.drumedar.net;newscenter.drumedar.net
-HostMatchMapItems[]=admin.newscenter.drumedar.net;admin
+HostMatchMapItems[]=admin.newscenter.drumedar.net;ezdemo_site_clean_admin
 # Hides this part from the start of the url alias
 # If you use this setting, you also need to use the PathPrefix setting in logfile.ini.
 PathPrefix=
