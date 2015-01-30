@@ -72,12 +72,12 @@
 		*}
 		
 		<div class="container-fluid website">
-			test
+			test 2
 			{* Include Headers *}
 			{include uri='design:page_header.tpl'}
 
 			{* Include Headers *}
-			{include uri='design:page_header_logo.tpl'}
+			{include uri='design:page_header_logo2.tpl'}
 
 			{* Include Zone *}
 			require_once("zone/zone-left.tpl");
