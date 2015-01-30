@@ -64,5 +64,3 @@
 	{/case}
 
 {/switch}
-
-{$zone_width} zone bredd2 asd {$#zone_width} bredd4

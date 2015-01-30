@@ -5,5 +5,3 @@
 	{* Print the Zone *}
 	<div class="">
 	</div>
-
-{undef $#zone_width}
