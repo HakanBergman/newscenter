@@ -1,6 +1,6 @@
 {* Fetch the correct Zone Size *}
 {def scope='global' $zone_width = ""}
-{include uri="design:newscenter/zone/zone_size.tpl" zone_width=$zone_width zone=$zone}
+{include uri="design:newscenter/zone/zone_size.tpl" zone_width=$#zone_width zone=$zone}
 
 {$#zone_width} zone bredd
 
