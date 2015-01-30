@@ -77,7 +77,7 @@
 			{include uri='design:page_header.tpl'}
 
 			{* Include Headers *}
-			#require_once("widgets/cookies/cookies.tpl");
+			{include uri='design:test.tpl'}
 
 			{* Include Zone *}
 			require_once("zone/zone-left.tpl");
