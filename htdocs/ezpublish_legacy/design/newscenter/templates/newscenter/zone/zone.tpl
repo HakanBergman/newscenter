@@ -5,7 +5,7 @@
 	<section id="section-{$zone.node_id}">
 		<div class="container">
 			<div class="{$#zone_width}">
-				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.zone_id))}
+				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id))}
 				{$blocks.count()}
 			</div>
 		</div>
