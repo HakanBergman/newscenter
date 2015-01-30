@@ -79,8 +79,9 @@
 			{* Include Headers *}
 			{include uri='design:newscenter/widget/cookies/widget_cookie.tpl'}
 
-			{* Include Zone *}
-			require_once("zone/zone-left.tpl");
+			{* Include Zones *}
+			{def $zones = fetch('content', 'list', hash('node_id', $node.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone')))}
+			{$zones|count()}
 			
 		</div>
 
