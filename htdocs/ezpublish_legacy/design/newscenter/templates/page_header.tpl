@@ -21,6 +21,7 @@
   <div class="container">
 
 		{* Top Navigation *}
+		{include uri='design:page_header_searchbox.tpl'}
 		{include uri='design:newscenter/full/navigation/top-navigation.tpl'}
 
 			{* Mobile Navigation *}
