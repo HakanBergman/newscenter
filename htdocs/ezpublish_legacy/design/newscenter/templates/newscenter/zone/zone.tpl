@@ -10,7 +10,7 @@
 					{foreach $blocks as $block}
 						{switch match=$block.class_identifier}
 							{case}
-								{include uri="design:newscenter/products/product_list.tpl"}
+								{include uri="design:newscenter/widget/products/product_list.tpl"}
 							{/case}
 						{/switch}
 					{/foreach}
