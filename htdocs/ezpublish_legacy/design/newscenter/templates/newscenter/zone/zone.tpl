@@ -1,1 +1,1 @@
-﻿{$zone.node_id}
+{$zone.node_id}
