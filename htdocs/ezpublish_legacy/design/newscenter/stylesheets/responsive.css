@@ -2,7 +2,7 @@
 
 /* Screen resolution - up to 768px */
 @media only screen and (max-width: 768px) { 
-	#topNav-one { display: none; }
+	#topNav-one { display: block; }
 }
 
 /* Screen resolution - up to 500px */
