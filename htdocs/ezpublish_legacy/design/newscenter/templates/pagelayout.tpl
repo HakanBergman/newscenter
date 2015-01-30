@@ -82,8 +82,8 @@
 			{include uri='design:newscenter/widget/cookies/widget_cookie.tpl'}
 
 			{* Include Zones *}
-			{def $zones = fetch('content', 'list', hash('node_id', $node.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone')))}
-			{$node.node_id} {$node} asd
+			{def $zones = fetch('content', 'list', hash('node_id', $current_node_id.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone')))}
+			{$current_node_id}
 			{$zones|count()}
 			
 		</div>
