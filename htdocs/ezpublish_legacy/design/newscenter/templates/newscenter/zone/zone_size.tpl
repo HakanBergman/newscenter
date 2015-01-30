@@ -3,17 +3,17 @@
 
 	{case match=0}
 		{* 100% *}
-		{set scope='global' $zone_width = "col-lg-12"}
+		{def scope='global' $zone_width = "col-lg-12"}
 	{/case}
 
 	{case match=1}
 		{* 91% *}
-		{set scope='global' $zone_width = "col-lg-11"}
+		{def scope='global' $zone_width = "col-lg-11"}
 	{/case}
 
 	{case match=2}
 		{* 83% *}
-		{set scope='global' $zone_width = "col-lg-10"}
+		{def scope='global' $zone_width = "col-lg-10"}
 	{/case}
 
 	{case match=3}
