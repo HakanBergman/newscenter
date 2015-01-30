@@ -22,5 +22,6 @@
         </div>
     </div>
 </footer>
+ETT TEST
 <!-- Footer area: END -->
 {undef $footer_node}
