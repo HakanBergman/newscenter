@@ -23,8 +23,8 @@
 		{* Top Navigation *}
 		{include uri='design:top-navigation.tpl'}
 
-			{* Mobile Navigation *}
-			require_once("widgets/navigation/mobile.tpl");
+		{* Mobile Navigation *}
+		require_once("widgets/navigation/mobile.tpl");
 
   </div>
 </header>
