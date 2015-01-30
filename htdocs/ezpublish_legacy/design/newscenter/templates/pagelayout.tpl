@@ -83,9 +83,11 @@
 
 			{* Include Zones *}
 			{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone')))}
-			{$current_node_id}
-			{$zones|count()}
-			
+			{if $zones}
+				{foreach $zones as $zone}
+					{include uri="newscenter/zone/zone.tpl" zone=$zone}
+				{/foreach}
+			{/if}
 		</div>
 
 		<nav class="navbar navbar-default navbar-fixed-bottom hidden" id="homescreen">
