@@ -203,7 +203,7 @@ PolicyOmitList[]=manual
 PolicyOmitList[]=oauth/authorize
 ShowAccessDeniedReason=disabled
 
-DesignLocationCache=enabled
+DesignLocationCache=disabled
 
 [FileSettings]
 TemporaryDir=/tmp/
@@ -333,7 +333,7 @@ NumberOfObjectsDefault=20
 # after the maximum cache time at the latest.
 #
 # "CacheTime = 0" turns off cacheing.
-CacheTime=1200
+CacheTime=0
 
 # The list of available RSS versions.
 AvailableVersionList[]
