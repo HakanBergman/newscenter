@@ -81,6 +81,7 @@
 
 			{* Include Zones *}
 			{def $zones = fetch('content', 'list', hash('node_id', $node.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone')))}
+			{$node.node_id}
 			{$zones|count()}
 			
 		</div>
