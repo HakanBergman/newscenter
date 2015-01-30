@@ -6,7 +6,11 @@
 		<div class="container">
 			<div class="{$#zone_width}">
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id))}
-				{$blocks.count()}
+				{if $blocks}
+					{foreach $blocks as $block}
+						{$block.name|wash()}
+					{/foreach}
+				{/if}
 			</div>
 		</div>
 	</section>
