@@ -1,5 +1,6 @@
 {* Zone Sizes *}
-hittar hit {$zone}
+{def $zone_width}
+
 {switch match=$zone.data_map.zone_size.content.0}
 
 	{case match=0}
