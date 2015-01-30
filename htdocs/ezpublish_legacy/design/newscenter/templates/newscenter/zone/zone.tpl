@@ -3,7 +3,9 @@
 
 	{* Print the Zone *}
 	<section id="section-{$zone.node_id}">
-		<div class="container {$#zone_width}">
-			This is a zone
+		<div class="container">
+			<div class="{$#zone_width}">
+				This is a zone
+			</div>
 		</div>
 	</section>
