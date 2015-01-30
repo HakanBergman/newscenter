@@ -25,6 +25,6 @@ SiteLanguageList[]=swe-SE
 TextTranslation=enabled
 
 [FileSettings]
-VarDir=var/www.maltimportoren.com     
+VarDir=var/www.maltimportoren.com
 
 */ ?>
