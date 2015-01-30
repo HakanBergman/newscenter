@@ -56,7 +56,7 @@
 
 		{* Global Variables *}
 		{def $zone_width = ""}
-		{set scope='global' $zone_width = "class"}
+		{set scope='global' $zone_width = ""}
 
 	</head>
 	
