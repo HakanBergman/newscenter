@@ -72,7 +72,7 @@
 		*}
 		
 		<div class="container-fluid website">
-			test 2
+
 			{* Include Headers *}
 			{include uri='design:page_header.tpl'}
 
