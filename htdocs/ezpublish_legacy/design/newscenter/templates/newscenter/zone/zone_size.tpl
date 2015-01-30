@@ -65,4 +65,4 @@
 
 {/switch}
 
-{$zone_width} zone bredd2 asd {#$zone_width} bredd 3 {$#zone_width} bredd4
+{$zone_width} zone bredd2 asd {$#zone_width} bredd4
