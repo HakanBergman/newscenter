@@ -3,12 +3,12 @@
 
 	{case match=0}
 		{* 100% *}
-		{def scope='global' $zone_width = "col-lg-12"}
+		{set scope='global' $zone_width = "col-lg-12"}
 	{/case}
 
 	{case match=1}
 		{* 91% *}
-		{def scope='global' $zone_width = "col-lg-11"}
+		{set scope='global' $zone_width = "col-lg-11"}
 	{/case}
 
 	{case match=2}

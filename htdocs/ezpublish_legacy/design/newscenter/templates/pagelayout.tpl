@@ -53,7 +53,10 @@
 		<script type="text/javascript" src="{"javascript/mmenu/src/js/jquery.mmenu.min.all.js"|ezdesign}"></script>
 		<script type="text/javascript" src="{"javascript/mmenu.js"|ezdesign}"></script>
 		<script type="text/javascript" src="{"javascript/orientation.js"|ezdesign}"></script>
-						
+
+		{* Global Variables *}
+		{def scope='global' $zone_width "width"}
+
 	</head>
 	
 	<body class="bg-grey">
