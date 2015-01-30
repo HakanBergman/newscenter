@@ -90,6 +90,8 @@
 			{/if}
 		</div>
 
+		{* No Used *}
+		{*
 		<nav class="navbar navbar-default navbar-fixed-bottom hidden" id="homescreen">
 			<div class="container">
 				<div class="thumbnail alert-warning">
@@ -97,6 +99,7 @@
 				</div>
 			</div>
 		</nav>
+		*}
 
 	</body>
 
