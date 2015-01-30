@@ -62,3 +62,4 @@
 	{/case}
 
 {/switch}
+{$#zone_width}
