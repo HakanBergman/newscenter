@@ -1,6 +1,4 @@
 {* Zone Sizes *}
-{def scope='global' $zone_width}
-
 {switch match=$zone.data_map.zone_size.content.0}
 
 	{case match=0}
