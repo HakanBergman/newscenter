@@ -1,6 +1,6 @@
 <nav id="topNav-one" class="grey">
 	<div class="row">
-		<div class="col-xs-3 col-md-3">Måndag 1 jan 2000</div>
+		<div class="col-xs-3 col-md-3">{currentdate()|datetime('custom', '%l %j %F %Y')}</div>
 		<div class="col-xs-8 col-md-9">
 			<ul>
 				<li><a href="#">Om oss</a></li>
