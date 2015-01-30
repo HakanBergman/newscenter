@@ -77,7 +77,7 @@
 			{include uri='design:page_header.tpl'}
 
 			{* Include Headers *}
-			{include uri='design:test.tpl'}
+			{include uri='design:page_footer.tpl'}
 
 			{* Include Zone *}
 			require_once("zone/zone-left.tpl");
