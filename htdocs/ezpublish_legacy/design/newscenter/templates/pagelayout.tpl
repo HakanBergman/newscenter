@@ -55,7 +55,8 @@
 		<script type="text/javascript" src="{"javascript/orientation.js"|ezdesign}"></script>
 
 		{* Global Variables *}
-		{def scope='global' $zone_width = "width"}
+		{def $zone_width = ""}
+		{set scope='global' $zone_width = "class"}
 
 	</head>
 	
