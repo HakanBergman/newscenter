@@ -34,6 +34,7 @@
 		<link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-dhc-logo.png">
 		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-dhc-logo.png">
 		
+		{* Include Stylesheets *}
 		{include uri='design:page_head_style.tpl'}
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -43,10 +44,11 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		
+		{* Enable JQuery and Bootstrap *}
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-		{* Enable MMENU *}
+		{* Enable JavaScript *}
 		<link rel="stylesheet" href="{"javascript/mmenu/src/css/jquery.mmenu.all.css"|ezdesign}">
 		<script type="text/javascript" src="{"javascript/mmenu/src/js/jquery.mmenu.min.all.js"|ezdesign}"></script>
 		<script type="text/javascript" src="{"javascript/mmenu.js"|ezdesign}"></script>
@@ -81,7 +83,7 @@
 
 			{* Include Zones *}
 			{def $zones = fetch('content', 'list', hash('node_id', $node.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone')))}
-			{$node.node_id}
+			{$node.node_id} {$node} asd
 			{$zones|count()}
 			
 		</div>
