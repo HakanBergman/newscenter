@@ -1,4 +1,4 @@
-﻿<nav id="topNav-one" class="grey">
+<nav id="topNav-one" class="grey">
 	<div class="row">
 		<div class="col-xs-3 col-md-3">Måndag 1 jan 2000</div>
 		<div class="col-xs-8 col-md-9">
