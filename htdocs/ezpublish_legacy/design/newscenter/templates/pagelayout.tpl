@@ -92,6 +92,7 @@
 					{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 				{/foreach}
 			{/if}
+
 		</div>
 
 		{* No Used *}

@@ -8,7 +8,11 @@
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id))}
 				{if $blocks}
 					{foreach $blocks as $block}
-						{$block.name|wash()}
+						{switch match=$block.class_identifier}
+							{case}
+								{include uri="design:newscenter/products/product_list.tpl"}
+							{/case}
+						{/switch}
 					{/foreach}
 				{/if}
 			</div>
