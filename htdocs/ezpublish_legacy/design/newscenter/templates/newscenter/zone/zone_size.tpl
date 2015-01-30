@@ -62,4 +62,4 @@
 	{/case}
 
 {/switch}
-{$#zone_width}
+{$#zone_width} asdsadsa
