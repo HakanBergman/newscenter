@@ -12,10 +12,16 @@
   {$block.data_map|attribute(show, 1)}
   {$block.data_map.product_categories.content.relation_list.0|attribute(show, 1)}
   {foreach $block.data_map.product_categories.content.relation_list as $category}
-    {$category.node_id}
-    <div class="{$class} widget product-number-{$number}">
-      <h4>{$category.name|wash()}</h4>
-    </div>
+    {if $category}
+      {def $category_list = fetch('content', 'list', hash('parent_node_id', $category.node_id))}
+      {$category_list|attribute(show, 1)} asd
+        {foreach $category_list as $list}
+          <div class="{$class} widget product-number-{$number}">
+            <h4>{$list.parent_node.name|wash()}</h4>
+          </div>  
+        {/if}
+    {undef $category_list}
+  {/if}    
   {/foreach}
   {for 1 to $number_of_products as $number}
   <div class="{$class} widget product-number-{$number}">
