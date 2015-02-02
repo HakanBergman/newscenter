@@ -21,17 +21,27 @@
       {* Print the name of the Category *}
       <h4>{$main_node.name|wash()}</h4>
         {* Loop through the list in the category *}
-        {foreach $category_list as $list}
-          <div class="{$class} widget product-number-{$number}">            
+        {foreach $category_list as $list}                     
               {* Fetch all products in the list *}
               {def $products = fetch('content', 'list', hash('parent_node_id', $list.node_id))}
                 {if $products}
                    {foreach $products as $product}
-                      <h5>{$product.name|wash()}</h5>
+                    <div class="{$class} widget product-number-{$number}"> 
+                      <div class="media">
+                        <a href="#" alt="" title=""><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="Cēsu Pilsener"></a>
+                          <div class="media-body">
+                            <h4 class="media-heading">
+                                 <small>
+                                   <a href="#" alt="" title="">Cēsu Pilsener</a>
+                                </small>
+                            </h4>
+                            text
+                          </div>
+                        </div>
+                     </div>
                    {/foreach}
                 {/if}
-              {undef $products}
-          </div>  
+              {undef $products}  
         {/if}
     {undef $category_list $main_node}
   {/if}    
