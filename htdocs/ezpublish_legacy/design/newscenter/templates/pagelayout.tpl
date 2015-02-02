@@ -85,6 +85,10 @@
 			{* Include Headers *}
 			{include uri='design:page_header.tpl'}
 
+			<div class="content-fluid">
+				ASD
+			</div>
+
 			{* Include Zones *}
 			{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone')))}
 			{if $zones}
