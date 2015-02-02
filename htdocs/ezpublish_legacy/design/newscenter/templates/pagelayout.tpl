@@ -100,20 +100,12 @@
 
 			<div class="content-fluid">
 				<ul class="pgwSlideshow">
-					<li><img src="san-francisco.jpg" alt="San Francisco, USA" data-description="Golden Gate Bridge"></li>
-					<li><img src="rio.jpg" alt="Rio de Janeiro, Brazil"></li>
-					<li><img src="london_mini.jpg" alt="" data-large-src="london.jpg"></li>
-					<li><img src="new-york.jpg" alt=""></li>
-					<li><img src="new-delhi.jpg" alt=""></li>
-					<li><img src="paris.jpg" alt=""></li>
-					<li><img src="sydney.jpg" alt=""></li>
-					<li><img src="tokyo.jpg" alt=""></li>
-					<li><img src="honk-kong.jpg" alt=""></li>
-					<li><img src="dakar.jpg" alt=""></li>
-					<li><img src="toronto.jpg" alt=""></li>
+					<li><img src="http://www.maltimportoren.se/wp-content/uploads/cid_image003_jpg@01CF49A7.jpg" data-description="Golden Gate Bridge"></li>
+					<li><img src="http://www.maltimportoren.se/wp-content/uploads/Babicka-front.png" alt="Rio de Janeiro, Brazil"></li>
+					<li><img src="http://s1c.pagawatic.com/img/pgwjs/slideshow/london.jpg" alt="" data-large-src="http://s1c.pagawatic.com/img/pgwjs/slideshow/london.jpg"></li>
 					<li>
 						<a href="http://en.wikipedia.org/wiki/Monaco" target="_blank">
-							<img src="monaco.jpg" alt="Monaco">
+							<img src="http://s1c.pagawatic.com/img/pgwjs/slideshow/monaco.jpg" alt="Monaco">
 						</a>
 					</li>
 				</ul>
