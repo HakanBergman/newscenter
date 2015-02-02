@@ -9,6 +9,7 @@ CSSFileList[]=responsive.css
 CSSFileList[]=font-size.css
 CSSFileList[]=top-navigation.css
 CSSFileList[]=bg-colors.css
+CSSFileList[]=link-colors.css
 CSSFileList[]=borders.css
 CSSFileList[]=orientation.css
 CSSFileList[]=homescreen.css

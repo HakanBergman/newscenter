@@ -20,7 +20,7 @@
       {* Fetch Main Node for this Category *}
       {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id, 'sort_by', array('name', true()) ))}
       {* Print the name of the Category *}
-	  <div class="col-lg-12 {$main_node.data_map.color.data_text}">
+	  <div class="col-lg-12 {$main_node.data_map.color.data_text} link-color-blue">
       <h3 class="no-margin widget-padding-left widget-padding-top">{$main_node.name|wash()}</h3>      
         {* Loop through the list in the category *}
 		{def $counter = 0}
