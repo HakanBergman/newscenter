@@ -13,3 +13,6 @@ a, a:visited, a:active { text-decoration: none; }
 
 /* Input Rules */
 .input-group-addon { text-align: left; }
+
+/* Margin Rules */
+.no-margin { margin: 0; }

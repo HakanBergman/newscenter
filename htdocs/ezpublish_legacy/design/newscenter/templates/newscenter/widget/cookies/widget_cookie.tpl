@@ -1,5 +1,5 @@
 <div class="container-fluid">
-	<div class="cookies thumbnail alert-warning">
+	<div class="cookies thumbnail alert-warning no-margin">
 		<p>Den här sidan använder cookies.</p>
 		<small>Vi använder cookies av tekniska skäl och för att underlätta besökarens aktiviteter denna webbplats.</small>
 		<hr />				
