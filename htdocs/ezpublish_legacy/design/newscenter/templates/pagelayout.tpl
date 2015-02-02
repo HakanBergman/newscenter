@@ -94,7 +94,7 @@
 			<script type="text/javascript">
 			$(document).ready(function() {
 				$('.pgwSlider').pgwSlider(
-
+					displayList : false
 				);
 			});
 			</script>
