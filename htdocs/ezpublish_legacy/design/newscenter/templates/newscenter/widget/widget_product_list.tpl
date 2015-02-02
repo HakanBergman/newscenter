@@ -27,7 +27,6 @@
               {def $products = fetch('content', 'list', hash('parent_node_id', $list.node_id, 'sort_by', array('name', true()) ))}
                 {if $products}
                    {foreach $products as $product}
-					{$product.name}
                     <div class="{$class} {$main_node.data_map.color.data_text} container-padding-left container-padding-right widget-padding-top"> 
                       <div class="media">
                         <a href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}"><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="{$product.name|wash()}"></a>
