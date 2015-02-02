@@ -101,7 +101,7 @@
 			<div class="content-fluid">
 				<ul class="pgwSlider">
 					<li><img src="http://s1c.pagawatic.com/img/pgwjs/slider/paris.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
-					<li><img src="http://s1c.pagawatic.com/img/pgwjs/slider/montreal.jpg" alt="Montréal, QC, Canada" data-large-src="montreal.jpg"></li>
+					<li><img src="http://s1c.pagawatic.com/img/pgwjs/slider/montreal.jpg" alt="Montréal, QC, Canada" data-large-src="http://s1c.pagawatic.com/img/pgwjs/slider/montreal.jpg"></li>
 					<li><img src="http://s1c.pagawatic.com/img/pgwjs/slider/shanghai.jpg"><span>Shanghai, China</span></li>
 					<li><a href="http://www.nyc.gov" target="_blank"><img src="http://s1c.pagawatic.com/img/pgwjs/slider/new-york.jpg"><span>New York, NY, USA</span></a></li>
 				</ul>
