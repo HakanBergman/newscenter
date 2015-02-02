@@ -10,7 +10,6 @@
       {/case}
   {/switch}
 
-  {$block.data_map|attribute(show, 1)}
   <div class="row bg-white widget widget-product">
   {* Loop through the categories *}
   {foreach $block.data_map.product_categories.content.relation_list as $category}
@@ -22,6 +21,7 @@
       {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id))}
       {* Print the name of the Category *}
       <h3>{$main_node.name|wash()}</h3>
+      <div class="bg-pink">
         {* Loop through the list in the category *}
         {foreach $category_list as $list}                     
               {* Fetch all products in the list *}
@@ -40,9 +40,10 @@
                    {/foreach}
                 {/if}
               {undef $products}  
-        {/if}
+        {/foreach}
+    </div>
     {undef $category_list $main_node}
-  {/if}    
+    {/if}    
   {/foreach}
   </div>
 
