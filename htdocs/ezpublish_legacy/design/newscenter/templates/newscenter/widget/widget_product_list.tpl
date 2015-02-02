@@ -22,7 +22,7 @@
       {* Print the name of the Category *}
       <h3 class="no-margin widget-padding-left widget-padding-top">{$main_node.name|wash()}</h3>      
         {* Loop through the list in the category *}
-		{def $counter = 1}
+		{def $counter = 0}
         {foreach $category_list as $list}  				  		                     
               {* Fetch all products in the list *}
               {def $products = fetch('content', 'list', hash('parent_node_id', $list.node_id, 'sort_by', array('name', true()) ))}
@@ -39,8 +39,8 @@
                      </div>
 					{set $counter = $counter|inc(1)}
 					{if $counter|eq(8)}
-						<div style="clear: both;">&nbsp;</div>
-						{set $counter = 1}
+						<div class="clearfix">&nbsp;</div>
+						{set $counter = 0}
 					{/if}
                     {/foreach}
                 {/if}
