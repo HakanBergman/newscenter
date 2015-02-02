@@ -1,4 +1,4 @@
-﻿<div class="container-fluid">
+<div class="container-fluid">
 	<div class="cookies thumbnail alert-warning">
 		<p>Den här sidan använder cookies.</p>
 		<small>Vi använder cookies av tekniska skäl och för att underlätta besökarens aktiviteter denna webbplats.</small>
