@@ -9,6 +9,7 @@
 				{if $blocks}
 					{foreach $blocks as $block}
 						{include uri="concat('design:newscenter/widget/', $block.class_identifier, '.tpl')"}
+						{concat('design:newscenter/widget/', $block.class_identifier, '.tpl')}
 					{/foreach}
 				{/if}
 			</div>
