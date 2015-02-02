@@ -31,7 +31,7 @@
                    {foreach $products as $product}
                     <div class="{$class} container-padding-left container-padding-right widget-padding-top"> 
 					  <article>
-						<h1>{$product.name|wash()}</h1>
+						<h4>{$product.name|wash()}</h4>
 						<div class="media">
 							<a class="{$main_node.data_map.link_color.data_text}" href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}"><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="{$product.name|wash()}"></a>
 							<div class="media-body">
