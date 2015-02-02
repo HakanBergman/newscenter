@@ -16,15 +16,15 @@
     {* Make sure a category exists *}
     {if $category}    
       {* Fetch Category List *}
-      {def $category_list = fetch('content', 'list', hash('parent_node_id', $category.node_id))}              
+      {def $category_list = fetch('content', 'list', hash('parent_node_id', $category.node_id, 'sort_by', array('name', false()) ))}              
       {* Fetch Main Node for this Category *}
-      {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id))}
+      {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id, 'sort_by', array('name', false()) ))}
       {* Print the name of the Category *}
       <h3 class="no-margin widget-padding-left widget-padding-top">{$main_node.name|wash()}</h3>      
         {* Loop through the list in the category *}
         {foreach $category_list as $list}                     
               {* Fetch all products in the list *}
-              {def $products = fetch('content', 'list', hash('parent_node_id', $list.node_id))}
+              {def $products = fetch('content', 'list', hash('parent_node_id', $list.node_id, 'sort_by', array('name', false()) ))}
                 {if $products}
                    {foreach $products as $product}
                     <div class="{$class} {$main_node.data_map.color.data_text} container-padding-left container-padding-right widget-padding-top product-number-{$number}"> 
