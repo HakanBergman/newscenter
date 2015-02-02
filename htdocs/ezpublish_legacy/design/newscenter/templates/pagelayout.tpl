@@ -80,7 +80,7 @@
 		<div class="container-fluid website">
 
 			{* Include Headers *}
-			{include uri='design:newscenter/widget/cookies/widget_cookie.tpl'}
+			{*include uri='design:newscenter/widget/cookies/widget_cookie.tpl'*}
 
 			{* Include Headers *}
 			{include uri='design:page_header.tpl'}
