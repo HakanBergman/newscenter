@@ -26,9 +26,8 @@
               {* Fetch all products in the list *}
               {def $products = fetch('content', 'list', hash('parent_node_id', $list.node_id))}
                 {if $products}
-                  <div class="bg-pink"> asd
                    {foreach $products as $product}
-                    <div class="{$class} widget product-number-{$number}"> 
+                    <div class="{$class} bg-pink widget product-number-{$number}"> 
                       <div class="media">
                         <a href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}"><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="{$product.name|wash()}"></a>
                           <div class="media-body">
@@ -38,7 +37,6 @@
                         </div>
                      </div>
                     {/foreach}
-                  </div>
                 {/if}
               {undef $products}  
         {/foreach}    
