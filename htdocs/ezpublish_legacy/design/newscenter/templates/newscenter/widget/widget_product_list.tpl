@@ -20,6 +20,7 @@
       {* Fetch Main Node for this Category *}
       {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id))}
       {* Print the name of the Category *}
+      {$main_node.data_map|attribute(show, 1)}
       <h3>{$main_node.name|wash()}</h3>      
         {* Loop through the list in the category *}
         {foreach $category_list as $list}                     
