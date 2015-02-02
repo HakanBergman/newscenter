@@ -11,15 +11,16 @@
   {/switch}
   {$block.data_map|attribute(show, 1)}
   {foreach $block.data_map.product_categories.content.relation_list as $category}
-    {if $category}
-      {def $category_list = fetch('content', 'list', hash('parent_node_id', $category.node_id))}
+    {if $category}    
+      {def $category_list = fetch('content', 'list', hash('parent_node_id', $category.node_id))}              
+      {def $main_node = fetch('content', 'node', hash('parent_node_id', $category.node_id))}
+      {$main_node.name|wash()}
         {foreach $category_list as $list}
-          {$list.object|attribute(show, 1)}
           <div class="{$class} widget product-number-{$number}">
             <h4>{$list.object.parent_node.name|wash()} h4</h4>
           </div>  
         {/if}
-    {undef $category_list}
+    {undef $category_list $main_node}
   {/if}    
   {/foreach}
   {for 1 to $number_of_products as $number}
