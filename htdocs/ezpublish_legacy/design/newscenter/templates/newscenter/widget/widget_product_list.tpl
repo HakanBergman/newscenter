@@ -1,7 +1,7 @@
 <div class="row bg-white widget-product">
   {def $number_of_products = $block.data_map.shown_products_per_row.content.0}
   {set $number_of_products = $block.data_map.shown_products_per_row.class_content.options.$number_of_products.name}
-  {$number_of_products}
+  {$number_of_products} asdasd
   {switch match = $number_of_products}
   {case match=4}
   {def $class = "col-lg-3"}
