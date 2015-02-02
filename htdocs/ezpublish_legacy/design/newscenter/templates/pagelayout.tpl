@@ -36,6 +36,8 @@
 		
 		{* Include Stylesheets *}
 		{include uri='design:page_head_style.tpl'}
+		<link rel="stylesheet" type="text/css" href="http://s1c.pagawatic.com/css/pgwmenu-pgwjs-rainbow-v226.css"/>
+		<link rel="stylesheet" type="text/css" href="http://s1c.pagawatic.com/css/pgwslider-v226.css"/>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
