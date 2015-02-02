@@ -92,20 +92,30 @@
 
 			{literal}
 			<script type="text/javascript">
-			$(document).ready(function() {
-				$('.pgwSlider').pgwSlider(
-					displayList: false
-				);
-			});
+				$(document).ready(function() {
+					$('.pgwSlideshow').pgwSlideshow();
+				});
 			</script>
 			{/literal}
 
 			<div class="content-fluid">
-				<ul class="pgwSlider">
-					<li><img src="http://s1c.pagawatic.com/img/pgwjs/slider/paris.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
-					<li><img src="http://s1c.pagawatic.com/img/pgwjs/slider/montreal.jpg" alt="Montréal, QC, Canada" data-large-src="http://s1c.pagawatic.com/img/pgwjs/slider/montreal.jpg"></li>
-					<li><img src="http://s1c.pagawatic.com/img/pgwjs/slider/shanghai.jpg"><span>Shanghai, China</span></li>
-					<li><a href="http://www.nyc.gov" target="_blank"><img src="http://s1c.pagawatic.com/img/pgwjs/slider/new-york.jpg"><span>New York, NY, USA</span></a></li>
+				<ul class="pgwSlideshow">
+					<li><img src="san-francisco.jpg" alt="San Francisco, USA" data-description="Golden Gate Bridge"></li>
+					<li><img src="rio.jpg" alt="Rio de Janeiro, Brazil"></li>
+					<li><img src="london_mini.jpg" alt="" data-large-src="london.jpg"></li>
+					<li><img src="new-york.jpg" alt=""></li>
+					<li><img src="new-delhi.jpg" alt=""></li>
+					<li><img src="paris.jpg" alt=""></li>
+					<li><img src="sydney.jpg" alt=""></li>
+					<li><img src="tokyo.jpg" alt=""></li>
+					<li><img src="honk-kong.jpg" alt=""></li>
+					<li><img src="dakar.jpg" alt=""></li>
+					<li><img src="toronto.jpg" alt=""></li>
+					<li>
+						<a href="http://en.wikipedia.org/wiki/Monaco" target="_blank">
+							<img src="monaco.jpg" alt="Monaco">
+						</a>
+					</li>
 				</ul>
 			</div>
 
