@@ -2,15 +2,18 @@
   {def $number_of_products = $block.data_map.shown_products_per_row.content.0}
   {set $number_of_products = $block.data_map.shown_products_per_row.class_content.options.$number_of_products.name}
   {switch match = $number_of_products}
-    {case match=4}
-        {def $class = "col-lg-3"}
-    {/case}
-    {case match=6}
-        {def $class = "col-lg-2"}
-    {/case}
+  {case match=4}
+  {def $class = "col-lg-3"}
+  {/case}
+  {case match=6}
+  {def $class = "col-lg-2"}
+  {/case}
   {/switch}
   {$block.data_map|attribute(show, 1)}
   {$block.data_map.product_categories.content.relation_list.0|attribute(show, 1)}
+  {foreach $block.data_map.product_categories.content.relation_list as $categories}
+    {$categories|attribute(show, 1)}
+  {/foreach}
   {for 1 to $number_of_products as $number}
   <div class="{$class} widget product-number-{$number}">
         <div class="media">
