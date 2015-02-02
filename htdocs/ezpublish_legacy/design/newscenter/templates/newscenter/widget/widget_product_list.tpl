@@ -21,7 +21,7 @@
       {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id, 'sort_by', array('name', true()) ))}
       {* Print the name of the Category *}
 	  <div class="col-lg-12 {$main_node.data_map.background_color.data_text}">
-      <h3 class="no-margin widget-padding-left widget-padding-top">{$main_node.name|wash()}</h3>      
+      <h2 class="no-margin widget-padding-left widget-padding-top">{$main_node.name|wash()}</h2>      
         {* Loop through the list in the category *}
 		{def $counter = 0}
         {foreach $category_list as $list}  				  		                     
@@ -31,7 +31,7 @@
                    {foreach $products as $product}
                     <div class="{$class} container-padding-left container-padding-right widget-padding-top"> 
 					  <article>
-						<h4>{$product.name|wash()}</h4>
+						<h3>{$product.name|wash()}</h3>
 						<div class="media">
 							<a class="{$main_node.data_map.link_color.data_text}" href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}"><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="{$product.name|wash()}"></a>
 							<div class="media-body">
