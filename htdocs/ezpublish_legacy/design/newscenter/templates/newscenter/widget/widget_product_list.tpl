@@ -32,13 +32,13 @@
                     <div class="{$class} container-padding-left container-padding-right widget-padding-top"> 
 					  <article>
 						<h3><a class="{$main_node.data_map.link_color.data_text}" href="{$product.name|ezurl('no', 'full')}" title="{$product.name} {$product.data_map.extra_attribute_one.data_text}">{$product.name|wash()}</a></h3>
-						<div class="clearfix">
-							<span class="pull-left">{$product.data_map.extra_attribute_one.data_text}</span>
-							<span class="pull-right">{$product.data_map.extra_attribute_two.data_text}</span>
-						</div>
 						<div class="media">
 							<a class="{$main_node.data_map.link_color.data_text}" href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}"><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="{$product.name|wash()}"></a>
-							<div class="media-body">								
+							<div class="media-body">	
+								<div class="clearfix">
+									<span class="pull-left">{$product.data_map.extra_attribute_one.data_text}</span>
+									<span class="pull-right">{$product.data_map.extra_attribute_two.data_text}</span>
+								</div>														
 								{attribute_view_gui attribute=$product.data_map.short_description}
 							</div>
 						</div>
