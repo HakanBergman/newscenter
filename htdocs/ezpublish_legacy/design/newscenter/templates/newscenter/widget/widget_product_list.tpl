@@ -30,13 +30,16 @@
                 {if $products}
                    {foreach $products as $product}
                     <div class="{$class} container-padding-left container-padding-right widget-padding-top"> 
-                      <div class="media">
-                        <a class="{$main_node.data_map.link_color.data_text}" href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}"><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="{$product.name|wash()}"></a>
-                          <div class="media-body">
-                            <h4 class="media-heading"><small><a class="{$main_node.data_map.link_color.data_text}" href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}">{$product.name|wash()}</a></small></h4>
-                            {attribute_view_gui attribute=$product.data_map.short_description}
-                          </div>
-                        </div>
+					  <article>
+						<h1>PRODUKTNAMN</h1>
+						<div class="media">
+							<a class="{$main_node.data_map.link_color.data_text}" href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}"><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="{$product.name|wash()}"></a>
+							<div class="media-body">
+								<h4 class="media-heading"><small><a class="{$main_node.data_map.link_color.data_text}" href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}">{$product.name|wash()}</a></small></h4>
+								{attribute_view_gui attribute=$product.data_map.short_description}
+							</div>
+						</div>
+					  </article>
                      </div>
 					{set $counter = $counter|inc(1)}
 					{if $counter|eq(8)}
