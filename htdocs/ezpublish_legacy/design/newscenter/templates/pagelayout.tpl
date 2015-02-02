@@ -35,9 +35,9 @@
 		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-dhc-logo.png">
 		
 		{* Include Stylesheets *}
-		{include uri='design:page_head_style.tpl'}
 		<link rel="stylesheet" type="text/css" href="http://s1c.pagawatic.com/css/pgwmenu-pgwjs-rainbow-v226.css"/>
 		<link rel="stylesheet" type="text/css" href="http://s1c.pagawatic.com/css/pgwslider-v226.css"/>
+		{include uri='design:page_head_style.tpl'}
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
