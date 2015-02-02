@@ -2,7 +2,7 @@
 {include uri="design:newscenter/zone/zone_size.tpl" zone=$zone}
 
 	{* Print the Zone *}
-	<section id="section-{$zone.node_id}">
+	<section id="section-{$zone.node_id} container-padding-left container-padding-right">
 		<div class="container">
 			<div class="{$#zone_width}">
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id))}
