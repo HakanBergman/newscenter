@@ -11,17 +11,19 @@
   {/switch}
   {$block.data_map|attribute(show, 1)}
   {$block.data_map.product_categories.content.relation_list.0|attribute(show, 1)}
-  {foreach $block.data_map.product_categories.content.relation_list as $categories}
-    {$categories|attribute(show, 1)}
+  {foreach $block.data_map.product_categories.content.relation_list as $category}
+    <div class="{$class} widget product-number-{$number}">
+      <h4>{$category.name|wash()}</h4>
+    </div>
   {/foreach}
   {for 1 to $number_of_products as $number}
   <div class="{$class} widget product-number-{$number}">
         <div class="media">
-          <img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="Cēsu Pilsener">
+          <a href="#" alt="" title=""><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="Cēsu Pilsener"></a>
             <div class="media-body">
               <h4 class="media-heading">
                    <small>
-                     <a href="#" alt="" title="">Cēsu  Pilsener</a>
+                     <a href="#" alt="" title="">Cēsu Pilsener</a>
                    </small>
               </h4>
               text
