@@ -14,10 +14,11 @@
     {if $category}    
       {def $category_list = fetch('content', 'list', hash('parent_node_id', $category.node_id))}              
       {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id))}
-      {$main_node.name|wash()}
         {foreach $category_list as $list}
           <div class="{$class} widget product-number-{$number}">
-            <h4>{$list.object.parent_node.name|wash()} h4</h4>
+            <h4>{$main_node.name|wash()}</h4>
+              {def $products = fetch('content', 'list', hash('parent_node_id', $list.node_id))}
+              {$products|count()}
           </div>  
         {/if}
     {undef $category_list $main_node}
