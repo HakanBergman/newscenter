@@ -1,7 +1,7 @@
-<div class="row bg-white widget widget-product">
+
   {def $number_of_products = $block.data_map.shown_products_per_row.content.0}
   {set $number_of_products = $block.data_map.shown_products_per_row.class_content.options.$number_of_products.name}
- {switch match = $number_of_products}
+  {switch match = $number_of_products}
        {case match=4}
           {def $class = "col-lg-3"}
        {/case}
@@ -10,6 +10,8 @@
       {/case}
   {/switch}
 
+  {$block.data_map|attribute(show, 1)}
+  <div class="row bg-white widget widget-product">
   {* Loop through the categories *}
   {foreach $block.data_map.product_categories.content.relation_list as $category}
     {* Make sure a category exists *}
@@ -42,6 +44,6 @@
     {undef $category_list $main_node}
   {/if}    
   {/foreach}
-  
+  </div>
+
   {undef $number_of_products $class}
-</div>
