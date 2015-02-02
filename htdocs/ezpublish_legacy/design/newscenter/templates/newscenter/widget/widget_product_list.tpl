@@ -14,7 +14,11 @@
         <div class="media">
           <img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="Cēsu Pilsener">
             <div class="media-body">
-              <h4 class="media-heading"><small>Cēsu Pilsener</small></h4>
+              <h4 class="media-heading">
+                   <small>
+                     <a href="#" alt="" title="">Cēsu  Pilsener</a>
+                   </small>
+              </h4>
               text
             </div>
           </div>
