@@ -1,5 +1,6 @@
 <div class="row bg-white widget-product">
   {$block|attribute(show, 1)}
+  {$block.data_map.shown_products_per_row.content.0}
   <div class="col-xs-5">
     <div class="media">
       <img class="img-responsive thumbnail" src="http://www.maltimportoren.se/wp-content/uploads/Pilsener.png" alt="Cēsu Pilsener">
