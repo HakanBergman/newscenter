@@ -12,6 +12,7 @@
   {$block.data_map|attribute(show, 1)}
   {$block.data_map.product_categories.content.relation_list.0|attribute(show, 1)}
   {foreach $block.data_map.product_categories.content.relation_list as $category}
+    {$category.node_id}
     <div class="{$class} widget product-number-{$number}">
       <h4>{$category.name|wash()}</h4>
     </div>
