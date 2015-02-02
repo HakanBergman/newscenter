@@ -16,4 +16,7 @@ a, a:visited, a:active { text-decoration: none; }
 
 /* Margin Rules */
 .no-margin { margin: 0; }
-section .widget { margin-top: 1em; }
+section .widget-margin-top { margin-top: 1em; }
+
+/* Padding Rules */
+section .widget-padding-top { padding-top: 1em; }
