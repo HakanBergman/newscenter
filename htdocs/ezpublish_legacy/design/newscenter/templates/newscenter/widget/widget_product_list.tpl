@@ -14,7 +14,7 @@
   {foreach $block.data_map.product_categories.content.relation_list as $category}
     {if $category}
       {def $category_list = fetch('content', 'list', hash('parent_node_id', $category.node_id))}
-      {$category_list|attribute(show, 1)} asd
+      {$category|attribute(show, 1)}
         {foreach $category_list as $list}
           <div class="{$class} widget product-number-{$number}">
             <h4>{$list.parent_node.name|wash()}</h4>
