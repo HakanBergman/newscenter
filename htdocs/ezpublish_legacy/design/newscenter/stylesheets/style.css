@@ -16,4 +16,4 @@ a, a:visited, a:active { text-decoration: none; }
 
 /* Margin Rules */
 .no-margin { margin: 0; }
-.widget { margin-top: 1em; }
+section .widget { margin-top: 1em; }
