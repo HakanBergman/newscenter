@@ -53,6 +53,9 @@
 		<script type="text/javascript" src="{"javascript/mmenu/src/js/jquery.mmenu.min.all.js"|ezdesign}"></script>
 		<script type="text/javascript" src="{"javascript/mmenu.js"|ezdesign}"></script>
 		<script type="text/javascript" src="{"javascript/orientation.js"|ezdesign}"></script>
+		<script type="text/javascript" src="http://s1c.pagawatic.com/js/jquery-pgwjs-pgwmenu-rainbow-v226.js"></script>
+		<script type="text/javascript" src="http://s1c.pagawatic.com/js/pgwslider-v226.js"></script>
+		<script src="http://s1c.pagawatic.com/js/ie_html5-v226.js"></script>
 
 		{* Global Variables *}
 		{def $zone_width = ""}
@@ -85,13 +88,32 @@
 			{* Include Headers *}
 			{include uri='design:page_header.tpl'}
 
+			{literal}
+			<script type="text/javascript">
+			$(document).ready(function() {
+				$('.pgwSlider').pgwSlider();
+			});
+			</script>
+			{/literal}
+
 			<div class="content-fluid">
-				ASD
+				<ul class="pgwSlider">
+					<li><img src="paris.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
+					<li><img src="montreal_mini.jpg" alt="Montréal, QC, Canada" data-large-src="montreal.jpg"></li>
+					<li>
+						<img src="shanghai.jpg">
+						<span>Shanghai, China</span>
+					</li>
+					<li>
+						<a href="http://www.nyc.gov" target="_blank">
+							<img src="new-york.jpg">
+						<span>New York, NY, USA</span>
+						</a>
+					</li>
+				</ul>
 			</div>
 
-			<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on top
-</button>
+
 
 			{* Include Zones *}
 			{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone')))}
