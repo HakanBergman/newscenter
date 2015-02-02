@@ -9,6 +9,7 @@
         {def $class = "col-lg-2"}
      {/case}
   {/switch}
+  {$block.data_map|attribute(show, 1)}
   {for 1 to $number_of_products as $number}
     <div class="{$class} widget product-number-{$number}">
         <div class="media">
