@@ -41,7 +41,7 @@
                 {/if}
               {undef $products}  
 			  {set $counter = $counter|inc(1)}
-			  {if $counter|eq(8)}<div style="clear: both;">&nbsp;</div>{/if}
+			  {if $counter|eq(8)}<div style="clear: both;">&nbsp; asdasd asdasdasd</div>{/if}
         {/foreach}    
 		{undef $counter}
     {undef $category_list $main_node}
