@@ -16,7 +16,7 @@
         {foreach $category_list as $list}
           {$list|attribute(show, 1)}
           <div class="{$class} widget product-number-{$number}">
-            <h4>{$list.parent_node.name|wash()}</h4>
+            <h4>{$list.object.parent_node.name|wash()} h4</h4>
           </div>  
         {/if}
     {undef $category_list}
