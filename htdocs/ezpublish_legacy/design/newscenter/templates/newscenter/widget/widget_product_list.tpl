@@ -49,6 +49,7 @@
 		{undef $counter}
     {undef $category_list $main_node}
     {/if}    
+	<div class="clearfix">&nbsp;</div>
   {/foreach}
   </div>
 
