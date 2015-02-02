@@ -10,12 +10,11 @@
   {/case}
   {/switch}
   {$block.data_map|attribute(show, 1)}
-  {$block.data_map.product_categories.content.relation_list.0|attribute(show, 1)}
   {foreach $block.data_map.product_categories.content.relation_list as $category}
     {if $category}
       {def $category_list = fetch('content', 'list', hash('parent_node_id', $category.node_id))}
-      {$category|attribute(show, 1)}
         {foreach $category_list as $list}
+          {$list|attribute(show, 1)}
           <div class="{$class} widget product-number-{$number}">
             <h4>{$list.parent_node.name|wash()}</h4>
           </div>  
