@@ -8,11 +8,8 @@
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id))}
 				{if $blocks}
 					{foreach $blocks as $block}
-						{switch match=$block.class_identifier}
-							{case}
-								{include uri="design:newscenter/widget/products/product_list.tpl"}
-							{/case}
-						{/switch}
+						{include uri="concat('design:newscenter/widget/products/', $block.class_identifier, '.tpl')"}
+						{concat('design:newscenter/widget/products/', $block.class_identifier, '.tpl')}
 					{/foreach}
 				{/if}
 			</div>
