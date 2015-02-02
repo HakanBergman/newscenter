@@ -34,7 +34,7 @@
 						<h3>{$product.name|wash()}</h3>
 						<div class="clearfix">
 							<span>{$product.data_map.extra_attribute_one.data_text}</span>
-							<span class="media-right">{$product.data_map.extra_attribute_two.data_text}</span>
+							<span class="pull-right">{$product.data_map.extra_attribute_two.data_text}</span>
 						</div>
 						<div class="media">
 							<a class="{$main_node.data_map.link_color.data_text}" href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}"><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="{$product.name|wash()}"></a>
