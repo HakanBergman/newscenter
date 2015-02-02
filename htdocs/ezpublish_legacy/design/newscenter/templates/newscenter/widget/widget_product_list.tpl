@@ -19,7 +19,7 @@
       {* Fetch Main Node for this Category *}
       {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id))}
       {* Print the name of the Category *}
-      <h4>{$main_node.name|wash()}</h4>
+      <h3>{$main_node.name|wash()}</h3>
         {* Loop through the list in the category *}
         {foreach $category_list as $list}                     
               {* Fetch all products in the list *}
@@ -30,7 +30,7 @@
                       <div class="media">
                         <a href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}"><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="{$product.name|wash()}"></a>
                           <div class="media-body">
-                            <h5 class="media-heading"><small><a href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}">{$product.name|wash()}</a></small></h5>
+                            <h4 class="media-heading"><small><a href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}">{$product.name|wash()}</a></small></h4>
                             text
                           </div>
                         </div>
