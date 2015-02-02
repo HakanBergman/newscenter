@@ -25,7 +25,11 @@
           <div class="{$class} widget product-number-{$number}">            
               {* Fetch all products in the list *}
               {def $products = fetch('content', 'list', hash('parent_node_id', $list.node_id))}
-                {$products|count()}
+                {if $products}
+                   {foreach $products as $product}
+                      <h5>{$product.name|wash()}</h5>
+                   {/foreach}
+                {/if}
               {undef $products}
           </div>  
         {/if}
