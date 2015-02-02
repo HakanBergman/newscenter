@@ -1,5 +1,6 @@
-﻿    .link-color-blue, .link-color-blue:active, .link-color-blue:visited, .link-color-blue:hover { color: #284673; }
-    .link-color-pink, .link-color-pink:active, .link-color-pink:visited, .link-color-pink:hover { color: #f07584; }
-    .link-color-yellow, .link-color-yellow:active, .link-color-yellow:visited, .link-color-yellow:hover { color: #fff314; }
+﻿    .link-color-blue, .link-color-blue:active, .link-color-blue:visited, .link-color-blue:hover { color: #284673; text-decoration: none; }
+    .link-color-pink, .link-color-pink:active, .link-color-pink:visited, .link-color-pink:hover { color: #f07584; text-decoration: none; }
+    .link-color-yellow, .link-color-yellow:active, .link-color-yellow:visited, .link-color-yellow:hover { color: #fff314; text-decoration: none; }
+    .link-color-black, .link-color-black:active, .link-color-black:visited, .link-color-black:hover { color: #000; text-decoration: none; }
     
     
