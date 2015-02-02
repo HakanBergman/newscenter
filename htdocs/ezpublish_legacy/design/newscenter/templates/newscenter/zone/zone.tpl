@@ -8,8 +8,7 @@
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id))}
 				{if $blocks}
 					{foreach $blocks as $block}
-						{include uri="concat('design:newscenter/widget/products/', $block.class_identifier, '.tpl')"}
-						{concat('design:newscenter/widget/products/', $block.class_identifier, '.tpl')}
+						{include uri="concat('design:newscenter/widget/', $block.class_identifier, '.tpl')"}
 					{/foreach}
 				{/if}
 			</div>
