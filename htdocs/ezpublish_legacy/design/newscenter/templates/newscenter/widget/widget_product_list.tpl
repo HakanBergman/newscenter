@@ -20,7 +20,6 @@
       {* Fetch Main Node for this Category *}
       {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id))}
       {* Print the name of the Category *}
-      {$main_node.data_map|attribute(show, 1)}
       <h3>{$main_node.name|wash()}</h3>      
         {* Loop through the list in the category *}
         {foreach $category_list as $list}                     
@@ -28,7 +27,7 @@
               {def $products = fetch('content', 'list', hash('parent_node_id', $list.node_id))}
                 {if $products}
                    {foreach $products as $product}
-                    <div class="{$class} bg-pink widget product-number-{$number}"> 
+                    <div class="{$class} {$main_node.data_map.color.data_text} widget product-number-{$number}"> 
                       <div class="media">
                         <a href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}"><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="{$product.name|wash()}"></a>
                           <div class="media-body">
