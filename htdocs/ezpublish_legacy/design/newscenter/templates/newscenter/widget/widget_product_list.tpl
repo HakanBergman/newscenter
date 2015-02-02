@@ -9,21 +9,30 @@
   {def $class = "col-lg-2"}
   {/case}
   {/switch}
-  {$block.data_map|attribute(show, 1)}
+
+  {* Loop through the categories *}
   {foreach $block.data_map.product_categories.content.relation_list as $category}
+    {* Make sure a category exists *}
     {if $category}    
+      {* Fetch Category List *}
       {def $category_list = fetch('content', 'list', hash('parent_node_id', $category.node_id))}              
+      {* Fetch Main Node for this Category *}
       {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id))}
+      {* Print the name of the Category *}
+      <h4>{$main_node.name|wash()}</h4>
+        {* Loop through the list in the category *}
         {foreach $category_list as $list}
-          <div class="{$class} widget product-number-{$number}">
-            <h4>{$main_node.name|wash()}</h4>
+          <div class="{$class} widget product-number-{$number}">            
+              {* Fetch all products in the list *}
               {def $products = fetch('content', 'list', hash('parent_node_id', $list.node_id))}
-              {$products|count()}
+                {$products|count()}
+              {undef $products}
           </div>  
         {/if}
     {undef $category_list $main_node}
   {/if}    
   {/foreach}
+  
   {for 1 to $number_of_products as $number}
   <div class="{$class} widget product-number-{$number}">
         <div class="media">
