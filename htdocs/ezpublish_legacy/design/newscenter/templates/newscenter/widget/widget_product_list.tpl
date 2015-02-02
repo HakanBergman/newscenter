@@ -20,6 +20,7 @@
       {* Fetch Main Node for this Category *}
       {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id, 'sort_by', array('name', true()) ))}
       {* Print the name of the Category *}
+	  <div class="col-lg-12">
       <h3 class="no-margin widget-padding-left widget-padding-top">{$main_node.name|wash()}</h3>      
         {* Loop through the list in the category *}
 		{def $counter = 0}
@@ -49,6 +50,7 @@
 		{undef $counter}
     {undef $category_list $main_node}
     {/if}    
+	</div>
 	<div class="clearfix">&nbsp;</div>
   {/foreach}
   </div>
