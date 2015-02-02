@@ -80,10 +80,10 @@
 		<div class="container-fluid website">
 
 			{* Include Headers *}
-			{include uri='design:page_header.tpl'}
+			{include uri='design:newscenter/widget/cookies/widget_cookie.tpl'}
 
 			{* Include Headers *}
-			{include uri='design:newscenter/widget/cookies/widget_cookie.tpl'}
+			{include uri='design:page_header.tpl'}
 
 			{* Include Zones *}
 			{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone')))}
