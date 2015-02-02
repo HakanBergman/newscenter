@@ -13,7 +13,7 @@
   {foreach $block.data_map.product_categories.content.relation_list as $category}
     {if $category}    
       {def $category_list = fetch('content', 'list', hash('parent_node_id', $category.node_id))}              
-      {def $main_node = fetch('content', 'node', hash('parent_node_id', $category.node_id))}
+      {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id))}
       {$main_node.name|wash()}
         {foreach $category_list as $list}
           <div class="{$class} widget product-number-{$number}">
