@@ -93,7 +93,9 @@
 			{literal}
 			<script type="text/javascript">
 			$(document).ready(function() {
-				$('.pgwSlider').pgwSlider();
+				$('.pgwSlider').pgwSlider(
+					listPosition('bottom');
+				);
 			});
 			</script>
 			{/literal}
