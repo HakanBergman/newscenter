@@ -28,12 +28,10 @@
                    {foreach $products as $product}
                     <div class="{$class} widget product-number-{$number}"> 
                       <div class="media">
-                        <a href="#" alt="" title=""><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="Cēsu Pilsener"></a>
+                        <a href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}"><img class="img-responsive thumbnail" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="{$product.name|wash()}"></a>
                           <div class="media-body">
                             <h4 class="media-heading">
-                                 <small>
-                                   <a href="#" alt="" title="">Cēsu Pilsener</a>
-                                </small>
+                                 <small><a href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}">{$product.name|wash()}</a></small>
                             </h4>
                             text
                           </div>
