@@ -60,7 +60,7 @@
 
 	</head>
 	
-	<body class="bg-grey">
+	<body class="bg-grey font-family-bookman-old">
 	
 		{* Page Landscape disable *}
 		{*<div class="container">
