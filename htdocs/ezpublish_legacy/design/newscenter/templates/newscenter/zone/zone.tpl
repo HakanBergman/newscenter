@@ -9,10 +9,7 @@
 				{if $blocks}
 					{foreach $blocks as $block}
 						{def $included_file = concat('design:newscenter/widget/', $block.class_identifier, '.tpl')}
-						{include uri=$included_file}
-								      design:newscenter/widget/widget_product_list.tpl
-						{include uri="design:newscenter/widget/widget_product_list.tpl"}
-						{concat('design:newscenter/widget/', $block.class_identifier, '.tpl')}
+							{include uri=$included_file block=$block}
 						{undef $included_file}
 					{/foreach}
 				{/if}
