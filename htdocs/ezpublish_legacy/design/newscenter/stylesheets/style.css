@@ -19,6 +19,7 @@ a, a:visited, a:active { text-decoration: none; }
 section .widget-margin-top { margin-top: 1em; }
 
 /* Padding Rules */
+.no-padding { padding: 0; }
 section .widget-padding-top { padding-top: 1em; }
 section .widget-padding-left { padding-left: 1em; }
 section .container-padding-left { padding-left: 0.5em; }
