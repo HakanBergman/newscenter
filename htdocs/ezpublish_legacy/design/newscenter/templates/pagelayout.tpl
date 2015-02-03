@@ -105,6 +105,12 @@
 
 		</div>
 
+		<div class="container-fluid bg-black link-color-white">
+			<div class="container">
+				Dett är en footer
+			</div>
+		</div>
+
 		{* Check if webshop is active *}
 		{if $#company.data_map.webshop_active.value}
 			{* Include Basket *}
