@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-xs-3 col-md-3">{currentdate()|datetime('custom', '%l %j %F %Y')|upword()}</div>
 		<div class="col-xs-8 col-md-9">
-      {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('link', 'product_catalogue') ))}
+      {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
       {if $menu_items}
       <ul>
               {foreach $menu_items as $item}
