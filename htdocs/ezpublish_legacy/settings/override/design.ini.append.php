@@ -20,6 +20,5 @@ CSSFileList[]=widget/ads/ads-block.css
 
 [JavaScriptSettings]
 JavaScriptList[]=insertmedia.js
-JavaScriptList[]=supersized/slideshow/js/supersized.3.2.7.min.js
        
 */ ?>
