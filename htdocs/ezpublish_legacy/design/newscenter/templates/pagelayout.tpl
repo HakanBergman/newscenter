@@ -82,6 +82,9 @@
 		
 		<div class="container-fluid website">
 
+			{* Include Company Logotype *}
+			{include uri="design:page_header_logo.tpl"}
+
 			{* Include Headers *}
 			{*include uri='design:newscenter/widget/cookies/widget_cookie.tpl'*}
 
