@@ -8,6 +8,8 @@
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id))}
 				{if $blocks}
 					{foreach $blocks as $block}
+						INKLUDERAR BLOCK
+						{$block.class_identifier}
 						{def $included_file = concat('design:newscenter/widget/', $block.class_identifier, '.tpl')}
 							{include uri=$included_file block=$block}
 						{undef $included_file}

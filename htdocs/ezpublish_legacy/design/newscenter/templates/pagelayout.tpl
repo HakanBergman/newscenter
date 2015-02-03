@@ -112,7 +112,6 @@
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone_footer')))}
 					{if $zones}
 						{foreach $zones as $zone}
-							INKLUDERAR ZONE
 							{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 						{/foreach}
 					{/if}
