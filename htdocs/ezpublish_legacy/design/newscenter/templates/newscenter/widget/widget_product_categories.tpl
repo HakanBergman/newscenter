@@ -13,7 +13,8 @@
 	{/switch}
 	{foreach $product_categories as $category}
 		<div class="{$class}">
-			<h3>{$category.name|wash()}</h3>		
+			<h3>{$category.name|wash()}</h3>	
+			<div class="{$category.data_map.background_color.data_text}">&nbsp;</div>	
 		</div>
 	{/foreach}
 {undef $product_categories $class}
