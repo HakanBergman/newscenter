@@ -49,11 +49,11 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
 		{* Enable JavaScript *}
-		<link rel="stylesheet" href="{"javascript/mmenu/src/css/jquery.mmenu.all.css"|ezdesign}">
-		<script type="text/javascript" src="{"javascript/mmenu/src/js/jquery.mmenu.min.all.js"|ezdesign}"></script>
-		<script type="text/javascript" src="{"javascript/mmenu.js"|ezdesign}"></script>
-		<script type="text/javascript" src="{"javascript/orientation.js"|ezdesign}"></script>
-		<script type="text/javascript" src="{"javascript/supersized/slideshow/js/supersized.3.2.7.min.js"|ezdesign}"></script>
+		<link rel="stylesheet" href={"javascript/mmenu/src/css/jquery.mmenu.all.css"|ezdesign}>
+		<script type="text/javascript" src={"javascript/mmenu/src/js/jquery.mmenu.min.all.js"|ezdesign}></script>
+		<script type="text/javascript" src="{"javascript/mmenu.js"|ezdesign}></script>
+		<script type="text/javascript" src="{"javascript/orientation.js"|ezdesign}></script>
+		<script type="text/javascript" src={"javascript/supersized/slideshow/js/supersized.3.2.7.min.js"|ezdesign}></script>
 
 		{* Global Variables *}
 		{def $zone_width = ""}
