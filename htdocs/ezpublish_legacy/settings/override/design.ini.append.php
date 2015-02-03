@@ -13,6 +13,7 @@ CSSFileList[]=link-colors.css
 CSSFileList[]=borders.css
 CSSFileList[]=orientation.css
 CSSFileList[]=homescreen.css
+CSSFileList[]=supersized/slideshow/js/supersized.3.2.7.min.js
 CSSFileList[]=widget/input/widget-select.css
 CSSFileList[]=widget/product/product.css
 CSSFileList[]=widget/news/news-block.css

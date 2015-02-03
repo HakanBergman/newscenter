@@ -35,8 +35,6 @@
 		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-dhc-logo.png">
 		
 		{* Include Stylesheets *}
-		<link rel="stylesheet" type="text/css" href="http://s1c.pagawatic.com/css/pgwmenu-pgwjs-rainbow-v226.css"/>
-		<link rel="stylesheet" type="text/css" href="http://s1c.pagawatic.com/css/pgwslideshow-pgwslideshow_light-v226.css"/>
 		{include uri='design:page_head_style.tpl'}
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -55,8 +53,6 @@
 		<script type="text/javascript" src="{"javascript/mmenu/src/js/jquery.mmenu.min.all.js"|ezdesign}"></script>
 		<script type="text/javascript" src="{"javascript/mmenu.js"|ezdesign}"></script>
 		<script type="text/javascript" src="{"javascript/orientation.js"|ezdesign}"></script>
-		<script type="text/javascript" src="http://s1c.pagawatic.com/js/jquery-pgwjs-pgwmenu-rainbow-v226.js"></script>
-		<script type="text/javascript" src="http://s1c.pagawatic.com/js/pgwslideshow-v226.js"></script>
 
 		{* Global Variables *}
 		{def $zone_width = ""}
