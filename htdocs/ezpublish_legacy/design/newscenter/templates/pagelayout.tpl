@@ -108,15 +108,14 @@
 		<div class="container-fluid bg-black link-color-white">
 			<div class="container">
 				<footer>
-						{* Include Footer Zone *}
-						{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone_footer')))}
-						{if $zones}
-							{foreach $zones as $zone}
-								{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-							{/foreach}
-						{/if}
-					<h2>FLER NYHETER</h2>
-					Test
+					{* Include Footer Zone *}
+					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone_footer')))}
+					{if $zones}
+						{foreach $zones as $zone}
+							INKLUDERAR ZONE
+							{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+						{/foreach}
+					{/if}
 				</footer>
 			</div>
 		</div>
