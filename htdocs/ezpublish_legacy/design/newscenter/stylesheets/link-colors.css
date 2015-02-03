@@ -1,7 +1,7 @@
-﻿    .link-color-blue, .link-color-blue:active, .link-color-blue:visited, .link-color-blue:hover { color: #284673; font-weight: 700; text-decoration: none; }
-    .link-color-pink, .link-color-pink:active, .link-color-pink:visited, .link-color-pink:hover { color: #f07584; font-weight: 700; text-decoration: none; }
-    .link-color-yellow, .link-color-yellow:active, .link-color-yellow:visited, .link-color-yellow:hover { color: #fff314; font-weight: 700; text-decoration: none; }
-    .link-color-black, .link-color-black:active, .link-color-black:visited, .link-color-black:hover { color: #000; font-weight: 700; text-decoration: none; }
-    .link-color-white, .link-color-white:active, .link-color-white:visited, .link-color-white:hover { color: #fff; font-weight: 700; text-decoration: none; }
+﻿.link-color-blue, .link-color-blue a, .link-color-blue a:active, .link-color-blue a:visited, .link-color-blue a:hover { color: #284673; font-weight: 700; text-decoration: none; }
+.link-color-pink, .link-color-pink a, .link-color-pink a:active, .link-color-pink a:visited, .link-color-pink a:hover { color: #f07584; font-weight: 700; text-decoration: none; }
+.link-color-yellow, .link-color-yellow a, .link-color-yellow a:active, .link-color-yellow a:visited, .link-color-yellow a:hover { color: #fff314; font-weight: 700; text-decoration: none; }
+.link-color-black, .link-color-black a, .link-color-black a:active, .link-color-black a:visited, .link-color-black a:hover { color: #000; font-weight: 700; text-decoration: none; }
+.link-color-white, .link-color-white a, .link-color-white a:active, .link-color-white a:visited, .link-color-white a:hover { color: #fff; font-weight: 700; text-decoration: none; }
     
     
