@@ -2,11 +2,19 @@
 	<div class="row">
 		<div class="col-xs-3 col-md-3">{currentdate()|datetime('custom', '%l %j %F %Y')|upword()}</div>
 		<div class="col-xs-8 col-md-9">
-      {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('product_catalogue') ))}
+      {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('link', 'product_catalogue') ))}
       {if $menu_items}
       <ul>
               {foreach $menu_items as $item}
-                <li><a href="{$item.url|ezurl('no', 'full')}">{$item.name|wash()}</a></li>
+                {switch match=$item.class_identifier}
+                  {case match='link'}
+                    <li><a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></li>
+                  {/case}
+                  {case}
+                    <li><a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></li>
+                  {/case}
+              {/switch}
+              
               {/foreach}
 				      <li><a href="#">Om oss</a></li>
 				      <li><a href="#">Cookies</a></li>
