@@ -115,6 +115,9 @@
 							{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 						{/foreach}
 					{/if}
+					<div class="bg-granate">
+						{'&copy;opyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} {$company.name|wash()}
+					</div>
 				</footer>
 			</div>
 		</div>
