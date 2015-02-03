@@ -1,5 +1,5 @@
-<nav class="navbar navbar-fixed-bottom">
-  <div class="container-fluid nav-padding-top nav-padding-bottom {$#company.data_map.background_color_widget_basket.data_text} link-color-white">
+<nav class="navbar navbar-fixed-bottom {$#company.data_map.background_color_widget_basket.data_text}">
+  <div class="container-fluid nav-padding-top nav-padding-bottom {$#company.data_map.background_color_widget_basket.data_text} {$#company.data_map.link_color_widget_basket.data_text}">
     <div class="container">
       <div class="col-lg-4">
         <span class="pull-left">Du har 0 varor i varukorgen</span>
