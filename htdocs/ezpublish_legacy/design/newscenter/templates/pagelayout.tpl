@@ -85,25 +85,8 @@
 			{* Include Headers *}
 			{include uri='design:page_header.tpl'}
 
-			{literal}
-			<script type="text/javascript">
-				$(document).ready(function() {
-					$('.pgwSlideshow').pgwSlideshow();
-				});
-			</script>
-			{/literal}
-
 			<div class="content-fluid">
-				<ul class="pgwSlideshow">
-					<li><img src="http://www.maltimportoren.se/wp-content/uploads/cid_image003_jpg@01CF49A7.jpg" data-description="Golden Gate Bridge"></li>
-					<li><img src="http://www.maltimportoren.se/wp-content/uploads/Babicka-front.png" alt="Rio de Janeiro, Brazil"></li>
-					<li><img src="http://s1c.pagawatic.com/img/pgwjs/slideshow/london.jpg" alt="" data-large-src="http://s1c.pagawatic.com/img/pgwjs/slideshow/london.jpg"></li>
-					<li>
-						<a href="http://en.wikipedia.org/wiki/Monaco" target="_blank">
-							<img src="http://s1c.pagawatic.com/img/pgwjs/slideshow/monaco.jpg" alt="Monaco">
-						</a>
-					</li>
-				</ul>
+				{include uri="design:newscenter/widget/widget_slider_carousel.tpl"}
 			</div>
 
 
