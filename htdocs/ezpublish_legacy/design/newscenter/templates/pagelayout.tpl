@@ -25,6 +25,12 @@
 			 $locales          = fetch( 'content', 'translation_list' )
 			 $current_node_id  = $pagedata.node_id}
 
+		{* Global Variables *}
+		{def $zone_width = ""}
+		{def $company = ""}
+		{set scope='global' $zone_width = ""}
+		{set scope='global' $company = fetch('content', 'node', hash('node_id', 63))}
+
 		{* Include Page Head *}	
 		{include uri='design:page_head.tpl'}
 
@@ -54,12 +60,6 @@
 		<script type="text/javascript" src={"javascript/mmenu.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/orientation.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/supersized/slideshow/js/supersized.3.2.7.min.js"|ezdesign}></script>
-
-		{* Global Variables *}
-		{def $zone_width = ""}
-		{def $company = ""}
-		{set scope='global' $zone_width = ""}
-		{set scope='global' $company = fetch('content', 'node', hash('node_id', 63))}
 
 	</head>
 	

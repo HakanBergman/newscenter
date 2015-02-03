@@ -5,6 +5,7 @@
 <link rel="Top"  href={"/"|ezurl} title="{$site_title}" />
 <link rel="Search" href={"content/advancedsearch"|ezurl} title="{'Search %sitetitle'|i18n('design/ezdemo/link',,hash('%sitetitle',$site.title))|wash}" />
 <link rel="Shortcut icon" href={"favicon.ico"|ezimage} type="image/x-icon" />
+{$#company.data_map.icon.content.original.full_path}
 <link rel="Copyright" href={"/ezinfo/copyright"|ezurl} />
 <link rel="Author" href={"/ezinfo/about"|ezurl} />
 <link rel="Alternate" type="application/rss+xml" title="RSS" href="{'/rss/feed/my_feed'|ezurl(no)}" />
