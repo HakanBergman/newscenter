@@ -15,6 +15,11 @@
 		<div class="{$class}">
 			<h3>{$category.name|wash()}</h3>	
 			<div class="{$category.data_map.background_color.data_text}">&nbsp;</div>	
+			<nav>
+				<ul>
+					<li><a href="#">En länk</a></li>
+				</ul>
+			</nav>
 		</div>
 	{/foreach}
 {undef $product_categories $class}
