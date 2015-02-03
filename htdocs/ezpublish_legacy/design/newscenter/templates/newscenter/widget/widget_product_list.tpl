@@ -29,7 +29,7 @@
               {def $products = fetch('content', 'list', hash('parent_node_id', $list.node_id, 'sort_by', array('name', true()) ))}
                 {if $products}
                    {foreach $products as $product}
-                    <div class="{$class} container-padding-left container-padding-right widget-padding-top"> 
+                    <div class="{$class} container-padding-left container-padding-right"> 
 					  <article>
 						<h3><a class="{$main_node.data_map.link_color.data_text} font-size-product-vmin" href="{$product.name|ezurl('no', 'full')}" title="{$product.name} {$product.data_map.extra_attribute_one.data_text}">{$product.name|wash()}</a></h3>
 						<div class="clearfix">
