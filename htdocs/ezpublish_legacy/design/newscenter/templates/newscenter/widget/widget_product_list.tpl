@@ -10,7 +10,7 @@
       {/case}
   {/switch}
 
-  <div class="row bg-white widget-margin-top widget-product">
+  <div class="row widget-margin-top widget-product">
   {* Loop through the categories *}
   {foreach $block.data_map.product_categories.content.relation_list as $category}
     {* Make sure a category exists *}
@@ -20,7 +20,7 @@
       {* Fetch Main Node for this Category *}
       {def $main_node = fetch('content', 'node', hash('node_id', $category.node_id, 'sort_by', array('name', true()) ))}
       {* Print the name of the Category *}
-	  <div class="col-lg-12 {$main_node.data_map.background_color.data_text}">
+	  <div class="{if $block.data_map.fullscreen.value}container-fluid{else}container{/if} {$main_node.data_map.background_color.data_text}">
       <h2 class="no-margin widget-padding-top">{$main_node.name|wash()}</h2>      
         {* Loop through the list in the category *}
 		{def $counter = 0}
