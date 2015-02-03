@@ -1,3 +1,16 @@
 {def $product_categories = fetch('content', 'tree', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('product_category') ))}
-{$product_categories|count()}
-<h2>{$block.name|wash()|upcase()}</h2>
+	<h2>{$block.name|wash()|upcase()}</h2>
+	{switch match=$product_categories|count()}
+		{case match=3}
+			{def $class = "col-lg-3"}
+		{/case}
+		{case}
+			{def $class = "col-lg-12"}
+		{/case}
+	{/switch}
+	{foreach $product_categories as $category}
+		<div class="{$class}">
+			<h3>{$category.name|wash()}</h3>		
+		</div>
+	{/foreach}
+{undef $product_categories $class}
