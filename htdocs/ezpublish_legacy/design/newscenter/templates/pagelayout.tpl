@@ -115,8 +115,10 @@
 		*}
 
 		{* Check if webshop is active *}
-		{if $#company.data_map.webshop_active.value}AKTIVT{/if}
-		{$#company|attribute(show, 1)}
+		{if $#company.data_map.webshop_active.value}
+			{* Include Basket *}
+			{include uri="design:newscenter/widget/webshop/basket.tpl"}
+		{/if}
 
 
 	</body>
