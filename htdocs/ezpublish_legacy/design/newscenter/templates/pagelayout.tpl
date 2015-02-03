@@ -105,7 +105,7 @@
 
 		</div>
 
-		<div class="container-fluid bg-black link-color-white">
+		<div class="container-fluid bg-black link-color-white nav-padding-bottom">
 			<div class="container">
 				<footer>
 					{* Include Footer Zone *}
@@ -122,10 +122,8 @@
 		{* Check if webshop is active *}
 		{if $#company.data_map.webshop_active.value}
 			{* Include Basket *}
-			{*include uri="design:newscenter/widget/webshop/basket.tpl"*}
+			{include uri="design:newscenter/widget/webshop/basket.tpl"}
 		{/if}
 
-
 	</body>
-
 </html>
