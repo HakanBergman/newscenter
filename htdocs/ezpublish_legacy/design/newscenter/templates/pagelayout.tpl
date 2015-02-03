@@ -92,8 +92,6 @@
 				{include uri="design:newscenter/widget/widget_slider_carousel.tpl"}
 			</div>
 
-
-
 			{* Include Zones *}
 			{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone')))}
 			{if $zones}
@@ -103,16 +101,6 @@
 			{/if}
 
 		</div>
-
-		{*
-		<nav class="navbar navbar-default navbar-fixed-bottom hidden" id="homescreen">
-			<div class="container">
-				<div class="thumbnail alert-warning">
-					Spara appen på hemskärmen för en bättre upplevelse.
-				</div>
-			</div>
-		</nav>
-		*}
 
 		{* Check if webshop is active *}
 		{if $#company.data_map.webshop_active.value}
