@@ -15,11 +15,17 @@
 		<div class="{$class}">
 			<h3>{$category.name|wash()}</h3>	
 			<div class="{$category.data_map.background_color.data_text}">&nbsp;</div>	
-			<nav>
-				<ul>
-					<li><a href="#">En länk</a></li>
-				</ul>
-			</nav>
+			{def $products = fetch('content', 'list', hash('parent_node_id', $category.node_id))}
+			{if $products|count()}				
+				<nav>
+					<ul>
+						{foreach $products as $product}
+							<li><a href="#">En länk</a></li>
+						{/foreach}
+					</ul>
+				</nav>
+			{/if}
+			{undef $products}
 		</div>
 	{/foreach}
 {undef $product_categories $class}
