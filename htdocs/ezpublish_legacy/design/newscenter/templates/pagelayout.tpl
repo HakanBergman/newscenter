@@ -57,7 +57,9 @@
 
 		{* Global Variables *}
 		{def $zone_width = ""}
+		{def $company_id = ""}
 		{set scope='global' $zone_width = ""}
+		{set scope='global' $company_id = 61}
 
 	</head>
 	
@@ -102,8 +104,7 @@
 
 		</div>
 
-		{* No Used *}
-		{*
+
 		<nav class="navbar navbar-default navbar-fixed-bottom hidden" id="homescreen">
 			<div class="container">
 				<div class="thumbnail alert-warning">
@@ -111,7 +112,7 @@
 				</div>
 			</div>
 		</nav>
-		*}
+
 
 	</body>
 
