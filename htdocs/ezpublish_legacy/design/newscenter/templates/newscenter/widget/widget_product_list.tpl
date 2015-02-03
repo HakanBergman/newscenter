@@ -48,10 +48,12 @@
 						  </article>
 						 </div>
 						{set $counter = $counter|inc(1)}
-						{if $counter|eq(8)}
-							<div class="clearfix hidden">&nbsp;</div>
-							{set $counter = 0}
-						{/if}
+						{def $end_count = $number_of_products|mul(2)}
+							{if $counter|eq($end_count)}
+								<div class="clearfix hidden">&nbsp;</div>
+								{set $counter = 0}
+							{/if}
+						{undef $end_count}
 						{/foreach}
 					{/if}
 				  {undef $products}  
