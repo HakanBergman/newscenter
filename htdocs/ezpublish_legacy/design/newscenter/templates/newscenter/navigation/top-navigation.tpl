@@ -8,7 +8,7 @@
               {foreach $menu_items as $item}
                 {switch match=$item.class_identifier}
                   {case match='link'}
-                    <li><a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></li>
+                    <li><a href="{$item.data_map.location.value|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></li>
                   {/case}
                   {case}
                     <li><a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></li>
