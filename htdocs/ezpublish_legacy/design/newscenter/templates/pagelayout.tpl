@@ -107,7 +107,10 @@
 
 		<div class="container-fluid bg-black link-color-white">
 			<div class="container">
-				Dett är en footer
+				<footer>
+					<h2>FLER NYHETER</h2>
+					Test
+				</footer>
 			</div>
 		</div>
 
