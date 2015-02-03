@@ -53,6 +53,7 @@
 		<script type="text/javascript" src="{"javascript/mmenu/src/js/jquery.mmenu.min.all.js"|ezdesign}"></script>
 		<script type="text/javascript" src="{"javascript/mmenu.js"|ezdesign}"></script>
 		<script type="text/javascript" src="{"javascript/orientation.js"|ezdesign}"></script>
+		<script type="text/javascript" src="{"javascript/supersized/slideshow/js/supersized.3.2.7.min.js"|ezdesign}"></script>
 
 		{* Global Variables *}
 		{def $zone_width = ""}
