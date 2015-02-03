@@ -4,8 +4,7 @@
 <link rel="Index" href={"/"|ezurl} />
 <link rel="Top"  href={"/"|ezurl} title="{$site_title}" />
 <link rel="Search" href={"content/advancedsearch"|ezurl} title="{'Search %sitetitle'|i18n('design/ezdemo/link',,hash('%sitetitle',$site.title))|wash}" />
-<link rel="Shortcut icon" href={"favicon.ico"|ezimage} type="image/x-icon" />
-{$#company.data_map.icon.data_text}
+<link rel="Shortcut icon" href={$#company.data_map.icon.data_text|ezimage} type="image/x-icon" />
 <link rel="Copyright" href={"/ezinfo/copyright"|ezurl} />
 <link rel="Author" href={"/ezinfo/about"|ezurl} />
 <link rel="Alternate" type="application/rss+xml" title="RSS" href="{'/rss/feed/my_feed'|ezurl(no)}" />
