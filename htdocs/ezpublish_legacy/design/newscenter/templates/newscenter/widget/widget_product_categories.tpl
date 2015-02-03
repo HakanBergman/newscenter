@@ -20,7 +20,7 @@
 				<nav>
 					<ul>
 						{foreach $products as $product}
-							<li><a href="#">En länk</a></li>
+							<li><a href="{$product.url|ezurl('no', 'full')}" title="{$product.name} {$product.data_map.extra_attribute_data_text}">{$product.name|wash()}</a></li>
 						{/foreach}
 					</ul>
 				</nav>
