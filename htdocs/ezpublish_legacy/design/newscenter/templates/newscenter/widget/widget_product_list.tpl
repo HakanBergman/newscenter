@@ -61,7 +61,7 @@
 		{/if}    
 		</div>
 	</div>
-	<div class="clearfix">&nbsp;</div>
+	<div class="clearfix hidden">&nbsp;</div>
   {/foreach}
   </div>
 
