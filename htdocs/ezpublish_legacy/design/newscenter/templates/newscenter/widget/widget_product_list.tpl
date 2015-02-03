@@ -39,7 +39,6 @@
 						<div class="media">
 							<a class="{$main_node.data_map.link_color.data_text}" href="{$product.url|ezurl('no', 'full')}" alt="{$product.name|wash()}" title="{$product.name|wash()}">
 								<img class="img-responsive" src="http://dev.datadelenhc.com/new/img/940x392.jpg" alt="{$product.name|wash()}">
-								<strong class="product-title">Test</strong>
 							</a>
 							<div class="media-body">								
 								{attribute_view_gui attribute=$product.data_map.short_description}
