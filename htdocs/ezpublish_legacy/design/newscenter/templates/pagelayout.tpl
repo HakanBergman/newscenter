@@ -115,8 +115,10 @@
 							{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 						{/foreach}
 					{/if}
-					<div class="bg-granate">
-						{'&copy;opyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} {$company.name|wash()}
+					<div class="bg-granate">&nbsp;</div>
+					<div class="col-lg-12 nav-padding-bottom-4">
+						<span class="link-color-white pull-left">{'&copy;opyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} Maltimportören Stockholm</span>
+						<span class="link-color-white pull-right">Tjädervägen 1, 141 72 Segeltorp | Tel: <a href="tel:086462600">08 - 646 26 00</a> | E-postadress: <a href="mailto:info@maltimportoren.se">info@maltimportoren.se</a></span>
 					</div>
 				</footer>
 			</div>
