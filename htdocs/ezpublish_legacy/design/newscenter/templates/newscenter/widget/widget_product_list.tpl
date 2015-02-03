@@ -32,7 +32,7 @@
 					   {foreach $products as $product}
 						<div class="{$class} container-padding-left container-padding-right"> 
 						  <article>
-							<h3><a class="{$main_node.data_map.link_color.data_text} font-size-product-vmin" href="{$product.name|ezurl('no', 'full')}" title="{$product.name} {$product.data_map.extra_attribute_one.data_text}">{$product.name|wash()}</a></h3>
+							<h3><a class="{$main_node.data_map.link_color.data_text} font-size-product-vmin" href="{$product.url|ezurl('no', 'full')}" title="{$product.name} {$product.data_map.extra_attribute_one.data_text}">{$product.name|wash()}</a></h3>
 							<div class="clearfix">
 								<span class="pull-left">{$product.data_map.extra_attribute_one.data_text}</span>
 								<span class="pull-right">{$product.data_map.extra_attribute_two.data_text}</span>
