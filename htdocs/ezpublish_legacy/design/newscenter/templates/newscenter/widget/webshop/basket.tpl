@@ -1,7 +1,6 @@
-<nav class="navbar navbar-default navbar-fixed-bottom {$#company.data_map.background_color.data_text}" id="homescreen">
+<nav class="navbar navbar-default navbar-fixed-bottom {$#company.data_map.background_color.data_text}">
 	<div class="container">
-		<div class="thumbnail alert-warning">
-			Detta är en varukorg
-		</div>
+    <span class="pull-left">Du har {$x} varor i varukorgen.</span>
+    <span class="pull-right">Till varukorgen</span>
 	</div>
 </nav>
