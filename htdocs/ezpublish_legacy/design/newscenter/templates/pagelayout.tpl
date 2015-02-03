@@ -68,14 +68,14 @@
 		{* Page Landscape disable *}
 		{*<div class="container">
 			<div class="landscape thumbnail alert-warning hidden">
-				<p>Du försöker se hemsidan i ett format som inte stöds.</p>
-				<small>Det kan bero på följande orsaker:</small>
+				<p>Du fÃ¶rsÃ¶ker se hemsidan i ett format som inte stÃ¶ds.</p>
+				<small>Det kan bero pÃ¥ fÃ¶ljande orsaker:</small>
 				<ul>
-					<li>Du använder din enhet i landskapsläge</li>
-					<li>Din webbläsare/enhet behöver uppdateras</li>
+					<li>Du anvÃ¤nder din enhet i landskapslÃ¤ge</li>
+					<li>Din webblÃ¤sare/enhet behÃ¶ver uppdateras</li>
 				</ul>
-				<p>Om din enhet är i landskapsläge, var vänlig att rotera den till porträttläge för att se hemsidan igen.</p>
-				<small>Om din enhet inte roterar när du vänder den i porträttläge så kan den vara låst.</small>
+				<p>Om din enhet Ã¤r i landskapslÃ¤ge, var vÃ¤nlig att rotera den till portrÃ¤ttlÃ¤ge fÃ¶r att se hemsidan igen.</p>
+				<small>Om din enhet inte roterar nÃ¤r du vÃ¤nder den i portrÃ¤ttlÃ¤ge sÃ¥ kan den vara lÃ¥st.</small>
 			</div>
 		</div>
 		*}
@@ -117,8 +117,8 @@
 					{/if}
 					<div class="bg-granate">&nbsp;</div>
 					<div class="col-lg-12 nav-padding-bottom-4">
-						<span class="link-color-white pull-left">{'&copy;opyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} Maltimportören Stockholm</span>
-						<span class="link-color-white pull-right">Tjädervägen 1, 141 72 Segeltorp | Tel: <a href="tel:086462600">08 - 646 26 00</a> | E-postadress: <a href="mailto:info@maltimportoren.se">info@maltimportoren.se</a></span>
+						<span class="link-color-white pull-left">{'&copy;opyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} MaltimportÃ¶ren Stockholm</span>
+						<span class="link-color-white pull-right">TjÃ¤dervÃ¤gen 1, 141 72 Segeltorp | Tel: <a href="tel:086462600">08 - 646 26 00</a> | E-postadress: <a href="mailto:info@maltimportoren.se">info@maltimportoren.se</a></span>
 					</div>
 				</footer>
 			</div>
