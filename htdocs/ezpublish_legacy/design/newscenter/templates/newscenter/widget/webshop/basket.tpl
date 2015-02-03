@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-bottom {$#company.data_map.background_color.data_text}">
+<nav class="navbar navbar-fixed-bottom {$#company.data_map.background_color.data_text}">
   <div class="container-fluid nav-padding-top nav-padding-bottom bg-granate link-color-white">
     <div class="container">
       <div class="col-lg-4">
