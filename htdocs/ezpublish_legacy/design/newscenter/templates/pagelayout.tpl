@@ -105,7 +105,7 @@
 
 		</div>
 
-		<div class="container-fluid bg-black link-color-white nav-padding-bottom-2">
+		<div class="container-fluid bg-black link-color-white nav-padding-bottom-4">
 			<div class="container">
 				<footer>
 					{* Include Footer Zone *}
