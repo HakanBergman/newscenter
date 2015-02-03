@@ -10,7 +10,7 @@
       {/case}
   {/switch}
 
-  <div class="row widget-margin-top widget-product">
+  <div class="row widget-product">
   {* Loop through the categories *}
   {foreach $block.data_map.product_categories.content.relation_list as $category}
     {* Make sure a category exists *}
@@ -49,7 +49,7 @@
 						 </div>
 						{set $counter = $counter|inc(1)}
 						{if $counter|eq(8)}
-							<div class="clearfix">&nbsp;</div>
+							<div class="clearfix hidden">&nbsp;</div>
 							{set $counter = 0}
 						{/if}
 						{/foreach}
