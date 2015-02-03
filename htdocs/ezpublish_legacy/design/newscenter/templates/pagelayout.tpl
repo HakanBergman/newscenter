@@ -115,7 +115,8 @@
 		*}
 
 		{* Check if webshop is active *}
-		{if $company.data_map.webshop_active.value}AKTIVT{/if}
+		{if $#company.data_map.webshop_active.value}AKTIVT{/if}
+		{$#company|attribute(show, 1)}
 
 
 	</body>
