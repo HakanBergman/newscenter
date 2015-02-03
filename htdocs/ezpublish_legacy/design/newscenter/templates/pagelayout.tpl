@@ -57,9 +57,9 @@
 
 		{* Global Variables *}
 		{def $zone_width = ""}
-		{def $company_id = ""}
+		{def $company = ""}
 		{set scope='global' $zone_width = ""}
-		{set scope='global' $company_id = 61}
+		{set scope='global' $company = fetch('content', 'node', hash('node_id', 61))}
 
 	</head>
 	
@@ -104,7 +104,7 @@
 
 		</div>
 
-
+		{*
 		<nav class="navbar navbar-default navbar-fixed-bottom hidden" id="homescreen">
 			<div class="container">
 				<div class="thumbnail alert-warning">
@@ -112,6 +112,10 @@
 				</div>
 			</div>
 		</nav>
+		*}
+
+		{* Check if webshop is active *}
+		{if $company.data_map.webshop_active.value}AKTIVT{/if}
 
 
 	</body>
