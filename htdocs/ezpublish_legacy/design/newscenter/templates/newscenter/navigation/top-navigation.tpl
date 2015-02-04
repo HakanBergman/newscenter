@@ -3,7 +3,6 @@
 		<div class="col-xs-3 col-md-3">
       {* Include Company Logotype *}
       {include uri="design:page_header_logo.tpl"}
-      <h1 class="no-margin no-padding"><img class="img-responsive" src="http://maltimportoren.datadelenhc.com/var/ezdemo_site_clean/storage/images/maltimportoeren/947-18-swe-SE/Maltimportoeren.png"></img></h1>
     </div>
 		<div class="col-xs-8 col-md-9">
       {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
