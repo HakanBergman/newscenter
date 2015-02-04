@@ -1,52 +1,25 @@
 <nav id="topNav-one" class="grey">
 	<div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-12 col-md-12 no-padding no-margin">
       {* Include Company Logotype *}
       {include uri="design:page_header_logo.tpl"}
+      {* Create the menu *}
       {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
       {if $menu_items}
-      <ul>
-        {foreach $menu_items as $item}
-        {switch match=$item.class_identifier}
-        {case match='link'}
-        <li>
-          <a href="{$item.data_map.location.value|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a>
-        </li>
-        {/case}
-        {case}
-        <li>
-          <a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a>
-        </li>
-        {/case}
-        {/switch}
-        {/foreach}
-
-      </ul>
+        <ul>
+          {foreach $menu_items as $item}
+           {switch match=$item.class_identifier}
+              {case match='link'}
+                <li><a href="{$item.data_map.location.value|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></li>
+              /case}
+             {case}
+                <li><a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></li>
+             {/case}
+          {/switch}
+         {/foreach}
+        </ul>
       {/if}
       {undef $menu_items}
     </div>
-		<div class="col-xs-3 col-md-3 no-padding no-margin">
-      {* Include Company Logotype *}
-      {include uri="design:page_header_logo.tpl"}
-    </div>
-		<div class="col-xs-8 col-md-9">
-      {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
-      {if $menu_items}
-         <ul>
-              {foreach $menu_items as $item}
-                {switch match=$item.class_identifier}
-                  {case match='link'}
-                    <li><a href="{$item.data_map.location.value|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></li>
-                  {/case}
-                  {case}
-                    <li><a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></li>
-                  {/case}
-               {/switch}             
-              {/foreach}
-
-			    </ul>
-      {/if}
-     {undef $menu_items}
-		</div>
 	</div>
 </nav>
