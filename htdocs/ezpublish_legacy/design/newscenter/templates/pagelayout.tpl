@@ -93,7 +93,7 @@
 			</div>
 
 			{* Include Standard Zones *}
-			{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone')))}
+			{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'sort_by', array('priority', true()) ))}
 			{if $zones}
 				{foreach $zones as $zone}
 					{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
