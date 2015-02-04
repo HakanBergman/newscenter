@@ -1,6 +1,6 @@
 <nav id="topNav-one" class="grey">
 	<div class="row">
-		<div class="col-xs-3 col-md-3">
+		<div class="col-xs-3 col-md-3 no-padding no-margin">
       {* Include Company Logotype *}
       {include uri="design:page_header_logo.tpl"}
     </div>
