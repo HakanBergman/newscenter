@@ -25,7 +25,7 @@ section .widget-margin-top { margin-top: 1em; }
 .nav-padding-bottom-2 { padding-bottom: 2em; }
 .nav-padding-bottom-3 { padding-bottom: 3em; }
 .nav-padding-bottom-4 { padding-bottom: 4em; }
-.nav-padding-bottom-nine-percent { padding-bottom: 9%; }
+#topNav-one .nav-padding-bottom-nine-percent { padding-bottom: 9%; }
 section .widget-padding-top { padding-top: 1em; }
 section .widget-padding-left { padding-left: 1em; }
 section .container-padding-left { padding-left: 0.5em; }
