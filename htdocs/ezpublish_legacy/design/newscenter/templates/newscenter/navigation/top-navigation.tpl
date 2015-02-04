@@ -6,7 +6,7 @@
       {* Create the menu *}
       {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
       {if $menu_items}
-        <ul>
+        <ul class="vertical-bottom">
           {foreach $menu_items as $item}
            {switch match=$item.class_identifier}
               {case match='link'}
