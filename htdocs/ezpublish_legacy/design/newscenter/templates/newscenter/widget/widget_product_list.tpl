@@ -10,7 +10,7 @@
       {/case}
   {/switch}
 
-  <div class="row thumbnail margin-padding-top margin-padding-bottom widget-product">
+  <div class="row thumbnail widget-margin-top widget-product">
   {* Loop through the categories *}
   {foreach $block.data_map.product_categories.content.relation_list as $category}
     {* Make sure a category exists *}
