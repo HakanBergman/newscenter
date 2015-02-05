@@ -42,9 +42,7 @@
           <div class="site-branding">
 
 
-            <a href="http://lerue.se/" rel="home">
-              <img class="site-logo" src="http://lerue.se/wp-content/uploads/2013/11/le-rue-logo.png" title="" alt="Le Rue Clothing">
-            </a>
+            {include uri="design:page_header_logo.tpl"}
 
 
           </div>
