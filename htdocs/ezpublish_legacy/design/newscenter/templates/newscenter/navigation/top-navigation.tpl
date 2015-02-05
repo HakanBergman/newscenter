@@ -25,10 +25,10 @@
       </div>
 	</div>
 </nav>
-<div class="clearfix">&nbsp;</div>
-<nav id="topNav-one">
-  <div class="container-fluid bg-black">
-    <div class="container">
+
+
+
+
       <ul>
         <li>
           <a href="#">Test</a>
@@ -37,7 +37,5 @@
           </ul>
         </li>
       </ul>
-    </div>
-  </div>
-</nav>
+
 
