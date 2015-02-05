@@ -28,7 +28,7 @@
 
   
 
-      <ul class="box">
+      <ul class="box no-padding">
         <li>
           <div class="container no-padding">
             <a href="#">Test</a>
