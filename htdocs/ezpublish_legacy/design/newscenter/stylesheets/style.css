@@ -37,7 +37,6 @@ section .container-padding-right { padding-right: 0.5em; }
 
 ul.dummy {
 position: absolute;
-top: 100%;
 z-index: 1000;
 float: left;
 margin: 2px 0 0;
