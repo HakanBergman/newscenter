@@ -15,17 +15,22 @@
                 {case}
                   <li>
                       <a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a>
-                      <ul class="dummy" style="display: block;">
-                        <li>Test</li>
-                      </ul>
                   </li>
                 {/case}
             {/switch}
            {/foreach}
           </ul>
          {/if}
-         {undef $menu_items}
+         {undef $menu_items}         
       </div>
+    <div class="col-lg-12">
+      <li>
+        <a href="#">Test</a>
+        <ul class="dummy">
+          <li>Test</li>
+        </ul>
+      </li>
+    </div>
 	</div>
 </nav>
 
