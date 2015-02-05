@@ -15,7 +15,7 @@
                 {case}
                   <li>
                       <a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a>
-                      <ul>
+                      <ul class="dummy">
                         <li>Test</li>
                       </ul>
                   </li>
