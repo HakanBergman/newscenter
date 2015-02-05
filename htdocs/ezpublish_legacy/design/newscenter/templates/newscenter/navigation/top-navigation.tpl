@@ -23,13 +23,15 @@
          {/if}
          {undef $menu_items}         
       </div>
-    <div class="col-lg-12">
-      <li>
-        <a href="#">Test</a>
-        <ul class="dummy">
-          <li>Test</li>
-        </ul>
-      </li>
+    <div class="container-fluid">
+      <ul class="bg-grey">
+        <li>
+          <a href="#">Test</a>
+          <ul class="dummy">
+            <li>Test</li>
+          </ul>
+        </li>
+      </ul>        
     </div>
 	</div>
 </nav>
