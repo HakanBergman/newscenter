@@ -28,7 +28,7 @@
 
   
 
-      <ul>
+      <ul class="no-margin no-padding">
         <li>
           <div class="container">
             <a href="#">Test</a>
