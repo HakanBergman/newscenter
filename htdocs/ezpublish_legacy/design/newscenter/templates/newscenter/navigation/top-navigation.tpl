@@ -34,8 +34,10 @@
             <a href="#">Test</a>
           </div>
           <ul class="dummy">
-            <div class="container">
-              <li>Test</li>
+            <div class="col-lg-8">
+              <div class="container">
+                <li>Test</li>
+              </div>
             </div>
           </ul>
         </li>
