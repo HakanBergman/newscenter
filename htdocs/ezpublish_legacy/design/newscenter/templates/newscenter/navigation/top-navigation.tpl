@@ -28,9 +28,9 @@
 
   
 
-      <ul class="no-margin no-padding">
+      <ul class="no-margin">
         <li>
-          <div class="container">
+          <div class="container no-padding">
             <a href="#">Test</a>
           </div>
           <ul class="dummy">
