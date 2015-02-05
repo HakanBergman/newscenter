@@ -34,11 +34,12 @@
             <a href="#">Test</a>
           </div>
           <ul class="dummy">
-            <div class="col-lg-8">
+            
               <div class="container">
-                <li>Test</li>
+                <div class="col-lg-8">
+                  <li>Test</li>
+                </div>
               </div>
-            </div>
           </ul>
         </li>
       </ul>
