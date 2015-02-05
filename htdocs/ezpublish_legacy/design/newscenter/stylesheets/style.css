@@ -35,6 +35,8 @@ section .container-padding-right { padding-right: 0.5em; }
 /* Vertical Alignment */
 .vertical-bottom { vertical-align: bottom; vertical-align: text-bottom; }
 
+/* Box rules */
+ul .box { box-shadow: 0 6px 8px rgba(0,0,0,.175); }
 ul.dummy {
 position: absolute;
 z-index: 1000;
@@ -43,6 +45,5 @@ list-style: none;
 text-align: left;
 right: 0;
 left: 0;
-box-shadow: 0 6px 8px rgba(0,0,0,.175);
 margin: 0 auto;
 }
