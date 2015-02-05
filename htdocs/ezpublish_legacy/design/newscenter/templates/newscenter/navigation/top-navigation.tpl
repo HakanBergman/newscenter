@@ -36,7 +36,7 @@
           <ul class="dummy">
             
               <div class="container">
-                <div class="col-lg-12 bg-black link-color-white">
+                <div class="col-lg-12 bg-black link-color-white no-padding">
                   <li>Test</li>
                 </div>
               </div>
