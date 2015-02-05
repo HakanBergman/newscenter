@@ -5,7 +5,7 @@
 	<section id="section-{$zone.node_id} container-padding-left container-padding-right">
 		<div class="{if $zone.data_map.fullscreen.value}container-fluid{else}container{/if}">
 			<div class="{$#zone_width} no-margin no-padding">
-				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id))}
+				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id, 'sort_by', array('priority', true()) ))}
 				{if $blocks}
 					{foreach $blocks as $block}
 						{def $included_file = concat('design:newscenter/widget/', $block.class_identifier, '.tpl')}
