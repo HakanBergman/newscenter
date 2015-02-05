@@ -34,3 +34,20 @@ section .container-padding-right { padding-right: 0.5em; }
 
 /* Vertical Alignment */
 .vertical-bottom { vertical-align: bottom; vertical-align: text-bottom; }
+
+ul.dummy {
+position: absolute;
+top: 100%;
+z-index: 1000;
+float: left;
+margin: 2px 0 0;
+list-style: none;
+font-size: 13px;
+text-align: left;
+width: 100%;
+min-width: 100%;
+background-color: #000;
+right: 0;
+left: 0;
+box-shadow: 0 6px 8px rgba(0,0,0,.175);
+}
