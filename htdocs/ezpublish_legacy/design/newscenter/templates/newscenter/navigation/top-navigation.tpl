@@ -33,11 +33,11 @@
           <div class="container">
             <a href="#">Test</a>
           </div>
-          <div class="container-fluid">
-            <ul class="dummy">
+          <ul class="dummy">
+            <div class="container">
               <li>Test</li>
-            </ul>
-          </div>
+            </div>
+          </ul>
         </li>
       </ul>
 
