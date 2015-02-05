@@ -1,5 +1,5 @@
 <header class="{$#company.data_map.background_color_menu.data_text} {$#company.data_map.link_color_menu.data_text}">
-  <div class="container">
+  <div class="container-fluid">
 		{* Top Navigation *}
 		{include uri='design:newscenter/navigation/top-navigation.tpl'}
 
