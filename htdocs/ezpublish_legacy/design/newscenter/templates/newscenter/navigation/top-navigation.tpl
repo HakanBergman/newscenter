@@ -13,7 +13,12 @@
                   <li><a href="{$item.data_map.location.value|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></li>
                 {/case}
                 {case}
-                  <li><a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></li>
+                  <li>
+                      <a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a>
+                      <ul>
+                        <li>Test</li>
+                      </ul>
+                  </li>
                 {/case}
             {/switch}
            {/foreach}
