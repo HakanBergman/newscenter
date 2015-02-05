@@ -39,14 +39,11 @@ ul.dummy {
 position: absolute;
 z-index: 1000;
 float: left;
-margin: 2px 0 0;
 list-style: none;
-font-size: 13px;
 text-align: left;
-background-color: #000;
 right: 0;
 left: 0;
 box-shadow: 0 6px 8px rgba(0,0,0,.175);
 width: 1140px;
-min-width: 100%;
+margin: 0 auto;
 }
