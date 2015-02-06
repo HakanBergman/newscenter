@@ -16,7 +16,9 @@
             {foreach $menu_items as $item}
               <li class="nav-padding-top-05 nav-padding-bottom-05 float-left">
                 <div class="container no-padding">
-                  <a href="#">Test</a>
+                  <div class="col-lg-2-max-width">
+                    <a href="#">Test</a>
+                  </div>
                 </div>
                 <ul class="dummy hidden">
                   <div class="col-lg-12 bg-black link-color-white nav-margin-top-07 no-padding">
