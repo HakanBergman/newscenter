@@ -17,6 +17,7 @@ CSSFileList[]=widget/input/widget-select.css
 CSSFileList[]=widget/product/product.css
 CSSFileList[]=widget/news/news-block.css
 CSSFileList[]=widget/ads/ads-block.css
+CSSFileList[]=widget/image/image.css
 
 [JavaScriptSettings]
 JavaScriptList[]=insertmedia.js
