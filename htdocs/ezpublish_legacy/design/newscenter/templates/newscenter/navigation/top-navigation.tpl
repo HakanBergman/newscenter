@@ -33,9 +33,8 @@
           <div class="container no-padding">
             <a href="#">Test</a>
           </div>
-          <ul class="dummy">
-            
-              <div class="container">
+          <ul class="dummy">            
+              <div class="container container-margin-top">
                 <div class="col-lg-12 bg-black link-color-white no-padding">
                   <li>Test</li>
                 </div>
