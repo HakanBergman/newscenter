@@ -14,7 +14,7 @@
         <nav>
           <ul class="no-padding">
             {foreach $menu_items as $item}
-              <li class="nav-padding-top-05 nav-padding-bottom-05">
+              <li class="nav-padding-top-05 nav-padding-bottom-05 float-left">
                 <div class="container no-padding">
                   <a href="#">Test</a>
                 </div>
