@@ -5,18 +5,19 @@ section .row { margin: 0; padding: 0; padding: 0; margin: 0; }
 section .container { padding: 0; padding-left: 15px; padding-right: 15px; max-width: 100%; }
 section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 
-.col-lg-12-max-width { max-width: 100%; }
-.col-lg-11-max-width { max-width: 91.66666667%; }
-.col-lg-10-max-width { max-width: 83.33333333%; }
-.col-lg-9-max-width { max-width: 75%; }
-.col-lg-8-max-width { max-width: 66.66666667%; }
-.col-lg-7-max-width { max-width: 58.33333333%; }
-.col-lg-6-max-width { max-width: 50%; }
-.col-lg-5-max-width { max-width: 41.66666667%; }
-.col-lg-4-max-width { max-width: 33.33333333%; }
-.col-lg-3-max-width { max-width: 25%; }
-.col-lg-2-max-width { max-width: 16.66666667%; }
-.col-lg-1-max-width { max-width: 8.33333333%; }
+.col-lg-12-max-width { max-width: 100%; width: 100%; }
+.col-lg-11-max-width { max-width: 91.66666667%; width: 100%; }
+.col-lg-10-max-width { max-width: 83.33333333%; width: 100%; }
+.col-lg-9-max-width { max-width: 75%; width: 100%; }
+.col-lg-8-max-width { max-width: 66.66666667%; width: 100%; }
+.col-lg-7-max-width { max-width: 58.33333333%; width: 100%; }
+.col-lg-6-max-width { max-width: 50%; width: 100%; }
+.col-lg-5-max-width { max-width: 41.66666667%; width: 100%; }
+.col-lg-4-max-width { max-width: 33.33333333%; width: 100%; }
+.col-lg-3-max-width { max-width: 25%; width: 100%; }
+.col-lg-2-max-width { max-width: 16.66666667%; width: 100%; }
+.col-lg-15-max-width { max-width: 12%; width: 100%; }
+.col-lg-1-max-width { max-width: 8.33333333%; width: 100%; }
 
 /* List Rules */
 .nav-tabs>li { margin: 0; }
