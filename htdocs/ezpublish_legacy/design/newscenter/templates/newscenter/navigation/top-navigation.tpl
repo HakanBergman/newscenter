@@ -28,7 +28,7 @@
 <div class="container-fluid bg-beige-yellow">
   <div class="container">
     <div class="col-lg-12">
-      LOGO
+      {include uri="design:page_header_logo.tpl"}
     </div>
   </div>
 </div>
