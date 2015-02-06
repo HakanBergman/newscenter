@@ -27,8 +27,8 @@
 </nav>
 
 <div class="container-fluid bg-beige">
-  <div class="container">
-      <ul class="box no-padding">
+  <div class="container navigation-box">
+      <ul class="no-padding">
         <li>
           <div class="container no-padding">
             <a href="#">Test</a>

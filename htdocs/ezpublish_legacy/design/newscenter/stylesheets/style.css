@@ -36,7 +36,7 @@ section .container-padding-right { padding-right: 0.5em; }
 .vertical-bottom { vertical-align: bottom; vertical-align: text-bottom; }
 
 /* Box rules */
-ul.box { box-shadow: 0 6px 8px rgba(0,0,0,.175); }
+navigation-box { box-shadow: 0 6px 8px rgba(0,0,0,.175); }
 
 /* UL Rules */
 ul { list-style-type: none; }
