@@ -27,21 +27,23 @@
 </nav>
 
 <div class="container-fluid bg-beige-brown">
-  <div class="container navigation-box">
+  <div class="container">
+    <div class="col-lg-12 navigation-box">
       <ul class="no-padding">
         <li>
           <div class="container no-padding">
             <a href="#">Test</a>
           </div>
-          <ul class="dummy">            
-              <div class="container container-margin-top">
-                <div class="col-lg-12 bg-black link-color-white nav-margin-top-07 no-padding">
-                  <li>Test</li>
-                </div>
+          <ul class="dummy">
+            <div class="container container-margin-top">
+              <div class="col-lg-12 bg-black link-color-white nav-margin-top-07 no-padding">
+                <li>Test</li>
               </div>
+            </div>
           </ul>
         </li>
       </ul>
+    </div>
   </div>
 </div>
 
