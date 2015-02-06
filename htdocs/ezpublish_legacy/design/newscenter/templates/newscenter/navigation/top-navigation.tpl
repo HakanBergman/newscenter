@@ -18,7 +18,7 @@
                 <div class="container no-padding">
                   <a href="#">Test</a>
                 </div>
-                <ul class="dummy">
+                <ul class="dummy hidden">
                   <div class="col-lg-12 bg-black link-color-white nav-margin-top-07 no-padding">
                     <li>Test</li>
                   </div>
