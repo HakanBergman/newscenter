@@ -14,8 +14,8 @@
         <nav>
           <ul class="no-padding">
             {foreach $menu_items as $item}
-              <li class="nav-padding-top-05 nav-padding-bottom-05 float-left col-lg-15-max-width">
-                <a class="font-size-nav-link link-color-white font-weight-bold italic" href="{$item.url|ezurl('no', 'full')}">{$item.name|wash()}</a>
+              <li class="nav-padding-top-05 nav-padding-bottom-05 float-left col-lg-1-max-width">
+                <a class="font-size-nav-link font-weight-bold" href="{$item.url|ezurl('no', 'full')}">{$item.name|wash()}</a>
                 <ul class="dummy hidden">
                   <div class="col-lg-12 bg-black link-color-white nav-margin-top-07 no-padding">
                     <li>Test</li>
