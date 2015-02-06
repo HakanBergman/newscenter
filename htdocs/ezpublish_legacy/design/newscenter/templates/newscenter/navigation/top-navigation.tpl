@@ -26,7 +26,7 @@
 	</div>
 </nav>
 
-<div class="container-fluid bg-beige">
+<div class="container-fluid bg-beige-brown">
   <div class="container navigation-box">
       <ul class="no-padding">
         <li>
