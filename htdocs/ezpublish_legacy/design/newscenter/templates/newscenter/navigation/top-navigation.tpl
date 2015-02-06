@@ -30,7 +30,7 @@
   <div class="container">
     <div class="col-lg-12 navigation-box">
       <ul class="no-padding">
-        <li>
+        <li class="nav-padding-top">
           <div class="container no-padding">
             <a href="#">Test</a>
           </div>
