@@ -35,10 +35,8 @@
             <a href="#">Test</a>
           </div>
           <ul class="dummy">
-            <div class="container container-margin-top">
-              <div class="col-lg-12 bg-black link-color-white nav-margin-top-07 no-padding">
-                <li>Test</li>
-              </div>
+            <div class="col-lg-12 bg-black link-color-white nav-margin-top-07 no-padding">
+              <li>Test</li>
             </div>
           </ul>
         </li>
