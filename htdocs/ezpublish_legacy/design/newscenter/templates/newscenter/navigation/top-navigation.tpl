@@ -26,7 +26,8 @@
 	</div>
 </nav>
 
-<div class="container">  
+<div class="container-fluid bg-black">
+  <div class="container">
       <ul class="box no-padding">
         <li>
           <div class="container no-padding">
@@ -42,6 +43,7 @@
           </ul>
         </li>
       </ul>
+  </div>
 </div>
 
 
