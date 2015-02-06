@@ -40,6 +40,8 @@ section .widget-margin-top { margin-top: 1em; }
 .nav-padding-top-05 { padding-top: 0.5em; }
 .nav-padding-left { padding-left: 1em; }
 .nav-padding-right { padding-right: 1em; }
+.nav-padding-right-2 { padding-right: 2em; }
+.nav-padding-right-3 { padding-right: 3em; }
 .nav-padding-bottom { padding-bottom: 1em; }
 .nav-padding-bottom-05 { padding-bottom: 0.5em; }
 .nav-padding-bottom-2 { padding-bottom: 2em; }
