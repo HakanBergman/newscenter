@@ -25,7 +25,13 @@
       </div>
 	</div>
 </nav>
-
+<div class="container-fluid bg-beige-yellow">
+  <div class="container">
+    <div class="col-lg-12">
+      LOGO
+    </div>
+  </div>
+</div>
 <div class="container-fluid bg-beige-brown">
   <div class="container">
     <div class="col-lg-12 navigation-box">
