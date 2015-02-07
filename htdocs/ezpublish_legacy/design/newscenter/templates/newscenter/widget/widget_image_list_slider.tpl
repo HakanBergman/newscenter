@@ -5,19 +5,21 @@
         <img class="height-100-percent img-responsive" src="/{$block.data_map.image_one.content.original.full_path}" alt="{$block.data_map.image_one.content.alternative_text}" data-description="{$block.data_map.image_one.content.alternative_text}"></img> 
       </li>
     {/if}
+    {if $block.data_map.image_two.has_content}
     <li>
-      <img src="http://static.pgwjs.com/img/pg/slider/montreal_mini.jpg" alt="Montréal, QC, Canada" data-large-src="http://static.pgwjs.com/img/pg/slider/montreal.jpg">
+      <img class="height-100-percent img-responsive" src="/{$block.data_map.image_two.content.original.full_path}" alt="{$block.data_map.image_two.content.alternative_text}" data-description="{$block.data_map.image_two.content.alternative_text}"></img>
     </li>
+    {/if}
+    {if $block.data_map.image_three.has_content}
     <li>
-      <img src="http://static.pgwjs.com/img/pg/slider/shanghai.jpg">
-        <span>Shanghai, China</span>
-      </li>
-    <li>
-      <a href="http://www.nyc.gov" target="_blank">
-        <img src="http://static.pgwjs.com/img/pg/slider/new-york.jpg">
-          <span>New York, NY, USA</span>
-        </a>
+      <img class="height-100-percent img-responsive" src="/{$block.data_map.image_three.content.original.full_path}" alt="{$block.data_map.image_three.content.alternative_text}" data-description="{$block.data_map.image_three.content.alternative_text}"></img>
     </li>
+    {/if}
+    {if $block.data_map.image_four.has_content}
+    <li>
+      <img class="height-100-percent img-responsive" src="/{$block.data_map.image_four.content.original.full_path}" alt="{$block.data_map.image_four.content.alternative_text}" data-description="{$block.data_map.image_four.content.alternative_text}"></img>
+    </li>
+    {/if}
   </ul>
 </div>
 {literal}
