@@ -93,6 +93,21 @@
 				{include uri="design:newscenter/widget/widget_slider_carousel.tpl"}
 			</div>
 
+			<ul class="pgwSlider">
+				<li><img src="paris.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
+				<li><img src="montreal_mini.jpg" alt="Montréal, QC, Canada" data-large-src="montreal.jpg"></li>
+				<li>
+					<img src="shanghai.jpg">
+					<span>Shanghai, China</span>
+				</li>
+				<li>
+					<a href="http://www.nyc.gov" target="_blank">
+						<img src="new-york.jpg">
+					<span>New York, NY, USA</span>
+					</a>
+				</li>
+			</ul>
+
 			{* Include Standard Zones *}
 			{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'sort_by', array('priority', true()) ))}
 			{if $zones}
