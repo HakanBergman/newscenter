@@ -1,8 +1,8 @@
 <div class="row thumbnail widget-margin-top widget-list-slider">
   <ul class="pgwSlider">
     {if $block.data_map.image_one.has_content}
-      <li>
-        <img class="max-height-30 img-responsive" src="/{$block.data_map.image_one.content.original.full_path}" alt="{$block.data_map.image_one.content.alternative_text}" data-description="{$block.data_map.image_one.content.alternative_text}"></img>
+      <li class="col-lg-8">
+        <img class="max-height-30 img-responsive" src="/{$block.data_map.image_one.content.original.full_path}" alt="{$block.data_map.image_one.content.alternative_text}" data-description="{$block.data_map.image_one.content.alternative_text}"></img> 
       </li>
     {/if}
     <li>
