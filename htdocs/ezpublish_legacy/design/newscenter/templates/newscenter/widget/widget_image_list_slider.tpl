@@ -3,7 +3,7 @@
   <ul class="pgwSlider">
     {if $block.data_map.image_one.has_content}
       <li>
-        <img src="/{$block.data_map.image_one.content.original.full_path}" alt="{$block.data_map.image_one.content.alternate_text}" data-description="Eiffel Tower and Champ de Mars">
+        <img class="max-height-30 img-responsive" src="/{$block.data_map.image_one.content.original.full_path}" alt="{$block.data_map.image_one.content.alternative_text}" data-description="{$block.data_map.image_one.content.alternative_text}">
       </li>
     {/if}
     <li>

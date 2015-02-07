@@ -5,6 +5,10 @@ section .row { margin: 0; padding: 0; padding: 0; margin: 0; }
 section .container { padding: 0; padding-left: 15px; padding-right: 15px; max-width: 100%; }
 section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 
+/* Max Height */
+.max-height-30 { max-height: 30em; }
+
+/* Max Width */
 .col-lg-12-max-width { max-width: 100%; width: 100%; }
 .col-lg-11-max-width { max-width: 91.66666667%; width: 100%; }
 .col-lg-10-max-width { max-width: 83.33333333%; width: 100%; }
