@@ -20,8 +20,15 @@
 </div>
 {literal}
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('.pgwSlider').pgwSlider({ adaptiveHeight : true, maxHeight : 300 });
-		});
-	</script>
+    $(document).ready(function() {
+      $('.pgwSlider').pgwSlider({
+        adaptiveHeight : true,
+        maxHeight : 300,
+        listPosition: 'right',
+        selectionMode: 'click',
+        autoSlide: false,
+        displayList: true,    
+      });
+    });
+  </script>
 {/literal}
