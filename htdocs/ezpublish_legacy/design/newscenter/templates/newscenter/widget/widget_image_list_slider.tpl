@@ -1,5 +1,4 @@
 <div class="row thumbnail widget-margin-top widget-list-slider">
-  {$block.data_map.image_one.content|attribute(show, 1)}
   <ul class="pgwSlider">
     {if $block.data_map.image_one.has_content}
       <li>
