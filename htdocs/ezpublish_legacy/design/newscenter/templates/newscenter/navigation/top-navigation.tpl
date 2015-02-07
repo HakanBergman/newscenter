@@ -1,7 +1,7 @@
 
 <div class="container-fluid bg-beige-yellow">
   <div class="container">
-    <div class="col-lg-12">
+    <div class="col-lg-12 no-padding">
       {include uri="design:page_header_logo.tpl"}
       {include uri="design:page_header_searchbox.tpl"}
     </div>
