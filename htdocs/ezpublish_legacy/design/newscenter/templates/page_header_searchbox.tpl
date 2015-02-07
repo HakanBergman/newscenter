@@ -6,3 +6,6 @@
       </span>
   </div>
 </form>
+<form method="get" action="/">
+  <button>test</button>
+</form>
