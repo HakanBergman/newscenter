@@ -11,6 +11,9 @@ section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 /* Min Height */
 .min-height-100-percent { min-height: 100%; }
 
+/* Height */
+.height-100-percent { height: 100; }
+
 /* Max Width */
 .col-lg-12-max-width { max-width: 100%; width: 100%; }
 .col-lg-11-max-width { max-width: 91.66666667%; width: 100%; }
