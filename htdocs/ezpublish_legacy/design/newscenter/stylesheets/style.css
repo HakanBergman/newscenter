@@ -6,7 +6,10 @@ section .container { padding: 0; padding-left: 15px; padding-right: 15px; max-wi
 section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 
 /* Max Height */
-.max-height-30 { max-height: 30em; }
+.max-height-100-percent { max-height: 100%; }
+
+/* Min Height */
+.min-height-100-percent { min-height: 100%; }
 
 /* Max Width */
 .col-lg-12-max-width { max-width: 100%; width: 100%; }
