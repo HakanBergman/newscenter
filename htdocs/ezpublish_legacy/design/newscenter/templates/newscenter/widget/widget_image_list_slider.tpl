@@ -15,7 +15,7 @@
 {literal}
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('.pgwSlider').pgwSlider( 'adaptiveHeight': true, 'maxHeight': 300 );
+			$('.pgwSlider').pgwSlider( adaptiveHeight : true, maxHeight : 300 );
 		});
 	</script>
 {/literal}
