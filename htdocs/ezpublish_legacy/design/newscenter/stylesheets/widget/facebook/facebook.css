@@ -1,1 +1,2 @@
-﻿.fb_iframe_widget iframe { max-width: 12%; width: 100% !important; }
+﻿.fb_iframe_widget iframe { max-width: 100%; width: 100% !important; }
+.fb_iframe_widget span { max-width: 100%; width: 100% !important; }
