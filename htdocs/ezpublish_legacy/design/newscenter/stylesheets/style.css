@@ -40,6 +40,7 @@ a, a:visited, a:active { text-decoration: none; }
 
 /* Margin Rules */
 .no-margin { margin: 0; }
+.nav-margin-top-05 { margin-top: 0.5em; }
 .nav-margin-top-07 { margin-top: 0.7em; }
 section .widget-margin-top { margin-top: 1em; }
 
