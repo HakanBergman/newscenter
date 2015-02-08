@@ -1,7 +1,7 @@
 
 <div class="container-fluid bg-beige-yellow">
   <div class="container">
-    <div class="col-lg-12 no-padding">
+    <div class="col-lg-12 col-md-12 col-sm-12 no-padding">
       {include uri="design:page_header_logo.tpl"}
       {include uri="design:page_header_searchbox.tpl"}
     </div>
@@ -9,7 +9,7 @@
 </div>
 <div class="container-fluid bg-black">
   <div class="container">
-    <div class="col-lg-12 navigation-box">
+    <div class="col-lg-12 col-md-12 col-sm-12 navigation-box">
       {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
       {if $menu_items}
         <nav>
