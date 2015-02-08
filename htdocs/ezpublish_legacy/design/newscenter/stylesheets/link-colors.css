@@ -1,32 +1,32 @@
 ﻿/* Blue */
-.link-color-blue, .link-color-blue a { color: #284673; font-weight: 700; text-decoration: none; } 
+.link-color-blue { color: #284673; font-weight: 700; text-decoration: none; } 
 .link-color-blue-hover { color: #284673; font-weight: 700; text-decoration: none; } 
 .link-color-blue-active { color: #284673; font-weight: 700; text-decoration: none; }
-.link-color-blue-visisted a:visited { color: #284673; font-weight: 700; text-decoration: none; }
+.link-color-blue-visited { color: #284673; font-weight: 700; text-decoration: none; }
 
 /* Pink */
-.link-color-pink, .link-color-pink a { color: #f07584; font-weight: 700; text-decoration: none; } 
+.link-color-pink { color: #f07584; font-weight: 700; text-decoration: none; } 
 .link-color-pink-hover { color: #f07584; font-weight: 700; text-decoration: none; } 
 .link-color-pink-active { color: #f07584; font-weight: 700; text-decoration: none; }
-.link-color-pink-visisted a:visited { color: #f07584; font-weight: 700; text-decoration: none; }
+.link-color-pink-visited { color: #f07584; font-weight: 700; text-decoration: none; }
 
 /* Yellow */
-.link-color-yellow, .link-color-yellow a { color: #fff314; font-weight: 700; text-decoration: none; }
+.link-color-yellow { color: #fff314; font-weight: 700; text-decoration: none; }
 .link-color-yellow-hover { color: #fff314; font-weight: 700; text-decoration: none; }  
 .link-color-yellow-active { color: #fff314; font-weight: 700; text-decoration: none; }
-.link-color-yellow-visisted a:visited { color: #fff314; font-weight: 700; text-decoration: none; }
+.link-color-yellow-visited { color: #fff314; font-weight: 700; text-decoration: none; }
 
 /* Black */
-.link-color-black, .link-color-black a { color: #000; font-weight: 700; text-decoration: none; } 
+.link-color-black { color: #000; font-weight: 700; text-decoration: none; } 
 .link-color-black-hover { color: #000; font-weight: 700; text-decoration: none; }  
 .link-color-black-active { color: #000; font-weight: 700; text-decoration: none; }
-.link-color-black-visisted a:visited { color: #000; font-weight: 700; text-decoration: none; }
+.link-color-black-visited { color: #000; font-weight: 700; text-decoration: none; }
 
 /* White */
-.link-color-white, .link-color-white a { color: #fff; font-weight: 700; text-decoration: none; } 
+.link-color-white { color: #fff; font-weight: 700; text-decoration: none; } 
 .link-color-white-hover { color: #fff; font-weight: 700; text-decoration: none; }  
 .link-color-white-active { color: #fff; font-weight: 700; text-decoration: none; }
-.link-color-white-visisted a:visited { color: #fff; font-weight: 700; text-decoration: none; }
+.link-color-white-visited { color: #fff; font-weight: 700; text-decoration: none; }
 
     
     
