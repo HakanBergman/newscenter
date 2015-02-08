@@ -18,6 +18,7 @@ CSSFileList[]=widget/product/product.css
 CSSFileList[]=widget/news/news-block.css
 CSSFileList[]=widget/ads/ads-block.css
 CSSFileList[]=widget/image/image.css
+CSSFileList[]=widget/facebook/facebook.css
 
 [JavaScriptSettings]
 JavaScriptList[]=insertmedia.js
