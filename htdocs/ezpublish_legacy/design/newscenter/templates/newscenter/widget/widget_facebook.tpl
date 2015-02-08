@@ -1,0 +1,1 @@
+{$block.data_map.fb_link.data_text}
