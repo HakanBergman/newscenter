@@ -2,10 +2,10 @@
 	<h2>{$block.name|wash()|upcase()}</h2>
 	{switch match=$product_categories|count()}
 		{case match=3}
-			{def $class = "col-lg-4 col-md-4 col-sm-4 col-xs-4"}
+			{def $class = "col-lg-4 col-md-4 col-sm-4"}
 		{/case}
 		{case match=4}
-			{def $class = "col-lg-3 col-md-3 col-sm-3 col-xs-3"}
+			{def $class = "col-lg-3 col-md-3 col-sm-3"}
 		{/case}
 		{case}
 			{def $class = "col-lg-12"}
