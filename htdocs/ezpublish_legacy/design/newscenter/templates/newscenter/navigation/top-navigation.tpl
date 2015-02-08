@@ -19,7 +19,7 @@
                 <a class="font-size-nav-link font-weight-bold nav-padding-right-3" href="{$item.url|ezurl('no', 'full')}">{$item.name|wash()}</a>
                 <ul class="dummy hidden">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-black link-color-white nav-margin-top-07 no-padding no-margin">
-                    <li>Test</li>
+                    <li>Test <span class="caret"></span></li>
                   </div>
                 </ul>
               </li>
