@@ -28,5 +28,12 @@
 .link-color-white-active a:active { color: #fff; font-weight: 700; text-decoration: none; }
 .link-color-white-visited a:visited { color: #fff; font-weight: 700; text-decoration: none; }
 
+/* Beige */
+.link-color-beige a { color: #ffffd1; font-weight: 700; text-decoration: none; } 
+.link-color-beige-hover a:hover { color: #ffffd1; font-weight: 700; text-decoration: none; }  
+.link-color-beige-active a.active { color: #ffffd1; font-weight: 700; text-decoration: none; }
+.link-color-beige-visited a:visited { color: #ffffd1; font-weight: 700; text-decoration: none; }
+
+
     
     
