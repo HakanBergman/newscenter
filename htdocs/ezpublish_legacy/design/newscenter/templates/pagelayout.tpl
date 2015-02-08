@@ -61,10 +61,12 @@
 		<script type="text/javascript" src={"javascript/mmenu.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/orientation.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/pgwslider/pgwslider.min.js"|ezdesign}></script>
+		<script type="text/javascript" src={"javascript/facebook.js"|ezdesign}></script>
 
 	</head>
 	
 	<body class="bg-grey font-family-bookman-old">
+	<div id="fb-root"></div>
 	
 		{* Page Landscape disable *}
 		{*<div class="container">
