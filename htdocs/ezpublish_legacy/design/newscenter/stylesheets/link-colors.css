@@ -1,32 +1,32 @@
 ﻿/* Blue */
-.link-color-blue { color: #284673; font-weight: 700; text-decoration: none; } 
-.link-color-blue-hover { color: #284673; font-weight: 700; text-decoration: none; } 
-.link-color-blue-active { color: #284673; font-weight: 700; text-decoration: none; }
-.link-color-blue-visited { color: #284673; font-weight: 700; text-decoration: none; }
+.link-color-blue a { color: #284673; font-weight: 700; text-decoration: none; } 
+.link-color-blue-hover a:hover { color: #284673; font-weight: 700; text-decoration: none; } 
+.link-color-blue-active a:active { color: #284673; font-weight: 700; text-decoration: none; }
+.link-color-blue-visited a:visited { color: #284673; font-weight: 700; text-decoration: none; }
 
 /* Pink */
-.link-color-pink { color: #f07584; font-weight: 700; text-decoration: none; } 
-.link-color-pink-hover { color: #f07584; font-weight: 700; text-decoration: none; } 
-.link-color-pink-active { color: #f07584; font-weight: 700; text-decoration: none; }
-.link-color-pink-visited { color: #f07584; font-weight: 700; text-decoration: none; }
+.link-color-pink a { color: #f07584; font-weight: 700; text-decoration: none; } 
+.link-color-pink-hover a:hover { color: #f07584; font-weight: 700; text-decoration: none; } 
+.link-color-pink-active a:active { color: #f07584; font-weight: 700; text-decoration: none; }
+.link-color-pink-visited a:visited { color: #f07584; font-weight: 700; text-decoration: none; }
 
 /* Yellow */
-.link-color-yellow { color: #fff314; font-weight: 700; text-decoration: none; }
-.link-color-yellow-hover { color: #fff314; font-weight: 700; text-decoration: none; }  
-.link-color-yellow-active { color: #fff314; font-weight: 700; text-decoration: none; }
-.link-color-yellow-visited { color: #fff314; font-weight: 700; text-decoration: none; }
+.link-color-yellow a { color: #fff314; font-weight: 700; text-decoration: none; }
+.link-color-yellow-hover a:hover { color: #fff314; font-weight: 700; text-decoration: none; }  
+.link-color-yellow-active a:active { color: #fff314; font-weight: 700; text-decoration: none; }
+.link-color-yellow-visited a:visited { color: #fff314; font-weight: 700; text-decoration: none; }
 
 /* Black */
-.link-color-black { color: #000; font-weight: 700; text-decoration: none; } 
-.link-color-black-hover { color: #000; font-weight: 700; text-decoration: none; }  
-.link-color-black-active { color: #000; font-weight: 700; text-decoration: none; }
-.link-color-black-visited { color: #000; font-weight: 700; text-decoration: none; }
+.link-color-black a { color: #000; font-weight: 700; text-decoration: none; } 
+.link-color-black-hover a:hover { color: #000; font-weight: 700; text-decoration: none; }  
+.link-color-black-active a:active { color: #000; font-weight: 700; text-decoration: none; }
+.link-color-black-visited a:visited { color: #000; font-weight: 700; text-decoration: none; }
 
 /* White */
-.link-color-white { color: #fff; font-weight: 700; text-decoration: none; } 
-.link-color-white-hover { color: #fff; font-weight: 700; text-decoration: none; }  
-.link-color-white-active { color: #fff; font-weight: 700; text-decoration: none; }
-.link-color-white-visited { color: #fff; font-weight: 700; text-decoration: none; }
+.link-color-white a { color: #fff; font-weight: 700; text-decoration: none; } 
+.link-color-white-hover a:hover { color: #fff; font-weight: 700; text-decoration: none; }  
+.link-color-white-active a:active { color: #fff; font-weight: 700; text-decoration: none; }
+.link-color-white-visited a:visited { color: #fff; font-weight: 700; text-decoration: none; }
 
     
     
