@@ -10,10 +10,11 @@
 <div class="container-fluid bg-black">
   <div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navigation-box">
-      {$current_node|attribute(show, 1)}
+      {$current_node.path|attribute(show, 1)}
+      {$current_node.path_array|attribute(show, 1)}
       {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
       {if $menu_items}
-        <nav>
+      <nav>
           <ul class="no-padding">             
             {foreach $menu_items as $item}              
               <li class="no-padding nav-padding-top-05 nav-padding-bottom-05 float-left {$#company.data_map.link_color_menu.data_text} link-color-beige-active link-color-beige-hover">
