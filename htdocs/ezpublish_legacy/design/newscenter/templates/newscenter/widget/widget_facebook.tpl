@@ -1,1 +1,1 @@
-{$block.data_map.fb_link.data_text}
+{$block.data_map.fb_link.value}
