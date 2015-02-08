@@ -17,7 +17,7 @@
             {foreach $menu_items as $item}
               <li class="no-padding nav-padding-top-05 nav-padding-bottom-05 float-left">
                 {def $subitems = fetch('content', 'list', hash('content', 'parent_node_id', $item.node_id))}
-                  <a class="font-size-nav-link font-weight-bold nav-padding-right-3" href="{$item.url|ezurl('no', 'full')}">{$item.name|wash()}{if $subitems|count()} <span class="caret"></span>{/if}</a>
+                  <a class="font-size-nav-link font-weight-bold nav-padding-right-3" href="{$item.url|ezurl('no', 'full')}">{$item.name|wash()} {$subitems|count()} {if $subitems|count()} <span class="caret"></span>{/if}</a>
                   <ul class="dummy hidden">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-black link-color-white nav-margin-top-05 no-padding">
                       <li>Test</li>
