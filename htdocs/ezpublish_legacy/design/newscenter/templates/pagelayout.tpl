@@ -23,7 +23,8 @@
 		{* Page Styles *}
 		{def $pagestyle        = $pagedata.css_classes
 			 $locales          = fetch( 'content', 'translation_list' )
-			 $current_node_id  = $pagedata.node_id}
+			 $current_node_id  = $pagedata.node_id
+			 $current_node	   = fetch('content', 'node', hash('node_id', $current_node_id))}
 
 		{* Global Variables *}
 		{def $zone_width = ""}
