@@ -24,8 +24,8 @@
                         {foreach $subitems as $subitem}                          
                           {def $subclass = concat("col-lg-", $subitems|count()|inc())}                           
                             <li>
-                              <div class="{$subclass}">
-                                {$subitem.name|wash()}
+                              <div class="{$subclass} link-color-beige">
+                                <a href="{$subitem.url|ezurl('no', 'full')}" title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
                               </div>
                             </li>
                           {undef $subclass}
