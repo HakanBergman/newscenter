@@ -24,8 +24,8 @@
                         {foreach $subitems as $subitem}                          
                           {def $subclass = concat("col-lg-", $subitems|count()|inc())}                           
                             <li>
-                              <div class="{$subclass} nav-padding-top nav-padding-bottom">
-                                <a class="text-color-teal" href="{$subitem.url|ezurl('no', 'full')}" title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
+                              <div class="{$subclass} nav-padding-top nav-padding-bottom link-color-beige-hover">
+                                <a href="{$subitem.url|ezurl('no', 'full')}" title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
                                 {def $grandchild = fetch('content', 'list', hash('parent_node_id', $subitem.node_id))}
                                   {if $grandchild|count()}
                                     {foreach $grandchild as $child}
