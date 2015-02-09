@@ -100,8 +100,8 @@
 					{/if}
 					<div class="bg-granate">&nbsp;</div>
 					<div class="col-lg-12 nav-padding-bottom-4">
-						<span class="pull-left {$#company.data_map.text_color_footer.data_text}">{'&copy; Copyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} Maltimportören Stockholm</span>
-						<span class="pull-right"><span class="{$#company.data_map.text_color_footer.data_text}">Tjädervägen 1, 141 72 Segeltorp</span> | <span class="{$#company.data_map.text_color_footer.data_text}">Tel:</span> <a href="tel:086462600">08 - 646 26 00</a> | <span class="{$#company.data_map.text_color_footer.data_text}">E-postadress:</span> <a href="mailto:info@maltimportoren.se">info@maltimportoren.se</a></span>
+						<span class="pull-left {$#company.data_map.text_color_footer.data_text}">{'&copy; Copyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} {$#company.name|wash()}</span>
+						<span class="pull-right"><span class="{$#company.data_map.text_color_footer.data_text}">{$#company.data_map.company_address.data_text}, {$#company.data_map.zipcode.data_text} {$#company.data_map.city.data_text}</span> | <span class="{$#company.data_map.text_color_footer.data_text}">Tel:</span> <a href="tel:086462600">{$#company.data_map.phone.data_text}</a> | <span class="{$#company.data_map.text_color_footer.data_text}">E-postadress:</span> <a href="mailto:{$#company.data_map.email.data_text}">{$#company.data_map.email.data_text}</a></span>
 					</div>
 				</footer>
 			</div>
