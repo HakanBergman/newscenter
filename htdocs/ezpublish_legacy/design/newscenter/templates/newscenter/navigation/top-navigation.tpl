@@ -15,7 +15,7 @@
       <nav>
           <ul class="no-padding">             
             {foreach $menu_items as $item}              
-              <li class="no-padding nav-padding-top-05 nav-padding-bottom-05 float-left {$#company.data_map.link_color_menu.data_text} link-color-beige-active link-color-beige-hover">
+              <li class="no-padding nav-padding-top-05 nav-padding-bottom-05 float-left {$#company.data_map.link_color_menu.data_text} {$#company.data_map.link_color_menu_active.data_text} {$#company.data_map.link_color_menu_mouseover.data_text} link-color-beige-active link-color-beige-hover">
                 {def $subitems = fetch('content', 'list', hash('parent_node_id', $item.node_id, 'sort_by', array('name', true()) ))}
                   <a class="font-size-nav-link font-weight-bold nav-padding-right-3{if $current_node.path_array|contains($item.node_id)} active{/if}{if $subitems|count()} disabled{/if}" href="{$item.url|ezurl('no', 'full')}" {if $subitems|count()} data-dropdown="list-id-{$item.node_id}"{/if}>{$item.name|wash()}{if $subitems|count()} <span class="caret"></span>{/if}</a>
                   {if $subitems|count()}
