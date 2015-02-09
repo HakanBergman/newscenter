@@ -30,7 +30,7 @@
                                   {if $grandchild|count()}
                                     {foreach $grandchild as $child}
                                      <div class="nav-padding-left link-color-beige">
-                                       <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a>
+                                       <a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">{$child.name|wash()}</a>
                                      </div>
                                     {/foreach}
                                   {/if}
