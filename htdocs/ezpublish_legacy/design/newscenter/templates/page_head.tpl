@@ -31,10 +31,9 @@
 
     {* check if we need a http-equiv refresh *}
     {if $site.redirect}
-    <meta http-equiv="Refresh" content="{$site.redirect.timer}; URL={$site.redirect.location}" />
-	<meta charset="UTF-8">
-
+		<meta http-equiv="Refresh" content="{$site.redirect.timer}; URL={$site.redirect.location}" />
     {/if}
+
     {foreach $site.http_equiv as $key => $item}
         <meta name="{$key|wash}" content="{$item|wash}" />
 

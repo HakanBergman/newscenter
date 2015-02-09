@@ -24,12 +24,12 @@
                         {foreach $subitems as $subitem}                          
                           {def $subclass = concat("col-lg-", $subitems|count()|inc())}                           
                             <li>
-                              <div class="{$subclass} link-color-beige nav-padding-top nav-padding-bottom">
+                              <div class="{$subclass} nav-padding-top nav-padding-bottom">
                                 <a class="text-color-teal" href="{$subitem.url|ezurl('no', 'full')}" title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
                                 {def $grandchild = fetch('content', 'list', hash('parent_node_id', $subitem.node_id))}
                                   {if $grandchild|count()}
                                     {foreach $grandchild as $child}
-                                     <div class="nav-padding-left link-color-beige">
+                                     <div class="nav-padding-left link-color-beige-hover">
                                        <a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">{$child.name|wash()}</a>
                                      </div>
                                     {/foreach}
