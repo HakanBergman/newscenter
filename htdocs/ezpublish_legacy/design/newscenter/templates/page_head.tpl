@@ -32,6 +32,7 @@
     {* check if we need a http-equiv refresh *}
     {if $site.redirect}
     <meta http-equiv="Refresh" content="{$site.redirect.timer}; URL={$site.redirect.location}" />
+	<meta charset="UTF-8">
 
     {/if}
     {foreach $site.http_equiv as $key => $item}
@@ -43,10 +44,8 @@
         <meta name="{$key|wash}" content="{$module_result.content_info.persistent_variable[$key]|wash}" />
     {else}
         <meta name="{$key|wash}" content="{$item|wash}" />
-    {/if}
-	<meta charset="UTF-8">
-
-    {/foreach}
+    {/if}	
+    {/foreach}	
 
     <meta name="MSSmartTagsPreventParsing" content="TRUE" />
     <meta name="generator" content="eZ Publish" />
