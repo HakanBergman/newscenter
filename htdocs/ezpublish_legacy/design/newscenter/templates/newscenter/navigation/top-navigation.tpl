@@ -12,7 +12,7 @@
     <nav role="navigation">
       <div class="container-fluid bg-black">
         <div class="container">
-          <div class="navbar yamm">
+          <div class="navbar yamm no-margin no-padding">
             <ul class="nav navbar-nav no-padding">
               {foreach $menu_items as $item}
                 {def $subitems = fetch('content', 'list', hash('parent_node_id', $item.node_id, 'sort_by', array('name', true()) ))}
