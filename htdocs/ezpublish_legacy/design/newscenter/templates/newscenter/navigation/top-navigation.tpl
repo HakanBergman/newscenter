@@ -25,6 +25,7 @@
                     <div class="col-lg-12">
                       Undermeny
                     </div>
+                  </div>
                 </li>
               </ul>
             {/if}
