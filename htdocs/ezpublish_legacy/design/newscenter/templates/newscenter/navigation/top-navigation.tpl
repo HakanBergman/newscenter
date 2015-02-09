@@ -1,4 +1,13 @@
 <div class="container-fluid {$#company.data_map.background_color_logo.data_text}">
+  <div class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+      {include uri="design:page_header_logo.tpl"}
+      {include uri="design:page_header_searchbox.tpl"}
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-black">
   <div class="navbar navbar-default yamm">
     <div class="navbar-header">
       <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle">
