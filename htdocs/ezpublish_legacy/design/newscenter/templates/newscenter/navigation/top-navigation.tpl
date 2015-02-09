@@ -7,24 +7,30 @@
   </div>
 </div>
 
-<div class="container-fluid bg-black">
-  <div class="container">
-    <div class="navbar yamm">
-      <ul class="nav navbar-nav">
-        <li class="dropdown yamm-fw">
-          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li>
-              <div class="row">
-                <div class="col-sm-12">.col-sm-12</div>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
+<nav role="navigation">
+  <div class="container-fluid bg-black">
+    <div class="container">
+      <div class="navbar yamm">
+        <ul class="nav navbar-nav no-padding">
+          <li class="dropdown yamm-fw no-padding nav-padding-top-05 nav-padding-bottom-05 float-left {$#company.data_map.link_color_menu.data_text} {$#company.data_map.link_color_menu_active.data_text} {$#company.data_map.link_color_menu_mouseover.data_text}">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+              Grid <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="row">
+                  <div class="col-sm-12">
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
+</nav>
 
 
 <div class="container-fluid bg-black">
