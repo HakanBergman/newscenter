@@ -100,8 +100,8 @@
 					{/if}
 					<div class="bg-granate">&nbsp;</div>
 					<div class="col-lg-12 nav-padding-bottom-4">
-						<span class="link-color-white pull-left">{'&copy;opyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} Maltimportören Stockholm</span>
-						<span class="link-color-white pull-right">Tjädervägen 1, 141 72 Segeltorp | Tel: <a href="tel:086462600">08 - 646 26 00</a> | E-postadress: <a href="mailto:info@maltimportoren.se">info@maltimportoren.se</a></span>
+						<span class="pull-left {$#company.data_map.text_color_footer.data_text}">{'&copy; Copyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} Maltimportören Stockholm</span>
+						<span class="pull-right"><span class="{$#company.data_map.text_color_footer.data_text}">Tjädervägen 1, 141 72 Segeltorp</span> | <span class="{$#company.data_map.text_color_footer.data_text}">Tel:</span> <a href="tel:086462600">08 - 646 26 00</a> | <span class="{$#company.data_map.text_color_footer.data_text}">E-postadress:</span> <a href="mailto:info@maltimportoren.se">info@maltimportoren.se</a></span>
 					</div>
 				</footer>
 			</div>
