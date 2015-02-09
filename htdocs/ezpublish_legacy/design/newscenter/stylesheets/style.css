@@ -79,5 +79,5 @@ ul { list-style-type: none; }
 ul.submenu { position: absolute; z-index: 1000; float: left; list-style: none; text-align: left; right: 0; left: 0; padding: 0; display: none; }
 
 /* Font Weights */
-.font-weight-bold { font-weight: 700; }
-.font-weight-normal { font-weight: normal; }
+.font-weight-bold { font-weight: 700 !important; }
+.font-weight-normal { font-weight: normal !important; }
