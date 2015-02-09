@@ -22,7 +22,7 @@
                     <ul class="submenu" id="list-id-{$item.node_id}">
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-black link-color-white nav-margin-top-05 no-padding">
                         {foreach $subitems as $subitem}                          
-                          {def $subclass = concat("col-lg-", $subitems|count())}                           
+                          {def $subclass = concat("col-lg-", $subitems|count()|inc())}                           
                             <li>
                               <div class="{$subclass}">
                                 {$subitem.name|wash()}
