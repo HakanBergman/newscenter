@@ -20,7 +20,7 @@
                   <a class="font-size-nav-link font-weight-bold nav-padding-right-3{if $current_node.path_array|contains($item.node_id)} active{/if}{if $subitems|count()} disabled{/if}" href="{$item.url|ezurl('no', 'full')}" {if $subitems|count()} data-dropdown="list-id-{$item.node_id}"{/if}>{$item.name|wash()}{if $subitems|count()} <span class="caret"></span>{/if}</a>
                   {if $subitems|count()}
                     <ul class="submenu" id="list-id-{$item.node_id}">
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 {$#company.data_map.background_color_menu.data_text} link-color-white nav-margin-top-05 no-padding">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 {$#company.data_map.background_color_menu.data_text} {$#company.data_map.link_color_menu.data_text} min-height-23 nav-margin-top-05 no-padding">
                         {foreach $subitems as $subitem}                          
                           {def $subclass = concat("col-lg-", $subitems|count()|inc())}                           
                             <li>
