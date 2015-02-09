@@ -1,4 +1,4 @@
-<div class="row thumbnail widget-margin-top widget-image">
+<div class="row thumbnail widget widget-margin-top widget-image">
 	<div class="{if $block.data_map.fullscreen.value}container-fluid{else}container{/if}">
 		<article>
 			<div class="media">
