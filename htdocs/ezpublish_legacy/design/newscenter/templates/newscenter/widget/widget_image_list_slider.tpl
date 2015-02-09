@@ -1,26 +1,28 @@
-<div class="row thumbnail widget-margin-top widget-list-slider">
-  <ul class="pgwSlider">
-    {if $block.data_map.image_one.has_content}
-      <li>
-        <img class="height-100-percent img-responsive" src="/{$block.data_map.image_one.content.original.full_path}" alt="{$block.data_map.image_one.content.alternative_text}" data-description="{$block.data_map.image_one.content.alternative_text}"></img> 
-      </li>
-    {/if}
-    {if $block.data_map.image_two.has_content}
-    <li>
-      <img class="height-100-percent img-responsive" src="/{$block.data_map.image_two.content.original.full_path}" alt="{$block.data_map.image_two.content.alternative_text}" data-description="{$block.data_map.image_two.content.alternative_text}"></img>
-    </li>
-    {/if}
-    {if $block.data_map.image_three.has_content}
-    <li>
-      <img class="height-100-percent img-responsive" src="/{$block.data_map.image_three.content.original.full_path}" alt="{$block.data_map.image_three.content.alternative_text}" data-description="{$block.data_map.image_three.content.alternative_text}"></img>
-    </li>
-    {/if}
-    {if $block.data_map.image_four.has_content}
-    <li>
-      <img class="height-100-percent img-responsive" src="/{$block.data_map.image_four.content.original.full_path}" alt="{$block.data_map.image_four.content.alternative_text}" data-description="{$block.data_map.image_four.content.alternative_text}"></img>
-    </li>
-    {/if}
-  </ul>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding">
+  <div class="row thumbnail widget-margin-top widget-list-slider">
+    <ul class="pgwSlider">
+      {if $block.data_map.image_one.has_content}
+        <li>
+          <img class="height-100-percent img-responsive" src="/{$block.data_map.image_one.content.original.full_path}" alt="{$block.data_map.image_one.content.alternative_text}" data-description="{$block.data_map.image_one.content.alternative_text}"></img>
+        </li>
+      {/if}
+      {if $block.data_map.image_two.has_content}
+        <li>
+          <img class="height-100-percent img-responsive" src="/{$block.data_map.image_two.content.original.full_path}" alt="{$block.data_map.image_two.content.alternative_text}" data-description="{$block.data_map.image_two.content.alternative_text}"></img>
+        </li>
+      {/if}
+      {if $block.data_map.image_three.has_content}
+        <li>
+          <img class="height-100-percent img-responsive" src="/{$block.data_map.image_three.content.original.full_path}" alt="{$block.data_map.image_three.content.alternative_text}" data-description="{$block.data_map.image_three.content.alternative_text}"></img>
+        </li>
+      {/if}
+      {if $block.data_map.image_four.has_content}
+        <li>
+          <img class="height-100-percent img-responsive" src="/{$block.data_map.image_four.content.original.full_path}" alt="{$block.data_map.image_four.content.alternative_text}" data-description="{$block.data_map.image_four.content.alternative_text}"></img>
+        </li>
+      {/if}
+    </ul>
+  </div>
 </div>
 {literal}
 	<script type="text/javascript">
