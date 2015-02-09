@@ -11,7 +11,7 @@
   <div class="container">
     <div class="navbar navbar-default yamm">
       <ul class="nav navbar-nav">
-        <li class="dropdown yamm-fw open">
+        <li class="dropdown yamm-fw">
           <a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li class="grid-demo">
