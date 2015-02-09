@@ -29,7 +29,9 @@
                                 {def $grandchild = fetch('content', 'list', hash('parent_node_id', $subitem.node_id))}
                                   {if $grandchild|count()}
                                     {foreach $grandchild as $child}
-                                     <div>{$child.name|wash()}</div>
+                                     <div class="nav-padding-left link-color-beige">
+                                       <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a>
+                                     </div>
                                     {/foreach}
                                   {/if}
                                 {undef $grandchild}
