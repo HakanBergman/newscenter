@@ -13,9 +13,9 @@
       {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
       {if $menu_items}
       
-      <nav class="navbar yamm navbar-default " role="navigation">
-        <ul class="nav navbar-nav">
-          <li class="dropdown yamm-fw">
+      <nav role="navigation">
+        <ul class="nav navbar-nav no-padding">
+          <li class="dropdown yamm-fw no-padding nav-padding-top-05 nav-padding-bottom-05 float-left {$#company.data_map.link_color_menu.data_text} {$#company.data_map.link_color_menu_active.data_text} {$#company.data_map.link_color_menu_mouseover.data_text}">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle">
               Grid<b class="caret"></b>
             </a>
