@@ -9,12 +9,12 @@
 
 <div class="container-fluid bg-black">
   <div class="container">
-    <div class="navbar navbar-default yamm">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navigation-box">
       <ul class="nav navbar-nav">
         <li class="dropdown yamm-fw">
-          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid<b class="caret"></b></a>
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li class="grid-demo">
+            <li>
               <div class="row">
                 <div class="col-sm-12">.col-sm-12</div>
               </div>
@@ -26,22 +26,6 @@
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-<div class="container-fluid {$#company.data_map.background_color_logo.data_text}">  
-  <div class="container">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
-      {include uri="design:page_header_logo.tpl"}
-      {include uri="design:page_header_searchbox.tpl"}
-    </div>
-  </div>
-</div>
 
 <div class="container-fluid bg-black">
   <div class="container">
