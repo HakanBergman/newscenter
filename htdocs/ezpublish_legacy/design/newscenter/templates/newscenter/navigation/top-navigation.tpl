@@ -26,6 +26,13 @@
                             <li>
                               <div class="{$subclass} link-color-beige">
                                 <a href="{$subitem.url|ezurl('no', 'full')}" title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
+                                {def $grandchild = fetch('content', 'list', hash('parent_node_id', $subitem.node_id))}
+                                  {if $grandchild|count()}
+                                    {foreach $grandchild as $child}
+                                     <div>{$child.name|wash()}</div>
+                                    {/foreach}
+                                  {/if}
+                                {undef $grandchild}
                               </div>
                             </li>
                           {undef $subclass}
