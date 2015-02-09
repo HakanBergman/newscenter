@@ -18,7 +18,12 @@
               <li>
                 <div class="row {$#company.data_map.background_color_menu.data_text} {$#company.data_map.link_color_menu.data_text} min-height-23 nav-margin-top-05 no-padding nav-padding-left-4 nav-padding-right-3 nav-padding-top">
                   <div class="col-sm-12">
-
+                    <div class="nav-padding-top nav-padding-bottom {$#company.data_map.link_color_menu_mouseover.data_text}">
+                      <a href="{$subitem.url|ezurl('no', 'full')}" title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
+                      <div class="nav-padding-left {$#company.data_map.link_color_menu_mouseover.data_text}">
+                        <a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">{$child.name|wash()} asd</a>
+                      </div>
+                    </div>                                        
                   </div>
                 </div>
               </li>
@@ -70,18 +75,8 @@
                         {/switch}
                         <li>
                           <div class="row {$#company.data_map.background_color_menu.data_text} {$#company.data_map.link_color_menu.data_text} min-height-23 nav-margin-top-05 no-padding nav-padding-left-4 nav-padding-right-3 nav-padding-top">
-                            <div class="{*$subclass*}col-sm-12 nav-padding-top nav-padding-bottom {$#company.data_map.link_color_menu_mouseover.data_text}">
-                              <a href="{$subitem.url|ezurl('no', 'full')}" title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
-                              {def $grandchild = fetch('content', 'list', hash('parent_node_id', $subitem.node_id))}
-                                {if $grandchild|count()}
-                                  {foreach $grandchild as $child}
-                                    <div class="nav-padding-left {$#company.data_map.link_color_menu_mouseover.data_text}">
-                                      <a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">{$child.name|wash()}</a>
-                                    </div>
-                                  {/foreach}
-                                {/if}
-                              {undef $grandchild}
-                            </div>
+
+                            
                           </div>
                         </li>
                       {undef $subclass}
