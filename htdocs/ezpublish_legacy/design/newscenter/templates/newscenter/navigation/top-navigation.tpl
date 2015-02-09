@@ -21,15 +21,14 @@
                   {if $subitems|count()}
                     <ul class="submenu" id="list-id-{$item.node_id}">
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-black link-color-white nav-margin-top-05 no-padding">
-                        {foreach $subitems as $subitem}
-                          {def $items = {$subitems|count()}
-                          {def $subclass = concat("col-lg-", $items)}                           
+                        {foreach $subitems as $subitem}                          
+                          {def $subclass = concat("col-lg-", $subitems|count())}                           
                             <li>
                               <div class="{$subclass}">
                                 {$subitem.name|wash()}
                               </div>
                             </li>
-                          {undef $items $subclass}
+                          {undef $subclass}
                         {/foreach}
                       </div>
                     </ul>
