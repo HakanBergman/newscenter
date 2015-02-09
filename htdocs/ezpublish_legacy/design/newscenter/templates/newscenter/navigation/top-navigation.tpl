@@ -23,7 +23,7 @@
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-black link-color-white nav-margin-top-05 no-padding">
                         {foreach $subitems as $subitem}
                           {def $items = {$subitems|count()}
-                          {def $subclass = "col-lg-$items"}                           
+                          {def $subclass = concat("col-lg-", $items)}                           
                             <li>
                               <div class="{$subclass}">
                                 {$subitem.name|wash()}
