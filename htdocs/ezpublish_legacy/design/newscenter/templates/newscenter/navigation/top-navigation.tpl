@@ -29,7 +29,7 @@
 
 
 
-      <nav>
+      <nav class="navbar yamm navbar-default " role="navigation">
           <ul class="no-padding nav navbar-nav">             
             {foreach $menu_items as $item}              
               <li class="dropdown yamm-fw no-padding nav-padding-top-05 nav-padding-bottom-05 float-left {$#company.data_map.link_color_menu.data_text} {$#company.data_map.link_color_menu_active.data_text} {$#company.data_map.link_color_menu_mouseover.data_text}">
