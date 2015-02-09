@@ -67,24 +67,9 @@
 
 	</head>
 	
-	<body class="bg-grey font-family-bookman-old text-color-white">
+	<body class="bg-grey font-family-bookman-old {$#company.data_map.link_color_menu.data_text}">
 	<div id="fb-root"></div>
-	
-		{* Page Landscape disable *}
-		{*<div class="container">
-			<div class="landscape thumbnail alert-warning hidden">
-				<p>Du försöker se hemsidan i ett format som inte stöds.</p>
-				<small>Det kan bero på följande orsaker:</small>
-				<ul>
-					<li>Du använder din enhet i landskapsläge</li>
-					<li>Din webbläsare/enhet behöver uppdateras</li>
-				</ul>
-				<p>Om din enhet är i landskapsläge, var vänlig att rotera den till porträttläge för att se hemsidan igen.</p>
-				<small>Om din enhet inte roterar när du vänder den i porträttläge så kan den vara låst.</small>
-			</div>
-		</div>
-		*}
-		
+
 		<div class="container-fluid website">
 
 			{* Include Headers *}
@@ -93,15 +78,11 @@
 			{* Include Headers *}
 			{include uri='design:page_header.tpl'}
 
-			<div class="content-fluid">
-				{include uri="design:newscenter/widget/widget_slider_carousel.tpl"}
-			</div>
-
 			{* Include Standard Zones *}
 			{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'sort_by', array('priority', true()) ))}
 			{if $zones}
 				{foreach $zones as $zone}
-					{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+					{*include uri="design:newscenter/zone/zone.tpl" zone=$zone*}
 				{/foreach}
 			{/if}
 
@@ -114,7 +95,7 @@
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone_footer')))}
 					{if $zones}
 						{foreach $zones as $zone}
-							{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+							{*include uri="design:newscenter/zone/zone.tpl" zone=$zone*}
 						{/foreach}
 					{/if}
 					<div class="bg-granate">&nbsp;</div>
