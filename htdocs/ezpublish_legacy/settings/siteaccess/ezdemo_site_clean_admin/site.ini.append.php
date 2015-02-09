@@ -25,7 +25,6 @@ RegistrationEmail=
 [SiteAccessSettings]
 RequireUserLogin=true
 RelatedSiteAccessList[]=ezdemo_site_clean_user
-RelatedSiteAccessList[]=swe
 RelatedSiteAccessList[]=ezdemo_site_clean_admin
 ShowHiddenNodes=true
 
