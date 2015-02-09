@@ -1,6 +1,6 @@
 ﻿$( document ).ready(function() {
     $('a.disabled').click(function() {
-        alert('test');
+        alert($(this).attr('data-dropdown'));
         return false;
     });
 });
