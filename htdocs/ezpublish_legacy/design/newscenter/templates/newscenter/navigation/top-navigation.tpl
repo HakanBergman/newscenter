@@ -12,31 +12,36 @@
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navigation-box">
       {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
       {if $menu_items}
-      <ul class="nav navbar-nav">
-        <li class="dropdown yamm-fw">
-          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li class="grid-demo">
-              <div class="row">
-                <div class="col-lg-12">
-                  Undermeny
-                </div>
-              </div>
-            </li>
-          </ul>
-        </li>      
-      </ul>
-
-
-
+      
       <nav class="navbar yamm navbar-default " role="navigation">
-          <ul class="no-padding nav navbar-nav">             
+        <ul class="nav navbar-nav">
+          <li class="dropdown yamm-fw">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+              Grid<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="grid-demo">
+                <div class="row">
+                  <div class="col-lg-12">
+                    Undermeny
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+
+
+      <nav>
+          <ul class="no-padding">             
             {foreach $menu_items as $item}              
-              <li class="dropdown yamm-fw no-padding nav-padding-top-05 nav-padding-bottom-05 float-left {$#company.data_map.link_color_menu.data_text} {$#company.data_map.link_color_menu_active.data_text} {$#company.data_map.link_color_menu_mouseover.data_text}">
+              <li class="no-padding nav-padding-top-05 nav-padding-bottom-05 float-left {$#company.data_map.link_color_menu.data_text} {$#company.data_map.link_color_menu_active.data_text} {$#company.data_map.link_color_menu_mouseover.data_text}">
                 {def $subitems = fetch('content', 'list', hash('parent_node_id', $item.node_id, 'sort_by', array('name', true()) ))}
-                  <a data-toggle="dropdown" class="dropdown-toggle font-size-nav-link font-weight-bold nav-padding-right-3{if $current_node.path_array|contains($item.node_id)} active{/if}" href="#{$item.name|wash()|explode(' ')|implode('-')}">{$item.name|wash()}{if $subitems|count()} <span class="caret"></span>{/if}</a>
+                  <a class="dropdown-toggle font-size-nav-link font-weight-bold nav-padding-right-3{if $current_node.path_array|contains($item.node_id)} active{/if}" href="#{$item.name|wash()|explode(' ')|implode('-')}">{$item.name|wash()}{if $subitems|count()} <span class="caret"></span>{/if}</a>
                   {if $subitems|count()}
-                    <ul class="submenu dropdown-menu">
+                    <ul class="submenu>
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 {$#company.data_map.background_color_menu.data_text} {$#company.data_map.link_color_menu.data_text} min-height-23 nav-margin-top-05 no-padding nav-padding-left-4 nav-padding-right-3 nav-padding-top">
                         {foreach $subitems as $subitem}       
                           {switch match=$subitems|count()}
