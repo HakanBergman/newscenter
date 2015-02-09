@@ -22,7 +22,14 @@
                     <ul class="submenu" id="list-id-{$item.node_id}">
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-black link-color-white nav-margin-top-05 no-padding">
                         {foreach $subitems as $subitem}
-                          <li>{$subitem.name|wash()}</li>
+                          {def $items = {$subitems|count()}
+                          {def $subclass = "col-lg-$items"}                           
+                            <li>
+                              <div class="{$subclass}">
+                                {$subitem.name|wash()}
+                              </div>
+                            </li>
+                          {undef $items $subclass}
                         {/foreach}
                       </div>
                     </ul>
