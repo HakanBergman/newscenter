@@ -1,5 +1,12 @@
-﻿/* Blue */
-.text-color-blue { color: #284673; font-weight: 700; text-decoration: none; }
+﻿/* Teal */
+.text-color-teal { color: #4bc6d1; font-weight: 700; text-decoration: none; } 
+.link-color-teal a { color: #4bc6d1; font-weight: 700; text-decoration: none; } 
+.link-color-teal-hover a:hover { color: #4bc6d1; font-weight: 700; text-decoration: none; } 
+.link-color-teal-active a:active { color: #4bc6d1; font-weight: 700; text-decoration: none; }
+.link-color-teal-visited a:visited { color: #4bc6d1; font-weight: 700; text-decoration: none; }
+
+/* Blue */
+.text-color-blue { color: #284673; font-weight: 700; text-decoration: none; } 
 .link-color-blue a { color: #284673; font-weight: 700; text-decoration: none; } 
 .link-color-blue-hover a:hover { color: #284673; font-weight: 700; text-decoration: none; } 
 .link-color-blue-active a:active { color: #284673; font-weight: 700; text-decoration: none; }
