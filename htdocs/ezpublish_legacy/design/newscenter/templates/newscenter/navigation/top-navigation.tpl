@@ -17,7 +17,7 @@
               {foreach $menu_items as $item}
                 {def $subitems = fetch('content', 'list', hash('parent_node_id', $item.node_id, 'sort_by', array('name', true()) ))}
                 <li class="{if $subitems|count()}dropdown yamm-fw {/if}no-padding nav-padding-top-05 nav-padding-bottom-05 float-left {$#company.data_map.link_color_menu.data_text} {$#company.data_map.link_color_menu_active.data_text} {$#company.data_map.link_color_menu_mouseover.data_text}">                  
-                    <a href="{$item.url|ezurl('no', 'full')}" data-toggle="dropdown" class="dropdown-toggle font-size-nav-link font-weight-bold nav-padding-right-3{if $current_node.path_array|contains($item.node_id)} active{/if}" title="{$item.name|wash()|explode(' ')|implode('-')}">{$item.name|wash()}{if $subitems|count()} <span class="caret"></span>{/if}</a>
+                    <a href="{$item.url|ezurl('no', 'full')}" {if $subitems|count()}data-toggle="dropdown" {/if}class="{if $subitems|count()}dropdown-toggle {/if}font-size-nav-link font-weight-bold nav-padding-right-3{if $current_node.path_array|contains($item.node_id)} active{/if}" title="{$item.name|wash()|explode(' ')|implode('-')}">{$item.name|wash()}{if $subitems|count()} <span class="caret"></span>{/if}</a>
                     {if $subitems|count()}
                       <ul class="dropdown-menu no-background no-margin no-padding">
                         {foreach $subitems as $subitem}
