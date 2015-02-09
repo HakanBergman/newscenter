@@ -44,6 +44,7 @@
     {else}
         <meta name="{$key|wash}" content="{$item|wash}" />
     {/if}
+	<meta charset="UTF-8">
 
     {/foreach}
 
