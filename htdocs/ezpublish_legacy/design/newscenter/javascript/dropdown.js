@@ -7,7 +7,7 @@
 
         /* Show this submenu */
         $('#' + $(this).attr('data-dropdown')).show();
-        $(this).stop().animate({ opacity: 1 }, "slow");        
+        $('#' + $(this).attr('data-dropdown')).stop().animate({ opacity: 1 }, "slow");
 
         /* Return false */
         return false;
