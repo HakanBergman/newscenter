@@ -12,7 +12,7 @@
 		{/case}
 	{/switch}
 	{foreach $product_categories as $category}
-		<div class="{$class}">
+		<div class="{$class} text-color-white">
 			<h3>{$category.name|wash()}</h3>	
 			<div class="{$category.data_map.background_color.data_text}">&nbsp;</div>	
 			{def $products = fetch('content', 'list', hash('parent_node_id', $category.node_id))}
@@ -20,7 +20,7 @@
 				<nav>
 					<ul>
 						{foreach $products as $product}
-							<li><a href="{$product.url|ezurl('no', 'full')}" title="{$product.name} {$product.data_map.extra_attribute_data_text}">{$product.name|wash()}</a></li>
+							<li class="link-color-beige"><a class="font-weight-normal" href="{$product.url|ezurl('no', 'full')}" title="{$product.name} {$product.data_map.extra_attribute_data_text}">{$product.name|wash()}</a></li>
 						{/foreach}
 					</ul>
 				</nav>
