@@ -1,3 +1,5 @@
+/* Borders */
+.border-solid-white { border: 1px solid #fff; }
 
 /* Bottom Borders */
 .bottom-border-solid-black { border-bottom: 0.2em solid #000; }
