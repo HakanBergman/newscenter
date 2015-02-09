@@ -76,17 +76,7 @@ section .container-padding-right { padding-right: 0.5em; }
 
 /* UL Rules */
 ul { list-style-type: none; }
-ul.dummy {
-position: absolute;
-z-index: 1000;
-float: left;
-list-style: none;
-text-align: left;
-right: 0;
-left: 0;
-margin: 0 auto;
-padding: 0;
-}
+ul.submenu { position: absolute; z-index: 1000; float: left; list-style: none; text-align: left; right: 0; left: 0; padding: 0; display: none; }
 
 /* Font Weights */
 .font-weight-bold { font-weight: 700; }
