@@ -14,7 +14,7 @@
 	{foreach $product_categories as $category}
 		<div class="{$class} text-color-white">
 			<h3><a href="{$category.url|ezurl('no', 'full')}" title="{$category.name|wash()}">{$category.name|wash()}</a></h3>	
-			<div class="{$category.data_map.background_color.data_text}">&nbsp;</div>	
+			<div class="{$category.data_map.background_color.data_text} max-height-05">&nbsp;</div>	
 			{def $products = fetch('content', 'list', hash('parent_node_id', $category.node_id))}
 			{if $products|count()}				
 				<nav>
