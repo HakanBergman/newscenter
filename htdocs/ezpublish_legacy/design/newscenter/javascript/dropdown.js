@@ -1,13 +1,13 @@
 ﻿$( document ).ready(function() {
     $('a.disabled').click(function () {
 
-        /* Hide all submenus */
-        $('.submenu').stop().animate({ opacity: 0 }, "slow");
-        $('.submenu').hide();
+        /* Hide all submenus */       
 
         /* Show this submenu */
         $('#' + $(this).attr('data-dropdown')).show();
         $('#' + $(this).attr('data-dropdown')).stop().animate({ opacity: 1 }, "slow");
+        $('.submenu').stop().animate({ opacity: 0 }, "slow");
+        $('.submenu').hide();
 
         /* Return false */
         return false;
