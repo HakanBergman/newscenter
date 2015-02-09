@@ -21,8 +21,25 @@
                     {if $subitems|count()}
                       <ul class="dropdown-menu no-background no-margin no-padding">
                         {foreach $subitems as $subitem}
-                          <li>
-                            <div class="row {$#company.data_map.background_color_menu.data_text} {$#company.data_map.link_color_menu.data_text} min-height-23 nav-margin-top-05 no-padding nav-padding-left-4 nav-padding-right-3 nav-padding-top">
+                          {switch match=$subitems|count()}
+                            {case match=1}
+                              {def $subclass = "col-lg-12 col-md-12 col-sm-12 col-xs-12"}
+                            {/case}
+                            {case match=2}
+                              {def $subclass = "col-lg-5 col-md-5 col-sm-5 col-xs-5"}
+                            {/case}
+                            {case match=3}
+                              {def $subclass = "col-lg-4 col-md-4 col-sm-4 col-xs-4"}
+                            {/case}
+                            {case match=4}
+                              {def $subclass = "col-lg-3 col-md-3 col-sm-3 col-xs-3"}
+                            {/case}
+                            {case match=5}
+                             {def $subclass = "col-lg-2 col-md-2 col-sm-2 col-xs-2"}
+                            {/case}
+                          {/switch}
+                        <li>
+                            <div class="row {$subclass} {$#company.data_map.background_color_menu.data_text} {$#company.data_map.link_color_menu.data_text} min-height-23 nav-margin-top-05 no-padding nav-padding-left-4 nav-padding-right-3 nav-padding-top">
                               <div class="col-sm-12">
                                 <div class="nav-padding-top nav-padding-bottom {$#company.data_map.link_color_menu_mouseover.data_text}">
                                   <a href="{$subitem.url|ezurl('no', 'full')}" title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
