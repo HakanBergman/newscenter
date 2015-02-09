@@ -10,20 +10,9 @@
 <div class="container-fluid bg-black">
   <div class="container">
     <div class="navbar navbar-default yamm">
-      <div class="navbar-header">
-        <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="#" class="navbar-brand">Yamm Megamenu</a>
-      </div>
       <ul class="nav navbar-nav">
-        <!-- Grid 12 Menu -->
         <li class="dropdown yamm-fw open">
-          <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-            Grid<b class="caret"></b>
-          </a>
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li class="grid-demo">
               <div class="row">
