@@ -13,7 +13,7 @@
 	{/switch}
 	{foreach $product_categories as $category}
 		<div class="{$class} text-color-white">
-			<h3><a href="{$category.url|ezurl('no', 'full')}" title="{$category.name|wash()}">{$category.name|wash()}</a></h3>	
+			<h3 class="link-color-beige-hover"><a href="{$category.url|ezurl('no', 'full')}" title="{$category.name|wash()}">{$category.name|wash()}</a></h3>	
 			<div class="{$category.data_map.background_color.data_text} max-height-1">&nbsp;</div>	
 			{def $products = fetch('content', 'list', hash('parent_node_id', $category.node_id))}
 			{if $products|count()}				
