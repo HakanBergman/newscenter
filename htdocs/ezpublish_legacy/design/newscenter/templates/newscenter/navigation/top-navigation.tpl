@@ -13,17 +13,19 @@
       {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
       {if $menu_items}
       <ul class="nav navbar-nav">
-        <li class="dropdown yamm-fw open">
+        <li class="dropdown yamm-fw">
           <a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid<b class="caret"></b></a>
           <ul class="dropdown-menu">
-          <li class="grid-demo">
-            <div class="row">
-              <div class="col-sm-12">.col-sm-12</div>
-            </div>
-          </li>
-        </ul>
-      </li>      
-    </ul>
+            <li class="grid-demo">
+              <div class="row">
+                <div class="col-lg-12">
+                  Undermeny
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>      
+      </ul>
 
 
 
