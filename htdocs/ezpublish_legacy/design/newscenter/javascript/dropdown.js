@@ -2,11 +2,10 @@
     $('a.disabled').click(function () {
 
         /* Hide all submenus */       
-        $('.submenu').slideUp('slow');
+        $('.submenu').slideUp(400);
 
         /* Show this submenu */
-        $('#' + $(this).attr('data-dropdown')).stop().animate({ opacity: 1 }, "slow");
-        $('#' + $(this).attr('data-dropdown')).slideDown('slow');
+        $('#' + $(this).attr('data-dropdown')).slideDown(800);
 
         /* Return false */
         return false;
