@@ -2,10 +2,10 @@
     $('a.disabled').click(function () {
 
         /* Hide all submenus */
-        $('.submenu').fadeOut('slow');
+        $('.submenu').hide('fast');
 
         /* Show this submenu */
-        $('#' + $(this).attr('data-dropdown')).fadeIn('slow');
+        $('#' + $(this).attr('data-dropdown')).show('fast');
 
         /* Return false */
         return false;
