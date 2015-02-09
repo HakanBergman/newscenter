@@ -9,7 +9,7 @@
 
 <div class="container-fluid bg-black">
   <div class="container">
-    <div class="navbar navbar-default yamm">
+    <div class="navbar yamm">
       <ul class="nav navbar-nav">
         <li class="dropdown yamm-fw">
           <a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid <b class="caret"></b></a>
