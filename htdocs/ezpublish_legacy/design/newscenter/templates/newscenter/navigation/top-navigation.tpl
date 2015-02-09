@@ -19,16 +19,13 @@
             {def $subitems = fetch('content', 'list', hash('parent_node_id', $item.node_id, 'sort_by', array('name', true()) ))}
             <a href="http://www.google.se" data-toggle="dropdown" class="dropdown-toggle font-size-nav-link font-weight-bold nav-padding-right-3{if $current_node.path_array|contains($item.node_id)} active{/if}">Grid <b class="caret"></b></a>
             {if $subitems|count()}            
-              <ul class="dropdown-menu submenu">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 {$#company.data_map.background_color_menu.data_text} {$#company.data_map.link_color_menu.data_text} min-height-23 nav-margin-top-05 no-padding nav-padding-left-4 nav-padding-right-3 nav-padding-top">
-                  <li class="grid-demo">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        Undermeny
-                      </div>
+              <ul class="dropdown-menu submenu">                
+                <li class="grid-demo">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 {$#company.data_map.background_color_menu.data_text} {$#company.data_map.link_color_menu.data_text} min-height-23 nav-margin-top-05 no-padding nav-padding-left-4 nav-padding-right-3 nav-padding-top">
+                    <div class="col-lg-12">
+                      Undermeny
                     </div>
-                  </li>
-                </div>
+                </li>
               </ul>
             {/if}
           </li>
