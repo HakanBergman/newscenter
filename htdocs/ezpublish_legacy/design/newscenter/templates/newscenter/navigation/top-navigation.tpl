@@ -14,7 +14,7 @@
         <ul class="nav navbar-nav no-padding">
           <li class="dropdown yamm-fw no-padding nav-padding-top-05 nav-padding-bottom-05 float-left {$#company.data_map.link_color_menu.data_text} {$#company.data_map.link_color_menu_active.data_text} {$#company.data_map.link_color_menu_mouseover.data_text}">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle font-size-nav-link font-weight-bold nav-padding-right-3{if $current_node.path_array|contains($item.node_id)} active{/if}">Grid <b class="caret"></b></a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu no-background no-margin no-padding">
               <li>
                 <div class="row {$#company.data_map.background_color_menu.data_text} {$#company.data_map.link_color_menu.data_text} min-height-23 nav-margin-top-05 no-padding nav-padding-left-4 nav-padding-right-3 nav-padding-top">
                   <div class="col-sm-12">
