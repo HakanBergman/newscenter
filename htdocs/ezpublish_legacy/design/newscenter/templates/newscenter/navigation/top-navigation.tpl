@@ -14,7 +14,7 @@
       {if $menu_items}
       
       <nav role="navigation">
-        <ul class="no-padding">
+        <ul class="nav navbar-nav no-padding">
           <li class="dropdown yamm-fw no-padding nav-padding-top-05 nav-padding-bottom-05 float-left {$#company.data_map.link_color_menu.data_text} {$#company.data_map.link_color_menu_active.data_text} {$#company.data_map.link_color_menu_mouseover.data_text}">
             {def $subitems = fetch('content', 'list', hash('parent_node_id', $item.node_id, 'sort_by', array('name', true()) ))}
             <a href="http://www.google.se" data-toggle="dropdown" class="dropdown-toggle font-size-nav-link font-weight-bold nav-padding-right-3{if $current_node.path_array|contains($item.node_id)} active{/if}">Grid <b class="caret"></b></a>
