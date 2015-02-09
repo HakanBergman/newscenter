@@ -67,7 +67,7 @@
 
 	</head>
 	
-	<body class="bg-grey font-family-bookman-old">
+	<body class="bg-grey font-family-bookman-old text-color-white">
 	<div id="fb-root"></div>
 	
 		{* Page Landscape disable *}
