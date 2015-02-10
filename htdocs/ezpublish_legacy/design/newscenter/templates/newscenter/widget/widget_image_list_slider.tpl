@@ -1,5 +1,5 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding">
-  <div class="row thumbnail widget-margin-top widget-list-slider">
+  <div class="row thumbnail widget-margin-top widget-padding-4 widget-list-slider">
     <ul class="pgwSlider">
       {if $block.data_map.image_one.has_content}
         <li>
