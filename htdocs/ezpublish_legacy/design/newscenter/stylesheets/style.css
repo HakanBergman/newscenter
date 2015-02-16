@@ -73,8 +73,10 @@ section .widget-margin-top { margin-top: 1em; }
 section .widget-padding-top { padding-top: 1em; }
 section .widget-padding-left { padding-left: 1em; }
 section .widget-padding-4 { padding: 4px; }
-section .container-padding-left { padding-left: 0.5em; }
-section .container-padding-right { padding-right: 0.5em; }
+section .container-padding-top { padding-top: 1em; }
+section .container-padding-bottom { padding-bottom: 1em; }
+section .container-padding-left { padding-left: 1em; }
+section .container-padding-right { padding-right: 1em; }
 
 /* Float */
 .float-left { float: left; }

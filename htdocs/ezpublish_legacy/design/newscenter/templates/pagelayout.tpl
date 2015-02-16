@@ -90,7 +90,7 @@
 
 		<div class="container-fluid {$#company.data_map.background_color_footer.data_text} nav-padding-bottom-4">
 			<div class="container">
-				<footer class="{$#company.data_map.link_color_menu_mouseover.data_text} {$#company.data_map.link_color_menu.data_text}">
+				<footer class="{$#company.data_map.link_color_menu_mouseover.data_text} {$#company.data_map.link_color_menu.data_text} container-padding-top">
 					{* Include Footer Zone *}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone_footer')))}
 					{if $zones}
