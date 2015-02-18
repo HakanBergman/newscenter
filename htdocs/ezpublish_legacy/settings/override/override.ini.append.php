@@ -30,6 +30,12 @@ MatchFile=edit/product.tpl
 Subdir=templates
 Match[class_identifier]=product
 
+[edit_product_list]
+Source=content/edit.tpl
+MatchFile=edit/product_list.tpl
+Subdir=templates
+Match[class_identifier]=product_list
+
 
       
 */ ?>
