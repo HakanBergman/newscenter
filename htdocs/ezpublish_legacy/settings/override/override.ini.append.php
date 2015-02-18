@@ -24,6 +24,12 @@ MatchFile=full/product.tpl
 Subdir=templates
 Match[class_identifier]=product
 
+[edit_product]
+Source=content/edit.tpl
+MatchFile=edit/product.tpl
+Subdir=templates
+Match[class_identifier]=product
+
 
       
 */ ?>
