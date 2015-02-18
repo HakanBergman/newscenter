@@ -13,6 +13,33 @@
 				{/if}
 			</div>
   {/foreach}
+  
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
+    </li>
+    <li>
+      <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
+    </li>
+    <li>
+      <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
+    </li>
+    <li>
+      <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
+    </li>
+  </ul>
+</div>
+
+  {literal}
+  $(window).load(function() {
+  $('.flexslider').flexslider({
+  animation: "slide"
+  });
+  });
+  {/literal}
+
+
   <form method="post" action="/content/action">
     <select name="ClassID" id="ezwt-create" style="display: none;">
       <optgroup label="Content">
