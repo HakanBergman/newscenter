@@ -1,5 +1,11 @@
 <?php /* #?ini charset="utf-8"?
 
+[full_company_name]
+Source=node/view/full.tpl
+MatchFile=full/company_name.tpl
+Subdir=templates
+Match[class_identifier]=company_name
+
 [full_product_catalogue]
 Source=node/view/full.tpl
 MatchFile=full/product_catalogue.tpl
