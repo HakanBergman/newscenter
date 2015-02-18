@@ -20,6 +20,7 @@
                     <a href="{$item.url|ezurl('no', 'full')}" {if $subitems|count()}data-toggle="dropdown" {/if}class="{if $subitems|count()}dropdown-toggle {/if}font-size-nav-link font-weight-bold nav-padding-right-3 no-background{if $current_node.path_array|contains($item.node_id)} active{/if}" title="{$item.name|wash()|explode(' ')|implode('-')}">{$item.name|wash()}{if $subitems|count()} <span class="caret"></span>{/if}</a>
                     {if $subitems|count()}
                       <ul class="dropdown-menu no-background no-margin no-padding border-solid-white">
+                        <h2>{$item.name|wash()}</h2>
                         {foreach $subitems as $subitem}
                           {switch match=$subitems|count()}
                             {case match=1}
