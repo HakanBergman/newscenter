@@ -64,8 +64,8 @@
 		<script type="text/javascript" src={"javascript/pgwslider/pgwslider.min.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/facebook.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/dropdown.js"|ezdesign}></script>
-		<script type="text/javascript" src={"javascript/flexslider/jquery.flexslider-min.js"|ezdesign}></script>
-		<script type="text/javascript" src={"javascript/flexslider/flexslider.css"|ezdesign}></script>
+
+
 
 	</head>
 	

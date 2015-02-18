@@ -13,33 +13,10 @@
 				{/if}
 			</div>
   {/foreach}
-  
-<div class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
-    </li>
-    <li>
-      <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
-    </li>
-    <li>
-      <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
-    </li>
-    <li>
-      <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
-    </li>
-  </ul>
-</div>
 
-  {literal}
-  <script type="text/javascript">
-    $(window).load(function() {
-    $('.flexslider').flexslider({
-    animation: "slide"
-    });
-    });
-  </script>
-  {/literal}
+
+
+  
 
 
   <form method="post" action="/content/action">
