@@ -12,5 +12,19 @@
 					</ul>
 				{/if}
 			</div>
-	{/foreach}	
+  {/foreach}
+  <form method="post" action="/content/action">
+    <select name="ClassID" id="ezwt-create" style="display: none;">
+      <optgroup label="Content">
+        <option value="46">Nytt</option>
+      </optgroup>
+    </select>
+
+    <input type="submit" name="NewButton" value="Skapa ny Produktkategori"></input>
+    <input type="hidden" name="ContentLanguageCode" value="swe-SE"></input>
+    <input type="hidden" name="HasMainAssignment" value="1"></input>
+    <input type="hidden" name="ContentObjectID" value="{$node.contentobject_id}"></input>
+    <input type="hidden" name="NodeID" value="{$node.node_id}"></input>
+    <input type="hidden" name="ContentNodeID" value="{$node.node_id}"></input>
+  </form>
 </div>

@@ -35,6 +35,13 @@ Source=content/edit.tpl
 MatchFile=edit/product_list.tpl
 Subdir=templates
 Match[class_identifier]=product_list
+ 
+[edit_product_list]
+Source=content/edit.tpl
+MatchFile=edit/product_category.tpl
+Subdir=templates
+Match[class_identifier]=product_category
+
 
 
       
