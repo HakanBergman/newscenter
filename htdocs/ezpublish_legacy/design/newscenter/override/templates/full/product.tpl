@@ -4,6 +4,7 @@
                                            'extra_menu', false())}
 
 <div class="container">
+<a href="{concat($node.url|ezurl('no', 'full'), '/content/edit/', $node.contentobject_id)}">Redigera</a>
 <section class="content-view-full">
     <article class="class-product row">
         <div class="span8">
