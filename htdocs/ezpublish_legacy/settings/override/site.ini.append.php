@@ -229,6 +229,7 @@ DevelopmentMode=enabled
 [ContentSettings]
 ViewCaching=enabled
 CachedViewModes=full;sitemap;pdf
+EditDirtyObjectAction=usecurrent
 
 [MailSettings]
 Transport=smtp
