@@ -3,7 +3,7 @@
 {set scope=global persistent_variable=hash('left_menu', false(),
                                            'extra_menu', false())}
 
-
+<div class="container">
 <section class="content-view-full">
     <article class="class-product row">
         <div class="span8">
@@ -96,3 +96,4 @@
         </div>
    </article>
 </section>
+</div>
