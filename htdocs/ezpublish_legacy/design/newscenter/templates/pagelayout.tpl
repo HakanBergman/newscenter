@@ -86,6 +86,8 @@
 				{/foreach}
 			{/if}
 
+			{$module_result.content}
+
 		</div>
 
 		<div class="container-fluid {$#company.data_map.background_color_footer.data_text} nav-padding-bottom-4">
