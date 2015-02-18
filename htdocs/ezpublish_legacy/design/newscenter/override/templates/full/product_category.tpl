@@ -23,5 +23,6 @@
     <input type="hidden" name="ContentObjectID" value="{$node.contentobject_id}">
     <input type="hidden" name="NodeID" value="{$node.node_id}">
     <input type="hidden" name="ContentNodeID" value="{$node.node_id}">
+  </form>
       
 </div>
