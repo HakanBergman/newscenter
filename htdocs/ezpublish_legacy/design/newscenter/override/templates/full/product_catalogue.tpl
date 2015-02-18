@@ -32,11 +32,13 @@
 </div>
 
   {literal}
-  $(window).load(function() {
-  $('.flexslider').flexslider({
-  animation: "slide"
-  });
-  });
+  <script type="text/javascript">
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+    animation: "slide"
+    });
+    });
+  </script>
   {/literal}
 
 
