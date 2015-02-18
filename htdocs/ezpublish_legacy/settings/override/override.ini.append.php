@@ -12,5 +12,12 @@ MatchFile=full/product_category.tpl
 Subdir=templates
 Match[class_identifier]=product_category
 
+[full_product_list]
+Source=node/view/full.tpl
+MatchFile=full/product_list.tpl
+Subdir=templates
+Match[class_identifier]=product_list
+
+
       
 */ ?>
