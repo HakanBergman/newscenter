@@ -52,7 +52,14 @@
                                           {* Display a flag if needed *}
                                           {if $child.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$child.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
                                           <a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">{$child.name|wash()}</a>
-                                        </div>
+                                          {def $grandgrandchildren = fetch('content', 'list', hash('parent_node_id', $child.node_id))}
+                                          {if $grandgrandchildren|count()}
+                                            {foreach $grandgrandchildren as $grandchild}
+                                              <div class="nav-padding-left {$#company.data_map.link_color_menu_mouseover.data_text}">
+                                                <a href="{$grandchild.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$grandchild.name|wash()}">{$grandchild.name|wash()}</a>
+                                              </div>
+                                            {/foreach}
+                                          {/if}
                                       {/foreach}
                                     {/if}
                                   {undef $grandchild}
