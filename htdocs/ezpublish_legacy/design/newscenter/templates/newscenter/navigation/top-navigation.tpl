@@ -42,7 +42,9 @@
                             <div class="row {$subclass} {$#company.data_map.background_color_menu.data_text} {$#company.data_map.link_color_menu.data_text} min-height-23 no-padding nav-padding-left-4 nav-padding-right-3 nav-padding-top no-margin">
                               <div class="col-sm-12">
                                 <div class="nav-padding-top nav-padding-bottom {$#company.data_map.link_color_menu_mouseover.data_text}">
-                                  <a href="{$subitem.url|ezurl('no', 'full')}" {if $subitem.class_identifier|eq('product_country')}class="flag flag-icon-background flag-icon-se" {/if} title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
+                                  {* Display a flag if needed *}
+                                  {if $subitem.class_identifier|eq('product_country')}<span class="flag flag-icon-background flag-icon-se">&nbsp;</span>{/if}
+                                  <a href="{$subitem.url|ezurl('no', 'full')}" title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
                                   {def $grandchild = fetch('content', 'list', hash('parent_node_id', $subitem.node_id))}
                                     {if $grandchild|count()}
                                       {foreach $grandchild as $child}
