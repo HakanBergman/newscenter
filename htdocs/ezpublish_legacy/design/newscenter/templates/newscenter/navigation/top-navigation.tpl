@@ -43,7 +43,7 @@
                               <div class="col-sm-12">
                                 <div class="nav-padding-top nav-padding-bottom {$#company.data_map.link_color_menu_mouseover.data_text}">
                                   {* Display a flag if needed *}
-                                  {if $subitem.class_identifier|eq('product_country')}<span class="flag flag-icon-background flag-icon-se inline-block height-105-em width-1-em">&nbsp;</span>{/if}
+                                  {if $subitem.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$subitem.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
                                   <a href="{$subitem.url|ezurl('no', 'full')}" title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
                                   {def $grandchild = fetch('content', 'list', hash('parent_node_id', $subitem.node_id))}
                                     {if $grandchild|count()}
