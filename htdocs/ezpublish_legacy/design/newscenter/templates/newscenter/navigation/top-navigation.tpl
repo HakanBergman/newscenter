@@ -13,7 +13,7 @@
       <div class="container-fluid bg-black">
         <div class="container">
           <div class="navbar yamm no-margin no-padding navigation-box">
-            <ul class="nav navbar-nav no-padding">
+            <ul class="nav navbar-nav no-padding">              
               {foreach $menu_items as $item}
               {def $subitems = fetch('content', 'list', hash('parent_node_id', $item.node_id, 'class_filter_type', 'include', 'class_filter_array', array('news_category', 'product_category', 'product_country'), 'sort_by', array('name', true()) ))}
               <li class="{if $subitems|count()}dropdown yamm-fw {/if}no-padding no-margin float-left {$#company.data_map.link_color_menu.data_text} {$#company.data_map.link_color_menu_active.data_text} {$#company.data_map.link_color_menu_mouseover.data_text}">                  

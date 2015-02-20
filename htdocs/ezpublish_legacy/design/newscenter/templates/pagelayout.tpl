@@ -74,6 +74,10 @@
 
 		<div class="container-fluid website">
 
+		<div class="flag-wrapper">
+              <div class="img-thumbnail flag flag-icon-background flag-icon-gr"></div>
+            </div>
+
 			{* Include Headers *}
 			{*include uri='design:newscenter/widget/cookies/widget_cookie.tpl'*}
 
