@@ -74,8 +74,6 @@
 
 		<div class="container-fluid website">
 
-<div class="col-md-1 col-sm-2 col-xs-3"><div class="flag-wrapper"><div class="img-thumbnail flag flag-icon-background flag-icon-se" title="se" id="se"></div></div></div>
-
 			{* Include Headers *}
 			{*include uri='design:newscenter/widget/cookies/widget_cookie.tpl'*}
 
