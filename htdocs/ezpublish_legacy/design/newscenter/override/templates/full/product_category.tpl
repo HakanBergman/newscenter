@@ -5,7 +5,10 @@
     <div class="col-lg-12 col-md-12 col-sm-12">
       {foreach $node.children as $list}      								
 					<ul>
-							<li class="link-color-beige-hover"><a class="font-weight-normal" href="{$list.url|ezurl('no', 'full')}" title="{$list.name|wash()}">{$list.name|wash()}</a></li>
+							<li class="link-color-beige-hover">
+                 <a class="font-weight-normal" href="{$list.url|ezurl('no', 'full')}" title="{$list.name|wash()}">{$list.name|wash()}</a>
+                <a href="/content/edit/{$list.contentobject_id}" title="Redigera {$list.name|wash()}">Redigera {$list.name|wash()}</a>
+              </li>            
 					</ul>
       {/foreach}
     </div>
