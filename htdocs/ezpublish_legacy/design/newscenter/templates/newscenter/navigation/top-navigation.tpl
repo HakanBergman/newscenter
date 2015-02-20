@@ -7,7 +7,7 @@
   </div>
 </div>
 
-{def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
+{def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue', 'product_country'), 'sort_by', array('priority', true()) ))}
   {if $menu_items}
     <nav role="navigation">
       <div class="container-fluid bg-black">
