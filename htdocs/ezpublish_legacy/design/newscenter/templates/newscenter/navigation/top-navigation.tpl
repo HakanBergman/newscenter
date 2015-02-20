@@ -17,7 +17,7 @@
               {foreach $menu_items as $item}
               {def $subitems = fetch('content', 'list', hash('parent_node_id', $item.node_id, 'class_filter_type', 'include', 'class_filter_array', array('news_category', 'product_category', 'product_country'), 'sort_by', array('name', true()) ))}
               <li class="{if $subitems|count()}dropdown yamm-fw {/if}no-padding no-margin float-left {$#company.data_map.link_color_menu.data_text} {$#company.data_map.link_color_menu_active.data_text} {$#company.data_map.link_color_menu_mouseover.data_text}">                  
-                    <a href="{$item.url|ezurl('no', 'full')}" {if $subitems|count()}data-toggle="dropdown" {/if}class="{if $subitems|count()}dropdown-toggle {/if}{if $item.class_identifier|eq('product_country')}flag flag-icon-background flag-icon-se {/if}font-size-nav-link font-weight-bold nav-padding-right-3 no-background{if $current_node.path_array|contains($item.node_id)} active{/if}" title="{$item.name|wash()|explode(' ')|implode('-')}">{$item.name|wash()}{if $subitems|count()} <span class="caret"></span>{/if}</a>
+                    <a href="{$item.url|ezurl('no', 'full')}" {if $subitems|count()}data-toggle="dropdown" {/if}class="{if $subitems|count()}dropdown-toggle {/if}font-size-nav-link font-weight-bold nav-padding-right-3 no-background{if $current_node.path_array|contains($item.node_id)} active{/if}" title="{$item.name|wash()|explode(' ')|implode('-')}">{$item.name|wash()}{if $subitems|count()} <span class="caret"></span>{/if}</a>
                     {if $subitems|count()}
                       <ul class="dropdown-menu no-background no-margin no-padding border-solid-white">                        
                         {foreach $subitems as $subitem}
@@ -42,7 +42,7 @@
                             <div class="row {$subclass} {$#company.data_map.background_color_menu.data_text} {$#company.data_map.link_color_menu.data_text} min-height-23 no-padding nav-padding-left-4 nav-padding-right-3 nav-padding-top no-margin">
                               <div class="col-sm-12">
                                 <div class="nav-padding-top nav-padding-bottom {$#company.data_map.link_color_menu_mouseover.data_text}">
-                                  <a href="{$subitem.url|ezurl('no', 'full')}" title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
+                                  <a href="{$subitem.url|ezurl('no', 'full')}" {if $subitem.class_identifier|eq('product_country')}class="flag flag-icon-background flag-icon-se" {/if} title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
                                   {def $grandchild = fetch('content', 'list', hash('parent_node_id', $subitem.node_id))}
                                     {if $grandchild|count()}
                                       {foreach $grandchild as $child}
