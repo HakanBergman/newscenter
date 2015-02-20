@@ -50,7 +50,7 @@
                                       {foreach $grandchild as $child}
                                         <div class="nav-padding-left {$#company.data_map.link_color_menu_mouseover.data_text}">
                                           {* Display a flag if needed *}
-                                          {if $grandchild.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$grandchild.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
+                                          {if $child.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$child.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
                                           <a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">{$child.name|wash()}</a>
                                         </div>
                                       {/foreach}
