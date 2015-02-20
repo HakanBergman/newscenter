@@ -13,6 +13,12 @@
 							<li class="link-color-beige-hover">
                 <a class="font-weight-normal" href="{$list.url|ezurl('no', 'full')}" title="{$list.name|wash()}">{$list.name|wash()}</a>
                 <a href="/content/edit/{$list.contentobject_id}" title="Redigera {$list.name|wash()}">Redigera {$list.name|wash()}</a>
+                <form method="post" action="/content/action">
+                  <input type="hidden" name="TopLevelNode" value="{$list.node_id}"></input>
+                  <input type="hidden" name="ContentNodeID" value="{$list.node_id}"></input>
+                  <input type="hidden" name="ContentObjectID" value="{$list.contentobject_id}"></input>
+                  <input class="button" type="submit" name="MoveNodeButton" value="Flytta" title="Flytta till annan plats."></input>
+                </form>
               </li>
 						{/foreach}
 					</ul>
@@ -35,8 +41,6 @@
     <input type="hidden" name="NodeID" value="{$node.node_id}"></input>
     <input type="hidden" name="ContentNodeID" value="{$node.node_id}"></input>
   </form>
-  
-
 
   <form method="post" action="/content/action">
     <select name="ClassID" id="ezwt-create" style="display: none;">
