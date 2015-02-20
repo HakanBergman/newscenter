@@ -60,6 +60,7 @@
                                               {/foreach}
                                             </div>
                                           {/if}
+                                        </div>
                                       {/foreach}
                                     {/if}
                                   {undef $grandchild}
