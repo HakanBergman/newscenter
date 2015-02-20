@@ -23,6 +23,6 @@ CSSFileList[]=widget/image/image.css
 CSSFileList[]=widget/facebook/facebook.css
 
 [JavaScriptSettings]
-JavaScriptList[]=insertmedia.js
+JavaScriptList[]=insertmedia.js     
        
 */ ?>
