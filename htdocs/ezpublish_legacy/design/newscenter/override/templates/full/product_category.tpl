@@ -6,8 +6,14 @@
       {foreach $node.children as $list}      								
 					<ul>
 							<li class="link-color-beige-hover">
-                 <a class="font-weight-normal" href="{$list.url|ezurl('no', 'full')}" title="{$list.name|wash()}">{$list.name|wash()}</a>
+                <a class="font-weight-normal" href="{$list.url|ezurl('no', 'full')}" title="{$list.name|wash()}">{$list.name|wash()}</a>
                 <a href="/content/edit/{$list.contentobject_id}" title="Redigera {$list.name|wash()}">Redigera {$list.name|wash()}</a>
+                <form method="post" action="/content/action">
+                    <input type="hidden" name="TopLevelNode" value="{$list.node_id}"></input>
+                    <input type="hidden" name="ContentNodeID" value="{$list.node_id}"></input>
+                    <input type="hidden" name="ContentObjectID" value="{$list.contentobject_id}"></input>
+                    <input class="button" type="submit" name="ActionRemove" value="Radera {$list.name|wash()}" title="Radera det här objektet."></input>
+                </form>
               </li>            
 					</ul>
       {/foreach}
