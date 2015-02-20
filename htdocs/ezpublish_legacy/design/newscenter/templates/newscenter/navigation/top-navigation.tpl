@@ -45,14 +45,14 @@
                                   {* Display a flag if needed *}
                                   {if $subitem.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$subitem.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
                                   <a href="{$subitem.url|ezurl('no', 'full')}" title="{$subitem.name|wash()}">{$subitem.name|wash()}</a>
-                                  {def $grandchild = fetch('content', 'list', hash('parent_node_id', $subitem.node_id))}
-                                    {if $grandchild|count()}
-                                      {foreach $grandchild as $child}
-                                        <div class="nav-padding-left {$#company.data_map.link_color_menu_mouseover.data_text}">
+                                  {def $grandchild = fetch('content', 'list', hash('parent_node_id', $subitem.node_id, 'sort_by', attribute('name', true()) ))}
+                                  {if $grandchild|count()}
+                                  {foreach $grandchild as $child}
+                                  <div class="nav-padding-left {$#company.data_map.link_color_menu_mouseover.data_text}">
                                           {* Display a flag if needed *}
                                           {if $child.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$child.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
                                           <a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">{$child.name|wash()}</a>
-                                          {def $grandgrandchildren = fetch('content', 'list', hash('parent_node_id', $child.node_id))}
+                                          {def $grandgrandchildren = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'sort_by', attribute('name', true()) ))}
                                           {if $grandgrandchildren|count()}
                                             <div class="nav-padding-left {$#company.data_map.link_color_menu_mouseover.data_text}">
                                               {foreach $grandgrandchildren as $grandchild}
