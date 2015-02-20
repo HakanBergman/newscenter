@@ -5,6 +5,12 @@
 				<h3>
           <a href="{$category.url|ezurl('no', 'full')}" title="{$category.name|wash()}">{$category.name|wash()}</a>
           <a href="/content/edit/{$category.contentobject_id}" title="Redigera {$category.name|wash()}">Redigera {$category.name|wash()}</a>
+          <form method="post" action="/content/action">
+            <input type="hidden" name="TopLevelNode" value="{$category.node_id}"></input>
+            <input type="hidden" name="ContentNodeID" value="{$category.node_id}"></input>
+            <input type="hidden" name="ContentObjectID" value="{$category.contentobject_id}"></input>            
+            <input class="button" type="submit" name="ActionRemove" value="Radera {$category.name|wash()}" title="Radera det här objektet."></input>
+          </form>
         </h3>
 				<div class="{$category.data_map.background_color.data_text} max-height-1">&nbsp;</div>
 				{if $category.children}
@@ -18,6 +24,7 @@
                   <input type="hidden" name="ContentNodeID" value="{$list.node_id}"></input>
                   <input type="hidden" name="ContentObjectID" value="{$list.contentobject_id}"></input>
                   <input class="button" type="submit" name="MoveNodeButton" value="Flytta" title="Flytta till annan plats."></input>
+                  <input class="button" type="submit" name="ActionRemove" value="Radera {$list.name|wash()}" title="Radera det här objektet."></input>
                 </form>
               </li>
 						{/foreach}
