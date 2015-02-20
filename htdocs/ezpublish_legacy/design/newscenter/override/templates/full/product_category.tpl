@@ -1,5 +1,5 @@
 ﻿<div class="container bg-black">
-	<h2>{$node.name|wash()}</h2>
+	<h2>{$node.name|wash()} <a href="/content/edit/{$node.contentobject_id}" title="Redigera {$node.name|wash()}">Redigera {$node.name|wash()}</a></h2>
   <div class="{$node.data_map.background_color.data_text} max-height-1">&nbsp;</div>
   {if $node.children}
     <div class="col-lg-12 col-md-12 col-sm-12">
