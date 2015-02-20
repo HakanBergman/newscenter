@@ -2,7 +2,10 @@
 	<h2>{$node.name|wash()}</h2>
 	{foreach $node.children as $category}
 			<div class="col-lg-12 col-md-12 col-sm-12">
-				<h3><a href="{$category.url|ezurl('no', 'full')}" title="{$category.name|wash()}">{$category.name|wash()}</a></h3>
+				<h3>
+          <a href="{$category.url|ezurl('no', 'full')}" title="{$category.name|wash()}">{$category.name|wash()}</a>
+          <a href="/content/edit/{$category.contentobject_id}" title="Redigera {$category.name|wash()}">Redigera {$category.name|wash()}</a>
+        </h3>
 				<div class="{$category.data_map.background_color.data_text} max-height-1">&nbsp;</div>
 				{if $category.children}
 					<ul>
