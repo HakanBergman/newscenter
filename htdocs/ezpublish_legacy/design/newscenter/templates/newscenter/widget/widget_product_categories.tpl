@@ -25,9 +25,9 @@
 								<a href="{$product.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$product.name|wash()}">{$product.name|wash()}</a>
 								{if $product.children}
 									<div class="nav-padding-left link-color-beige-hover">
-										<div><a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Mojito" class="font-weight-normal" title="Mojito">Mojito</a></div>
-										<div><a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Cosmopolitan" class="font-weight-normal" title="Cosmopolitan">Cosmopolitan</a></div>
-										<div><a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Margarita" class="font-weight-normal" title="Margarita">Margarita</a></div>
+										{foreach $product.children as $child}
+											<div><a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">{$child.name|wash()}</a></div>
+										{/foreach}
 									</div>
 								{/if}
 							</li>
