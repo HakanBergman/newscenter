@@ -1,5 +1,8 @@
 <?php /* #?ini charset="utf-8"?
 
+[ExtensionSettings]
+ActiveAccessExtensions[]=dhc
+
 [SiteSettings]
 SiteName=Maltimportören
 SiteURL=maltimportoren.datadelenhc.com
