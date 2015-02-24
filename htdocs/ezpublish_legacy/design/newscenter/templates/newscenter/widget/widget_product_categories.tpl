@@ -20,7 +20,16 @@
 				<nav>
 					<ul>
 						{foreach $products as $product}
-							<li class="{$#company.data_map.link_color_menu_mouseover.data_text}"><a class="font-weight-normal" href="{$product.url|ezurl('no', 'full')}" title="{$product.name} {$product.data_map.extra_attribute_data_text}">{$product.name|wash()}</a></li>
+							<li class="{$#company.data_map.link_color_menu_mouseover.data_text}">
+								<span class="flag flag-icon-background flag-icon-lv inline-block height-105-em width-1-em">&nbsp;</span>
+								<a class="font-weight-normal" href="{$product.url|ezurl('no', 'full')}" title="{$product.name} {$product.data_map.extra_attribute_data_text}">{$product.name|wash()}</a>
+								<a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland" class="font-weight-normal" title="Lettland">Lettland</a>
+								<div class="nav-padding-left link-color-beige-hover">
+                                    <div><a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Mojito" class="font-weight-normal" title="Mojito">Mojito</a></div>
+                                    <div><a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Cosmopolitan" class="font-weight-normal" title="Cosmopolitan">Cosmopolitan</a></div>
+									<div><a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Margarita" class="font-weight-normal" title="Margarita">Margarita</a></div>
+								</div>
+							</li>
 						{/foreach}
 					</ul>
 				</nav>
