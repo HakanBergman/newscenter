@@ -26,7 +26,7 @@
 								{if $product.children}
 									<div class="nav-padding-left link-color-beige-hover">
 										{foreach $product.children as $child}
-											<div><a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">{$child.name|wash()}</a></div>
+											<div><a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">- <span class="nav-padding-left">{$child.name|wash()}</span></a></div>
 										{/foreach}
 									</div>
 								{/if}
