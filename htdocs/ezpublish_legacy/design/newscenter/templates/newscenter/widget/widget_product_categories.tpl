@@ -21,7 +21,7 @@
 					<ul>
 						{foreach $products as $product}
 							<li class="{$#company.data_map.link_color_menu_mouseover.data_text}">
-								{if $product.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$product.data_map.flag_icon.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
+								{if $product.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$product.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
 								<a href="{$product.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$product.name|wash()}">{$product.name|wash()}</a>
 								{if $product.children}
 									<div class="nav-padding-left link-color-beige-hover">
