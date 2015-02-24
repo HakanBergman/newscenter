@@ -22,13 +22,14 @@
 						{foreach $products as $product}
 							<li class="{$#company.data_map.link_color_menu_mouseover.data_text}">
 								{if $product.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$product.data_map.flag_icon.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
-								<a class="font-weight-normal" href="{$product.url|ezurl('no', 'full')}" title="{$product.name} {$product.data_map.extra_attribute_data_text}">{$product.name|wash()}</a>
-								<a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland" class="font-weight-normal" title="Lettland">Lettland</a>
-								<div class="nav-padding-left link-color-beige-hover">
-                                    <div><a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Mojito" class="font-weight-normal" title="Mojito">Mojito</a></div>
-                                    <div><a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Cosmopolitan" class="font-weight-normal" title="Cosmopolitan">Cosmopolitan</a></div>
-									<div><a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Margarita" class="font-weight-normal" title="Margarita">Margarita</a></div>
-								</div>
+								<a href="{$product.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$product.name|wash()}">{$product.name|wash()}</a>
+								{if $product.children}
+									<div class="nav-padding-left link-color-beige-hover">
+										<div><a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Mojito" class="font-weight-normal" title="Mojito">Mojito</a></div>
+										<div><a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Cosmopolitan" class="font-weight-normal" title="Cosmopolitan">Cosmopolitan</a></div>
+										<div><a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Margarita" class="font-weight-normal" title="Margarita">Margarita</a></div>
+									</div>
+								{/if}
 							</li>
 						{/foreach}
 					</ul>
