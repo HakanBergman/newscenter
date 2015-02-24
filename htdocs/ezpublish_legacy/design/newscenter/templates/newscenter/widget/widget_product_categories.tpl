@@ -21,7 +21,7 @@
 					<ul>
 						{foreach $products as $product}
 							<li class="{$#company.data_map.link_color_menu_mouseover.data_text}">
-								<span class="flag flag-icon-background flag-icon-lv inline-block height-105-em width-1-em">&nbsp;</span>
+								{if $product.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$product.data_map.flag_icon.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
 								<a class="font-weight-normal" href="{$product.url|ezurl('no', 'full')}" title="{$product.name} {$product.data_map.extra_attribute_data_text}">{$product.name|wash()}</a>
 								<a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland" class="font-weight-normal" title="Lettland">Lettland</a>
 								<div class="nav-padding-left link-color-beige-hover">
