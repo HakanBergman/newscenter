@@ -1,4 +1,4 @@
-{def $product_categories = fetch('content', 'tree', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('product_category'), 'sort_by', array('name', true()) ))}
+{def $product_categories = fetch('content', 'tree', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('product_category'), 'depth', 2, 'sort_by', array('name', true()) ))}
 	<h2 class="{$block.data_map.text_color.data_text}">{$block.name|wash()|upcase()}</h2>
 	{switch match=$product_categories|count()}
 		{case match=3}
@@ -13,7 +13,7 @@
 	{/switch}
 	{foreach $product_categories as $category}
 		<div class="{$class}">
-			<h3 class="{$#company.data_map.link_color_menu_mouseover.data_text}">test<a href="{$category.url|ezurl('no', 'full')}" title="{$category.name|wash()}">{$category.name|wash()}</a></h3>	
+			<h3 class="{$#company.data_map.link_color_menu_mouseover.data_text}"><a href="{$category.url|ezurl('no', 'full')}" title="{$category.name|wash()}">{$category.name|wash()}</a></h3>	
 			<div class="{$category.data_map.background_color.data_text} max-height-1">&nbsp;</div>	
 			{def $products = fetch('content', 'list', hash('parent_node_id', $category.node_id))}
 			{if $products|count()}				
