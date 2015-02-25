@@ -1,7 +1,6 @@
 ﻿{literal}
 <style>
   .shop-row {
-  margin-right: 17.125%;
   color: #000;
   font: normal 11px/15px sans-serif;
   margin-bottom: 5px;
@@ -227,7 +226,7 @@
       directionNav: false,
       animationLoop: false,
       slideshow: false,
-      itemWidth: 215,
+      itemWidth: 285,
       itemMargin: 20,
       minItems: 2,
       maxItems: 8
