@@ -202,12 +202,16 @@
           <a class="std-btn" href="#">köp</a>
         </li>
         <li>
-          <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
-          </a>
-          <strong class="title">Five Pioneers Of Photography Set </strong>
-          <span class="price">200 kr</span>
-          <a class="std-btn" href="#">köp</a>
+          <article>
+            <a href="#" class="img-link"><img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" /></a>
+            <strong class="title"><a href="#"> Five Pioneers Of Photography Set </a></strong>
+            <div class="col-lg-6">
+              <span class="price">200 kr</span>
+            </div>
+            <div class="col-lg-6">
+              <a class="std-btn" href="#">köp</a>
+            </div>
+          </article>
         </li>
       </ul>
     </div>
