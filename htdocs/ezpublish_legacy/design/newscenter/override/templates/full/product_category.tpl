@@ -49,11 +49,11 @@
   text-decoration: none;
   }
   .shop-row .title {
-  font-weight: normal;
   display: block;
   margin: 0 0 2px;
   height: 30px;
   min-height: 30px;
+  font-size: 16px;
   }
   .shop-row .price {
   display: block;
