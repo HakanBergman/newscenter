@@ -1,4 +1,132 @@
-﻿<div class="container">
+﻿{literal}
+<style>
+  .shop-row {
+  margin-right: 17.125%;
+  color: #000;
+  font: normal 11px/15px sans-serif;
+  margin-bottom: 5px;
+  }
+  .shop-row h2 {
+  font: bold 24px/28px sans-serif;
+  margin: 0 0 .5em;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  }
+  .flexslider {
+  background: #fff;
+  position: relative;
+  zoom: 1;
+  padding: 0 0 19px;
+  margin: 0;
+  }
+  .shop-row .carousel .slides {
+  border-bottom: 1px solid #c3c3c3;
+  padding: 0 0 17px;
+  }
+  .flexslider .slides {
+  zoom: 1;
+  }
+  .slides, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+  .shop-row .carousel li {
+  margin-right: 20px;
+  }
+  .flexslider .slides > li {
+  position: relative;
+  zoom: 1;
+  }
+  .flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+  }
+  .shop-row .img-link {
+  height: 141px;
+  display: block;
+  vertical-align: bottom;
+  position: relative;
+  margin: 0 0 6px;
+  }
+  a {
+  color: #333;
+  text-decoration: none;
+  }
+  .shop-row .title {
+  font-weight: normal;
+  display: block;
+  margin: 0 0 2px;
+  height: 30px;
+  min-height: 30px;
+  }
+  .shop-row .price {
+  display: block;
+  font: bold 20px/24px sans-serif;
+  margin: 0 0 5px;
+  }
+  .book, .std-btn {
+  display: block;
+  font: normal 12px/19px sans-serif;
+  color: #333;
+  padding: 0 0 0 24px;
+  background: url(../img/colored-arrows.png) no-repeat;
+  }
+  .std-btn {
+  height: 19px;
+  border: none;
+  }
+  .shop-row .flex-control-nav {
+  width: auto;
+  right: 0;
+  line-height: 1em;
+  margin-right: -8px;
+  }
+  .flex-control-nav {
+  width: 36px;
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  text-align: center;
+  font: normal 11px/19px sans-serif;
+  color: #666;
+  }
+  .slides, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+  .shop-row .flex-control-nav li:first-child {
+  border-left: none;
+  }
+  .shop-row .flex-control-nav li {
+  display: block;
+  float: left;
+  margin: 0;
+  border-left: 1px solid #666;
+  }
+  .shop-row .flex-control-nav li a {
+  display: block;
+  float: left;
+  padding: 0 8px;
+  }
+  .flex-control-nav a {
+  cursor: pointer;
+  color: #666;
+  }
+  .shop-row .flex-control-nav li a.flex-active {
+  color: #000;
+  text-decoration: underline;
+  }
+  .flex-control-nav a.flex-active {
+  cursor: default;
+  }
+
+</style>
+{/literal}
+<div class="container">
   <div class="shop-row shop-current">
     <h2>Aktuellt just nu</h2>
     <div class="flexslider carousel">
