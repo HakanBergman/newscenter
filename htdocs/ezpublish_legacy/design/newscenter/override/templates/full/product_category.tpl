@@ -205,7 +205,7 @@
         <li>
           <article>
             <a href="#" class="img-link"><img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" /></a>
-            <h1 class="title {$node.data_map.link_color.data_text}"><a href="#"> Five Pioneers Of Photography Set </a></h1>
+            <h1 class="title {$node.data_map.link_color.data_text}"><a href="#" class="{$node.data_map.text_color.data_text}">Five Pioneers Of Photography Set</a></h1>
             <div class="col-lg-6">
               <span class="price">200 kr</span>
             </div>
