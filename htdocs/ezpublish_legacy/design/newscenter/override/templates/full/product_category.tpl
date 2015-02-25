@@ -127,6 +127,7 @@
 </style>
 {/literal}
 <div class="container">
+  <div class="col-lg-8">
   <div class="shop-row shop-current">
     <h2>Aktuellt just nu</h2>
     <div class="flexslider carousel">
@@ -213,6 +214,7 @@
         </li>
       </ul>
     </div>
+  </div>
   </div>  
 </div>
 
