@@ -127,7 +127,7 @@
 </style>
 {/literal}
 <div class="container">
-  <div class="col-lg-8">
+  <div class="col-lg-12">
   <div class="shop-row shop-current">
     <h2>Aktuellt just nu</h2>
     <div class="flexslider carousel">
@@ -227,7 +227,7 @@
       directionNav: false,
       animationLoop: false,
       slideshow: false,
-      itemWidth: 105,
+      itemWidth: 25%,
       itemMargin: 20,
       minItems: 2,
       maxItems: 8
