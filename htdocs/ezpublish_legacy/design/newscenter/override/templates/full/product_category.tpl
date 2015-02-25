@@ -227,7 +227,7 @@
       directionNav: false,
       animationLoop: false,
       slideshow: false,
-      itemWidth: 265,
+      itemWidth: 245,
       itemMargin: 20,
       minItems: 2,
       maxItems: 8
