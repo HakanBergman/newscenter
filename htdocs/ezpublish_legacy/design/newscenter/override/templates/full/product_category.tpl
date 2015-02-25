@@ -209,7 +209,7 @@
             </div>
             <div class="col-lg-6 no-margin no-padding">
               
-              <a class="std-btn" href="#" class="{$node.data_map.text_color.data_text}"><span class="glyphicon glyphicon-menu-right"></span> köp </a>
+              <a class="std-btn {$node.data_map.text_color.data_text}" href="#"><span class="glyphicon glyphicon-menu-right"></span> köp </a>
             </div>
           </article>
         </li>
