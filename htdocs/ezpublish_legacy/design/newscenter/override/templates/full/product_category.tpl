@@ -117,33 +117,7 @@
   cursor: default;
   }
 
-  #arrow {
-  width: 128px;
-  height: 100px;
-  background-color: #f0f0f0;
-  border: 1px solid #999;
-  position: relative;
-  }
-  #arrow:after {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 128px;
-  width: 0;
-  height: 0;
-  border: 50px solid transparent;
-  border-left: 12px solid #f0f0f0;
-  }
-  #arrow:before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 129px;
-  width: 0;
-  height: 0;
-  border: 50px solid transparent;
-  border-left: 12px solid #999;
-  }
+ 
 
 </style>
 {/literal}
@@ -234,8 +208,8 @@
               <span class="price">200 kr</span>
             </div>
             <div class="col-lg-6 no-margin no-padding">
-              <div id="arrow"></div>
-              <a class="std-btn" href="#" class="{$node.data_map.text_color.data_text}">köp</a>
+              
+              <a class="std-btn" href="#" class="{$node.data_map.text_color.data_text}"><span class="glyphicon glyphicon-menu-right"></span> köp </a>
             </div>
           </article>
         </li>
