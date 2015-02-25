@@ -123,6 +123,7 @@
 
 </style>
 {/literal}
+{$node.data_map.link_color.data_text}
 <div class="container">
   <div class="col-lg-12">
   <div class="shop-row shop-current">
@@ -204,7 +205,7 @@
         <li>
           <article>
             <a href="#" class="img-link"><img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" /></a>
-            <strong class="title"><a href="#"> Five Pioneers Of Photography Set </a></strong>
+            <h1 class="title"><a href="#"> Five Pioneers Of Photography Set </a></h1>
             <div class="col-lg-6">
               <span class="price">200 kr</span>
             </div>
