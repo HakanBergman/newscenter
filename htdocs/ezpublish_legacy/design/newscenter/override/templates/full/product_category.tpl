@@ -133,7 +133,7 @@
       <ul class="slides">
         <li>
           <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" />
+            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
           </a>
           <strong class="title">Five Pioneers Of Photography Set </strong>
           <span class="price">200 kr</span>
@@ -141,7 +141,7 @@
         </li>
         <li>
           <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" />
+            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
           </a>
           <strong class="title">Five Pioneers Of Photography Set </strong>
           <span class="price">200 kr</span>
@@ -149,7 +149,7 @@
         </li>
         <li>
           <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" />
+            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
           </a>
           <strong class="title">Five Pioneers Of Photography Set </strong>
           <span class="price">200 kr</span>
@@ -157,7 +157,7 @@
         </li>
         <li>
           <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" />
+            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
           </a>
           <strong class="title">Five Pioneers Of Photography Set </strong>
           <span class="price">200 kr</span>
@@ -165,7 +165,7 @@
         </li>
         <li>
           <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" />
+            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
           </a>
           <strong class="title">Five Pioneers Of Photography Set </strong>
           <span class="price">200 kr</span>
@@ -173,7 +173,7 @@
         </li>
         <li>
           <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" />
+            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
           </a>
           <strong class="title">Five Pioneers Of Photography Set </strong>
           <span class="price">200 kr</span>
@@ -181,7 +181,7 @@
         </li>
         <li>
           <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" />
+            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
           </a>
           <strong class="title">Five Pioneers Of Photography Set </strong>
           <span class="price">200 kr</span>
@@ -189,7 +189,7 @@
         </li>
         <li>
           <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" />
+            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
           </a>
           <strong class="title">Five Pioneers Of Photography Set </strong>
           <span class="price">200 kr</span>
@@ -197,7 +197,7 @@
         </li>
         <li>
           <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" />
+            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
           </a>
           <strong class="title">Five Pioneers Of Photography Set </strong>
           <span class="price">200 kr</span>
@@ -205,7 +205,7 @@
         </li>
         <li>
           <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" />
+            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
           </a>
           <strong class="title">Five Pioneers Of Photography Set </strong>
           <span class="price">200 kr</span>
