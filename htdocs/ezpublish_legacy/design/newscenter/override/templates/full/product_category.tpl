@@ -14,7 +14,6 @@
   -webkit-margin-end: 0px;
   }
   .flexslider {
-  background: #fff;
   position: relative;
   zoom: 1;
   padding: 0 0 19px;
@@ -44,7 +43,6 @@
   -webkit-backface-visibility: hidden;
   }
   .shop-row .img-link {
-  height: 141px;
   display: block;
   vertical-align: bottom;
   position: relative;
