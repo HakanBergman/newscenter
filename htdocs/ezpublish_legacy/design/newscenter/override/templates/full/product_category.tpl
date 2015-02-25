@@ -1,12 +1,8 @@
 ﻿{literal}
 <style>
   .shop-row {
-  color: #000;
-  font: normal 11px/15px sans-serif;
-  margin-bottom: 5px;
   }
   .shop-row h2 {
-  font: bold 24px/28px sans-serif;
   margin: 0 0 .5em;
   -webkit-margin-before: 0.83em;
   -webkit-margin-after: 0.83em;
@@ -123,10 +119,10 @@
 
 </style>
 {/literal}
-{$node.data_map.link_color.data_text}
+
 <div class="container">
   <div class="col-lg-12">
-  <div class="shop-row shop-current">
+  <div class="shop-row shop-current {$node.data_map.link_color.data_text}">
     <h2>Aktuellt just nu</h2>
     <div class="flexslider carousel">
       <ul class="slides">
