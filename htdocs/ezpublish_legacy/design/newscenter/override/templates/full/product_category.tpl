@@ -239,7 +239,7 @@ cursor: default;
 			<div class="flexslider carousel">								
 				<div class="flex-viewport">
 					<ul class="slides">	
-						{for 1 to $iterations}
+						{for 1 to $iterations as $iteration}
 							<li>
 								{if $iterations|eq(1)}
 									{for 1 to $node.children|count()}
