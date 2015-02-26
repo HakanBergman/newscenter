@@ -210,11 +210,11 @@
 				</div>
             </div>
             <div class="col-lg-6 no-margin no-padding">        
-				<div class="pull-left">      
-					<a class="std-btn {$node.data_map.text_color.data_text}" href="#">
+				<div class="pull-left">     
+					<span class="glyphicon glyphicon-triangle-right">&nbsp;</span> 					
 				</div>
 				<div class="pull-right">
-					<span class="glyphicon glyphicon-triangle-right">&nbsp;</span> köp </a>
+					 <a class="std-btn {$node.data_map.text_color.data_text}" href="#">köp </a>
 				</div>
             </div>
           </article>
