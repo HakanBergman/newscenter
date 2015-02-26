@@ -262,8 +262,7 @@ cursor: default;
 					<div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 2800%; -moz-transition-duration: 0s; -moz-transform: translate3d(0px, 0px, 0px);">	
 					<li>
 						<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-albert-watson-48/621309-1-swe-SE/Affisch-Albert-Watson-48_shop_list_image.jpg"></a>
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
@@ -275,8 +274,7 @@ cursor: default;
 							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
 																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-49">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-albert-watson-49/621323-1-swe-SE/Affisch-Albert-Watson-49_shop_list_image.jpg">							</a>
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-49"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 49</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
@@ -288,8 +286,7 @@ cursor: default;
 							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-49" class="std-btn">Läs mer <span>om Affisch Albert Watson 49</span></a>
 						</div>
 																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-50">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-albert-watson-50/621337-1-swe-SE/Affisch-Albert-Watson-50_shop_list_image.jpg">							</a>
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-50"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 50</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
@@ -301,8 +298,7 @@ cursor: default;
 							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-50" class="std-btn">Läs mer <span>om Affisch Albert Watson 50</span></a>
 						</div>
 																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-51">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-albert-watson-51/621351-1-swe-SE/Affisch-Albert-Watson-51_shop_list_image.jpg">							</a>
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-51"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 51</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
@@ -314,8 +310,7 @@ cursor: default;
 							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-51" class="std-btn">Läs mer <span>om Affisch Albert Watson 51</span></a>
 						</div>
 																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-52">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-albert-watson-52/621365-1-swe-SE/Affisch-Albert-Watson-52_shop_list_image.jpg">							</a>
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-52"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 52</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
@@ -599,106 +594,6 @@ cursor: default;
 			
 		</div>
 </div>
-
-<div class="container">
-  <div class="col-lg-12">
-  <div class="shop-row shop-current {$node.data_map.link_color.data_text}">
-    <h2>Aktuellt just nu</h2>
-    <div class="flexslider carousel">
-      <ul class="slides">
-        <li>
-          <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
-          </a>
-          <strong class="title">Five Pioneers Of Photography Set </strong>
-          <span class="price">200 kr</span>
-          <a class="std-btn" href="#">köp</a>
-        </li>
-        <li>
-          <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
-          </a>
-          <strong class="title">Five Pioneers Of Photography Set </strong>
-          <span class="price">200 kr</span>
-          <a class="std-btn" href="#">köp</a>
-        </li>
-        <li>
-          <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
-          </a>
-          <strong class="title">Five Pioneers Of Photography Set </strong>
-          <span class="price">200 kr</span>
-          <a class="std-btn" href="#">köp</a>
-        </li>
-        <li>
-          <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
-          </a>
-          <strong class="title">Five Pioneers Of Photography Set </strong>
-          <span class="price">200 kr</span>
-          <a class="std-btn" href="#">köp</a>
-        </li>
-        <li>
-          <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
-          </a>
-          <strong class="title">Five Pioneers Of Photography Set </strong>
-          <span class="price">200 kr</span>
-          <a class="std-btn" href="#">köp</a>
-        </li>
-        <li>
-          <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
-          </a>
-          <strong class="title">Five Pioneers Of Photography Set </strong>
-          <span class="price">200 kr</span>
-          <a class="std-btn" href="#">köp</a>
-        </li>
-        <li>
-          <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
-          </a>
-          <strong class="title">Five Pioneers Of Photography Set </strong>
-          <span class="price">200 kr</span>
-          <a class="std-btn" href="#">köp</a>
-        </li>
-        <li>
-          <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
-          </a>
-          <strong class="title">Five Pioneers Of Photography Set </strong>
-          <span class="price">200 kr</span>
-          <a class="std-btn" href="#">köp</a>
-        </li>
-        <li>
-          <a href="#" class="img-link">
-            <img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" />
-          </a>
-          <strong class="title">Five Pioneers Of Photography Set </strong>
-          <span class="price">200 kr</span>
-          <a class="std-btn" href="#">köp</a>
-        </li>
-        <li>
-          <article>
-            <a href="#" class="img-link"><img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" /></a>
-            <h1 class="title {$node.data_map.link_color.data_text}"><a href="#" class="{$node.data_map.text_color.data_text}">Five Pioneers Of Photography Set</a></h1>
-			{* Hidden *}
-			{*
-            <div class="col-lg-9 no-margin no-padding">
-				<span class="price">200 kr</span>
-            </div>
-            <div class="col-lg-3 no-margin no-padding">            														
-				<a class="std-btn {$node.data_map.text_color.data_text}" href="#"><div class="float-left"><span class="glyphicon glyphicon-triangle-right"></span></div><div class="float-right">köp</div> </a>
-            </div>
-			*}
-          </article>
-        </li>
-      </ul>
-    </div>
-  </div>
-  </div>  
-</div>
-
 
 {literal}
 <script type="text/javascript">
