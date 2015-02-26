@@ -233,6 +233,7 @@ cursor: default;
 {/literal}
 
 <div class="container">
+	<h2>{$node.name|wash()}</h2>
 	{if $node.children}
 		{def $iterations = $node.children|count()|div(8)|ceil()}	
 		<div class="shop-category shop-current">			
