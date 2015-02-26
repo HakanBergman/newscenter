@@ -53,7 +53,7 @@
   margin: 0 0 2px;
   height: 30px;
   min-height: 30px;
-  font-size: 16px;
+  font-size: 14px;
   }
   .shop-row .price {
   display: block;
