@@ -235,11 +235,13 @@ cursor: default;
 <div class="container">
 	<h2>{$node.name|wash()}</h2>
 	{if $node.children}
-		{switch match=$node.children.0.class_identifier}
-			{case match='product_category'}
-				Product category
-			{/case}
-		{/switch}
+		{foreach $node.children as $child}
+			{switch match=$child.class_identifier}
+				{case match='product_category'}
+					Product category
+				{/case}
+			{/switch}
+		{/foreach}
 		{def $iterations = $node.children|count()|div(8)|ceil()}	
 		<div class="shop-category shop-current">			
 			<div class="flexslider carousel">								
