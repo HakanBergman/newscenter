@@ -234,9 +234,10 @@ cursor: default;
 
 <div class="container">
 	{if $node.children}
-		<div class="shop-category shop-current" style="">			
+		{$node.children|count()}
+		<div class="shop-category shop-current">			
 			<div class="flexslider carousel">								
-				<div class="flex-viewport" style="overflow: hidden; position: relative;">
+				<div class="flex-viewport">
 					<ul class="slides">	
 						<li>
 							{for 1 to 8 as $number}
