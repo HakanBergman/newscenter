@@ -238,8 +238,9 @@ cursor: default;
 			<div class="flexslider carousel">								
 				<div class="flex-viewport" style="overflow: hidden; position: relative;">
 					<ul class="slides">	
-					<li>
+						<li>
 						<div class="col-lg-3">
+							<img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg">
 							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
