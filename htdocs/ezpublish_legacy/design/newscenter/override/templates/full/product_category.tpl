@@ -242,7 +242,7 @@ cursor: default;
 						{for 1 to $iterations as $iteration}
 							<li>
 								{if $iterations|eq(1)}
-									{for 1 to $node.children|count()}
+									{for 1 to $node.children|count() as $number}
 										<div class="col-lg-3">
 											<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 											<strong class="title">Affisch Albert Watson 48</strong>
