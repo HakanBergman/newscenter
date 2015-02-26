@@ -238,8 +238,8 @@ cursor: default;
 		{foreach $node.children as $child}
 			{$child.class_identifier}
 			{switch match=$child.class_identifier}
-				{case match='product_category'}
-					Product category
+				{case match='product_country'}
+					Product country
 				{/case}
 			{/switch}
 		{/foreach}
