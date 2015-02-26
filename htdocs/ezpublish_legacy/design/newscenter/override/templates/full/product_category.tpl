@@ -244,6 +244,7 @@ cursor: default;
 								{if $iterations|eq(1)}
 									{for 1 to $node.children|count() as $number}
 										<div class="col-lg-3">
+											{$node.children.$number|attribute(show, 1)}
 											<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 											<strong class="title">Affisch Albert Watson 48</strong>
 											<span class="price">120,00 kr</span>						
