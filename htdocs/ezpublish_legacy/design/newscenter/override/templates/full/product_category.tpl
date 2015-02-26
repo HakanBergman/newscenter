@@ -204,12 +204,15 @@
           <article>
             <a href="#" class="img-link"><img src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg" alt="" class="img-responsive" /></a>
             <h1 class="title {$node.data_map.link_color.data_text}"><a href="#" class="{$node.data_map.text_color.data_text}">Five Pioneers Of Photography Set</a></h1>
+			{* Hidden *}
+			{*
             <div class="col-lg-9 no-margin no-padding">
 				<span class="price">200 kr</span>
             </div>
             <div class="col-lg-3 no-margin no-padding">            														
 				<a class="std-btn {$node.data_map.text_color.data_text}" href="#"><div class="float-left"><span class="glyphicon glyphicon-triangle-right"></span></div><div class="float-right">köp</div> </a>
             </div>
+			*}
           </article>
         </li>
       </ul>
