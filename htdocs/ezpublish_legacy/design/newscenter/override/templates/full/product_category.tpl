@@ -233,29 +233,7 @@ cursor: default;
 {/literal}
 
 <div class="container">
-<div class="shop-category shop-current" style="">
-					<div class="sort-options">
-	<span class="sort-options-label">Sortera via:</span>
-	<a href="http://dev.fotografiska.se/Butik/Affischer/(sort)/title" class="sortbutton by-author active">Titel</a>
-	<a href="http://dev.fotografiska.se/Butik/Affischer/(sort)/author" class="sortbutton by-rating ">Författare</a>
-	<a href="http://dev.fotografiska.se/Butik/Affischer/(sort)/price" class="sortbutton by-price ">Priset</a>
-	<div class="filter">
-		<a href="#" class="sortbutton categories"><span>Kategorier</span></a>
-		<div class="category-list">
-			<ul>
-				<li><a href="/webshop/Produkter/Affischer/(category)/David LaChapelle">David LaChapelle</a></li>
-				<li><a href="/webshop/Produkter/Affischer">Alla</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="limit">
-		Visas:
-		<a class="active" href="http://dev.fotografiska.se/Butik/Affischer/(items)/10">&gt;10</a>
-		<a href="http://dev.fotografiska.se/Butik/Affischer/(items)/20">20</a>
-		<a href="http://dev.fotografiska.se/Butik/Affischer/(items)/30">30</a>
-	</div>
-	
-</div>			
+<div class="shop-category shop-current" style="">			
 					<div class="flexslider carousel">
 								
 					<div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 2800%; -moz-transition-duration: 0s; -moz-transform: translate3d(0px, 0px, 0px);">	
@@ -273,7 +251,7 @@ cursor: default;
 							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
 						<div class="col-lg-3">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
@@ -285,7 +263,7 @@ cursor: default;
 							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
 						<div class="col-lg-3">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
@@ -297,7 +275,7 @@ cursor: default;
 							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
 						<div class="col-lg-3">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
@@ -309,7 +287,7 @@ cursor: default;
 							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
 						<div class="col-lg-3">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
@@ -321,7 +299,7 @@ cursor: default;
 							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
 						<div class="col-lg-3">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
@@ -333,7 +311,7 @@ cursor: default;
 							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
 						<div class="col-lg-3">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
@@ -345,7 +323,7 @@ cursor: default;
 							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
 						<div class="col-lg-3">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
