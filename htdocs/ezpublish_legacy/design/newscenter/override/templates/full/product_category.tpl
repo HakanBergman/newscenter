@@ -232,8 +232,8 @@
       slideshow: false,
       itemWidth: 265,
       itemMargin: 20,
-      minItems: 2,
-      maxItems: 8
+      minItems: 4,
+      maxItems: 4
     });
   });
 </script>
