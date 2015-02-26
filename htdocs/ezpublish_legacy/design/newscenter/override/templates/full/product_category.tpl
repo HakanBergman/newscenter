@@ -261,7 +261,7 @@ cursor: default;
 								
 					<div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 2800%; -moz-transition-duration: 0s; -moz-transform: translate3d(0px, 0px, 0px);">	
 					<li>
-						<div class="item">
+						<div class="col-lg-4">
 							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
@@ -273,118 +273,113 @@ cursor: default;
 							</form>						
 							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-49"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
-							<strong class="title">Affisch Albert Watson 49</strong>
+						<div class="col-lg-4">
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24843" name="ContentNodeID">
-									<input type="hidden" value="40005" name="ContentObjectID">
+									<input type="hidden" value="24842" name="ContentNodeID">
+									<input type="hidden" value="40004" name="ContentObjectID">
 									<input type="hidden" value="full" name="ViewMode">
 									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
 							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-49" class="std-btn">Läs mer <span>om Affisch Albert Watson 49</span></a>
+							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-50"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
-							<strong class="title">Affisch Albert Watson 50</strong>
+						<div class="col-lg-4">
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24844" name="ContentNodeID">
-									<input type="hidden" value="40006" name="ContentObjectID">
+									<input type="hidden" value="24842" name="ContentNodeID">
+									<input type="hidden" value="40004" name="ContentObjectID">
 									<input type="hidden" value="full" name="ViewMode">
 									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
 							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-50" class="std-btn">Läs mer <span>om Affisch Albert Watson 50</span></a>
+							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-51"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
-							<strong class="title">Affisch Albert Watson 51</strong>
+						<div class="col-lg-4">
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24845" name="ContentNodeID">
-									<input type="hidden" value="40007" name="ContentObjectID">
+									<input type="hidden" value="24842" name="ContentNodeID">
+									<input type="hidden" value="40004" name="ContentObjectID">
 									<input type="hidden" value="full" name="ViewMode">
 									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
 							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-51" class="std-btn">Läs mer <span>om Affisch Albert Watson 51</span></a>
+							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-52"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
-							<strong class="title">Affisch Albert Watson 52</strong>
+						<div class="col-lg-4">
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24846" name="ContentNodeID">
-									<input type="hidden" value="40008" name="ContentObjectID">
+									<input type="hidden" value="24842" name="ContentNodeID">
+									<input type="hidden" value="40004" name="ContentObjectID">
 									<input type="hidden" value="full" name="ViewMode">
 									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
 							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-52" class="std-btn">Läs mer <span>om Affisch Albert Watson 52</span></a>
+							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-53">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-albert-watson-53/621379-1-swe-SE/Affisch-Albert-Watson-53_shop_list_image.jpg">							</a>
-							<strong class="title">Affisch Albert Watson 53</strong>
+						<div class="col-lg-4">
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24847" name="ContentNodeID">
-									<input type="hidden" value="40009" name="ContentObjectID">
+									<input type="hidden" value="24842" name="ContentNodeID">
+									<input type="hidden" value="40004" name="ContentObjectID">
 									<input type="hidden" value="full" name="ViewMode">
 									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
 							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-53" class="std-btn">Läs mer <span>om Affisch Albert Watson 53</span></a>
+							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-54">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-albert-watson-54/621393-1-swe-SE/Affisch-Albert-Watson-54_shop_list_image.jpg">							</a>
-							<strong class="title">Affisch Albert Watson 54</strong>
+						<div class="col-lg-4">
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24848" name="ContentNodeID">
-									<input type="hidden" value="40010" name="ContentObjectID">
+									<input type="hidden" value="24842" name="ContentNodeID">
+									<input type="hidden" value="40004" name="ContentObjectID">
 									<input type="hidden" value="full" name="ViewMode">
 									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
 							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-54" class="std-btn">Läs mer <span>om Affisch Albert Watson 54</span></a>
+							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-55">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-albert-watson-55/621407-1-swe-SE/Affisch-Albert-Watson-55_shop_list_image.jpg">							</a>
-							<strong class="title">Affisch Albert Watson 55</strong>
+						<div class="col-lg-4">
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24849" name="ContentNodeID">
-									<input type="hidden" value="40011" name="ContentObjectID">
+									<input type="hidden" value="24842" name="ContentNodeID">
+									<input type="hidden" value="40004" name="ContentObjectID">
 									<input type="hidden" value="full" name="ViewMode">
 									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
 							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-55" class="std-btn">Läs mer <span>om Affisch Albert Watson 55</span></a>
+							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Burtynsky-56">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-burtynsky-56/621421-1-swe-SE/Affisch-Burtynsky-56_shop_list_image.png">							</a>
-							<strong class="title">Affisch Burtynsky 56</strong>
+						<div class="col-lg-4">
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24850" name="ContentNodeID">
-									<input type="hidden" value="40012" name="ContentObjectID">
+									<input type="hidden" value="24842" name="ContentNodeID">
+									<input type="hidden" value="40004" name="ContentObjectID">
 									<input type="hidden" value="full" name="ViewMode">
 									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
 							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Burtynsky-56" class="std-btn">Läs mer <span>om Affisch Burtynsky 56</span></a>
+							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Burtynsky-57">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-burtynsky-57/621435-1-swe-SE/Affisch-Burtynsky-57_shop_list_image.png">							</a>
-							<strong class="title">Affisch Burtynsky 57</strong>
+						<div class="col-lg-4">
+							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+							<strong class="title">Affisch Albert Watson 48</strong>
 							<span class="price">120,00 kr</span>						
 							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24851" name="ContentNodeID">
-									<input type="hidden" value="40013" name="ContentObjectID">
+									<input type="hidden" value="24842" name="ContentNodeID">
+									<input type="hidden" value="40004" name="ContentObjectID">
 									<input type="hidden" value="full" name="ViewMode">
 									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
 							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Burtynsky-57" class="std-btn">Läs mer om Affisch Burtynsky 57</a>
+							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
 						</div>
 												</li>
 					<li>
