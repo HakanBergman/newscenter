@@ -236,6 +236,7 @@ cursor: default;
 	<h2>{$node.name|wash()}</h2>
 	{if $node.children}
 		{foreach $node.children as $child}
+			{$child.class_identifier}
 			{switch match=$child.class_identifier}
 				{case match='product_category'}
 					Product category
