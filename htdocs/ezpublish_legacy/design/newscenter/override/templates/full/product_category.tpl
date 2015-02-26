@@ -473,16 +473,17 @@
 {literal}
 <script type="text/javascript">
   $(window).load(function() {
-    $('.shop-row .flexslider').flexslider({
-      animation: "slide",
-      directionNav: false,
-      animationLoop: false,
-      slideshow: false,
-      itemWidth: 265,
-      itemMargin: 20,
-      minItems: 4,
-      maxItems: 4
-    });
+	$('.shop-category .flexslider').flexslider({
+		animation: "slide",
+		directionNav: false,
+		animationLoop: false,
+		slideshow: false,
+		reverse: false,
+		itemWidth: 605,
+		itemMargin: 0,
+		minItems: 1,
+		maxItems: 1
+	});	
   });
 </script>
 {/literal}
