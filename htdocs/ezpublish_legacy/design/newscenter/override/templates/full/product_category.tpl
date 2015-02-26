@@ -239,7 +239,7 @@ cursor: default;
 			{switch match=$child.class_identifier}
 				{case match='product_country'}
 					<div class="col-lg-12 no-margin no-padding">
-						<div class="flag flag-icon-background {$child.data_map.country_class.data_text} width-105-em height-105-em"></div>
+						<span class="flag flag-icon-background {$child.data_map.country_class.data_text} width-105-em height-105-em float-left"></span>
 						<span class="widget-padding-left-3">{$child.name|wash()}</span>
 					</div>
 				{/case}
