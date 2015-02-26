@@ -123,7 +123,7 @@
 {/literal}
 
 <div class="container">
-<span class="glyphicon glyphicon-triangle-right"></span>
+<span class="glyphicon glyphicon-menu-right"></span>
   <div class="col-lg-12">
   <div class="shop-row shop-current {$node.data_map.link_color.data_text}">
     <h2>Aktuellt just nu</h2>
