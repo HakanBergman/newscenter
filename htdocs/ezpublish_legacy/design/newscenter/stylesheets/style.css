@@ -8,7 +8,6 @@ section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 /* Blocks */
 .inline-block { display: inline-block; }
 
-
 /* General widget rules */
 .widget { clear: both; }
 
@@ -44,6 +43,7 @@ section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 
 /* Width */
 .width-1-em { width: 1em; }
+.width-105-em { width: 1.5em; }
 
 /* List Rules */
 .nav-tabs>li { margin: 0; }
