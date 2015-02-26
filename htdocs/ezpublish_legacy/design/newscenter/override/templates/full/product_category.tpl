@@ -234,7 +234,8 @@ cursor: default;
 
 <div class="container">
 	{if $node.children}
-		{$node.children|count()}
+		{def $iterations = $node.children|count()|div(8)|ceil()}
+		{$iterations}		
 		<div class="shop-category shop-current">			
 			<div class="flexslider carousel">								
 				<div class="flex-viewport">
