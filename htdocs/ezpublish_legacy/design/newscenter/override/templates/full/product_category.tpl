@@ -208,7 +208,7 @@
 				<span class="price">200 kr</span>
             </div>
             <div class="col-lg-4 no-margin no-padding">            														
-				<a class="std-btn {$node.data_map.text_color.data_text}" href="#"><div class="float-left"><span class="glyphicon glyphicon-triangle-right"></span></div> köp </a>
+				<a class="std-btn {$node.data_map.text_color.data_text}" href="#"><div class="float-left"><span class="glyphicon glyphicon-triangle-right"></span></div><div class="float-right">köp</div> </a>
             </div>
           </article>
         </li>
