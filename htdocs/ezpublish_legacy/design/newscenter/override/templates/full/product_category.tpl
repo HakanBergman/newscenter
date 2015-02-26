@@ -239,309 +239,42 @@ cursor: default;
 				<div class="flex-viewport" style="overflow: hidden; position: relative;">
 					<ul class="slides">	
 						<li>
-						<div class="col-lg-3">
-							<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
-							<strong class="title">Affisch Albert Watson 48</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24842" name="ContentNodeID">
-									<input type="hidden" value="40004" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
-						</div>
-						<div class="col-lg-3">
-							<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
-							<strong class="title">Affisch Albert Watson 48</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24842" name="ContentNodeID">
-									<input type="hidden" value="40004" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
-						</div>
-						<div class="col-lg-3">
-							<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
-							<strong class="title">Affisch Albert Watson 48</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24842" name="ContentNodeID">
-									<input type="hidden" value="40004" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
-						</div>
-						<div class="col-lg-3">
-							<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
-							<strong class="title">Affisch Albert Watson 48</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24842" name="ContentNodeID">
-									<input type="hidden" value="40004" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
-						</div>
-						<div class="col-lg-3">
-							<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
-							<strong class="title">Affisch Albert Watson 48</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24842" name="ContentNodeID">
-									<input type="hidden" value="40004" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
-						</div>
-						<div class="col-lg-3">
-							<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
-							<strong class="title">Affisch Albert Watson 48</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24842" name="ContentNodeID">
-									<input type="hidden" value="40004" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
-						</div>
-						<div class="col-lg-3">
-							<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
-							<strong class="title">Affisch Albert Watson 48</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24842" name="ContentNodeID">
-									<input type="hidden" value="40004" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
-						</div>
-						<div class="col-lg-3">
-							<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
-							<strong class="title">Affisch Albert Watson 48</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24842" name="ContentNodeID">
-									<input type="hidden" value="40004" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
-						</div>
-					</li>
-					<li>
-															<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Burtynsky-58">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-burtynsky-58/621449-1-swe-SE/Affisch-Burtynsky-58_shop_list_image.png">							</a>
-							<strong class="title">Affisch Burtynsky 58</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24852" name="ContentNodeID">
-									<input type="hidden" value="40014" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Burtynsky-58" class="std-btn">Läs mer om Affisch Burtynsky 58</a>
-						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Burtynsky-59">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-burtynsky-59/621463-1-swe-SE/Affisch-Burtynsky-59_shop_list_image.png">							</a>
-							<strong class="title">Affisch Burtynsky 59</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24853" name="ContentNodeID">
-									<input type="hidden" value="40015" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Burtynsky-59" class="std-btn">Läs mer om Affisch Burtynsky 59</a>
-						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Fellaender-60">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-fellaender-60/621477-1-swe-SE/Affisch-Fellaender-60_shop_list_image.png">							</a>
-							<strong class="title">Affisch Felländer 60</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24854" name="ContentNodeID">
-									<input type="hidden" value="40016" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Fellaender-60" class="std-btn">Läs mer om Affisch Felländer 60</a>
-						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Fellaender-61">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-fellaender-61/621491-1-swe-SE/Affisch-Fellaender-61_shop_list_image.png">							</a>
-							<strong class="title">Affisch Felländer 61</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24855" name="ContentNodeID">
-									<input type="hidden" value="40017" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Fellaender-61" class="std-btn">Läs mer om Affisch Felländer 61</a>
-						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Mapplethorpe-62">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-mapplethorpe-62/621505-1-swe-SE/Affisch-Mapplethorpe-62_shop_list_image.jpg">							</a>
-							<strong class="title">Affisch Mapplethorpe 62</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24856" name="ContentNodeID">
-									<input type="hidden" value="40018" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Mapplethorpe-62" class="std-btn">Läs mer om Affisch Mapplethorpe 62</a>
-						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Mapplethorpe-63">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-mapplethorpe-63/621519-1-swe-SE/Affisch-Mapplethorpe-63_shop_list_image.jpg">							</a>
-							<strong class="title">Affisch Mapplethorpe 63</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24857" name="ContentNodeID">
-									<input type="hidden" value="40019" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Mapplethorpe-63" class="std-btn">Läs mer om Affisch Mapplethorpe 63</a>
-						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Mapplethorpe-64">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-mapplethorpe-64/621533-1-swe-SE/Affisch-Mapplethorpe-64_shop_list_image.jpg">							</a>
-							<strong class="title">Affisch Mapplethorpe 64</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24858" name="ContentNodeID">
-									<input type="hidden" value="40020" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Mapplethorpe-64" class="std-btn">Läs mer om Affisch Mapplethorpe 64</a>
-						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Mapplethorpe-65">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-mapplethorpe-65/621547-1-swe-SE/Affisch-Mapplethorpe-65_shop_list_image.jpg">							</a>
-							<strong class="title">Affisch Mapplethorpe 65</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24859" name="ContentNodeID">
-									<input type="hidden" value="40021" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Mapplethorpe-65" class="std-btn">Läs mer om Affisch Mapplethorpe 65</a>
-						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Mapplethorpe-66">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-mapplethorpe-66/621561-1-swe-SE/Affisch-Mapplethorpe-66_shop_list_image.jpg">							</a>
-							<strong class="title">Affisch Mapplethorpe 66</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24860" name="ContentNodeID">
-									<input type="hidden" value="40022" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Mapplethorpe-66" class="std-btn">Läs mer om Affisch Mapplethorpe 66</a>
-						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Chanel-67">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-chanel-67/621575-1-swe-SE/Affisch-Chanel-67_shop_list_image.png">							</a>
-							<strong class="title">Affisch Chanel 67</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24861" name="ContentNodeID">
-									<input type="hidden" value="40023" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Chanel-67" class="std-btn">Läs mer om Affisch Chanel 67</a>
-						</div>
-												</li>
-					
-					<li>
-															<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Andy-Warhol-45">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-andy-warhol-45/623129-1-swe-SE/Affisch-Andy-Warhol-45_shop_list_image.jpg">							</a>
-							<strong class="title">Affisch Andy Warhol 45</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24972" name="ContentNodeID">
-									<input type="hidden" value="40134" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Andy-Warhol-45" class="std-btn">Läs mer om Affisch Andy Warhol 45</a>
-						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Andy-Warhol-46">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-andy-warhol-46/623143-1-swe-SE/Affisch-Andy-Warhol-46_shop_list_image.jpg">							</a>
-							<strong class="title">Affisch Andy Warhol 46</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24973" name="ContentNodeID">
-									<input type="hidden" value="40135" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Andy-Warhol-46" class="std-btn">Läs mer om Affisch Andy Warhol 46</a>
-						</div>
-																				<div class="item">
-							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Andy-Warhol-47">
-								<img alt="" src="http://dev.fotografiska.se/var/fgrafiska/storage/images/butik/affischer/affischer/affisch-andy-warhol-47/623157-1-swe-SE/Affisch-Andy-Warhol-47_shop_list_image.jpg">							</a>
-							<strong class="title">Affisch Andy Warhol 47</strong>
-							<span class="price">120,00 kr</span>						
-							<form action="/webshop/content/action" method="post">
-									<input type="hidden" value="24974" name="ContentNodeID">
-									<input type="hidden" value="40136" name="ContentObjectID">
-									<input type="hidden" value="full" name="ViewMode">
-									<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-							</form>						
-							<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Andy-Warhol-47" class="std-btn">Läs mer om Affisch Andy Warhol 47</a>
-						</div>
-																																																																											</li>
-			
-	</ul></div></div>
+							{for 1 to 8 as $number}
+								<div class="col-lg-3">
+									<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+									<strong class="title">Affisch Albert Watson 48</strong>
+									<span class="price">120,00 kr</span>						
+									<form action="/webshop/content/action" method="post">
+											<input type="hidden" value="24842" name="ContentNodeID">
+											<input type="hidden" value="40004" name="ContentObjectID">
+											<input type="hidden" value="full" name="ViewMode">
+											<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
+									</form>						
+									<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
+								</div>
+							{/for}
+						</li>
+						<li>
+							{for 1 to 8 as $number}
+								<div class="col-lg-3">
+									<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+									<strong class="title">Affisch Albert Watson 48</strong>
+									<span class="price">120,00 kr</span>						
+									<form action="/webshop/content/action" method="post">
+											<input type="hidden" value="24842" name="ContentNodeID">
+											<input type="hidden" value="40004" name="ContentObjectID">
+											<input type="hidden" value="full" name="ViewMode">
+											<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
+									</form>						
+									<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
+								</div>
+							{/for}
+						</li>
+					</ul>
 				</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+			</div>
 		</div>
+	{/if}
 </div>
 
 {literal}
