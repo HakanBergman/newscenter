@@ -604,7 +604,7 @@ cursor: default;
 		animationLoop: false,
 		slideshow: false,
 		reverse: false,
-		itemWidth: 605,
+		itemWidth: 1170,
 		itemMargin: 0,
 		minItems: 1,
 		maxItems: 1
