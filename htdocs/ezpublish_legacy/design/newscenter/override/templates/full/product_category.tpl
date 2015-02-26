@@ -247,7 +247,8 @@ cursor: default;
 										{def $item = $number|dec(1)}
 										{switch match=$node.children.$item.class_identifier}
 											{case match='product_country'}
-												CASE
+												<div class="flag flag-icon-background flag-icon-lv inline-block height-105-em width-1-em"></div>
+												Test
 											{/case}
 											{case}
 												<div class="col-lg-3">
