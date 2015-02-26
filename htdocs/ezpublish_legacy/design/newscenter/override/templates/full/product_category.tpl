@@ -209,12 +209,10 @@
 					<span class="price">200 kr</span>
 				</div>
             </div>
-            <div class="col-lg-6 no-margin no-padding">        
-				<div class="pull-left">     
-					<span class="glyphicon glyphicon-triangle-right">&nbsp;</span> 					
-				</div>
+            <div class="col-lg-6 no-margin no-padding">            										
 				<div class="pull-right">
-					 <a class="std-btn {$node.data_map.text_color.data_text}" href="#">köp </a>
+					<span class="glyphicon glyphicon-triangle-right">&nbsp;</span> 
+					<a class="std-btn {$node.data_map.text_color.data_text}" href="#">köp </a>
 				</div>
             </div>
           </article>
