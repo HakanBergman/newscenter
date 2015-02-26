@@ -123,6 +123,7 @@
 {/literal}
 
 <div class="container">
+<span class="glyphicon glyphicon-triangle-right"></span>
   <div class="col-lg-12">
   <div class="shop-row shop-current {$node.data_map.link_color.data_text}">
     <h2>Aktuellt just nu</h2>
@@ -207,8 +208,7 @@
             <div class="col-lg-6 no-margin no-padding">
               <span class="price">200 kr</span>
             </div>
-            <div class="col-lg-6 no-margin no-padding">
-              
+            <div class="col-lg-6 no-margin no-padding">              
               <a class="std-btn {$node.data_map.text_color.data_text}" href="#"><span class="glyphicon glyphicon-triangle-right">&nbsp;</span> köp </a>
             </div>
           </article>
