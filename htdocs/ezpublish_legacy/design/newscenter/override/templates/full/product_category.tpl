@@ -233,10 +233,11 @@ cursor: default;
 {/literal}
 
 <div class="container">
-<div class="shop-category shop-current" style="">			
-					<div class="flexslider carousel">
-								
-					<div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 2800%; -moz-transition-duration: 0s; -moz-transform: translate3d(0px, 0px, 0px);">	
+	{if $node.children}
+		<div class="shop-category shop-current" style="">			
+			<div class="flexslider carousel">								
+				<div class="flex-viewport" style="overflow: hidden; position: relative;">
+					<ul class="slides">	
 					<li>
 						<div class="col-lg-3">
 							<a class="img-link" href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
