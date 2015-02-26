@@ -87,7 +87,6 @@ padding: 6px 0 0;
 padding-top: 20px;
 }
 .flexslider {
-background: #fff;
 position: relative;
 zoom: 1;
 padding: 0 0 19px;
