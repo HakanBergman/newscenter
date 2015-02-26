@@ -238,7 +238,9 @@ cursor: default;
 		{foreach $node.children as $child}
 			{switch match=$child.class_identifier}
 				{case match='product_country'}
-					<div class="flag flag-icon-background {$child.data_map.country_class.data_text} width-105-em height-105-em float-left"></div> {$child.name|wash()}
+					<article>
+						<div class="flag flag-icon-background {$child.data_map.country_class.data_text} width-105-em height-105-em float-left"></div> {$child.name|wash()}
+					</article>
 				{/case}
 			{/switch}
 		{/foreach}
