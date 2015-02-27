@@ -247,7 +247,7 @@ cursor: default;
 									{switch match=$grandchild.class_identifier}
 										{case match='product_list'}
 											<div class="col-lg-12">
-												<h4 class="no-margin">{$grandchild.name}</h4>
+												<h4 class="no-margin font-weight-normal">{$grandchild.name}</h4>
 											</div>
 										{/case}
 									{/switch}									
