@@ -261,7 +261,7 @@ cursor: default;
 									{switch match=$grandchild.class_identifier}
 										{case match='product_list'}
 											<div class="col-lg-12 container-padding-top-05">
-												<h4 class="container-padding-left-3 font-size-product-link font-weight-normal no-margin"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="{$grandchild.data_map.text_color.data_text}">{$grandchild.name}</a></h4>
+												<h4 class="container-padding-left-3 font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}">{$grandchild.name}</a></h4>
 											</div>
 										{/case}
 									{/switch}									
