@@ -238,7 +238,21 @@ cursor: default;
 		{foreach $node.children as $child}
 			{switch match=$child.class_identifier}
 				{case match='product_country'}
-					<div class="col-lg-12 container-padding-top">
+					{switch match=$node.children|count()}
+						{case match=2}
+							{def $column_size = "col-lg-6"}
+						{/case}
+						{case match=3}
+							{def $column_size = "col-lg-4"}
+						{/case}
+						{case match=4}
+							{def $column_size = "col-lg-3"}
+						{/case}
+						{case}
+							{def $column_size = "col-lg-12"}
+						{/case}
+					{/switch}
+					<div class="{$column_size} container-padding-top">
 						<div class="flag flag-icon-background {$child.data_map.country_class.data_text} width-105-em height-105-em float-left"></div>
 						<h3 class="container-padding-left float-left no-margin"><a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}" class="{$child.data_map.text_color.data_text}">{$child.name|wash()}</a></h3>
 						{foreach $child.children as $grandchild}
