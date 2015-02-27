@@ -244,6 +244,11 @@ cursor: default;
 						{foreach $child.children as $grandchild}
 							{switch match=$grandchild.class_identifier}
 								{case match='product_list'}
+									{switch match=$grandchild.class_identifier}
+										{case match='product_list'}
+											Produktlista
+										{/case}
+									{/switch}
 									{$grandchild.name|wash()}
 								{/case}
 							{/switch}
