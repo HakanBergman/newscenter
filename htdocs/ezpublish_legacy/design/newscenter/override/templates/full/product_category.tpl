@@ -259,6 +259,7 @@ cursor: default;
 			{/switch}
 		{/foreach}
 		{def $iterations = $node.children|count()|div(8)|ceil()}	
+		{*
 		<div class="shop-category shop-current">			
 			<div class="flexslider carousel">								
 				<div class="flex-viewport">				
@@ -272,16 +273,6 @@ cursor: default;
 												{$node.children.$item.data_map|attribute(show, 1)}
 												<a href="{$node.children.$item.url|ezurl('no', 'full')}"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 												<strong class="title">{$node.children.$item.name|wash()}</strong>
-												{*
-												<span class="price">120,00 kr</span>						
-												<form action="/webshop/content/action" method="post">
-													<input type="hidden" value="24842" name="ContentNodeID">
-													<input type="hidden" value="40004" name="ContentObjectID">
-													<input type="hidden" value="full" name="ViewMode">
-													<button title="Lägg till varukorgen" name="ActionAddToBasket" type="submit" class="add-to-basket">Köp</button>
-												</form>						
-												<a href="http://dev.fotografiska.se/Butik/Affischer/Affisch-Albert-Watson-48" class="std-btn">Läs mer <span>om Affisch Albert Watson 48</span></a>
-												*}
 											</div>
 										{undef $item}
 									{/for}
@@ -307,6 +298,7 @@ cursor: default;
 				</div>
 			</div>
 		</div>
+		*}
 	{/if}
 </div>
 
