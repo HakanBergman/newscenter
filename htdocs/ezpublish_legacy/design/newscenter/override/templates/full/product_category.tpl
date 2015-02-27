@@ -238,16 +238,16 @@ cursor: default;
 		{foreach $node.children as $child}
 			{switch match=$child.class_identifier}
 				{case match='product_country'}
-					<div class="col-lg-12">
+					<div class="col-lg-12 container-padding-top">
 						<div class="flag flag-icon-background {$child.data_map.country_class.data_text} width-105-em height-105-em float-left"></div>
-						<h3 class="container-padding-left container-padding-top float-left no-margin">{$child.name|wash()}</h3>
+						<h3 class="container-padding-left float-left no-margin">{$child.name|wash()}</h3>
 						{foreach $child.children as $grandchild}
 							{switch match=$grandchild.class_identifier}
 								{case match='product_list'}
 									{switch match=$grandchild.class_identifier}
 										{case match='product_list'}
-											<div class="col-lg-12">
-												<h4 class="no-margin font-size-product-link container-padding-top font-weight-normal">{$grandchild.name}</h4>
+											<div class="col-lg-12 container-padding-top">
+												<h4 class="no-margin font-size-product-link font-weight-normal">{$grandchild.name}</h4>
 											</div>
 										{/case}
 									{/switch}									
