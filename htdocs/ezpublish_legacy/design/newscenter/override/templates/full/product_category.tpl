@@ -253,8 +253,8 @@ cursor: default;
 						{/case}
 					{/switch}
 					<div class="{$column_size} container-padding-top">
-						<div class="flag flag-icon-background {$child.data_map.country_class.data_text} width-105-em height-105-em float-left"></div>
-						<h3 class="container-padding-left float-left no-margin {$child.data_map.hover_color.data_text}"><a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}" class="{$child.data_map.text_color.data_text}">{$child.name|wash()}</a></h3>
+						<div class="flag flag-icon-background {$child.data_map.hover_color.data_text} {$child.data_map.country_class.data_text} width-105-em height-105-em float-left"></div>
+						<h3 class="container-padding-left float-left no-margin"><a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}" class="{$child.data_map.text_color.data_text}">{$child.name|wash()}</a></h3>
 						{foreach $child.children as $grandchild}
 							{switch match=$grandchild.class_identifier}
 								{case match='product_list'}
