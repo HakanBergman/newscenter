@@ -5,6 +5,13 @@
 .link-color-teal-active a:active { color: #4bc6d1; font-weight: 700; text-decoration: none; }
 .link-color-teal-visited a:visited { color: #4bc6d1; font-weight: 700; text-decoration: none; }
 
+/* Beer brown */
+.text-color-beer-brown { color: #de910b !important; font-weight: 700; text-decoration: none; } 
+.link-color-beer-brown a { color: #de910b; font-weight: 700; text-decoration: none; } 
+.link-color-beer-brown-hover a:hover { color: #de910b; font-weight: 700; text-decoration: none; } 
+.link-color-beer-brown-active a:active { color: #de910b; font-weight: 700; text-decoration: none; }
+.link-color-beer-brown-visited a:visited { color: #de910b; font-weight: 700; text-decoration: none; }
+
 /* Blue */
 .text-color-blue { color: #284673 !important; font-weight: 700; text-decoration: none; } 
 .link-color-blue a { color: #284673; font-weight: 700; text-decoration: none; } 
