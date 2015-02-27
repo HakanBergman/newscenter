@@ -71,7 +71,7 @@
 
 	</head>
 	
-	<body class="bg-grey font-family-bookman-old {$#company.data_map.link_color_menu.data_text}">
+	<body class="bg-grey font-family-bookman-old">
 	<div id="fb-root"></div>
 
 		<div class="container-fluid website">
