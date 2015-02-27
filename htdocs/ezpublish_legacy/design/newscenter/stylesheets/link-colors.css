@@ -28,6 +28,7 @@
 
 /* Black */
 .text-color-black { color: #000 !important; font-weight: 700; text-decoration: none; } 
+.text-color-black a { color: #000 !important; font-weight: 700; text-decoration: none; } 
 .link-color-black a { color: #000; font-weight: 700; text-decoration: none; } 
 .link-color-black-hover a:hover { color: #000; font-weight: 700; text-decoration: none; }  
 .link-color-black-active a:active { color: #000; font-weight: 700; text-decoration: none; }
