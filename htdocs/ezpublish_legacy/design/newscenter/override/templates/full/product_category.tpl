@@ -266,8 +266,7 @@ cursor: default;
 													{if $grandchild.children}
 														{foreach $grandchild.children as $grandgrandchild}
 															<h5 class="container-padding-left-4 font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}">
-																{if $grandgrandchild.class_identifier|eq('product')}Produktbild{/if}
-																{$grandgrandchild.data_map.image.content.original.full_path}
+																{if $grandgrandchild.class_identifier|eq('product')}<img src="img-responsive" src="/{$grandgrandchild.data_map.image.content.original.full_path}" alt="{$grandgrandchild.name|wash()}"></img>{/if}																
 																<a href="{$grandgrandchild.url|ezurl('no', 'full')}" title="{$grandgrandchild.name|wash()}" class="font-weight-normal">{$grandgrandchild.name|wash()}</a>
 															</h5>
 														{/foreach}
