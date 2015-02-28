@@ -240,13 +240,13 @@ cursor: default;
 				{case match='product_country'}
 					{switch match=$node.children|count()}
 						{case match=2}
-							{def $column_size = "col-lg-6 col-md-6 col-sm-12 col-xs-12"}
+							{def $column_size = "col-lg-6 col-md-6 col-sm-6 col-xs-12"}
 						{/case}
 						{case match=3}
-							{def $column_size = "col-lg-4 col-md-4 col-sm-12 col-xs-12"}
+							{def $column_size = "col-lg-4 col-md-4 col-sm-4 col-xs-12"}
 						{/case}
 						{case match=4}
-							{def $column_size = "col-lg-3 col-md-4 col-sm-12 col-xs-12"}
+							{def $column_size = "col-lg-3 col-md-4 col-sm-3 col-xs-12"}
 						{/case}
 						{case}
 							{def $column_size = "col-lg-12"}
