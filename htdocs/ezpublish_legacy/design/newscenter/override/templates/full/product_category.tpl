@@ -264,11 +264,11 @@ cursor: default;
 												<div class="col-lg-12 container-padding-top-05">
 													<h4 class="container-padding-left-3 font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}">{$grandchild.name}</a></h4>
 													{if $grandchild.children}
-														{foreach $grandchild.children as $grandgranchild}
+														{foreach $grandchild.children as $grandgrandchild}
 															<h5 class="container-padding-left-4 font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}">
 																{if $grandgrandchild.class_identifier|eq('product')}Produktbild{/if}
 																{$grandgrandchild.class_identifier}
-																<a href="{$grandgrandchild.url|ezurl('no', 'full')}" title="{$grandgranchild.name|wash()}" class="font-weight-normal">{$grandgranchild.name|wash()}</a>
+																<a href="{$grandgrandchild.url|ezurl('no', 'full')}" title="{$grandgrandchild.name|wash()}" class="font-weight-normal">{$grandgrandchild.name|wash()}</a>
 															</h5>
 														{/foreach}
 													{/if}
