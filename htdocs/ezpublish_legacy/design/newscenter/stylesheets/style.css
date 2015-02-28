@@ -109,3 +109,6 @@ ul.submenu { position: absolute; z-index: 1000; float: left; list-style: none; t
 /* Font Weights */
 .font-weight-bold { font-weight: 700 !important; }
 .font-weight-normal { font-weight: normal !important; }
+
+/* Cler */
+.clear { clear: both; }
