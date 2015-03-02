@@ -16,6 +16,7 @@ homenode=63
 RequireUserLogin=false
 RelatedSiteAccessList[]
 ShowHiddenNodes=false
+PathPrefix=Kunder/Maltimportoeren
 
 [DesignSettings]
 SiteDesign=newscenter
