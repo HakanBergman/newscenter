@@ -255,47 +255,22 @@
                 {def $column_size = "col-lg-12"}
               {/case}
             {/switch}
-  <div class="{$column_size} container-padding-top">
-    <h3 class="container-padding-left float-left no-margin {$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">
-      <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a>
-    </h3>
-    {foreach $child.children as $grandgrandchild}
-    <h5 class="container-padding-left-4 font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}">
-      {if $grandgrandchild.class_identifier|eq('product')}<img class="img-responsive max-width-2-em float-left" src="/{$grandgrandchild.data_map.image.content.original.full_path}" alt="{$grandgrandchild.name|wash()}"></img>{/if}
-      <a href="{$grandgrandchild.url|ezurl('no', 'full')}" title="{$grandgrandchild.name|wash()}" class="container-padding-left font-weight-normal">{$grandgrandchild.name|wash()}</a>
-    </h5>
+            <div class="{$column_size} container-padding-top">
+              <h3 class="container-padding-left float-left no-margin {$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">
+                <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a>
+              </h3>
+              {foreach $child.children as $grandchild}
+                <div class="clear">
+                  <h5 class="container-padding-left-4 font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}">
+                    {if $grandchild.class_identifier|eq('product')}<img class="img-responsive max-width-2-em float-left" src="/{$grandchild.data_map.image.content.original.full_path}" alt="{$grandchild.name|wash()}"></img>{/if}
+                    <a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="container-padding-left font-weight-normal">{$grandchild.name|wash()}</a>
+                  </h5>
+                </div>
+              {/foreach}
+            </div>
+          {/case}
+      {/switch}
     {/foreach}
-    {foreach $child.children as $grandchild}
-    {switch match=$grandchild.class_identifier}
-    {case match='product_list'}
-    {switch match=$grandchild.class_identifier}
-    {case match='product_list'}
-    <div class="row clear">
-      <div class="col-lg-12 container-padding-top-05">
-        <h4 class="container-padding-left-3 container-padding-bottom font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}">
-          <a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}">{$grandchild.name}</a>
-        </h4>
-        {if $grandchild.children}
-        {foreach $grandchild.children as $grandgrandchild}
-        <h5 class="container-padding-left-4 font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}">
-          {if $grandgrandchild.class_identifier|eq('product')}<img class="img-responsive max-width-2-em float-left" src="/{$grandgrandchild.data_map.image.content.original.full_path}" alt="{$grandgrandchild.name|wash()}"></img>{/if}
-          <a href="{$grandgrandchild.url|ezurl('no', 'full')}" title="{$grandgrandchild.name|wash()}" class="container-padding-left font-weight-normal">{$grandgrandchild.name|wash()}</a>
-        </h5>
-        {/foreach}
-        {/if}
-      </div>
-    </div>
-    {/case}
-    {/switch}
-    {/case}
-    {/switch}
-    {/foreach}
-  </div>
-  {/case}
-  {/switch}
-  {/foreach}
-  {def $iterations = $node.children|count()|div(8)|ceil()}
-  {include uri="design:newscenter/widget/widget_product_slider.tpl"}
   {/if}
 </div>
 
