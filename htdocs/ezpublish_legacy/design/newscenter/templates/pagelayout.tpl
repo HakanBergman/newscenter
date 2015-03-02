@@ -66,15 +66,12 @@
 		<script type="text/javascript" src={"javascript/facebook.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/dropdown.js"|ezdesign}></script>
 		
-
-
-
 	</head>
 	
 	<body class="bg-grey font-family-bookman-old">
 	<div id="fb-root"></div>
 
-		<div class="container-fluid website">
+		<div class="container-fluid website container-padding-bottom">
 
 			{* Include Headers *}
 			{*include uri='design:newscenter/widget/cookies/widget_cookie.tpl'*}
