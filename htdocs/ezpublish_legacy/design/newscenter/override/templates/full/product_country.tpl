@@ -1,4 +1,7 @@
 ﻿<div class="container">
+  
+  {include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
+
   <h2>
     <div class="flag flag-icon-background {$node.data_map.country_class.data_text} width-1-em height-1-em float-left"></div>
     <span class="container-padding-left">{$node.name|wash()}</span>
