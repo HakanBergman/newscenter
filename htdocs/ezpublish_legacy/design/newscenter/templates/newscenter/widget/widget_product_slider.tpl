@@ -9,7 +9,6 @@
 								{for 1 to $node.children|count() as $number}										
 									{def $item = $number|dec(1)}
 										<div class="col-lg-3">
-											{$node.children.$item.data_map|attribute(show, 1)}
 											<a href="{$node.children.$item.url|ezurl('no', 'full')}"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 											<strong class="title">{$node.children.$item.name|wash()}</strong>
 										</div>
