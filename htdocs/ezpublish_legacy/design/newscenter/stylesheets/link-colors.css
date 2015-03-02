@@ -12,6 +12,13 @@
 .link-color-beer-brown-active a:active { color: #de910b; font-weight: 700; text-decoration: none; }
 .link-color-beer-brown-visited a:visited { color: #de910b; font-weight: 700; text-decoration: none; }
 
+/* Dynamite Green */
+.text-color-dynamite-green { color: #d4d977 !important; font-weight: 700; text-decoration: none; } 
+.link-color-dynamite-green a { color: #d4d977; font-weight: 700; text-decoration: none; } 
+.link-color-dynamite-green a:hover { color: #d4d977; font-weight: 700; text-decoration: none; } 
+.link-color-dynamite-green-active a:active { color: #d4d977; font-weight: 700; text-decoration: none; }
+.link-color-dynamite-green-visited a:visited { color: #d4d977; font-weight: 700; text-decoration: none; }
+
 /* Blue */
 .text-color-blue { color: #284673 !important; font-weight: 700; text-decoration: none; } 
 .link-color-blue a { color: #284673; font-weight: 700; text-decoration: none; } 
