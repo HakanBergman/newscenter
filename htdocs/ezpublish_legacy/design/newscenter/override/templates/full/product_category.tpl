@@ -2,21 +2,23 @@
 <div class="container">
 
   {def $breadcrumb = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
-  <ul class="breadcrumb">
-    {foreach $breadcrumb.path_array as $path}
-      {if $path.url}
-        <li> 
-            hit
-            <a href={"cond"( is_set=""( $path.url_alias="" ), $path.url_alias="", $path.url="" )|ezurl=""}>{$path.text|wash}</a>
-            <span class="divider">&raquo;</span>
-        </li>
-      {else}
-        <li class="active">
-          {$path.text|wash}
-        </li>
-      {/if}
-     {/foreach}
-    </ul>
+    <ul class="breadcrumb">
+      {$breadcrumb.path_array|attribute(show, 1)}
+      {foreach $breadcrumb.path_array as $path}
+        {if $path.url}
+          <li> 
+              hit
+              <a href={"cond"( is_set=""( $path.url_alias="" ), $path.url_alias="", $path.url="" )|ezurl=""}>{$path.text|wash}</a>
+              <span class="divider">&raquo;</span>
+          </li>
+        {else}
+          <li class="active">
+            {$path.text|wash}
+          </li>
+        {/if}
+       {/foreach}
+      </ul>
+  {undef $breadcrumb}
 
   <h2>{$node.name|wash()}</h2>
 	{if $node.children}
