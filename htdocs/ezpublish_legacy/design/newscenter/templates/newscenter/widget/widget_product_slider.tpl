@@ -1,4 +1,5 @@
-﻿		{*
+﻿		Inkluderad
+		{*
 		<div class="shop-category shop-current">			
 			<div class="flexslider carousel">								
 				<div class="flex-viewport">				
