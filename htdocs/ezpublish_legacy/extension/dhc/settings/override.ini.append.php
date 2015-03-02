@@ -36,6 +36,12 @@ MatchFile=full/product.tpl
 Subdir=templates
 Match[class_identifier]=product
 
+[full_news_list]
+Source=node/view/full.tpl
+MatchFile=full/news_list.tpl
+Subdir=templates
+Match[class_identifier]=news_list
+
 [full_news_category]
 Source=node/view/full.tpl
 MatchFile=full/news_category.tpl
