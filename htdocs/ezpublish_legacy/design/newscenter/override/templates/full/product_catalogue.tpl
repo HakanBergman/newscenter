@@ -32,7 +32,7 @@
                         {foreach $grandchild.children as $grandgrandchild}
                           <div>
                             <a href="{$grandgrandchild.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$grandgrandchild.name|wash()}">
-                              - <span class="nav-padding-left">{$grandgrandchild.name|wash()}</span>
+                              <span>{$grandgrandchild.name|wash()}</span>
                             </a>
                           </div>
                         {/foreach}
