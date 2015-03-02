@@ -5,6 +5,9 @@
     <ul class="breadcrumb">
       {$breadcrumb.path_array|attribute(show, 1)}
       {foreach $breadcrumb.path_array as $path}
+        {def $path_node = def('content', 'node', hash('node_id', $path))}
+        {$path}
+        {$path|attribute(show, 1)}
         {if $path.url}
           <li> 
               hit
