@@ -28,6 +28,7 @@
                     <span class="flag flag-icon-background {$grandchild.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>
                     <a href="{$grandchild.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$grandchild.name|wash()}">{$grandchild.name|wash()}</a>
                     {if $grandchild.children|count()}
+                      HITTADE HIT
                       <div class="nav-padding-left {$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">      
                         {foreach $grandchild as $grandgrandchild}
                           <div>
