@@ -36,7 +36,13 @@
                             </a>
                           </div>
                           {if $grandgrandchild.children}
-                            <div class="container-padding-left-2">Produkt</div>
+                            {foreach $grandgrandchild.children as $product}
+                              <div class="container-padding-left-2">
+                                <a href="{$product.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$product.name|wash()}">
+                                  {$product.name|wash()}
+                                </a>                                
+                              </div>
+                            {/foreach}
                           {/if}
                         {/foreach}
                       </div>
