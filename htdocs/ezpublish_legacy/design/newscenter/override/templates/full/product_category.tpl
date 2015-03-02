@@ -5,7 +5,7 @@
     <ul class="breadcrumb">
       {$breadcrumb.path_array|attribute(show, 1)}
       {foreach $breadcrumb.path_array as $path}
-        {def $path_node = def('content', 'node', hash('node_id', $path))}
+        {def $path_node = def('content', 'node', hash('node_id', $path.0))}
         {$path_node|attribute(show, 1)}
         {if $path_node.url}
           <li> 
