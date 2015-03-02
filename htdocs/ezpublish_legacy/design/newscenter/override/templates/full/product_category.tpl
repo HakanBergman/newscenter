@@ -280,6 +280,9 @@ cursor: default;
 						{/foreach}
 					</div>
 				{/case}
+				{case match='product_list'}
+					Produktlista
+				{/case}
 			{/switch}
 		{/foreach}
 		{def $iterations = $node.children|count()|div(8)|ceil()}	
