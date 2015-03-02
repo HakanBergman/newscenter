@@ -1,4 +1,5 @@
 ﻿<div class="container">
+  {include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
   <h2>
     <span class="container-padding-left">{$node.name|wash()}</span>
   </h2>
