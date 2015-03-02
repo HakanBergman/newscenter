@@ -3,7 +3,7 @@
 		<img src="/{$node.data_map.image.content.original.full_path}" alt="{$node.name|wash()}"></img>
 	</div>
 	<div class="col-lg-4">
-		{attribute_view_gui attribute=$node.data_map.body}
+		{attribute_view_gui attribute=$node.data_map.description}
 	</div>
 </div>
 
