@@ -235,7 +235,7 @@
 <div class="container">
   <h2>
     <div class="flag flag-icon-background {$node.data_map.country_class.data_text} width-1-em height-1-em float-left"></div>
-    <span class="container-padding-right">{$node.name|wash()}</span>
+    <span class="container-padding-left">{$node.name|wash()}</span>
   </h2>
   {if $node.children}
   {foreach $node.children as $child}
