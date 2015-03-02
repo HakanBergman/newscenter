@@ -1,28 +1,28 @@
 ﻿<div class="container">
   <h2>{$node.name|wash()}</h2>
-  {if $node.children}
-  {foreach $node.children as $child}
-  {switch match=$child.class_identifier}
-  {case match='product_country'}
-  {switch match=$node.children|count()}
-  {case match=2}
-  {def $column_size = "col-lg-6 col-md-6 col-sm-6 col-xs-12"}
-  {/case}
-  {case match=3}
-  {def $column_size = "col-lg-4 col-md-4 col-sm-4 col-xs-12"}
-  {/case}
-  {case match=4}
-  {def $column_size = "col-lg-3 col-md-4 col-sm-3 col-xs-12"}
-  {/case}
-  {case}
-  {def $column_size = "col-lg-12"}
-  {/case}
-  {/switch}
-  <div class="{$column_size} container-padding-top">
-    <div class="flag flag-icon-background {$child.data_map.country_class.data_text} width-105-em height-105-em float-left"></div>
-    <h3 class="container-padding-left float-left no-margin {$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">
-      <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a>
-    </h3>
+    {if $node.children}
+      {foreach $node.children as $child}
+        {switch match=$child.class_identifier}
+          {case match='product_category'}
+            {switch match=$node.children|count()}
+              {case match=2}
+               {def $column_size = "col-lg-6 col-md-6 col-sm-6 col-xs-12"}
+              {/case}
+              {case match=3}
+                {def $column_size = "col-lg-4 col-md-4 col-sm-4 col-xs-12"}
+              {/case}
+              {case match=4}
+               {def $column_size = "col-lg-3 col-md-4 col-sm-3 col-xs-12"}
+              {/case}
+              {case}
+                {def $column_size = "col-lg-12"}
+              {/case}
+          {/switch}
+          <div class="{$column_size} container-padding-top">
+            <div class="flag flag-icon-background {$child.data_map.country_class.data_text} width-105-em height-105-em float-left"></div>
+            <h3 class="container-padding-left float-left no-margin {$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">
+              <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a>
+            </h3>
     {foreach $child.children as $grandchild}
     {switch match=$grandchild.class_identifier}
     {case match='product_list'}
