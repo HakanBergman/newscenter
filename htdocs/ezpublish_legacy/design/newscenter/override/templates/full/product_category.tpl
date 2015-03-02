@@ -2,11 +2,10 @@
 <div class="container">
 
   {def $breadcrumb = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
-  {$breadcrumb|attribute(show, 1)}
   <ul class="breadcrumb">
-      {foreach $#company.path_array as $path}
-      {if $path.url}
-      <li>
+    {foreach $breadcrumb.path_array as $path}
+    {if $path.url}
+    <li>
         <a href={"cond"( is_set=""( $path.url_alias="" ), $path.url_alias="", $path.url="" )|ezurl=""}>{$path.text|wash}</a>
         <span class="divider">&raquo;</span>
       </li>
