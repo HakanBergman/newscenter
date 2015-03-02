@@ -5,6 +5,7 @@
 	</div>
 	<div class="col-lg-8">
 		{attribute_view_gui attribute=$node.data_map.description}
+		{attribute_view_gui attribute=$node.data_map.short_description}
 	</div>
 </div>
 
