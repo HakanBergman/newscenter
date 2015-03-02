@@ -1,4 +1,4 @@
-﻿		Inkluderad
+﻿		testasdsad
 		{*
 		<div class="shop-category shop-current">			
 			<div class="flexslider carousel">								
