@@ -1,5 +1,8 @@
 ﻿
 <div class="container">
+  <div class="breadcrumb-wrapper nav-collapse">
+    {include uri=concat('design:parts/', $pagedata.show_path, '.tpl')}
+  </div>
 	<h2>{$node.name|wash()}</h2>
 	{if $node.children}
 		{foreach $node.children as $child}
