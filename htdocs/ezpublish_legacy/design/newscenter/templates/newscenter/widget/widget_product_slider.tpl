@@ -38,3 +38,21 @@
 		</div>
 	</div>
 {undef $iterations}
+
+{literal}
+<script type="text/javascript">
+  $(window).load(function() {
+	$('.shop-category .flexslider').flexslider({
+		animation: "slide",
+		directionNav: false,
+		animationLoop: false,
+		slideshow: false,
+		reverse: false,
+		itemWidth: 1170,
+		itemMargin: 0,
+		minItems: 1,
+		maxItems: 1
+	});	
+  });
+</script>
+{/literal}
