@@ -1,7 +1,8 @@
 ﻿
 <div class="container">
 
-  {$#company|attribute(show, 1)} {$#company.node_id}
+  {def $breadcrumb = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
+  {$breadcrumb|attribute(show, 1)}
   <ul class="breadcrumb">
       {foreach $#company.path_array as $path}
       {if $path.url}
