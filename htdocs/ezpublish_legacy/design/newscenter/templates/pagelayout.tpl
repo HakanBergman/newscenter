@@ -30,7 +30,7 @@
 		{def $zone_width = ""}
 		{def $company = ""}
 		{set scope='global' $zone_width = ""}
-		{set scope='global' $company = fetch('content', 'node', hash('node_id', 63))}
+		{set scope='global' $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php'))}
 
 		{* Include Page Head *}	
 		{include uri='design:page_head.tpl'}
