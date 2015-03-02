@@ -28,23 +28,17 @@
                   <li class="{$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">
                     <span class="flag flag-icon-background {$grandchild.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>
                     <a href="{$grandchild.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$grandchild.name|wash()}">{$grandchild.name|wash()}</a>
-                    <div class="nav-padding-left link-color-beige-hover">
-                      <div>
-                        <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Mojito" class="font-weight-normal" title="Mojito">
-                          - <span class="nav-padding-left">Mojito</span>
-                        </a>
+                    {if $grandchild.children|count()}
+                      <div class="nav-padding-left {$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">      
+                        {foreach $grandchild as $grandgranchild}
+                          <div>
+                            <a href="{$grandgrandchild.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$grandgrandchild.name|wash()}">
+                              - <span class="nav-padding-left">{$grandgrandchild.name|wash()}</span>
+                            </a>
+                          </div>
+                        {/foreach}
                       </div>
-                      <div>
-                        <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Cosmopolitan" class="font-weight-normal" title="Cosmopolitan">
-                          - <span class="nav-padding-left">Cosmopolitan</span>
-                        </a>
-                      </div>
-                      <div>
-                        <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Margarita" class="font-weight-normal" title="Margarita">
-                          - <span class="nav-padding-left">Margarita</span>
-                        </a>
-                      </div>
-                    </div>
+                    {/if}
                 </li>
               {/foreach}
             </ul>
