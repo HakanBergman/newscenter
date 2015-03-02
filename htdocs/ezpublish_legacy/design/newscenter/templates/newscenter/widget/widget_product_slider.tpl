@@ -8,7 +8,7 @@
 							{if $iterations|eq(1)}
 								{for 1 to $node.children|count() as $number}										
 									{def $item = $number|dec(1)}
-										<div class="col-lg-3 {$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">											
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 {$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">											
 											<a href="{$node.children.$item.url|ezurl('no', 'full')}" title="{$node.name|wash()}"><img class="img-responsive thumbnail no-margin" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 											<strong class="title"><a href="{$node.children.$item.url|ezurl('no', 'full')}" title="{$node.name|wash()}">{$node.children.$item.name|wash()}</a></strong>
 										</div>
@@ -16,7 +16,7 @@
 								{/for}
 							{else}
 								{for 1 to 8 as $number}
-									<div class="col-lg-3">
+									<div class="col-lg-3 col-md-3 col-sm-3">
 										<a href="#"><img class="img-responsive thumbnail" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
 										<strong class="title">Affisch Albert Watson 48</strong>
 										<span class="price">120,00 kr</span>						
