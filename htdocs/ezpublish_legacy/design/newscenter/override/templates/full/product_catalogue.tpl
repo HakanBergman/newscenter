@@ -22,7 +22,7 @@
             {$child.data_map|attribute(show, 1)}
             <div class="col-lg-4 col-md-4 col-sm-4">
               <h3 class="{$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">
-                <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks" title="Longdrinks">Longdrinks</a>
+                <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a>
               </h3>
               <div class="bg-longdrink-blue max-height-1">&nbsp;</div>
                 <ul>
