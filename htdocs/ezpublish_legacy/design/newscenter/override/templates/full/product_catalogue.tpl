@@ -37,6 +37,7 @@
                           </div>
                           {if $grandgrandchild.children}
                             <div class="container-padding-left-2">Produkt</div>
+                          {/if}
                         {/foreach}
                       </div>
                     {/if}
