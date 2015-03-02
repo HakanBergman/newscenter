@@ -19,7 +19,7 @@
               {/case}
           {/switch}
           <div class="{$column_size} container-padding-top">
-
+            {$node.data_map|attribute(show, 1)}
             <div class="col-lg-4 col-md-4 col-sm-4">
               <h3 class="link-color-beige-hover">
                 <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks" title="Longdrinks">Longdrinks</a>
