@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container container-padding-top">
 	<div class="col-lg-8">
 		<img src="/{$node.data_map.image.content.original.full_path}" alt="{$node.name|wash()}"></img>
 	</div>
