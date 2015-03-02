@@ -3,8 +3,7 @@
 
   {def $breadcrumb = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
     <ul class="breadcrumb">
-      {$breadcrumb.path_array|attribute(show, 1)}
-      {foreach $breadcrumb.path_array as $path}
+      {foreach $breadcrumb.path_array|extract(2) as $path}
         {def $path_node = fetch('content', 'node', hash('node_id', $path))}
           {if $path_node.url}
             <li> 
