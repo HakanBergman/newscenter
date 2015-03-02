@@ -45,7 +45,11 @@
                 </div>
               </li>
             </ul>
-          </div>     
+          </div> 
+        {/case} 
+      {/switch}
+    {/foreach}
+  {/if}    
 </div>
 
             
