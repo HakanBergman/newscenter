@@ -1,38 +1,41 @@
-﻿<div class="container bg-black">
-	<h2>{$node.name|wash()} <a href="/content/edit/{$node.contentobject_id}" title="Redigera {$node.name|wash()}">Redigera {$node.name|wash()}</a></h2>
-  <hr></hr>
+﻿<div class="container">
+  <h2>
+    <span class="container-padding-left">{$node.name|wash()}</span>
+  </h2>
   {if $node.children}
-    <div class="col-lg-12 col-md-12 col-sm-12">
-      {foreach $node.children as $product}      								
-					<ul>
-							<li class="link-color-beige-hover">
-                <a class="font-weight-normal" href="{$product.url|ezurl('no', 'full')}" title="{$product.name|wash()}">{$product.name|wash()}</a>
-                <a href="/content/edit/{$product.contentobject_id}" title="Redigera {$product.name|wash()}">Redigera {$list.name|wash()}</a>
-                <form method="post" action="/content/action">
-                  <input type="hidden" name="TopLevelNode" value="{$product.node_id}"></input>
-                  <input type="hidden" name="ContentNodeID" value="{$product.node_id}"></input>
-                  <input type="hidden" name="ContentObjectID" value="{$product.contentobject_id}"></input>
-                  <input class="button" type="submit" name="ActionRemove" value="Radera {$product.name|wash()}" title="Radera det här objektet."></input>
-                </form>
-              </li>
-					</ul>
-      {/foreach}
-    </div>
+    {foreach $node.children as $child}
+      {switch match=$child.class_identifier}
+      {case match='product_list'}
+        {switch match=$node.children|count()}
+          {case match=2}
+            {def $column_size = "col-lg-6 col-md-6 col-sm-6 col-xs-12"}
+          {/case}
+          {case match=3}
+            {def $column_size = "col-lg-4 col-md-4 col-sm-4 col-xs-12"}
+          {/case}
+          {case match=4}
+           {def $column_size = "col-lg-3 col-md-4 col-sm-3 col-xs-12"}
+          {/case}
+          {case}
+            {def $column_size = "col-lg-12"}
+          {/case}
+        {/switch}
+        <div class="{$column_size} container-padding-top">
+          <h3 class="container-padding-left container-padding-bottom float-left no-margin {$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">
+            <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a>
+          </h3>
+          {foreach $child.children as $grandchild}
+          <div class="clear">
+            <h5 class="container-padding-left-4 font-size-product-link font-weight-normal no-margin {$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">
+              {if $grandchild.class_identifier|eq('product')}<img class="img-responsive max-width-2-em float-left" src="/{$grandchild.data_map.image.content.original.full_path}" alt="{$grandchild.name|wash()}"></img>{/if}
+              <a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="container-padding-left font-weight-normal">{$grandchild.name|wash()}</a>
+            </h5>
+          </div>
+          {/foreach}
+        </div>
+       {/case}
+      {/switch}
+    {/foreach}
   {/if}
-
-  <form method="post" action="/content/action">
-    <select name="ClassID" id="ezwt-create" style="display: none;">
-      <optgroup label="Content">
-        <option value="21">Nytt</option>
-      </optgroup>
-    </select>
-
-    <input type="submit" name="NewButton" value="Skapa ny Produkt"></input>
-    <input type="hidden" name="ContentLanguageCode" value="swe-SE"></input>
-    <input type="hidden" name="HasMainAssignment" value="1"></input>
-    <input type="hidden" name="ContentObjectID" value="{$node.contentobject_id}"></input>
-    <input type="hidden" name="NodeID" value="{$node.node_id}"></input>
-    <input type="hidden" name="ContentNodeID" value="{$node.node_id}"></input>
-  </form>
-
 </div>
+
