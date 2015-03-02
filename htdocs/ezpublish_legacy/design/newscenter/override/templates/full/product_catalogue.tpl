@@ -18,33 +18,37 @@
                 {def $column_size = "col-lg-12"}
               {/case}
           {/switch}
-          <div class="{$column_size} container-padding-top">
-            {$child.data_map|attribute(show, 1)}
+          <div class="{$column_size} container-padding-top">            
             <h3 class="{$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}"><a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a></h3>
             <div class="{$child.data_map.background_color.data_text} max-height-1">&nbsp;</div>
-            <ul>
-              <li class="link-color-beige-hover">
-                <span class="flag flag-icon-background flag-icon-lv inline-block height-105-em width-1-em">&nbsp;</span>
-                <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland" class="font-weight-normal" title="Lettland">Lettland</a>
-                <div class="nav-padding-left link-color-beige-hover">
-                  <div>
-                    <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Mojito" class="font-weight-normal" title="Mojito">
-                      - <span class="nav-padding-left">Mojito</span>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Cosmopolitan" class="font-weight-normal" title="Cosmopolitan">
-                      - <span class="nav-padding-left">Cosmopolitan</span>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Margarita" class="font-weight-normal" title="Margarita">
-                      - <span class="nav-padding-left">Margarita</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
+            {if $child.children|count()}              
+              <ul>
+                {foreach $child.children as $grandchild}
+                  {$grandchild.data_map|attribute(show, 1)}
+                  <li class="{$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">
+                    <span class="flag flag-icon-background flag-icon-lv inline-block height-105-em width-1-em">&nbsp;</span>
+                    <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland" class="font-weight-normal" title="Lettland">Lettland</a>
+                    <div class="nav-padding-left link-color-beige-hover">
+                      <div>
+                        <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Mojito" class="font-weight-normal" title="Mojito">
+                          - <span class="nav-padding-left">Mojito</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Cosmopolitan" class="font-weight-normal" title="Cosmopolitan">
+                          - <span class="nav-padding-left">Cosmopolitan</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Margarita" class="font-weight-normal" title="Margarita">
+                          - <span class="nav-padding-left">Margarita</span>
+                        </a>
+                      </div>
+                    </div>
+                </li>
+              {/foreach}
             </ul>
+          {/if}
           </div> 
         {/case} 
       {/switch}
