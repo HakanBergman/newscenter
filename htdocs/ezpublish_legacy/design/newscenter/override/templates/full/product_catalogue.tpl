@@ -21,7 +21,7 @@
           <div class="{$column_size} container-padding-top">
             {$child.data_map|attribute(show, 1)}
             <h3 class="{$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}"><a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a></h3>
-            <div class="bg-longdrink-blue max-height-1">&nbsp;</div>
+            <div class="{$child.data_map.background_color.data_text} max-height-1">&nbsp;</div>
             <ul>
               <li class="link-color-beige-hover">
                 <span class="flag flag-icon-background flag-icon-lv inline-block height-105-em width-1-em">&nbsp;</span>
