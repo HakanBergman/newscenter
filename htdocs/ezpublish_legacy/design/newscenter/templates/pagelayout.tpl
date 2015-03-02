@@ -29,6 +29,7 @@
 		{* Global Variables *}
 		{def $zone_width = ""}
 		{def $company = ""}
+		{def $home_node = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
 		{set scope='global' $zone_width = ""}
 		{set scope='global' $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php'))}
 
@@ -72,7 +73,7 @@
 	<div id="fb-root"></div>
 
 		<div class="container-fluid website container-padding-bottom">
-			{$#company} test2
+			{$#company} test2 {$home_node}
 			{* Include Headers *}
 			{*include uri='design:newscenter/widget/cookies/widget_cookie.tpl'*}
 
