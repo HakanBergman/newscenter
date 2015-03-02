@@ -6,17 +6,15 @@
       {$breadcrumb.path_array|attribute(show, 1)}
       {foreach $breadcrumb.path_array as $path}
         {def $path_node = def('content', 'node', hash('node_id', $path))}
-        {$path}
-        {$path|attribute(show, 1)}
-        {if $path.url}
+        {if $path_node.url}
           <li> 
               hit
-              <a href={"cond"( is_set=""( $path.url_alias="" ), $path.url_alias="", $path.url="" )|ezurl=""}>{$path.text|wash}</a>
+              <a href={"cond"( is_set=""( $path_node.url_alias="" ), $path_node.url_alias="", $path_node.url="" )|ezurl=""}>{$path_node.name|wash()}</a>
               <span class="divider">&raquo;</span>
           </li>
         {else}
           <li class="active">
-            {$path.text|wash}
+            {$path_node.name|wash()}
           </li>
         {/if}
        {/foreach}
