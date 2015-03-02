@@ -256,7 +256,7 @@
               {/case}
             {/switch}
             <div class="{$column_size} container-padding-top">
-              <h3 class="container-padding-left float-left no-margin {$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">
+              <h3 class="container-padding-left container-padding-bottom float-left no-margin {$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">
                 <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a>
               </h3>
               {foreach $child.children as $grandchild}
