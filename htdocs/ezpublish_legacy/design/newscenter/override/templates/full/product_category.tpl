@@ -5,20 +5,19 @@
     <ul class="breadcrumb">
       {$breadcrumb.path_array|attribute(show, 1)}
       {foreach $breadcrumb.path_array as $path}
-        PATH {$path}
-        {def $path_node = def('content', 'node', hash('node_id', $path.0))}
-        {$path_node|attribute(show, 1)}
-        {if $path_node.url}
-          <li> 
-              hit
-              <a href={"cond"( is_set=""( $path_node.url_alias="" ), $path_node.url_alias="", $path_node.url="" )|ezurl=""}>{$path_node.name|wash()}</a>
-              <span class="divider">&raquo;</span>
-          </li>
-        {else}
-          <li class="active">
-            {$path_node.name|wash()}
-          </li>
-        {/if}
+        {def $path_node = fetch('content', 'node', hash('node_id', $path))}
+          {if $path_node.url}
+            <li> 
+                hit
+                <a href={"cond"( is_set=""( $path_node.url_alias="" ), $path_node.url_alias="", $path_node.url="" )|ezurl=""}>{$path_node.name|wash()}</a>
+                <span class="divider">&raquo;</span>
+            </li>
+          {else}
+            <li class="active">
+              {$path_node.name|wash()}
+            </li>
+          {/if}
+         {undef $path_node}
        {/foreach}
       </ul>
   {undef $breadcrumb}
