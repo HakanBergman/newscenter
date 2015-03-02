@@ -2,12 +2,11 @@
 <div class="container">
 
   {def $breadcrumb = fetch('content', 'node', hash('node_id', $node.node_id))}
-    <ul class="breadcrumb">
+    <ol class="breadcrumb">
       {foreach $breadcrumb.path_array|extract(2) as $path}
         {def $path_node = fetch('content', 'node', hash('node_id', $path))}
           {if $path_node.url}
             <li> 
-                hit
                 <a href={"cond"( is_set=""( $path_node.url_alias="" ), $path_node.url_alias="", $path_node.url="" )|ezurl=""}>{$path_node.name|wash()}</a>
                 <span class="divider">&raquo;</span>
             </li>
@@ -18,7 +17,7 @@
           {/if}
          {undef $path_node}
        {/foreach}
-      </ul>
+      </ol>
   {undef $breadcrumb}
 
   <h2>{$node.name|wash()}</h2>
