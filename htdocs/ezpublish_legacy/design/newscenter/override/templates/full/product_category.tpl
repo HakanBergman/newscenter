@@ -1,7 +1,6 @@
 ﻿
 <div class="container">
-  <!-- Path content: START -->
-  <div class="container">
+  
     <ul class="breadcrumb">
       {foreach $pagedata.path_array as $path}
       {if $path.url}
@@ -16,8 +15,6 @@
       {/if}
       {/foreach}
     </ul>
-  </div>
-  <!-- Path content: END -->
 
   <h2>{$node.name|wash()}</h2>
 	{if $node.children}

@@ -7,6 +7,10 @@ ActiveAccessExtensions[]=dhc
 SiteName=Maltimportören
 SiteURL=maltimportoren.datadelenhc.com
 LoginPage=embedded
+IndexPage=/content/view/full/63
+DefaultPage=/content/view/full/63
+RootNodeDepth=1
+homenode=63
 
 [SiteAccessSettings]
 RequireUserLogin=false
