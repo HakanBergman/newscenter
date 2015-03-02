@@ -72,7 +72,7 @@
 	<div id="fb-root"></div>
 
 		<div class="container-fluid website container-padding-bottom">
-
+			{$#company} test
 			{* Include Headers *}
 			{*include uri='design:newscenter/widget/cookies/widget_cookie.tpl'*}
 
