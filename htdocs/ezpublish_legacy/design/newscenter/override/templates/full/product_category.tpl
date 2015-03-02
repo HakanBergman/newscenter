@@ -1,9 +1,25 @@
 ﻿
 <div class="container">
-  <div class="breadcrumb-wrapper nav-collapse">
-    {include uri=concat('design:parts/', $pagedata.show_path, '.tpl')}
+  <!-- Path content: START -->
+  <div class="container">
+    <ul class="breadcrumb">
+      {foreach $pagedata.path_array as $path}
+      {if $path.url}
+      <li>
+        <a href={"cond"( is_set=""( $path.url_alias="" ), $path.url_alias="", $path.url="" )|ezurl=""}>{$path.text|wash}</a>
+        <span class="divider">&raquo;</span>
+      </li>
+      {else}
+      <li class="active">
+        {$path.text|wash}
+      </li>
+      {/if}
+      {/foreach}
+    </ul>
   </div>
-	<h2>{$node.name|wash()}</h2>
+  <!-- Path content: END -->
+
+  <h2>{$node.name|wash()}</h2>
 	{if $node.children}
 		{foreach $node.children as $child}
 			{switch match=$child.class_identifier}
