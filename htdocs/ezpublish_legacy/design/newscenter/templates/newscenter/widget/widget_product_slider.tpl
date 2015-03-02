@@ -9,7 +9,7 @@
 								{for 1 to $node.children|count() as $number}										
 									{def $item = $number|dec(1)}
 										<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 {$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">											
-											<a href="{$node.children.$item.url|ezurl('no', 'full')}" title="{$node.name|wash()}"><img class="img-responsive thumbnail no-margin" alt="" src="http://super-skeleton.mdnw.net/files/2012/02/slide4.jpg"></a>
+											<a href="{$node.children.$item.url|ezurl('no', 'full')}" title="{$node.name|wash()}"><img class="img-responsive thumbnail no-margin" alt="{$node.children.$item.name|wash()}" src="/{$node.children.$item.data_map.image.content.original.full_path}"></a>
 											<strong class="title"><a href="{$node.children.$item.url|ezurl('no', 'full')}" title="{$node.name|wash()}">{$node.children.$item.name|wash()}</a></strong>
 										</div>
 									{undef $item}
