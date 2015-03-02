@@ -4,17 +4,18 @@
   {def $breadcrumb = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
   <ul class="breadcrumb">
     {foreach $breadcrumb.path_array as $path}
-    {if $path.url}
-    <li>
-        <a href={"cond"( is_set=""( $path.url_alias="" ), $path.url_alias="", $path.url="" )|ezurl=""}>{$path.text|wash}</a>
-        <span class="divider">&raquo;</span>
-      </li>
+      {if $path.url}
+        <li> 
+            hit
+            <a href={"cond"( is_set=""( $path.url_alias="" ), $path.url_alias="", $path.url="" )|ezurl=""}>{$path.text|wash}</a>
+            <span class="divider">&raquo;</span>
+        </li>
       {else}
-      <li class="active">
-        {$path.text|wash}
-      </li>
+        <li class="active">
+          {$path.text|wash}
+        </li>
       {/if}
-      {/foreach}
+     {/foreach}
     </ul>
 
   <h2>{$node.name|wash()}</h2>
