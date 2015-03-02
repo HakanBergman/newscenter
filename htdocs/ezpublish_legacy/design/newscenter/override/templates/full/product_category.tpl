@@ -1,8 +1,8 @@
 ﻿
 <div class="container">
-  
-    {$#company|attribute(show, 1)}
-    <ul class="breadcrumb">
+
+  {$#company|attribute(show, 1)}
+  <ul class="breadcrumb">
       {foreach $#company.path_array as $path}
       {if $path.url}
       <li>
