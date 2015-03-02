@@ -24,6 +24,7 @@ section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 
 /* Height */
 .height-100-percent { height: 100%; }
+.height-1-em { height: 1em; }
 .height-105-em { height: 1.5em; }
 
 /* Mas width */
