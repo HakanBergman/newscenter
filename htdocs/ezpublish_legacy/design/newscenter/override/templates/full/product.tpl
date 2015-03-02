@@ -1,8 +1,8 @@
 <div class="container container-padding-top">
-	<div class="col-lg-8">
-		<img src="/{$node.data_map.image.content.original.full_path}" alt="{$node.name|wash()}"></img>
-	</div>
 	<div class="col-lg-4">
+		<img src="/{$node.data_map.image.content.original.full_path}" class="img-responsive thumbnail no-margin" alt="{$node.name|wash()}"></img>
+	</div>
+	<div class="col-lg-8">
 		{attribute_view_gui attribute=$node.data_map.description}
 	</div>
 </div>
