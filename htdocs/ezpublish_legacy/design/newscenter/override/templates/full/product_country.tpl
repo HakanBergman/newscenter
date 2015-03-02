@@ -261,7 +261,7 @@
               </h3>
               {foreach $child.children as $grandchild}
                 <div class="clear">
-                  <h5 class="container-padding-left-4 font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}">
+                  <h5 class="container-padding-left-4 font-size-product-link font-weight-normal no-margin {$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">
                     {if $grandchild.class_identifier|eq('product')}<img class="img-responsive max-width-2-em float-left" src="/{$grandchild.data_map.image.content.original.full_path}" alt="{$grandchild.name|wash()}"></img>{/if}
                     <a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="container-padding-left font-weight-normal">{$grandchild.name|wash()}</a>
                   </h5>
