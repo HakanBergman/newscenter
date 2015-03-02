@@ -1,11 +1,4 @@
-<div class="contatiner">
-	<div class="col-lg-8">
-		<img src="/{$node.data_map.image.content.original.full_path}" alt="{$node.name|wash()}"></img>
-	</div>
-	<div class="col-lg-4">
-		{attribute_view_gui attribute=$node.data_map.body}
-	</div>
-</div>
+{* Product - Full view *}
 
 {set scope=global persistent_variable=hash('left_menu', false(),
                                            'extra_menu', false())}
