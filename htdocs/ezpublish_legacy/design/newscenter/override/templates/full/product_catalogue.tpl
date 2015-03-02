@@ -39,7 +39,7 @@
                             {foreach $grandgrandchild.children as $product}
                               <div class="container-padding-left-2">
                                 <div class="pull-left">
-                                  <img src="/{$product.data_map.image.content.original.full_path}" class="img-responsive thumbnail" alt="{$product.name|wash()}"></img>
+                                  <img src="/{$product.data_map.image.content.original.full_path}" class="img-responsive thumbnail max-width-2-em" alt="{$product.name|wash()}"></img>
                                   <a href="{$product.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$product.name|wash()}">
                                     {$product.name|wash()}
                                   </a>
