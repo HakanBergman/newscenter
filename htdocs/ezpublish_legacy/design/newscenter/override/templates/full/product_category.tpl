@@ -1,7 +1,7 @@
 ﻿
 <div class="container">
 
-  {def $breadcrumb = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
+  {def $breadcrumb = fetch('content', 'node', hash('node_id', $node.node_id))}
     <ul class="breadcrumb">
       {foreach $breadcrumb.path_array|extract(2) as $path}
         {def $path_node = fetch('content', 'node', hash('node_id', $path))}
