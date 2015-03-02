@@ -19,6 +19,37 @@
               {/case}
           {/switch}
           <div class="{$column_size} container-padding-top">
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h3 class="link-color-beige-hover">
+                <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks" title="Longdrinks">Longdrinks</a>
+              </h3>
+              <div class="bg-longdrink-blue max-height-1">&nbsp;</div>
+                <ul>
+                  <li class="link-color-beige-hover">
+                    <span class="flag flag-icon-background flag-icon-lv inline-block height-105-em width-1-em">&nbsp;</span>
+                    <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland" class="font-weight-normal" title="Lettland">Lettland</a>
+                    <div class="nav-padding-left link-color-beige-hover">
+                      <div>
+                        <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Mojito" class="font-weight-normal" title="Mojito">
+                          - <span class="nav-padding-left">Mojito</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Cosmopolitan" class="font-weight-normal" title="Cosmopolitan">
+                          - <span class="nav-padding-left">Cosmopolitan</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="http://maltimportoren.datadelenhc.com/Maltimportoeren/Produkter/Longdrinks/Lettland/Margarita" class="font-weight-normal" title="Margarita">
+                          - <span class="nav-padding-left">Margarita</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>            
+            
             <div class="flag flag-icon-background {$child.data_map.country_class.data_text} width-105-em height-105-em float-left"></div>
             <h3 class="container-padding-left float-left no-margin {$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">
               <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a>
