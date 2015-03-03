@@ -17,7 +17,7 @@
 		{/switch}	
 		{foreach $node.children as $newslist}
 			<div class="{$column_size} container-padding-top"> 
-				<h2><a href="{$newslist.url|ezurl('no', 'full')}{$newslist.name|wash()}</a></h2>
+				<h2><a href="{$newslist.url|ezurl('no', 'full')}" title="{$newslist.name|wash()}">{$newslist.name|wash()}</a></h2>
 			</div>
 		{/foreach}
 	</div>
