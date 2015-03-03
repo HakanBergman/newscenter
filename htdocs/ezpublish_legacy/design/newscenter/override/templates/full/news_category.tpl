@@ -16,7 +16,7 @@
     {/case}
     {/switch}
     {foreach $node.children as $newslist}
-    <div class="{$column_size} container-padding-top">
+    <div class="{$column_size}">
       <h2 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">
         <a href="{$newslist.url|ezurl('no', 'full')}" title="{$newslist.name|wash()}">{$newslist.name|wash()}</a>
       </h2>
