@@ -1,5 +1,4 @@
 ﻿<div class="container">
-	{include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
 	<div class="col-lg-12">
 		{switch match=$node.children|count()}
 			{case match=1}
