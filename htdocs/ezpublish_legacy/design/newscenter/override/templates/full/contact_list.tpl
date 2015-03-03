@@ -5,8 +5,8 @@
         <h3>{$contact_division.name|wash()}</h3>
         {foreach $contact_division.children as $employee}
           <div class="container-padding-left">
-            <h4>{$employee.name|wash()}</h4>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <h4 class="no-margin container-padding-top">{$employee.name|wash()}</h4>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
               <div class="pull-left">
                 <label><a href="tel:{$employee.data_map.cellphone.data_text}" title="{$employee.data_map.cellphone.data_text}">{$employee.data_map.cellphone.data_text}</a></label>
               </div>
@@ -14,7 +14,7 @@
                 <label><a href="mailto:{$employee.data_map.email.value}" title="{$employee.data_map.email.value}">{$employee.data_map.email.value}</a></label>
               </div>
             </div>
-            <h5>{$employee.data_map.title.data_text}</h5>
+            <h5 class="clear">{$employee.data_map.title.data_text}</h5>
           </div>
         {/foreach}
       </div>
