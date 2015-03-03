@@ -39,17 +39,17 @@
 
           <div class="form-group">
             <label for="foretagsnamn">Företagsnamn</label>
-            <input type="password" class="form-control" id="foretagsnamn"></input>
+            <input type="password" class="form-control" id="foretagsnamn" placeholder="Företagsnamn"></input>
           </div>
 
           <div class="form-group">
             <label for="kontaktperson">Er kontaktperson</label>
-            <input type="password" class="form-control" id="kontaktperson"></input>
+            <input type="password" class="form-control" id="kontaktperson" placeholder="Kontaktperson"></input>
           </div>
 
           <div class="form-group">
             <label for="telefonnummer">Telefonnummer</label>
-            <input type="password" class="form-control" id="telefonnummer"></input>
+            <input type="password" class="form-control" id="telefonnummer" placeholder="Telefonnummer"></input>
           </div>
 
           <label for="sel1">E-postadress</label>
@@ -58,8 +58,10 @@
             <input type="text" class="form-control" placeholder="E-postadress" aria-describedby="E-postadress" data-clear-btn="true"></input>
           </div>
 
-          <label for="sel1">Meddelande</label>
-          <textarea rows="3"></textarea>
+          <div class="form-group">
+            <label for="meddelande">Meddelande</label>
+            <textarea class="form-control" rows="5" id="meddelande"></textarea>
+          </div>
 
           <div class="pull-right">
             <button class="btn btn-primary" type="button">Skicka mail</button>
