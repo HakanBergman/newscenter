@@ -1,6 +1,6 @@
 ﻿<div class="container">
   {include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
-  <div class="col-lg-12">
+  <div class="col-lg-12 no-margin no-padding">
     {switch match=$node.children|count()}
     {case match=1}
     {def $column_size = "col-lg-12 col-md-12 col-sm-12 col-xs-12"}
@@ -16,7 +16,7 @@
     {/case}
     {/switch}
     {foreach $node.children as $newslist}
-    <div class="{$column_size}">
+    <div class="{$column_size} no-margin no-padding">
       <h2 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">
         <a href="{$newslist.url|ezurl('no', 'full')}" title="{$newslist.name|wash()}">{$newslist.name|wash()}</a>
       </h2>
