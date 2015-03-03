@@ -27,7 +27,7 @@
           <label for="sel1">Välj mottagare</label>
           <select class="form-control" id="sel1">
             {foreach $node.children as $contact_division}
-              {foreach $contact_division as $employee}
+              {foreach $contact_division.children as $employee}
                 <option>{$employee.name|wash()}</option>
               {/foreach}
             {/foreach}
