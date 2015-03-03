@@ -2,7 +2,7 @@
   {include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
   <h2 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">
     <a href="{$node.url|ezurl('no', 'full')}" title="{$node.name|wash()}">{$node.name|wash()}</a>
-  </h2>  
+  </h2>   test
   <div class="col-lg-12 no-margin no-padding">
     {switch match=$node.children|count()}
     {case match=1}
