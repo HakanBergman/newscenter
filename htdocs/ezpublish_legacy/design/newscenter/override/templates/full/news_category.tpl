@@ -2,7 +2,7 @@
   {include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
   <h2 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">
     <a href="{$node.url|ezurl('no', 'full')}" title="{$node.name|wash()}">{$node.name|wash()}</a>
-  </h2>   test
+  </h2>  
   <div class="col-lg-12 no-margin no-padding">
     {switch match=$node.children|count()}
     {case match=1}
@@ -19,21 +19,21 @@
     {/case}
     {/switch}
     {foreach $node.children as $newslist}
-    <div class="{$column_size} no-margin no-padding">
-      <h3 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">
-        <a href="{$newslist.url|ezurl('no', 'full')}" title="{$newslist.name|wash()}">{$newslist.name|wash()}</a>
-      </h3>
-    </div>
-    {if $newslist.children}
-    {foreach $newslist.children as $news}
-    <div class="container-padding-left-2">
-      <span class="glyphicon glyphicon-file"></span>
-      <a href="{$news.url|ezurl('no', 'full')}" class="font-weight-normal container-padding-left" title="{$news.name|wash()}">
-        {$news.name|wash()}
-      </a>
-    </div>
-    {/foreach}
-    {/if}
+      <div class="{$column_size} no-margin no-padding">
+        <h3 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">
+          <a href="{$newslist.url|ezurl('no', 'full')}" title="{$newslist.name|wash()}">{$newslist.name|wash()}</a>
+        </h3>
+      </div>
+      {if $newslist.children}
+        {foreach $newslist.children as $news}
+          <div class="container-padding-left-2">
+              <span class="glyphicon glyphicon-file"></span>
+              <a href="{$news.url|ezurl('no', 'full')}" class="font-weight-normal container-padding-left" title="{$news.name|wash()}">
+                {$news.name|wash()}
+              </a>
+          </div>
+        {/foreach}
+      {/if}
     {/foreach}
   </div>
 </div>
