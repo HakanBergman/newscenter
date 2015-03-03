@@ -48,6 +48,12 @@ MatchFile=full/article.tpl
 Subdir=templates
 Match[class_identifier]=article
 
+[full_website]
+Source=node/view/full.tpl
+MatchFile=full/website.tpl
+Subdir=templates
+Match[class_identifier]=website
+
 [full_news_category]
 Source=node/view/full.tpl
 MatchFile=full/news_category.tpl
