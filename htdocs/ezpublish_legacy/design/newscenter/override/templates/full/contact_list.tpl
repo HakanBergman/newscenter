@@ -23,32 +23,25 @@
       <h3>Kontaktformulär</h3>
       <form method="post">
 
-        <div class="form-group">
-          <label for="sel1">Välj mottagare</label>
-          <select class="form-control" id="sel1">
-            {foreach $node.children as $contact_division}
-              {foreach $contact_division.children as $employee}
-                <option>{$employee.name|wash()}</option>
+        <div class="container-padding-left-3">
+          <div class="form-group">
+            <label for="sel1">Välj mottagare</label>
+            <select class="form-control" id="sel1">
+              {foreach $node.children as $contact_division}
+                {foreach $contact_division.children as $employee}
+                  <option>{$employee.name|wash()}</option>
+                {/foreach}
               {/foreach}
-            {/foreach}
-          </select>
-        </div>        
-        
-        <div class="input-group">
-          <span class="input-group-addon" id="E-postadress">@</span>
-          <input type="text" class="form-control" placeholder="E-postadress" aria-describedby="E-postadress"></input>
+            </select>
+          </div>
+
+          <label for="sel1">E-postadress</label>
+          <div class="input-group">
+            <span class="input-group-addon" id="E-postadress">@</span>
+            <input type="text" class="form-control" placeholder="E-postadress" aria-describedby="E-postadress"></input>
+          </div>
         </div>
-
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"></input>
-            <span class="input-group-addon" id="basic-addon2">@example.com</span>
-          </div>
-
-        <div class="input-group">
-          <span class="input-group-addon">$</span></input>
-          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"></input>
-            <span class="input-group-addon">.00</span>
-          </div>
+        
       </form>
     </div>    
 </div>
