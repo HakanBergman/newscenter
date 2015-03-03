@@ -1,6 +1,6 @@
 ﻿<div class="container">
 	<article>
-		<h1>{$node.name|wash()}
-		Uppdateras inom kort
+		<h1>{$node.name|wash()}</h1>
+		<p>Uppdateras inom kort</p>
 	</article>
 </div>
