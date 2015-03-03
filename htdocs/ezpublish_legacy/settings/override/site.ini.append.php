@@ -187,6 +187,8 @@ HostMatchRegexp=^(.+)\.example\.com$
 HostMatchRegexpItem=1
 
 HostMatchMapItems[]=maltimportoren.datadelenhc.com;www.maltimportoren.se
+HostMatchMapItems[]=maltimportoren.se;www.maltimportoren.se
+HostMatchMapItems[]=www.maltimportoren.se;www.maltimportoren.se
 HostMatchMapItems[]=newscenter.drumedar.net;newscenter.drumedar.net
 HostMatchMapItems[]=admin.newscenter.drumedar.net;ezdemo_site_clean_admin
 
