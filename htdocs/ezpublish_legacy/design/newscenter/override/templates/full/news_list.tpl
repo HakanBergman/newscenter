@@ -19,6 +19,16 @@
 			<div class="{$column_size} container-padding-top"> 
 				<h2 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}"><a href="{$newslist.url|ezurl('no', 'full')}" title="{$newslist.name|wash()}">{$newslist.name|wash()}</a></h2>
 			</div>
+            {if $newslist.children}
+				{foreach $newslist.children as $news}
+					<div class="container-padding-left-2">        
+						<span class="glyphicon glyphicon-file"></span>
+						<a href="{$news.url|ezurl('no', 'full')}" class="font-weight-normal container-padding-left" title="{$news.name|wash()}">
+							{$news.name|wash()}
+						</a>
+					</div>
+				{/foreach}
+            {/if}
 		{/foreach}
 	</div>
 </div>
