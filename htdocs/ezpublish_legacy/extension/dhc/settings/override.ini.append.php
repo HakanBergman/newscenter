@@ -60,6 +60,12 @@ MatchFile=full/news_category.tpl
 Subdir=templates
 Match[class_identifier]=news_category
 
+[full_contact_list]
+Source=node/view/full.tpl
+MatchFile=full/contact_list.tpl
+Subdir=templates
+Match[class_identifier]=contact_list
+
 [edit_product]
 Source=content/edit.tpl
 MatchFile=edit/product.tpl
