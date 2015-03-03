@@ -27,6 +27,7 @@
           <div class="form-group">
             <label for="sel1">Välj mottagare</label>
             <select class="form-control" id="sel1">
+              <option value="{$#company.data_map.email.value}">{$#company.data_map.email.value"}</option>
               {foreach $node.children as $contact_division}
                 {foreach $contact_division.children as $employee}
                   <option value="{$employee.data_map.email.value}">{$employee.name|wash()}</option>
