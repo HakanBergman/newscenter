@@ -21,11 +21,21 @@
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
       <form method="post">
-        <input type="text"></input>
-        <input type="text"></input>
-        <input type="text"></input>
-        <input type="text"></input>
-        <button>Button</button>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1"></input>
+        </div>
+
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"></input>
+            <span class="input-group-addon" id="basic-addon2">@example.com</span>
+          </div>
+
+        <div class="input-group">
+          <span class="input-group-addon">$</span></input>
+          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"></input>
+            <span class="input-group-addon">.00</span>
+          </div>
       </form>
     </div>    
 </div>
