@@ -1,4 +1,5 @@
 ﻿<div class="container">
+  {def $home_node = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
 		<h2>{$node.name|wash()}</h2>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 		  {foreach $node.children as $contact_division}
@@ -27,7 +28,7 @@
           <div class="form-group">
             <label for="sel1">Välj mottagare</label>
             <select class="form-control" id="sel1">
-              <option value="{$#company.data_map.email.value}">{$#company.data_map.email.value"}</option>
+              <option value="{$home_node.data_map.email.value}">{$home_node.data_map.email.value}</option>
               {foreach $node.children as $contact_division}
                 {foreach $contact_division.children as $employee}
                   <option value="{$employee.data_map.email.value}">{$employee.name|wash()}</option>
@@ -44,5 +45,6 @@
           
         </div>        
       </form>
-    </div>    
+    </div>
+  {undef home_node}
 </div>
