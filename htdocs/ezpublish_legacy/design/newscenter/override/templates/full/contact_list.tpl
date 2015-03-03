@@ -1,6 +1,6 @@
 ﻿<div class="container">
 		<h2>{$node.name|wash()}</h2>
-    <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 		  {foreach $node.children as $contact_division}
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h3>{$contact_division.name|wash()}</h3>
@@ -19,7 +19,7 @@
         </div>
       {/foreach}
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-2 col-xs-12">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
       <form method="post">
         <input type="text"></input>
         <input type="text"></input>
