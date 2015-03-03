@@ -38,7 +38,7 @@
           <label for="sel1">E-postadress</label>
           <div class="input-group">
             <span class="input-group-addon" id="E-postadress">@</span>
-            <input type="text" class="form-control" placeholder="E-postadress" aria-describedby="E-postadress"></input>
+            <input type="text" class="form-control" placeholder="E-postadress" aria-describedby="E-postadress" data-clear-btn="true"></input>
           </div>
           
         </div>        
