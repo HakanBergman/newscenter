@@ -20,10 +20,23 @@
       {/foreach}
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <h3>Kontaktformulär</h3>
       <form method="post">
+
+        <div class="form-group">
+          <label for="sel1">Välj mottagare</label>
+          <select class="form-control" id="sel1">
+            {foreach $node.children as $contact_division}
+              {foreach $contact_division as $employee}
+                <option>{$employee.name|wash()}</option>
+              {/foreach}
+            {/foreach}
+          </select>
+        </div>        
+        
         <div class="input-group">
-          <span class="input-group-addon" id="basic-addon1">@</span>
-          <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1"></input>
+          <span class="input-group-addon" id="E-postadress">@</span>
+          <input type="text" class="form-control" placeholder="E-postadress" aria-describedby="E-postadress"></input>
         </div>
 
         <div class="input-group">
