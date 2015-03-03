@@ -37,6 +37,21 @@
             </select>
           </div>
 
+          <div class="form-group">
+            <label for="foretagsnamn">Företagsnamn</label>
+            <input type="password" class="form-control" id="foretagsnamn"></input>
+          </div>
+
+          <div class="form-group">
+            <label for="kontaktperson">Er kontaktperson</label>
+            <input type="password" class="form-control" id="kontaktperson"></input>
+          </div>
+
+          <div class="form-group">
+            <label for="telefonnummer">Telefonnummer</label>
+            <input type="password" class="form-control" id="telefonnummer"></input>
+          </div>
+
           <label for="sel1">E-postadress</label>
           <div class="input-group">
             <span class="input-group-addon" id="E-postadress">@</span>
