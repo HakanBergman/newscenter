@@ -57,6 +57,13 @@
             <span class="input-group-addon" id="E-postadress">@</span>
             <input type="text" class="form-control" placeholder="E-postadress" aria-describedby="E-postadress" data-clear-btn="true"></input>
           </div>
+
+          <label for="sel1">Meddelande</label>
+          <textarea rows="3"></textarea>
+
+          <div class="pull-right">
+            <button class="btn btn-primary" type="button">Skicka mail</button>
+          </div>
           
         </div>        
       </form>
