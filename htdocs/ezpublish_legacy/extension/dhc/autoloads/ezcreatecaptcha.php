@@ -49,6 +49,13 @@ class eZCreateCaptcha
         {
             case 'ezcreatecaptcha':
             {
+                /* Verify if the captcha already exists */
+                if (!empty($_SESSION["dhc"]["captcha"])) {
+                    /* Create the Captcha */
+                    $md5_hash = md5(rand(0,999)); 
+                    $security_code = substr($md5_hash, 15, 5);
+                    echo $security_code;
+                }
                 $operatorValue = "test";                
             } break;
         }
