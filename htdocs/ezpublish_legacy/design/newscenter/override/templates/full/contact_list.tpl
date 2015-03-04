@@ -66,7 +66,7 @@
           <div class="pull-right">
             <button class="btn btn-primary" type="button">Skicka mail</button>
           </div>
-          {ezcreatecaptcha()}
+          {ezcreatecaptcha()|wordtoimage()}
         </div>        
       </form>
     </div>
