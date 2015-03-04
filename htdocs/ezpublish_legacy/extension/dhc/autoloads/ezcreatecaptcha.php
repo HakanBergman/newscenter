@@ -53,7 +53,7 @@ class eZCreateCaptcha
                 if (empty($_SESSION["dhc"]["captcha"])) {
                     /* Create the Captcha */
                     $md5_hash = md5(rand(0,999)); 
-                    $security_code = substr($md5_hash, 15, 5);
+                    $security_code = substr($md5_hash, 15, 8);
                     echo $security_code;
                 }
                 $operatorValue = "test";                
