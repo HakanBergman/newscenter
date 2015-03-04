@@ -14,7 +14,7 @@
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <label><a href="mailto:{$employee.data_map.email.value}" title="{$employee.data_map.email.value}">{$employee.data_map.email.value}</a></label>
               </div>
-              <h5 class="clear">{$employee.data_map.title.data_text}</h5>
+              <h5 class="clear container-padding-left">{$employee.data_map.title.data_text}</h5>
             </div>
           {/foreach}
         </div>
