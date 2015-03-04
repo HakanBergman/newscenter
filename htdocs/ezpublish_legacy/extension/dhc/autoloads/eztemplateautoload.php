@@ -6,6 +6,9 @@
  * @var array $eZTemplateOperatorArray
  */
 $eZTemplateOperatorArray = array();
+$eZTemplateOperatorArray[] = array( 'script' => 'extension/dhc/autoloads/ezcreatecaptcha.php',
+                                    'class' => 'eZCreateCaptcha',
+                                    'operator_names' => array( 'ezcreatecaptcha' ) );
 
 
 ?>
