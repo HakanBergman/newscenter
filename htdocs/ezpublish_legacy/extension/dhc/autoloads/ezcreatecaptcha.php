@@ -45,6 +45,7 @@ class eZCreateCaptcha
 
     function modify( $tpl, $operatorName, $operatorParameters, &$rootNamespace, &$currentNamespace, &$operatorValue, &$namedParameters )
     {
+        
         switch ( $operatorName )
         {
             case 'ezcreatecaptcha':
@@ -54,9 +55,12 @@ class eZCreateCaptcha
                     /* Create the Captcha */
                     $md5_hash = md5(rand(0,999)); 
                     $security_code = substr($md5_hash, 15, 8);
-                    echo $security_code;
+                    $_SESSION["dhc"]["captcha"] = $security_code;
+                    $operatorValue = $_SESSION["dhc"]["captcha"];
+                } else {
+                    $operatorValue = $_SESSION["dhc"]["captcha"];                
                 }
-                $operatorValue = "test";                
+                
             } break;
         }
     }
