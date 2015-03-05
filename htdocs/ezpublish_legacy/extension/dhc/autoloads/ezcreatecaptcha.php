@@ -50,20 +50,13 @@ class eZCreateCaptcha
         {
             case 'ezcreatecaptcha':
             {
-$image = imagecreatetruecolor(100, 100);
-
-// Transparent Background
-imagealphablending($image, false);
-$transparency = imagecolorallocatealpha($image, 0, 0, 0, 127);
-imagefill($image, 0, 0, $transparency);
-imagesavealpha($image, true);
-
-// Drawing over
-$black = imagecolorallocate($image, 0, 0, 0);
-imagefilledrectangle($image, 25, 25, 75, 75, $black);
-
-header('Content-Type: image/png');
-imagepng($image);
+            header ('Content-Type: image/png');
+$im = @imagecreatetruecolor(120, 20)
+      or die('Cannot Initialize new GD image stream');
+$text_color = imagecolorallocate($im, 233, 14, 91);
+imagestring($im, 1, 5, 5,  'A Simple Text String', $text_color);
+imagepng($im);
+imagedestroy($im);
                 /* Verify if the captcha already exists */
                 if (empty($_SESSION["dhc"]["captcha"])) {
                     /* Create the Captcha */
