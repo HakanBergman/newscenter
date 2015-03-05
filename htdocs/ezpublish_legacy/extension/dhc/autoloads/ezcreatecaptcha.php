@@ -50,6 +50,7 @@ class eZCreateCaptcha
         {
             case 'ezcreatecaptcha':
             {
+            header("Content-type: image/png");
 $img = imagecreatetruecolor(200, 200);
 imagesavealpha($img, true);
 $color = imagecolorallocatealpha($img, 0, 0, 0, 127);
