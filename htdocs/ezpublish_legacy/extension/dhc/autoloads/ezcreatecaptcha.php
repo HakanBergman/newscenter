@@ -50,12 +50,20 @@ class eZCreateCaptcha
         {
             case 'ezcreatecaptcha':
             {
-            header("Content-type: image/png");
-$img = imagecreatetruecolor(200, 200);
-imagesavealpha($img, true);
-$color = imagecolorallocatealpha($img, 0, 0, 0, 127);
-imagefill($img, 0, 0, $color);
-imagepng($img, 'test.png');
+$image = imagecreatetruecolor(100, 100);
+
+// Transparent Background
+imagealphablending($image, false);
+$transparency = imagecolorallocatealpha($image, 0, 0, 0, 127);
+imagefill($image, 0, 0, $transparency);
+imagesavealpha($image, true);
+
+// Drawing over
+$black = imagecolorallocate($image, 0, 0, 0);
+imagefilledrectangle($image, 25, 25, 75, 75, $black);
+
+header('Content-Type: image/png');
+imagepng($image);
                 /* Verify if the captcha already exists */
                 if (empty($_SESSION["dhc"]["captcha"])) {
                     /* Create the Captcha */
