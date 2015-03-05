@@ -50,20 +50,11 @@ class eZCreateCaptcha
         {
             case 'ezcreatecaptcha':
             {
-                // Create a 55x30 image
-                $im = imagecreatetruecolor(55, 30);
-                $red = imagecolorallocate($im, 255, 0, 0);
-                $black = imagecolorallocate($im, 0, 0, 0);
-
-                // Make the background transparent
-                imagecolortransparent($im, $black);
-
-                // Draw a red rectangle
-                imagefilledrectangle($im, 4, 4, 50, 25, $red);
-
-                // Save the image
-                imagepng($im, './imagecolortransparent.png');
-                imagedestroy($im);
+$img = imagecreatetruecolor(200, 200);
+imagesavealpha($img, true);
+$color = imagecolorallocatealpha($img, 0, 0, 0, 127);
+imagefill($img, 0, 0, $color);
+imagepng($img, 'test.png');
                 /* Verify if the captcha already exists */
                 if (empty($_SESSION["dhc"]["captcha"])) {
                     /* Create the Captcha */
