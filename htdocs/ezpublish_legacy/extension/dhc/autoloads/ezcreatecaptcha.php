@@ -50,13 +50,19 @@ class eZCreateCaptcha
         {
             case 'ezcreatecaptcha':
             {
-                header("Content-Type: image/png");
-                $im = @imagecreate(110, 20)
-                    or die("Cannot Initialize new GD image stream");
-                $background_color = imagecolorallocate($im, 0, 0, 0);
-                $text_color = imagecolorallocate($im, 233, 14, 91);
-                imagestring($im, 1, 5, 5,  "A Simple Text String", $text_color);
-                imagepng($im);
+                // Create a 55x30 image
+                $im = imagecreatetruecolor(55, 30);
+                $red = imagecolorallocate($im, 255, 0, 0);
+                $black = imagecolorallocate($im, 0, 0, 0);
+
+                // Make the background transparent
+                imagecolortransparent($im, $black);
+
+                // Draw a red rectangle
+                imagefilledrectangle($im, 4, 4, 50, 25, $red);
+
+                // Save the image
+                imagepng($im, './imagecolortransparent.png');
                 imagedestroy($im);
                 /* Verify if the captcha already exists */
                 if (empty($_SESSION["dhc"]["captcha"])) {
