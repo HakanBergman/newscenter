@@ -56,9 +56,9 @@ class eZCreateCaptcha
                 if (empty($_COOKIE["captcha"])) {  
                     setcookie("captcha",  $security_code, time()+3600);
                     $create_image = shell_exec('echo '.$security_code.'|convert -size 165x70 -channel RGBA -density 196 -resample 72 -bordercolor none -background none -pointsize 20 text:- -fill black '.$_SERVER["DOCUMENT_ROOT"].'/design/newscenter/images/testdir/'.$security_code.'.png 2>&1');
-                    $operatorValue = $_COOKIE["captcha"]);
+                    $operatorValue = $_COOKIE["captcha"];
                 } else {
-                    $operatorValue = $_COOKIE["captcha"]);                
+                    $operatorValue = $_COOKIE["captcha"];                
                 }
                 
             } break;
