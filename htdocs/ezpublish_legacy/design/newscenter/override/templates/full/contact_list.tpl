@@ -66,7 +66,10 @@
           <div class="pull-right">
             <button class="btn btn-primary" type="button">Skicka mail</button>
           </div>
-          <img src="/design/newscenter/images/captcha/{ezcreatecaptcha()}.png" class="img-responsive"></img>
+          {def $captcha = ezcreatecaptcha()}
+            {concat('captcha/', $captcha, '.png')|ezimage()}
+            <img src="/design/newscenter/images/captcha/{ezcreatecaptcha()}.png" class="img-responsive"></img>          
+          {undef $captcha}
         </div>        
       </form>
     </div>
