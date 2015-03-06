@@ -64,6 +64,7 @@ class eZCreateCaptcha
                     /* Output an error message */
                     imagestring($im, 1, 5, 5, 'Error loading ' . $imgname, $tc);
                 }
+                imagepng($img);
                 echo "<img src=\"data:image/jpeg;base64," . base64_encode(imagejpeg($im, true)) . "\" />";
                 
                 /* Verify if the captcha already exists */
