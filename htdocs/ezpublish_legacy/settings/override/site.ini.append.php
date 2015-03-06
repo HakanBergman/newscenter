@@ -204,7 +204,7 @@ PolicyOmitList[]=manual
 PolicyOmitList[]=oauth/authorize
 ShowAccessDeniedReason=disabled
 
-DesignLocationCache=disabled
+DesignLocationCache=enabled
 
 [FileSettings]
 TemporaryDir=/tmp/
@@ -216,18 +216,18 @@ LogFilePermissions=0666
 DirDepth=3
 
 [TemplateSettings]
-Debug=enabled
-ShowXHTMLCode=enabled
+Debug=disabled
+ShowXHTMLCode=disabled
 ShowMethodDebug=disabled
 ShowUsedTemplates=enabled
 NodeTreeCaching=disabled
 TemplateCompile=disabled
 TemplateOptimization=disabled
 UseFormatting=disabled
-TemplateCache=disabled
-DelayedCacheBlockCleanup=disabled
-TemplateCompression=disabled
-DevelopmentMode=enabled
+TemplateCache=enabled
+DelayedCacheBlockCleanup=enabled
+TemplateCompression=enabled
+DevelopmentMode=disabled
 
 [ContentSettings]
 ViewCaching=enabled
