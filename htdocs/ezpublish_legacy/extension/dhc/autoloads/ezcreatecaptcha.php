@@ -50,14 +50,12 @@ class eZCreateCaptcha
         {
             case 'ezcreatecaptcha':
             {   
-                $image = shell_exec('echo "asd"|convert -channel RGBA -density 196 -resample 72 -bordercolor none -background none -pointsize 18 text:- -fill blue /var/www/newscenter/htdocs/ezpublish_legacy/design/newscenter/images/testdir/ps_transparent.png 2>&1');
+                /* Create the Captcha */
+                $md5_hash = md5(rand(0,999)); 
+                $security_code = substr($md5_hash, 15, 8);
+                $image = shell_exec('echo '.$security_code.'|convert -channel RGBA -density 196 -resample 72 -bordercolor none -background none -pointsize 18 text:- -fill blue /var/www/newscenter/htdocs/ezpublish_legacy/design/newscenter/images/testdir/ps_transparent.png 2>&1');
                 echo $image;
-                if (empty($_SESSION["dhc"]["captcha"])) {
-                
-                
-                    /* Create the Captcha */
-                    $md5_hash = md5(rand(0,999)); 
-                    $security_code = substr($md5_hash, 15, 8);
+                if (empty($_SESSION["dhc"]["captcha"])) {                                
                     $_SESSION["dhc"]["captcha"] = $security_code;
                     $operatorValue = $_SESSION["dhc"]["captcha"];
                 } else {
