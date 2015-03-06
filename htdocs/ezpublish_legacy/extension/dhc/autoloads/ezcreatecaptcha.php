@@ -52,6 +52,7 @@ class eZCreateCaptcha
             {
                 $image = imagecreatefromjpeg($filePath);
                 $im = imagecreatefrompng($_SERVER["HTTP_REFERER"]."/design/newscenter/images/captcha_transparent_1140.png");
+                var_dump($im);
                 echo "<img src=\"data:image/jpeg;base64," . base64_encode(imagejpeg($im, true)) . "\" />";
                 
                 /* Verify if the captcha already exists */
