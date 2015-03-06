@@ -49,8 +49,9 @@ class eZCreateCaptcha
         switch ( $operatorName )
         {
             case 'ezcreatecaptcha':
-            {            
-                exec('echo "asd"|convert -channel RGBA -density 196 -resample 72 -bordercolor none -background none -pointsize 18 text:- -fill blue /var/www/newscenter/htdocs/ezpublish_legacy/design/newscenter/images/testdir/ps_transparent.png');
+            {   
+                $image = shell_exec('echo "asd"|convert -channel RGBA -density 196 -resample 72 -bordercolor none -background none -pointsize 18 text:- -fill blue /var/www/newscenter/htdocs/ezpublish_legacy/design/newscenter/images/testdir/ps_transparent.png');
+                echo $image;
                 if (empty($_SESSION["dhc"]["captcha"])) {
                 
                 
