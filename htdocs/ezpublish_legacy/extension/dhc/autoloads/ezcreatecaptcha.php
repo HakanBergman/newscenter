@@ -53,9 +53,9 @@ class eZCreateCaptcha
                 /* Create the Captcha */
                 $md5_hash = md5(rand(0,999)); 
                 $security_code = substr($md5_hash, 15, 8);
-                $create_image = shell_exec('echo '.$security_code.'|convert -channel RGBA -density 196 -resample 72 -bordercolor none -background none -pointsize 18 text:- -fill black /var/www/newscenter/htdocs/ezpublish_legacy/design/newscenter/images/testdir/ps_transparent.png 2>&1');
-                $create_captcha = shell_exec('convert /var/www/newscenter/htdocs/ezpublish_legacy/design/newscenter/images/testdir/ps_transparent.png -resize 1140x25\! /var/www/newscenter/htdocs/ezpublish_legacy/design/newscenter/images/testdir/captcha_ps_transparent.png 2>&1');
-                echo $create_captcha;
+                $create_image = shell_exec('echo '.$security_code.'|convert -size 165x70 -channel RGBA -density 196 -resample 72 -bordercolor none -background none -pointsize 18 text:- -fill black /var/www/newscenter/htdocs/ezpublish_legacy/design/newscenter/images/testdir/ps_transparent.png 2>&1');
+                #$create_captcha = shell_exec('convert /var/www/newscenter/htdocs/ezpublish_legacy/design/newscenter/images/testdir/ps_transparent.png -resize 1140x25\! /var/www/newscenter/htdocs/ezpublish_legacy/design/newscenter/images/testdir/captcha_ps_transparent.png 2>&1');
+                #echo $create_captcha;
                 if (empty($_SESSION["dhc"]["captcha"])) {                                
                     $_SESSION["dhc"]["captcha"] = $security_code;
                     $operatorValue = $_SESSION["dhc"]["captcha"];
