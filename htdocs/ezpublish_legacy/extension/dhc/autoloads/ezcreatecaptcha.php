@@ -52,7 +52,7 @@ class eZCreateCaptcha
             {   
                 /* Create the Captcha */
                 $md5_hash = md5(rand(0,999)); 
-                $security_code = substr($md5_hash, 15, 8);                
+                $security_code = substr($md5_hash, 15, 8);                   
                 if (empty($_COOKIE["captcha"])) {  
                     setcookie("captcha",  $security_code, time()+3600);
                     $create_image = shell_exec('echo '.$security_code.'|convert -size 165x70 -channel RGBA -density 196 -resample 72 -bordercolor none -background none -pointsize 20 text:- -fill black '.$_SERVER["DOCUMENT_ROOT"].'/design/newscenter/images/testdir/'.$security_code.'.png 2>&1');
@@ -60,6 +60,7 @@ class eZCreateCaptcha
                 } else {
                     $operatorValue = $_COOKIE["captcha"];                
                 }
+                var_dump($_COOKIE);
                 
             } break;
         }
