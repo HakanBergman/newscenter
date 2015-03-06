@@ -52,6 +52,7 @@ class eZCreateCaptcha
             {
                 $image = imagecreatefromjpeg($filePath);
                 echo dirname(__FILE__);
+                print_r($_SERVER)
                 $im = imagecreatefrompng($imgname);
                 echo "<img src=\"data:image/jpeg;base64," . base64_encode(imagejpeg($image, true)) . "\" />";
                 
