@@ -50,9 +50,20 @@ class eZCreateCaptcha
         {
             case 'ezcreatecaptcha':
             {
-                $image = imagecreatefromjpeg($filePath);
                 $im = imagecreatefrompng($_SERVER["HTTP_REFERER"]."/design/newscenter/images/captcha_transparent_1140.png");
-                var_dump($im);
+                /* See if it failed */
+                if(!$im)
+                {
+                    /* Create a blank image */
+                    $im  = imagecreatetruecolor(150, 30);
+                    $bgc = imagecolorallocate($im, 255, 255, 255);
+                    $tc  = imagecolorallocate($im, 0, 0, 0);
+
+                    imagefilledrectangle($im, 0, 0, 150, 30, $bgc);
+
+                    /* Output an error message */
+                    imagestring($im, 1, 5, 5, 'Error loading ' . $imgname, $tc);
+                }
                 echo "<img src=\"data:image/jpeg;base64," . base64_encode(imagejpeg($im, true)) . "\" />";
                 
                 /* Verify if the captcha already exists */
