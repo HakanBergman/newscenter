@@ -50,8 +50,13 @@ class eZCreateCaptcha
         {
             case 'ezcreatecaptcha':
             {
+                $image = imagecreatefromjpeg($filePath);
+                echo "<img src=\"data:image/jpeg;base64," . base64_encode(imagejpeg($image, true)) . "\" />";
+                
                 /* Verify if the captcha already exists */
                 if (empty($_SESSION["dhc"]["captcha"])) {
+                
+                
                     /* Create the Captcha */
                     $md5_hash = md5(rand(0,999)); 
                     $security_code = substr($md5_hash, 15, 8);
