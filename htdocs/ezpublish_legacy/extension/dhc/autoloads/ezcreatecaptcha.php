@@ -52,16 +52,15 @@ class eZCreateCaptcha
             {   
                 /* Create the Captcha Code */
                 $md5_hash = md5(rand(0,999)); 
-                $security_code = substr($md5_hash, 15, 8);         
-                
-                /* Don't create the image if it already exists */
-                if (!file_exists($_SERVER["DOCUMENT_ROOT"].'/design/newscenter/images/captcha/'.$security_code.'.png')) {
-                    $create_image = shell_exec('echo '.$security_code.'|convert -size 1140x50 -channel RGBA -density 196 -resample 72 -bordercolor none -background none -pointsize 20 text:- -fill black '.$_SERVER["DOCUMENT_ROOT"].'/design/newscenter/images/captcha/'.$security_code.'.png 2>&1');
-                }                
+                $security_code = substr($md5_hash, 15, 8);                                        
                 
                 /* Verify if we already have a captcha set in our cookie */
                 if (empty($_COOKIE["captcha"])) {  
                     setcookie("captcha",  $security_code, time()+3600);
+                    /* Don't create the image if it already exists */
+                    if (!file_exists($_SERVER["DOCUMENT_ROOT"].'/design/newscenter/images/captcha/'.$security_code.'.png')) {
+                        $create_image = shell_exec('echo '.$security_code.'|convert -size 1140x50 -channel RGBA -density 196 -resample 72 -bordercolor none -background none -pointsize 20 text:- -fill black '.$_SERVER["DOCUMENT_ROOT"].'/design/newscenter/images/captcha/'.$security_code.'.png 2>&1');
+                    }                    
                     $operatorValue = $_COOKIE["captcha"];
                 } else {
                     $operatorValue = $_COOKIE["captcha"];                
