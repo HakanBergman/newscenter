@@ -65,21 +65,23 @@
 
           <div class="form-group">
             <div class="col-lg-12 no-padding no-margin">
-              <label for="meddelande">Captcha</label>
+              <label for="meddelande">Captcha kod</label>
             </div>
             <div class="col-lg-8 no-padding no-margin">
               {def $captcha = ezcreatecaptcha()}                
-                <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive container-padding-top"></img>
+                <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive"></img>
               {undef $captcha}
             </div>
             <div class="col-lg-4 no-padding no-margin">
-              <input type="text" class="form-control" placeholder="captcha" aria-describedby="captcha" data-clear-btn="true"></input>
+              <input type="text" class="form-control" placeholder="Ange koden här" aria-describedby="captcha" data-clear-btn="true"></input>
             </div>
           </div>
 
-          <div class="form-group container-padding-top-3 clear">
-            <div class="pull-right">
-              <button class="btn btn-primary" type="button">Skicka mail</button>
+          <div class="form-group clear">
+            <div class="col-lg-12 no-padding container-padding-3">
+              <div class="pull-right">
+                <button class="btn btn-primary" type="button">Skicka mail</button>
+              </div>
             </div>
           </div>
 
