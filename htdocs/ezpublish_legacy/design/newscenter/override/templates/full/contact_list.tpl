@@ -24,15 +24,15 @@
       <h3>Kontaktformulär</h3>
       <form method="post">
         <div class="container-padding-left-3">
-          
+
           <div class="form-group">
             <label for="sel1">Välj mottagare</label>
             <select class="form-control" id="sel1">
               <option value="{$home_node.data_map.email.value}">{$home_node.data_map.email.value}</option>
               {foreach $node.children as $contact_division}
-                {foreach $contact_division.children as $employee}
-                  <option value="{$employee.data_map.email.value}">{$employee.name|wash()}</option>
-                {/foreach}
+              {foreach $contact_division.children as $employee}
+              <option value="{$employee.data_map.email.value}">{$employee.name|wash()}</option>
+              {/foreach}
               {/foreach}
             </select>
           </div>
@@ -63,13 +63,18 @@
             <textarea class="form-control" rows="5" id="meddelande"></textarea>
           </div>
 
-          <div class="pull-right">
-            <button class="btn btn-primary" type="button">Skicka mail</button>
+          <div class="form-group">
+            <div class="pull-left">
+              {def $captcha = ezcreatecaptcha()}
+              <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive"></img>
+              {undef $captcha}
+            </div>
+            <div class="pull-right">
+              <button class="btn btn-primary" type="button">Skicka mail</button>
+            </div>
           </div>
-          {def $captcha = ezcreatecaptcha()}            
-             <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive"></img>          
-          {undef $captcha}
-        </div>        
+
+        </div>
       </form>
     </div>
   {undef home_node}
