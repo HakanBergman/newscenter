@@ -55,12 +55,12 @@ class eZCreateCaptcha
                 $letters = 'abcdefghijkmnopqrstuvwxyz';
                 $specials = '!@?';
                 $security_code = "";
-                $security_code .= $specials[rand(0, strlen($specials)-1)];
-                $security_code .= $numbers[rand(0, strlen($numbers)-1)];
                 $security_code .= $letters[rand(0, strlen($letters)-1)];
                 $security_code .= $numbers[rand(0, strlen($numbers)-1)];
                 $security_code .= $letters[rand(0, strlen($letters)-1)];
-                $security_code .= $specials[rand(0, strlen($specials)-1)];
+                $security_code .= $numbers[rand(0, strlen($numbers)-1)];
+                $security_code .= $letters[rand(0, strlen($letters)-1)];
+                $security_code .= $numbers[rand(0, strlen($numbers)-1)];
                 
                 /* Verify if we already have a captcha set in our cookie */
                 if (empty($_COOKIE["captcha"])) {  
