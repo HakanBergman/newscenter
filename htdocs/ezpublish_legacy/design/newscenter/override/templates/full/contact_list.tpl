@@ -71,6 +71,13 @@
               {undef $captcha}
             </div>
             <div class="pull-right">
+              <input type="text" class="form-control" placeholder="captcha" aria-describedby="captcha" data-clear-btn="true"></input>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="pull-right">
+              <input type="text" class="form-control" placeholder="captcha" aria-describedby="captcha" data-clear-btn="true"></input>
               <button class="btn btn-primary" type="button">Skicka mail</button>
             </div>
           </div>
