@@ -1,4 +1,5 @@
 ﻿<div class="container">
+  {ezhttp()|attribute(show, 1)}
   {ezcreateemail()}
   
   {def $home_node = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
