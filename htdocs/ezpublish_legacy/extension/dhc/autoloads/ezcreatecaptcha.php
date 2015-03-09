@@ -51,8 +51,8 @@ class eZCreateCaptcha
             case 'ezcreatecaptcha':
             {   
                 /* Create the Captcha Code */
-                $numbers = '0123456789';
-                $letters = 'abcdefghijkmnopqrstuvwxyz';
+                $numbers = '23456789';
+                $letters = 'abcdefghjkmnpqrstuvwxyz';
                 $specials = '!@?';
                 $security_code = "";
                 $security_code .= $letters[rand(0, strlen($letters)-1)];
