@@ -66,10 +66,7 @@ class eZCreateCaptcha
                 if (empty($_COOKIE["captcha"])) {  
                     setcookie("captcha",  $security_code, time()+60);
                     /* Don't create the image if it already exists */
-                    if (!file_exists($_SERVER["DOCUMENT_ROOT"].'/design/newscenter/images/captcha/'.$security_code.'.png')) {
-                        //$create_image = shell_exec('echo '.$security_code.'|convert -resize 400x25! -font Candice -channel RGBA -density 144 -bordercolor none -background none -pointsize 200 text:- -fill black '.$_SERVER["DOCUMENT_ROOT"].'/design/newscenter/images/captcha/'.$security_code.'.png 2>&1');
-                        $create_image = shell_exec('convert -resize 300x25! -font Bookman-Demi -channel RGBA -density 100 -bordercolor none -background none -pointsize 72 label:'.$security_code.' -fill black '.$_SERVER["DOCUMENT_ROOT"].'/design/newscenter/images/captcha/'.$security_code.'.png 2>&1');
-                    }                    
+                    $create_image = shell_exec('convert -resize 300x25! -font Bookman-Demi -channel RGBA -density 100 -bordercolor none -background none -pointsize 72 label:'.$security_code.' -fill black '.$_SERVER["DOCUMENT_ROOT"].'/design/newscenter/images/captcha/'.$security_code.'.png 2>&1');
                     $operatorValue = $_COOKIE["captcha"];
                 } else {
                     $operatorValue = $_COOKIE["captcha"];                
