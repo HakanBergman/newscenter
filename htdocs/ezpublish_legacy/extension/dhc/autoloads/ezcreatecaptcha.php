@@ -64,7 +64,7 @@ class eZCreateCaptcha
                 
                 /* Verify if we already have a captcha set in our cookie */
                 if (!isset($_COOKIE["captcha"])) {  
-                    setcookie("captcha",  $security_code, time()+60);
+                    setcookie("captcha",  $security_code, time()+3600);
                     $_COOKIE['captcha'] = $security_code;
                     /* Don't create the image if it already exists */
                     $create_image = shell_exec('convert -resize 300x25! -font Bookman-Demi -channel RGBA -density 100 -bordercolor none -background none -pointsize 72 label:'.$security_code.' -fill black '.$_SERVER["DOCUMENT_ROOT"].'/design/newscenter/images/captcha/'.$security_code.'.png 2>&1');
