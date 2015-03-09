@@ -72,12 +72,12 @@
                 <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive"></img>
               {undef $captcha}
             </div>
-            <div class="col-lg-12 no-padding no-margin">
+            <div class="col-lg-12 no-padding no-margin container-padding-top-3">
               <input type="text" class="form-control" placeholder="Ange koden här" aria-describedby="captcha" data-clear-btn="true"></input>
             </div>
           </div>
 
-          <div class="form-group clear">
+          <div class="form-group clear container-padding-3">
             <div class="col-lg-12 no-padding container-padding-3">
               <div class="pull-right">
                 <button class="btn btn-primary" type="button">Skicka mail</button>
