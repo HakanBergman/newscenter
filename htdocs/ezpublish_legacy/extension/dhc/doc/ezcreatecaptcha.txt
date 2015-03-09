@@ -1,0 +1,14 @@
+﻿# Requirements
+
+1) PHP 5.x
+2) ImageMagick
+
+# How to use
+
+Use the template operator {ezcreatecpatcha()} to create an physical image of the captcha at hand.
+The captcha will be stored in current design in the captcha folder under images.
+
+Example:
+{def $captcha = ezcreatecaptcha()}
+<img src="/{$captcha}">
+{undef $captcha}
