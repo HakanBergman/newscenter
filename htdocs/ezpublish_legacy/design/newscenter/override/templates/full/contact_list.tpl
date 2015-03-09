@@ -78,7 +78,7 @@
           </div>
 
           <div class="form-group clear">
-            <div class="col-lg-12 no-padding container-padding-3">
+            <div class="col-lg-12 no-padding container-padding-top-3">
               <div class="pull-right">
                 <button class="btn btn-primary" type="button">Skicka mail</button>
               </div>
