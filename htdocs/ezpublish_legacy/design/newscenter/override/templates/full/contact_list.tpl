@@ -1,5 +1,5 @@
 ﻿<div class="container">
-  {ezhttp()|attribute(show, 1)}
+  {ezhttp.post()|attribute(show, 1)}
   {ezcreateemail()}
   
   {def $home_node = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
@@ -25,7 +25,7 @@
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
       <h3>Kontaktformulär</h3>
-      <form method="post">
+      <form method="post" action="{$node.url|ezurl('no', 'full')}">
         <div class="container-padding-left-3">
 
           <div class="form-group">
