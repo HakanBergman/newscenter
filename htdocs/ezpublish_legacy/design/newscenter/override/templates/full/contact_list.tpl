@@ -64,20 +64,19 @@
           </div>
 
           <div class="form-group">
-            <div class="pull-left">
+            <div class="col-lg-8">
               {def $captcha = ezcreatecaptcha()}
                 <label for="meddelande">Captcha</label>
                 <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive"></img>
               {undef $captcha}
             </div>
-            <div class="pull-right">
+            <div class="col-lg-4">
               <input type="text" class="form-control" placeholder="captcha" aria-describedby="captcha" data-clear-btn="true"></input>
             </div>
           </div>
 
           <div class="form-group">
             <div class="pull-right">
-              <input type="text" class="form-control" placeholder="captcha" aria-describedby="captcha" data-clear-btn="true"></input>
               <button class="btn btn-primary" type="button">Skicka mail</button>
             </div>
           </div>
