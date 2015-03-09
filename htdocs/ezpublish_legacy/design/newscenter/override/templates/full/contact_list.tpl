@@ -72,7 +72,7 @@
                 <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive"></img>
               {undef $captcha}
             </div>
-            <div class="col-lg-12 no-padding no-margin">
+            <div class="col-lg-12 no-padding no-margin container-padding-top">
               <input type="text" class="form-control" placeholder="Ange koden här" aria-describedby="captcha" data-clear-btn="true"></input>
             </div>
           </div>
