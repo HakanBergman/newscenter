@@ -1,9 +1,10 @@
 ﻿<div class="container">
-  {ezhttp().post|attribute(show, 1)}
-  {ezcreateemail()}
-  
+  {if and(ezhttp().post, ezhttp('captcha', 'POST'))}
+    {ezcreateemail()}
+  {/if}
+
   {def $home_node = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
-		<h2>{$node.name|wash()}</h2>
+  <h2>{$node.name|wash()}</h2>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 		  {foreach $node.children as $contact_division}
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -73,7 +74,7 @@
               {undef $captcha}
             </div>
             <div class="col-lg-12 no-padding no-margin container-padding-top">
-              <input type="text" class="form-control" placeholder="Ange koden här" aria-describedby="captcha" data-clear-btn="true"></input>
+              <input type="text" class="form-control" placeholder="Ange koden här" aria-describedby="captcha" data-clear-btn="true" name="captcha"></input>
             </div>
           </div>
 
