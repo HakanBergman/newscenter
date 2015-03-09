@@ -64,9 +64,9 @@
           </div>
 
           <div class="form-group">
+            <label for="meddelande">Captcha</label>
             <div class="col-lg-8 no-padding no-margin">
-              {def $captcha = ezcreatecaptcha()}
-                <label for="meddelande">Captcha</label>
+              {def $captcha = ezcreatecaptcha()}                
                 <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive"></img>
               {undef $captcha}
             </div>
