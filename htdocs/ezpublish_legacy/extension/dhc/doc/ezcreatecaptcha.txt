@@ -3,6 +3,15 @@
 1) PHP 5.x
 2) ImageMagick
 
+# Installation
+
+CentOS:
+yum install imagemagick
+
+# Other
+
+Make sure the directory is writable by the web server or the images won't be created.
+
 # How to use
 
 Use the template operator {ezcreatecpatcha()} to create an physical image of the captcha at hand.
