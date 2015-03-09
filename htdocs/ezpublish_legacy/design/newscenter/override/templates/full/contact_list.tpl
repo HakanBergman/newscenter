@@ -65,9 +65,6 @@
 
           <div class="form-group">
             <div class="col-lg-12 no-padding no-margin">
-              <label for="meddelande">Captcha kod</label>
-            </div>
-            <div class="col-lg-12 no-padding no-margin">
               {def $captcha = ezcreatecaptcha()}                
                 <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive"></img>
               {undef $captcha}
