@@ -19,5 +19,5 @@ The captcha will be stored in current design in the captcha folder under images.
 
 Example:
 {def $captcha = ezcreatecaptcha()}
-<img src="/{$captcha}">
+	<img src="/{$captcha}">
 {undef $captcha}
