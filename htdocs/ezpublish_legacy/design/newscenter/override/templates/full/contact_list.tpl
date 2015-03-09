@@ -66,7 +66,8 @@
           <div class="form-group">
             <div class="pull-left">
               {def $captcha = ezcreatecaptcha()}
-              <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive"></img>
+                <label for="meddelande">Captcha</label>
+                <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive"></img>
               {undef $captcha}
             </div>
             <div class="pull-right">
