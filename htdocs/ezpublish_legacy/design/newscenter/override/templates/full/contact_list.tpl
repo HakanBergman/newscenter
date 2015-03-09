@@ -64,13 +64,13 @@
           </div>
 
           <div class="form-group">
-            <div class="col-lg-8">
+            <div class="col-lg-8 no-padding no-margin">
               {def $captcha = ezcreatecaptcha()}
                 <label for="meddelande">Captcha</label>
                 <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive"></img>
               {undef $captcha}
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 no-padding no-margin">
               <input type="text" class="form-control" placeholder="captcha" aria-describedby="captcha" data-clear-btn="true"></input>
             </div>
           </div>
