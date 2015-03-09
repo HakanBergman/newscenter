@@ -75,7 +75,7 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group clear">
             <div class="pull-right">
               <button class="btn btn-primary" type="button">Skicka mail</button>
             </div>
