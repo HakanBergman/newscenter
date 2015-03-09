@@ -70,7 +70,7 @@ class eZCreateCaptcha
                     echo "hit";
                     $operatorValue = $_COOKIE["captcha"];
                 } else {
-                    echo "eller hit";
+                    var_dump($_COOKIE);
                     $operatorValue = $_COOKIE["captcha"];                
                 }
                 
