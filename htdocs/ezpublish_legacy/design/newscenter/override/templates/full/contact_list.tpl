@@ -1,6 +1,6 @@
 ﻿<div class="container">
   {ezhttp().post|attribute(show, 1)}
-  {if and(ezhttp().post, ezhttp('captcha', 'POST'))}
+  {if ezhttp('captcha', 'POST')}
     {ezcreateemail()}
   {/if}
 
