@@ -63,12 +63,14 @@ class eZCreateCaptcha
                 $security_code .= $numbers[rand(0, strlen($numbers)-1)];
                 
                 /* Verify if we already have a captcha set in our cookie */
-                if (empty($_COOKIE["captcha"])) {  
+                if (!isset($_COOKIE["captcha"])) {  
                     setcookie("captcha",  $security_code, time()+60);
                     /* Don't create the image if it already exists */
                     $create_image = shell_exec('convert -resize 300x25! -font Bookman-Demi -channel RGBA -density 100 -bordercolor none -background none -pointsize 72 label:'.$security_code.' -fill black '.$_SERVER["DOCUMENT_ROOT"].'/design/newscenter/images/captcha/'.$security_code.'.png 2>&1');
+                    echo "hit";
                     $operatorValue = $_COOKIE["captcha"];
                 } else {
+                    echo "eller hit";
                     $operatorValue = $_COOKIE["captcha"];                
                 }
                 
