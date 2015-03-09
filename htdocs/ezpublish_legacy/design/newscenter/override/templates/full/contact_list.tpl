@@ -69,7 +69,7 @@
             </div>
             <div class="col-lg-8 no-padding no-margin">
               {def $captcha = ezcreatecaptcha()}                
-                <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive"></img>
+                <img src="{concat('captcha/', $captcha, '.png')|ezimage('no')}" class="img-responsive container-padding-top"></img>
               {undef $captcha}
             </div>
             <div class="col-lg-4 no-padding no-margin">
@@ -77,7 +77,7 @@
             </div>
           </div>
 
-          <div class="form-group clear">
+          <div class="form-group container-padding-top-3 clear">
             <div class="pull-right">
               <button class="btn btn-primary" type="button">Skicka mail</button>
             </div>
