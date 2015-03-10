@@ -1,6 +1,6 @@
 ﻿<div class="container-fluid">
     <div class="row">
-        <div class="col-sm-3 col-md-3">
+        <div class="col-lg-2 col-sm-2 col-md-2 col-xs-12">
             <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -140,13 +140,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-sm-9 col-md-9">
-            <div class="well">
-                <h1>
-                    Accordion Menu With Icon</h1>
-                Admin Dashboard Accordion Menu
             </div>
         </div>
     </div>
