@@ -1,6 +1,6 @@
 ﻿{set-block scope=root variable=cache_ttl}0{/set-block}
 
-<div class="container">
+<div class="container container-padding-left-2 container-padding-left-2">
   {if ezhttp('captcha', 'POST')}
     {ezcreateemail()}
   {/if}
