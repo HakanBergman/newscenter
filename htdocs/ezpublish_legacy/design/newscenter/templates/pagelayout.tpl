@@ -77,6 +77,8 @@
 			{* Include Headers *}
 			{include uri='design:page_header.tpl'}
 
+			{$object} <-> {$node} 
+
 			{def $user = fetch('user', 'current_user')}
 			  {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 				{include uri="design:page_admin_sidebar.tpl" user=$user}
