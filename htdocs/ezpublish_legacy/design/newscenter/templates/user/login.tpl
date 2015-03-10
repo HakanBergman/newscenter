@@ -3,6 +3,7 @@
     <div class="col-lg-12 container-padding-top-2">
       <form method="post" action="{'/user/login/'|ezurl('no', 'full')}" name="loginform">
 
+        {ezhttp()|attribute(show, 1)}
         {if $User:warning.bad_login}
           <div class="alert alert-danger" role="alert">
             <h2>{"Could not login"|i18n("design/ezdemo/user/login")}</h2>
