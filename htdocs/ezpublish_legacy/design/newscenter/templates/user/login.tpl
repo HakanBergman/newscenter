@@ -3,7 +3,6 @@
     <div class="col-lg-12 container-padding-top-2">
       <form method="post" action="{'/user/login/'|ezurl('no', 'full')}" name="loginform">
 
-        {ezhttp()|attribute(show, 1)}
         {if $User:warning.bad_login}
           <div class="alert alert-danger" role="alert">
             <h2>{"Could not login"|i18n("design/ezdemo/user/login")}</h2>
@@ -11,24 +10,6 @@
               <li>{"A valid username and password is required to login."|i18n("design/ezdemo/user/login")}</li>
             </ul>
           </div>
-        {else}
-          {if $User:warning.bad_login}
-            <div class="warning">
-              <h2>{"Could not login"|i18n("design/ezdemo/user/login")}</h2>
-              <ul>
-                <li>{"A valid username and password is required to login."|i18n("design/ezdemo/user/login")}</li>
-              </ul>
-            </div>
-          {else}
-            {if $site_access.allowed|not}
-              <div class="warning">
-                <h2>{"Access not allowed"|i18n("design/ezdemo/user/login")}</h2>
-                <ul>
-                  <li>{"You are not allowed to access %1."|i18n("design/ezdemo/user/login",,array($site_access.name))}</li>
-                </ul>
-              </div>
-            {/if}
-         {/if}
         {/if}
 
         {if ezini( 'Session', 'RememberMeTimeout' )}
