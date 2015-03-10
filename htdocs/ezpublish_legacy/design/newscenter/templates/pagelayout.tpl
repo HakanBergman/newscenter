@@ -76,6 +76,12 @@
 			{* Include Headers *}
 			{include uri='design:page_header.tpl'}
 
+			{def $user = fetch('user', 'current_user')}
+			  {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
+				{include uri="design:page_admin_sidebar.tpl" user=$user}
+			  {/if}
+			{undef $user}
+
 			{* Include Standard Zones *}
 			{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'sort_by', array('priority', true()) ))}
 			{if $zones}
