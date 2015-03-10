@@ -20,6 +20,7 @@
 		{* Page Styles *}
 		{def $pagestyle        = $pagedata.css_classes
 			 $locales          = fetch( 'content', 'translation_list' )
+			 $user			   = fetch('user', 'current_user')
 			 $current_node_id  = $pagedata.node_id
 			 $current_node	   = fetch('content', 'node', hash('node_id', $current_node_id))}
 
@@ -88,11 +89,9 @@
 			{/if}
 
 			{if and(is_set($object)|not, is_set($edit_version)|not)}
-				{def $user = fetch('user', 'current_user')}
-				  {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
+				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					{include uri="design:page_admin_sidebar.tpl" user=$user}
-				  {/if}
-				{undef $user}
+				{/if}
 			{/if}
 
 			{if and(is_set($object)|not, is_set($edit_version)|not)}
