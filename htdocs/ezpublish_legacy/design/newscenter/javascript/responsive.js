@@ -4,7 +4,7 @@
 
     function resize() {
         if ($window.width() < 514) {
-            return $html.addClass('mobile');
+            return $('#sidebar_admin').removeClass('absolute');
         }
 
         $html.removeClass('mobile');
