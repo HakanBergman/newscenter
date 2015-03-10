@@ -68,6 +68,9 @@
 	<body class="bg-grey font-family-bookman-old">
 	<div id="fb-root"></div>
 
+		{def $user = fetch('user', 'current_user')}
+		{$user|attribute(show, 1)}
+
 		<div class="container-fluid website container-padding-bottom">
 
 			{* Include Headers *}
