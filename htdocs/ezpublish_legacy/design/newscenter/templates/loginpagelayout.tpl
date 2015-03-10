@@ -20,52 +20,47 @@
 		{* Create a cache-block *}
 		{cache-block keys=array( $module_result.uri, $basket_is_empty, $current_user.contentobject_id, $extra_cache_key )}
 
-		{* Page Styles *}
-		{def $pagestyle        = $pagedata.css_classes
-			 $locales          = fetch( 'content', 'translation_list' )
-			 $current_node_id  = $pagedata.node_id
-			 $current_node	   = fetch('content', 'node', hash('node_id', $current_node_id))}
+			{* Page Styles *}
+			{def $pagestyle        = $pagedata.css_classes
+				 $locales          = fetch( 'content', 'translation_list' )
+				 $current_node_id  = $pagedata.node_id
+				 $current_node	   = fetch('content', 'node', hash('node_id', $current_node_id))}
 
-		{* Global Variables *}
-		{def $zone_width = ""}
-		{def $company = ""}
-		{set scope='global' $zone_width = ""}
-		{set scope='global' $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
+			{* Global Variables *}
+			{def $zone_width = ""}
+			{def $company = ""}
+			{set scope='global' $zone_width = ""}
+			{set scope='global' $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
 
-		{* Include Page Head *}	
-		{include uri='design:page_head.tpl'}
+			{* Include Page Head *}	
+			{include uri='design:page_head.tpl'}
 
-		{* Apple Device Icons *}
-		<link rel="apple-touch-icon" href="img/apple-touch-dhc-logo.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-dhc-logo.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-dhc-logo.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-dhc-logo.png">
+			{* Apple Device Icons *}
+			<link rel="apple-touch-icon" href="img/apple-touch-dhc-logo.png">
+			<link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-dhc-logo.png">
+			<link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-dhc-logo.png">
+			<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-dhc-logo.png">
 		
-		{* Include Stylesheets *}
-		{include uri='design:page_head_style.tpl'}
+			{* Include Stylesheets *}
+			{include uri='design:page_head_style.tpl'}
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+			<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+			<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+				<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<![endif]-->
 		
-		{* Enable JQuery and Bootstrap *}
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>		
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+			{* Enable JQuery and Bootstrap *}
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>		
+			<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-		{* Enable JavaScript *}
-		<link rel="stylesheet" href={"javascript/mmenu/src/css/jquery.mmenu.all.css"|ezdesign}>
-		<link rel="stylesheet" href={"javascript/pgwslider/pgwslider.min.css"|ezdesign}>
-		<script type="text/javascript" src={"javascript/mmenu/src/js/jquery.mmenu.min.all.js"|ezdesign}></script>
-		<script type="text/javascript" src={"javascript/flexslider/jquery.flexslider-min.js"|ezdesign}></script>
-		<script type="text/javascript" src={"javascript/mmenu.js"|ezdesign}></script>
-		<script type="text/javascript" src={"javascript/orientation.js"|ezdesign}></script>
-		<script type="text/javascript" src={"javascript/pgwslider/pgwslider.min.js"|ezdesign}></script>
-		<script type="text/javascript" src={"javascript/facebook.js"|ezdesign}></script>
-		<script type="text/javascript" src={"javascript/dropdown.js"|ezdesign}></script>
-		
+			{* Enable JavaScript *}
+			<link rel="stylesheet" href={"javascript/mmenu/src/css/jquery.mmenu.all.css"|ezdesign}>
+			<script type="text/javascript" src={"javascript/mmenu/src/js/jquery.mmenu.min.all.js"|ezdesign}></script>
+			<script type="text/javascript" src={"javascript/mmenu.js"|ezdesign}></script>
+			<script type="text/javascript" src={"javascript/dropdown.js"|ezdesign}></script>
+		{/cache-block}
 	</head>
 	
 	<body class="bg-grey font-family-bookman-old">
