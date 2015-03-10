@@ -69,7 +69,6 @@
 	</head>
 	
 	<body class="bg-grey font-family-bookman-old">
-	<div id="fb-root"></div>
 
 		<div class="container-fluid website container-padding-bottom">
 
