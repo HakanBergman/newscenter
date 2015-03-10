@@ -12,40 +12,40 @@
           </div>
         {/if}
 
+        {cache-block keys=$uri_string}
+          {if ezini( 'Session', 'RememberMeTimeout' )}
+          <div class="form-group">
+              <label class="checkbox-inline">
+                <input type="checkbox" tabindex="1" name="Cookie" />Kom ihåg mig
+              </label>
+            </div>
+          {/if}
 
-        {if ezini( 'Session', 'RememberMeTimeout' )}
-        <div class="form-group">
-            <label class="checkbox-inline">
-              <input type="checkbox" tabindex="1" name="Cookie" />Kom ihåg mig
-            </label>
+          <div class="form-group">
+            <label for="username">Användarnamn</label>
+            <input type="text" name="Login" class="form-control" id="username" placeholder="Användarnamn"></input>
           </div>
-        {/if}
 
-        <div class="form-group">
-          <label for="username">Användarnamn</label>
-          <input type="text" name="Login" class="form-control" id="username" placeholder="Användarnamn"></input>
-        </div>
-
-        <div class="form-group">
-          <label for="password">Lösenord</label>
-          <input type="password" name="Password" class="form-control" id="password" placeholder="Lösenord"></input>
-        </div>
+          <div class="form-group">
+            <label for="password">Lösenord</label>
+            <input type="password" name="Password" class="form-control" id="password" placeholder="Lösenord"></input>
+          </div>
 
 
-        <div class="form-group">
-          <label><a href="{'/user/forgotpassword'|ezurl('no', 'full')}" title="Glömt lösenord? Klicka här">Klicka här om du har glömt ditt lösenord.</a></label>
-        </div>
+          <div class="form-group">
+            <label><a href="{'/user/forgotpassword'|ezurl('no', 'full')}" title="Glömt lösenord? Klicka här">Klicka här om du har glömt ditt lösenord.</a></label>
+          </div>
 
-        <div class="form-group clear">
-          <div class="col-lg-12 no-padding">
-            <div class="pull-right">
-              <button class="btn btn-primary" type="submit" name="LoginButton">Logga in</button>
+          <div class="form-group clear">
+            <div class="col-lg-12 no-padding">
+              <div class="pull-right">
+                <button class="btn btn-primary" type="submit" name="LoginButton">Logga in</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <input type="hidden" name="RedirectURI" value="{$#company.url|ezurl('no', 'full')}" />
-        
+          <input type="hidden" name="RedirectURI" value="{$#company.url|ezurl('no', 'full')}" />
+        {/cache-block}
       </form>
     </div>
   </div>
