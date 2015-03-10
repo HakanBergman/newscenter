@@ -14,14 +14,14 @@
                     <div class="col-lg-12">
                       {switch match=$current_node.class_identifier}
                         {case match='website'}
-                          Webbsida
-                        {/case}
-                        {case}
                           <h2>Redigera Innehåll</h2>
-                          <div class="edit"><a href="" class="text-decoration-none" title="Redigera {$current_node.name|wash()}">Redigera {$current_node.name|wash()}</a></div>
+                          <div class="edit">
+                            <a href="{$current_node.url|ezurl('no', 'full')}" class="text-decoration-none" title="Redigera {$current_node.name|wash()}">Redigera {$current_node.name|wash()}</a>
+                          </div>
                         {/case}
                       {/switch}
                     </div>
+                    {*
                     <table class="table">
                         <tr>
                             <td>
@@ -148,6 +148,7 @@
                             </td>
                         </tr>
                     </table>
+                    *}
                 </div>
             </div>
         </div>
