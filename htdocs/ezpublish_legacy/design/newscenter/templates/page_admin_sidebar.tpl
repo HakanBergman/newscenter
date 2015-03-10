@@ -1,5 +1,5 @@
-﻿<div class="container-fluid">
-    <div class="row">
+﻿<div class="container-fluid" style="position: absolute; width: 100%;">
+
         <div class="col-lg-2 col-sm-2 col-md-2 col-xs-12">
             <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
@@ -142,5 +142,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
