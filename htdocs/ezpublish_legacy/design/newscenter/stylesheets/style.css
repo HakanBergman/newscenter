@@ -99,6 +99,10 @@ section .widget-margin-top { margin-top: 1em; }
 .container-padding-left-4 { padding-left: 4em; }
 .container-padding-right { padding-right: 1em; }
 
+/* Absolute Position */
+.absolute { position: absolute; }
+
+
 /* Float */
 .float-left { float: left; }
 .float-right { float: right; }
