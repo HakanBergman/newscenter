@@ -2,15 +2,16 @@
   <div class="container">
     <div class="col-lg-12 container-padding-top-2">
       <form method="post" action="{'/user/login/'|ezurl('no', 'full')}" name="loginform">
-
-        {if $User:warning.bad_login}
-          <div class="alert alert-danger" role="alert">
-            <h2>{"Could not login"|i18n("design/ezdemo/user/login")}</h2>
-            <ul>
-              <li>{"A valid username and password is required to login."|i18n("design/ezdemo/user/login")}</li>
-            </ul>
-          </div>
-        {/if}
+        {cache-block keys=$uri_string expiry=5}
+          {if $User:warning.bad_login}
+            <div class="alert alert-danger" role="alert">
+              <h2>{"Could not login"|i18n("design/ezdemo/user/login")}</h2>
+              <ul>
+                <li>{"A valid username and password is required to login."|i18n("design/ezdemo/user/login")}</li>
+              </ul>
+            </div>
+          {/if}
+       {/cache-block}
 
         {if ezini( 'Session', 'RememberMeTimeout' )}
         <div class="form-group">
