@@ -3,7 +3,7 @@
         $html = $('html');
 
     function resize() {
-        if ($window.width() < 1201) {
+        if ($window.width() < 1354) {
             return $('#sidebar_admin').removeClass('absolute');
         }
 
