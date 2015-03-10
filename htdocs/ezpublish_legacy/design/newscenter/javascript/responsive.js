@@ -1,7 +1,9 @@
 ﻿(function ($) {
     var $window = $(window),
         $html = $('html');
-    alert($window.width());
+    if ($window.width() < 1700) {
+        $('#sidebar_admin').removeClass('absolute').removeClass('col-lg-2').addClass('col-lg-12');
+    }
 
     function resize() {
         if ($window.width() < 1700) {
