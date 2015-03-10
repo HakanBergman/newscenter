@@ -1,6 +1,7 @@
 ﻿(function ($) {
     var $window = $(window),
         $html = $('html');
+    alert($window.width);
 
     function resize() {
         if ($window.width() < 1700) {
