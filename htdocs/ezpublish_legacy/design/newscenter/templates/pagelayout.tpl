@@ -70,18 +70,7 @@
 
 		{def $user = fetch('user', 'current_user')}
 			{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
-  <div class="container-fluid" style="position:absolute;">
-      <div class="row row-offcanvas row-offcanvas-left">
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>              
-            </ul>
-        </div>
-    </div>
-  </div>
+				{include uri="design:page_admin_sidebar.tpl" user=$user}
 			{/if}
 		{undef $user}
 
