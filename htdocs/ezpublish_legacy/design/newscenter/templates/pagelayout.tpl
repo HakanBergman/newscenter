@@ -70,8 +70,8 @@
 
 		{def $user = fetch('user', 'current_user')}
 		{$#company.node_id} {$user.contentobject.main_parent_node_id}
-		{$user.contentobject.current.parent_nodes|attribute(show, 1)}
-		{if and($user.is_logged_in, $user.contentobject.current.parent_nodes|contains($#company.node_id))}
+		{$user.contentobject.current.parent_nodes.0|attribute(show, 1)}
+		{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 			Matchar
 			{$user.contentobject|attribute(show, 1)}
 		{/if}
