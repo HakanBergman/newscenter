@@ -9,8 +9,15 @@
                     </a>
                 </h4>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse">
+            <div id="collapseOne" class="panel-collapse collapse in">
                 <div class="panel-body">
+                    <div class="col-lg-12">
+                      {switch match=$node.class_identifier}
+                        {case}
+                          Redigera detta
+                        {/case}
+                      {/switch}
+                    </div>
                     <table class="table">
                         <tr>
                             <td>
