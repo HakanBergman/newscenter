@@ -3,7 +3,7 @@
 
 	{* Print the Zone *}
 	<section id="section-{$zone.node_id}" class="container-padding-left container-padding-right">
-		<div class="{if $zone.data_map.fullscreen.value}container-fluid{else}container{/if}">
+		<div class="{if $zone.data_map.fullscreen.value}container-fluid{else}container container-padding-left-2 container-padding-right-2{/if}">
 			<div class="{$#zone_width} no-margin no-padding">
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id, 'sort_by', array('priority', true()) ))}
 				{if $blocks}

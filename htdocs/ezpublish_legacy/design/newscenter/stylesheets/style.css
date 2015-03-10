@@ -98,6 +98,7 @@ section .widget-margin-top { margin-top: 1em; }
 .container-padding-left-3 { padding-left: 3em; }
 .container-padding-left-4 { padding-left: 4em; }
 .container-padding-right { padding-right: 1em; }
+.container-padding-right-2 { padding-right: 2em; }
 
 /* Absolute Position */
 .absolute { position: absolute; }
