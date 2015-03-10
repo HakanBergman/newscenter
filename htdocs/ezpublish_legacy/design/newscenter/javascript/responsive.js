@@ -6,8 +6,7 @@
         if ($window.width() < 1700) {
             return $('#sidebar_admin').removeClass('absolute').removeClass('col-lg-2').addClass('col-lg-12');
         }
-
-        $html.removeClass('mobile');
+        $('#sidebar_admin').addClass('absolute').addClass('col-lg-2').removeClass('col-lg-12');
     }
 
     $window
