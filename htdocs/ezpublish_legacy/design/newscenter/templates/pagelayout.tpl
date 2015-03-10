@@ -79,11 +79,13 @@
 				{include uri='design:page_header.tpl'}
 			{/if}
 
-			{def $user = fetch('user', 'current_user')}
-			  {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
-				{include uri="design:page_admin_sidebar.tpl" user=$user}
-			  {/if}
-			{undef $user}
+			{if and(is_set($object)|not, is_set($edit_version)|not)}
+				{def $user = fetch('user', 'current_user')}
+				  {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
+					{include uri="design:page_admin_sidebar.tpl" user=$user}
+				  {/if}
+				{undef $user}
+			{/if}
 
 			{if and(is_set($object)|not, is_set($edit_version)|not)}
 				{* Include Standard Zones *}
