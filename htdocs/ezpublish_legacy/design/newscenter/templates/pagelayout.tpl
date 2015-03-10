@@ -69,6 +69,14 @@
 	<body class="bg-grey font-family-bookman-old">
 	<div id="fb-root"></div>
 
+	<nav class="navbar navbar-fixed-bottom {$#company.data_map.background_color_widget_basket.data_text}">
+		<div class="container-fluid nav-padding-top nav-padding-bottom {$#company.data_map.background_color_widget_basket.data_text} {$#company.data_map.link_color_widget_basket.data_text}">
+			<div class="container">
+				Admin meny
+			</div>
+		</div>
+	</nav>
+
 		<div class="container-fluid website container-padding-bottom">
 
 			{* Include Headers *}
