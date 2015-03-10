@@ -69,6 +69,32 @@
 	<body class="bg-grey font-family-bookman-old">
 	<div id="fb-root"></div>
 
+	
+
+
+<div id="mobile-navigation">
+	<div class="row">
+		<div class="col-xs-2 col-md-2">			
+			
+			<a href="#mmenu"><img alt="Site Navigation" id="menu-activate" src="img/icon-menu.svg"></a>
+		</div>
+		<div class="col-xs-7 col-md-8">
+			<h1 class="logo">
+				<span>Datadelen Hosting Center</span>
+				<a href="/"><img alt="Torslanda Tidning" src="http://www.tidningen.se/design/torslanda/images/logo_header.png"></a>
+			</h1>
+		</div>
+		<div class="col-xs-3 col-md-1" id="user">
+			
+			<a href="#user-mmenu"><img alt="User Navigation" id="menu-user-activate" cass="user" src="img/user-icon.png"></a>
+		</div>
+	</div>		
+</div>
+
+
+
+
+
 		<div class="container-fluid website container-padding-bottom">
 
 			{* Include Headers *}
