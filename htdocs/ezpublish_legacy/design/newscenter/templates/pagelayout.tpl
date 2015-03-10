@@ -69,7 +69,9 @@
 	<div id="fb-root"></div>
 
 		{def $user = fetch('user', 'current_user')}
-		{$user|attribute(show, 1)}
+		{if $user.is_logged_in}
+			{$user.contentobject|attribute(show, 1)}
+		{/if}
 
 		<div class="container-fluid website container-padding-bottom">
 
