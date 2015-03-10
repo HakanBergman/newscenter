@@ -14,7 +14,8 @@
                     <div class="col-lg-12">
                       {switch match=$node.class_identifier}
                         {case}
-                          Redigera detta
+                          <h2>Redigera Innehåll</h2>
+                          <div class="edit"><a href="">Redigera {$node.name|wash()}</a></div>
                         {/case}
                       {/switch}
                     </div>
