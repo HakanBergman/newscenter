@@ -17,9 +17,6 @@
 			 $inner_column_size = $pagedata.inner_column_size
 			 $outer_column_size = $pagedata.outer_column_size}
 
-		{* Create a cache-block *}
-		{cache-block keys=array( $module_result.uri, $basket_is_empty, $current_user.contentobject_id, $extra_cache_key )}
-
 		{* Page Styles *}
 		{def $pagestyle        = $pagedata.css_classes
 			 $locales          = fetch( 'content', 'translation_list' )
