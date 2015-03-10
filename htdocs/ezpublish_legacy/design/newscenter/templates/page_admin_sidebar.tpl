@@ -1,4 +1,4 @@
-﻿<div class="col-lg-1 col-md-12 col-sm-12 col-xs-12 absolute container-padding-top-2" id="sidebar_admin">
+﻿<div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 absolute container-padding-top-2" id="sidebar_admin">
     <div class="panel-group" id="accordion">
         <div class="panel panel-default">
             <div class="panel-heading">
