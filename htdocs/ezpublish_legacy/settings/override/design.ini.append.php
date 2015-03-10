@@ -13,6 +13,7 @@ CSSFileList[]=link-colors.css
 CSSFileList[]=borders.css
 CSSFileList[]=orientation.css
 CSSFileList[]=homescreen.css
+CSSFileList[]=edit.css
 CSSFileList[]=yamm/yamm.css
 CSSFileList[]=flag-icon-css/css/flag-icon.min.css
 CSSFileList[]=widget/input/widget-select.css
