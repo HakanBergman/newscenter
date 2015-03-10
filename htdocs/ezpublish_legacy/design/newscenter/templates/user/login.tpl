@@ -3,10 +3,8 @@
     <div class="col-lg-12 container-padding-top-2">
       <form method="post" action="{'/user/login/'|ezurl('no', 'full')}" name="loginform">
 
-        {def $user = fetch( 'user', 'current_user' )}
-        {$user|attribute(show, 1)}
         {if $User:warning.bad_login}
-        <div class="warning">
+          <div class="alert alert-danger" role="alert">
             <h2>{"Could not login"|i18n("design/ezdemo/user/login")}</h2>
             <ul>
               <li>{"A valid username and password is required to login."|i18n("design/ezdemo/user/login")}</li>
@@ -63,7 +61,7 @@
           </div>
         </div>
 
-        <input type="hidden" name="RedirectURI" value="{$User:redirect_uri|wash}" />
+        <input type="hidden" name="RedirectURI" value="/" />
         
       </form>
     </div>
