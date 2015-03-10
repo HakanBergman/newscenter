@@ -91,6 +91,112 @@
 	</div>		
 </div>
 
+<div id="mobile-navigation">
+	<div class="row">
+		<div class="col-xs-2 col-md-2">			
+			<nav id="mmenu">
+				<ul class="menu">
+					<li>
+						<a href="http://addiva.se/sv/om-oss/"><span>Om oss</span></a>
+						<ul>
+							<li><a href="http://addiva.se/sv/om-oss/##intro">#Intro</a></li>	
+							<li><a href="http://addiva.se/sv/om-oss/#vilka-vi-ar">Vilka vi är</a></li>	
+							<li><a href="http://addiva.se/sv/om-oss/##vision">#Vision</a></li>	
+							<li><a href="http://addiva.se/sv/om-oss/#kultur">Kultur</a></li>	
+						</ul>
+					</li>
+					<li>
+						<a href="http://addiva.se/sv/atagande/"><span>Erbjudande</span></a>
+						<ul>
+							<li><a href="http://addiva.se/sv/atagande/##intro">#intro</a></li>	
+							<li><a href="http://addiva.se/sv/atagande/#teknik">Teknik</a></li>	
+							<li><a href="http://addiva.se/sv/atagande/#management">Management</a></li>	
+							<li><a href="http://addiva.se/sv/atagande/#produktforvaltning">Produktförvaltning</a></li>	
+						</ul>
+					</li>
+					<li>
+						<a href="http://addiva.se/sv/kontakt/"><span>Kontakta oss</span></a>
+						<ul>
+							<li><a href="http://addiva.se/sv/kontakt/#kontor">Kontor</a></li>	
+							<li><a href="http://addiva.se/sv/kontakt/#saljare">Säljare</a></li>	
+						</ul>
+					</li>
+					<li>
+						<a href="http://addiva.se/sv/karriar/"><span>Karriär</span></a>
+						<ul>
+							<li><a href="http://addiva.se/sv/karriar/##vill-du-vara-med-i-teamet?">#Vill du vara med i teamet?</a></li>	
+							<li><a href="http://addiva.se/sv/karriar/#ansok">Ansök</a></li>	
+							<li><a href="http://addiva.se/sv/karriar/#annonser">Annonser</a></li>	
+						</ul>
+					</li>
+					<li>
+						<a href="http://addiva.se/sv/production/"><span>Addiva Production</span></a>
+						<ul>
+							<li><a href="http://addiva.se/sv/production/#addiva-production">Addiva Production </a></li>	
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<a href="#mmenu"><img alt="Site Navigation" id="menu-activate" src="img/icon-menu.svg"></a>
+		</div>
+		<div class="col-xs-7 col-md-8">
+			<h1 class="logo">
+				<span>Datadelen Hosting Center</span>
+				<a href="/"><img alt="Torslanda Tidning" src="http://www.tidningen.se/design/torslanda/images/logo_header.png"></a>
+			</h1>
+		</div>
+		<div class="col-xs-3 col-md-1" id="user">
+			<nav id="user-mmenu">
+				<ul class="menu">
+					<li>
+						<a href="http://addiva.se/sv/om-oss/"><span>Om oss2</span></a>
+						<ul>
+							<li><a href="http://addiva.se/sv/om-oss/##intro">#Intro</a></li>	
+							<li><a href="http://addiva.se/sv/om-oss/#vilka-vi-ar">Vilka vi är</a></li>	
+							<li><a href="http://addiva.se/sv/om-oss/##vision">#Vision</a></li>	
+							<li><a href="http://addiva.se/sv/om-oss/#kultur">Kultur</a></li>	
+						</ul>
+					</li>
+					<li>
+						<a href="http://addiva.se/sv/atagande/"><span>Erbjudande</span></a>
+						<ul>
+							<li><a href="http://addiva.se/sv/atagande/##intro">#intro</a></li>	
+							<li><a href="http://addiva.se/sv/atagande/#teknik">Teknik</a></li>	
+							<li><a href="http://addiva.se/sv/atagande/#management">Management</a></li>	
+							<li><a href="http://addiva.se/sv/atagande/#produktforvaltning">Produktförvaltning</a></li>	
+						</ul>
+					</li>
+					<li>
+						<a href="http://addiva.se/sv/kontakt/"><span>Kontakta oss</span></a>
+						<ul>
+							<li><a href="http://addiva.se/sv/kontakt/#kontor">Kontor</a></li>	
+							<li><a href="http://addiva.se/sv/kontakt/#saljare">Säljare</a></li>	
+						</ul>
+					</li>
+					<li>
+						<a href="http://addiva.se/sv/karriar/"><span>Karriär</span></a>
+						<ul>
+							<li><a href="http://addiva.se/sv/karriar/#vill-du-vara-med-i-teamet?">#Vill du vara med i teamet?</a></li>	
+							<li><a href="http://addiva.se/sv/karriar/#ansok">Ansök</a></li>	
+							<li><a href="http://addiva.se/sv/karriar/#annonser">Annonser</a></li>	
+						</ul>
+					</li>
+					<li>
+						<a href="http://addiva.se/sv/production/"><span>Addiva Production</span></a>
+						<ul>
+							<li><a href="http://addiva.se/sv/production/#addiva-production">Addiva Production </a></li>	
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<a href="#user-mmenu"><img alt="User Navigation" id="menu-user-activate" cass="user" src="img/user-icon.png"></a>
+		</div>
+	</div>		
+</div>
+
+		
+
+
 
 
 
