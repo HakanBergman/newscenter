@@ -70,14 +70,14 @@
 	<div id="fb-root"></div>
 
 	<nav class="navbar navbar-fixed-top">
-		<div class="container-fluid nav-padding-top nav-padding-bottom {$#company.data_map.background_color_widget_basket.data_text} {$#company.data_map.link_color_widget_basket.data_text}">
+		<div class="container-fluid nav-padding-top nav-padding-bottom">
 			<div class="container">
 				Admin meny
 			</div>
 		</div>
 	</nav>
 
-		<div class="container-fluid website container-padding-bottom">
+		<div class="container-fluid website container-padding-bottom{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))} container-padding-top-3{/if}">
 
 			{* Include Headers *}
 			{*include uri='design:newscenter/widget/cookies/widget_cookie.tpl'*}
