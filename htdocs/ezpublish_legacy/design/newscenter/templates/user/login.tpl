@@ -1,3 +1,38 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="col-lg-12">
+      <form method="post" action="{'/user/login/'|ezurl('no', 'full')}" name="loginform">
+        {if ezini( 'Session', 'RememberMeTimeout' )}
+        <div class="block">
+          <input type="checkbox" tabindex="1" name="Cookie" id="id4" />
+          <label for="id4" style="display:inline;">{"Remember me"|i18n("design/ezdemo/user/login")}</label>
+        </div>
+        {/if}
+        
+   <div class="block">
+        <label for="id1">{"Username"|i18n("design/ezdemo/user/login",'User name')}</label>
+        <div class="labelbreak"></div>
+        <input class="halfbox" type="text" size="10" name="Login" id="id1" value="{$User:login|wash}" tabindex="1" />
+      </div>
+
+      <div class="block">
+        <label for="id2">{"Password"|i18n("design/ezdemo/user/login")}</label>
+        <div class="labelbreak"></div>
+        <input class="halfbox" type="password" size="10" name="Password" id="id2" value="" tabindex="1" />
+      </div>     
+        
+        {if ezini( 'SiteSettings', 'LoginPage' )|eq( 'custom' )}
+        <p>
+          <a href={'/user/forgotpassword'|ezurl=''}>{'Forgot your password?'|i18n( 'design/ezdemo/user/login' )}</a>
+        </p>
+        {/if}
+        <input class="defaultbutton" type="submit" name="LoginButton" value="{'Login'|i18n('design/ezdemo/user/login','Button')}" tabindex="1" />
+        <input type="hidden" name="RedirectURI" value="{$User:redirect_uri|wash}" />
+      </form>
+    </div>
+  </div>
+</div>
+
 <div class="user-login">
 
 <form method="post" action={"/user/login/"|ezurl} name="loginform">
