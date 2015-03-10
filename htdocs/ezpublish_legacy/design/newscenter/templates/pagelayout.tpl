@@ -69,7 +69,8 @@
 	<div id="fb-root"></div>
 
 		{def $user = fetch('user', 'current_user')}
-		{if and($user.is_logged_in, $user.contentobject.main_parent_node_id|eq($#company))}
+		{$#company.node_id} {$user.contentobject.main_parent_node_id}
+		{if and($user.is_logged_in, $user.contentobject.main_parent_node_id|eq($#company.node_id))}
 			Matchar
 			{$user.contentobject|attribute(show, 1)}
 		{/if}
