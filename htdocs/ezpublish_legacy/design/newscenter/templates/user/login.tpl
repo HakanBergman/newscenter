@@ -27,7 +27,7 @@
         </div>
 
         <div class="form-group clear">
-          <div class="col-lg-12 no-padding container-padding-top-2">
+          <div class="col-lg-12 no-padding">
             <div class="pull-right">
               <button class="btn btn-primary" type="submit" name="LoginButton">Logga in</button>
             </div>
