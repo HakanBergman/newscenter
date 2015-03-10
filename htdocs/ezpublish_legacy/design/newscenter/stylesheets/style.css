@@ -126,5 +126,5 @@ ul.submenu { position: absolute; z-index: 1000; float: left; list-style: none; t
 .clear { clear: both; }
 
 /* Remove underline */
-.text-decoration-none { text-decoration: none !important; }
-.text-decoration-none:hover { text-decoration: none !important; }
+a.text-decoration-none { text-decoration: none !important; }
+a.text-decoration-none:hover { text-decoration: none !important; }
