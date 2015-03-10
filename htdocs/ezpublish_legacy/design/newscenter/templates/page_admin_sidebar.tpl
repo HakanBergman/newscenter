@@ -15,7 +15,7 @@
                       {switch match=$node.class_identifier}
                         {case}
                           <h2 class="bottom-border-solid-black">Redigera Innehåll</h2>
-                          <div class="bottom-border-solid-black edit"><a href="">Redigera {$node.name|wash()}</a></div>
+                          <div class="bottom-border-solid-black edit"><a href="">Redigera {$current_node.name|wash()}</a></div>
                         {/case}
                       {/switch}
                     </div>
