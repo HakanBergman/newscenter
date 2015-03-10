@@ -1,11 +1,10 @@
 <div class="container-fluid">
   <div class="container">
-    <div class="col-lg-12 conatainer-padding-top-2">
+    <div class="col-lg-12 container-padding-top-2">
       <form method="post" action="{'/user/login/'|ezurl('no', 'full')}" name="loginform">
 
         {if ezini( 'Session', 'RememberMeTimeout' )}
           <div class="form-group">
-            <label for="sel1">Välj mottagare</label>
             <label class="checkbox-inline">
               <input type="checkbox" tabindex="1" name="Cookie" />Kom ihåg mig
             </label>
