@@ -71,24 +71,20 @@
 	<div id="fb-root"></div>
 
 	<nav class="navbar navbar-fixed-top">
-		<div class="container-fluid nav-padding-top nav-padding-bottom">
-			<div class="container">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 id="sidebar_admin">
-					<div class="panel-group" id="accordion">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="text-decoration-none">
-										<span class="glyphicon glyphicon-folder-close"></span>
-										<span class="content-padding-left">Innehåll</span>
-									</a>
-								</h4>
-							</div>
-						</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 id="sidebar_admin">
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="text-decoration-none">
+								<span class="glyphicon glyphicon-folder-close"></span>
+								<span class="content-padding-left">InnehÃ¥ll</span>
+							</a>
+						</h4>
 					</div>
-				</div>																			
+				</div>
 			</div>
-		</div>
+		</div>																			
 	</nav>
 
 		<div class="container-fluid website container-padding-bottom{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))} container-padding-top-3{/if}">
