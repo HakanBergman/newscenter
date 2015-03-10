@@ -3,7 +3,7 @@
         $html = $('html');
 
     function resize() {
-        if ($window.width() < 1450) {
+        if ($window.width() < 1700) {
             return $('#sidebar_admin').removeClass('absolute').removeClass('col-lg-2').addClass('col-lg-12');
         }
 
