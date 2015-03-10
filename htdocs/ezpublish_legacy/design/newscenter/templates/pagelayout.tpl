@@ -74,13 +74,10 @@
 			{* Include Headers *}
 			{*include uri='design:newscenter/widget/cookies/widget_cookie.tpl'*}
 
-			{* Include Headers *}
-			{include uri='design:page_header.tpl'}
-
-			{$object} <-> {$node} 
-
-			{$object|attribute(show, 1)}
-			{$edit_version}
+			{if and(is_set($object)|not, is_set($edit_version)|not)}
+				{* Include Headers *}
+				{include uri='design:page_header.tpl'}
+			{/if}
 
 			{def $user = fetch('user', 'current_user')}
 			  {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
@@ -88,41 +85,45 @@
 			  {/if}
 			{undef $user}
 
-			{* Include Standard Zones *}
-			{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'sort_by', array('priority', true()) ))}
-			{if $zones}
-				{foreach $zones as $zone}
-					{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-				{/foreach}
+			{if and(is_set($object)|not, is_set($edit_version)|not)}
+				{* Include Standard Zones *}
+				{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'sort_by', array('priority', true()) ))}
+				{if $zones}
+					{foreach $zones as $zone}
+						{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+					{/foreach}
+				{/if}
+			{/if}
+			{$module_result.content}
+		</div>
+
+		{if and(is_set($object)|not, is_set($edit_version)|not)}
+
+			<div class="container-fluid {$#company.data_map.background_color_footer.data_text} nav-padding-bottom-4">
+				<div class="container">
+					<footer class="{$#company.data_map.link_color_menu_mouseover.data_text} {$#company.data_map.link_color_menu.data_text} container-padding-top">
+						{* Include Footer Zone *}
+						{def $zones = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone_footer')))}
+						{if $zones}
+							{foreach $zones as $zone}
+								{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+							{/foreach}
+						{/if}
+						<div class="bg-granate">&nbsp;</div>
+						<div class="col-lg-12 nav-padding-bottom-4">
+							<span class="pull-left {$#company.data_map.text_color_footer.data_text}">{'&copy; Copyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} {$#company.name|wash()}</span>
+							<span class="pull-right"><span class="{$#company.data_map.text_color_footer.data_text}">{$#company.data_map.company_address.data_text}, {$#company.data_map.zipcode.data_text} {$#company.data_map.city.data_text}</span> | <span class="{$#company.data_map.text_color_footer.data_text}">Tel:</span> <a href="tel:086462600">{$#company.data_map.phone.data_text}</a> | <span class="{$#company.data_map.text_color_footer.data_text}">E-postadress:</span> <a href="mailto:{$#company.data_map.email.data_text}">{$#company.data_map.email.data_text}</a></span>
+						</div>
+					</footer>
+				</div>
+			</div>
+
+			{* Check if webshop is active *}
+			{if $#company.data_map.webshop_active.value}
+				{* Include Basket *}
+				{include uri="design:newscenter/widget/webshop/basket.tpl"}
 			{/if}
 
-			{$module_result.content}
-
-		</div>
-
-		<div class="container-fluid {$#company.data_map.background_color_footer.data_text} nav-padding-bottom-4">
-			<div class="container">
-				<footer class="{$#company.data_map.link_color_menu_mouseover.data_text} {$#company.data_map.link_color_menu.data_text} container-padding-top">
-					{* Include Footer Zone *}
-					{def $zones = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone_footer')))}
-					{if $zones}
-						{foreach $zones as $zone}
-							{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-						{/foreach}
-					{/if}
-					<div class="bg-granate">&nbsp;</div>
-					<div class="col-lg-12 nav-padding-bottom-4">
-						<span class="pull-left {$#company.data_map.text_color_footer.data_text}">{'&copy; Copyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} {$#company.name|wash()}</span>
-						<span class="pull-right"><span class="{$#company.data_map.text_color_footer.data_text}">{$#company.data_map.company_address.data_text}, {$#company.data_map.zipcode.data_text} {$#company.data_map.city.data_text}</span> | <span class="{$#company.data_map.text_color_footer.data_text}">Tel:</span> <a href="tel:086462600">{$#company.data_map.phone.data_text}</a> | <span class="{$#company.data_map.text_color_footer.data_text}">E-postadress:</span> <a href="mailto:{$#company.data_map.email.data_text}">{$#company.data_map.email.data_text}</a></span>
-					</div>
-				</footer>
-			</div>
-		</div>
-
-		{* Check if webshop is active *}
-		{if $#company.data_map.webshop_active.value}
-			{* Include Basket *}
-			{include uri="design:newscenter/widget/webshop/basket.tpl"}
 		{/if}
 
 	</body>
