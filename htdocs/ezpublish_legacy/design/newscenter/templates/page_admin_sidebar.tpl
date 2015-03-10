@@ -12,10 +12,13 @@
             <div id="collapseOne" class="panel-collapse collapse in">
                 <div class="panel-body">
                     <div class="col-lg-12">
-                      {switch match=$node.class_identifier}
+                      {switch match=$current_node.class_identifier}
+                        {case match='website'}
+                          Webbsida
+                        {/case}
                         {case}
                           <h2>Redigera Innehåll</h2>
-                          <div class="edit"><a href="">Redigera {$current_node.name|wash()}</a></div>
+                          <div class="edit"><a href="" class="text-decoration-none" title="Redigera {$current_node.name|wash()}">Redigera {$current_node.name|wash()}</a></div>
                         {/case}
                       {/switch}
                     </div>
