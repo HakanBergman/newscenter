@@ -44,7 +44,7 @@
           </div>
         </div>
 
-        <input type="hidden" name="RedirectURI" value="/" />
+        <input type="hidden" name="RedirectURI" value="{$#company.url|ezurl('no', 'full')}" />
         
       </form>
     </div>
