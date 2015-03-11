@@ -1,16 +1,13 @@
-﻿/* Admin Sidebar Resize */
+﻿/* Admin Bar Resize */
 $(document).ready(function () {
     var $window = $(window);
 
-    /* Make Sidebar Visible */
-    $('#sidebar_admin').removeClass('hide');
-
-    /* Responsive Sidebar */
+    /* Responsive Bar */
     function resize() {
         if ($window.width() < 991) {
             return $('#admin_sidebar_dhc').removeClass('absolute');
         }
-        $('#sidebar_admin').addClass('absolute').addClass('col-lg-2').removeClass('col-lg-12');
+        $('#admin_sidebar_dhc').addClass('absolute');
     }
 
     $window
