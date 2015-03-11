@@ -71,11 +71,11 @@
 	<div id="fb-root"></div>
 
 	<nav class="navbar navbar-fixed-top min-height-none bg-white thumbnail">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding no-margin">
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-padding no-margin container-padding-left">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-padding no-margin container-padding-left-2">
 				<a href="http://www.datadelenhc.se" title="Datadelen Hosting Center" target="_blank"><img src="{'dhc_298x151.png'|ezimage('no')}" class="img-responsive max-width-3-em-important float-left" /></a>
-				<div class="col-lg-12 thumbnail no-margin no-padding container-margin-top-2 left-none bg-white absolute">
-					<div class="edit container-padding-left">
+				<div class="col-lg-12 thumbnail no-margin no-padding container-margin-top-108 left-none bg-white absolute">
+					<div class="edit container-padding-left-2">
 						<span class="glyphicon glyphicon-pencil text-primary"></span> <a href="http://www.datadelenhc.se/Om-oss" class="text-decoration-none container-padding-left" title="Om Datadelen Hosting Center" target="_blank">Om Datadelen Hosting Center</a>
                     </div>
 				</div>
