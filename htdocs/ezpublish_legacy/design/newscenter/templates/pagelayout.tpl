@@ -74,7 +74,7 @@
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding no-margin">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-padding no-margin container-padding-left">
 				<a href="http://www.datadelenhc.se" title="Datadelen Hosting Center" target="_blank"><img src="{'dhc_298x151.png'|ezimage('no')}" class="img-responsive max-width-3-em-important float-left" /></a>
-				<div class="col-lg-12 no-margin no-padding bg-white absolute">
+				<div class="col-lg-12 no-margin no-padding container-margin-top left-none bg-white absolute">
 					<div class="edit">
 						<span class="glyphicon glyphicon-pencil text-primary"></span> <a href="http://www.datadelenhc.se/Om-oss" class="text-decoration-none container-padding-left" title="Om Datadelen Hosting Center" target="_blank">Om Datadelen Hosting Center</a>
                     </div>
