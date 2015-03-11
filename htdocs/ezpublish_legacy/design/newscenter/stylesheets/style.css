@@ -22,6 +22,7 @@ section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 .min-height-50-vmin { min-height: 50vmin; }
 .min-height-23 { min-height: 23em; }
 .min-height-108 { min-height: 1.8em; }
+.min-height-8-em { min-height: 8em; }
 .min-height-none { min-height: 0; }
 
 /* Height */
@@ -101,6 +102,7 @@ section .widget-margin-top { margin-top: 1em; }
 .container-padding-top-2 { padding-top: 2em; }
 .container-padding-top-3 { padding-top: 3em; }
 .container-padding-bottom { padding-bottom: 1em; }
+.container-padding-bottom-05 { padding-bottom: 0.5em; }
 .container-padding-left { padding-left: 1em; }
 .container-padding-left-2 { padding-left: 2em; }
 .container-padding-left-3 { padding-left: 3em; }
