@@ -85,7 +85,6 @@
 						<span class="glyphicon glyphicon-question-sign text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Dokumentation</a>
                     </div>
 				</div>
-				<hr class="no-margin no-padding hide">
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
 				<div class="min-height-108"><span class="glyphicon glyphicon-info-sign text-primary"></span> {$#company.name|wash()}</div>
