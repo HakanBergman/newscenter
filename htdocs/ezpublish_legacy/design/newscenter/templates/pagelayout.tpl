@@ -70,7 +70,7 @@
 	<body class="bg-grey font-family-bookman-old">
 	<div id="fb-root"></div>
 
-	<nav class="navbar navbar-fixed-top bg-white thumbnail">
+	<nav class="navbar navbar-fixed-top min-height-none bg-white thumbnail">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding no-margin">
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 				DHC LOGGA
@@ -78,7 +78,7 @@
 		</div>																			
 	</nav>
 
-		<div class="container-fluid website container-padding-bottom{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))} container-padding-top-3{/if}">
+		<div class="container-fluid website container-padding-bottom{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))} container-padding-top-2{/if}">
 
 			{* Include Headers *}
 			{*include uri='design:newscenter/widget/cookies/widget_cookie.tpl'*}
