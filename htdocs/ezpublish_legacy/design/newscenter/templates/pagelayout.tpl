@@ -73,7 +73,7 @@
 	<nav class="navbar navbar-fixed-top min-height-none bg-white thumbnail">
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-padding no-margin container-padding-left-2">
-				<hr class="no-margin no-padding container-padding-top" />
+				<img src="{'dhc_298x151.png'|ezimage('no')}" class="img-responsive max-width-3-em-important float-left" />
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding container-margin-top-108 left-none bg-white absolute">
 					<div class="edit container-padding-left-2">
 						<span class="glyphicon glyphicon-home text-primary"></span> <a href="http://www.datadelenhc.se" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Datadelen Hosting Center</a>
