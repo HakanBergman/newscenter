@@ -1,5 +1,5 @@
 ﻿{if and(is_set($object)|not, is_set($edit_version)|not)}
-	{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
+	{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
 		<nav class="navbar navbar-fixed-top min-height-none bg-white thumbnail no-margin no-padding container-padding-top-05 container-padding-bottom-02">
 			<div class="row no-margin no-padding">
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 no-padding no-margin container-padding-left-2">

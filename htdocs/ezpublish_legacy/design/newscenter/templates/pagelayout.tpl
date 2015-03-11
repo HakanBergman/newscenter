@@ -72,7 +72,7 @@
 	<div id="fb-root"></div>
 
 		{* Include Admin Bar *}
-		{include uri="design:page_admin_bar.tpl"}
+		{include uri="design:page_admin_bar.tpl" object=$object edit_version=$edit_version user=$user company=$#company}
 
 		<div class="container-fluid website container-padding-bottom{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))} container-padding-top-105{/if}">
 
