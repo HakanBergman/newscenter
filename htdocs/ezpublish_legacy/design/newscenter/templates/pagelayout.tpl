@@ -70,75 +70,79 @@
 	<body class="bg-grey font-family-bookman-old">
 	<div id="fb-root"></div>
 
-	<nav class="navbar navbar-fixed-top min-height-none bg-white thumbnail">
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 no-padding no-margin container-padding-left-2">
-				<img src="{'dhc_298x151.png'|ezimage('no')}" class="img-responsive max-width-3-em-important float-left" />
-				<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding container-margin-top-3 left-none bg-white absolute min-height-8-em" id="admin_sidebar_dhc">
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-home text-primary"></span> <a href="http://www.datadelenhc.se" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Datadelen Hosting Center</a>
-                    </div>
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-cloud text-primary"></span> <a href="http://webbcenter.datadelenhc.se/" class="text-decoration-none container-padding-left" title="Datadelen Webb Center" target="_blank">Datadelen Webb Center</a>
-                    </div>
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-question-sign text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Dokumentation</a>
-                    </div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
-				<div class="min-height-108"><span class="glyphicon glyphicon-info-sign text-color-black"></span> {$#company.name|wash()}</div>				
-				<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-8-em">
-					<hr class="no-margin no-padding container-padding-top" />
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-cog text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Sajtinställningar</a>
-					</div>
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-user text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Användarkonton</a>
-					</div>
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-tasks text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Widgets</a>
+{if and(is_set($object)|not, is_set($edit_version)|not)}
+	{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
+		<nav class="navbar navbar-fixed-top min-height-none bg-white thumbnail">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 no-padding no-margin container-padding-left-2">
+					<img src="{'dhc_298x151.png'|ezimage('no')}" class="img-responsive max-width-3-em-important float-left" />
+					<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding container-margin-top-3 left-none bg-white absolute min-height-8-em" id="admin_sidebar_dhc">
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-home text-primary"></span> <a href="http://www.datadelenhc.se" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Datadelen Hosting Center</a>
+						</div>
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-cloud text-primary"></span> <a href="http://webbcenter.datadelenhc.se/" class="text-decoration-none container-padding-left" title="Datadelen Webb Center" target="_blank">Datadelen Webb Center</a>
+						</div>
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-question-sign text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Dokumentation</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
-				<div class="min-height-108"><span class="glyphicon glyphicon-plus text-color-black"></span> Skapa ny</div>				
-				<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-8-em">
-					<hr class="no-margin no-padding container-padding-top" />
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Kontaktlista</a>
-					</div>
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Nyhetslista</a>
-					</div>
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Produktkatalog</a>
-					</div>
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Webbsida</a>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
+					<div class="min-height-108"><span class="glyphicon glyphicon-info-sign text-color-black"></span> {$#company.name|wash()}</div>				
+					<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-8-em">
+						<hr class="no-margin no-padding container-padding-top" />
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-cog text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Sajtinställningar</a>
+						</div>
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-user text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Användarkonton</a>
+						</div>
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-tasks text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Widgets</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
-				<div class="min-height-108"><span class="glyphicon glyphicon-user text-color-black"></span> {$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()} <a href="#" class="toggle text-color-black"><span class="glyphicon glyphicon-option-horizontal float-right container-padding-right-3"></span></a></div>				
-				<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-8-em">
-					<hr class="no-margin no-padding container-padding-top" />
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Kontaktlista</a>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
+					<div class="min-height-108"><span class="glyphicon glyphicon-plus text-color-black"></span> Skapa ny</div>				
+					<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-8-em">
+						<hr class="no-margin no-padding container-padding-top" />
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Kontaktlista</a>
+						</div>
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Nyhetslista</a>
+						</div>
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Produktkatalog</a>
+						</div>
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Webbsida</a>
+						</div>
 					</div>
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Nyhetslista</a>
-					</div>
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Produktkatalog</a>
-					</div>
-					<div class="edit container-padding-left-2 container-padding-top-05">
-						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Webbsida</a>
-					</div>
-				</div>				
-			</div>
-		</div>																			
-	</nav>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
+					<div class="min-height-108"><span class="glyphicon glyphicon-user text-color-black"></span> {$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()} <a href="#" class="toggle text-color-black"><span class="glyphicon glyphicon-option-horizontal float-right container-padding-right-3"></span></a></div>				
+					<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-8-em">
+						<hr class="no-margin no-padding container-padding-top" />
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Kontaktlista</a>
+						</div>
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Nyhetslista</a>
+						</div>
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Produktkatalog</a>
+						</div>
+						<div class="edit container-padding-left-2 container-padding-top-05">
+							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Webbsida</a>
+						</div>
+					</div>				
+				</div>
+			</div>																			
+		</nav>
+	{/if}
+{/if}
 
 		<div class="container-fluid website container-padding-bottom{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))} container-padding-top-2{/if}">
 
