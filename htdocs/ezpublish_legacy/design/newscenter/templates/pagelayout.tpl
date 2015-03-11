@@ -90,7 +90,29 @@
 				<div class="min-height-108">{$#company.name|wash()}</div>
 				<div class="col-lg-12 thumbnail no-margin no-padding left-none bg-white absolute">
 					<div class="edit container-padding-left-2">
-						<span class="glyphicon glyphicon-pencil text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Dokumentation</a>
+						<span class="glyphicon glyphicon-cog text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Sajtinställningar</a>
+					</div>
+					<div class="edit container-padding-left-2">
+						<span class="glyphicon glyphicon-pencil text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Sajtinställningar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-padding no-margin container-padding-left-2">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-padding no-margin container-padding-left-2">
+				<span class="glyphicon glyphicon-cog text-primary"></span> Nytt
+				<div class="col-lg-12 thumbnail no-margin no-padding container-margin-top-108 left-none bg-white absolute">
+					<div class="edit container-padding-left-2">
+						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Kontaktlista</a>
+					</div>
+					<div class="edit container-padding-left-2">
+						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Nyhetslista</a>
+					</div>
+					<div class="edit container-padding-left-2">
+						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Produktkatalog</a>
+					</div>
+					<div class="edit container-padding-left-2">
+						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Webbsida</a>
 					</div>
 				</div>
 			</div>
