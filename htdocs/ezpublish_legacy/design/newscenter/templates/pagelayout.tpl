@@ -122,7 +122,11 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
-					<div class="min-height-108"><span class="glyphicon glyphicon-user text-color-black"></span> {$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()} <a href="#" class="toggle text-color-black"><span class="glyphicon glyphicon-option-horizontal float-right container-padding-right-3"></span></a></div>				
+					<div class="min-height-108">
+						<span class="glyphicon glyphicon-user text-color-black"></span>
+						{$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()}
+						<a href="#" class="toggle text-color-black"><span class="glyphicon glyphicon-menu-hamburger float-right container-padding-right-3"></span></a>
+					</div>				
 					<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-8-em">
 						<hr class="no-margin no-padding container-padding-top" />
 						<div class="edit container-padding-left-2 container-padding-top-05">
