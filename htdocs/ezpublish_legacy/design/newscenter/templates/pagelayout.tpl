@@ -116,6 +116,7 @@
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-padding no-margin container-padding-left-2">
 				<div class="min-height-108"><span class="glyphicon glyphicon-user text-primary"></span> {$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()}</div>
+				<hr />
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute">
 					<div class="edit container-padding-left-2">
 						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Kontaktlista</a>
