@@ -144,7 +144,7 @@
 	{/if}
 {/if}
 
-		<div class="container-fluid website container-padding-bottom{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))} container-padding-top-2{/if}">
+		<div class="container-fluid website container-padding-bottom{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))} container-padding-top-205{/if}">
 
 			{* Include Headers *}
 			{*include uri='design:newscenter/widget/cookies/widget_cookie.tpl'*}
