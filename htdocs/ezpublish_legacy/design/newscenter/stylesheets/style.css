@@ -28,8 +28,9 @@ section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 .height-1-em { height: 1em; }
 .height-105-em { height: 1.5em; }
 
-/* Mas width */
+/* Max width */
 .max-width-2-em { max-width: 2em; }
+.max-width-3-em { max-width: 3em; }
 
 /* Width */
 .width-1-em { width: 1em; }
