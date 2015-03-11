@@ -1,3 +1,2 @@
-﻿$(document).on("click", "a.toogle", function() {
-    alert("Goodbye!");  
-});
+﻿/* Make the Menu bar toggle */
+$('.toggle-admin-bar').click(function () { $('.admin-bar').toggle(); });
