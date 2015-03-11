@@ -1,2 +1,2 @@
 ﻿/* Make the Menu bar toggle */
-$('.toggle-admin-bar').click(function() { alert('fungerar'); });
+$('.toggle-admin-bar span').click(function() { alert('fungerar'); });
