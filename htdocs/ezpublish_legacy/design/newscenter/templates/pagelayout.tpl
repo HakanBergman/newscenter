@@ -87,9 +87,9 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
-				<div class="min-height-108"><span class="glyphicon glyphicon-info-sign text-primary"></span> {$#company.name|wash()}</div>
-				<hr class="no-margin no-padding container-padding-top" />
+				<div class="min-height-108"><span class="glyphicon glyphicon-info-sign text-primary"></span> {$#company.name|wash()}</div>				
 				<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-8-em">
+					<hr class="no-margin no-padding container-padding-top" />
 					<div class="edit container-padding-left-2 container-padding-top-05">
 						<span class="glyphicon glyphicon-cog text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Sajtinställningar</a>
 					</div>
@@ -102,9 +102,9 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
-				<div class="min-height-108"><span class="glyphicon glyphicon-plus text-primary"></span> Skapa ny</div>
-				<hr class="no-margin no-padding container-padding-top" />
+				<div class="min-height-108"><span class="glyphicon glyphicon-plus text-primary"></span> Skapa ny</div>				
 				<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-8-em">
+					<hr class="no-margin no-padding container-padding-top" />
 					<div class="edit container-padding-left-2 container-padding-top-05">
 						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Kontaktlista</a>
 					</div>
@@ -120,9 +120,9 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
-				<div class="min-height-108"><span class="glyphicon glyphicon-user text-primary"></span> {$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()} <span class="glyphicon glyphicon-option-horizontal text-primary float-right container-padding-right-3"></span></div>
-				<hr class="no-margin no-padding container-padding-top" />
+				<div class="min-height-108"><span class="glyphicon glyphicon-user text-primary"></span> {$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()} <span class="glyphicon glyphicon-option-horizontal text-primary float-right container-padding-right-3"></span></div>				
 				<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-8-em">
+					<hr class="no-margin no-padding container-padding-top" />
 					<div class="edit container-padding-left-2 container-padding-top-05">
 						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Kontaktlista</a>
 					</div>
