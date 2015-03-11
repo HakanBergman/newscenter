@@ -70,19 +70,10 @@
 	<body class="bg-grey font-family-bookman-old">
 	<div id="fb-root"></div>
 
-	<nav class="navbar navbar-fixed-top">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding no-margin" id="sidebar_admin">
-			<div class="panel-group" id="accordion">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="text-decoration-none">
-								<span class="glyphicon glyphicon-folder-close"></span>
-								<span class="content-padding-left">Innehåll</span>
-							</a>
-						</h4>
-					</div>
-				</div>
+	<nav class="navbar navbar-fixed-top bg-white thumbnail">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding no-margin">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				DHC LOGGA
 			</div>
 		</div>																			
 	</nav>
