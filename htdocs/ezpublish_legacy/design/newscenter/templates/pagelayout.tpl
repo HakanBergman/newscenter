@@ -75,7 +75,9 @@
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 				<a href="http://www.datadelenhc.se" title="Datadelen Hosting Center" target="_blank"><img src="{'dhc_298x151.png'|ezimage('no')}" class="img-responsive max-width-3-em-important float-left" /></a>
 				<div class="col-lg-12 no-margin absolute">
-					<a href="#">En länk</a>
+					<div class="edit">
+						<span class="glyphicon glyphicon-pencil text-primary"></span> <a href="http://www.datadelenhc.se/Om-oss" class="text-decoration-none container-padding-left" title="Om Datadelen Hosting Center" target="_blank">Om Datadelen Hosting Center</a>
+                    </div>
 				</div>
 			</div>
 		</div>																			
