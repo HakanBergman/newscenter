@@ -78,6 +78,9 @@
 					<div class="edit container-padding-left-2">
 						<span class="glyphicon glyphicon-question-sign text-primary"></span> <a href="http://www.datadelenhc.se/Om-oss" class="text-decoration-none container-padding-left" title="Om Datadelen Hosting Center" target="_blank">Om Datadelen Hosting Center</a>
                     </div>
+					<div class="edit container-padding-left-2">
+						<span class="glyphicon glyphicon-cloud text-primary"></span> <a href="http://www.datadelenhc.se" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Datadelen Hosting Center</a>
+                    </div>
 				</div>
 			</div>
 		</div>																			
