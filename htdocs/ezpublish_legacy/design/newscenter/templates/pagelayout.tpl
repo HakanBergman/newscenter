@@ -76,7 +76,7 @@
 				<a href="http://www.datadelenhc.se" title="Datadelen Hosting Center" target="_blank"><img src="{'dhc_298x151.png'|ezimage('no')}" class="img-responsive max-width-3-em-important float-left" /></a>
 				<div class="col-lg-12 thumbnail no-margin no-padding container-margin-top-108 left-none bg-white absolute">
 					<div class="edit container-padding-left-2">
-						<span class="glyphicon glyphicon-pencil text-primary"></span> <a href="http://www.datadelenhc.se/Om-oss" class="text-decoration-none container-padding-left" title="Om Datadelen Hosting Center" target="_blank">Om Datadelen Hosting Center</a>
+						<span class="glyphicon glyphicon-question-sign text-primary"></span> <a href="http://www.datadelenhc.se/Om-oss" class="text-decoration-none container-padding-left" title="Om Datadelen Hosting Center" target="_blank">Om Datadelen Hosting Center</a>
                     </div>
 				</div>
 			</div>
