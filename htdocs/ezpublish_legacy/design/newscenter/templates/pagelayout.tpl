@@ -74,7 +74,7 @@
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-padding no-margin container-padding-left-2">
 				<img src="{'dhc_298x151.png'|ezimage('no')}" class="img-responsive max-width-3-em-important float-left" />
-				<div class="col-lg-12 thumbnail no-margin no-padding container-margin-top-108 left-none bg-white absolute">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumbnail no-margin no-padding container-margin-top-108 left-none bg-white absolute">
 					<div class="edit container-padding-left-2">
 						<span class="glyphicon glyphicon-home text-primary"></span> <a href="http://www.datadelenhc.se" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Datadelen Hosting Center</a>
                     </div>
@@ -88,7 +88,7 @@
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-padding no-margin container-padding-left-2">
 				<div class="min-height-108">{$#company.name|wash()}</div>
-				<div class="col-lg-12 thumbnail no-margin no-padding left-none bg-white absolute">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumbnail no-margin no-padding left-none bg-white absolute">
 					<div class="edit container-padding-left-2">
 						<span class="glyphicon glyphicon-cog text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Sajtinställningar</a>
 					</div>
@@ -99,7 +99,7 @@
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-padding no-margin container-padding-left-2">
 				<div class="min-height-108"><span class="glyphicon glyphicon-plus text-primary"></span> Skapa ny</div>
-				<div class="col-lg-12 thumbnail no-margin no-padding left-none bg-white absolute">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumbnail no-margin no-padding left-none bg-white absolute">
 					<div class="edit container-padding-left-2">
 						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Kontaktlista</a>
 					</div>
@@ -115,8 +115,8 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-padding no-margin container-padding-left-2">
-				<div class="min-height-108"><span class="glyphicon glyphicon-user text-primary"></span> {$user.name|wash()}</div>
-				<div class="col-lg-12 thumbnail no-margin no-padding left-none bg-white absolute">
+				<div class="min-height-108"><span class="glyphicon glyphicon-user text-primary"></span> {$user|attribute(show, 1)}</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumbnail no-margin no-padding left-none bg-white absolute">
 					<div class="edit container-padding-left-2">
 						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Kontaktlista</a>
 					</div>
