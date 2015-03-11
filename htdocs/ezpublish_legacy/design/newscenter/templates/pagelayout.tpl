@@ -71,7 +71,7 @@
 	<div id="fb-root"></div>
 
 	<nav class="navbar navbar-fixed-top">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 id="sidebar_admin">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding no-margin" id="sidebar_admin">
 			<div class="panel-group" id="accordion">
 				<div class="panel panel-default">
 					<div class="panel-heading">
