@@ -1,0 +1,1 @@
+﻿$('.toggle').live('click', function () { alert('clicked'); });
