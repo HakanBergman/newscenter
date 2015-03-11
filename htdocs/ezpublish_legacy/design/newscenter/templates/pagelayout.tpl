@@ -86,7 +86,7 @@
                     </div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 no-padding no-margin container-padding-left-2">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
 				<div class="min-height-108"><span class="glyphicon glyphicon-info-sign text-primary"></span> {$#company.name|wash()}</div>
 				<hr class="no-margin no-padding container-padding-top" />
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute">
@@ -98,7 +98,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 no-padding no-margin container-padding-left-2">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
 				<div class="min-height-108"><span class="glyphicon glyphicon-plus text-primary"></span> Skapa ny</div>
 				<hr class="no-margin no-padding container-padding-top" />
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute">
@@ -116,7 +116,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 no-padding no-margin container-padding-left-2">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
 				<div class="min-height-108"><span class="glyphicon glyphicon-user text-primary"></span> {$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()}</div>
 				<hr class="no-margin no-padding container-padding-top" />
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute">
