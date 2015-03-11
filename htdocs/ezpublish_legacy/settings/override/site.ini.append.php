@@ -192,7 +192,7 @@ HostMatchMapItems[]=maltimportoren.datadelenhc.com;www.maltimportoren.se
 HostMatchMapItems[]=webbcenter.datadelenhc.se;webbcenter.datadelenhc.se
 HostMatchMapItems[]=maltimportoren.se;www.maltimportoren.se
 HostMatchMapItems[]=www.maltimportoren.se;www.maltimportoren.se
-HostMatchMapItems[]=admin.maltimportoren.se;newscenter.drumedar.net
+HostMatchMapItems[]=admin.maltimportoren.se;ezdemo_site_clean_admin
 HostMatchMapItems[]=newscenter.drumedar.net;newscenter.drumedar.net
 HostMatchMapItems[]=admin.newscenter.drumedar.net;ezdemo_site_clean_admin
 
