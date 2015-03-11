@@ -73,7 +73,7 @@
 	<nav class="navbar navbar-fixed-top min-height-none bg-white thumbnail">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding no-margin">
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-				<img src="{'dhc_298x151.png'|ezimage('no')}" class="img-responsive" />
+				<img src="{'dhc_298x151.png'|ezimage('no')}" class="img-responsive max-width-3-em" />
 			</div>
 		</div>																			
 	</nav>
