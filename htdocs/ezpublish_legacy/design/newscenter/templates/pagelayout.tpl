@@ -125,7 +125,7 @@
 					<div class="min-height-108">
 						<span class="glyphicon glyphicon-user text-color-black"></span>
 						{$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()}
-						<a href="#" class="toggle text-color-black"><span class="glyphicon glyphicon-menu-hamburger float-right container-padding-right-3"></span></a>
+						<a href="#" class="toggle text-color-black"><span class="glyphicon glyphicon-menu-hamburger float-right container-padding-right-3 container-padding-top-02"></span></a>
 					</div>				
 					<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-8-em">
 						<hr class="no-margin no-padding container-padding-top" />
