@@ -45,17 +45,17 @@
 
           <div class="form-group">
             <label for="foretagsnamn">Företagsnamn</label>
-            <input type="password" class="form-control" id="foretagsnamn" placeholder="Företagsnamn"></input>
+            <input type="text" class="form-control" id="foretagsnamn" placeholder="Företagsnamn"></input>
           </div>
 
           <div class="form-group">
             <label for="kontaktperson">Er kontaktperson</label>
-            <input type="password" class="form-control" id="kontaktperson" placeholder="Kontaktperson"></input>
+            <input type="text" class="form-control" id="kontaktperson" placeholder="Kontaktperson"></input>
           </div>
 
           <div class="form-group">
             <label for="telefonnummer">Telefonnummer</label>
-            <input type="password" class="form-control" id="telefonnummer" placeholder="Telefonnummer"></input>
+            <input type="text" class="form-control" id="telefonnummer" placeholder="Telefonnummer"></input>
           </div>
 
           <label for="sel1">E-postadress</label>
