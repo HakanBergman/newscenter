@@ -73,7 +73,7 @@
 {if and(is_set($object)|not, is_set($edit_version)|not)}
 	{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 		<nav class="navbar navbar-fixed-top min-height-none bg-white thumbnail">
-			<div class="row">
+			<div class="row no-margin no-padding">
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 no-padding no-margin container-padding-left-2">
 					<img src="{'dhc_298x151.png'|ezimage('no')}" class="img-responsive max-width-3-em-important float-left" />
 					<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding container-margin-top-3 left-none bg-white absolute min-height-8-em" id="admin_sidebar_dhc">
