@@ -1,3 +1,3 @@
-﻿$('.toogle').on("click", "a.offsite", function () {
-    alert("Goodbye!");  // jQuery 1.7+
+﻿$(document).on("click", "a.toogle", function() {
+    alert("Goodbye!");  
 });
