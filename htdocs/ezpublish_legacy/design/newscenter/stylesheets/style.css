@@ -23,7 +23,7 @@ section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 .min-height-23 { min-height: 23em; }
 .min-height-108 { min-height: 1.8em; }
 .min-height-8-em { min-height: 8em; }
-.min-height-10-em { min-height: 8em; }
+.min-height-10-em { min-height: 10em; }
 .min-height-none { min-height: 0; }
 
 /* Height */
