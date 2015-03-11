@@ -76,13 +76,13 @@
 				<img src="{'dhc_298x151.png'|ezimage('no')}" class="img-responsive max-width-3-em-important float-left" />
 				<div class="col-lg-12 thumbnail no-margin no-padding container-margin-top-108 left-none bg-white absolute">
 					<div class="edit container-padding-left-2">
-						<span class="glyphicon glyphicon-question-sign text-primary"></span> <a href="http://www.datadelenhc.se/Om-oss" class="text-decoration-none container-padding-left" title="Om Datadelen Hosting Center" target="_blank">Om Datadelen Webb Center</a>
+						<span class="glyphicon glyphicon-home text-primary"></span> <a href="http://www.datadelenhc.se" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Datadelen Hosting Center</a>
                     </div>
 					<div class="edit container-padding-left-2">
-						<span class="glyphicon glyphicon-cloud text-primary"></span> <a href="http://www.datadelenhc.se" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Datadelen Hosting Center</a>
+						<span class="glyphicon glyphicon-cloud text-primary"></span> <a href="http://webbcenter.datadelenhc.se/" class="text-decoration-none container-padding-left" title="Datadelen Webb Center" target="_blank">Datadelen Webb Center</a>
                     </div>
 					<div class="edit container-padding-left-2">
-						<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Dokumentation</a>
+						<span class="glyphicon glyphicon-question-sign text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Dokumentation</a>
                     </div>
 				</div>
 			</div>
