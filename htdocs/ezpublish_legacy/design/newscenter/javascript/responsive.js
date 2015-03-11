@@ -7,8 +7,8 @@ $(document).ready(function () {
 
     /* Responsive Sidebar */
     function resize() {
-        if ($window.width() < 1700) {
-            return $('#sidebar_admin').removeClass('absolute').removeClass('col-lg-2').addClass('col-lg-12');
+        if ($window.width() < 991) {
+            return $('#admin_sidebar_dhc').removeClass('absolute');
         }
         $('#sidebar_admin').addClass('absolute').addClass('col-lg-2').removeClass('col-lg-12');
     }
