@@ -57,7 +57,7 @@
 		<link rel="stylesheet" href={"javascript/mmenu/src/css/jquery.mmenu.all.css"|ezdesign}>
 		<link rel="stylesheet" href={"javascript/pgwslider/pgwslider.min.css"|ezdesign}>
 		<script type="text/javascript" src={"javascript/mmenu/src/js/jquery.mmenu.min.all.js"|ezdesign}></script>
-		<script type="text/javascript" src={"javascript/jquery-cookie/jquery.cookie.js"|ezdesign}></script>
+		<script type="text/javascript" src={"javascript/jquery-cookie/src/jquery.cookie.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/flexslider/jquery.flexslider-min.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/mmenu.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/orientation.js"|ezdesign}></script>
