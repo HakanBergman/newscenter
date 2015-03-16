@@ -1,4 +1,4 @@
-﻿<nav class="overlay navbar-fixed-top height-100-percent {$block.data_map.overlay_background_color.data_text} {$block.data_map.opacity.data_text} hide" id="overlay-{$block.contentobject_id}"></nav>
+﻿<nav class="overlay navbar-fixed-top height-100-percent {$block.data_map.overlay_background_color.data_text} {$block.data_map.opacity.data_text} hide" id="overlay-{$block.contentobject_id}" data-src="{$block.contentobject_id}"></nav>
 <nav class="overlay-content navbar-fixed-top height-100-percent no-background hide" id="overlay-content-{$block.contentobject_id}">
 	<div class="container">
 		<div class="row no-margin no-padding container-padding-left-4 container-padding-right-4">
