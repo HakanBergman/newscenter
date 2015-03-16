@@ -109,6 +109,7 @@ section .widget-margin-top { margin-top: 1em; }
 .container-padding-top-2 { padding-top: 2em; }
 .container-padding-top-205 { padding-top: 2.5em; }
 .container-padding-top-3 { padding-top: 3em; }
+.container-padding-top-35-percent { padding-top: 35%; }
 .container-padding-bottom { padding-bottom: 1em; }
 .container-padding-bottom-02 { padding-bottom: 0.2em; }
 .container-padding-bottom-05 { padding-bottom: 0.5em; }
