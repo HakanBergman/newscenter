@@ -78,8 +78,8 @@
 
 		<nav class="navbar-fixed-top height-100-percent no-background">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-margin-top-35-percent bg-white">
+				<div class="row no-margin no-padding">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding container-margin-top-20-percent bg-white">
 						<div class="container-padding-left container-padding-right">
 							TESTAR LITE TILL
 						</div>
