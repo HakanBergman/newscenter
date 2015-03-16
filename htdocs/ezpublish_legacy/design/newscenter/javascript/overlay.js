@@ -10,5 +10,6 @@
     $('button.overlay-btn').on('click', function () {
         $('#overlay-' + $(this).attr('data-src')).addClass('hide');
         $('#overlay-content-' + $(this).attr('data-src')).addClass('hide');
+        $.cookie('overlay-' + $(this).attr('data-src'), 'active', { expires: 1, path: '/' });
     });
 });
