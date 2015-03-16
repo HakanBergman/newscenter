@@ -44,6 +44,7 @@ section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 /* Width */
 .width-1-em { width: 1em; }
 .width-105-em { width: 1.5em; }
+.width-100-percent { width: 100%; }
 
 /* Max Width */
 .col-lg-12-max-width { max-width: 100%; width: 100%; }
