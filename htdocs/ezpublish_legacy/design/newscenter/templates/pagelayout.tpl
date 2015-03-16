@@ -74,6 +74,9 @@
 		{* Include Admin Bar *}
 		{include uri="design:page_admin_bar.tpl" object=$object edit_version=$edit_version user=$user company=$#company}
 
+		<div class="container-fluid website container-padding-bottom{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))} container-padding-top-205{/if}">
+
+
 		<nav class="navbar-fixed-top height-100-percent bg-black opacity-035"></nav>
 		<nav class="navbar-fixed-top height-100-percent no-background">
 			<div class="container">
@@ -96,8 +99,6 @@
 				</div>				
 			</div>
 		</nav>
-
-		<div class="container-fluid website container-padding-bottom{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))} container-padding-top-205{/if}">
 
 			{* Include Headers *}
 			{*include uri='design:newscenter/widget/cookies/widget_cookie.tpl'*}
