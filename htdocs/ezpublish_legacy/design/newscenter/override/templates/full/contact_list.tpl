@@ -4,7 +4,7 @@
   {if ezhttp('captcha', 'POST')}
     {ezcreateemail()}
   {/if}
-  {include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
+  {include uri="design:newscenter/widget/widget_breadcrumb.tpl"} test
   {def $home_node = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
   <h2>{$node.name|wash()}</h2>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
