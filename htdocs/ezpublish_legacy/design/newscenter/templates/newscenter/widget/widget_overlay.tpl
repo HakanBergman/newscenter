@@ -8,11 +8,11 @@
 						<h1><img src="/{$block.data_map.image.content.original.full_path}" alt="{$block.data_map.image.content.alternative_text}" class="img-responsive center-item"></img></h1>
 					</div>
 					<div class="container-padding-left-2 container-padding-right-2 font-size-35-px">
-						Denna webbplats innehåller information om alkoholhaltiga drycker och riktar sig till personer som har fyllt 20 år.
+						{$block.data_map.body.data_text}
 					</div>
 					<div class="container-padding-left-2 container-padding-right-2 container-padding-top-2">
-						<button type="button" class="btn btn-primary font-size-35-px display-block center-item">
-							Ja, jag är över 20 år. Ta mig till sajten nu!
+						<button type="button" class="btn {$block.data_map.btn_class} font-size-35-px display-block center-item">
+							{$block.data_map.button_text.data_text}
 						</button>
 					</div>
 				</div>
