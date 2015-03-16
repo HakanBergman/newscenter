@@ -9,6 +9,7 @@ section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 .opacity-035 { opacity: 0.35; }
 
 /* Blocks */
+.display-block { display: block; }
 .inline-block { display: inline-block; }
 
 /* General widget rules */
