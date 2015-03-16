@@ -75,8 +75,10 @@ section .widget-margin-top { margin-top: 1em; }
 .container-margin-top-108 { margin-top: 1.8em; }
 .container-margin-top-2 { margin-top: 2em; }
 .container-margin-top-3 { margin-top: 3em; }
-.col-sm-offset-5 { margin-left: 41.66666667%; }
-.col-xs-offset-5 { margin-left: 41.66666667%; }
+.col-sm-2-offset-5 { margin-left: 41.66666667%; }
+.col-sm-4-offset-5 { margin-left: 41.66666667%; }
+.col-xs-2-offset-5 { margin-left: 41.66666667%; }
+.col-xs-4-offset-5 { margin-left: 41.66666667%; }
 
 /* Padding Rules */
 .no-padding { padding: 0; }
