@@ -7,7 +7,7 @@
 					<div class="text-center">
 						<h1><img src="/{$block.data_map.image.content.original.full_path}" alt="{$block.data_map.image.content.alternative_text}" class="img-responsive center-item"></img></h1>
 					</div>
-					<div class="container-padding-left-2 container-padding-right-2 font-size-35-px">
+					<div class="container-padding-left-2 container-padding-right-2 font-size-105-em">
 						{$block.data_map.body.data_text}
 					</div>
 					<div class="container-padding-left-2 container-padding-right-2 container-padding-top-2">
