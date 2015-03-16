@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
     $('.overlay').each(function () {
-        console.log('hittades');
+        console.log(this);
     });
 });
