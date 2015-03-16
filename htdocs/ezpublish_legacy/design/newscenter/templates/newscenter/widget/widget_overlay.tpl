@@ -11,7 +11,7 @@
 						{$block.data_map.body.data_text}
 					</div>
 					<div class="container-padding-left-2 container-padding-right-2 container-padding-top-2">
-						<button type="button" class="btn {$block.data_map.btn_class} font-size-105-em display-block center-item width-100-percent hide-navbar" data-src="{$block.id}">
+						<button type="button" class="btn {$block.data_map.btn_class.data_text} font-size-105-em display-block center-item width-100-percent hide-navbar" data-src="{$block.id}">
 							{$block.data_map.button_text.data_text}
 						</button>
 					</div>
