@@ -1,4 +1,5 @@
 ﻿<div class="container">
+  <h2>{$node.name|wash()}</h2>
 	<div class="col-lg-12">
 		{switch match=$node.children|count()}
 			{case match=1}
