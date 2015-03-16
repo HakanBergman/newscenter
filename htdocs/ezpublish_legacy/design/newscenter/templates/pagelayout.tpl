@@ -84,6 +84,12 @@
 							<div class="text-center">
 								<h1><img src="/var/ezdemo_site_clean/storage/images/maltimportoeren/947-18-swe-SE/Maltimportoeren.png" alt="Maltimportören" class="img-responsive"></img></h1>
 							</div>
+							<div>
+								Denna webbplats innehåller information om alkoholaltiga drycker och riktar sig till personer som har fyllt 20 år.
+							</div>
+							<div>
+								Ja, jag är över 20 år. Ta mig till sajten nu!
+							</div>
 						</div>
 					</div>
 				</div>				
