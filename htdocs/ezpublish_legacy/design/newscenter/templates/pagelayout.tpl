@@ -81,7 +81,9 @@
 				<div class="row no-margin no-padding">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding container-margin-top-20-percent bg-white">
 						<div class="container-padding-left container-padding-right">
-							TESTAR LITE TILL
+							<div class="text-center">
+								CENTRERAD TEXt
+							</div>
 						</div>
 					</div>
 				</div>				
