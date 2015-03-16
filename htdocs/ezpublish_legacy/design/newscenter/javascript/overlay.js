@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
     $('.overlay').each(function () {
-        console.log(this);
+        console.log($(this).attr('id'));
     });
 });
