@@ -82,7 +82,7 @@
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding container-margin-top-20-percent bg-white">
 						<div class="container-padding-left container-padding-right">
 							<div class="text-center">
-								CENTRERAD TEXt
+								<h1><img src="/var/ezdemo_site_clean/storage/images/maltimportoeren/947-18-swe-SE/Maltimportoeren.png" alt="Maltimportören" class="img-responsive"></img></h1>
 							</div>
 						</div>
 					</div>
