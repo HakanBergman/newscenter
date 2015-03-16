@@ -8,7 +8,6 @@ section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 /* Opacity */
 .opacity-035 { opacity: 0.35; }
 
-
 /* Blocks */
 .inline-block { display: inline-block; }
 
@@ -126,6 +125,7 @@ section .widget-margin-top { margin-top: 1em; }
 .container-padding-right { padding-right: 1em; }
 .container-padding-right-2 { padding-right: 2em; }
 .container-padding-right-3 { padding-right: 3em; }
+.container-padding-right-4 { padding-right: 3em; }
 
 /* Absolute Position */
 .absolute { position: absolute; }
@@ -139,6 +139,9 @@ section .widget-margin-top { margin-top: 1em; }
 
 /* Vertical Alignment */
 .vertical-bottom { vertical-align: bottom; vertical-align: text-bottom; }
+
+/* Center Magin */
+.center-item { margin: 0 auto; }
 
 /* Box rules */
 .navigation-box { box-shadow: 0 6px 8px rgba(0,0,0,.175); }
