@@ -78,7 +78,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-offset-3 container-margin-top-35-percent bg-white">
-						TESTAR LITE
+						<img src="http://therandywhite.com/wp-content/uploads/2014/11/white.png"></img>
+						TESTAR LITE TILL
 					</div>
 				</div>				
 			</div>
