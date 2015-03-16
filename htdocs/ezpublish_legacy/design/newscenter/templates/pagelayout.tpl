@@ -77,7 +77,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top height-100-percent">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-2 col-lg-2-offset-5 col-md-2 col-md-offset-5">TESTAR LITE</div>
+					<div class="col-lg-2 col-lg-2-offset-5 col-md-2 col-md-offset-5 col-sm-2 col-sm-2-offset-5 col-xs-2 col-xs-2-offset-5">TESTAR LITE</div>
 				</div>				
 			</div>
 		</nav>
