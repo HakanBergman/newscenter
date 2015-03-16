@@ -8,6 +8,7 @@
         }
     });
     $('button.overlay-btn').on('click', function () {
-        console.log('button clicked');
+        $('#overlay-' + $(this).attr('data-src')).addClass('hide');
+        $('#overlay-content-' + $(this).attr('data-src')).addClass('hide');
     });
 });
