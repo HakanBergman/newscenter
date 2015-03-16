@@ -74,9 +74,11 @@
 		{* Include Admin Bar *}
 		{include uri="design:page_admin_bar.tpl" object=$object edit_version=$edit_version user=$user company=$#company}
 
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-fixed-top height-100-percent">
 			<div class="container">
-				TESTAR LITE
+				<div class="row">
+					<div class="col-md-2 col-md-offset-5">TESTAR LITE</div>
+				</div>				
 			</div>
 		</nav>
 
