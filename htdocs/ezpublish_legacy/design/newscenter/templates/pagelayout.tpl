@@ -74,7 +74,7 @@
 		{* Include Admin Bar *}
 		{include uri="design:page_admin_bar.tpl" object=$object edit_version=$edit_version user=$user company=$#company}
 
-		<nav class="navbar navbar-default navbar-fixed-top height-100-percent">
+		<nav class="navbar navbar-default navbar-fixed-top height-100-percent bg-grey">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-offset-3 container-padding-top-35-percent">
