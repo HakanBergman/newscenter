@@ -89,8 +89,8 @@
 							<div class="container-padding-left-2 container-padding-right-2 font-size-35-px">
 								Denna webbplats innehåller information om alkoholhaltiga drycker och riktar sig till personer som har fyllt 20 år.
 							</div>
-							<div class="container-padding-left-2 container-padding-right-2 container-padding-top-2 font-size-35-px">
-								<button type="button" class="btn btn-primary">
+							<div class="container-padding-left-2 container-padding-right-2 container-padding-top-2">
+								<button type="button" class="btn btn-primary font-size-35-px">
 									Ja, jag är över 20 år. Ta mig till sajten nu!
 								</button>
 							</div>
