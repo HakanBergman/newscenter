@@ -4,6 +4,7 @@
         if ($.cookie($(this).attr('id'))) {
             console.log('cookie exists');
         } else {
+            $('#' + $(this).attr('id')).removeClass('hide');
             console.log('creating cookie');
         }
     });
