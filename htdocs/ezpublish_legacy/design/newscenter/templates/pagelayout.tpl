@@ -77,9 +77,10 @@
 		<nav class="navbar-fixed-top height-100-percent bg-black opacity-035">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-offset-3 container-margin-top-35-percent bg-white">
-						<img src="http://therandywhite.com/wp-content/uploads/2014/11/white.png"></img>
-						TESTAR LITE TILL
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-margin-top-35-percent bg-white">
+						<div class="container-padding-left container-padding-right">
+							TESTAR LITE TILL
+						</div>
 					</div>
 				</div>				
 			</div>
