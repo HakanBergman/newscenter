@@ -1,5 +1,7 @@
 <div class="container">
 	<div class="row">
-		Test
+		<div class="col-lg-12">
+			Nytt test
+		</div>
 	</div>
 </div>
