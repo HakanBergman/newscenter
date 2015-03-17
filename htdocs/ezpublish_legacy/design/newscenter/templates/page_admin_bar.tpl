@@ -21,7 +21,7 @@
 					<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-11-em">
 						<hr class="no-margin no-padding container-padding-top" />
 						<div class="edit container-padding-left-2 container-padding-top-05">
-							<span class="glyphicon glyphicon-cog text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Sajtinställningar</a>
+							<span class="glyphicon glyphicon-cog text-primary"></span> <a href="http://webbcenter.datadelenhc.se/Sajtinstaellningar" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center">Sajtinställningar</a>
 							<a href="http://webbcenter.datadelenhc.se/wiki/Sajtinställningar" class="float-right" title="Wiki - Sajtinställningar" target="_blank"><span class="glyphicon glyphicon-question-sign text-primary"></span></a>
 						</div>
 						<div class="edit container-padding-left-2 container-padding-top-05">
