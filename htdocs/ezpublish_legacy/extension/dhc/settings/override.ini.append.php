@@ -66,6 +66,12 @@ MatchFile=full/contact_list.tpl
 Subdir=templates
 Match[class_identifier]=contact_list
 
+[full_site_settings]
+Source=node/view/full.tpl
+MatchFile=full/sitesettings.tpl
+Subdir=templates
+Match[class_identifier]=site_settings
+
 [edit_product]
 Source=content/edit.tpl
 MatchFile=edit/product.tpl
