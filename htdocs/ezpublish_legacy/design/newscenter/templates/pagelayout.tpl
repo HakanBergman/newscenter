@@ -70,7 +70,7 @@
 		
 	</head>
 	
-	<body class="bg-grey font-family-bookman-old">
+	<body class="bg-grey {$#company.data_map.background_color.data_text} font-family-bookman-old">
 	<div id="fb-root"></div>
 
 		{* Include Admin Bar *}
