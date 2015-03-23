@@ -6,7 +6,7 @@
 		    <div class="col-lg-12 container-padding-left-4 container-padding-right-4">
           <article>
             <h1>Sajtinställningar</h1>
-            {$company.object|attribute(show, 1)}
+            {$company.object.versions|attribute(show, 1)}
             <form name="editform" id="editform" enctype="multipart/form-data" method="post" action={concat( '/content/edit/', $company.contentobject_id)|ezurl('no', 'full')}>
               <h3>SEO - Inställningar</h3>
               <div class="form-group">
