@@ -23,6 +23,7 @@
 							<div class="form-group">
 								<label>Beskrivning av företaget (max 255 tecken)</label>
 								<div>{attribute_edit_gui attribute=$object.data_map.seo_description}</div>
+								<input type="hidden" name="ContentObjectAttribute_id[]" value="1790">
 							</div>
 
 							<div class="form-group">
