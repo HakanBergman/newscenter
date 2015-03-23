@@ -11,7 +11,7 @@
               <p>Här finns alla generella inställningar för hemsidan.</p>
               <div class="form container-padding-left-2">
 
-                <div class="buttonblock">
+                <div class="buttonblock pull-right">
                   <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
                   <button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
                 </div>
@@ -31,14 +31,15 @@
                 </div>
 
 
-                <div class="buttonblock">
+                <div class="buttonblock pull-right">
                   <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
                   <button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
                   <input type="hidden" name="DiscardConfirm" value="0" />
                   <input type="hidden" name="MainNodeID" value="{$main_node_id}" />
                 </div>
+                
               </div>
-              </article>
+            </article>
         </div>
       </div>
 
