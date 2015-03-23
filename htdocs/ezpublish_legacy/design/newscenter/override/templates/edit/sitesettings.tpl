@@ -54,12 +54,3 @@
 		</form>
     </div>
 </div>
-
-
-
-{def $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
-{def $user = fetch('user', 'current_user')}
-  {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
-
-  {/if}
-{undef $company $user}
