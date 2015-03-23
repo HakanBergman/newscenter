@@ -24,7 +24,7 @@
     <title>
 		{def $sitemap = $company.path_array|extract(2)}
 			{for 0 to $sitemap|count() as $number}
-				{$company.path_array.$number}
+				{$sitemap.$number}
 			{/for}
 		{undef $sitemap}
 	</title>
