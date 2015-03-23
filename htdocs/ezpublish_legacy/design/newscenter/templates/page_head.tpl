@@ -1,7 +1,7 @@
 {default enable_help=true() enable_link=true() canonical_link=true()}
 
 {def $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
-{$company.path.0|attribute(show, 1)}
+{$company.path_array|attribute(show, 1)}
 
 {if is_set($module_result.content_info.persistent_variable.site_title)}
     {set scope=root site_title=$module_result.content_info.persistent_variable.site_title}
@@ -24,7 +24,7 @@
 {/let}
 {/if}
     <title>
-		{section loop=$company.path_array:reverse_path}
+		{section loop=$company.path_array}
 			{$:item.text|wash()}
 		{/section}
 	</title>
