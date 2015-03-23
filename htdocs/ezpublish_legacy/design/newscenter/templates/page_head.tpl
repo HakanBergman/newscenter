@@ -38,18 +38,25 @@
         <meta name="{$key|wash}" content="{$item|wash}" />
 
     {/foreach}
-    {foreach $site.meta as $key => $item}
+
+	{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
+		{foreach $site.meta as $key => $item}
 			{switch match=$key}
-			{case}
-				{$key} -> {$item}
-			{/case}
-		{/switch}
-    {if is_set( $module_result.content_info.persistent_variable[$key] )}
-        <meta name="{$key|wash}" content="{$module_result.content_info.persistent_variable[$key]|wash}" />
-    {else}
-        <meta name="{$key|wash}" content="{$item|wash}" />
-    {/if}	
-    {/foreach}	
+				{case match='author'}
+					<meta name="{$key|wash}" content="Datadelen Webb Center" />
+				{/case}
+				{case match='copyright'}
+					<meta name="{$key|wash}" content="Datadelen Webb Center" />
+				{/case}
+				{case match='description'}
+					<meta name="{$key|wash}" content="{$sitesettings.0.data_map.seo_description.data_text|wash()}" />
+				{/case}
+				{case match='keywords'}
+					<meta name="{$key|wash}" content="{$sitesettings.0.data_map.seo_tags.data_text|wash()}" />
+				{/case}
+			{/switch}	
+		{/foreach}	
+	{undef $sitesettings}
 
     <meta name="MSSmartTagsPreventParsing" content="TRUE" />
     <meta name="generator" content="eZ Publish" />
@@ -57,7 +64,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="Startsidans titel">
+	<meta name="apple-mobile-web-app-title" content="{$site_title}">
 
 {if $canonical_link}
     {include uri="design:canonical_link.tpl"}
