@@ -33,6 +33,12 @@
 
 {include uri="design:content/edit_attribute.tpl"}
 
+    <div class="buttonblock">
+        <input class="defaultbutton" type="submit" name="PublishButton" value="Spara ändringar" />
+        <input class="button" type="submit" name="DiscardButton" value="Avbryt" />
+        <input type="hidden" name="DiscardConfirm" value="0" />
+    </div>
+
 							<div class="buttonblock">
 								<button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
 								<button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
