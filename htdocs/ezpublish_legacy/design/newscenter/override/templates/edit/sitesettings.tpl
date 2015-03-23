@@ -18,7 +18,7 @@
                 
                 <p>Ställ in beskrivning och de sökord som du vill ska komma upp i organiska resultatet (Google, Bing, med flera).</p>
 
-                    <div class="seo">
+                    <div class="seo hide">
                       <div class="form-group">
                         <label>Beskrivning av företaget (max 255 tecken)</label>
                         <div>{attribute_edit_gui attribute=$object.data_map.seo_description}</div>
