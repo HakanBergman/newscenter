@@ -3,8 +3,8 @@
 		<form enctype="multipart/form-data" method="post" action={concat( "/content/edit/", $object.id, "/", $edit_version, "/", $edit_language|not|choose( concat( $edit_language, "/" ), '' ) )|ezurl}>
 
 			<div class="buttonblock">
-				<input class="defaultbutton" type="submit" name="PublishButton" value="Spara ändringar" />
-				<input class="button" type="submit" name="DiscardButton" value="Avbryt" />
+				<button type="button" type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
+				<button type="button" type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
 				<input type="hidden" name="DiscardConfirm" value="0" />
 			</div>
 
@@ -29,11 +29,9 @@
 
 			<input type="hidden" name="MainNodeID" value="{$main_node_id}" />
 
-			{include uri="design:content/edit_attribute.tpl"}
-
 			<div class="buttonblock">
-				<input class="defaultbutton" type="submit" name="PublishButton" value="Spara ändringar" />
-				<input class="button" type="submit" name="DiscardButton" value="Avbryt" />
+				<button type="button" type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
+				<button type="button" type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
 				<input type="hidden" name="DiscardConfirm" value="0" />
 			</div>
 
