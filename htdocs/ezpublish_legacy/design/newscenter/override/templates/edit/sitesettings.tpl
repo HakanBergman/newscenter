@@ -15,10 +15,12 @@
 				<article>
 				<h1>Sajtinställningar</h1>
 					<h3>SEO - Inställningar</h3>
-					<div class="form-group">
-						<label>Beskrivning av företaget (max 255 tecken)</label>
-						<div>{attribute_edit_gui attribute=$company.data_map.seo_description}</div>
-					</div>
+					<div class="form container-padding-left-2">
+						<div class="form-group">
+							<label>Beskrivning av företaget (max 255 tecken)</label>
+							<div>{attribute_edit_gui attribute=$company.data_map.seo_description}</div>
+						</div>
+					</form>
 				</article>
 				</div>
 			</div>		
