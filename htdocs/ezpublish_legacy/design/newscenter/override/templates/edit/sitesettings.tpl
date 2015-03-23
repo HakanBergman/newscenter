@@ -20,7 +20,7 @@
 
                 <div class="form-group">
                   <label>Sidans titel.</label>
-                  <div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
+                  <div>{attribute_edit_gui attribute=$object.data_map.site_title}</div>
                 </div>
 
                 <hr class="border-solid-black" />
