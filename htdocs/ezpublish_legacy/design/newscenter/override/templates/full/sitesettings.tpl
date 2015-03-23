@@ -6,6 +6,8 @@
         <article>
           <h1>Sajtinställningar</h1>
           <form name="editform" id="editform" enctype="multipart/form-data" method="post" action={concat( '/content/edit/', $company.contentobject_id='', '/', $edit_version='', '/', $edit_language|not|choose=''( concat=''( $edit_language='', '/' ), '/' ), $is_translating_content|not|choose=''( concat=''( $from_language='', '/' ), '' ) )|ezurl=''}>
+            <h2>SEO - Inställningar</h2>
+            <label>Beskrivning av sidan (max 255 tecken)</label>
             {attribute_edit_gui attribute=$company.data_map.seo_description}
             <div class="buttonblock">
               <input class="defaultbutton" type="submit" name="PublishButton" value="{'Send for publishing'|i18n( 'design/ezdemo/content/edit' )}" title="{'Publish the contents of the draft that is being edited. The draft will become the published version of the object.'|i18n( 'design/ezdemo/content/edit' )}" />
