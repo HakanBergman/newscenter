@@ -13,7 +13,7 @@
 
                 <div class="col-lg-12 no-margin no-padding">
                   <div class="pull-left"><h3 class="clear">SEO - Inställningar</h3></div>
-                  <div class="pull-right"><a class="toggle" data-href="seo" href="#seo">Visa detaljer</a></div>
+                  <div class="pull-right container-padding-top-2"><a class="toggle" data-href="seo" href="#seo">Visa detaljer</a></div>
                 </div>
                 
                 <p>Ställ in beskrivning och de sökord som du vill ska komma upp i organiska resultatet (Google, Bing, med flera).</p>
@@ -32,7 +32,7 @@
 
                 <hr />
 
-                <div class="buttonblock pull-right container-top-2">
+                <div class="buttonblock pull-right container-padding-top-2">
                   <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
                   <button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
                   <input type="hidden" name="DiscardConfirm" value="0" />
