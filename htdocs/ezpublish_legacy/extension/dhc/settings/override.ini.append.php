@@ -74,7 +74,7 @@ Match[class_identifier]=site_settings
 
 [edit_sitesettings]
 Source=content/edit.tpl
-MatchFile=edit/sitesttings.tpl
+MatchFile=edit/sitesettings.tpl
 Subdir=templates
 Match[class_identifier]=site_settings
 
