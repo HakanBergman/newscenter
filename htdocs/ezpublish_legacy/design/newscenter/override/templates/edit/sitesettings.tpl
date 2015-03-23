@@ -31,6 +31,8 @@
 								<div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
 							</div>
 
+{include uri="design:content/edit_attribute.tpl"}
+
 							<div class="buttonblock">
 								<button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
 								<button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
