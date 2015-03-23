@@ -16,12 +16,14 @@
   {/section}
 
 {set-block scope=root variable=site_title}
-{section loop=$Path:reverse_path}{$:item.text|wash}{delimiter} / {/delimiter}{/section} - {$site.title|wash}
+	{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
+		{section loop=$Path:reverse_path}{$:item.text|wash}{delimiter} / {/delimiter}{/section} - {$sitesettings.0.data_map.site_title.data_text|wash()}
+	{undef $sitesettings}
 {/set-block}
+
 
 {/let}
 {/if}
-	{$site.title} test
     <title>{$site_title}</title>
 
     {if and(is_set($#Header:extra_data),is_array($#Header:extra_data))}
