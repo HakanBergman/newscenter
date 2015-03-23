@@ -10,7 +10,23 @@
               <h1>Sajtinställningar</h1>
               <p>Här finns alla generella inställningar för hemsidan.</p>
               <div class="form container-padding-left-2">
+                                
+                {* Site Title *}
+                <div class="col-lg-12 no-margin no-padding">
+                  <div class="pull-left"><h3 class="clear">Titel</h3></div>
+                </div>
 
+                <p>Ange namnet på sidan (Tex företagsnamnet).</p>
+
+                <div class="form-group">
+                  <label>Sidans titel.</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
+                </div>
+
+                <hr class="border-solid-black" />
+
+                {* Site SEO *}
+                
                 <div class="col-lg-12 no-margin no-padding">
                   <div class="pull-left"><h3 class="clear">SEO - Inställningar</h3></div>
                   <div class="pull-right container-padding-top-2"><a class="toggle" data-href="seo" href="#seo">Visa detaljer</a></div>
@@ -32,6 +48,8 @@
 
                 <hr class="border-solid-black" />
 
+                {* Save Settings *}
+                
                 <div class="buttonblock pull-right container-padding-top-2">
                   <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
                   <button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
