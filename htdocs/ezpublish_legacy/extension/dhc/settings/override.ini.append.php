@@ -72,6 +72,12 @@ MatchFile=full/sitesettings.tpl
 Subdir=templates
 Match[class_identifier]=site_settings
 
+[edit_sitesettings]
+Source=content/edit.tpl
+MatchFile=edit/sitesttings.tpl
+Subdir=templates
+Match[class_identifier]=site_settings
+
 [edit_product]
 Source=content/edit.tpl
 MatchFile=edit/product.tpl
