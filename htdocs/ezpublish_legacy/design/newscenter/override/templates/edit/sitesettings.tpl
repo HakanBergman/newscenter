@@ -12,8 +12,8 @@
 						<div class="form container-padding-left-2">
 
 							<div class="buttonblock">
-								<button type="button" type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
-								<button type="button" type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
+								<button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
+								<button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
 								<input type="hidden" name="DiscardConfirm" value="0" />
 							</div>
 
@@ -31,8 +31,8 @@
 							</div>
 
 							<div class="buttonblock">
-								<button type="button" type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
-								<button type="button" type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
+								<button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
+								<button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
 								<input type="hidden" name="DiscardConfirm" value="0" />
 							</div>
 
