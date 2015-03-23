@@ -67,6 +67,7 @@
 		<script type="text/javascript" src={"javascript/responsive.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/admin_bar.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/overlay.js"|ezdesign}></script>
+		<script type="text/javascript" src={"javascript/toggle_class.js"|ezdesign}></script>
 		
 	</head>
 	
