@@ -6,6 +6,7 @@
 		    <div class="col-lg-12 container-padding-left-4 container-padding-right-4">
           <article>
             <h1>Sajtinställningar</h1>
+            {$company.object|attribute(show, 1)}
             <form name="editform" id="editform" enctype="multipart/form-data" method="post" action={concat( '/content/edit/', $company.contentobject_id)|ezurl('no', 'full')}>
               <h3>SEO - Inställningar</h3>
               <div class="form-group">
@@ -13,6 +14,7 @@
                 <div>{attribute_edit_gui attribute=$company.data_map.seo_description}</div>
               </div>
               <div class="buttonblock">
+                <input class="defaultbutton" type="submit" name="PublishButton" value="Skicka till publicering" title="Publish the contents of the draft that is being edited. The draft will become the published version of the object.">
                 <input class="defaultbutton" type="submit" name="PublishButton" value="{'Send for publishing'|i18n( 'design/ezdemo/content/edit' )}" title="{'Publish the contents of the draft that is being edited. The draft will become the published version of the object.'|i18n( 'design/ezdemo/content/edit' )}" />
                 <input class="button" type="submit" name="StoreButton" value="{'Store draft'|i18n( 'design/ezdemo/content/edit' )}" title="{'Store the contents of the draft that is being edited and continue editing. Use this button to periodically save your work while editing.'|i18n( 'design/ezdemo/content/edit' )}" />
                 <input class="button" type="submit" name="StoreExitButton" value="{'Store draft and exit'|i18n( 'design/ezdemo/content/edit' )}" title="{'Store the draft that is being edited and exit from edit mode. Use when you need to exit your work and return later to continue.'|i18n( 'design/ezdemo/content/edit' )}" />
