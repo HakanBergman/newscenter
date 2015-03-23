@@ -35,6 +35,11 @@
     {/if}
 
     {foreach $site.http_equiv as $key => $item}
+		{switch match=$key}
+			{case}
+				{$key} -> {$item}
+			{/case}
+		{/switch}
         <meta name="{$key|wash}" content="{$item|wash}" />
 
     {/foreach}
