@@ -7,7 +7,7 @@
           <article>
             <h1>Sajtinställningar</h1>
             {$company.object.versions|count()}
-            <form name="editform" id="editform" enctype="multipart/form-data" method="post" action={concat( '/content/edit/', $company.contentobject_id, '/', $company.object.versions|count()|inc(), '/swe-se')|ezurl('no', 'full')}>
+            <form name="editform" id="editform" enctype="multipart/form-data" method="post" action={concat( '/content/edit/', $company.contentobject_id, '/', $company.object.current_version, '/swe-se')|ezurl('no', 'full')}>
               <h3>SEO - Inställningar</h3>
               <div class="form-group">
                 <label>Beskrivning av företaget (max 255 tecken)</label>
