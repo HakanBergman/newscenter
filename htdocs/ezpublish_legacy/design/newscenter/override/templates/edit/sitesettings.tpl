@@ -16,33 +16,28 @@
                   <button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
                 </div>
 
-                <h3>SEO - Inställningar</h3>
-                <p>Ställ in beskrivning och de sökord som du vill ska komma upp i organiska resultatet (Google, Bing, med flera).</p>
+                <h3>SEO - Inställningar <a class="btn" href="#">View details &raquo;</a></h3>
+                <p>Ställ in beskrivning och de sökord som du vill ska komma upp i organiska resultatet (Google, Bing, med flera).</p>     
                 
-                  <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Visa inställningar <span class="caret"></span></button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li>
-                          <div class="form-group">
-                            <label>Beskrivning av företaget (max 255 tecken)</label>
-                            <div>{attribute_edit_gui attribute=$object.data_map.seo_description}</div>
-							            </div>
+                  <div class="collapse">
+                    <div class="form-group">
+                      <label>Beskrivning av företaget (max 255 tecken)</label>
+                      <div>{attribute_edit_gui attribute=$object.data_map.seo_description}</div>
+							      </div>
 
-                          <div class="form-group">
-                            <label>Sökord (Ange max 4-5 stycken, separerade med ",").</label>
-                            <div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
-                          </div>
+                    <div class="form-group">
+                      <label>Sökord (Ange max 4-5 stycken, separerade med ",").</label>
+                      <div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
+                    </div>
 
 
-                          <div class="buttonblock pull-right">
-                            <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
-                            <button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
-                            <input type="hidden" name="DiscardConfirm" value="0" />
-                            <input type="hidden" name="MainNodeID" value="{$main_node_id}" />
-                          </div>
-                        </li>
-                    </ul>
-                </div>                    
+                    <div class="buttonblock pull-right">
+                      <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
+                      <button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
+                      <input type="hidden" name="DiscardConfirm" value="0" />
+                      <input type="hidden" name="MainNodeID" value="{$main_node_id}" />
+                    </div>
+                  </div>                      
                 
               </div>
             </article>
