@@ -22,8 +22,9 @@
 {/let}
 {/if}
     <title>
+		{$company.path_array.0}
 		{for 0 to $company.path_array|extract(2)|count() as $number}
-			{$company.path_array.$number|attribute(show, 1)}
+			{$number}
 		{/for}
 	</title>
 
