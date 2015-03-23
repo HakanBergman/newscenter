@@ -19,9 +19,15 @@
 
 							<h3>SEO - Inställningar</h3>
 							<p>Ställ in beskrivning och de sökord som du vill ska komma upp i organiska resultatet (Google, Bing, med flera).</p>
+
 							<div class="form-group">
 								<label>Beskrivning av företaget (max 255 tecken)</label>
 								<div>{attribute_edit_gui attribute=$object.data_map.seo_description}</div>
+							</div>
+
+							<div class="form-group">
+								<label>Sökord (Ange max 4-5 stycken, separerade med ",").</label>
+								<div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
 							</div>
 
 							<div class="buttonblock">
