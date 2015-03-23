@@ -22,6 +22,9 @@
 {/let}
 {/if}
     <title>
+		{def $test = $company.path_array|count()}
+		{def $test2 = $company.path_array|extract(2)}
+		{$test2|attribute(show, 1)}
 		{$company.path_array.3}
 		{for 3 to $company.path_array|extract(3)|count() as $number}
 			{$company.path_array.$number}
