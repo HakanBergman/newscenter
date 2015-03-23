@@ -22,7 +22,11 @@
 
 {/let}
 {/if}
-    <title>{$site_title}</title>
+    <title>
+		{section loop=$company.path_array:reverse_path}
+			{$:item.text|wash()}
+		{/section}
+	</title>
 
     {if and(is_set($#Header:extra_data),is_array($#Header:extra_data))}
       {section name=ExtraData loop=$#Header:extra_data}
