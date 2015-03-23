@@ -22,7 +22,7 @@
 						<hr class="no-margin no-padding container-padding-top" />
 						<div class="edit container-padding-left-2 container-padding-top-05">
 							{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
-								<span class="glyphicon glyphicon-cog text-primary"></span> <a href="http://webbcenter.datadelenhc.se/content/edit/{$sitesettings.0.contentobject_id}" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center">Sajtinställningar</a>
+								<span class="glyphicon glyphicon-cog text-primary"></span> <a href="/content/edit/{$sitesettings.0.contentobject_id}" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center">Sajtinställningar</a>
 								<a href="http://webbcenter.datadelenhc.se/wiki/Sajtinställningar" class="float-right" title="Wiki - Sajtinställningar" target="_blank"><span class="glyphicon glyphicon-question-sign text-primary"></span></a>
 							{undef $sitesettings}
 						</div>
