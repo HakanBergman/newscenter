@@ -24,9 +24,9 @@
 {/let}
 {/if}
     <title>
-		{section loop=$company.path_array}
-			{$:item.text|wash()}
-		{/section}
+		{for 0 to $company.path_array|extract(2)|count() as $number}
+			{$number}
+		{/for}
 	</title>
 
     {if and(is_set($#Header:extra_data),is_array($#Header:extra_data))}
