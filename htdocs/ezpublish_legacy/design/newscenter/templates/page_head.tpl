@@ -21,6 +21,7 @@
 
 {/let}
 {/if}
+	{$site.title} test
     <title>{$site_title}</title>
 
     {if and(is_set($#Header:extra_data),is_array($#Header:extra_data))}
