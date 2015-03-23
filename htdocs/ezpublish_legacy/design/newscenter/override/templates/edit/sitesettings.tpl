@@ -18,24 +18,26 @@
                 
                 <p>Ställ in beskrivning och de sökord som du vill ska komma upp i organiska resultatet (Google, Bing, med flera).</p>
 
-                    <div class="seo hide">
-                      <div class="form-group">
-                        <label>Beskrivning av företaget (max 255 tecken)</label>
-                        <div>{attribute_edit_gui attribute=$object.data_map.seo_description}</div>
-							        </div>
+                <div class="seo hide">
+                  <div class="form-group">
+                    <label>Beskrivning av företaget (max 255 tecken)</label>
+                    <div>{attribute_edit_gui attribute=$object.data_map.seo_description}</div>
+							    </div>
 
-                      <div class="form-group">
-                        <label>Sökord (Ange max 4-5 stycken, separerade med ",").</label>
-                        <div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
-                      </div>
-                    </div>
-
-                  <div class="buttonblock pull-right">
-                    <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
-                    <button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
-                    <input type="hidden" name="DiscardConfirm" value="0" />
-                    <input type="hidden" name="MainNodeID" value="{$main_node_id}" />
+                  <div class="form-group">
+                    <label>Sökord (Ange max 4-5 stycken, separerade med ",").</label>
+                    <div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
                   </div>
+                </div>
+
+                <hr />
+
+                <div class="buttonblock pull-right container-top-2">
+                  <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
+                  <button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
+                  <input type="hidden" name="DiscardConfirm" value="0" />
+                  <input type="hidden" name="MainNodeID" value="{$main_node_id}" />
+                </div>
 
               </div>
             </article>
