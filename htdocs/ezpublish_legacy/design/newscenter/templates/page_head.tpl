@@ -1,10 +1,12 @@
 {default enable_help=true() enable_link=true() canonical_link=true()}
 
+{def $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
+
 {if is_set($module_result.content_info.persistent_variable.site_title)}
     {set scope=root site_title=$module_result.content_info.persistent_variable.site_title}
 {else}
 {let name=Path
-     path=$module_result.path
+     path=$company.path
      reverse_path=array()}
   {if is_set($pagedata.path_array)}
     {set path=$pagedata.path_array}
@@ -17,7 +19,7 @@
 
 {set-block scope=root variable=site_title}
 	{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
-		{section loop=$Path:reverse_path}{$:item.text|wash}{delimiter} / {/delimiter}{/section} - {$sitesettings.0.data_map.site_title.data_text|wash()}
+		{section loop=$Path:reverse_path}{$:item.text|wash}{delimiter} / {/delimiter}{/section} - {$site.title}
 	{undef $sitesettings}
 {/set-block}
 
