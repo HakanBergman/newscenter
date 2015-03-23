@@ -1,7 +1,7 @@
 {default enable_help=true() enable_link=true() canonical_link=true()}
 
 {def $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
-{$company.path|attribute(show, 1)}
+{$company.path.0|attribute(show, 1)}
 
 {if is_set($module_result.content_info.persistent_variable.site_title)}
     {set scope=root site_title=$module_result.content_info.persistent_variable.site_title}
