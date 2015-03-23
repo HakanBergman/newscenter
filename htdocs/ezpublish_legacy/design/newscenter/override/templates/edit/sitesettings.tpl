@@ -11,8 +11,10 @@
               <p>Här finns alla generella inställningar för hemsidan.</p>
               <div class="form container-padding-left-2">
 
-                <div class="pull-left"><h3 class="clear">SEO - Inställningar</h3></div>
-                <div class="pull-right"><a class="btn" href="#seo">Visa detaljer</a></div>
+                <div class="col-lg-12">
+                  <div class="pull-left"><h3 class="clear">SEO - Inställningar</h3></div>
+                  <div class="pull-right"><a class="btn" href="#seo">Visa detaljer</a></div>
+                </div>
                 
                 <p>Ställ in beskrivning och de sökord som du vill ska komma upp i organiska resultatet (Google, Bing, med flera).</p>
 
