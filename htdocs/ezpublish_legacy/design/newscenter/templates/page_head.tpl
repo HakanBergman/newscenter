@@ -35,15 +35,15 @@
     {/if}
 
     {foreach $site.http_equiv as $key => $item}
-		{switch match=$key}
-			{case}
-				{$key} -> {$item}
-			{/case}
-		{/switch}
         <meta name="{$key|wash}" content="{$item|wash}" />
 
     {/foreach}
     {foreach $site.meta as $key => $item}
+			{switch match=$key}
+			{case}
+				{$key} -> {$item}
+			{/case}
+		{/switch}
     {if is_set( $module_result.content_info.persistent_variable[$key] )}
         <meta name="{$key|wash}" content="{$module_result.content_info.persistent_variable[$key]|wash}" />
     {else}
