@@ -1,7 +1,7 @@
 {def $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
 {def $user = fetch('user', 'current_user')}
   {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
-  <div class="container thumbnail">
+  <div class="container">
 	    <div class="row">
 		    <div class="col-lg-12 container-padding-left-4 container-padding-right-4">
           <article>
