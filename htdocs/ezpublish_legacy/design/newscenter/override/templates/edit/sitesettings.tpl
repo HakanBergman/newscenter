@@ -13,9 +13,11 @@
 			<div class="row">
 				<div class="col-lg-12 container-padding-left-4 container-padding-right-4">
 				<article>
-				<h1>Sajtinställningar</h1>
-					<h3>SEO - Inställningar</h3>
+					<h1>Sajtinställningar</h1>
+					<p>Här finns alla generella inställningar för hemsidan.</p>					
 					<div class="form container-padding-left-2">
+						<h3>SEO - Inställningar</h3>
+						<p>Ställ in beskrivning och de sökord som du vill ska komma upp i organiska resultatet (Google, Bing, med flera).</p>
 						<div class="form-group">
 							<label>Beskrivning av företaget (max 255 tecken)</label>
 							<div>{attribute_edit_gui attribute=$company.data_map.seo_description}</div>
