@@ -22,9 +22,9 @@
 {/let}
 {/if}
     <title>
-		{$company.path_array.2}
-		{for 0 to $company.path_array|extract(2)|count() as $number}
-			{$number}
+		{$company.path_array.3}
+		{for 3 to $company.path_array|extract(3)|count() as $number}
+			{$company.path_array.$number}
 		{/for}
 	</title>
 
