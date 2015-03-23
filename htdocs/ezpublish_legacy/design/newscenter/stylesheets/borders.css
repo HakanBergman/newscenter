@@ -1,5 +1,6 @@
 /* Borders */
 .border-solid-white { border: 1px solid #fff; }
+.border-solid-black { border: 1px solid #000; }
 
 /* Bottom Borders */
 .bottom-border-solid-black { border-bottom: 0.2em solid #000; }

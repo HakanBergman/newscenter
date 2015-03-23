@@ -30,7 +30,7 @@
                   </div>
                 </div>
 
-                <hr />
+                <hr class="border-solid-black" />
 
                 <div class="buttonblock pull-right container-padding-top-2">
                   <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
