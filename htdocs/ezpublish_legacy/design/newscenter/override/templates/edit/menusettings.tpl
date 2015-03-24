@@ -35,7 +35,7 @@
                 <p class="clear">Ladda upp logotyp, ställ in bakgrundsfärg, länkfärg, länkstorlek och andra saker som ska finnas i menyn.</p>
 
                 <div class="menu-color hide">
-                  <div class="form-group">
+                  <div class="form-group container-padding-left">
                     <label>Logotyp</label>
                     <div>{attribute_edit_gui attribute=$object.data_map.logotype}</div>
 							    </div>
