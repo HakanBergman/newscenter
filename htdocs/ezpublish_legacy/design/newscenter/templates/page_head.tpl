@@ -23,7 +23,11 @@
 {/if}
     <title>
 		{def $sitemap = $company.path_array|extract(2)}
-		{$sitemap|attribute(show, 1)}
+		{foreach $sitemap as $site}
+			{def $sitemap_name = fetch('content', 'node', hash('node_id', $sitemap.$number))}
+				{$sitemap_name.name|wash()}
+			{undef $sitemap_name}
+		{/foreach}
 			{for 0 to $sitemap|count() as $number}
 				{def $sitemap_name = fetch('content', 'node', hash('node_id', $sitemap.$number))}
 					{$sitemap_name.name|wash()}
@@ -75,7 +79,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="{$site_title}">
+	<meta name="apple-mobile-web-app-title" content="{$site.title}">
 
 {if $canonical_link}
     {include uri="design:canonical_link.tpl"}
