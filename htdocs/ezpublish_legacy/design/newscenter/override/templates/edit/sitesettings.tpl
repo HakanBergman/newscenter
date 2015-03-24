@@ -95,12 +95,7 @@
                 <div class="colors hide">
                   <div class="form-group">
                     <label>Välj bakgrundsfärg</label>
-                    <div>{attribute_edit_gui attribute=$object.data_map.background_color}</div>
-                  </div>
-
-                  <div class="form-group">
-                    <label>Sökord (Ange max 4-5 stycken, separerade med ",")</label>
-                    <div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
+                    <div>{attribute_edit_gui attribute=$object.data_map.background_color css_class="hide"}</div>
                   </div>
                   
                 </div>
