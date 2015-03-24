@@ -28,11 +28,11 @@
                 {* Meny Settings *}
                 
                 <div class="col-lg-12 no-margin no-padding">
-                  <div class="pull-left"><h3 class="clear">Meny - Färginställningar</h3></div>
+                  <div class="pull-left"><h3 class="clear">Meny - Inställningar</h3></div>
                   <div class="pull-right container-padding-top-2"><a class="toggle" data-href="menu-color" href="#menu-color">Visa detaljer</a></div>
                 </div>
                 
-                <p class="clear">Ställ in bakgrundsfärg, länkfärg, länkstorlek och andra saker som ska finnas i menyn.</p>
+                <p class="clear">Ladda upp logotyp, ställ in bakgrundsfärg, länkfärg, länkstorlek och andra saker som ska finnas i menyn.</p>
 
                 <div class="menu-color hide">
                   <div class="form-group">
