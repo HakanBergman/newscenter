@@ -4,8 +4,15 @@
 		{* Current Image *}
 		<div class="col-lg-12 container-padding-top container-padding-left">
 			{if $attribute_content.original.is_valid}
-				<div class="col-lg-12">Förhandsgranska</div>
-				<div class="col-lg-12">{attribute_view_gui image_class=ezini( 'ImageSettings', 'DefaultEditAlias', 'content.ini' ) attribute=$attribute}</div>
+				<div class="col-lg-12">
+					<div class="pull-left">
+						{attribute_view_gui image_class=ezini( 'ImageSettings', 'DefaultEditAlias', 'content.ini' ) attribute=$attribute}
+					</div>
+					<div class="pull-right">
+						<input class="button" type="submit" name="CustomActionButton[{$attribute.id}_delete_image]" value="{'Remove image'|i18n( 'design/standard/content/datatype' )}" />
+						<button type="submit" class="btn btn-primary" name="CustomActionButton[{$attribute.id}_delete_image]" value="{'Remove image'|i18n( 'design/standard/content/datatype' )}">Ta bort bild</button>
+					</div>
+				</div>
 				{* Alternative image text. *}
 				<div class="col-lg-12">
 					<label for="logo-text">Bildtext (Bör anges, tex företagsnamnet).</label>
