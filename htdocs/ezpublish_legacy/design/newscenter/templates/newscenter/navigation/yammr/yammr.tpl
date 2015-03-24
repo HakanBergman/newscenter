@@ -1,4 +1,3 @@
-test
 <div class="container-fluid {$#company.data_map.background_color_logo.data_text}">
   <div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
