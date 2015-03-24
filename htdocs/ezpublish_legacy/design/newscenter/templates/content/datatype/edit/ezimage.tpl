@@ -4,11 +4,11 @@
 		{* Current Image *}
 		<div class="col-lg-12 container-padding-top container-padding-left">
 			{if $attribute_content.original.is_valid}
-				<div class="col-lg-12">Förhandsgranska</div>
-				<div class="col-lg-12">{attribute_view_gui image_class=ezini( 'ImageSettings', 'DefaultEditAlias', 'content.ini' ) attribute=$attribute}</div>
+				<div class="col-lg-12">FÃ¶rhandsgranska</div>
+				<div class="col-lg-12">{attribute_view_gui image_class=img-responsive attribute=$attribute}</div>
 				{* Alternative image text. *}
 				<div class="col-lg-12">
-					<label for="logo-text">Bildtext (Bör anges, tex företagsnamnet).</label>
+					<label for="logo-text">Bildtext (BÃ¶r anges, tex fÃ¶retagsnamnet).</label>
 					<input id="logo-text" name="{$attribute_base}_data_imagealttext_{$attribute.id}" value="{$attribute_content.alternative_text|wash(xhtml)}" type="text" class="form-control" placeholder="Text input" />
 				</div>
 			{else}
