@@ -106,7 +106,7 @@
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-beige min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-beige" data-hex="#DECC9E"></span></div>                      
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-beige-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-beige-brown" data-hex="#DEDEB4"></span></div>
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-pink min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-pink" data-hex="#F9DADD"></span></div>
-                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-beige-yellow mmin-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-beige-yellow" data-hex="#FFFFD1"></span></div>
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-beige-yellow min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-beige-yellow" data-hex="#FFFFD1"></span></div>
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-grey" data-hex="#EEE"></span></div>                                            
                     </div>
                     <div class="col-lg-12">                      
