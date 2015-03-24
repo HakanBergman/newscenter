@@ -25,7 +25,7 @@
 		{def $sitemap = $company.path_array|extract(2)}
 			{for 0 to $sitemap|count() as $number}
 				{def $sitemap_name = fetch('content', 'node', hash('node_id', $sitemap.$number))}
-					{$sitemap.name|wash()}
+					{$sitemap_name.name|wash()}
 				{undef $sitemap_name}
 			{/for}
 		{undef $sitemap}
