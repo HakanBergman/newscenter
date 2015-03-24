@@ -1,7 +1,3 @@
-{def $menusettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('menu_settings'), 'limit', 1))}
-  {$menusettings.data_map.menu_plugin.content|attribute(show, 1)}
-{undef $menusettings}
-
 <div class="container-fluid {$#company.data_map.background_color_logo.data_text}">
   <div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
