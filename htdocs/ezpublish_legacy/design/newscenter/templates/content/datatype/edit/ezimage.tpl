@@ -9,7 +9,6 @@
 						{attribute_view_gui image_class=ezini( 'ImageSettings', 'DefaultEditAlias', 'content.ini' ) attribute=$attribute}
 					</div>
 					<div class="pull-right">
-						<input class="button" type="submit" name="CustomActionButton[{$attribute.id}_delete_image]" value="{'Remove image'|i18n( 'design/standard/content/datatype' )}" />
 						<button type="submit" class="btn btn-primary" name="CustomActionButton[{$attribute.id}_delete_image]" value="{'Remove image'|i18n( 'design/standard/content/datatype' )}">Ta bort logotypen</button>
 					</div>
 				</div>
