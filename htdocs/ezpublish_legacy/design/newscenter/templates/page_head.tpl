@@ -34,22 +34,13 @@
     {/foreach}
 
 	{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
-		{foreach $site.meta as $key => $item}
-			{switch match=$key}
-				{case match='author'}
-					<meta name="{$key|wash}" content="Datadelen Webb Center" />
-				{/case}
-				{case match='copyright'}
-					<meta name="{$key|wash}" content="Datadelen Webb Center" />
-				{/case}
-				{case match='description'}
-					<meta name="{$key|wash}" content="{$sitesettings.0.data_map.seo_description.data_text|wash()}" />
-				{/case}
-				{case match='keywords'}
-					<meta name="{$key|wash}" content="{$sitesettings.0.data_map.seo_tags.data_text|wash()}" />
-				{/case}
-			{/switch}	
-		{/foreach}	
+		<meta name="{$key|wash}" content="Datadelen Webb Center" />
+		<meta name="{$key|wash}" content="Datadelen Webb Center" />
+		{if $company.node_id|eq($pagedata.node_id)}
+			<meta name="{$key|wash}" content="{$sitesettings.0.data_map.seo_description.data_text|wash()}" />
+			<meta name="{$key|wash}" content="{$sitesettings.0.data_map.seo_tags.data_text|wash()}" />
+		{else}
+		{/if}
 	{undef $sitesettings}
 
     <meta name="MSSmartTagsPreventParsing" content="TRUE" />
