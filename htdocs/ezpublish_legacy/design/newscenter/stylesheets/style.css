@@ -42,6 +42,10 @@ section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 .max-width-3-em { max-width: 3em; }
 .max-width-3-em-important { max-width: 3em !important; }
 
+/* Min width */
+.min-width-1-em { min-width: 1em; }
+.min-width-2-em { min-width: 2em; }
+
 /* Width */
 .width-1-em { width: 1em; }
 .width-105-em { width: 1.5em; }
