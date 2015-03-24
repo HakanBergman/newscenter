@@ -16,7 +16,7 @@
                   <div class="pull-left"><h3 class="clear">Titel</h3></div>
                 </div>
 
-                <p>Ange namnet på sidan (Tex företagsnamnet).</p>
+                <p class="clear">Ange namnet på sidan (Tex företagsnamnet).</p>
 
                 <div class="form-group">
                   <label>Sidans titel.</label>
@@ -25,14 +25,34 @@
 
                 <hr class="border-solid-black" />
 
+                {* Site Icon *}
+
+                <div class="col-lg-12 no-margin no-padding">
+                  <div class="pull-left">
+                    <h3 class="clear">Ikonbild</h3>
+                  </div>
+                  <div class="pull-right container-padding-top-2">
+                    <a class="toggle" data-href="icon" href="#icon">Visa detaljer</a>
+                  </div>
+                </div>
+
+                <div class="icon hide">
+                  <div class="form-group">
+                    <label>Välj ikon</label>
+                    <div>{attribute_edit_gui attribute=$object.data_map.icon}</div>
+                  </div>
+                </div>                
+
+                <hr class="border-solid-black" />
+
                 {* Site SEO *}
-                
+
                 <div class="col-lg-12 no-margin no-padding">
                   <div class="pull-left"><h3 class="clear">SEO - Inställningar</h3></div>
                   <div class="pull-right container-padding-top-2"><a class="toggle" data-href="seo" href="#seo">Visa detaljer</a></div>
                 </div>
                 
-                <p>Ställ in beskrivning och de sökord som du vill ska komma upp i organiska resultatet (Google, Bing, med flera).</p>
+                <p class="clear">Ställ in beskrivning och de sökord som du vill ska komma upp i organiska resultatet (Google, Bing, med flera).</p>
 
                 <div class="seo hide">
                   <div class="form-group">
