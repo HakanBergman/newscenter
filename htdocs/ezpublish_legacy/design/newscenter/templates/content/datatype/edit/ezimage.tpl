@@ -2,8 +2,7 @@
 	{let attribute_content=$attribute.content}
 
 		{* Current Image *}
-		<div class="col-lg-12">
-			<label>{'Current image'|i18n( 'design/standard/content/datatype' )}:</label>
+		<div class="col-lg-12 container-padding-top-2 container-padding-left">
 			{if $attribute_content.original.is_valid}
 			{else}
 				<p class="clear">Ingen logotyp har laddats upp</p>
