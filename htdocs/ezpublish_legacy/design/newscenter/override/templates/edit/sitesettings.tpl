@@ -97,7 +97,7 @@
                     <label>Välj bakgrundsfärg</label>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="background_color" class="color-picker thumbnail" value="black"><span class="thumbnail bg-black"></span></input>
+                        <input type="radio" name="background_color" class="color-picker thumbnail" value="black"></input><span class="thumbnail bg-black min-height-1-em min-width-1-em"></span></input>
                       </label>
                     </div>                    
                     <div class="hide">{attribute_edit_gui attribute=$object.data_map.background_color css_class="hide"}</div>
