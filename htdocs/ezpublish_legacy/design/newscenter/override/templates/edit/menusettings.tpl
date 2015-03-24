@@ -13,7 +13,7 @@
                                 
                 {* Menu Plugin To Use *}
                 <div class="col-lg-12 no-margin no-padding">
-                  <div class="pull-left"><h3 class="clear">Meny - Plugininställning</h3></div>
+                  <div class="pull-left"><h3 class="clear">Meny - Plugin-inställning</h3></div>
                 </div>
 
                 <p class="clear">Här väljs den plugin som ska användas för att generera menyn och dess innehåll.</p>
