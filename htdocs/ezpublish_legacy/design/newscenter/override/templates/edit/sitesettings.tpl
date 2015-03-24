@@ -97,10 +97,10 @@
                     <label>Välj bakgrundsfärg</label>
                     <div class="radio">
                       <div class="col-lg-1">
-                        <input type="radio" name="background_color" class="hide" value="black"><span class="thumbnail bg-white border-solid-black min-height-1-em min-width-1-em"></span></input>
+                        <input type="radio" name="background_color" class="hide" value="white"><span class="thumbnail bg-white border-solid-black min-height-1-em min-width-1-em max-width-1-em"></span></input>
                       </div>
                       <div class="col-lg-1">
-                        <input type="radio" name="background_color" class="hide" value="black"><span class="thumbnail bg-black min-height-1-em min-width-1-em"></span></input>                   
+                        <input type="radio" name="background_color" class="hide" value="black"><span class="thumbnail bg-black min-height-1-em min-width-1-em max-width-1-em"></span></input>                   
                       </div>
                     </div>                    
                     <div class="hide">{attribute_edit_gui attribute=$object.data_map.background_color css_class="hide"}</div>
