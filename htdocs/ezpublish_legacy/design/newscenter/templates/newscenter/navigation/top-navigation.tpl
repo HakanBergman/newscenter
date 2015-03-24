@@ -1,6 +1,9 @@
 {def $menusettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('menu_settings'), 'limit', 1))}
-  {$menusettings.0.data_map.menu_plugin.value.0}
-  {$menusettings.0.data_map.menu_plugin.object|attribute(show, 1)}
+  {switch maatch=$menusettings.0.data_map.menu_plugin.value.0}
+    {case match=0}
+      Yammr
+    {/case}
+  {/switch}
 {undef $menusettings}
 
 <div class="container-fluid {$#company.data_map.background_color_logo.data_text}">
