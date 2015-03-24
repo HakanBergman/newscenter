@@ -30,12 +30,12 @@
 						{set $title = $title|append($sitesettings.0.data_map.site_title.data_text)}
 					{undef $sitesettings}
 				{else}
-					{set $title = $title|prepend(concat(' / ', $sitemap_name.name|wash()))}
+					{set $title = $title|prepend(concat($sitemap_name.name|wash(), ' / '))}
 				{/if}
 			{undef $sitemap_name}
 		{/foreach}
 	{undef $sitemap}
-    <title>{$title}</title>
+    <title>{$title|wash()}</title>
 
     {if and(is_set($#Header:extra_data),is_array($#Header:extra_data))}
       {section name=ExtraData loop=$#Header:extra_data}
