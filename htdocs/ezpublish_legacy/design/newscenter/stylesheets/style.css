@@ -5,10 +5,6 @@ section .row { margin: 0; padding: 0; padding: 0; margin: 0; }
 section .container { padding: 0; padding-left: 15px; padding-right: 15px; max-width: 100%; }
 section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 
-/* Color Picker CSS */
-.color-picker { position: absolute;	right: 0; margin: 0; width: 31px; height: 31px;	filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity: 0;	opacity: 0; cursor: pointer; }
-.colors input[type="radio"]:checked { border: 1px solid #00ffff; }
-
 /* Opacity */
 .opacity-035 { opacity: 0.35; }
 
@@ -43,6 +39,7 @@ section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 .height-105-em { height: 1.5em; }
 
 /* Max width */
+.max-width-1-em { max-width: 1em; }
 .max-width-2-em { max-width: 2em; }
 .max-width-3-em { max-width: 3em; }
 .max-width-3-em-important { max-width: 3em !important; }
