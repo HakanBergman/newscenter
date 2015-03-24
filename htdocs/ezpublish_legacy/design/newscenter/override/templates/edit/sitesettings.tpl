@@ -60,7 +60,7 @@
                   
                 </div>                
 
-                <hr class="border-solid-black" />
+                <hr class="border-solid-black clear" />
 
                 {* Site SEO *}
 
