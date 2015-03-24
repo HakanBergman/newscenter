@@ -4,6 +4,13 @@
 		{* Current Image *}
 		<div class="col-lg-12 container-padding-top container-padding-left">
 			{if $attribute_content.original.is_valid}
+				<div class="col-lg-12">Förhandsgranska</div>
+				<div class="col-lg-12">{attribute_view_gui image_class=ezini( 'ImageSettings', 'DefaultEditAlias', 'content.ini' ) attribute=$attribute}</div>
+				{* Alternative image text. *}
+				<div class="col-lg-12">
+					<label for="logo-text">Bildtext (Bör anges, tex företagsnamnet).</label>
+					<input id="logo-text" name="{$attribute_base}_data_imagealttext_{$attribute.id}" value="{$attribute_content.alternative_text|wash(xhtml)}" type="text" class="form-control" placeholder="Text input" />
+				</div>
 			{else}
 				<p class="clear">Ingen logotyp har laddats upp</p>
 				{* New image file for upload. *}
@@ -14,6 +21,8 @@
 				</div>
 			{/if}
 		</div>
+
+
 {* Current image. *}
 <div class="block">
 <label>{'Current image'|i18n( 'design/standard/content/datatype' )}:</label>
