@@ -95,22 +95,22 @@
                 <div class="colors hide">
                   <div class="form-group">
                     <label>Välj bakgrundsfärg</label>
-                    <div class="col-lg-12">
-                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-white border-solid-black min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-white" data-hex="#FFF"></span></div>
+                    <div class="col-lg-12">                      
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-black min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-black" data-hex="#000"></span></div>
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-granate min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-granate" data-hex="#570900"></span></div>
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-tidningen-se min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-tidningen-se" data-hex="#004389"></span></div>
-                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-grey min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-grey" data-hex="#EEE"></span></div>
-                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-pink min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-pink" data-hex="#F9DADD"></span></div>                      
-                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-dynamite-orange min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-dynamite-orange" data-hex="#F5A818"></span></div>
-                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-dynamite-green min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-dynamite-green" data-hex="#D4D977"></span></div>
-                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-longdrink-blue min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-longdrink-blue" data-hex="#4BC6D1"></span></div>
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-beer-brown min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-beer-brown" data-hex="#DE910b"></span></div>
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-dynamite-orange min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-dynamite-orange" data-hex="#F5A818"></span></div>
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-grey min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-grey" data-hex="#EEE"></span></div>
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-pink min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-pink" data-hex="#F9DADD"></span></div>                                            
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-dynamite-green min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-dynamite-green" data-hex="#D4D977"></span></div>
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-longdrink-blue min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-longdrink-blue" data-hex="#4BC6D1"></span></div>                      
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-beige min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-beige" data-hex="#DECC9E"></span></div>
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-beige-yellow min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-beige-yellow" data-hex="#FFFFD1"></span></div>
                     </div>
                     <div class="col-lg-12">
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-beige-brown min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-beige-brown" data-hex="#DEDEB4"></span></div>
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-white border-solid-black min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-white" data-hex="#FFF"></span></div>
                     </div>
                     <div class="hide">{attribute_edit_gui attribute=$object.data_map.background_color css_class="hide"}</div>
                   </div>
