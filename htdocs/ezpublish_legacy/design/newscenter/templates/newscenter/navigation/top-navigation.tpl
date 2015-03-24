@@ -1,5 +1,5 @@
 {def $menusettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('menu_settings'), 'limit', 1))}
-  {$menusettings.data_map.menu_plugin.content|attribute(show, 1)}
+  {$menusettings.0.data_map.menu_plugin.content|attribute(show, 1)}
 {undef $menusettings}
 
 <div class="container-fluid {$#company.data_map.background_color_logo.data_text}">
