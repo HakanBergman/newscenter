@@ -38,22 +38,22 @@
 
                 <div class="icon hide">
                   
-                  <div class="form-group container-padding-bottom">
+                  <div class="form-group container-padding-bottom container-padding-top clear">
                     <label>Välj hemsidans ikon</label>
                     <div>{attribute_edit_gui attribute=$object.data_map.icon}</div>
                   </div>
                   
-                  <div class="form-group container-padding-bottom">
+                  <div class="form-group container-padding-bottom container-padding-top clear">
                     <label>Välj default Apple ikon (76x76)(</label>
                     <div>{attribute_edit_gui attribute=$object.data_map.icon_apple_default}</div>
                   </div>
                   
-                  <div class="form-group container-padding-bottom">
+                  <div class="form-group container-padding-bottom container-padding-top clear">
                     <label>Välj Apple Tablet ikon (120x120)</label>
                     <div>{attribute_edit_gui attribute=$object.data_map.icon_apple_tablet}</div>
                   </div>
                   
-                  <div class="form-group container-padding-bottom">
+                  <div class="form-group container-padding-bottom container-padding-top clear">
                     <label>Välj Apple Retina ikon (152x152)</label>
                     <div>{attribute_edit_gui attribute=$object.data_map.icon_apple_retina}</div>
                   </div>                 
