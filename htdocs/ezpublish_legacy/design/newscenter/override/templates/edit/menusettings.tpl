@@ -16,7 +16,7 @@
                   <div class="pull-left"><h3 class="clear">Meny - Plugininställning</h3></div>
                 </div>
 
-                <p>Här väljs den plugin som ska användas för att generera menyn och dess innehåll.</p>
+                <p class="clear">Här väljs den plugin som ska användas för att generera menyn och dess innehåll.</p>
 
                 <div class="form-group">
                   <label>Välj den plugin som ska användas</label>
@@ -32,7 +32,7 @@
                   <div class="pull-right container-padding-top-2"><a class="toggle" data-href="menu-color" href="#menu-color">Visa detaljer</a></div>
                 </div>
                 
-                <p>Ställ in bakgrundsfärg, länkfärg, länkstorlek och andra saker som ska finnas i menyn.</p>
+                <p class="clear">Ställ in bakgrundsfärg, länkfärg, länkstorlek och andra saker som ska finnas i menyn.</p>
 
                 <div class="menu-color hide">
                   <div class="form-group">
