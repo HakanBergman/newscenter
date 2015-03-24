@@ -1,5 +1,6 @@
 {default enable_print=true()}
 {def $sitesettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
+{$sitesettings} test
 {def $title = ""}
 {def $sitemap = $module_result.path|extract(1)}
 	{foreach $sitemap as $site}
