@@ -72,11 +72,23 @@ MatchFile=full/sitesettings.tpl
 Subdir=templates
 Match[class_identifier]=site_settings
 
+[full_menu_settings]
+Source=node/view/full.tpl
+MatchFile=full/menusettings.tpl
+Subdir=templates
+Match[class_identifier]=menu_settings
+
 [edit_sitesettings]
 Source=content/edit.tpl
 MatchFile=edit/sitesettings.tpl
 Subdir=templates
 Match[class_identifier]=site_settings
+
+[edit_menusettings]
+Source=content/edit.tpl
+MatchFile=edit/menusettings.tpl
+Subdir=templates
+Match[class_identifier]=menu_settings
 
 [edit_product]
 Source=content/edit.tpl
