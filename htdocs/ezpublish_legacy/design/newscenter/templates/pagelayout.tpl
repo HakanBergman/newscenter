@@ -29,15 +29,16 @@
 		{def $company = ""}
 		{set scope='global' $zone_width = ""}
 		{set scope='global' $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
+		{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
 
 		{* Include Page Head *}	
 		{include uri='design:page_head.tpl'}
 
 		{* Apple Device Icons *}
-		<link rel="apple-touch-icon" href="img/apple-touch-dhc-logo.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-dhc-logo.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-dhc-logo.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-dhc-logo.png">
+		<link rel="apple-touch-icon" href="/{$sitesettings.0.data_map.icon_apple_default.content.full_path}">
+		<link rel="apple-touch-icon" sizes="76x76" href="/{$sitesettings.0.data_map.icon_apple_default.content.full_path}">
+		<link rel="apple-touch-icon" sizes="120x120" href="/{$sitesettings.0.data_map.icon_apple_tablet.content.full_path}">
+		<link rel="apple-touch-icon" sizes="152x152" href="/{$sitesettings.0.data_map.icon_apple_retina.content.full_path}">
 		
 		{* Include Stylesheets *}
 		{include uri='design:page_head_style.tpl'}
@@ -119,11 +120,9 @@
 							{/foreach}
 						{/if}
 						<div class="{$#company.data_map.footer_color.data_text}">&nbsp;</div>
-						<div class="col-lg-12 nav-padding-bottom-4">
-							{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
-								<span class="pull-left {$#company.data_map.text_color_footer.data_text}">{'&copy; Copyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} {$sitesettings.0.data_map.site_title.data_text|wash()}</span>
-								<span class="pull-right"><span class="{$#company.data_map.text_color_footer.data_text}">{$#company.data_map.company_address.data_text}, {$#company.data_map.zipcode.data_text} {$#company.data_map.city.data_text}</span> | <span class="{$#company.data_map.text_color_footer.data_text}">Tel:</span> <a href="tel:086462600">{$#company.data_map.phone.data_text}</a> | <span class="{$#company.data_map.text_color_footer.data_text}">E-postadress:</span> <a href="mailto:{$#company.data_map.email.data_text}">{$#company.data_map.email.data_text}</a></span>
-							{undef $sitesettings}
+						<div class="col-lg-12 nav-padding-bottom-4">							
+							<span class="pull-left {$#company.data_map.text_color_footer.data_text}">{'&copy; Copyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} {$sitesettings.0.data_map.site_title.data_text|wash()}</span>
+							<span class="pull-right"><span class="{$#company.data_map.text_color_footer.data_text}">{$#company.data_map.company_address.data_text}, {$#company.data_map.zipcode.data_text} {$#company.data_map.city.data_text}</span> | <span class="{$#company.data_map.text_color_footer.data_text}">Tel:</span> <a href="tel:086462600">{$#company.data_map.phone.data_text}</a> | <span class="{$#company.data_map.text_color_footer.data_text}">E-postadress:</span> <a href="mailto:{$#company.data_map.email.data_text}">{$#company.data_map.email.data_text}</a></span>
 						</div>
 					</footer>
 				</div>
