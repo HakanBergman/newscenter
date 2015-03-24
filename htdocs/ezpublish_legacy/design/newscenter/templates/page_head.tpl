@@ -24,6 +24,7 @@
     <title>
 		{def $sitemap = $company.path_array|extract(2)}
 			{foreach $sitemap as $site}
+				{$site|attribute(show, 1)}
 				{def $sitemap_name = fetch('content', 'node', hash('node_id', $sitemap.$number))}
 					{if $company.node_id|eq($sitemap_name.node_id)}
 						hittade hit
