@@ -7,7 +7,7 @@
 {let name=Path
      path=$module_result.path
      reverse_path=array()}
-    {set path=$company.path_array}
+    {set path=$pagedata.path_array}
   {section loop=$:path}
     {set reverse_path=$:reverse_path|array_prepend($:item)}
   {/section}
@@ -23,18 +23,17 @@
 {/if}
     <title>
 		{def $sitemap = $company.path_array|extract(2)}
-		{foreach $sitemap as $site}
-			{def $sitemap_name = fetch('content', 'node', hash('node_id', $sitemap.$number))}
-				{$sitemap_name.name|wash()}
-			{undef $sitemap_name}
-		{/foreach}
-			{for 0 to $sitemap|count() as $number}
+			{foreach $sitemap as $site}
 				{def $sitemap_name = fetch('content', 'node', hash('node_id', $sitemap.$number))}
-					{$sitemap_name.name|wash()}
-					{$number} {($sitemap|count()|dec(1))}
-					{if $number|ne($sitemap|count()|dec(1))} / {/if}
+					{if $company.node_id|eq($sitemap_name.node_id)}
+						{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
+							{$sitesettings.data_map.site_title.data_text}
+						{undef $sitesettings}
+					{else}
+						{$sitemap_name.name|wash()}
+					{/if}
 				{undef $sitemap_name}
-			{/for}
+			{/foreach}
 		{undef $sitemap}
 	</title>
 
