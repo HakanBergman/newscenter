@@ -23,8 +23,6 @@
                   <div>{attribute_edit_gui attribute=$object.data_map.site_title}</div>
                 </div>
 
-                <hr class="border-solid-black" />
-
                 {* Site Icons *}
 
                 <div class="col-lg-12 no-margin no-padding">
@@ -58,13 +56,11 @@
                     <div>{attribute_edit_gui attribute=$object.data_map.icon_apple_retina}</div>
                   </div>                 
                   
-                </div>                
-
-                <hr class="border-solid-black clear" />
+                </div>                                
 
                 {* Site SEO *}
 
-                <div class="col-lg-12 no-margin no-padding">
+                <div class="col-lg-12 no-margin no-padding">                  
                   <div class="pull-left"><h3 class="clear">SEO - Inställningar</h3></div>
                   <div class="pull-right container-padding-top-2"><a class="toggle" data-href="seo" href="#seo">Visa detaljer</a></div>
                 </div>
@@ -82,8 +78,6 @@
                     <div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
                   </div>
                 </div>
-
-                <hr class="border-solid-black" />
 
                 {* Save Settings *}
                 
