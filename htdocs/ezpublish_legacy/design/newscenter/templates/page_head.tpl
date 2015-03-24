@@ -22,7 +22,8 @@
 {/let}
 {/if}
     <title>
-		{def $sitemap = $company.path_array|extract(3)}
+		{def $sitemap = $company.path_array|extract(2)}
+		{$sitemap|attribute(show, 1)}
 			{for 0 to $sitemap|count() as $number}
 				{def $sitemap_name = fetch('content', 'node', hash('node_id', $sitemap.$number))}
 					{$sitemap_name.name|wash()}
