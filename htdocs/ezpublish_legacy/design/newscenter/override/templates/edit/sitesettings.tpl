@@ -19,7 +19,7 @@
                 <p class="clear">Ange namnet på sidan (Tex företagsnamnet).</p>
 
                 <div class="form-group">
-                  <label>Sidans titel.</label>
+                  <label>Sidans titel</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.site_title}</div>
                 </div>
 
@@ -61,7 +61,7 @@
 							    </div>
 
                   <div class="form-group">
-                    <label>Sökord (Ange max 4-5 stycken, separerade med ",").</label>
+                    <label>Sökord (Ange max 4-5 stycken, separerade med ",")</label>
                     <div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
                   </div>
                 </div>
