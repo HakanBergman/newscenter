@@ -1,5 +1,5 @@
 {default enable_print=true()}
-{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
+{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
 {def $title = ""}
 {def $sitemap = $module_result.path|extract(1)}
 	{foreach $sitemap as $site}
@@ -19,7 +19,7 @@
 
 <link rel="Home" href={"/"|ezurl} title="{$sitesettings.0.data_map.site_title.data_text|wash()}" />
 <link rel="Index" href={"/"|ezurl} />
-<link rel="Top"  href={"/"|ezurl} title="{$title|wash()}" />
+<link rel="Top" href={"/"|ezurl} title="{$title|wash()}" />
 <link rel="Search" href={"content/advancedsearch"|ezurl} title="Sök på {$title|wash()}" />
 <link rel="Shortcut icon" href="/{$sitesettings.0.data_map.icon.content.original.full_path|wash()}" type="image/x-icon" />
 <link rel="Copyright" href={"/ezinfo/copyright"|ezurl} />
