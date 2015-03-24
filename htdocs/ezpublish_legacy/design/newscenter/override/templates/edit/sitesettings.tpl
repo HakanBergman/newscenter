@@ -79,8 +79,34 @@
                   </div>
                 </div>
 
+                {* Site Colors *}
+
+                <div class="col-lg-12 no-margin no-padding">
+                  <div class="pull-left">
+                    <h3 class="clear">Färginställningar</h3>
+                  </div>
+                  <div class="pull-right container-padding-top-2">
+                    <a class="toggle" data-href="colors" href="#colors">Visa detaljer</a>
+                  </div>
+                </div>
+
+                <p class="clear">Ange bakgrundsfärg, länkfärg, textfärg, font-storlek och font-familj.</p>
+
+                <div class="colors hide">
+                  <div class="form-group">
+                    <label>Välj bakgrundsfärg</label>
+                    <div>{attribute_edit_gui attribute=$object.data_map.background_color}</div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Sökord (Ange max 4-5 stycken, separerade med ",")</label>
+                    <div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
+                  </div>
+                  
+                </div>
+
                 {* Save Settings *}
-                
+
                 <div class="buttonblock pull-right container-padding-top-2">
                   <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
                   <button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
