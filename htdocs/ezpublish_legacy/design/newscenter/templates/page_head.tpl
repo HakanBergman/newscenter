@@ -23,7 +23,7 @@
 {/if}
 	{def $title = ""}
 	{def $sitemap = $company.path_array|extract(2)}
-	{$node.path_array|attribute(show, 1)}
+	{$pagedata.path_array|attribute(show, 1)}
 		{foreach $sitemap as $site}
 			{def $sitemap_name = fetch('content', 'node', hash('node_id', $site))}
 				{if $company.node_id|eq($site)}
