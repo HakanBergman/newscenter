@@ -15,6 +15,8 @@
 	{/foreach}
 {undef $sitemap}
 
+{$sitesettings.0.data_map.icon.content|attribute(show, 1)}
+
 <link rel="Home" href={"/"|ezurl} title="{$sitesettings.0.data_map.site_title.data_text|wash()}" />
 <link rel="Index" href={"/"|ezurl} />
 <link rel="Top"  href={"/"|ezurl} title="{$title|wash()}" />
