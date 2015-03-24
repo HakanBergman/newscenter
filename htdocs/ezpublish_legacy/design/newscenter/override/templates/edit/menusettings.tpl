@@ -25,7 +25,7 @@
 
                 <hr class="border-solid-black" />
 
-                {* Site SEO *}
+                {* Meny Settings *}
                 
                 <div class="col-lg-12 no-margin no-padding">
                   <div class="pull-left"><h3 class="clear">Meny - Färginställningar</h3></div>
@@ -36,8 +36,8 @@
 
                 <div class="menu-color hide">
                   <div class="form-group">
-                    <label>Beskrivning av företaget (max 255 tecken)</label>
-                    <div>{attribute_edit_gui attribute=$object.data_map.seo_description}</div>
+                    <label>Logotyp</label>
+                    <div>{attribute_edit_gui attribute=$object.data_map.logotype}</div>
 							    </div>
 
                   <div class="form-group">
