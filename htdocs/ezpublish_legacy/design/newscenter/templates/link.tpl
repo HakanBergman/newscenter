@@ -15,13 +15,11 @@
 	{/foreach}
 {undef $sitemap}
 
-{$sitesettings.0.data_map.icon.content.original.full_path}
-
 <link rel="Home" href={"/"|ezurl} title="{$sitesettings.0.data_map.site_title.data_text|wash()}" />
 <link rel="Index" href={"/"|ezurl} />
 <link rel="Top"  href={"/"|ezurl} title="{$title|wash()}" />
-<link rel="Search" href={"content/advancedsearch"|ezurl} title="Sök på {$title|wash()}" />
-<link rel="Shortcut icon" href={$#company.data_map.icon.data_text|ezimage} type="image/x-icon" />
+<link rel="Search" href={"content/advancedsearch"|ezurl} title="SÃ¶k pÃ¥ {$title|wash()}" />
+<link rel="Shortcut icon" href="/{$sitesettings.0.data_map.icon.content.original.full_path|wash()}" type="image/x-icon" />
 <link rel="Copyright" href={"/ezinfo/copyright"|ezurl} />
 <link rel="Author" href={"/ezinfo/about"|ezurl} />
 <link rel="Alternate" type="application/rss+xml" title="RSS" href="{'/rss/feed/my_feed'|ezurl(no)}" />
