@@ -22,12 +22,10 @@
 {/let}
 {/if}
 	{def $title = ""}
-	{def $sitemap = $company.path_array|extract(2)}
-	{$pagedata.path_array|attribute(show, 1)}
-	{$module_result.path.0|attribute(show, 1)}
+	{def $sitemap = $module_result.path|extract(2)}
 		{foreach $sitemap as $site}
-			{def $sitemap_name = fetch('content', 'node', hash('node_id', $site))}
-				{if $company.node_id|eq($site)}
+			{def $sitemap_name = fetch('content', 'node', hash('node_id', $site.node_id))}
+				{if $company.node_id|eq($site.node_id)}
 					{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
 						{set $title = $title|append($sitesettings.0.data_map.site_title.data_text)}
 					{undef $sitesettings}
