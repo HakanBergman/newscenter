@@ -22,7 +22,7 @@
 				{* New image file for upload. *}
 				<div class="col-lg-12">
 					<input type="hidden" name="MAX_FILE_SIZE" value="{$attribute.contentclass_attribute.data_int1|mul( 1024, 1024 )}" />
-					<input class="btn btn-info" name="{$attribute_base}_data_imagename_{$attribute.id}" type="file" />
+					<input class="btn btn-info text-color-black" name="{$attribute_base}_data_imagename_{$attribute.id}" type="file" />
 				</div>
 				<div class="col-lg-12 container-padding-top">
 					<input id="logo-text" name="{$attribute_base}_data_imagealttext_{$attribute.id}" value="{$attribute_content.alternative_text|wash(xhtml)}" type="text" class="form-control" placeholder="Text input" />
