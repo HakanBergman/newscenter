@@ -110,7 +110,7 @@
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-grey min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-grey" data-hex="#EEE"></span></div>                                            
                     </div>
                     <div class="col-lg-12">                      
-                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-white border-solid-black min-height-1-em min-width-1-em max-width-1-em cursor-pointer" data-color="bg-white" data-hex="#FFF"></span></div>
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-white" data-hex="#FFF"></span></div>
                     </div>
                     <div class="hide">{attribute_edit_gui attribute=$object.data_map.background_color css_class="hide"}</div>
                   </div>
