@@ -34,12 +34,14 @@
     {/foreach}
 
 	{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
-		<meta name="{$key|wash}" content="Datadelen Webb Center" />
-		<meta name="{$key|wash}" content="Datadelen Webb Center" />
+		<meta name="author" content="Datadelen Webb Center" />
+		<meta name="copyright" content="Datadelen Webb Center" />
 		{if $company.node_id|eq($pagedata.node_id)}
-			<meta name="{$key|wash}" content="{$sitesettings.0.data_map.seo_description.data_text|wash()}" />
-			<meta name="{$key|wash}" content="{$sitesettings.0.data_map.seo_tags.data_text|wash()}" />
+			<meta name="description" content="{$sitesettings.0.data_map.seo_description.data_text|wash()}" />
+			<meta name="keywords" content="{$sitesettings.0.data_map.seo_tags.data_text|wash()}" />
 		{else}
+			<meta name="description" content="{$node.data_map.seo_description.data_text|wash()}" />
+			<meta name="keywords" content="{$node.data_map.seo_tags.data_text|wash()}" />
 		{/if}
 	{undef $sitesettings}
 
