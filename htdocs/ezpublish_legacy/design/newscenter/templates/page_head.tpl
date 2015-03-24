@@ -21,22 +21,21 @@
 
 {/let}
 {/if}
-    <title>
-		{def $sitemap = $company.path_array|extract(2)}
-			{foreach $sitemap as $site}
-				{def $sitemap_name = fetch('content', 'node', hash('node_id', $site))}
-					{if $company.node_id|eq($site)}
-						hittade hit
-						{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
-							{$sitesettings.0.data_map.site_title.data_text}
-						{undef $sitesettings}
-					{else}
-						{$sitemap_name.name|wash()}
-					{/if}
-				{undef $sitemap_name}
-			{/foreach}
-		{undef $sitemap}
-	</title>
+	{def $title = ""}
+	{def $sitemap = $company.path_array|extract(2)}
+		{foreach $sitemap as $site}
+			{def $sitemap_name = fetch('content', 'node', hash('node_id', $site))}
+				{if $company.node_id|eq($site)}
+					{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
+						{set $title = $title|append($sitesettings.0.data_map.site_title.data_text)}
+					{undef $sitesettings}
+				{else}
+					{set $title = $title|append(concat('/ ', $sitemap_name.name|wash()))}
+				{/if}
+			{undef $sitemap_name}
+		{/foreach}
+	{undef $sitemap}
+    <title>{$title}</title>
 
     {if and(is_set($#Header:extra_data),is_array($#Header:extra_data))}
       {section name=ExtraData loop=$#Header:extra_data}
