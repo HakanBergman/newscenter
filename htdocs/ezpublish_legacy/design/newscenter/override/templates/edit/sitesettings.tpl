@@ -29,7 +29,7 @@
 
                 <div class="col-lg-12 no-margin no-padding">
                   <div class="pull-left">
-                    <h3 class="clear">Ikonbild</h3>
+                    <h3 class="clear">Ikoner</h3>
                   </div>
                   <div class="pull-right container-padding-top-2">
                     <a class="toggle" data-href="icon" href="#icon">Visa detaljer</a>
@@ -37,8 +37,8 @@
                 </div>
 
                 <div class="icon hide">
-                  <div class="form-group">
-                    <label>Välj ikon</label>
+                  <div class="form-group container-padding-bottom">
+                    <label>Välj hemsidans ikon</label>
                     <div>{attribute_edit_gui attribute=$object.data_map.icon}</div>
                   </div>
                 </div>                
