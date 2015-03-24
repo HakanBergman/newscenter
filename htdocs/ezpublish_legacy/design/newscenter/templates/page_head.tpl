@@ -1,26 +1,6 @@
 {default enable_help=true() enable_link=true() canonical_link=true()}
 {def $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
 
-{if is_set($module_result.content_info.persistent_variable.site_title)}
-    {set scope=root site_title=$module_result.content_info.persistent_variable.site_title}
-{else}
-{let name=Path
-     path=$module_result.path
-     reverse_path=array()}
-    {set path=$pagedata.path_array}
-  {section loop=$:path}
-    {set reverse_path=$:reverse_path|array_prepend($:item)}
-  {/section}
-
-{set-block scope=root variable=site_title}
-	{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
-		{section loop=$Path:reverse_path}{$:item.text|wash}{delimiter} / {/delimiter}{/section} - {$site.title}
-	{undef $sitesettings}
-{/set-block}
-
-
-{/let}
-{/if}
 	{def $title = ""}
 	{def $sitemap = $module_result.path|extract(1)}
 		{foreach $sitemap as $site}
@@ -78,7 +58,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="{$site.title}">
+	<meta name="apple-mobile-web-app-title" content="{$title|wash()}">
 
 {if $canonical_link}
     {include uri="design:canonical_link.tpl"}
