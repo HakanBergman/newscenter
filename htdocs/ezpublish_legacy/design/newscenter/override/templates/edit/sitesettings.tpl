@@ -25,7 +25,7 @@
 
                 <hr class="border-solid-black" />
 
-                {* Site Icon *}
+                {* Site Icons *}
 
                 <div class="col-lg-12 no-margin no-padding">
                   <div class="pull-left">
@@ -40,6 +40,18 @@
                   <div class="form-group container-padding-bottom">
                     <label>Välj hemsidans ikon</label>
                     <div>{attribute_edit_gui attribute=$object.data_map.icon}</div>
+                  </div>
+                  <div class="form-group container-padding-bottom">
+                    <label>Välj hemsidans ikon</label>
+                    <div>{attribute_edit_gui attribute=$object.data_map.icon_apple_default}</div>
+                  </div>
+                  <div class="form-group container-padding-bottom">
+                    <label>Välj hemsidans ikon</label>
+                    <div>{attribute_edit_gui attribute=$object.data_map.icon_apple_tablet}</div>
+                  </div>
+                  <div class="form-group container-padding-bottom">
+                    <label>Välj hemsidans ikon</label>
+                    <div>{attribute_edit_gui attribute=$object.data_map.icon_apple_retina}</div>
                   </div>
                 </div>                
 
