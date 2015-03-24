@@ -35,10 +35,10 @@
 		{include uri='design:page_head.tpl'}
 
 		{* Apple Device Icons *}
-		<link rel="apple-touch-icon" href="/{$sitesettings.0.data_map.icon_apple_default.content.full_path}">
-		<link rel="apple-touch-icon" sizes="76x76" href="/{$sitesettings.0.data_map.icon_apple_default.content.full_path}">
-		<link rel="apple-touch-icon" sizes="120x120" href="/{$sitesettings.0.data_map.icon_apple_tablet.content.full_path}">
-		<link rel="apple-touch-icon" sizes="152x152" href="/{$sitesettings.0.data_map.icon_apple_retina.content.full_path}">
+		<link rel="apple-touch-icon" href="/{$sitesettings.0.data_map.icon_apple_default.content.original.full_path}">
+		<link rel="apple-touch-icon" sizes="76x76" href="/{$sitesettings.0.data_map.icon_apple_default.content.original.full_path}">
+		<link rel="apple-touch-icon" sizes="120x120" href="/{$sitesettings.0.data_map.icon_apple_tablet.content.original.full_path}">
+		<link rel="apple-touch-icon" sizes="152x152" href="/{$sitesettings.0.data_map.icon_apple_retina.content.original.full_path}">
 		
 		{* Include Stylesheets *}
 		{include uri='design:page_head_style.tpl'}
