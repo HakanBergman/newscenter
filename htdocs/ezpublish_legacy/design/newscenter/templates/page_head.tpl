@@ -24,14 +24,8 @@
     {/if}
 
     {* check if we need a http-equiv refresh *}
-    {if $site.redirect}
-		<meta http-equiv="Refresh" content="{$site.redirect.timer}; URL={$site.redirect.location}" />
-    {/if}
-
-    {foreach $site.http_equiv as $key => $item}
-        <meta name="{$key|wash}" content="{$item|wash}" />
-
-    {/foreach}
+    {if $site.redirect}<meta http-equiv="Refresh" content="{$site.redirect.timer}; URL={$site.redirect.location}" />{/if}
+    {foreach $site.http_equiv as $key => $item}<meta name="{$key|wash}" content="{$item|wash}" />{/foreach}
 
 	{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
 		<meta name="author" content="Datadelen Webb Center" />
@@ -53,12 +47,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-title" content="{$title|wash()}">
 
-{if $canonical_link}
-    {include uri="design:canonical_link.tpl"}
-{/if}
-
-{if $enable_link}
-    {include uri="design:link.tpl" enable_help=$enable_help enable_link=$enable_link}
-{/if}
+	{if $canonical_link}{include uri="design:canonical_link.tpl"}{/if}
+	{if $enable_link}{include uri="design:link.tpl" enable_help=$enable_help enable_link=$enable_link}{/if}
 
 {/default}

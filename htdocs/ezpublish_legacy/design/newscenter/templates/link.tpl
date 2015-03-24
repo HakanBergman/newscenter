@@ -1,9 +1,26 @@
 {default enable_print=true()}
+{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
+{def $title = ""}
+{def $sitemap = $module_result.path|extract(1)}
+	{foreach $sitemap as $site}
+		{def $sitemap_name = fetch('content', 'node', hash('node_id', $site.node_id))}
+			{if $company.node_id|eq($site.node_id)}
+				{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
+					{set $title = $title|append($sitesettings.0.data_map.site_title.data_text)}
+				{undef $sitesettings}
+			{else}
+				{set $title = $title|prepend(concat($sitemap_name.name|wash(), ' / '))}
+			{/if}
+		{undef $sitemap_name}
+	{/foreach}
+{undef $sitemap}
 
-<link rel="Home" href={"/"|ezurl} title="{'%sitetitle front page'|i18n('design/ezdemo/link',,hash('%sitetitle',$site.title))|wash}" />
+{$sitesettings.0.data_map.icon.content.original.full_path}
+
+<link rel="Home" href={"/"|ezurl} title="{$sitesettings.0.data_map.site_title.data_text|wash()}" />
 <link rel="Index" href={"/"|ezurl} />
-<link rel="Top"  href={"/"|ezurl} title="{$site_title}" />
-<link rel="Search" href={"content/advancedsearch"|ezurl} title="{'Search %sitetitle'|i18n('design/ezdemo/link',,hash('%sitetitle',$site.title))|wash}" />
+<link rel="Top"  href={"/"|ezurl} title="{$title|wash()}" />
+<link rel="Search" href={"content/advancedsearch"|ezurl} title="Sök på {$title|wash()}" />
 <link rel="Shortcut icon" href={$#company.data_map.icon.data_text|ezimage} type="image/x-icon" />
 <link rel="Copyright" href={"/ezinfo/copyright"|ezurl} />
 <link rel="Author" href={"/ezinfo/about"|ezurl} />
@@ -27,3 +44,4 @@
 {/if}
 
 {/default}
+{undef $sitesettings}
