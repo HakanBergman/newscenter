@@ -28,13 +28,13 @@
                 {* Site SEO *}
                 
                 <div class="col-lg-12 no-margin no-padding">
-                  <div class="pull-left"><h3 class="clear">SEO - Inställningar</h3></div>
-                  <div class="pull-right container-padding-top-2"><a class="toggle" data-href="seo" href="#seo">Visa detaljer</a></div>
+                  <div class="pull-left"><h3 class="clear">Meny - Färginställningar</h3></div>
+                  <div class="pull-right container-padding-top-2"><a class="toggle" data-href="menu-color" href="#menu-color">Visa detaljer</a></div>
                 </div>
                 
-                <p>Ställ in beskrivning och de sökord som du vill ska komma upp i organiska resultatet (Google, Bing, med flera).</p>
+                <p>Ställ in bakgrundsfärg, länkfärg, länkstorlek och andra saker som ska finnas i menyn.</p>
 
-                <div class="seo hide">
+                <div class="menu-color hide">
                   <div class="form-group">
                     <label>Beskrivning av företaget (max 255 tecken)</label>
                     <div>{attribute_edit_gui attribute=$object.data_map.seo_description}</div>
