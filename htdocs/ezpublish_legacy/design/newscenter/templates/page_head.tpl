@@ -26,6 +26,7 @@
 			{for 0 to $sitemap|count() as $number}
 				{def $sitemap_name = fetch('content', 'node', hash('node_id', $sitemap.$number))}
 					{$sitemap_name.name|wash()}
+					{$number} ($sitemap|count()|dec(1))}
 					{if $number|ne($sitemap|count()|dec(1))} / {/if}
 				{undef $sitemap_name}
 			{/for}
