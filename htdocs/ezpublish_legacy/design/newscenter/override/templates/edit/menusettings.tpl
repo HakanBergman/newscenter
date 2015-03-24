@@ -7,20 +7,20 @@
       <div class="row">
         <div class="col-lg-12 container-padding-left-4 container-padding-right-4">
             <article>
-              <h1>Sajtinställningar</h1>
-              <p>Här finns alla generella inställningar för hemsidan.</p>
+              <h1>Menyinställningar</h1>
+              <p>Här finns alla inställningar för menyn.</p>
               <div class="form container-padding-left-2">
                                 
-                {* Site Title *}
+                {* Menu Plugin To Use *}
                 <div class="col-lg-12 no-margin no-padding">
-                  <div class="pull-left"><h3 class="clear">Titel</h3></div>
+                  <div class="pull-left"><h3 class="clear">Meny-plugin</h3></div>
                 </div>
 
-                <p>Ange namnet på sidan (Tex företagsnamnet).</p>
+                <p>Här väljs den plugin som ska användas för att generera menyn och dess innehåll.</p>
 
                 <div class="form-group">
-                  <label>Sidans titel.</label>
-                  <div>{attribute_edit_gui attribute=$object.data_map.site_title}</div>
+                  <label>Välj den plugin som ska användas</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.menu_plugin}</div>
                 </div>
 
                 <hr class="border-solid-black" />
