@@ -24,9 +24,8 @@
     <title>
 		{def $sitemap = $company.path_array|extract(2)}
 			{foreach $sitemap as $site}
-				{$site|attribute(show, 1)}
-				{def $sitemap_name = fetch('content', 'node', hash('node_id', $sitemap.$number))}
-					{if $company.node_id|eq($sitemap_name.node_id)}
+				{def $sitemap_name = fetch('content', 'node', hash('node_id', $site))}
+					{if $company.node_id|eq($site)}
 						hittade hit
 						{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
 							{$sitesettings.0.data_map.site_title.data_text}
