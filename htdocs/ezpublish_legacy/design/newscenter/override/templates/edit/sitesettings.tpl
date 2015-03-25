@@ -111,7 +111,8 @@
                         <span class="thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-grey" data-hex="#EEE"></span>
                         <span class="thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-white" data-hex="#FFF"></span>
                       </div>
-                      <div class="hide">{attribute_edit_gui attribute=$object.data_map.background_color css_class="hide"}</div>
+                      <div class="picked-color">Välj en färg</div>
+                      <div class="hide">{attribute_edit_gui attribute=$object.data_map.background_color}</div>
                     </div>
                   </div>
                 </div>
