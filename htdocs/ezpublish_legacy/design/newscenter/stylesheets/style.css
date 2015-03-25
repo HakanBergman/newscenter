@@ -94,6 +94,7 @@ section .widget-margin-top { margin-top: 1em; }
 .container-margin-top-10-percent { margin-top: 10%; }
 .container-margin-top-20-percent { margin-top: 20%; }
 .container-margin-top-35-percent { margin-top: 35%; }
+.container-margin-left { margin-left: 1em; }
 .col-offset-5 { margin-left: 41.66666667%; }
 .col-offset-4 { margin-left: 31.66666667%; }
 .col-offset-3 { margin-left: 21.66666667%; }
