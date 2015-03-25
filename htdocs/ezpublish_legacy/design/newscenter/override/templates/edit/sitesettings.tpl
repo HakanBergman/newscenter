@@ -34,15 +34,17 @@
                   </div>
                 </div>
 
+                <p>Tänk på att ikonerna måste vara PNG-filer (inte .ICO eller .SVG).</p>
+                
                 <div class="icon hide">
                   
                   <div class="form-group container-padding-bottom container-padding-top clear">
-                    <label>Välj hemsidans ikon</label>
+                    <label>Välj hemsidans ikon (16x16)</label>
                     <div>{attribute_edit_gui attribute=$object.data_map.icon}</div>
                   </div>
                   
                   <div class="form-group container-padding-bottom container-padding-top clear">
-                    <label>Välj default Apple ikon (76x76)(</label>
+                    <label>Välj default Apple ikon (76x76)</label>
                     <div>{attribute_edit_gui attribute=$object.data_map.icon_apple_default}</div>
                   </div>
                   
