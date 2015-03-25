@@ -8,6 +8,5 @@
     $('.colors .background-color').on('click', function (e) {
         $('.background-picked-color .hex').html($(this).attr('data-hex'));
         $('.background_color').val($(this).attr('data-color'));
-        alert($(this).attr('data-color'));
     });
 });
