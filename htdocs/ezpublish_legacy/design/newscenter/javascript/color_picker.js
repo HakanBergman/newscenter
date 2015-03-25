@@ -5,7 +5,7 @@
         $('.background-picked-color').removeClass('hide');
     }
     /* Make something happen when we click a color */
-    $('.colors .color').on('click', function (e) {
-        alert('du klickade på en färg');
+    $('.colors .background-color').on('click', function (e) {
+        $('.background-picked-color .hex').html($(this).attr('data-hex'));
     });
 });
