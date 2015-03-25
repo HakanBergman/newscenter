@@ -96,8 +96,11 @@
                   <div class="form-group">
                     <label>Välj bakgrundsfärg</label>
                     <div class="col-lg-12">                      
-                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-black" data-hex="#000"></span></div>
-                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-granate min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-granate" data-hex="#570900"></span></div>
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        <span class="thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-black" data-hex="#000"></span>
+                        <span class="thumbnail bg-granate min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-granate" data-hex="#570900">
+                      </div>
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></span></div>
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-tidningen-se min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-tidningen-se" data-hex="#004389"></span></div>
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-longdrink-blue" data-hex="#4BC6D1"></span></div>
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><span class="thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer" data-color="bg-beer-brown" data-hex="#DE910b"></span></div>
