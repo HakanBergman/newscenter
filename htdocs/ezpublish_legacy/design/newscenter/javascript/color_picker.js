@@ -1,8 +1,8 @@
 ﻿$(document).ready(function(e) {
     /* Check if we are in edit mode and can pick a color */
-    if ($('.picked-color').length) {
-        $('.picked-color .color').html('test');
-        $('.picked-color').removeClass('hide');
+    if ($('.background-picked-color').length) {        
+        $('.background-picked-color .color').html($('.background-saved-color').val());
+        $('.background-picked-color').removeClass('hide');
     }
     /* Make something happen when we click a color */
     $('.colors .color').on('click', function (e) {
