@@ -111,9 +111,9 @@
                         <span class="color thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-grey" data-hex="#EEE"></span>
                         <span class="color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-white" data-hex="#FFF"></span>
                       </div>
-                      <div class="picked-color">Vald färg <span class="color"></span>
+                      <div class="picked-color hide">Vald färg <span class="color"></span>
                     </div>
-                      <div class="hide">{attribute_edit_gui attribute=$object.data_map.background_color}</div>
+                      <div class="saved-color hide">{attribute_edit_gui attribute=$object.data_map.background_color}</div>
                     </div>
                   </div>
                 </div>
