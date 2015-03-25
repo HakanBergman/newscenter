@@ -1,10 +1,9 @@
 ﻿$(document).ready(function(e) {
     /* Check if we are in edit mode and can pick a color */
-    if ($('.background-picked-color').length) {        
-        $('.background-picked-color .color').html($('.background-saved-color input').val());
-        $('.background-picked-color').removeClass('hide');
-        var test = colortohex('bg-black');
-        alert(test);
+    if ($('.background-picked-color').length) {
+        var current_color = colortohex($('.background-saved-color input').val());
+        $('.background-picked-color .color').html(current_color);
+        $('.background-picked-color').removeClass('hide');        
     }
     /* Make something happen when we click a color */
     $('.colors .background-color').on('click', function (e) {
