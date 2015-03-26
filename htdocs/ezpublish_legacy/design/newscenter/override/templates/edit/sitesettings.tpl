@@ -100,14 +100,14 @@
                     <div class="col-lg-12">
                       <label>Storlek</label>
                       <div class="col-lg-12 link-color-black">
-                        <a href="" class="size"><span class="font-size-24-px">24</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
-                        <a href="" class="container-padding-left size"><span class="font-size-22-px">22</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
-                        <a href="" class="container-padding-left size"><span class="font-size-20-px">20</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
-                        <a href="" class="container-padding-left size"><span class="font-size-18-px">18</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
-                        <a href="" class="container-padding-left size"><span class="font-size-16-px">16</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
-                        <a href="" class="container-padding-left size"><span class="font-size-14-px">14</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
+                        <a href="#24" class="size"><span class="font-size-24-px">24</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
+                        <a href="#22" class="container-padding-left size"><span class="font-size-22-px">22</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
+                        <a href="#20" class="container-padding-left size"><span class="font-size-20-px">20</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
+                        <a href="#18" class="container-padding-left size"><span class="font-size-18-px">18</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
+                        <a href="#16" class="container-padding-left size"><span class="font-size-16-px">16</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
+                        <a href="#14" class="container-padding-left size"><span class="font-size-14-px">14</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
                       </div>
-                      <div class="col-lg-12">
+                      <div class="col-lg-12 link-color-black">
                         <span class="font-family-arial">Arial</span>
                         <span class="container-padding-left font-family-bookman-old">Bookman Old</span>
                         <span class="container-padding-left font-family-comic-sans">Comic Sans</span>
@@ -118,8 +118,16 @@
                         <span class="container-padding-left font-family-verdana">Verdana</span>
                       </div>
                     </div>
+                    <div class="fonts-picked">
+                        <div class="pull-left">
+                          Nuvarande typsnitt <span class="family"></span> | Nuvarande storlek <span class="size"></span></div>
+                        </div>
+                        <div class="pull-right">
+                          Valt typsnitt <span class="family"></span> | Vald storlek <span class="size"></span>
+                        </div>
+                        </div>
                     <div class="font-family-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
-                    <div class="font-family-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
+                    <div class="font-size-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
                   </div>
                 </div>
 
