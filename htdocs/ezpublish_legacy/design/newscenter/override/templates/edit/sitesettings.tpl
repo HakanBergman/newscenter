@@ -172,7 +172,7 @@
                         <span class="background-color thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-grey" data-hex="#EEE"></span>
                         <span class="background-color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-white" data-hex="#FFF"></span>
                       </div>
-                      <div class="background-picked-color hide"><strong>Vald färg</strong> <span class="color"></span> | <strong>Ny färg</strong> <span class="hex"></span></div>
+                      <div class="background-picked-color hide"><strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span></div>
                       <div class="background-saved-color hide">{attribute_edit_gui attribute=$object.data_map.background_color}</div>
                     </div>
 
@@ -191,7 +191,7 @@
                         <span class="text-color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-white" data-hex="#FFF"></span>
                       </div>
                       <div class="text-picked-color">
-                        <strong>Vald färg</strong> <span class="color"></span> | <strong>Ny färg</strong> <span class="hex"></span>
+                        <strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span>
                       </div>
                       <div class="text-saved-color hide">{attribute_edit_gui attribute=$object.data_map.text_color}</div>
                     </div>                    
