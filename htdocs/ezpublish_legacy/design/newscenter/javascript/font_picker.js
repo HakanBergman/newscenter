@@ -8,9 +8,9 @@
         var font_size = classtosize($(this).attr('data-class'));
         var font_size_class = $(this).attr('data-class');
         $('.font-size-picked').html(font_size);
-        $('.font-family span').each(function(index, value) {
+        $('.font-family span').each(function (index, value) {
+            $(this).removeClass('font-size-22-px').removeClass('font-size-20-px').removeClas('font-size-18-px').removeClass('font-size-16-px').removeClass('font-size-14-px');
             $(this).addClass(font_size_class);
-            alert(font_size_class);
         });
     });
 });
