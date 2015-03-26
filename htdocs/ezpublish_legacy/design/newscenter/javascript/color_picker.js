@@ -3,8 +3,8 @@
     /* Background Color */
     /* Make something happen when we click a color */
     $('.colors .background-color').on('click', function (e) {
-        $('.text-picked-color .hex').html($(this).attr('data-hex'));
-        $('.text_color').val($(this).attr('data-color'));
+        $('.background-picked-color .hex').html($(this).attr('data-hex'));
+        $('.background_color').val($(this).attr('data-color'));
     });
     /* Check if we are in edit mode and can pick a color */
     if ($('.background-picked-color').length) {
