@@ -113,7 +113,7 @@
                         <a href="#Georgia" class="container-padding-left font-family" data-class="font-family-georgia"><span class="container-padding-left font-family-georgia">Georgia</span></a>
                       </div>
                       <div class="col-lh-12 link-color-black container-padding-top font-family">
-                        <a href="#Tahoma" class="container-padding-left font-family" data-class="font-family-tahoma"><span class="container-padding-left font-family-tahoma">Tahoma</span></a>
+                        <a href="#Tahoma" class="font-family" data-class="font-family-tahoma"><span class="container-padding-left font-family-tahoma">Tahoma</span></a>
                         <a href="#Times-new-roman" class="container-padding-left font-family" data-class="font-family-times-new-roman"><span class="container-padding-left font-family-times-new-roman">Times New Roman</span></a>
                         <a href="#Palatino" class="container-padding-left font-family" data-class="font-family-palatino"><span class="container-padding-left font-family-palatino">Palatino</span></a>
                         <a href="#Verdana" class="container-padding-left font-family" data-class="font-family-verdana"><span class="container-padding-left font-family-verdana">Verdana</span></a>
