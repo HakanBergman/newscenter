@@ -107,7 +107,7 @@
                         <a href="#16" class="container-padding-left size"><span class="font-size-16-px">16</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
                         <a href="#14" class="container-padding-left size"><span class="font-size-14-px">14</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
                       </div>
-                      <div class="col-lg-12 link-color-black">
+                      <div class="col-lg-12 link-color-black container-padding-top">
                         <span class="font-family-arial">Arial</span>
                         <span class="container-padding-left font-family-bookman-old">Bookman Old</span>
                         <span class="container-padding-left font-family-comic-sans">Comic Sans</span>
