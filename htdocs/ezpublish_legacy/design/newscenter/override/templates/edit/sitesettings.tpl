@@ -124,7 +124,7 @@
                           Nuvarande typsnitt <span class="family-font-current"></span> | Nuvarande storlek <span class="family-size-current"></span>
                         </div>
                         <div class="col-lg-3">
-                          Valt typsnitt <span class="family"></span> | Vald storlek <span class="size"></span>
+                          Valt typsnitt <span class="font-family-picked"></span> | Vald storlek <span class="font-size-picked"></span>
                         </div>
                       </div>
                       <div class="font-family-saved hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
