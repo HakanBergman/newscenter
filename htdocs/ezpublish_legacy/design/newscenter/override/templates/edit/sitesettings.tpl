@@ -107,14 +107,14 @@
                         <a href="#14" class="container-padding-left font-size" data-class="font-size-14-px"><span class="font-size-14-px">14</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
                       </div>
                       <div class="col-lg-12 link-color-black container-padding-top font-family">
-                        <span class="font-family-arial">Arial</span>
-                        <span class="container-padding-left font-family-bookman-old">Bookman Old</span>
-                        <span class="container-padding-left font-family-comic-sans">Comic Sans</span>
-                        <span class="container-padding-left font-family-georgia">Georgia</span>
-                        <span class="container-padding-left font-family-tahoma">Tahoma</span>
-                        <span class="container-padding-left font-family-times-new-roman">Times New Roman</span>
-                        <span class="container-padding-left font-family-palatino">Palatino</span>
-                        <span class="container-padding-left font-family-verdana">Verdana</span>
+                        <a href="#Arial" class="font-family" data-class="font-family-arial"><span class="font-family-arial">Arial</span></a>
+                        <a href="#Bookman-old" class="container-padding-left font-family" data-class="font-family-bookman-old"><span class="container-padding-left font-family-bookman-old">Bookman Old</span>
+                        <a href="#Comic-sans" class="container-padding-left font-family" data-class="font-family-comic-sans"><span class="container-padding-left font-family-comic-sans">Comic Sans</span>
+                        <a href="#Georgia" class="container-padding-left font-family" data-class="font-family-georgia"><span class="container-padding-left font-family-georgia">Georgia</span>
+                        <a href="#Tahoma" class="container-padding-left font-family" data-class="font-family-tahoma"><span class="container-padding-left font-family-tahoma">Tahoma</span>
+                        <a href="#Times-new-roman" class="container-padding-left font-family" data-class="font-family-times-new-roman"><span class="container-padding-left font-family-times-new-roman">Times New Roman</span>
+                        <a href="#Palatino" class="container-padding-left font-family" data-class="font-family-palatino"><span class="container-padding-left font-family-palatino">Palatino</span>
+                        <a href="#Verdana" class="container-padding-left font-family" data-class="font-family-verdana"><span class="container-padding-left font-family-verdana">Verdana</span>
                       </div>
                     </div>
                     <div class="fonts-picked">
@@ -126,7 +126,7 @@
                           Valt typsnitt: <span class="font-family-picked"></span> | Vald storlek: <span class="font-size-picked"></span>
                         </div>
                       </div>
-                      <div class="font-family-saved hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
+                      <div class="font-family-saved">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
                       <div class="font-size-saved">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
                     </div>
                   </div>

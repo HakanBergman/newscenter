@@ -14,6 +14,12 @@
             $('.font-size-saved input').val(font_size_class);
         });
     });
+    $('.fonts .font-family').on('click', function (e) {
+        e.preventDefault();
+        var font_family = classtosize($(this).attr('data-class'));
+        var font_family_class = $(this).attr('data-class');
+        $('.font-family-picked').html(font_family);
+    });
 });
 
 function classtosize(input_class) {
