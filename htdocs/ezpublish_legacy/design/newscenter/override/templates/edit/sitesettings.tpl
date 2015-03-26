@@ -109,13 +109,13 @@
                       </div>
                       <div class="col-lg-12 link-color-black container-padding-top">
                         <span class="font-family-arial">Arial</span>
-                        <span class="container-padding-left font-family-bookman-old">Bookman Old</span>
-                        <span class="container-padding-left font-family-comic-sans">Comic Sans</span>
-                        <span class="container-padding-left font-family-georgia">Georgia</span>
-                        <span class="container-padding-left font-family-tahoma">Tahoma</span>
-                        <span class="container-padding-left font-family-times-new-roman">Times New Roman</span>
-                        <span class="container-padding-left font-family-palatino">Palatino</span>
-                        <span class="container-padding-left font-family-verdana">Verdana</span>
+                        <span class="container-padding-left font-family font-family-bookman-old">Bookman Old</span>
+                        <span class="container-padding-left font-family font-family-comic-sans">Comic Sans</span>
+                        <span class="container-padding-left font-family font-family-georgia">Georgia</span>
+                        <span class="container-padding-left font-family font-family-tahoma">Tahoma</span>
+                        <span class="container-padding-left font-family font-family-times-new-roman">Times New Roman</span>
+                        <span class="container-padding-left font-family font-family-palatino">Palatino</span>
+                        <span class="container-padding-left font-family font-family-verdana">Verdana</span>
                       </div>
                     </div>
                     <div class="fonts-picked">

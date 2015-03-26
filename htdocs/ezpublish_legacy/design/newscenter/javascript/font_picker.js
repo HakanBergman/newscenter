@@ -6,7 +6,11 @@
     $('.fonts .font-size').on('click', function (e) {
         e.preventDefault();
         var font_size = classtosize($(this).attr('data-class'));
+        var font_class = $(this).attr('data-class');
         $('.font-size-picked').html(font_size);
+        $.each('.font-family', function (e) {
+            $(this).addClass(font_class);
+        });
     });
 });
 
