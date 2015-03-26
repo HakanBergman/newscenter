@@ -125,14 +125,14 @@
                           Nuvarande typsnitt <span class="font-family-current"></span> | Nuvarande storlek <span class="font-size-current"></span>
                         </div>
                         <div class="col-lg-5">
-                          Valt typsnitt: <span class="font-family-picked"></span> | Vald storlek: <span class="font-size-picked"></span>
+                          <div class="pull-right">
+                            Valt typsnitt: <span class="font-family-picked"></span> | Vald storlek: <span class="font-size-picked"></span>
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-12 container-padding-left">
-                        <div class="font-family-saved hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
-                        <div class="pull-right">
-                          <div class="font-size-saved hide">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
-                        </div>
+                        <div class="font-family-saved hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>                        
+                        <div class="font-size-saved hide">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
                       </div>
                     </div>
                   </div>
