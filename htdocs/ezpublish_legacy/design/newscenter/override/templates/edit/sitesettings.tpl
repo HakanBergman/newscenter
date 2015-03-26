@@ -120,10 +120,10 @@
                     </div>
                     <div class="fonts-picked">
                       <div class="col-lg-12 container-padding-left-2 container-padding-top">
-                        <div class="pull-left">
-                          Nuvarande typsnitt <span class="family"></span> | Nuvarande storlek <span class="size"></span></div>
+                        <div class="col-lg-8">
+                          Nuvarande typsnitt <span class="family"></span> | Nuvarande storlek <span class="size"></span>
                         </div>
-                        <div class="pull-right">
+                        <div class="col-lg-4">
                           Valt typsnitt <span class="family"></span> | Vald storlek <span class="size"></span>
                         </div>
                       </div>
