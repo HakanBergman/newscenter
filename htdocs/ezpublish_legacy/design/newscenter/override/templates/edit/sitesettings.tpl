@@ -99,8 +99,8 @@
                     <label>Välj typsnitt</label>
                     <div class="col-lg-12">
                       <label>Storlek</label>
-                      <div class="col-lg-12">
-                        <a href="" class="link-color-teal size"><span class="font-size-24-px">24</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
+                      <div class="col-lg-12 link-color-teal">
+                        <a href="" class="size"><span class="font-size-24-px">24</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
                         <a href="" class="container-padding-left size"><span class="font-size-22-px">22</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
                         <a href="" class="container-padding-left size"><span class="font-size-20-px">20</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
                         <a href="" class="container-padding-left size"><span class="font-size-18-px">18</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
