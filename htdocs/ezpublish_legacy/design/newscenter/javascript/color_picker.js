@@ -1,13 +1,13 @@
 ﻿$(document).ready(function(e) {
     /* Check if we are in edit mode and can pick a color */
     if ($('.background-picked-color').length) {
-        var current_color = colortohex($('.background-saved-color input').val());
-        $('.background-picked-color .color').html(current_color);
+        var current_background_color = colortohex($('.background-saved-color input').val());
+        $('.background-picked-color .color').html(current_background_color);
         $('.background-picked-color').removeClass('hide');        
     }
     if ($('.text-saved-color').length) {
-        var current_color = colortohex($('.text-saved-color input').val());
-        $('.text-picked-color .color').html(current_color);
+        var current_text_color = colortohex($('.text-saved-color input').val());
+        $('.text-picked-color .color').html(current_text_color);
         $('.text-picked-color').removeClass('hide');
     }
     /* Make something happen when we click a color */
