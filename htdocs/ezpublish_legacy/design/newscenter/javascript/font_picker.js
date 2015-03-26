@@ -5,6 +5,6 @@
     }
     $('.fonts .font-size').on('click', function (e) {
         e.preventDefault();
-        alert($(this).attr('class'));
+        alert($(this).attr('data-class'));
     });
 });
