@@ -100,8 +100,8 @@
                     <div class="col-lg-12">
                       <label>Storlek</label>
                       <div class="col-lg-12">
-                        <a href="" class="font-size-24-px">24px <span class="glyphicon glyphicon-text-size"></span></a>
-                        22px <span class="glyphicon glyphicon-text-size"></span>
+                        <a href="" class="font-size-24-px">24px <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
+                        <a href="" class="container-padding-left font-size-22-px">22px <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
                         20px <span class="glyphicon glyphicon-text-size"></span>
                         18px <span class="glyphicon glyphicon-text-size"></span>
                         16px <span class="glyphicon glyphicon-text-size"></span>
