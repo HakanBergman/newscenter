@@ -73,7 +73,7 @@
 		<script type="text/javascript" src={"javascript/font_picker.js"|ezdesign}></script>		
 	</head>
 	
-	<body class="{$sitesettings.0.data_map.background_color.data_text} {$#company.data_map.font_family_class.data_text}">
+	<body class="{$sitesettings.0.data_map.background_color.data_text} {$sitesettings.0.data_map.font_family.data_text} {$sitesettings.0.data_map.font_size.data_text}">
 	<div id="fb-root"></div>
 
 		{* Include Admin Bar *}
