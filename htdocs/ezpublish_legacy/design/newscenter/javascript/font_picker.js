@@ -16,12 +16,41 @@
     });
     $('.fonts .font-family').on('click', function (e) {
         e.preventDefault();
-        var font_family = classtosize($(this).attr('data-class'));
+        var font_family = classtofont($(this).attr('data-class'));
         var font_family_class = $(this).attr('data-class');
         $('.font-family-picked').html(font_family);
         alert($(this).attr('data-class'));
     });
 });
+
+function classtofont(input_class) {
+    switch (input_class) {
+        case "font-family-arial":
+            return "Arial";
+        break;
+        case "font-family-bookman-old":
+            return "Bookman Old";
+        break;
+        case "font-family-comic-sans":
+            return "Comic Sans";
+        break;
+        case "font-family-georgia":
+            return "Georgia";
+        break;
+        case "font-family-tahoma":
+            return "Tahoma";
+        break;
+        case "font-family-timews-new-roman":
+            return "Times New Roman";
+        break;
+        case "font-family-palatino":
+            return "Palatino";
+        break;
+        case "font-family-verdana":
+            return "Verdana";
+        break;
+    }
+}
 
 function classtosize(input_class) {
     switch (input_class) {
