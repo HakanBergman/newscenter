@@ -122,11 +122,11 @@
                     <div class="fonts-picked">
                       <div class="col-lg-12 container-padding-left container-padding-top">
                         <div class="col-lg-7">
-                          Nuvarande typsnitt <span class="font-family-current"></span> | Nuvarande storlek <span class="font-size-current"></span>
+                          <strong>Nuvarande typsnitt:</strong> <span class="font-family-current"></span> | <strong>Nuvarande storlek:</strong> <span class="font-size-current"></span>
                         </div>
                         <div class="col-lg-5">
                           <div class="pull-right">
-                            Valt typsnitt: <span class="font-family-picked"></span> | Vald storlek: <span class="font-size-picked"></span>
+                            <strong>Valt typsnitt:</strong> <span class="font-family-picked"></span> | <strong>Vald storlek:</strong> <span class="font-size-picked"></span>
                           </div>
                         </div>
                       </div>
