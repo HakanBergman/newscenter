@@ -112,9 +112,9 @@
                         <div class="col-lg-3"><a href="#Comic-sans" class="container-padding-left font-family" data-class="font-family-comic-sans"><span class="container-padding-left font-family-comic-sans">Comic Sans</span></a></div>
                         <div class="col-lg-3"><a href="#Georgia" class="container-padding-left font-family" data-class="font-family-georgia"><span class="container-padding-left font-family-georgia">Georgia</span></a></div>
                       </div>
-                      <div class="col-lh-12 link-color-black container-padding-top font-family">
+                      <div class="col-lg-12 link-color-black container-padding-top font-family">
                         <div class="col-lg-3"><a href="#Tahoma" class="font-family" data-class="font-family-tahoma"><span class="container-padding-left font-family-tahoma">Tahoma</span></a></div>
-                        <div class="col-lg-3"><div class="col-lg-3"><a href="#Times-new-roman" class="container-padding-left font-family" data-class="font-family-times-new-roman"><span class="container-padding-left font-family-times-new-roman">Times New Roman</span></a></div>
+                        <div class="col-lg-3"><a href="#Times-new-roman" class="container-padding-left font-family" data-class="font-family-times-new-roman"><span class="container-padding-left font-family-times-new-roman">Times New Roman</span></a></div>
                         <div class="col-lg-3"><a href="#Palatino" class="container-padding-left font-family" data-class="font-family-palatino"><span class="container-padding-left font-family-palatino">Palatino</span></a></div>
                         <div class="col-lg-3"><a href="#Verdana" class="container-padding-left font-family" data-class="font-family-verdana"><span class="container-padding-left font-family-verdana">Verdana</span></a></div>
                       </div>
