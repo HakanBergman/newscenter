@@ -3,4 +3,8 @@
     if ($('.font-family-saved').length) {
         alert($('.font-family-saved input').val());
     }
+    $('.fonts .font-size').on('click', function (e) {
+        e.preventDefault();
+        alert($(this).attr('class'));
+    });
 });
