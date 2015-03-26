@@ -19,7 +19,7 @@
         var font_family = classtofont($(this).attr('data-class'));
         var font_family_class = $(this).attr('data-class');
         $('.font-family-picked').html(font_family);
-        $('.font_family').val(font_family_class);
+        $('.font-family-saved input').val(font_family_class);
         //alert($(this).attr('data-class'));
     });
 });
