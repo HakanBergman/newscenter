@@ -1,7 +1,10 @@
 ﻿$(document).ready(function (e) {
     /* Check if we are in edit mode and can pick a color */
     if ($('.font-family-saved').length) {
-        alert($('.font-family-saved input').val());
+        var font_family = classtofont($('.font-family-saved input').val());
+        var font_size = classtosize($('.font-size-saved input').val());
+        $('.font-family-current').html(font_family);
+        $('.font-size-current').html(font_size);
     }
     $('.fonts .font-size').on('click', function (e) {
         e.preventDefault();
