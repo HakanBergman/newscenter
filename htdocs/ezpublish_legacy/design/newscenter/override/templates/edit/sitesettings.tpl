@@ -106,13 +106,13 @@
                         <a href="#14" class="container-padding-left font-size" data-class="font-size-14-px"><span class="font-size-14-px">14</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
                       </div>
                       <div class="col-lg-12 no-margin clear"><label>Typsnitt</label></div>
-                      <div class="col-lg-12 link-color-black container-padding-top font-family">
+                      <div class="col-lg-12 link-color-black container-padding-top">
                         <div class="col-lg-3"><a href="#Arial" class="font-family" data-class="font-family-arial"><span class="font-family-arial">Arial</span></a></div>
                         <div class="col-lg-3"><a href="#Bookman-old" class="container-padding-left font-family" data-class="font-family-bookman-old"><span class="container-padding-left font-family-bookman-old">Bookman Old</span></a></div>
                         <div class="col-lg-3"><a href="#Comic-sans" class="container-padding-left font-family" data-class="font-family-comic-sans"><span class="container-padding-left font-family-comic-sans">Comic Sans</span></a></div>
                         <div class="col-lg-3"><a href="#Georgia" class="container-padding-left font-family" data-class="font-family-georgia"><span class="container-padding-left font-family-georgia">Georgia</span></a></div>
                       </div>
-                      <div class="col-lg-12 link-color-black container-padding-top font-family">
+                      <div class="col-lg-12 link-color-black container-padding-top">
                         <div class="col-lg-3"><a href="#Tahoma" class="font-family" data-class="font-family-tahoma"><span class="font-family-tahoma">Tahoma</span></a></div>
                         <div class="col-lg-3"><a href="#Times-new-roman" class="container-padding-left font-family" data-class="font-family-times-new-roman"><span class="container-padding-left font-family-times-new-roman">Times New Roman</span></a></div>
                         <div class="col-lg-3"><a href="#Palatino" class="container-padding-left font-family" data-class="font-family-palatino"><span class="container-padding-left font-family-palatino">Palatino</span></a></div>
