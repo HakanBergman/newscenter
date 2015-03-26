@@ -109,13 +109,13 @@
                       </div>
                       <div class="col-lg-12">
                         <span class="font-family-arial">Arial</span>
-                        <span class="font-family-bookman-old">Bookman Old</span>
-                        <span class="font-family-comic-sans">Comic Sans</span>
-                        <span class="font-family-georgia">Georgia</span>
-                        <span class="font-family-tahoma">Tahoma</span>
-                        <span class="font-family-times-new-roman">Times New Roman</span>
-                        <span class="font-family-palatino">Palatino</span>
-                        <span class="font-family-verdana">Verdana</span>
+                        <span class="container-padding-left font-family-bookman-old">Bookman Old</span>
+                        <span class="container-padding-left font-family-comic-sans">Comic Sans</span>
+                        <span class="container-padding-left font-family-georgia">Georgia</span>
+                        <span class="container-padding-left font-family-tahoma">Tahoma</span>
+                        <span class="container-padding-left font-family-times-new-roman">Times New Roman</span>
+                        <span class="container-padding-left font-family-palatino">Palatino</span>
+                        <span class="container-padding-left font-family-verdana">Verdana</span>
                       </div>
                     </div>
                     <div class="font-family-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
