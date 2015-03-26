@@ -10,7 +10,7 @@
         $('.font-size-picked').html(font_size);
         $('.font-family span').each(function(index, value) {
             $(this).addClass(font_size_class);
-            alert(font_class);
+            alert(font_size_class);
         });
     });
 });
