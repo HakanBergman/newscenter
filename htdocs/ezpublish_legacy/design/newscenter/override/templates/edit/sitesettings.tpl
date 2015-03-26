@@ -108,7 +108,14 @@
                         <a href="" class="container-padding-left size"><span class="font-size-14-px">14</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
                       </div>
                       <div class="col-lg-12">
-                        <span class=""
+                        <span class="font-family-arial">Arial</span>
+                        <span class="font-family-bookman-old">Bookman Old</span>
+                        <span class="font-family-comic-sans">Comic Sans</span>
+                        <span class="font-family-georgia">Georgia</span>
+                        <span class="font-family-tahoma">Tahoma</span>
+                        <span class="font-family-times-new-roman">Times New Roman</span>
+                        <span class="font-family-palatino">Palatino</span>
+                        <span class="font-family-verdana">Verdana</span>
                       </div>
                     </div>
                     <div class="font-family-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>

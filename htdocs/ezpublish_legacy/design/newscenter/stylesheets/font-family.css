@@ -1,1 +1,8 @@
-﻿.font-family-bookman-old { font-family: font-family-bookman-old; }
+﻿.font-family-arial { font-family: Arial, Helvetica, sans-serif; }
+.font-family-bookman-old { font-family: "Bookman-old", serif; }
+.font-family-comic-sans { font-family: "Comic Sans MS", cursive, sans-serif; }
+.font-family-georgia { font-family: "Georgia", serif; }
+.font-family-tahoma { font-family: Tahoma, Geneva, sans-serif; }
+.font-family-times-new-roman { font-family: "Times New Roman", Times, serif; }
+.font-family-palatino { font-family: "Palatino Linotype", "Book Antiqua", "Palatino", serif; }
+.font-family-verdana { font-family: Verdana, Geneva, sans-serif; }
