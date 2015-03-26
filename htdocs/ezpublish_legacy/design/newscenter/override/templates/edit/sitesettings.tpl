@@ -107,6 +107,9 @@
                         <a href="" class="container-padding-left size"><span class="font-size-16-px">16</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
                         <a href="" class="container-padding-left size"><span class="font-size-14-px">14</span> <span class="glyphicon glyphicon-text-size font-size-12-px"></span></a>
                       </div>
+                      <div class="col-lg-12">
+                        <span class=""
+                      </div>
                     </div>
                     <div class="font-family-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
                     <div class="font-family-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
