@@ -81,6 +81,39 @@
                   </div>
                 </div>
 
+                {* Site Fonts *}
+
+                <div class="col-lg-12 no-margin no-padding">
+                  <div class="pull-left">
+                    <h3 class="clear">Typsnitt och storlek</h3>
+                  </div>
+                  <div class="pull-right container-padding-top-2">
+                    <a class="toggle" data-href="fonts" href="#fonts">Visa detaljer</a>
+                  </div>
+                </div>
+
+                <p class="clear">Ange typsnitt och teckenstorlek.</p>
+
+                <div class="fonts hide">
+                  <div class="form-group">
+                    <label>Välj typsnitt</label>
+                    <div class="col-lg-12">
+                      <label>Storlek</label>
+                      <div class="col-lg-12">
+                        24px <span class="glyphicon glyphicon-text-size"></span>
+                        22px <span class="glyphicon glyphicon-text-size"></span>
+                        20px <span class="glyphicon glyphicon-text-size"></span>
+                        18px <span class="glyphicon glyphicon-text-size"></span>
+                        16px <span class="glyphicon glyphicon-text-size"></span>
+                        14px <span class="glyphicon glyphicon-text-size"></span>
+                        12px <span class="glyphicon glyphicon-text-size"></span>
+                      </div>
+                    </div>
+                    <div class="font-family-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
+                    <div class="font-family-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
+                  </div>
+                </div>
+
                 {* Site Colors *}
 
                 <div class="col-lg-12 no-margin no-padding">
@@ -92,7 +125,7 @@
                   </div>
                 </div>
 
-                <p class="clear">Ange bakgrundsfärg, länkfärg, textfärg, font-storlek och font-familj.</p>
+                <p class="clear">Ange bakgrundsfärg, länkfärg och textfärg.</p>
 
                 <div class="colors hide">
                   <div class="form-group">
