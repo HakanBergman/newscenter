@@ -129,6 +129,7 @@
                       </div>
                       <div class="font-family-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
                       <div class="font-size-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
+                    </div>
                   </div>
                 </div>
 
