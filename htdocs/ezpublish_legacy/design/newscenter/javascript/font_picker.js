@@ -19,6 +19,7 @@
         var font_family = classtosize($(this).attr('data-class'));
         var font_family_class = $(this).attr('data-class');
         $('.font-family-picked').html(font_family);
+        alert($(this).attr('data-class'));
     });
 });
 
