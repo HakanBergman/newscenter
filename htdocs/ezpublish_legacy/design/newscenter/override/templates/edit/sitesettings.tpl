@@ -121,14 +121,14 @@
                     <div class="fonts-picked">
                       <div class="col-lg-12 container-padding-left container-padding-top">
                         <div class="col-lg-9">
-                          Nuvarande typsnitt <span class="family"></span> | Nuvarande storlek <span class="size"></span>
+                          Nuvarande typsnitt <span class="family-font-current"></span> | Nuvarande storlek <span class="family-size-current"></span>
                         </div>
                         <div class="col-lg-3">
                           Valt typsnitt <span class="family"></span> | Vald storlek <span class="size"></span>
                         </div>
                       </div>
-                      <div class="font-family-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
-                      <div class="font-size-saved-color hide">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
+                      <div class="font-family-saved hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
+                      <div class="font-size-saved hide">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
                     </div>
                   </div>
                 </div>
