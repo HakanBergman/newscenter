@@ -193,7 +193,7 @@
                       <div class="text-picked-color">
                         <strong>Vald färg</strong> <span class="color"></span> | <strong>Ny färg</strong> <span class="hex"></span>
                       </div>
-                      <div class="text-saved-color">{attribute_edit_gui attribute=$object.data_map.text_color}</div>
+                      <div class="text-saved-color hide">{attribute_edit_gui attribute=$object.data_map.text_color}</div>
                     </div>                    
                     
                   </div>
