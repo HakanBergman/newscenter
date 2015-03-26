@@ -128,8 +128,10 @@
                           Valt typsnitt: <span class="font-family-picked"></span> | Vald storlek: <span class="font-size-picked"></span>
                         </div>
                       </div>
-                      <div class="font-family-saved">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
-                      <div class="font-size-saved">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
+                      <div class="col-lg-12">
+                        <div class="font-family-saved">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
+                        <div class="font-size-saved">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
+                      </div>
                     </div>
                   </div>
                 </div>
