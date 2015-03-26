@@ -119,7 +119,7 @@
                       </div>
                     </div>
                     <div class="fonts-picked">
-                      <div class="col-lg-12 container-padding-left-2">
+                      <div class="col-lg-12 container-padding-left-2 container-padding-top">
                         <div class="pull-left">
                           Nuvarande typsnitt <span class="family"></span> | Nuvarande storlek <span class="size"></span></div>
                         </div>
