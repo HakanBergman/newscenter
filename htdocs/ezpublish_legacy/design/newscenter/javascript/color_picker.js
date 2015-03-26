@@ -32,11 +32,29 @@ function colortohex(value) {
         case "bg-black":
             return "#000";
         break;
-        case "text-color-black":
-            return "#000";
+        case "bg-beer-brown":
+            return "#DE910b";
         break;
+        case "bg-granate":
+            return "#570900";
+        break;
+        case "bg-dynamite-orange":
+            return "#DE910b";
+        break;
+        case "bg-grey":
+            return "#EEE";
+        break;
+        case "bg-longdrink-blue":
+            return "#4BC6D1";
+        break;
+        case "bg-tidningen-se":
+            return "#004389";
+        break; 
         case "bg-white":
             return "#FFF";
+        break;
+        case "text-color-black":
+            return "#000";
         break;
     }
 }
