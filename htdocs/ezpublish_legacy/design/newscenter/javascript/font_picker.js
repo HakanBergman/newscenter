@@ -11,6 +11,7 @@
         $('.font-family span').each(function (index, value) {
             $(this).removeClass('font-size-22-px font-size-20-px font-size-18-px font-size-16-px font-size-14-px');
             $(this).addClass(font_size_class);
+            $('.font-size-saved input').val(font_size_class);
         });
     });
 });

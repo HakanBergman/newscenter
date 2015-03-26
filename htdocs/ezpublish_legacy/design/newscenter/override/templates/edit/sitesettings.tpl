@@ -119,15 +119,15 @@
                     </div>
                     <div class="fonts-picked">
                       <div class="col-lg-12 container-padding-left container-padding-top">
-                        <div class="col-lg-9">
+                        <div class="col-lg-8">
                           Nuvarande typsnitt <span class="family-font-current"></span> | Nuvarande storlek <span class="family-size-current"></span>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-4">
                           Valt typsnitt: <span class="font-family-picked"></span> | Vald storlek: <span class="font-size-picked"></span>
                         </div>
                       </div>
                       <div class="font-family-saved hide">{attribute_edit_gui attribute=$object.data_map.font_family}</div>
-                      <div class="font-size-saved hide">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
+                      <div class="font-size-saved">{attribute_edit_gui attribute=$object.data_map.font_size}</div>
                     </div>
                   </div>
                 </div>
