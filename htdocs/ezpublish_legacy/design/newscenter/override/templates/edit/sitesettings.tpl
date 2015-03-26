@@ -178,7 +178,7 @@
 
                     {* Text color *}
                     
-                    <label>Välj textfärg</label>
+                    <div class="col-lg-12 no-margin no-padding container-padding-top clear"><label>Välj textfärg</label></div>
                     <div class="col-lg-12">
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <span class="background-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-black" data-hex="#000"></span>
