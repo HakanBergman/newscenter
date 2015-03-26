@@ -8,7 +8,7 @@
         var font_size = classtosize($(this).attr('data-class'));
         var font_size_class = $(this).attr('data-class');
         $('.font-size-picked').html(font_size);
-        $('.fonts .font-family').each(function(index, value) {
+        $('.font-family span').each(function(index, value) {
             $(this).addClass(font_size_class);
             alert(font_class);
         });
@@ -17,9 +17,6 @@
 
 function classtosize(input_class) {
     switch (input_class) {
-        case "font-size-24-px":
-            return "24 pixlar";
-        break;
         case "font-size-22-px":
             return "22 pixlar";
         break;
