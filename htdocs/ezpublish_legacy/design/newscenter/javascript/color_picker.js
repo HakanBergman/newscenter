@@ -5,10 +5,15 @@
         $('.background-picked-color .color').html(current_color);
         $('.background-picked-color').removeClass('hide');        
     }
+    if ($('.text-saved-color').length) {
+        var current_color = colortohex($('.text-saved-color input').val());
+        $('.text-picked-color .color').html(current_color);
+        $('.text-picked-color').removeClass('hide');
+    }
     /* Make something happen when we click a color */
-    $('.colors .background-color').on('click', function (e) {
-        $('.background-picked-color .hex').html($(this).attr('data-hex'));
-        $('.background_color').val($(this).attr('data-color'));
+    $('.colors .text-color').on('click', function (e) {
+        $('.text-picked-color .hex').html($(this).attr('data-hex'));
+        $('.text_color').val($(this).attr('data-color'));
     });
 });
 
