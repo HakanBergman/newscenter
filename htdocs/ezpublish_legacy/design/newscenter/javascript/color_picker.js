@@ -17,5 +17,8 @@ function colortohex(value) {
         case "bg-black":
             return "#000";
         break;
+        case "bg-white":
+            return "#FFF";
+        break;
     }
 }
