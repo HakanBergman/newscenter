@@ -41,7 +41,7 @@
 								</form>
 							  </div>
 
-							  <div class="form container-padding-left-2 container-padding-top-2 clear">								
+							  <div class="form container-padding-left-2 clear">								
 								<h3>Globala Zoner</h3>
 							  </div>
 
