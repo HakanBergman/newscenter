@@ -7,24 +7,20 @@
       <div class="row">
         <div class="col-lg-12 container-padding-left-4 container-padding-right-4">
             <article>
-			  {if $object.name|wash()|eq('Ny Zon - Standard')}
-				<h1>Test</h1>
-			  {else}
-				<h1>Standard Zon {$object.name|wash()}</h1>
-			  {/if}
+			  {if $object.name|wash()|eq('Ny Zon - Standard')}<h1>{$object.name|wash()}</h1>{else}<h1>Standard Zon - {$object.name|wash()}</h1>{/if}
               <p>Zonegenskaper</p>
               <div class="form container-padding-left-2">
                                 
-                {* Site Title *}
+                {* Zone Title *}
                 <div class="col-lg-12 no-margin no-padding">
                   <div class="pull-left"><h3 class="clear">Titel</h3></div>
                 </div>
 
-                <p class="clear">Ange namnet på sidan (Tex företagsnamnet).</p>
+                <p class="clear">Ange namnet på zonen (tex Vänsterspalt, Högerspalt, Annons, etc).</p>
 
                 <div class="form-group">
-                  <label>Sidans titel</label>
-                  <div>{attribute_edit_gui attribute=$object.data_map.site_title}</div>
+                  <label>Zonens titel</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.name}</div>
                 </div>
 
                 {* Site Icons *}
