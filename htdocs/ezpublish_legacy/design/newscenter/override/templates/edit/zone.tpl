@@ -7,8 +7,8 @@
       <div class="row">
         <div class="col-lg-12 container-padding-left-4 container-padding-right-4">
             <article>
-              <h1>Sajtinställningar</h1>
-              <p>Här finns alla generella inställningar för hemsidan.</p>
+              <h1>Standard Zon {$object.name|wash()}</h1>
+              <p>Zonegenskaper</p>
               <div class="form container-padding-left-2">
                                 
                 {* Site Title *}
