@@ -7,7 +7,7 @@
 			<div class="{$#zone_width} no-margin no-padding">
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					<div class="pull-right">
-						<span class="glyphicon glyphicon-edit container-padding-right"></span>
+						<a href="/content/edit/{$zone.contentobject_id}"><span class="glyphicon glyphicon-edit"></span></a>
 						<span class="glyphicon glyphicon-remove container-padding-left"></span>
 					</div>
 				{/if}
