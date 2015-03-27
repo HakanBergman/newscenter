@@ -11,7 +11,7 @@
 
 								<div class="col-lg-12">
 									<p>Välj template</p>
-									<select class="form-control zone-template container-padding-top-2">
+									<select name="zone-template" class="form-control zone-template container-padding-top-2">
 										<option value="zone">Standard Zon</option>
 										<option value="zone_global">Global Zon</option>
 									</select>
@@ -19,7 +19,7 @@
 
 								<div class="col-lg-2">
 									<p>Välj platsen där zonen ska skapas.</p>
-									<select class="form-control zone-node container-padding-top-2">
+									<select name="zone-node" class="form-control zone-node container-padding-top-2">
 										<option value="{$company.node_id}">{$company.name|wash()}</option>
 										{def $node_list = fetch('content', 'tree', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('webiste', 'article', 'contact')))}
 											{foreach $node_list as $node}
