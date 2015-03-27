@@ -36,6 +36,19 @@
                   <div>{attribute_edit_gui attribute=$object.data_map.zone_position}</div>
                 </div>
 
+				{* Zone Fullscreen *}
+
+                <div class="col-lg-12 no-margin no-padding">
+                  <div class="pull-left"><h3 class="clear">Visa zonen i helskärm (hela sidans bredd) (default: 1140px bred).</h3></div>
+                </div>
+
+                <p class="clear">Kryssa i rutan om zonen ska visas ut för hela sidans bredd.</p>
+
+                <div class="form-group">
+                  <label>Helskärm</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.fullscreen}</div>
+                </div>
+
                 {* Site Icons *}
 
                 <div class="col-lg-12 no-margin no-padding">
