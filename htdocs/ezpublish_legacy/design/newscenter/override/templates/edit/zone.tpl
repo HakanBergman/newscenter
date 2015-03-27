@@ -7,7 +7,11 @@
       <div class="row">
         <div class="col-lg-12 container-padding-left-4 container-padding-right-4">
             <article>
-              <h1>Standard Zon {$object.name|wash()}</h1>
+			  {if $object.name|wash()|eq('Ny Zon - Standard')}
+				<h1>Test</h1>}
+			  {else}
+				<h1>Standard Zon {$object.name|wash()}</h1>
+			  {/if}
               <p>Zonegenskaper</p>
               <div class="form container-padding-left-2">
                                 
