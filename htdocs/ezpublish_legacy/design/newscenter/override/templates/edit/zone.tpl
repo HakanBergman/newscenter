@@ -56,6 +56,20 @@
 					</div>
                 </div>
 
+				{* Zone Size *}
+
+                <div class="col-lg-12 no-margin no-padding clear">
+                  <div class="pull-left"><h3 class="clear">Zonens storlek / spaltens storlek</h3></div>
+                </div>
+
+                <p class="clear">Ange hur stor procent av sidan som zonen ska ta upp (default är 100%).</p>
+
+                <div class="form-group">
+                  <label>Zonens storlek</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.zone_size}</div>
+                </div>
+
+
                 {* Site Icons *}
 
                 <div class="col-lg-12 no-margin no-padding">
