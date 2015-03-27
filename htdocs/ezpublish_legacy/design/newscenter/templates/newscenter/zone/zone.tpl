@@ -8,7 +8,14 @@
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					<div class="pull-right">
 						<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}"><span class="glyphicon glyphicon-edit"></span></a>
-						<a href="/content/<span class="glyphicon glyphicon-remove container-padding-left"></span>
+						<form method="post" action="/content/action">
+							<input type="hidden" name="TopLevelNode" value="{$zone.node_id}">
+							<input type="hidden" name="ContentNodeID" value="{$zone.node_id}">
+							<input type="hidden" name="ContentObjectID" value="{$zone.contentobject_id}">							
+							<input class="button" type="submit" name="ActionRemove" value="Radera" title="Radera det här objektet.">
+							<button type="submit" name="ActionRemove" class="btn glyphicon glyphicon-remove container-padding-left"></button>
+						</form>
+						<a href="/content/"><span class="glyphicon glyphicon-remove container-padding-left"></span></a>
 					</div>
 				{/if}
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
