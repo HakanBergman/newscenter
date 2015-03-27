@@ -21,7 +21,10 @@
 									<input type="hidden" value="{$company.class_identifier}" name="ClassIdentifier">
 									<input type="hidden" value="{$company.node_id}" name="NodeID"> 
 									<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 
-									<input type="submit" value="Beställ privatannons" name="NewButton" class="button new_commentaire">
+									<div class="buttonblock pull-right container-padding-top-2 clear">
+									  <button type="submit" ame="NewButton" class="btn btn-primary">Skapa Zon</button>
+									  <button type="button" name="DiscardButton" class="btn btn-link history-back">Avbryt</button>
+									</div>
 								</form>
 							  </div>
 							</article>
