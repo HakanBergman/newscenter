@@ -6,9 +6,14 @@
 					<div class="row">
 						<div class="col-lg-12 container-padding-left-4 container-padding-right-4">
 							<article>
-							  <h1>Zonegenskaper</h1>
-							  <p>Välj platsen där zonen ska skapas.</p>
+							  <h1>Zonegenskaper</h1>							  
 							  <div class="form container-padding-left-2">
+								<p>Välj template</p>
+								<select class="form-control zone-template container-padding-top-2">
+									<option value="zone">Standard Zon</option>
+									<option value="zone_global">Global Zon</option>
+								</select>
+								<p>Välj platsen där zonen ska skapas.</p>
 								<select class="form-control zone-node">
 									<option value="{$company.node_id}">{$company.name|wash()}</option>
 									{def $node_list = fetch('content', 'tree', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('webiste', 'article', 'contact')))}
@@ -16,10 +21,6 @@
 											<option>{$node.name|wash()}</option>
 										{/foreach}
 									{undef $node_list}
-								</select>
-								<select class="form-control zone-template container-padding-top-2">
-									<option value="zone">Standard Zon</option>
-									<option value="zone_global">Global Zon</option>
 								</select>
 								<form action="/content/action" method="post">
 									<input type="hidden" value="zone" name="ClassIdentifier">
