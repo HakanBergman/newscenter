@@ -84,6 +84,18 @@ MatchFile=full/zones.tpl
 Subdir=templates
 Match[class_identifier]=zones
 
+[edit_zone_default]
+Source=content/edit.tpl
+MatchFile=edit/zone.tpl
+Subdir=templates
+Match[class_identifier]=zone
+
+[edit_zone_global]
+Source=content/edit.tpl
+MatchFile=edit/zone_global.tpl
+Subdir=templates
+Match[class_identifier]=zone_global
+
 [edit_sitesettings]
 Source=content/edit.tpl
 MatchFile=edit/sitesettings.tpl

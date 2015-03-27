@@ -6,9 +6,10 @@
 					<div class="row">
 						<div class="col-lg-12 container-padding-left-4 container-padding-right-4">
 							<article>
-							  <h1>Zonegenskaper</h1>								  						  
+							  <h1>Zonegenskaper</h1>	
+							  							  						  
 							  <div class="form container-padding-left-2">
-
+								<h3>Skapa en ny Zon</h3>
 								<div class="col-lg-12 container-padding-top-2">
 									<p>Välj mall</p>
 									<select name="zone-template" class="form-control zone-template">
@@ -39,6 +40,11 @@
 									</div>
 								</form>
 							  </div>
+
+							  <div class="form container-padding-left-2">
+								<h3>Globala Zoner</h3>
+							  </div>
+
 							</article>
 						</div>
 					</div>
