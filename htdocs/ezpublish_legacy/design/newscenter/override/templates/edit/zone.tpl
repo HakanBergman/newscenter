@@ -46,7 +46,7 @@
 
                 <div class="form-group">                  
                   <div>
-					<div class="col-lg-8 col-md-8 col-sm-8">
+					<div class="col-lg-4 col-md-4 col-sm-4">
 						<div class="pull-left">
 							<label>Visa ut ut zonen i hela sidans bredd:</label>
 						</div>
