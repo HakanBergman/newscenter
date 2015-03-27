@@ -45,7 +45,15 @@
                 <p class="clear">Kryssa i rutan om zonen ska visas ut för hela sidans bredd.</p>
 
                 <div class="form-group">                  
-                  <div><label>Visa ut ut zonen i hela sidans bredd:</label> {attribute_edit_gui attribute=$object.data_map.fullscreen}</div>
+                  <div>
+					<div class="col-lg-8 col-md-8 col-sm-8">
+						<div class="pull-left">
+							<label>Visa ut ut zonen i hela sidans bredd:</label>
+						</div>
+						<div class="pull-right">
+							{attribute_edit_gui attribute=$object.data_map.fullscreen}</div>
+						</div>
+					</div>
                 </div>
 
                 {* Site Icons *}
