@@ -78,6 +78,12 @@ MatchFile=full/menusettings.tpl
 Subdir=templates
 Match[class_identifier]=menu_settings
 
+[full_zone]
+Source=node/view/full.tpl
+MatchFile=full/zones.tpl
+Subdir=templates
+Match[class_identifier]=zones
+
 [edit_sitesettings]
 Source=content/edit.tpl
 MatchFile=edit/sitesettings.tpl
