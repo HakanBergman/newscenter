@@ -48,7 +48,7 @@
                   <div>
 					<div class="col-lg-4 col-md-4 col-sm-4">
 						<div class="pull-left">
-							<label>Visa ut ut zonen i hela sidans bredd:</label>
+							<label>Visa ut zonen i hela sidans bredd:</label>
 						</div>
 						<div class="pull-right">
 							{attribute_edit_gui attribute=$object.data_map.fullscreen}</div>
