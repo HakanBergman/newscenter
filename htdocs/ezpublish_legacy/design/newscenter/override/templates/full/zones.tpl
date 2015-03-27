@@ -9,7 +9,7 @@
 							  <h1>Zonegenskaper</h1>
 							  <p>Välj platsen där zonen ska skapas.</p>
 							  <div class="form container-padding-left-2">
-								<select class="form-control zone-selector">
+								<select class="form-control zone-node">
 									<option value="{$company.node_id}">{$company.name|wash()}</option>
 									{def $node_list = fetch('content', 'tree', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('webiste', 'article', 'contact')))}
 										{foreach $node_list as $node}
@@ -17,8 +17,12 @@
 										{/foreach}
 									{undef $node_list}
 								</select>
+								<select class="form-control zone-template">
+									<option value="zone">Standard Zon</option>
+									<option value="zone_global">Global Zon</option>
+								</select>
 								<form action="/content/action" method="post">
-									<input type="hidden" value="zones" name="ClassIdentifier">
+									<input type="hidden" value="zone" name="ClassIdentifier">
 									<input type="hidden" value="{$company.node_id}" name="NodeID"> 
 									<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 
 									<div class="buttonblock pull-right container-padding-top-2 clear">
