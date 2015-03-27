@@ -36,7 +36,7 @@
 									<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 
 									<div class="buttonblock pull-right container-padding-top-2 clear">
 									  <button type="submit" name="NewButton" class="btn btn-primary">Skapa Zon</button>
-									  <a href="/" class="btn btn-info" role="button">Avbryt</a>
+									  <a href="/" class="btn btn-default" role="button">Avbryt</a>
 									</div>
 								</form>
 							  </div>
