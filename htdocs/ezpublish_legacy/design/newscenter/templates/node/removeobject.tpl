@@ -29,7 +29,7 @@
 								<br />
 							</div>
 						{/if}
-						<div class="col-lg-12 clear">
+						<div class="col-lg-12  container-padding-top-2 clear">
 							<div class="buttonblock pull-right">
 								<button type="submit" name="Store" id="ConfirmButton" class="btn btn-danger">Bekräfta radering</button>
 								<button type="submit" name="Discard" id="CancelButton" class="btn btn-default">Avbryt</button>
