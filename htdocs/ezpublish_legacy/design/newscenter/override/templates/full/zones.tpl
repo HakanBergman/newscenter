@@ -7,12 +7,14 @@
 					  <h1>Zonegenskaper</h1>
 					  <p>Välj platsen där zonen ska skapas.</p>
 					  <div class="form container-padding-left-2">
-						{$company} test
-						{def $node_list = fetch('content', 'tree', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('webiste', 'article', 'contact')))}
-							{foreach $node_list as $node}
-								{$node.name|wash()}
-							{/foreach}
-						{undef $node_list}
+						<select class="form-control zone-selector">
+							<option value="{$company.node_id}" data-classid="{$company.class_identifier}">{$company.name|wash()}</option>
+							{def $node_list = fetch('content', 'tree', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('webiste', 'article', 'contact')))}
+								{foreach $node_list as $node}
+									<option>{$node.name|wash()}</option>
+								{/foreach}
+							{undef $node_list}
+						</select>
 						<form action="/content/action" method="post">
 							<input type="hidden" value="family_ad" name="ClassIdentifier">
 							<input type="hidden" value="180" name="NodeID"> 
