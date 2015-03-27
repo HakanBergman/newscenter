@@ -117,7 +117,7 @@
 						{def $zones = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone_footer')))}
 						{if $zones}
 							{foreach $zones as $zone}
-								{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+								{include uri="design:newscenter/zone/zone.tpl" zone=$zone user=$user}
 							{/foreach}
 						{/if}
 						<div class="{$#company.data_map.footer_color.data_text}">&nbsp;</div>
