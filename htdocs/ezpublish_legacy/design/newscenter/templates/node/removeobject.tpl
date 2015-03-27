@@ -4,7 +4,7 @@
 			{if is_unset( $exceeded_limit ) }{def $exceeded_limit=false()}{/if}
 				<form action={concat($module.functions.removeobject.uri)|ezurl} method="post" name="ObjectRemove">
 					<div class="form-group">
-						<div class="bg-warning">
+						<div class="bg-danger container-padding-left container-padding-top container-padding-right container-padding-bottom">
 							{if eq( $exceeded_limit, true() )}
 								<h2>Warning:</h2>
 								<p>{'The items contain more than the maximum possible nodes for subtree removal and will not be deleted. You can remove this subtree using the ezsubtreeremove.php script.'|i18n( 'design/ezdemo/node/removeobject' )}</p>
@@ -29,12 +29,11 @@
 								<br />
 							</div>
 						{/if}
-
-						<div class="buttonblock">
-							<button type="submit" name="Store" id="ConfirmButton" class="btn btn-danger">Bekr‰fta radering</button>
-							<button type="submit" name="Discard" id="CancelButton" class="btn btn-default">Avbryt</button>
-							{include uri="design:gui/button.tpl" name=Store id_name=ConfirmButton value="Confirm"|i18n("design/ezdemo/node/removeobject") disabled=$exceeded_limit}
-							{include uri="design:gui/defaultbutton.tpl" name=Discard id_name=CancelButton value="Cancel"|i18n("design/ezdemo/node/removeobject")}
+						<div class="col-lg-12 clear">
+							<div class="buttonblock pull-right">
+								<button type="submit" name="Store" id="ConfirmButton" class="btn btn-danger">Bekr√§fta radering</button>
+								<button type="submit" name="Discard" id="CancelButton" class="btn btn-default">Avbryt</button>
+							</div>
 						</div>
 					</div>
 			</form>
