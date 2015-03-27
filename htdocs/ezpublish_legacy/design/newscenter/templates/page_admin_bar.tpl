@@ -37,7 +37,7 @@
 							<span class="glyphicon glyphicon-tasks text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Widgets</a>
 						</div>
 						<div class="edit container-padding-left-2 container-padding-top-05">
-							<span class="glyphicon glyphicon-th-large text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Zoner</a>
+							<span class="glyphicon glyphicon-th-large text-primary"></span> <a href="/Zoner" class="text-decoration-none container-padding-left" title="Administrera Zoner">Zoner</a>
 						</div>
 					</div>
 				</div>
