@@ -17,7 +17,7 @@
 										{/foreach}
 									{undef $node_list}
 								</select>
-								<select class="form-control zone-template">
+								<select class="form-control zone-template container-padding-top-2">
 									<option value="zone">Standard Zon</option>
 									<option value="zone_global">Global Zon</option>
 								</select>
