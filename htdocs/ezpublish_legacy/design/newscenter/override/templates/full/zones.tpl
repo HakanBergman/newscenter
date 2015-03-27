@@ -4,8 +4,8 @@
 			<div class="row">
 				<div class="col-lg-12 container-padding-left-4 container-padding-right-4">
 					<article>
-					  <h1>Skapa ny zon</h1>
-					  <p>Välj den zontyp du vill skapa.</p>
+					  <h1>Zonegenskaper</h1>
+					  <p>Välj platsen där zonen ska skapas.</p>
 					  <div class="form container-padding-left-2">
 						{$company} test
 						{def $node_list = fetch('content', 'tree', hash('parent_node_id', $company.node_id))}
