@@ -6,7 +6,10 @@
 		<div class="{if $zone.data_map.fullscreen.value}container-fluid{else}container{/if}">
 			<div class="{$#zone_width} no-margin no-padding">
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
-					<div class="pull-right"><span class="glyphicon glyphicon-remove"></span></div>
+					<div class="pull-right">
+						<span class="glyphicon glyphicon-edit"></span>
+						<span class="glyphicon glyphicon-remove"></span>
+					</div>
 				{/if}
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id, 'sort_by', array('priority', true()) ))}
