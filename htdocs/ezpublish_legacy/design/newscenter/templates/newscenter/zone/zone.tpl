@@ -7,8 +7,8 @@
 			<div class="{$#zone_width} no-margin no-padding">
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					<div class="pull-right">
-						<span class="glyphicon glyphicon-edit"></span>
-						<span class="glyphicon glyphicon-remove"></span>
+						<span class="glyphicon glyphicon-edit container-padding-right"></span>
+						<span class="glyphicon glyphicon-remove container-padding-left"></span>
 					</div>
 				{/if}
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
