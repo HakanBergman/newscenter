@@ -10,7 +10,7 @@
 							  							  						  
 							  <div class="form container-padding-left-2">
 								<h3>Skapa en ny Zon</h3>
-								<div class="col-lg-12 container-padding-top-2">
+								<div class="col-lg-12 container-padding-top">
 									<p>Välj mall</p>
 									<select name="zone-template" class="form-control zone-template">
 										<option value="zone">Standard Zon</option>
@@ -41,7 +41,7 @@
 								</form>
 							  </div>
 
-							  <div class="form container-padding-left-2">
+							  <div class="form container-padding-left-2 container-padding-top-2">								
 								<h3>Globala Zoner</h3>
 							  </div>
 
