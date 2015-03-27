@@ -9,7 +9,7 @@
 							  <h1>Zonegenskaper</h1>								  						  
 							  <div class="form container-padding-left-2">
 
-								<div class="col-lg-12">
+								<div class="col-lg-12 container-padding-top-2">
 									<p>Välj template</p>
 									<select name="zone-template" class="form-control zone-template">
 										<option value="zone">Standard Zon</option>
@@ -17,7 +17,7 @@
 									</select>
 								</div>
 
-								<div class="col-lg-12">
+								<div class="col-lg-12 container-padding-top-2">
 									<p>Välj platsen där zonen ska skapas.</p>
 									<select name="zone-node" class="form-control zone-node">
 										<option value="{$company.node_id}">{$company.name|wash()}</option>
