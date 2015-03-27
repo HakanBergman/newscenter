@@ -23,6 +23,20 @@
                   <div>{attribute_edit_gui attribute=$object.data_map.name}</div>
                 </div>
 
+				{* Zone Position *}
+
+                <div class="col-lg-12 no-margin no-padding">
+                  <div class="pull-left"><h3 class="clear">Position</h3></div>
+                </div>
+
+                <p class="clear">Välj när zonen ska laddas in (före eller efter innehållet).</p>
+				<p class="clear no-margin">Välj Startsidan om zonen är skapad för att laddas in på startsidan.</p>
+
+                <div class="form-group">
+                  <label>Zonens position</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.zone_position}</div>
+                </div>
+
                 {* Site Icons *}
 
                 <div class="col-lg-12 no-margin no-padding">
