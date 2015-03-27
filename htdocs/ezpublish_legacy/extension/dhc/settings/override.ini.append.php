@@ -78,11 +78,23 @@ MatchFile=full/menusettings.tpl
 Subdir=templates
 Match[class_identifier]=menu_settings
 
-[full_zone]
+[full_zones]
 Source=node/view/full.tpl
 MatchFile=full/zones.tpl
 Subdir=templates
 Match[class_identifier]=zones
+
+[full_zone]
+Source=node/view/full.tpl
+MatchFile=full/zone.tpl
+Subdir=templates
+Match[class_identifier]=zone
+
+[full_zone_global]
+Source=node/view/full.tpl
+MatchFile=full/zone.tpl
+Subdir=templates
+Match[class_identifier]=zone_global
 
 [edit_zone_default]
 Source=content/edit.tpl
