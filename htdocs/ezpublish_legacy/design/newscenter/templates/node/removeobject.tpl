@@ -31,8 +31,8 @@
 						{/if}
 						<div class="col-lg-12  container-padding-top-2 clear">
 							<div class="buttonblock pull-right">
-								<button type="submit" name="Store" id="ConfirmButton" class="btn btn-danger">Bekräfta radering</button>
-								<button type="submit" name="Discard" id="CancelButton" class="btn btn-default">Avbryt</button>
+								<button type="submit" name="ConfirmButton" id="ConfirmButton" class="btn btn-danger">Bekräfta radering</button>
+								<button type="submit" name="CancelButton" id="CancelButton" class="btn btn-default">Avbryt</button>
 							</div>
 						</div>
 					</div>
