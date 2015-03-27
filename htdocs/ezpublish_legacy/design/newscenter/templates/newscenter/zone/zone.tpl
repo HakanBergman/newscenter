@@ -8,7 +8,7 @@
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					<div class="pull-right">
 						<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
-						<form method="post" action="/content/action" class="float-right">
+						<form method="post" action="/content/action" class="float-right container-padding-left">
 							<input type="hidden" name="TopLevelNode" value="{$zone.node_id}">
 							<input type="hidden" name="ContentNodeID" value="{$zone.node_id}">
 							<input type="hidden" name="ContentObjectID" value="{$zone.contentobject_id}">							
