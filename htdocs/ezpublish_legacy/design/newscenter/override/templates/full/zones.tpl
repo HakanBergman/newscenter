@@ -8,7 +8,7 @@
 					  <p>Välj platsen där zonen ska skapas.</p>
 					  <div class="form container-padding-left-2">
 						{$company} test
-						{def $node_list = fetch('content', 'tree', hash('parent_node_id', $company.node_id))}
+						{def $node_list = fetch('content', 'tree', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('webiste', 'article', 'contact')))}
 							{foreach $node_list as $node}
 								{$node.name|wash()}
 							{/foreach}
