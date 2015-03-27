@@ -86,7 +86,7 @@
 
                 <div class="buttonblock pull-right container-padding-top-2 clear">
                   <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
-                  <button type="submit" name="DiscardButton" class="btn btn-link">Avbryt</button>
+                  <a href="/" class="btn btn-info" role="button">Avbryt</a>
                   <input type="hidden" name="DiscardConfirm" value="0" />
                   <input type="hidden" name="MainNodeID" value="{$main_node_id}" />
                 </div>
