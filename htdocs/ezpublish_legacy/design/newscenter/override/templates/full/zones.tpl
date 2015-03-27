@@ -10,7 +10,7 @@
 							  <div class="form container-padding-left-2">
 
 								<div class="col-lg-12 container-padding-top-2">
-									<p>Välj template</p>
+									<p>Välj mall</p>
 									<select name="zone-template" class="form-control zone-template">
 										<option value="zone">Standard Zon</option>
 										<option value="zone_global">Global Zon</option>
