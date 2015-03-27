@@ -29,8 +29,7 @@
                   <div class="pull-left"><h3 class="clear">Position</h3></div>
                 </div>
 
-                <p class="clear">Välj när zonen ska laddas in (före eller efter innehållet).</p>
-				<p class="clear no-margin">Välj Startsidan om zonen är skapad för att laddas in på startsidan.</p>
+                <p class="clear">Välj när zonen ska laddas in (före eller efter innehållet). Välj Startsidan om zonen är skapad för att laddas in på startsidan.</p>
 
                 <div class="form-group">
                   <label>Zonens position</label>
