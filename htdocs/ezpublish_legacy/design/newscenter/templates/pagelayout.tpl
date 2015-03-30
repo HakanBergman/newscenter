@@ -100,7 +100,7 @@
 			{if and(is_set($object)|not, is_set($edit_version)|not)}
 				
 				{* Include Frontpage Zones *}
-				{if $current_node_id|eq($home_node.node_id)}
+				{if $current_node_id|eq($#company.node_id)}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 0)), 'sort_by', array('priority', true()) ))}
 						{if $zones}
 							{foreach $zones as $zone}
