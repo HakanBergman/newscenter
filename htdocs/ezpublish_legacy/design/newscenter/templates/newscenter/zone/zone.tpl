@@ -6,6 +6,7 @@
 		<div class="{if $zone.data_map.fullscreen.value}container-fluid{else}container{/if}">
 			<div class="{$#zone_width} no-margin no-padding">
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
+					<strong>Administrationspanel för zonen {$zone.name|wash()}</strong>
 					<div class="pull-right">
 						<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
 						<form method="post" action="/content/action" class="float-right container-padding-left">
@@ -17,7 +18,11 @@
 					</div>
 					<div class="col-lg-12 clear no-margin container-padding-top">
 						<strong>Bildspel</strong>
+						<div class="col-lg-12">
+							<a href="#"><img src=""
+						</div>
 					</div>
+					<hr />
 				{/if}
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id, 'sort_by', array('priority', true()) ))}
 				{if $blocks}
