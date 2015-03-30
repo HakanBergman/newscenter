@@ -18,8 +18,7 @@
 							</form>
 						</div>
 						<div class="col-lg-12 clear no-margin container-padding-top">
-							<strong>Widgets</strong>
-							<div class="col-lg-12 clear container-padding-top">
+							<div class="col-lg-12 clear container-padding-top no-margin">
 								<div class="float-left container-margin-left container-padding-right container-padding-left thumbnail">
 									<form action="/content/action" method="post">
 										<input type="hidden" value="widget_image_list_slider" name="ClassIdentifier">
