@@ -8,13 +8,13 @@
 
 {* URL. *}
 <div class="col-lg-12 clear">
-    <div class="float-left min-width-3-em"><label for="{$id_base}_url">Fyll i l‰nken h‰r:</label></div>
+    <div class="float-left min-width-3-em"><label for="{$id_base}_url">Fyll i l√§nken h√§r:</label></div>
     <input id="{$id_base}_url" class="form-control" type="text" size="70" name="{$attribute_base}_ezurl_url_{$attribute.id}" value="{$attribute.content|wash( xhtml )}" />
 </div>
 
 {* Text. *}
 <div class="col-lg-12 clear">
-    <div class="float-left min-width-3-em"><label for="{$id_base}_text">Ange en SEO-text fˆr denna l‰nk:</label></div>
+    <div class="float-left min-width-3-em"><label for="{$id_base}_text">Ange en SEO-text f√∂r denna l√§nk:</label></div>
     <input id="{$id_base}_text" class="form-control" type="text" size="70" name="{$attribute_base}_ezurl_text_{$attribute.id}" value="{$attribute.data_text|wash( xhtml )}" />
 </div>
 
