@@ -57,9 +57,9 @@
 											<input type="hidden" name="ContentObjectID" value="{$block.contentobject_id}">							
 											<button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
 										</form>
-									</div>
-									<hr class="clear border-solid-black" />
+									</div>									
 								</div>
+								<hr class="clear border-solid-black container-padding-top" />
 							{/if}
 							{include uri=$included_file block=$block}
 						{undef $included_file}
