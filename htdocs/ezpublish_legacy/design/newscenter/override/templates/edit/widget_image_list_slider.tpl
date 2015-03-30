@@ -33,9 +33,9 @@
                 <div class="form-group container-padding-bottom container-padding-top clear">
 					<label>Bild 1</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
-					<div class="col-lg-12 container-padding-left-4">
-						<div>{attribute_edit_gui attribute=$object.data_map.link_one}</div>
+					<div class="col-lg-12 container-padding-left-4 container-padding-top">
 						<p>Ange en länk om bilden ska länka till annat innehåll.</p>
+						<div>{attribute_edit_gui attribute=$object.data_map.link_one}</div>						
 					</div>
                 </div>
 
