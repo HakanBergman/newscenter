@@ -37,7 +37,7 @@
         displayList: true,    
       });
       $('.ps-caption').addClass('font-size-14-px');
-      $('.ps-list li a span').css({ 'padding-left':'1em' });
+      $('.ps-list li a span').addClass('text-center');
     });
   </script>
 {/literal}
