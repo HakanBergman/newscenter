@@ -1,21 +1,6 @@
 ﻿<div class="container">
   {include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
-  {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
-    <div class="pull-left">
-      <h2>{$node.name|wash()}</h2>
-    </div>
-    <div class="pull-right">
-      <a href="/content/edit/{$node.contentobject_id}" title="Redigera {$node.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
-      <form method="post" action="/content/action" class="float-right container-padding-left">
-        <input type="hidden" name="TopLevelNode" value="{$node.node_id}" />
-        <input type="hidden" name="ContentNodeID" value="{$node.node_id}" />
-        <input type="hidden" name="ContentObjectID" value="{$node.contentobject_id}" />
-        <button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
-      </form>      
-    </div>
-  {else}
-    <h2>{$node.name|wash()}</h2>
-  {/if}
+  <h2>{$node.name|wash()}</h2>
 	<div class="col-lg-12 clear">
 		{switch match=$node.children|count()}
 			{case match=1}
