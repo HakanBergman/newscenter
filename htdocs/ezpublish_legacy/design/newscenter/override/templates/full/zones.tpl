@@ -24,7 +24,7 @@
 										<option value="{$company.node_id}">{$company.name|wash()}</option>
 										{def $node_list = fetch('content', 'tree', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('website', 'article', 'contact')))}
 											{foreach $node_list as $node}
-												<option>{$node.name|wash()}</option>
+												<option>{$node.name|wash()} test</option>
 											{/foreach}
 										{undef $node_list}
 									</select>
