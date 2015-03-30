@@ -110,9 +110,37 @@
 					{undef $zones}
 				{/if}
 
+				{* Include Before Content Zones *}
+				{if $current_node_id|ne($#company.node_id)}
+					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 1)), 'sort_by', array('priority', true()) ))}
+						{if $zones}
+							{foreach $zones as $zone}
+								{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+							{/foreach}
+						{/if}
+					{undef $zones}
+				{/if}
+
 			{/if}
 
+			{* Main Content *}
 			{$module_result.content}
+
+			{if and(is_set($object)|not, is_set($edit_version)|not)}				
+
+				{* Include After Content Zones *}
+				{if $current_node_id|ne($#company.node_id)}
+					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 2)), 'sort_by', array('priority', true()) ))}
+						{if $zones}
+							{foreach $zones as $zone}
+								{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+							{/foreach}
+						{/if}
+					{undef $zones}
+				{/if}
+
+			{/if}
+
 		</div>
 
 		{if and(is_set($object)|not, is_set($edit_version)|not)}
