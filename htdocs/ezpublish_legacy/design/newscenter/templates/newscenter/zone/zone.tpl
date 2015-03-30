@@ -45,13 +45,15 @@
 					{foreach $blocks as $block}
 						{def $included_file = concat('design:newscenter/widget/', $block.class_identifier, '.tpl')}
 							{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
-								<a href="/content/edit/{$block.node_id}" title="Redigera Widget - {$block.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
-								<form method="post" action="/content/action" class="float-right container-padding-left">
-									<input type="hidden" name="TopLevelNode" value="{$block.node_id}">
-									<input type="hidden" name="ContentNodeID" value="{$block.node_id}">
-									<input type="hidden" name="ContentObjectID" value="{$block.contentobject_id}">							
-									<button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
-								</form>
+								<div class="col-lg-12 clear">
+									<a href="/content/edit/{$block.node_id}" title="Redigera Widget - {$block.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
+									<form method="post" action="/content/action" class="float-right container-padding-left">
+										<input type="hidden" name="TopLevelNode" value="{$block.node_id}">
+										<input type="hidden" name="ContentNodeID" value="{$block.node_id}">
+										<input type="hidden" name="ContentObjectID" value="{$block.contentobject_id}">							
+										<button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
+									</form>
+								</div>
 							{/if}
 							{include uri=$included_file block=$block}
 						{undef $included_file}
