@@ -33,29 +33,37 @@
                 <div class="form-group container-padding-bottom container-padding-top clear">
 					<label>Bild 1</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
-					<label>Bildtext</label>
-					<div>{attribute_edit_gui attribute=$object.data_map.link_one}</div>
+					<div class="col-lg-12 container-padding-left-4">
+						<div>{attribute_edit_gui attribute=$object.data_map.link_one}</div>
+						<p>Ange en länk om bilden ska länka till annat innehåll.</p>
+					</div>
                 </div>
 
                 <div class="form-group container-padding-bottom container-padding-top clear">
-					<label>Bild 1</label>
+					<label>Bild 2</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_two}</div>
-					<label>Bildtext</label>
-					<div>{attribute_edit_gui attribute=$object.data_map.link_two}</div>
+					<div class="col-lg-12 container-padding-left-4">
+						<div>{attribute_edit_gui attribute=$object.data_map.link_two}</div>
+						<p>Ange en länk om bilden ska länka till annat innehåll.</p>
+					</div>
                 </div>
 
                 <div class="form-group container-padding-bottom container-padding-top clear">
-					<label>Bild 1</label>
+					<label>Bild 3</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_three}</div>
-					<label>Bildtext</label>
-					<div>{attribute_edit_gui attribute=$object.data_map.link_three}</div>
+					<div class="col-lg-12 container-padding-left-4">
+						<div>{attribute_edit_gui attribute=$object.data_map.link_three}</div>
+						<p>Ange en länk om bilden ska länka till annat innehåll.</p>
+					</div>
                 </div>
 
                 <div class="form-group container-padding-bottom container-padding-top clear">
-					<label>Bild 1</label>
+					<label>Bild 4</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_four}</div>
-					<label>Bildtext</label>
-					<div>{attribute_edit_gui attribute=$object.data_map.link_four}</div>
+					<div class="col-lg-12 container-padding-left-4">
+						<div>{attribute_edit_gui attribute=$object.data_map.link_four}</div>
+						<p>Ange en länk om bilden ska länka till annat innehåll.</p>
+					</div>
                 </div>
 
 				{* Widget Fullscreen *}
