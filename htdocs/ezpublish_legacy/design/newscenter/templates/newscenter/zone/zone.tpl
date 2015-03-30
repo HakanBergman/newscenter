@@ -50,7 +50,7 @@
 										Widget - {$block.name|wash()}
 									</div>
 									<div class="pull-right">
-										<a href="/content/edit/{$block.node_id}" title="Redigera Widget - {$block.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
+										<a href="/content/edit/{$block.contentobject_id}" title="Redigera Widget - {$block.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
 										<form method="post" action="/content/action" class="float-right container-padding-left">
 											<input type="hidden" name="TopLevelNode" value="{$block.node_id}">
 											<input type="hidden" name="ContentNodeID" value="{$block.node_id}">
