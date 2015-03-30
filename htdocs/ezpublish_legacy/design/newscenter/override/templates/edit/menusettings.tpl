@@ -85,7 +85,7 @@
                       <div class="background-picked-color hide">
                         <strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span>
                       </div>
-                      <div class="background-saved-color hide">{attribute_edit_gui attribute=$object.data_map.background_color}</div>
+                      <div class="background-saved-color hide">{attribute_edit_gui attribute=$object.data_map.background_color_logotype}</div>
                     </div>
 
                     {* Text color *}
