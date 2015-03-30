@@ -71,8 +71,7 @@
 
                 <p class="clear">Här kan du publicera en bild som ska visas på sidan.</p>
 
-                <div class="form-group container-padding-bottom container-padding-top clear">
-					<label>Bild 1</label>
+                <div class="form-group clear">
 					<div>{attribute_edit_gui attribute=$object.data_map.image}</div>
 				</div>
 
