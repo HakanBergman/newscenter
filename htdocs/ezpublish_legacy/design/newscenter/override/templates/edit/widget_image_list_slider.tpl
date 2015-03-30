@@ -16,23 +16,46 @@
                   <div class="pull-left"><h3 class="clear">Titel</h3></div>
                 </div>
 
-                <p class="clear">Ange namnet på widgeten (tex Facebook).</p>
+                <p class="clear">Ange namnet på widgeten (tex Bildspel/Bildlista).</p>
 
                 <div class="form-group">
                   <label>Widget-titel</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.name}</div>
                 </div>
 
-                {* Widget Link *}
+                {* Widget Title *}
                 <div class="col-lg-12 no-margin no-padding">
-                  <div class="pull-left"><h3 class="clear">Länk till Facebook-sidan</h3></div>
+                  <div class="pull-left"><h3 class="clear">Bilder</h3></div>
                 </div>
 
-                <p class="clear">Här måste URL/länk till Facebook-sidan anges. Den länken hittar ni på Facebook.</p>
+                <p class="clear">Välj upp till fyra (4) bilder som ska ingå i bildspelet.</p>
 
-                <div class="form-group">
-                  <label>Facebook-länk</label>
-                  <div>{attribute_edit_gui attribute=$object.data_map.fb_link}</div>
+                <div class="form-group container-padding-bottom container-padding-top clear">
+					<label>Bild 1</label>
+					<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
+					<label>Bildtext</label>
+					<div>{attribute_edit_gui attribute=$object.data_map.link_one}</div>
+                </div>
+
+                <div class="form-group container-padding-bottom container-padding-top clear">
+					<label>Bild 1</label>
+					<div>{attribute_edit_gui attribute=$object.data_map.image_two}</div>
+					<label>Bildtext</label>
+					<div>{attribute_edit_gui attribute=$object.data_map.link_two}</div>
+                </div>
+
+                <div class="form-group container-padding-bottom container-padding-top clear">
+					<label>Bild 1</label>
+					<div>{attribute_edit_gui attribute=$object.data_map.image_three}</div>
+					<label>Bildtext</label>
+					<div>{attribute_edit_gui attribute=$object.data_map.link_three}</div>
+                </div>
+
+                <div class="form-group container-padding-bottom container-padding-top clear">
+					<label>Bild 1</label>
+					<div>{attribute_edit_gui attribute=$object.data_map.image_four}</div>
+					<label>Bildtext</label>
+					<div>{attribute_edit_gui attribute=$object.data_map.link_four}</div>
                 </div>
 
 				{* Widget Fullscreen *}
