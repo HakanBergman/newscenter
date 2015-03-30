@@ -18,9 +18,10 @@
 							</form>
 						</div>
 						<div class="col-lg-12 clear no-margin container-padding-top">
-							<strong>Bildspel</strong>
-							<div class="col-lg-12">
-								<a href="#"><img src="" /></a>
+							<strong>Widgets</strong>
+							<div class="col-lg-12 clear">
+								<span class="glyphicon glyphicon-picture"> <a href="#" class="thumbnail">Bildspel</a></span>
+								<a href="#" class="thumbnail">Facebook-flöde</a>
 							</div>
 						</div>
 						<hr class="clear border-solid-black" />
