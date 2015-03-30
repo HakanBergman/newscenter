@@ -63,7 +63,7 @@
 										<input type="hidden" value="website" name="ClassIdentifier">
 										<input type="hidden" class="input-zone-id" value="{$current_node.node_id}" name="NodeID"> 
 										<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 
-										<button type="submit" name="NewButton" class="btn btn-link"><span class="glyphicon glyphicon-file text-primary"></span> Skapa webbsida</button>
+										<button type="submit" name="NewButton" class="btn btn-link no-margin no-padding"><span class="glyphicon glyphicon-file text-primary"></span> <span class="container-padding-left">Skapa kontaktlista</span></button>
 									</form>
 								</div>
 								<div class="edit container-padding-left-2 container-padding-top-05">
