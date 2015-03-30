@@ -48,7 +48,7 @@
 						<div class="edit container-padding-left-2 container-padding-top-05">
 							<span class="glyphicon glyphicon-th-large text-primary"></span> <a href="/Zoner" class="text-decoration-none container-padding-left" title="Lägg till Zon">Zon</a>
 						</div>
-						{$node} test
+						{$current_node} test
 						{switch match=$node.class_identifier}
 							{case match='company_name'}
 								STARTSIDAN
