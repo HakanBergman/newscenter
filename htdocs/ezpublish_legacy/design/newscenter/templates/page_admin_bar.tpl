@@ -67,6 +67,16 @@
 									</form>
 								</div>
 							{/case}
+							{case match='website'}
+								<div class="edit container-padding-left-2 container-padding-top-05">
+									<form action="/content/action" method="post">
+										<input type="hidden" value="website" name="ClassIdentifier">
+										<input type="hidden" class="input-zone-id" value="{$current_node.node_id}" name="NodeID"> 
+										<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 
+										<button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding"><span class="glyphicon glyphicon-file text-primary"></span> <span class="container-padding-left">Webbsida</span></button>
+									</form>
+								</div>
+							{/case}
 						{/switch}
 					</div>
 				</div>
