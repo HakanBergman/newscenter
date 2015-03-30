@@ -96,6 +96,12 @@ MatchFile=full/zone.tpl
 Subdir=templates
 Match[class_identifier]=zone_global
 
+[full_widget_facebook]
+Source=node/view/full.tpl
+MatchFile=full/widget_facebook.tpl
+Subdir=templates
+Match[class_identifier]=widget_facebook
+
 [edit_widget_facebook]
 Source=content/edit.tpl
 MatchFile=edit/widget_facebook.tpl
