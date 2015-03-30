@@ -47,6 +47,15 @@
             </div>
           </div>
         {/case}
+        {case match='product_catalogue'}
+          <h2>Redigera Innehåll</h2>
+          <div class="col-lg-12">
+            <div class="edit">
+              <span class="glyphicon glyphicon-pencil text-primary"></span>
+              <a href="/{concat('content/edit/', $current_node.contentobject_id)}" class="text-decoration-none container-padding-left" title="Redigera {$current_node.name|wash()}">Redigera {$current_node.name|wash()}</a>
+            </div>
+          </div>
+        {/case}         
         {case match='product_category'}
           <h2>Redigera Innehåll</h2>
           <div class="col-lg-12">
