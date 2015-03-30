@@ -33,7 +33,7 @@
                 <div class="form-group container-padding-bottom container-padding-top clear">
 					<label>Bild 1</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
-          <div class="col-lg-12">
+          <div class="col-lg-12 container-padding-left">
             <label>Kort beskrivning av bilden:</label>
             <div>{attribute_edit_gui attribute=$object.data_map.image_caption_one}</div>
           </div>
