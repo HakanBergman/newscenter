@@ -61,7 +61,7 @@
 								</div>
 							{/if}
 							{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
-								<div class="thumbnail">
+								<div class="thumbnail container-padding-top container-padding-bottom">
 									{include uri=$included_file block=$block}
 								</div>
 							{else}
