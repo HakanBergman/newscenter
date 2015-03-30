@@ -1,4 +1,4 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding no-margin widget-padding-top widget-facebook">
 	<div class="fb-like-box col-lg-12-max-width" data-href="{$block.data_map.fb_link.value}" data-width="1105" data-height="165" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="true" data-show-border="false"></div>
-  <iframe src="//www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/Maltimportoren&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=177885308946861" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:258px;" allowtransparency="true"></iframe>
+  <iframe src="//www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/pages/MaltImportören-Stockholm&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=177885308946861" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:258px;" allowtransparency="true"></iframe>
 </div>
