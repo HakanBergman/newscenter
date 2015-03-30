@@ -32,7 +32,7 @@
 
 								<form action="/content/action" method="post">
 									<input type="hidden" value="zone" name="ClassIdentifier">
-									<input type="hidden" value="{$company.node_id}" name="NodeID"> 
+									<input type="hidden" class="input-zone-id" value="{$company.node_id}" name="NodeID"> 
 									<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 
 									<div class="buttonblock pull-right container-padding-top-2 clear">
 									  <button type="submit" name="NewButton" class="btn btn-primary">Skapa Zon</button>
