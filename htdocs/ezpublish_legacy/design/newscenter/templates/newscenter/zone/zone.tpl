@@ -25,8 +25,12 @@
 									Bildspel
 								</div>
 								<div class="float-left container-margin-left container-padding-right container-padding-left thumbnail">
-									<span class="glyphicon glyphicon-thumbs-up"></span>
-									Facebook-flöde
+									<form action="/content/action" method="post">
+										<input type="hidden" value="widget_facebook" name="ClassIdentifier">
+										<input type="hidden" class="input-zone-id" value="{$zone.node_id}" name="NodeID"> 
+										<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 							
+										<button type="submit" name="NewButton" class="btn btn-link"><span class="glyphicon glyphicon-thumbs-up"></span> Facebook-flöde</button>										
+									</form>
 								</div>
 							</div>
 						</div>
