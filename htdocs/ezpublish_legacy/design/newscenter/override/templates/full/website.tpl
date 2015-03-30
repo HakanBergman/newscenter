@@ -1,4 +1,4 @@
-﻿<div class="container">
+<div class="container">
 	{include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
 	<div class="col-lg-12">
 		<article>
@@ -7,9 +7,9 @@
 				<img src="/{$website.data_map.image.content.original.full_path}" alt="{$node.name|wash()}"></img>
 			</div>
 			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-				{attribute_view_gui attribute=$node.data_map.intro}
-				{attribute_view_gui attribute=$node.data_map.body}
-				{attribute_view_gui attribute=$node.data_map.summary}
+        <div>{attribute_view_gui attribute=$node.data_map.intro}</div>
+        <div class="container-padding-top">{attribute_view_gui attribute=$node.data_map.body}</div>
+        <div class="container-padding-top">{attribute_view_gui attribute=$node.data_map.summary}</div>
 			</div>
 		</article>
 	</div>
