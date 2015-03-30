@@ -22,7 +22,7 @@
 							<a href="#"><img src="" /></a>
 						</div>
 					</div>
-					<hr />
+					<hr class="clear border-solid-black" />
 				{/if}
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id, 'sort_by', array('priority', true()) ))}
 				{if $blocks}
