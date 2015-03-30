@@ -17,12 +17,14 @@
     {/case}
     {/switch}
     {foreach $node.children as $news}
-      <div class="container-padding-left-2">
-        <span class="glyphicon glyphicon-file"></span>
-        <a href="{$news.url|ezurl('no', 'full')}" class="font-weight-normal container-padding-left" title="{$news.name|wash()}">
-          {$news.name|wash()}
-        </a>
-      </div>
+      {if $news.classidentifier|eq('news_list')}
+        <div class="container-padding-left-2 {$column_size}">
+          <span class="glyphicon glyphicon-file"></span>
+          <a href="{$news.url|ezurl('no', 'full')}" class="font-weight-normal container-padding-left" title="{$news.name|wash()}">
+            {$news.name|wash()}
+          </a>
+        </div>
+      {/if}
     {/foreach}
   </div>
 </div>
