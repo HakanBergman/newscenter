@@ -17,7 +17,7 @@
     {/case}
     {/switch}
     {foreach $node.children as $news}
-      {if $news.classidentifier|eq('news_list')}
+      {if $news.class_identifier|eq('article')}
         <div class="container-padding-left-2 {$column_size}">
           <span class="glyphicon glyphicon-file"></span>
           <a href="{$news.url|ezurl('no', 'full')}" class="font-weight-normal container-padding-left" title="{$news.name|wash()}">
