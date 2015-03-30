@@ -48,24 +48,35 @@
 						<div class="edit container-padding-left-2 container-padding-top-05">
 							<span class="glyphicon glyphicon-th-large text-primary"></span> <a href="/Zoner" class="text-decoration-none container-padding-left" title="Lägg till Zon">Zon</a>
 						</div>
-						{$current_node} test
-						{switch match=$node.class_identifier}
+						{switch match=$current_node.class_identifier}
 							{case match='company_name'}
-								STARTSIDAN
+								<div class="edit container-padding-left-2 container-padding-top-05">
+									<form action="/content/action" method="post">
+										<input type="hidden" value="contact_list" name="ClassIdentifier">
+										<input type="hidden" class="input-zone-id" value="{$current_node.node_id}" name="NodeID"> 
+										<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 
+										<button type="submit" name="NewButton" class="btn btn-link"><span class="glyphicon glyphicon-file text-primary"></span> Skapa kontaktlista</button>
+									</form>
+								</div>
+								<div class="edit container-padding-left-2 container-padding-top-05">
+									<form action="/content/action" method="post">
+										<input type="hidden" value="website" name="ClassIdentifier">
+										<input type="hidden" class="input-zone-id" value="{$current_node.node_id}" name="NodeID"> 
+										<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 
+										<button type="submit" name="NewButton" class="btn btn-link"><span class="glyphicon glyphicon-file text-primary"></span> Skapa webbsida</button>
+									</form>
+								</div>
+								<div class="edit container-padding-left-2 container-padding-top-05">
+									<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Nyhetslista</a>
+								</div>
+								<div class="edit container-padding-left-2 container-padding-top-05">
+									<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Produktkatalog</a>
+								</div>
+								<div class="edit container-padding-left-2 container-padding-top-05">
+									<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Webbsida</a>
+								</div>
 							{/case}
 						{/switch}
-						<div class="edit container-padding-left-2 container-padding-top-05">
-							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Kontaktlista</a>
-						</div>
-						<div class="edit container-padding-left-2 container-padding-top-05">
-							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Nyhetslista</a>
-						</div>
-						<div class="edit container-padding-left-2 container-padding-top-05">
-							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Produktkatalog</a>
-						</div>
-						<div class="edit container-padding-left-2 container-padding-top-05">
-							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Webbsida</a>
-						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
