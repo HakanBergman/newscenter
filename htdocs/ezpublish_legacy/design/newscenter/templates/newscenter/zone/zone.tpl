@@ -19,11 +19,13 @@
 						</div>
 						<div class="col-lg-12 clear no-margin container-padding-top">
 							<strong>Widgets</strong>
-							<div class="col-lg-12 clear">
-								<div class="float-left container-padding-right thumbnail"><span class="glyphicon glyphicon-picture"></span>
+							<div class="col-lg-12 clear container-padding-top">
+								<div class="float-left container-padding-right thumbnail">
+									<span class="glyphicon glyphicon-picture"></span>
 									Bildspel
 								</div>
-								<div class="float-left container-padding-right thumbnail"><span class="glyphicon glyphicon-picture"></span>
+								<div class="float-left container-padding-left thumbnail">
+									<span class="glyphicon glyphicon-thumbs-up"></span>
 									Facebook-flöde
 								</div>
 							</div>
