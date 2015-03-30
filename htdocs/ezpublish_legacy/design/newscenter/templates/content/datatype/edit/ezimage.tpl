@@ -18,7 +18,7 @@
 					<input id="logo-text" name="{$attribute_base}_data_imagealttext_{$attribute.id}" value="{$attribute_content.alternative_text|wash(xhtml)}" type="text" class="form-control" placeholder="Ange bildtext. Tex företagets namn, fotografens namn eller platsen den är tagen." />
 				</div>
 			{else}
-				<p class="clear">Ingen logotyp har laddats upp</p>
+				<p class="clear">Ingen bild har laddats upp</p>
 				{* New image file for upload. *}
 				<div class="col-lg-12">
 					<input type="hidden" name="MAX_FILE_SIZE" value="{$attribute.contentclass_attribute.data_int1|mul( 1024, 1024 )}" />
