@@ -17,6 +17,7 @@
     {/case}
     {/switch}
     {foreach $node.children as $news}
+      {$news|attribute(show, 1)}
       {if $news.classidentifier|eq('news_list')}
         <div class="container-padding-left-2 {$column_size}">
           <span class="glyphicon glyphicon-file"></span>
