@@ -48,6 +48,11 @@
 						<div class="edit container-padding-left-2 container-padding-top-05">
 							<span class="glyphicon glyphicon-th-large text-primary"></span> <a href="/Zoner" class="text-decoration-none container-padding-left" title="Lägg till Zon">Zon</a>
 						</div>
+						{switch match=$node.class_identifier}
+							{case match='company_name'}
+								STARTSIDAN
+							{/case}
+						{/switch}
 						<div class="edit container-padding-left-2 container-padding-top-05">
 							<span class="glyphicon glyphicon-file text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Kontaktlista</a>
 						</div>
