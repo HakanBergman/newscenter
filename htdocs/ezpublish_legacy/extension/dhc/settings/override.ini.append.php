@@ -102,6 +102,18 @@ MatchFile=full/widget_facebook.tpl
 Subdir=templates
 Match[class_identifier]=widget_facebook
 
+[full_widget_image_list_slider]
+Source=node/view/full.tpl
+MatchFile=full/widget_image_list_slider.tpl
+Subdir=templates
+Match[class_identifier]=widget_image_list_slider
+
+[edit_widget_image_list_slider]
+Source=content/edit.tpl
+MatchFile=edit/widget_image_list_slider.tpl
+Subdir=templates
+Match[class_identifier]=widget_image_list_slider
+
 [edit_widget_facebook]
 Source=content/edit.tpl
 MatchFile=edit/widget_facebook.tpl
