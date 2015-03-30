@@ -99,7 +99,7 @@
 
 			{if and(is_set($object)|not, is_set($edit_version)|not)}
 				{* Include Standard Zones *}
-				{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( 'and', array('zone/zone_priority', '=', 'Zonen laddas in på startsidan')), 'sort_by', array('priority', true()) ))}
+				{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( 'and', array('zone/zone_priority', '=', 0)), 'sort_by', array('priority', true()) ))}
 				{if $zones}
 					{foreach $zones as $zone}
 						{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
