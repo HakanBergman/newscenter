@@ -71,6 +71,7 @@
 		<script type="text/javascript" src={"javascript/toggle_class.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/color_picker.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/font_picker.js"|ezdesign}></script>		
+		<script type="text/javascript" src={"javascript/zone_picker.js"|ezdesign}></script>		
 	</head>
 	
 	<body class="{$sitesettings.0.data_map.background_color.data_text} {$sitesettings.0.data_map.font_family.data_text} {$sitesettings.0.data_map.font_size.data_text}">
