@@ -38,7 +38,7 @@
 						<div>{attribute_edit_gui attribute=$object.data_map.link_one}</div>			
 									
 						<div class="form-group">                  
-							<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="col-lg-12">
 								<div class="pull-left">
 									<label>Kryssa i rutan om den angivna länken ska öppnas i ett nytt fönster:</label>
 								</div>
