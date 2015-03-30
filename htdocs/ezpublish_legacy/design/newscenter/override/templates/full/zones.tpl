@@ -22,7 +22,7 @@
 									<p>Välj platsen där zonen ska skapas.</p>
 									<select name="zone-node" class="form-control zone-node">
 										<option value="{$company.node_id}">{$company.name|wash()}</option>
-										{def $node_list = fetch('content', 'tree', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('webiste', 'article', 'contact')))}
+										{def $node_list = fetch('content', 'tree', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('website', 'article', 'contact')))}
 											{foreach $node_list as $node}
 												<option>{$node.name|wash()}</option>
 											{/foreach}
