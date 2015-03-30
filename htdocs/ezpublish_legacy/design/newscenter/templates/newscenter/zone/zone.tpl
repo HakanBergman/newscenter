@@ -20,7 +20,7 @@
 						<div class="col-lg-12 clear no-margin container-padding-top">
 							<strong>Widgets</strong>
 							<div class="col-lg-12 clear">
-								<span class="glyphicon glyphicon-picture"> <a href="#" class="thumbnail">Bildspel</a></span>
+								<div class="float-left container-padding-right"><span class="glyphicon glyphicon-picture"></span> <a href="#" class="thumbnail">Bildspel</a></div>
 								<a href="#" class="thumbnail">Facebook-flöde</a>
 							</div>
 						</div>
