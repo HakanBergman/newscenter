@@ -19,7 +19,7 @@
 					<div class="col-lg-12 clear no-margin container-padding-top">
 						<strong>Bildspel</strong>
 						<div class="col-lg-12">
-							<a href="#"><img src=""
+							<a href="#"><img src="" /></a>
 						</div>
 					</div>
 					<hr />
