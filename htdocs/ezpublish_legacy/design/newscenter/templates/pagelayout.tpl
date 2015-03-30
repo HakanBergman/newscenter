@@ -98,13 +98,18 @@
 			{/if}
 
 			{if and(is_set($object)|not, is_set($edit_version)|not)}
-				{* Include Standard Zones *}
-				{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 0)), 'sort_by', array('priority', true()) ))}
-				{if $zones}
-					{foreach $zones as $zone}
-						{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-					{/foreach}
+				
+				{* Include Frontpage Zones *}
+				{if $current_node_id|eq($home_node.node_id)}
+					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 0)), 'sort_by', array('priority', true()) ))}
+						{if $zones}
+							{foreach $zones as $zone}
+								{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+							{/foreach}
+						{/if}
+					{undef $zones}
 				{/if}
+
 			{/if}
 
 			{$module_result.content}
