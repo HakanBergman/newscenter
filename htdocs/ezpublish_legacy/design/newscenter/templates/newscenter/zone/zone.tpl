@@ -15,6 +15,9 @@
 							<button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
 						</form>
 					</div>
+					<div class="col-lg-12 clear no-margin container-padding-top">
+						<strong>Bildspel</strong>
+					</div>
 				{/if}
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id, 'sort_by', array('priority', true()) ))}
 				{if $blocks}
