@@ -59,7 +59,6 @@
 										</form>
 									</div>									
 								</div>
-								<hr class="clear border-solid-black container-padding-top" />
 							{/if}
 							{include uri=$included_file block=$block}
 						{undef $included_file}
