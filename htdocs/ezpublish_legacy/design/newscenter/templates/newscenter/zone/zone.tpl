@@ -45,7 +45,7 @@
 					{foreach $blocks as $block}
 						{def $included_file = concat('design:newscenter/widget/', $block.class_identifier, '.tpl')}
 							{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
-								<div class="col-lg-12 clear container-padding-bottom">
+								<div class="col-lg-12 clear container-padding-bottom container-padding-top">
 									<div class="pull-left">
 										Widget - {$block.name|wash()}
 									</div>
