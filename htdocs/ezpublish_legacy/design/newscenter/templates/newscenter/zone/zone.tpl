@@ -6,7 +6,7 @@
 		<div class="{if $zone.data_map.fullscreen.value}container-fluid{else}container{/if}">
 			<div class="{$#zone_width} no-margin no-padding">
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
-					<strong>Administrationspanel för zonen {$zone.name|wash()}</strong>
+					<strong>Administrationspanel fÃ¶r zonen {$zone.name|wash()}</strong>
 					<div class="pull-right">
 						<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
 						<form method="post" action="/content/action" class="float-right container-padding-left">
