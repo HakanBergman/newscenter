@@ -36,6 +36,7 @@
         autoSlide: false,
         displayList: true,    
       });
+      $('.ps-caption').addClass('font-size-14-px');
     });
   </script>
 {/literal}
