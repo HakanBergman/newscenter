@@ -41,26 +41,6 @@
 					</div>
 				{/if}
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id, 'sort_by', array('priority', true()) ))}
-				{def $block_array = array()}
-				{foreach $blocks as $block}
-
-						{for 0 to $block_array|count() as $number}
-							{if is_set($block_array.$number.contentobject_id)}
-								{$block_array.$number.contentobject_id}
-								{$block.contentobject_id}
-							{else}
-								{set $block_array = $block_array|insert(0, $block)}
-							{/if}
-							{if $block_array.$number.contentobject_id|ne($block.contentobject_id)}
-								{if $block_array.$number.data_map.priority.value|ge($block.data_map.priority.value)}								
-									{set $block_array = $block_array|insert($number, $block)}
-								{/if}
-							{/if}
-						{/for}
-		
-					{$block_array|attribute(show, 1)}			
-				{/foreach}
-
 				{if $blocks}
 					{foreach $blocks as $block}
 
