@@ -27,6 +27,7 @@ p { margin: 0 0 2px; }
 .max-height-2-em { max-height: 2em; }
 .max-height-27-em { max-height: 27em; }
 .max-height-30-em { max-height: 30em; }
+.max-height-39-em { max-height: 39em; }
 
 /* Min Height */
 .min-height-100-percent { min-height: 100%; }
@@ -45,6 +46,7 @@ p { margin: 0 0 2px; }
 .height-1-em { height: 1em; }
 .height-105-em { height: 1.5em; }
 .height-30-em { height: 30em; }
+.height-39-em { height: 39em; }
 
 /* Max width */
 .max-width-1-em { max-width: 1em; }

@@ -37,8 +37,8 @@
       });
       $('.ps-caption').addClass('font-size-14-px');
       $('.ps-list li a span').addClass('text-center');
-      $('.ps-current').addClass('max-height-27-em');
-      $('.ps-current').addClass('height-27-em');      
+      $('.ps-current').addClass('max-height-39-em');
+      $('.ps-current').addClass('height-39-em');      
       $('.ps-current ul').addClass('height-100-percent');
       setTimeout(function() {
           if ($('.elt_1').length) {
