@@ -60,7 +60,11 @@
 									</div>									
 								</div>
 							{/if}
-							{include uri=$included_file block=$block}
+							{* Fetch the correct Zone Size and store it in a global variable *}
+							{include uri="design:newscenter/zone/zone_size.tpl" zone=$block.data_map.widget_size.value}
+							{$#zone_width}
+								{* Include the Block *}
+								{include uri=$included_file block=$block}
 						{undef $included_file}
 					{/foreach}
 				{/if}
