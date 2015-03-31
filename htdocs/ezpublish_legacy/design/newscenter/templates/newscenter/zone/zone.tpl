@@ -46,7 +46,7 @@
 					{if $block_array|count()}
 						{for 0 to $block_array|count() as $number}
 							{if $block_array.$number.data_map.priority.value|ge($block.data_map.priority.value)}
-								{$block.name|wash()}
+								{set $block_array = $block_array|insert($number, $block)}
 							{/if}
 						{/for}
 					{else}
