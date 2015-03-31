@@ -45,7 +45,9 @@
 				{foreach $blocks as $block}
 					{if $block_array|count()}
 						{for 0 to $block_array|count() as $number}
-							{$block_array.$number|attribute(show, 2)}
+							{if $block_array.$number.data_map.priority.value|ge($block.data_map.priority.value)}
+								{$block.name|wash()}
+							{/if}
 						{/for}
 					{else}
 						{set $block_array = $block_array|insert(0, $block)}
