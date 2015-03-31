@@ -41,7 +41,7 @@
       $('.ps-current').addClass('height-30-em');
       setTimeout(function() {
           $('.elt_1').css({ 'height':'100%' });
-        }, 1000);            
+        }, 500);            
     });
   </script>
 {/literal}
