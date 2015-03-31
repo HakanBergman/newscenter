@@ -38,9 +38,20 @@
       $('.ps-caption').addClass('font-size-14-px');
       $('.ps-list li a span').addClass('text-center');
       $('.ps-current').addClass('max-height-30-em');
-      $('.ps-current').addClass('height-30-em');
+      $('.ps-current').addClass('height-30-em');      
       setTimeout(function() {
-          $('.elt_1').css({ 'height':'100%' });
+          if ($('.elt_1').length) {
+            $('.elt_1').css({ 'height':'100%' });
+          }
+          if ($('.elt_2').length) {
+            $('.elt_2').css({ 'height':'100%' });
+          }
+          if ($('.elt_3').length) {
+            $('.elt_3').css({ 'height':'100%' });
+          }
+          if ($('.elt_4').length) {
+            $('.elt_4').css({ 'height':'100%' });
+          }          
         }, 500);            
     });
   </script>
