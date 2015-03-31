@@ -26,8 +26,10 @@
 
 		{* Global Variables *}
 		{def $zone_width = ""}
+		{def $block_width = ""}
 		{def $company = ""}
 		{set scope='global' $zone_width = ""}
+		{set scope='global' $block_width = ""}
 		{set scope='global' $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
 		{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
 
