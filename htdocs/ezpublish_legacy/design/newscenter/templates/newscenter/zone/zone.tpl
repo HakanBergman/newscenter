@@ -44,7 +44,9 @@
 				{def $block_array = array()}
 				{foreach $blocks as $block}
 					{$block.data_map.priority.value}
+					{set $block_array = $block_array|insert($block.data_map.priority.value, $block)}
 				{/foreach}
+				{$block_array|attribute(show, 2)}
 				{if $blocks}
 					{foreach $blocks as $block}
 
