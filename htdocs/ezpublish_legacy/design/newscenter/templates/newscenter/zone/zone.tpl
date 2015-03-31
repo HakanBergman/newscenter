@@ -41,6 +41,10 @@
 					</div>
 				{/if}
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id, 'sort_by', array('priority', true()) ))}
+				{def $block_array = array()}
+				{foreach $blocks as $block}
+					{$block.data_map|attribute(show, 1)}
+				{/foreach}
 				{if $blocks}
 					{foreach $blocks as $block}
 
