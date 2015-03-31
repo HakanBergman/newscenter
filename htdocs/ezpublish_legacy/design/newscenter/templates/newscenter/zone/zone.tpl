@@ -43,10 +43,13 @@
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id, 'sort_by', array('priority', true()) ))}
 				{def $block_array = array()}
 				{foreach $blocks as $block}
+					{for 0 to $block_array|count() as $number}
+						{$block_array.$number|attribute(show, 2)}
+					{/for}
 					{$block.data_map.priority.value}
 					{set $block_array = $block_array|insert($block.data_map.priority.value, $block)}
 				{/foreach}
-				{$block_array|attribute(show, 2)}
+
 				{if $blocks}
 					{foreach $blocks as $block}
 
