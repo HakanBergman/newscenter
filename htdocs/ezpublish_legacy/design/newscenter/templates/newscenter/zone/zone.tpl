@@ -45,7 +45,7 @@
 				{foreach $blocks as $block}
 					{if $block_array|count()}
 						{for 0 to $block_array|count() as $number}
-							{if is_set($block_array.$number.contentobject_id)} existerar {/if}
+							{if is_set($block_array.$number.contentobject_id)} {$block_array.$number.contentobject_id} {$block.contentobject_id} {/if}
 							{if $block_array.$number.contentobject_id|ne($block.contentobject_id)}
 								{if $block_array.$number.data_map.priority.value|ge($block.data_map.priority.value)}								
 									{set $block_array = $block_array|insert($number, $block)}
