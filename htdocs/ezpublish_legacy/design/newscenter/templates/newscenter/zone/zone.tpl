@@ -42,12 +42,13 @@
 				{/if}
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id, 'sort_by', array('priority', true()) ))}
 				{def $block_array = array()}
-				{set $block_array = $block_array|insert(1000, "removeme")}
 				{foreach $blocks as $block}
 					{if $block_array|count()}
 						{for 0 to $block_array|count() as $number}
 							{if $block_array.$number.data_map.priority.value|ge($block.data_map.priority.value)}
-								{set $block_array = $block_array|insert($number, $block)}
+								{if $block_array.$number.contentobject_id|ne($block.contentobject_id)}
+									{set $block_array = $block_array|insert($number, $block)}
+								{/if}
 							{/if}
 						{/for}
 					{else}
