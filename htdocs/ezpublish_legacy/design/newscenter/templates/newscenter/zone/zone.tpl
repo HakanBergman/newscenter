@@ -53,7 +53,8 @@
 						{/for}
 					{else}
 						{set $block_array = $block_array|insert(0, $block)}
-					{/if}					
+					{/if}		
+					{$block_array|attribute(show, 1)}			
 				{/foreach}
 				{$block_array|attribute(show, 2)}
 
