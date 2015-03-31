@@ -39,7 +39,9 @@
       $('.ps-list li a span').addClass('text-center');
       $('.ps-current').addClass('max-height-30-em');
       $('.ps-current').addClass('height-30-em');
-      $('.elt_1').delay(1000).css({ 'height':'100%' });
+      setTimeout(function() {
+          $('.elt_1').css({ 'height':'100%' });
+        }, 5000);            
     });
   </script>
 {/literal}
