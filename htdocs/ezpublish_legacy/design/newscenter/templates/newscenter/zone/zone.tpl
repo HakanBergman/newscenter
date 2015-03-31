@@ -42,6 +42,7 @@
 				{/if}
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id, 'sort_by', array('priority', true()) ))}
 				{def $block_array = array()}
+				{set $block_array = $block_array|insert(1000, "removeme")}
 				{foreach $blocks as $block}
 					{if $block_array|count()}
 						{for 0 to $block_array|count() as $number}
