@@ -39,6 +39,7 @@
       $('.ps-list li a span').addClass('text-center');
       $('.ps-current').addClass('max-height-30-em');
       $('.ps-current').addClass('height-30-em');      
+      $('.ps-current ul').addClass('height-100-percent');
       setTimeout(function() {
           if ($('.elt_1').length) {
             $('.elt_1').css({ 'height':'100%' });
