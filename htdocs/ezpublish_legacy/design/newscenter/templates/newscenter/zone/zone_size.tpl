@@ -13,7 +13,7 @@
 
 	{case match=2}
 		{* 83% *}
-		{def scope='global' $zone_width = "col-lg-10"}
+		{set scope='global' $zone_width = "col-lg-10"}
 	{/case}
 
 	{case match=3}
@@ -78,7 +78,7 @@
 
 	{case match=2}
 		{* 83% *}
-		{def scope='global' $block_width = "col-lg-10"}
+		{set scope='global' $block_width = "col-lg-10"}
 	{/case}
 
 	{case match=3}
