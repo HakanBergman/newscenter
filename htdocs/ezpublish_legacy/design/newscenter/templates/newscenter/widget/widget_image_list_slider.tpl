@@ -30,7 +30,6 @@
 	<script type="text/javascript">
     $(document).ready(function() {
       $('.pgwSlider').pgwSlider({
-        maxHeight : 300,
         listPosition: 'right',
         selectionMode: 'click',
         autoSlide: false,
@@ -38,6 +37,8 @@
       });
       $('.ps-caption').addClass('font-size-14-px');
       $('.ps-list li a span').addClass('text-center');
+      $('.ps-current').addClass('max-height-30-em');
+      $('.ps-current').addClass('height-30-em');
     });
   </script>
 {/literal}
