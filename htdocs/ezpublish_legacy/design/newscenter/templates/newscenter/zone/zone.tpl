@@ -62,7 +62,7 @@
 							{/if}
 							{* Fetch the correct Zone Size and store it in a global variable *}
 							{include uri="design:newscenter/zone/zone_size.tpl" block=$block}
-							{$#block_width}
+							{$#block_width} {$block.data_map.widget_size.content.0}
 								{* Include the Block *}
 								{include uri=$included_file block=$block}
 						{undef $included_file}
