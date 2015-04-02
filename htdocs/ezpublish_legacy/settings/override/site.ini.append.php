@@ -164,6 +164,7 @@ RequireUserLogin=false
 AvailableSiteAccessList[]
 AvailableSiteAccessList[]=newscenter.drumedar.net
 AvailableSiteAccessList[]=www.maltimportoren.se
+AvailableSiteAccessList[]=www.datadelen.com
 AvailableSiteAccessList[]=webbcenter.datadelenhc.se
 AvailableSiteAccessList[]=ezdemo_site_clean_admin
 
@@ -173,6 +174,7 @@ RelatedSiteAccessList[]=ezdemo_site_clean_admin
 RelatedSiteAccessList[]=newscenter.drumedar.net
 RelatedSiteAccessList[]=webbcenter.datadelenhc.se
 RelatedSiteAccessList[]=www.maltimportoren.se
+RelatedSiteAccessList[]=www.datadelen.com
 
 # A list of module or module/views that don't require user login
 AnonymousAccessList[]
@@ -192,6 +194,9 @@ HostMatchMapItems[]=maltimportoren.datadelenhc.com;www.maltimportoren.se
 HostMatchMapItems[]=webbcenter.datadelenhc.se;webbcenter.datadelenhc.se
 HostMatchMapItems[]=maltimportoren.se;www.maltimportoren.se
 HostMatchMapItems[]=www.maltimportoren.se;www.maltimportoren.se
+HostMatchMapItems[]=datadelen.datadelenhc.com;www.datadelen.com
+HostMatchMapItems[]=datadelen.com;www.datadelen.com
+HostMatchMapItems[]=www.datadelen.com;www.datadelen.com
 HostMatchMapItems[]=admin.maltimportoren.se;ezdemo_site_clean_admin
 HostMatchMapItems[]=newscenter.drumedar.net;newscenter.drumedar.net
 HostMatchMapItems[]=admin.newscenter.drumedar.net;ezdemo_site_clean_admin
