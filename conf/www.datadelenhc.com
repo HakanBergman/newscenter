@@ -1,4 +1,4 @@
-﻿server {
+server {
 	
         listen 217.78.29.220:80;
         server_name datadelen.datadelenhc.com;
