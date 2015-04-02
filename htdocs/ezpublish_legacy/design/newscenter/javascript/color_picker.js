@@ -5,6 +5,9 @@
     $('.colors .background-color').on('click', function (e) {
         $('.background-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.background_color').length) { $('.background_color').val($(this).attr('data-color')); }
+    });
+    $('.colors .background-logotype-color').on('click', function (e) {
+        $('.background-logotype-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.background_color_logotype').length) { $('.background_color_logotype').val($(this).attr('data-color')); }
     });
     /* Check if we are in edit mode and can pick a color */
@@ -12,6 +15,12 @@
         var current_background_color = colortohex($('.background-saved-color input').val());
         $('.background-picked-color .color').html(current_background_color);
         $('.background-picked-color').removeClass('hide');
+    }
+    /* Check if we are in edit mode and can pick a color */
+    if ($('.background-logotype-picked-color').length) {
+        var current_background_color = colortohex($('.background-saved-color input').val());
+        $('.background-logotype-picked-color .color').html(current_background_color);
+        $('.background-logotype-picked-color').removeClass('hide');
     }
 
     /* Text Color */
