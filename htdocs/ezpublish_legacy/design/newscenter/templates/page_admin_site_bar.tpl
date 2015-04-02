@@ -90,7 +90,7 @@
               <span class="glyphicon glyphicon-pencil text-primary"></span>
               <a href="/{concat('content/edit/', $current_node.contentobject_id)}" class="text-decoration-none container-padding-left" title="Redigera {$current_node.name|wash()}">Redigera {$current_node.name|wash()}</a>
               <form method="post" action="/content/action" class="float-right container-padding-left">
-                <input type="hidden" name="TopLevelNode" value="{{$current_node.node_id}" />
+                <input type="hidden" name="TopLevelNode" value="{$current_node.node_id}" />
                 <input type="hidden" name="ContentNodeID" value="{$current_node.node_id}" />
                 <input type="hidden" name="ContentObjectID" value="{$current_node.contentobject_id}" />
                 <button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
