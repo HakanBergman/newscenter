@@ -128,7 +128,7 @@
 
                     {* Active color *}
                     <div class="col-lg-12 clear container-padding-top">
-                      <label class="clear">Välj aktiv länkfärg (när musen markerar länken så ändrar den färg).</label>
+                      <label class="clear">Välj aktiv länkfärg. Denna färg används för att besökaren ska se vilken undersida de har besökt.</label>
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <span class="active-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-black-active" data-hex="#000"></span>
                         <span class="active-color thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-longdrink-blue-active" data-hex="#4BC6D1"></span>
@@ -143,7 +143,26 @@
                         <strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span>
                       </div>
                       <div class="active-color-saved-color hide">{attribute_edit_gui attribute=$object.data_map.link_active_color}</div>
-                    </div>                    
+                    </div>
+
+                    {* Hover color *}
+                    <div class="col-lg-12 clear container-padding-top">
+                      <label class="clear">Välj hover-färg. Denna färg gör att menyn ändrar färg när musen förs över länken.</label>
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <span class="hover-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-black-hover" data-hex="#000"></span>
+                        <span class="hover-color thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-longdrink-blue-hover" data-hex="#4BC6D1"></span>
+                        <span class="hover-color thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-beer-brown-hover" data-hex="#DE910b"></span>
+                        <span class="hover-color thumbnail bg-dynamite-green min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-dynamite-green-hover" data-hex="#D4D977"></span>
+                        <span class="hover-color thumbnail bg-beige min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-beige-hover" data-hex="#DECC9E"></span>
+                        <span class="hover-color thumbnail bg-pink min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-pink-hover" data-hex="#F9DADD"></span>
+                        <span class="hover-color thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-grey-hover" data-hex="#EEE"></span>
+                        <span class="hover-color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-white-hover" data-hex="#FFF"></span>
+                      </div>
+                      <div class="hover-color-picked-color">
+                        <strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span>
+                      </div>
+                      <div class="hover-color-saved-color hide">{attribute_edit_gui attribute=$object.data_map.link_hover_color}</div>
+                    </div>
 
                   </div>
                 </div>
