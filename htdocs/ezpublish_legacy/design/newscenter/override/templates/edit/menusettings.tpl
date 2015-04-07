@@ -113,25 +113,22 @@
                     </div>
 
                     {* Text color *}
-
-                    <div class="col-lg-12 no-margin no-padding container-padding-top clear">
-                      <label>Välj textfärg</label>
-                    </div>
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 clear">
+                      <label class="clear">Välj länkfärg</label>
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <span class="text-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-black" data-hex="#000"></span>
-                        <span class="text-color thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-longdrink-blue" data-hex="#4BC6D1"></span>
-                        <span class="text-color thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-beer-brown" data-hex="#DE910b"></span>
-                        <span class="text-color thumbnail bg-dynamite-green min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-dynamite-green" data-hex="#D4D977"></span>
-                        <span class="text-color thumbnail bg-beige min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-beige" data-hex="#DECC9E"></span>
-                        <span class="text-color thumbnail bg-pink min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-pink" data-hex="#F9DADD"></span>
-                        <span class="text-color thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-grey" data-hex="#EEE"></span>
-                        <span class="text-color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-white" data-hex="#FFF"></span>
+                        <span class="link-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-black" data-hex="#000"></span>
+                        <span class="link-color thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-longdrink-blue" data-hex="#4BC6D1"></span>
+                        <span class="link-color thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-beer-brown" data-hex="#DE910b"></span>
+                        <span class="link-color thumbnail bg-dynamite-green min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-dynamite-green" data-hex="#D4D977"></span>
+                        <span class="link-color thumbnail bg-beige min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-beige" data-hex="#DECC9E"></span>
+                        <span class="link-color thumbnail bg-pink min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-pink" data-hex="#F9DADD"></span>
+                        <span class="link-color thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-grey" data-hex="#EEE"></span>
+                        <span class="link-color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-white" data-hex="#FFF"></span>
                       </div>
-                      <div class="text-picked-color">
+                      <div class="link-picked-color">
                         <strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span>
                       </div>
-                      <div class="text-saved-color hide">{attribute_edit_gui attribute=$object.data_map.text_color}</div>
+                      <div class="link-saved-color hide">{attribute_edit_gui attribute=$object.data_map.link_color}</div>
                     </div>
 
                   </div>

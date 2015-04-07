@@ -1,6 +1,6 @@
 ﻿$(document).ready(function(e) {
 
-    /* Background Color */
+    /* Click a Color */
     /* Make something happen when we click a color */
     $('.colors .background-color').on('click', function (e) {
         $('.background-picked-color .hex').html($(this).attr('data-hex'));
@@ -9,6 +9,10 @@
     $('.colors .background-logotype-color').on('click', function (e) {
         $('.background-logotype-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.background_color_logotype').length) { $('.background_color_logotype').val($(this).attr('data-color')); }
+    });
+    $('.colors .link-color').on('click', function (e) {
+        $('.link-color .hex').html($(this).attr('data-hex'));
+        if ($('.link-color').length) { $('.link_color').val($(this).attr('data-color')); }
     });
     /* Check if we are in edit mode and can pick a color */
     if ($('.background-picked-color').length) {
