@@ -52,7 +52,7 @@
 							{* Verify if we are creating a container before block is included *}
 							{if $#block_width|eq('col-lg-12')}
 								{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
-									<div class="col-lg-12 clear container-padding-bottom container-padding-top">
+									<div class="col-lg-12 admin-panel-zone clear container-padding-bottom container-padding-top">
 										<div class="pull-left">
 											Widget - {$block.name|wash()}
 										</div>
@@ -71,7 +71,7 @@
 							{else}
 								<div class="{$#block_width} no-margin no-padding">
 									{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
-										<div class="col-lg-12 clear container-padding-bottom container-padding-top">
+										<div class="col-lg-12 admin-panel-zone clear container-padding-bottom container-padding-top">
 											<div class="pull-left">
 												Widget - {$block.name|wash()}
 											</div>
