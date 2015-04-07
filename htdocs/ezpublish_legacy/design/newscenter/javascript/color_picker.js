@@ -7,6 +7,7 @@
         if ($('.background_color').length) { $('.background_color').val($(this).attr('data-color')); }
     });
     $('.colors .background-logotype-color').on('click', function (e) {
+        alert('clicked');
         $('.background-logotype-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.background_color_logotype').length) { $('.background_color_logotype').val($(this).attr('data-color')); }
     });
