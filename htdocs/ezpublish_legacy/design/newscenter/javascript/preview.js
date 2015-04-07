@@ -4,6 +4,7 @@ $(document).ready(function (e) {
             alert('preview är nu av');
         } else {
             alert('preview är nu på')
+            alert($.cookie('preview'));
         }
         $('.admin-panel-zone').remove();
     });    
