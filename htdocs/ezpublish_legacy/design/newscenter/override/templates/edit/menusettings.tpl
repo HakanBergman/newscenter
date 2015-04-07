@@ -23,7 +23,7 @@
                   <div>{attribute_edit_gui attribute=$object.data_map.menu_plugin}</div>
 
                   {* Yammr Background color *}
-                  <div class="col-lg-12 clear yammr">
+                  <div class="col-lg-12 clear yammr container-padding-top container-padding-bottom">
                     <label class="clear">Välj bakgrundsfärg (Den färg som visas i drop-down menyn).</label>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       <span class="background-yammr-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-black" data-hex="#000"></span>
