@@ -14,5 +14,6 @@ $(document).ready(function (e) {
                 $('.admin-panel').addClass('hide');
             }
         }        
-    });    
+    });
+    if ($.cookie('preview') != 1) { alert('admin-läget är avslaget'); }
 });
