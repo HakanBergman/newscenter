@@ -4,16 +4,21 @@ $(document).ready(function (e) {
         if (!$.cookie('preview')) {
             /* Create Preview Cookie */
             $.cookie('preview', '1', { expires: 365, path: '/' }); 
-            $('.admin-panel').addClass('hide');
+            $('.admin-panel').removeClass('hide');
         } else {
             if ($.cookie('preview') == 1) {
                 $.cookie('preview', '0', { expires: 365, path: '/' });
-                $('.admin-panel').removeClass('hide');
+                $('.admin-panel').addClass('hide');
             } else {
                 $.cookie('preview', '1', { expires: 365, path: '/' });
-                $('.admin-panel').addClass('hide');
+                $('.admin-panel').removeClass('hide');
             }
         }        
     });
-    if ($.cookie('preview') != 1) { alert('admin-läget är avslaget'); }
+    if ($.cookie('preview') != 1) {
+        $('.toggle-preview').prop('checked', false);
+    } else {
+        $('.toggle-preview').prop('checked', true);
+        $('.admin-panel').removeClass('hide');
+    }
 });
