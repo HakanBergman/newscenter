@@ -41,7 +41,7 @@
 							    </div>
                 </div>
 
-                <hr class="border-solid-black container-margin-top" />
+                <hr class="border-solid-black" />
 
                 {* Site Colors *}
                 
