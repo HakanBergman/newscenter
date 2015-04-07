@@ -37,17 +37,20 @@
 
 function colortohex(value) {
     switch(value) {
+        case "bg-beer-brown":
+            return "#DE910b";
+        break;
+        case "bg-beige-yellow":
+            return "#FFFFD1";
+        break;
         case "bg-black":
             return "#000";
         break;
-        case "bg-beer-brown":
+        case "bg-dynamite-orange":
             return "#DE910b";
         break;
         case "bg-granate":
             return "#570900";
-        break;
-        case "bg-dynamite-orange":
-            return "#DE910b";
         break;
         case "bg-grey":
             return "#EEE";
