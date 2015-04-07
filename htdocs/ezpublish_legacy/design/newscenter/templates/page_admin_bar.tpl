@@ -82,7 +82,7 @@
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
 					<div class="min-height-108">
-						<div class="col-lg-6 no-margin no-padding">
+						<div class="col-lg-5 no-margin no-padding">
 							<span class="glyphicon glyphicon-user text-color-black"></span>
 							{$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()}						
 						</div>
