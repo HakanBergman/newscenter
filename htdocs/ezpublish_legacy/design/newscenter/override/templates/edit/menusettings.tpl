@@ -128,16 +128,16 @@
 
                     {* Active color *}
                     <div class="col-lg-12 clear container-padding-top">
-                      <label class="clear">Välj länkfärg</label>
+                      <label class="clear">Välj aktiv länkfärg (när musen markerar länken så ändrar den färg).</label>
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <span class="active-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-black" data-hex="#000"></span>
-                        <span class="active-color thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-longdrink-blue" data-hex="#4BC6D1"></span>
-                        <span class="active-color thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-beer-brown" data-hex="#DE910b"></span>
-                        <span class="active-color thumbnail bg-dynamite-green min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-dynamite-green" data-hex="#D4D977"></span>
-                        <span class="active-color thumbnail bg-beige min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-beige" data-hex="#DECC9E"></span>
-                        <span class="active-color thumbnail bg-pink min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-pink" data-hex="#F9DADD"></span>
-                        <span class="active-color thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-grey" data-hex="#EEE"></span>
-                        <span class="active-color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-white" data-hex="#FFF"></span>
+                        <span class="active-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-black-active" data-hex="#000"></span>
+                        <span class="active-color thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-longdrink-blue-active" data-hex="#4BC6D1"></span>
+                        <span class="active-color thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-beer-brown-active" data-hex="#DE910b"></span>
+                        <span class="active-color thumbnail bg-dynamite-green min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-dynamite-green-active" data-hex="#D4D977"></span>
+                        <span class="active-color thumbnail bg-beige min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-beige-active" data-hex="#DECC9E"></span>
+                        <span class="active-color thumbnail bg-pink min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-pink-active" data-hex="#F9DADD"></span>
+                        <span class="active-color thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-grey-active" data-hex="#EEE"></span>
+                        <span class="active-color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-white-active" data-hex="#FFF"></span>
                       </div>
                       <div class="active-color-picked-color">
                         <strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span>
