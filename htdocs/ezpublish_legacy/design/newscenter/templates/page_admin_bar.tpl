@@ -83,8 +83,8 @@
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
 					<div class="min-height-108">
 						<span class="glyphicon glyphicon-user text-color-black"></span>
-						{$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()}
-						<a href="#preview" class="toggle-preview"><input type="checkbox" class="form-control" /> Förhandsgranska</a>
+						{$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()}						
+						<div class="input-group"><span class="input-group-addon"><input type="checkbox" aria-label="..."></span> Förhandsgranska</div>
 						<a href="#menu" class="toggle-admin-bar text-color-black"><span class="glyphicon glyphicon-menu-hamburger float-right container-padding-right-3 container-padding-top-02"></span></a>
 					</div>				
 					<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-11-em">
