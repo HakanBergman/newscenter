@@ -17,7 +17,7 @@ $(document).ready(function (e) {
     });
     if ($.cookie('preview') != 1) {
         $('.toggle-preview').prop('checked', false);
-        $('.admin-panel').addClass('hide');        
+        $('.admin-panel').removeClass('hide');        
     } else {
         $('.toggle-preview').prop('checked', true);
     }
