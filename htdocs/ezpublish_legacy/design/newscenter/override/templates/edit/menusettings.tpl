@@ -65,8 +65,8 @@
                   <div class="form-group">
 
                     {* Background color - Logotype *}
-                    <label>Välj bakgrundsfärg (Logotyp och sökruta).</label>
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 clear">
+                      <label class="clear">Välj bakgrundsfärg (Logotyp och sökruta).</label>
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <span class="background-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-black" data-hex="#000"></span>
                         <span class="background-color thumbnail bg-granate min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-granate" data-hex="#570900"></span>
@@ -88,9 +88,9 @@
                       <div class="background-saved-color hide">{attribute_edit_gui attribute=$object.data_map.background_color_logotype}</div>
                     </div>
 
-                    {* Background color - Menu *}
-                    <label class="clear">Välj bakgrundsfärg (Menyn).</label>
-                    <div class="col-lg-12">
+                    {* Background color - Menu *}                    
+                    <div class="col-lg-12 clear">
+                      <label class="clear">Välj bakgrundsfärg (Menyn).</label>
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <span class="background-logoype-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-black" data-hex="#000"></span>
                         <span class="background-logoype-color thumbnail bg-granate min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-granate" data-hex="#570900"></span>
