@@ -1,4 +1,4 @@
-<div class="container-fluid {$#company.data_map.background_color_logo.data_text} {$menusettings.0.data_map.background_color_logotype.data_text}">
+<div class="container-fluid {$menusettings.0.data_map.background_color_logotype.data_text}">
   <div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
       {include uri="design:page_header_logo.tpl" menusettings=$menusettings}
@@ -10,9 +10,9 @@
 {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
   {if $menu_items}
     <nav role="navigation" class="{$#company.data_map.link_color_menu.data_text}">
-      <div class="container-fluid {$#company.data_map.background_color_menu.data_text} {$menusettings.0.data_map.background_color.data_text}">
+      <div class="container-fluid {$menusettings.0.data_map.background_color.data_text} navigation-box">
         <div class="container">
-          <div class="navbar yamm no-margin no-padding navigation-box">
+          <div class="navbar yamm no-margin no-padding">
             <ul class="nav navbar-nav no-padding">              
               {foreach $menu_items as $item}
               {def $subitems = fetch('content', 'list', hash('parent_node_id', $item.node_id, 'class_filter_type', 'include', 'class_filter_array', array('news_category', 'product_category', 'product_country', 'website'), 'sort_by', array('name', true()) ))}
