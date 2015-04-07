@@ -87,7 +87,7 @@
 							{$user.contentobject.data_map.first_name.data_text|wash()} {$user.contentobject.data_map.last_name.data_text|wash()}						
 						</div>
 						<div class="col-lg-4 no-margin no-padding">
-							<div class="input-group"><span class="input-group-addon"><input type="checkbox" aria-label="..."></span> Förhandsgranska</div>
+							<div class="input-group"><input type="checkbox" aria-label="Preview"> Förhandsgranska</div>
 						</div>
 						<div class="col-lg-4 no-margin no-padding">
 							<a href="#menu" class="toggle-admin-bar text-color-black"><span class="glyphicon glyphicon-menu-hamburger float-right container-padding-right-3 container-padding-top-02"></span></a>
