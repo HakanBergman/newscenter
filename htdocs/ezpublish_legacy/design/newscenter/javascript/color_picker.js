@@ -22,7 +22,7 @@
     }
 
     if ($('.background-logotype-picked-color').length) {
-        var current_background_color = colortohex($('.background-saved-color input').val());
+        var current_background_color = colortohex($('.background-logotype-saved-color input').val());
         $('.background-logotype-picked-color .color').html(current_background_color);
         $('.background-logotype-picked-color').removeClass('hide');
     }
