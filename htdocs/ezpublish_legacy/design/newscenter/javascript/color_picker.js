@@ -10,7 +10,7 @@
         if ($('.background_color_logotype').length) { $('.background_color_logotype').val($(this).attr('data-color')); }
     });
     $('.colors .link-color').on('click', function (e) {
-        $('.link-color-picked .hex').html($(this).attr('data-hex'));
+        $('.link-color-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.link_color').length) { $('.link_color').val($(this).attr('data-color')); }
     });
 
