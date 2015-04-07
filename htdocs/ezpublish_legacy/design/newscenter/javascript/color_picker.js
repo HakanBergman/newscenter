@@ -13,6 +13,10 @@
         $('.link-color-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.link_color').length) { $('.link_color').val($(this).attr('data-color')); }
     });
+    $('.colors .active-color').on('click', function (e) {
+        $('.active-color-picked-color .hex').html($(this).attr('data-hex'));
+        if ($('.link_active_color').length) { $('.link_active_color').val($(this).attr('data-color')); }
+    });
 
     /* Check if we are in edit mode and can pick a color */
     if ($('.background-picked-color').length) {
@@ -31,6 +35,12 @@
         var current_background_color = colortohex($('.link-color-saved-color input').val());
         $('.link-color-picked-color .color').html(current_background_color);
         $('.link-color-picked-color').removeClass('hide');
+    }
+
+    if ($('.active-color-picked-color').length) {
+        var current_background_color = colortohex($('.active-color-saved-color input').val());
+        $('.active-color-picked-color .color').html(current_background_color);
+        $('.active-color-picked-color').removeClass('hide');
     }
 
 });
