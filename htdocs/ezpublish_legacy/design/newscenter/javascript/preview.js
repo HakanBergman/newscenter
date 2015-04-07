@@ -1,3 +1,5 @@
 ﻿$(document).ready(function (e) {
-    $('.admin-panel-zone').remove();
+    $('.toggle-preview').on('click', function () {
+        $('.admin-panel-zone').remove();
+    });    
 });
