@@ -32,7 +32,7 @@
                   <div class="pull-right container-padding-top-2"><a class="toggle" data-href="menu-color" href="#menu-color">Visa detaljer</a></div>
                 </div>
                 
-                <p class="clear">Ladda upp logotyp, ställ in bakgrundsfärg, länkfärg, länkstorlek och andra saker som ska finnas i menyn.</p>
+                <p class="clear">Ladda upp logotyp.</p>
 
                 <div class="menu-color hide">
                   <div class="form-group container-padding-left">
@@ -59,7 +59,7 @@
                   </div>
                 </div>
 
-                <p class="clear">Ange bakgrundsfärg, länkfärg och textfärg.</p>
+                <p class="clear">Ange bakgrundsfärger och länkfärg.</p>
 
                 <div class="colors hide">
                   <div class="form-group">
@@ -112,8 +112,8 @@
                       <div class="background-saved-color hide">{attribute_edit_gui attribute=$object.data_map.background_color}</div>
                     </div>
 
-                    {* Text color *}
-                    <div class="col-lg-12 clear">
+                    {* Link color *}
+                    <div class="col-lg-12 clear container-padding-top">
                       <label class="clear">Välj länkfärg</label>
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <span class="link-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-black" data-hex="#000"></span>
