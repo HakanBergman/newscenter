@@ -22,7 +22,7 @@
                       <ul class="dropdown-menu no-background no-margin no-padding">
                         <div class="col-lg-12 {$menusettings.0.data_map.background_color_yammr.data_text} no-margin">
                           <div class="nav-padding-left-4 nav-padding-right-3 nav-padding-top no-margin">
-                            <h2 class="no-margin no-padding {$#company.data_map.link_color_menu.data_text}"><a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></h2>
+                            <h2 class="no-margin no-padding {$menusettings.0.data_map.background_color_yammr.data_text}"><a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></h2>
                           </div>
                         </div>
                         {foreach $subitems as $subitem}

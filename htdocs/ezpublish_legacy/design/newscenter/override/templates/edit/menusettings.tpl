@@ -21,6 +21,31 @@
                 <div class="form-group">
                   <label>Välj den plugin som ska användas</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.menu_plugin}</div>
+
+                  {* Yammr Background color *}
+                  <div class="col-lg-12 clear yammr">
+                    <label class="clear">Välj bakgrundsfärg (Den färg som visas i drop-down menyn).</label>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <span class="background-yammr-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-black" data-hex="#000"></span>
+                      <span class="background-yammr-color thumbnail bg-granate min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-granate" data-hex="#570900"></span>
+                      <span class="background-yammr-color thumbnail bg-tidningen-se min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-tidningen-se" data-hex="#004389"></span>
+                      <span class="background-yammr-color thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-longdrink-blue" data-hex="#4BC6D1"></span>
+                      <span class="background-yammr-color thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-beer-brown" data-hex="#DE910b"></span>
+                      <span class="background-yammr-color thumbnail bg-dynamite-orange min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-dynamite-orange" data-hex="#F5A818"></span>
+                      <span class="background-yammr-color thumbnail bg-dynamite-green min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-dynamite-green" data-hex="#D4D977"></span>
+                      <span class="background-yammr-color thumbnail bg-beige min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-beige" data-hex="#DECC9E"></span>
+                      <span class="background-yammr-color thumbnail bg-beige-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-beige-brown" data-hex="#DEDEB4"></span>
+                      <span class="background-yammr-color thumbnail bg-pink min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-pink" data-hex="#F9DADD"></span>
+                      <span class="background-yammr-color thumbnail bg-beige-yellow min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-beige-yellow" data-hex="#FFFFD1"></span>
+                      <span class="background-yammr-color thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-grey" data-hex="#EEE"></span>
+                      <span class="background-yammr-color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-white" data-hex="#FFF"></span>
+                    </div>
+                    <div class="background-yammr-picked-color">
+                      <strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span>
+                    </div>
+                    <div class="background-yammr-saved-color hide">{attribute_edit_gui attribute=$object.data_map.background_color_yammr}</div>
+                  </div>
+
                 </div>
 
                 <hr class="border-solid-black" />

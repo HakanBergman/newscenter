@@ -1,6 +1,10 @@
 ﻿$(document).ready(function(e) {
 
     /* Make something happen when we click a color */
+    $('.colors .background-yammr-color').on('click', function (e) {
+        $('.background-yammr-picked-color .hex').html($(this).attr('data-hex'));
+        if ($('.background_color_yammr').length) { $('.background_color_yammr').val($(this).attr('data-color')); }
+    });
     $('.colors .background-color').on('click', function (e) {
         $('.background-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.background_color').length) { $('.background_color').val($(this).attr('data-color')); }
@@ -23,6 +27,12 @@
     });
 
     /* Check if we are in edit mode and can pick a color */
+    if ($('.background-yammr-picked-color').length) {
+        var current_background_color = colortohex($('.background-yammr-saved-color input').val());
+        $('.background-yammr-picked-color .color').html(current_background_color);
+        $('.background-yammr-picked-color').removeClass('hide');
+    }
+
     if ($('.background-picked-color').length) {
         var current_background_color = colortohex($('.background-saved-color input').val());
         $('.background-picked-color .color').html(current_background_color);
