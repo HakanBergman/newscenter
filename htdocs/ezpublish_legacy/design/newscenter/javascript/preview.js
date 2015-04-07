@@ -8,10 +8,10 @@ $(document).ready(function (e) {
         } else {
             if ($.cookie('preview') == 1) {
                 $.cookie('preview', '0', { expires: 365, path: '/' });
-                $('.admin-panel').addClass('hide');
+                $('.admin-panel').removeClass('hide');
             } else {
                 $.cookie('preview', '1', { expires: 365, path: '/' });
-                $('.admin-panel').removeClass('hide');
+                $('.admin-panel').addClass('hide');
             }
         }        
     });
