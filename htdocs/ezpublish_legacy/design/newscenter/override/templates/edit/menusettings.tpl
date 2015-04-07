@@ -82,7 +82,7 @@
                         <span class="background-logoype-color thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-grey" data-hex="#EEE"></span>
                         <span class="background-logoype-color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="bg-white" data-hex="#FFF"></span>
                       </div>
-                      <div class="background-logoype-picked-color hide">
+                      <div class="background-logotype-picked-color">
                         <strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span>
                       </div>
                       <div class="background-logtype-saved-color hide">{attribute_edit_gui attribute=$object.data_map.background_color_logotype}</div>
