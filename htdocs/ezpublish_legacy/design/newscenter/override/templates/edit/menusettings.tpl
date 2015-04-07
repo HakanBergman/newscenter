@@ -41,10 +41,10 @@
 							    </div>
                 </div>
 
-                <hr class="border-solid-black" />
+                <hr class="border-solid-black container-margin-top" />
 
                 {* Site Colors *}
-
+                
                 <div class="col-lg-12 no-margin no-padding">
                   <div class="pull-left">
                     <h3 class="clear">Färginställningar</h3>
