@@ -39,11 +39,6 @@
                     <label>Logotyp</label>
                     <div>{attribute_edit_gui attribute=$object.data_map.logotype}</div>
 							    </div>
-
-                  <div class="form-group">
-                    <label>Sökord (Ange max 4-5 stycken, separerade med ",").</label>
-                    <div>{attribute_edit_gui attribute=$object.data_map.seo_tags}</div>
-                  </div>
                 </div>
 
                 <hr class="border-solid-black" />
