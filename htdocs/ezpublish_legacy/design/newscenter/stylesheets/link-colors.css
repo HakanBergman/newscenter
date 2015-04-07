@@ -70,6 +70,13 @@
 .link-color-beige-active a.active { color: #ffffd1; font-weight: 700; text-decoration: none; }
 .link-color-beige-visited a:visited { color: #ffffd1; font-weight: 700; text-decoration: none; }
 
+/* Dark Orange */
+.text-color-dark-orange { color: #faad41 !important; font-weight: 700; text-decoration: none; }
+.link-color-dark-orange a { color: #faad41; font-weight: 700; text-decoration: none; } 
+.link-color-dark-orange-hover a:hover { color: #faad41; font-weight: 700; text-decoration: none; }  
+.link-color-dark-orange-active a.active { color: #faad41; font-weight: 700; text-decoration: none; }
+.link-color-dark-orange-visited a:visited { color: #faad41; font-weight: 700; text-decoration: none; }
+
 
     
     
