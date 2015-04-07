@@ -23,6 +23,31 @@
                   <div>{attribute_edit_gui attribute=$object.data_map.site_title}</div>
                 </div>
 
+                <div class="form-group">
+                  <label>Telefonnummer</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.phone}</div>
+                </div>
+
+                <div class="form-group">
+                  <label>E-postadress</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.email}</div>
+                </div>
+
+                <div class="form-group">
+                  <label>Adress</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.address}</div>
+                </div>
+
+                <div class="form-group">
+                  <label>Postnummer</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.zipcode}</div>
+                </div>
+
+                <div class="form-group">
+                  <label>Ort</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.city}</div>
+                </div>
+
                 {* Site Icons *}
 
                 <div class="col-lg-12 no-margin no-padding">
