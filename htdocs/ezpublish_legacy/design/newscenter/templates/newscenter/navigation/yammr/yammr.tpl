@@ -7,12 +7,11 @@
   </div>
 </div>
 
-{def $sitesettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
-{$sitesettings.0.data_map|attribute(show, 1)}
+{def $menusettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('menu_settings'), 'limit', 1))}
   {def $menu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('contact_list', 'news_list', 'website', 'link', 'product_catalogue'), 'sort_by', array('priority', true()) ))}
     {if $menu_items}
       <nav role="navigation" class="{$#company.data_map.link_color_menu.data_text}">
-        <div class="container-fluid {$#company.data_map.background_color_menu.data_text} {$sitesettings.0.data_map.background_color_logotype.data_text}">
+        <div class="container-fluid {$#company.data_map.background_color_menu.data_text} {$menusettings.0.data_map.background_color_logotype.data_text}">
           <div class="container">
             <div class="navbar yamm no-margin no-padding navigation-box">
               <ul class="nav navbar-nav no-padding">              
@@ -88,4 +87,4 @@
       </nav>
     {/if}
   {undef $menu_items}
-{undef $sitesettings}
+{undef $menusettings}
