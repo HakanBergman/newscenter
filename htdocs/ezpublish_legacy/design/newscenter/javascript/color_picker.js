@@ -38,7 +38,7 @@
 function colortohex(value) {
     switch (value) {
 
-        /* Background-colors */
+        /* Background Color */
         case "bg-beer-brown":
             return "#DE910b";
         break;
@@ -67,7 +67,12 @@ function colortohex(value) {
             return "#FFF";
         break;
 
-        /* Link Colors */
+        /* Link Color */
+        case "link-color-white":
+            return "#FFF";
+        break;
+
+        /* Active Color */
         case "link-color-white":
             return "#FFF";
         break;
