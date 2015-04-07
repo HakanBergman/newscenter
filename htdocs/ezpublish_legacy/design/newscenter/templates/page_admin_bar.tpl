@@ -89,7 +89,7 @@
 					<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-11-em">
 						<hr class="no-margin no-padding container-padding-top" />
 						<div class="edit container-padding-left-2 container-padding-top-05">
-							<span class="glyphicon glyphicon-pencil text-primary"></span> <a href="http://webbcenter.datadelenhc.se/wiki" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Redigera profil</a>
+							<span class="glyphicon glyphicon-pencil text-primary"></span> <a href="/user/preferences" class="text-decoration-none container-padding-left" title="Datadelen Hosting Center" target="_blank">Redigera profil</a>
 						</div>
 						<div class="edit container-padding-left-2 container-padding-top-05">
 							<span class="glyphicon glyphicon-off text-primary"></span> <a href="/user/logout" class="text-decoration-none container-padding-left" title="Logga ut">Logga ut</a>
