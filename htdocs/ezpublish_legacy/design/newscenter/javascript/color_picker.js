@@ -5,22 +5,27 @@
         $('.background-yammr-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.background_color_yammr').length) { $('.background_color_yammr').val($(this).attr('data-color')); }
     });
+
     $('.colors .background-color').on('click', function (e) {
         $('.background-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.background_color').length) { $('.background_color').val($(this).attr('data-color')); }
     });
+
     $('.colors .background-logotype-color').on('click', function (e) {
         $('.background-logotype-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.background_color_logotype').length) { $('.background_color_logotype').val($(this).attr('data-color')); }
     });
+
     $('.colors .link-color').on('click', function (e) {
         $('.link-color-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.link_color').length) { $('.link_color').val($(this).attr('data-color')); }
     });
+
     $('.colors .active-color').on('click', function (e) {
         $('.active-color-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.link_active_color').length) { $('.link_active_color').val($(this).attr('data-color')); }
     });
+
     $('.colors .hover-color').on('click', function (e) {
         $('.hover-color-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.link_hover_color').length) { $('.link_hover_color').val($(this).attr('data-color')); }
