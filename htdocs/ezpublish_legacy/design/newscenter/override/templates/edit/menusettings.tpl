@@ -111,14 +111,14 @@
                     <div class="col-lg-12 clear container-padding-top">
                       <label class="clear">Välj länkfärg</label>
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <span class="link-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-black" data-hex="#000"></span>
-                        <span class="link-color thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-longdrink-blue" data-hex="#4BC6D1"></span>
-                        <span class="link-color thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-beer-brown" data-hex="#DE910b"></span>
-                        <span class="link-color thumbnail bg-dynamite-green min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-dynamite-green" data-hex="#D4D977"></span>
-                        <span class="link-color thumbnail bg-beige min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-beige" data-hex="#DECC9E"></span>
-                        <span class="link-color thumbnail bg-pink min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-pink" data-hex="#F9DADD"></span>
-                        <span class="link-color thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-grey" data-hex="#EEE"></span>
-                        <span class="link-color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-white" data-hex="#FFF"></span>
+                        <span class="link-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-black" data-hex="#000"></span>
+                        <span class="link-color thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-longdrink-blue" data-hex="#4BC6D1"></span>
+                        <span class="link-color thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-beer-brown" data-hex="#DE910b"></span>
+                        <span class="link-color thumbnail bg-dynamite-green min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-dynamite-green" data-hex="#D4D977"></span>
+                        <span class="link-color thumbnail bg-beige min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-beige" data-hex="#DECC9E"></span>
+                        <span class="link-color thumbnail bg-pink min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-pink" data-hex="#F9DADD"></span>
+                        <span class="link-color thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-grey" data-hex="#EEE"></span>
+                        <span class="link-color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-white" data-hex="#FFF"></span>
                       </div>
                       <div class="link-color-picked-color">
                         <strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span>
