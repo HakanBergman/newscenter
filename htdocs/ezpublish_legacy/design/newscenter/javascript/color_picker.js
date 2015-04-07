@@ -36,7 +36,9 @@
 });
 
 function colortohex(value) {
-    switch(value) {
+    switch (value) {
+
+        /* Background-colors */
         case "bg-beer-brown":
             return "#DE910b";
         break;
@@ -64,8 +66,11 @@ function colortohex(value) {
         case "bg-white":
             return "#FFF";
         break;
-        case "text-color-black":
-            return "#000";
+
+        /* Link Colors */
+        case "link-color-white":
+            return "#FFF";
         break;
+
     }
 }
