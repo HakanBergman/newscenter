@@ -125,10 +125,10 @@
                         <span class="link-color thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-grey" data-hex="#EEE"></span>
                         <span class="link-color thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-white" data-hex="#FFF"></span>
                       </div>
-                      <div class="link-picked-color">
+                      <div class="link-color-picked-color">
                         <strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span>
                       </div>
-                      <div class="link-saved-color hide">{attribute_edit_gui attribute=$object.data_map.link_color}</div>
+                      <div class="link-color-saved-color hide">{attribute_edit_gui attribute=$object.data_map.link_color}</div>
                     </div>
 
                   </div>
