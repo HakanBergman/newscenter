@@ -19,7 +19,7 @@
               <li class="{if $subitems|count()}dropdown yamm-fw {/if}no-padding no-margin float-left {$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text}">                  
                     <a href="{$item.url|ezurl('no', 'full')}" {if $subitems|count()}data-toggle="dropdown" {/if}class="{if $subitems|count()}dropdown-toggle {/if}font-size-nav-link font-weight-bold nav-padding-right-3 no-background{if $current_node.path_array|contains($item.node_id)} active{/if}" title="{$item.name|wash()|explode(' ')|implode('-')}">{$item.name|wash()}{if $subitems|count()} <span class="caret"></span>{/if}</a>
                     {if $subitems|count()}
-                      <ul class="dropdown-menu no-background no-margin no-padding border-solid-white">
+                      <ul class="dropdown-menu no-background no-margin no-padding">
                         <div class="col-lg-12 {$#company.data_map.background_color_menu.data_text} no-margin">
                           <div class="nav-padding-left-4 nav-padding-right-3 nav-padding-top no-margin">
                             <h2 class="no-margin no-padding {$#company.data_map.link_color_menu.data_text}"><a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></h2>

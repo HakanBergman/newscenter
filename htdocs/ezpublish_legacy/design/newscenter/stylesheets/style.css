@@ -6,6 +6,9 @@ section .container { padding: 0; padding-left: 15px; padding-right: 15px; max-wi
 section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 p { margin: 0 0 2px; }
 
+/* Drop Down Menu Rules */
+.yamm .dropdown-menu { border: 0px solid rgba(0,0,0,.15); }
+
 /* Cursors */
 .cursor-pointer { cursor: pointer; }
 
