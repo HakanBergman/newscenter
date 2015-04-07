@@ -16,9 +16,9 @@ $(document).ready(function (e) {
         }        
     });
     if ($.cookie('preview') != 1) {
-        $('.toggle-preview').prop('checked', true);
+        $('.toggle-preview').prop('checked', false);
         $('.admin-panel').addClass('hide');        
     } else {
-        $('.toggle-preview').prop('checked', false);
+        $('.toggle-preview').prop('checked', true);
     }
 });
