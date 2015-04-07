@@ -19,7 +19,7 @@
     });
     $('.colors .hover-color').on('click', function (e) {
         $('.hover-color-picked-color .hex').html($(this).attr('data-hex'));
-        if ($('.hover_active_color').length) { $('.link_hover_color').val($(this).attr('data-color')); }
+        if ($('.link_hover_color').length) { $('.link_hover_color').val($(this).attr('data-color')); }
     });
 
     /* Check if we are in edit mode and can pick a color */
