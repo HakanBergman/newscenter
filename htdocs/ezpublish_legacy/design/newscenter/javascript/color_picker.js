@@ -27,6 +27,12 @@
         $('.background-logotype-picked-color').removeClass('hide');
     }
 
+    if ($('.link-color-picked-color').length) {
+        var current_background_color = colortohex($('.link-color-saved-color input').val());
+        $('.link-color-picked-color .color').html(current_background_color);
+        $('.link-color-picked-color').removeClass('hide');
+    }
+
 });
 
 function colortohex(value) {
