@@ -1,11 +1,18 @@
 $(document).ready(function (e) {
     $('.toggle-preview').on('click', function () {
+        /* Verify if the Preview cookie exists */
         if (!$.cookie('preview')) {
-            alert('undefined');
+            /* Create Preview Cookie */
+            $.cookie('preview', '1', { expires: 365, path: '/' }); 
+            $('.admin-panel').addClass('hide');
         } else {
-            alert('preview är nu på')
-            alert($.cookie('preview'));
-        }
-        $('.admin-panel-zone').remove();
+            if ($.cookie('preview') == 1) {
+                $.cookie('preview', '0', { expires: 365, path: '/' });
+                $('.admin-panel').removeClass('hide');
+            } else {
+                $.cookie('preview', '1', { expires: 365, path: '/' });
+                $('.admin-panel').addClass('hide');
+            }
+        }        
     });    
 });
