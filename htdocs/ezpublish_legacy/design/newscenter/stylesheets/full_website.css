@@ -1,3 +1,4 @@
 .website article p { margin-top: 10px; margin-bottom: 10px; }
 .website article ul { list-style-type: disc; margin: 0; }
-.website article ul li { margin-left: 1em; margin-top: 1em; }
+.website article ul li { margin-left: 1em; }
+.website article h1, .website article h2, .website article h3, .website article h4, .website article h5, .website article h6 { font-weight: 700; }
