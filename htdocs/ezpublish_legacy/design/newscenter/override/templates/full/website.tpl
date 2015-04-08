@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container website">
 	{include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
 	<div class="col-lg-12">
 		<article>
