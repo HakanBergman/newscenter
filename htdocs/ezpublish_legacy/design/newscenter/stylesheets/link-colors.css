@@ -22,10 +22,10 @@
 
 /* Long Drink Blue */
 .text-color-longdrink-blue { color: #4bc6d1 !important; font-weight: 700; text-decoration: none; } 
-.link-color-longdrink-blue a { color: #4bc6d1; font-weight: 700; text-decoration: none; } 
-.link-color-longdrink-blue a:hover { color: #4bc6d1; font-weight: 700; text-decoration: none; } 
-.link-color-longdrink-blue-active a:active { color: #4bc6d1; font-weight: 700; text-decoration: none; }
-.link-color-longdrink-blue-visited a:visited { color: #4bc6d1; font-weight: 700; text-decoration: none; }
+.link-color-longdrink-blue a { color: #4bc6d1 !important; font-weight: 700; text-decoration: none; } 
+.link-color-longdrink-blue a:hover { color: #4bc6d1 !important; font-weight: 700; text-decoration: none; } 
+.link-color-longdrink-blue-active a:active { color: #4bc6d1 !important; font-weight: 700; text-decoration: none; }
+.link-color-longdrink-blue-visited a:visited { color: #4bc6d1 !important; font-weight: 700; text-decoration: none; }
 
 /* Blue */
 .text-color-blue { color: #284673 !important; font-weight: 700; text-decoration: none; } 
