@@ -16,14 +16,14 @@
 /* Dynamite Green */
 .text-color-dynamite-green { color: #d4d977 !important; font-weight: 700; text-decoration: none; } 
 .link-color-dynamite-green a { color: #d4d977; font-weight: 700; text-decoration: none; } 
-.link-color-dynamite-green a:hover { color: #d4d977; font-weight: 700; text-decoration: none; } 
+.link-color-dynamite-green-hover a:hover { color: #d4d977; font-weight: 700; text-decoration: none; } 
 .link-color-dynamite-green-active a:active { color: #d4d977; font-weight: 700; text-decoration: none; }
 .link-color-dynamite-green-visited a:visited { color: #d4d977; font-weight: 700; text-decoration: none; }
 
 /* Long Drink Blue */
 .text-color-longdrink-blue { color: #4bc6d1 !important; font-weight: 700; text-decoration: none; } 
 .link-color-longdrink-blue a { color: #4bc6d1 !important; font-weight: 700; text-decoration: none; } 
-.link-color-longdrink-blue a.hover { color: #4bc6d1 !important; font-weight: 700; text-decoration: none; } 
+.link-color-longdrink-blue-hover a:hover { color: #4bc6d1 !important; font-weight: 700; text-decoration: none; } 
 .link-color-longdrink-blue-active a.active { color: #4bc6d1 !important; font-weight: 700; text-decoration: none; }
 .link-color-longdrink-blue-visited a.visited { color: #4bc6d1 !important; font-weight: 700; text-decoration: none; }
 
