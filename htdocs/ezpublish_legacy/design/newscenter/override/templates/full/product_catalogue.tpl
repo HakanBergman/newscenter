@@ -30,7 +30,7 @@
                     {if $grandchild.children|count()}                     
                       <div class="container-padding-left {$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}">      
                         {foreach $grandchild.children as $grandgrandchild}
-                          <div class="container-padding-top-05 container-padding-bottom clear">
+                          <div class="container-padding-top-05 clear">
                             <a href="{$grandgrandchild.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$grandgrandchild.name|wash()}">
                               <span class="container-padding-left"><strong>{$grandgrandchild.name|wash()}</strong></span>
                             </a>
