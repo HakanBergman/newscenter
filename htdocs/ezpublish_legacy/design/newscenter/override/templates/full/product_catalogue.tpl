@@ -24,7 +24,7 @@
             {if $child.children|count()}              
               <ul>
                 {foreach $child.children as $grandchild}
-                  <li class="{$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text} container-padding-top-05">
+                  <li class="{$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text} container-padding-top">
                     <span class="flag flag-icon-background {$grandchild.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>
                     <a href="{$grandchild.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$grandchild.name|wash()}"><strong>{$grandchild.name|wash()}</strong></a>
                     {if $grandchild.children|count()}                     
