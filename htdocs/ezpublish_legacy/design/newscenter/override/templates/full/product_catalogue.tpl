@@ -22,7 +22,7 @@
             <h3 class="{$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text}"><a href="{$child.url|ezurl('no', 'full')}" title="{$child.name|wash()}">{$child.name|wash()}</a></h3>
             <div class="{$child.data_map.background_color.data_text} max-height-1">&nbsp;</div>
             {if $child.children|count()}              
-              <ul>
+              <ul class="no-padding">
                 {foreach $child.children as $grandchild}
                   <li class="{$child.data_map.link_color.data_text} {$child.data_map.hover_color.data_text} container-padding-top">
                     <span class="flag flag-icon-background {$grandchild.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>
