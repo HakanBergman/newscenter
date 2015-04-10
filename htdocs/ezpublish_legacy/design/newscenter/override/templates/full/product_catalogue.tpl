@@ -38,7 +38,7 @@
                           {if $grandgrandchild.children}
                             {foreach $grandgrandchild.children as $product}
                               <div class="container-padding-left-2">              
-                                {if $produtct.data_map.image.has_content}<img src="/{$product.data_map.image.content.original.full_path}" class="img-responsive thumbnail max-width-2-em float-left no-margin" alt="{$product.name|wash()}"></img>{/if}
+                                {if $product.data_map.image.has_content}<img src="/{$product.data_map.image.content.original.full_path}" class="img-responsive thumbnail max-width-2-em float-left no-margin" alt="{$product.name|wash()}"></img>{/if}
                                 <a href="{$product.url|ezurl('no', 'full')}" class="font-weight-normal container-padding-left" title="{$product.name|wash()}">
                                   {$product.name|wash()}
                                 </a>
