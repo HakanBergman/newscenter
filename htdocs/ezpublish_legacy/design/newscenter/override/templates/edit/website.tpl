@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-lg-12 container-padding-left-4 container-padding-right-4">
             <article>
-			  {if $object.name|wash()|eq('Ny Block - Facebook')}<h1>{$object.name|wash()}</h1>{else}<h1>Standard Zon - {$object.name|wash()}</h1>{/if}
+			  {if $object.name|wash()|eq('Ny Block - Webbsida')}<h1>{$object.name|wash()}</h1>{else}<h1>{$object.name|wash()}</h1>{/if}
               <h2>Webbsida</h2>
               <div class="form container-padding-left-2">
                                 

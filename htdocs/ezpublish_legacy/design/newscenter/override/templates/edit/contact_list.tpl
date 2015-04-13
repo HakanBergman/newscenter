@@ -7,11 +7,11 @@
       <div class="row">
         <div class="col-lg-12 container-padding-left-4 container-padding-right-4">
             <article>
-			  {if $object.name|wash()|eq('Ny Block - Facebook')}<h1>{$object.name|wash()}</h1>{else}<h1>Standard Zon - {$object.name|wash()}</h1>{/if}
-              <h2>Webbsida</h2>
+			  {if $object.name|wash()|eq('Ny Block - Kontaktlista')}<h1>{$object.name|wash()}</h1>{else}<h1>{$object.name|wash()}</h1>{/if}
+              <h2>Kontaktlista</h2>
               <div class="form container-padding-left-2">
                                 
-                {* Website Title *}
+                {* Contact List Title *}
 
                 <div class="col-lg-12 no-margin no-padding">
                   <div class="pull-left"><h3 class="clear">Titel</h3></div>
@@ -24,56 +24,19 @@
                   <div>{attribute_edit_gui attribute=$object.data_map.name}</div>
                 </div>
 
-                {* Website Intro *}
+                {* Contact List Map *}
 
                 <div class="col-lg-12 no-margin no-padding">
-                  <div class="pull-left"><h3 class="clear">Ingress</h3></div>
+                  <div class="pull-left"><h3 class="clear">Karta</h3></div>
                 </div>
 
-                <p class="clear">Här kan du ange en ingress.</p>
+                <p class="clear">Ange företagets position på kartan.</p>
 
                 <div class="form-group">
-                  <label>Ingress</label>
-                  <div>{attribute_edit_gui attribute=$object.data_map.intro}</div>
+                  <label>Google Map</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.map}</div>
                 </div>
 
-                {* Website Body *}
-
-                <div class="col-lg-12 no-margin no-padding">
-                  <div class="pull-left"><h3 class="clear">Brödtext</h3></div>
-                </div>
-
-                <p class="clear">Här kan du ange en brödtext.</p>
-
-                <div class="form-group">
-                  <label>Ingress</label>
-                  <div>{attribute_edit_gui attribute=$object.data_map.body}</div>
-                </div>
-
-                {* Website Summary *}
-
-                <div class="col-lg-12 no-margin no-padding">
-                  <div class="pull-left"><h3 class="clear">Summering</h3></div>
-                </div>
-
-                <p class="clear">Här kan du ange en summering.</p>
-
-                <div class="form-group">
-                  <label>Ingress</label>
-                  <div>{attribute_edit_gui attribute=$object.data_map.summary}</div>
-                </div>
-
-               {* Website Image *}
-
-                <div class="col-lg-12 no-margin no-padding">
-                  <div class="pull-left"><h3 class="clear">Bild</h3></div>
-                </div>
-
-                <p class="clear">Här kan du publicera en bild som ska visas på sidan.</p>
-
-                <div class="form-group clear">
-					<div>{attribute_edit_gui attribute=$object.data_map.image}</div>
-				</div>
 
                 {* Save Settings *}
 
