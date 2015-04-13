@@ -1,16 +1,18 @@
 ﻿
 <div class="container container-padding-left-2 container-padding-left-2">
   {if ezhttp('captcha', 'POST')}
-    {ezcreateemail()}
+  {ezcreateemail()}
   {/if}
-  {include uri="design:newscenter/widget/widget_breadcrumb.tpl"} 
-  {def $sitesettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
+  {include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
+  
+  {def $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
+  {def $sitesettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
   {$sitesettings|attribute(show, 1)}
   <h2>{$node.name|wash()}</h2>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
       {def $user = fetch('user', 'current_user')}
-        {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
+        {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
           <div class="edit admin-panel container-padding-left-2 container-padding-top-05">
 					  <form action="/content/action" method="post">
 						  <input type="hidden" value="contact_region" name="ClassIdentifier" />
@@ -27,7 +29,7 @@
           <h3>{$contact_division.name|wash()}</h3>
 
           {def $user = fetch('user', 'current_user')}
-            {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
+            {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
               <div class="edit admin-panel container-padding-left-2 container-padding-top-05">
                 <form action="/content/action" method="post">
                   <input type="hidden" value="contact" name="ClassIdentifier" />
@@ -122,5 +124,5 @@
         </div>
       </form>
     </div>
-  {undef $sitesettings}
+  {undef $sitesettings $company}
 </div>
