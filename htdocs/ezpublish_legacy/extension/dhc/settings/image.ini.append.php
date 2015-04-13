@@ -17,7 +17,7 @@ AliasList[]=infoboximage
 AliasList[]=billboard
 AliasList[]=productthumbnail
 AliasList[]=productimage
-AliasList[]=widget_image_list_slider
+AliasList[]=widget_image_list_sliders
 
 [small]
 Reference=
@@ -94,7 +94,7 @@ Reference=
 Filters[]
 Filters[]=geometry/scaledownwidthonly=770
 
-[widget_image_list_slider]
+[widget_image_list_sliders]
 Reference=
 Filters[]
 Filters[]=geometry/scaledownwidthonly=300
