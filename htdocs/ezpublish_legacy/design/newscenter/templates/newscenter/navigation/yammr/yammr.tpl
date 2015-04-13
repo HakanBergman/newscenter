@@ -59,7 +59,7 @@
                                           <a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">{$child.name|wash()}</a>
                                           {def $grandgrandchildren = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'sort_by', attribute('name', true()) ))}
                                           {if $grandgrandchildren|count()}
-                                            <div class="nav-padding-left {$#company.data_map.link_color_menu_mouseover.data_text}">
+                                            <div class="nav-padding-left">
                                               {foreach $grandgrandchildren as $grandchild}
                                                 <div class="container-padding-left"><a href="{$grandchild.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$grandchild.name|wash()}">- {$grandchild.name|wash()}</a></div>
                                               {/foreach}
