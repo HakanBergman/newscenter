@@ -66,6 +66,12 @@ MatchFile=full/contact_list.tpl
 Subdir=templates
 Match[class_identifier]=contact_list
 
+[full_contact_region]
+Source=node/view/full.tpl
+MatchFile=full/contact_region.tpl
+Subdir=templates
+Match[class_identifier]=contact_region
+
 [full_site_settings]
 Source=node/view/full.tpl
 MatchFile=full/sitesettings.tpl
