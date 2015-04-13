@@ -46,7 +46,7 @@
                 <p class="clear">Ange de telefonnummer som personen har på företaget. Tex (070 - 1234567 / 021 123456) om personen kan nås på 2 nummer.</p>
 
                 <div class="form-group">
-                  <label>Titel</label>
+                  <label>Telefonnummer</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.cellphone}</div>
                 </div>
 
