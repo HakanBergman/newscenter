@@ -54,12 +54,13 @@
                                   {if $grandchild|count()}
                                   {foreach $grandchild as $child}
                                   <div class="nav-padding-left {$#company.data_map.link_color_menu_mouseover.data_text}">
-                                          {* Display a flag if needed *}
-                                          {if $child.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$child.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
-                                          <a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">{$child.name|wash()}</a>
-                                          {def $grandgrandchildren = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'sort_by', attribute('name', true()) ))}
-                                          {if $grandgrandchildren|count()}
-                                            <div class="nav-padding-left">
+                                    {* Display a flag if needed *}
+                                    {if $child.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$child.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
+                                    {if $child.class_identifier|eq('product_country')}<a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">{$child.name|wash()}</a>{/if}
+                                    {if $child.class_identifier|ne('product_country')}<a href="{$child.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$child.name|wash()}">- {$child.name|wash()}</a>{/if}
+                                    {def $grandgrandchildren = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'sort_by', attribute('name', true()) ))}
+                                    {if $grandgrandchildren|count()}
+                                    <div class="nav-padding-left">
                                               {foreach $grandgrandchildren as $grandchild}
                                                 <div class="container-padding-left"><a href="{$grandchild.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$grandchild.name|wash()}">- {$grandchild.name|wash()}</a></div>
                                               {/foreach}
