@@ -108,6 +108,12 @@ MatchFile=full/widget_image_list_slider.tpl
 Subdir=templates
 Match[class_identifier]=widget_image_list_slider
 
+[edit_contact_list]
+Source=content/edit.tpl
+MatchFile=edit/contact_list.tpl
+Subdir=templates
+Match[class_identifier]=contact_list
+
 [edit_website]
 Source=content/edit.tpl
 MatchFile=edit/website.tpl
