@@ -61,7 +61,7 @@
                                           {if $grandgrandchildren|count()}
                                             <div class="nav-padding-left {$#company.data_map.link_color_menu_mouseover.data_text}">
                                               {foreach $grandgrandchildren as $grandchild}
-                                                <div class="container-padding-left"><a href="{$grandchild.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$grandchild.name|wash()}">{$grandchild.name|wash()}</a></div>
+                                                <div class="container-padding-left"><a href="{$grandchild.url|ezurl('no', 'full')}" class="font-weight-normal" title="{$grandchild.name|wash()}">- {$grandchild.name|wash()}</a></div>
                                               {/foreach}
                                             </div>
                                           {/if}
