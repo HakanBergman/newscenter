@@ -7,6 +7,18 @@
   {def $home_node = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
   <h2>{$node.name|wash()}</h2>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+      {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
+      <div class="edit container-padding-left-2 container-padding-top-05">
+					<form action="/content/action" method="post">
+						<input type="hidden" value="contact_region" name="ClassIdentifier" />
+						<input type="hidden" class="input-zone-id" value="{$current_node.node_id}" name="NodeID" /> 
+						<input type="hidden" value="swe-SE" name="ContentLanguageCode" /> 
+						<button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding"><span class="glyphicon glyphicon-file text-primary"></span> <span class="container-padding-left">Ny Region</span></button>
+					</form>
+				</div>
+		  {/if}     
+      
 		  {foreach $node.children as $contact_division}
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h3>{$contact_division.name|wash()}</h3>
