@@ -44,8 +44,8 @@
                         {/case}
                         {/switch}
                         <li>
-                            <div class="row {$subclass} {$menusettings.0.data_map.background_color_yammr.data_text} no-padding nav-padding-top no-margin">
-                              <div class="col-sm-12 no-padding no-margin">
+                            <div class="row {$subclass} {$menusettings.0.data_map.background_color_yammr.data_text} no-padding nav-padding-top nav-padding-left-4 no-margin">
+                              <div class="col-sm-12 no-padding no-margin nav-padding-left-2">
                                 <div class="nav-padding-top nav-padding-bottom {$#company.data_map.link_color_menu_mouseover.data_text}">
                                   {* Display a flag if needed *}
                                   {if $subitem.class_identifier|eq('product_country')}<span class="flag flag-icon-background {$subitem.data_map.country_class.data_text} inline-block height-105-em width-1-em">&nbsp;</span>{/if}
