@@ -24,8 +24,25 @@
 		  {foreach $node.children as $contact_division}
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h3>{$contact_division.name|wash()}</h3>
+
+          {def $user = fetch('user', 'current_user')}
+            {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
+              <div class="edit container-padding-left-2 container-padding-top-05">
+                <form action="/content/action" method="post">
+                  <input type="hidden" value="contact" name="ClassIdentifier" />
+                  <input type="hidden" class="input-zone-id" value="{$contact_division.node_id}" name="NodeID" />
+                  <input type="hidden" value="swe-SE" name="ContentLanguageCode" />
+                  <button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding">
+                    <span class="glyphicon glyphicon-file text-primary"></span>
+                    <span class="container-padding-left">Ny Kontaktperson</span>
+                  </button>
+                </form>
+              </div>
+            {/if}
+          {undef $user}
+
           {foreach $contact_division.children as $employee}
-            <div class="container-padding-left">
+          <div class="container-padding-left">
               <h4 class="no-margin container-padding-top">{$employee.name|wash()}</h4>
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <label><a href="tel:{$employee.data_map.cellphone.data_text}" title="{$employee.data_map.cellphone.data_text}">{$employee.data_map.cellphone.data_text}</a></label>
