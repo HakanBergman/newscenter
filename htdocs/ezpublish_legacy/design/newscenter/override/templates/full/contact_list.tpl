@@ -4,7 +4,7 @@
     {ezcreateemail()}
   {/if}
   {include uri="design:newscenter/widget/widget_breadcrumb.tpl"} 
-  {def $home_node = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
+  {def $sitesettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
   <h2>{$node.name|wash()}</h2>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
@@ -64,7 +64,7 @@
           <div class="form-group">
             <label for="sel1">Välj mottagare</label>
             <select class="form-control" id="sel1">
-              <option value="{$home_node.data_map.email.value}">{$home_node.data_map.email.value}</option>
+              <option value="{$sitesettings.0.data_map.email.value}">{$sitesettings.0.data_map.email.value}</option>
               {foreach $node.children as $contact_division}
               {foreach $contact_division.children as $employee}
               <option value="{$employee.data_map.email.value}">{$employee.name|wash()}</option>
@@ -121,5 +121,5 @@
         </div>
       </form>
     </div>
-  {undef home_node}
+  {undef $sitesettings}
 </div>
