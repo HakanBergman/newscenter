@@ -5,6 +5,7 @@
   {/if}
   {include uri="design:newscenter/widget/widget_breadcrumb.tpl"} 
   {def $sitesettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
+  {$sitesettings|attribute(show, 1)}
   <h2>{$node.name|wash()}</h2>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
