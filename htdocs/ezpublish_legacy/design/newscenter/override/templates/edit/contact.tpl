@@ -59,7 +59,7 @@
                 <p class="clear">Ange den e-postadress som personen använder på företaget. Tex fornamn.efternamn@bolagsdomän.se</p>
 
                 <div class="form-group">
-                  <label>Titel</label>
+                  <label>E-postadress</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.email}</div>
                 </div>
 
