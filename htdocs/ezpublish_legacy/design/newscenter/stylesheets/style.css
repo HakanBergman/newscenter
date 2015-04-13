@@ -8,6 +8,7 @@ p { margin: 0 0 2px; }
 
 /* Drop Down Menu Rules */
 .yamm .dropdown-menu { border: 0px solid rgba(0,0,0,.15); }
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover { background: none; }
 
 /* Cursors */
 .cursor-pointer { cursor: pointer; }
