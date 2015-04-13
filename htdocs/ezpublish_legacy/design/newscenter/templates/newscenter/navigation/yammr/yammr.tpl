@@ -44,7 +44,7 @@
                         {/case}
                         {/switch}
                         <li>
-                            <div class="row {$subclass} {$menusettings.0.data_map.background_color_yammr.data_text} min-height-23 no-padding nav-padding-left-4 nav-padding-right-3 nav-padding-top no-margin">
+                            <div class="row {$subclass} {$menusettings.0.data_map.background_color_yammr.data_text} no-padding nav-padding-left-4 nav-padding-right-3 nav-padding-top no-margin">
                               <div class="col-sm-12">
                                 <div class="nav-padding-top nav-padding-bottom {$#company.data_map.link_color_menu_mouseover.data_text}">
                                   {* Display a flag if needed *}
