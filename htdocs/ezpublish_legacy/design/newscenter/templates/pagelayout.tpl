@@ -121,9 +121,11 @@
 				{if $current_node_id|ne($#company.node_id)}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 1)), 'sort_by', array('priority', true()) ))}
 						{if $zones}
-							{foreach $zones as $zone}
-								{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-							{/foreach}
+							<section id="section-pre-content" class="container-padding-left container-padding-right">
+								{foreach $zones as $zone}
+									{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+								{/foreach}
+							</section>
 						{/if}
 					{undef $zones}
 				{/if}
@@ -139,9 +141,11 @@
 				{if $current_node_id|ne($#company.node_id)}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 2)), 'sort_by', array('priority', true()) ))}
 						{if $zones}
-							{foreach $zones as $zone}
-								{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-							{/foreach}
+							<section id="section-after-content" class="container-padding-left container-padding-right">
+								{foreach $zones as $zone}
+									{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+								{/foreach}
+							</section>
 						{/if}
 					{undef $zones}
 				{/if}
