@@ -3,7 +3,7 @@
 
 	{* Print the Zone *}
 			
-			<div class="{$#zone_width} no-margin no-padding">
+			<div class="{$#zone_width} no-margin no-padding bg-black">
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					<div class="admin-panel container-padding-top hide">
 						<strong class="container-padding-left-2">{$zone.name|wash()}</strong>
