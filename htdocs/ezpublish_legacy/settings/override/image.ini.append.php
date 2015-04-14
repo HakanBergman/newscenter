@@ -64,7 +64,7 @@ Filters[]=geometry/scaledownonly=448;622
 [widget_image_list_slider]
 Reference=
 Filters[]
-Filters[]=geometry/scalewidth=842;390
+Filters[]=geometry/scaledownonly=842;390
 
 
 */ ?>
