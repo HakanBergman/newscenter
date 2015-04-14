@@ -1,4 +1,4 @@
-{* $block.data_map.image_one.content|attribute(show, 1) *}
+{$block.data_map.image_one.content|attribute(show, 1)}
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding">
   <div class="row thumbnail widget-margin-top widget-padding-4 widget-list-slider">
     <ul class="pgwSlider">
