@@ -6,7 +6,7 @@
 			<div class="{$#zone_width} no-margin no-padding">
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					<div class="admin-panel container-padding-top hide">
-						<strong>Administrationspanel för zonen {$zone.name|wash()}</strong>
+						<strong class="container-padding-left-2">{$zone.name|wash()}</strong>
 						<div class="pull-right">
 							<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
 							<form method="post" action="/content/action" class="float-right container-padding-left">
@@ -23,7 +23,7 @@
 										<input type="hidden" value="widget_image_list_slider" name="ClassIdentifier">
 										<input type="hidden" class="input-zone-id" value="{$zone.node_id}" name="NodeID"> 
 										<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 							
-										<button type="submit" name="NewButton" class="btn btn-link"><span class="glyphicon glyphicon-picture"></span> Bildlista</button>										
+										<button type="submit" name="NewButton" class="btn btn-link"><span class="glyphicon glyphicon-picture"></span></button>										
 									</form>
 								</div>
 								<div class="float-left container-margin-left container-padding-right container-padding-left thumbnail">
@@ -31,7 +31,7 @@
 										<input type="hidden" value="widget_facebook" name="ClassIdentifier">
 										<input type="hidden" class="input-zone-id" value="{$zone.node_id}" name="NodeID"> 
 										<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 							
-										<button type="submit" name="NewButton" class="btn btn-link"><span class="glyphicon glyphicon-thumbs-up"></span> Facebook-flöde</button>										
+										<button type="submit" name="NewButton" class="btn btn-link"><span class="glyphicon glyphicon-thumbs-up"></span></button>										
 									</form>
 								</div>
 							</div>
