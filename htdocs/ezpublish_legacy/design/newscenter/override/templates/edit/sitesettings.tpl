@@ -48,6 +48,28 @@
                   <div>{attribute_edit_gui attribute=$object.data_map.city}</div>
                 </div>
 
+                {* Meny Settings *}
+
+                <div class="col-lg-12 no-margin no-padding">
+                  <div class="pull-left">
+                    <h3 class="clear">Bakgrundsbild</h3>
+                  </div>
+                  <div class="pull-right container-padding-top-2">
+                    <a class="toggle" data-href="menu-background-image" href="#menu-background-image">Visa detaljer</a>
+                  </div>
+                </div>
+
+                <p class="clear">Ladda upp bakgrundsbild.</p>
+
+                <div class="menu-background-image hide">
+                  <div class="form-group container-padding-left">
+                    <label>Logotyp</label>
+                    <div>{attribute_edit_gui attribute=$object.data_map.background_image}</div>
+                  </div>
+                </div>
+
+                <hr class="border-solid-black" />
+
                 {* Site Icons *}
 
                 <div class="col-lg-12 no-margin no-padding">
