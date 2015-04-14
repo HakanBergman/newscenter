@@ -2,7 +2,7 @@
 {include uri="design:newscenter/zone/zone_size.tpl" zone=$zone}
 
 	{* Print the Zone *}
-	<section id="section-{$zone.node_id}" class="container-padding-left container-padding-right">
+	
 		<div class="{if $zone.data_map.fullscreen.value}container-fluid{else}container{/if}">
 			<div class="{$#zone_width} no-margin no-padding">
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
@@ -97,4 +97,4 @@
 				{undef $blocks}
 			</div>
 		</div>
-	</section>
+	
