@@ -77,7 +77,7 @@
 		<script type="text/javascript" src={"javascript/preview.js"|ezdesign}></script>		
 	</head>
 	
-	<body class="{$sitesettings.0.data_map.background_color.data_text} {$sitesettings.0.data_map.font_family.data_text} {$sitesettings.0.data_map.font_size.data_text}">
+	<body class="{$sitesettings.0.data_map.background_color.data_text} {$sitesettings.0.data_map.font_family.data_text} {$sitesettings.0.data_map.font_size.data_text} {$sitesettings.0.data_map.background_image.content.original.full_path}">
 	<div id="fb-root"></div>
 
 		{* Include Admin Bar *}
