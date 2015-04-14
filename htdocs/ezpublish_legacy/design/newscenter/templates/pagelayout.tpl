@@ -106,8 +106,8 @@
 				{if $current_node_id|eq($#company.node_id)}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 0)), 'sort_by', array('priority', true()) ))}
 						{if $zones}
-							<section id="section-{$zone.node_id}" class="container-padding-left container-padding-right">
-								{foreach $zones as $zone}
+							<section id="section-frontpage" class="container-padding-left container-padding-right">
+								{foreach $zones as $zone}									
 									{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 								{/foreach}
 							</section>
