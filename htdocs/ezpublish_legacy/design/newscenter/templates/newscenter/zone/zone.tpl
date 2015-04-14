@@ -3,7 +3,7 @@
 
 	{* Print the Zone *}
 	
-		<div class="{if $zone.data_map.fullscreen.value}container-fluid{/if}">
+		<div class="{if $zone.data_map.fullscreen.value}container-fluid{else}container{/if}">
 			<div class="{$#zone_width} no-margin no-padding">
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					<div class="admin-panel container-padding-top hide">
