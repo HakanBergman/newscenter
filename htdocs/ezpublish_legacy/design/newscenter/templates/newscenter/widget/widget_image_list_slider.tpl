@@ -36,5 +36,6 @@
         autoSlide: false,
         displayList: true,    
       });
+    });
   </script>
 {/literal}
