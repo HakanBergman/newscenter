@@ -1,7 +1,7 @@
 <?php /* #?ini charset="utf-8"?
 
 [ImageMagick]
-IsEnabled=false
+IsEnabled=true
 
 [AliasSettings]
 AliasList[]=mainstory1
