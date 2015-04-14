@@ -21,7 +21,7 @@ ActiveExtensions[]=dhc
 
 [DatabaseSettings]
 DatabaseImplementation=ezmysqli
-Server=localhost
+Server=192.168.200.201
 Port=
 User=NewsCenter
 Password=test
