@@ -116,7 +116,9 @@
 											</div>
 										{else}
 											<div class="{$sitesettings.0.data_map.background_color.data_text}">
-												{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+												<div class="container">
+													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+												</div>
 											</div>
 										{/if}												
                                     {/foreach}
