@@ -36,7 +36,7 @@
         if ($('.text_color').length) { $('.text_color').val($(this).attr('data-color')); }
     });
 
-    $('.colors .footer-color').on('click', function (e) {
+    $('.colors .text-color-footer').on('click', function (e) {
         $('.footer-picked-color .hex').html($(this).attr('data-hex'));
         if ($('.text_color_footer').length) { $('.text_color_footer').val($(this).attr('data-color')); }
     });
