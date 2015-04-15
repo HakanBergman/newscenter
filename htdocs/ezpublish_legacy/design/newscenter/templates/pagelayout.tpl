@@ -108,14 +108,16 @@
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 0)), 'sort_by', array('attribute', true(), 'zone/priority') ))}
 						{if $zones}							
                             <section id="section-frontpage">
-                                <div class="container-fluid {$sitesettings.0.data_map.background_color.data_text}">                                    
+                                <div class="container-fluid">                                    
                                     {foreach $zones as $zone}
-										{if $zone.data_map.fullscreen.value|not()}
+										{if $zone.data_map.fullscreen.value|not}
 											<div class="container">
 												{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 											</div>
 										{else}
-											{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+											<div class="{$sitesettings.0.data_map.background_color.data_text}">
+												{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+											</div>
 										{/if}												
                                     {/foreach}
                                 </div>
