@@ -107,7 +107,7 @@
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 0)), 'sort_by', array('attribute', true(), 'zone/priority') ))}
 						{if $zones}
 							<section id="section-frontpage" class="container-padding-left container-padding-right">
-								<div class="container">
+								<div class="container {$sitesettings.0.data_map.background_color.data_text}">
 									{foreach $zones as $zone}									
 										{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 									{/foreach}
