@@ -78,7 +78,7 @@
                 <p class="clear">Ange i vilken ordning zonerna ska visas ut. Låg prioritet visas ut först, dvs 1, 2, 3, 4 osv.</p>
 
                 <div class="form-group">
-                  <label>Zonens storlek</label>
+                  <label>Zonens prioritet</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.priority}</div>
                 </div>
                 
