@@ -91,9 +91,9 @@
 
 			{if and(is_set($object)|not, is_set($edit_version)|not)}
 				{* Include Headers *}
-				{include uri='design:page_header.tpl'}
+				{*include uri='design:page_header.tpl'*}
 			{/if}
-            test
+            
 			{* Include Admin Site Bar *}
 			{if and(is_set($object)|not, is_set($edit_version)|not)}
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
