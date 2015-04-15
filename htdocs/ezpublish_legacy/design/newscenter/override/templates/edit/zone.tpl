@@ -65,11 +65,22 @@
                 <p class="clear">Ange hur stor procent av sidan som zonen ska ta upp (default är 100%).</p>
 
                 <div class="form-group">
-                  <label>Zonens storlek</label>
+                  <label>Zonens storlek på en datorskärm</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.zone_size}</div>
                 </div>
 
-				{* Zone Priority *}
+                <div class="form-group">
+                  <label>Zonens storlek på en surfplatta</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.zone_size_tablet}</div>
+                </div>
+
+                <div class="form-group">
+                  <label>Zonens storlek på en mobiltelefon</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.zone_size_cellphone}</div>
+                </div>
+                                
+
+                {* Zone Priority *}
 
                 <div class="col-lg-12 no-margin no-padding clear">
                   <div class="pull-left"><h3 class="clear">Zonens prioritet</h3></div>
