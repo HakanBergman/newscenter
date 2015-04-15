@@ -169,15 +169,15 @@
 
 			<div class="container-fluid {$menusettings.0.data_map.background_color.data_text} nav-padding-bottom-4">
 				<div class="container">
-					<footer class="{$#company.data_map.link_color_menu_mouseover.data_text} {$#company.data_map.link_color_menu.data_text} container-padding-top">
-						{* Include Footer Zone *}
-						{def $zones = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone_footer')))}
-						{if $zones}
-							{foreach $zones as $zone}
-								{include uri="design:newscenter/zone/zone.tpl" zone=$zone user=$user}
-							{/foreach}
-						{/if}
-						<div class="{$#company.data_map.footer_color.data_text}">&nbsp;</div>
+                    <footer class="{$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} container-padding-top">
+                        {* Include Footer Zone *}
+                        {def $zones = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone_footer')))}
+                        {if $zones}
+                        {foreach $zones as $zone}
+                        {include uri="design:newscenter/zone/zone.tpl" zone=$zone user=$user}
+                        {/foreach}
+                        {/if}
+                        <div class="{$#company.data_map.footer_color.data_text}">&nbsp;</div>
                         <div class="col-lg-12 nav-padding-bottom-4">
                             <div class="pull-left {$#company.data_map.text_color_footer.data_text}">{'&copy; Copyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} {$sitesettings.0.data_map.site_title.data_text|wash()}</div>
                             <div class="pull-right">
@@ -187,7 +187,7 @@
                                 <a href="/user/login"><span class="glyphicon glyphicon-lock"></span></a>
                             </div>
                         </div>
-					</footer>
+                    </footer>
 				</div>
 			</div>
 
