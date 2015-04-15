@@ -156,7 +156,7 @@
 			{/if}
 
 			{* Main Content *}
-            <div class="{$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text}">
+            <div class="{$menusettings.0.data_map.link_hover_color.data_text}">
                 {$module_result.content}
             </div>
 
