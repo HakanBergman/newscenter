@@ -105,22 +105,24 @@
 				{* Include Frontpage Zones *}
 				{if $current_node_id|eq($#company.node_id)}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 0)), 'sort_by', array('attribute', true(), 'zone/priority') ))}
-						{if $zones}
-							<section id="section-frontpage" class="container-padding-left container-padding-right">
-                                {if $zones.0.data_map.fullscreen.value}
+						{if $zones}							
+                            {if $zones.0.data_map.fullscreen.value}
+                                <section id="section-frontpage">
                                     <div class="container-fluid {$sitesettings.0.data_map.background_color.data_text}">
                                         {foreach $zones as $zone}
                                             {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
                                         {/foreach}
                                     </div>
-                                {else}
+                                </section>
+                            {else}
+                                <section id="section-frontpage" class="container-padding-left container-padding-right">
 								    <div class="container container-box-shadow {$sitesettings.0.data_map.background_color.data_text}">
                                         {foreach $zones as $zone}
                                             {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
                                         {/foreach}
-								   </div>
-                                {/if}                                    
-							</section>
+								    </div>
+                                </section>
+                            {/if}                                    							
 						{/if}
 					{undef $zones}
 				{/if}
