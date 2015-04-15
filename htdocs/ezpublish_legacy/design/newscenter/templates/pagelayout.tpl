@@ -111,9 +111,7 @@
                                 <div class="container-fluid">                                    
                                     {foreach $zones as $zone}
 										{if $zone.data_map.fullscreen.value|not}
-											<div class="container">
-												{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-											</div>
+											{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 										{else}
 											<div class="{$sitesettings.0.data_map.background_color.data_text}">
 												{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
