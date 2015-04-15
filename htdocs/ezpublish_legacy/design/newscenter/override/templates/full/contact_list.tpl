@@ -1,5 +1,5 @@
 ﻿
-<div class="container container-padding-left-2 container-padding-left-2">
+<div class="container contact container-padding-left-2 container-padding-left-2">
   {if ezhttp('captcha', 'POST')}
   {ezcreateemail()}
   {/if}
