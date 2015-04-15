@@ -166,7 +166,7 @@
 
 		{if and(is_set($object)|not, is_set($edit_version)|not)}
 
-			<div class="container-fluid {$#company.data_map.background_color_footer.data_text} nav-padding-bottom-4">
+			<div class="container-fluid {$menusettings.0.data_map.background_color.data_text} nav-padding-bottom-4">
 				<div class="container">
 					<footer class="{$#company.data_map.link_color_menu_mouseover.data_text} {$#company.data_map.link_color_menu.data_text} container-padding-top">
 						{* Include Footer Zone *}
