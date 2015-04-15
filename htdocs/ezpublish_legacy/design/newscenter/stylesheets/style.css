@@ -5,6 +5,7 @@ section .row { margin: 0; padding: 0; padding: 0; margin: 0; }
 section .container { padding: 0; padding-left: 15px; padding-right: 15px; max-width: 100%; }
 section .container-fluid .jumbotron { margin-bottom: 0; border-radius: 0; }
 p { margin: 0 0 2px; }
+.container-box-shadow { box-shadow: 6px 0 15px -4px rgba(31,73,125,0.8),-6px 0 8px -4px rgba(31,73,125,0.8); }
 
 /* Drop Down Menu Rules */
 .yamm .dropdown-menu { border: 0px solid rgba(0,0,0,.15); }
