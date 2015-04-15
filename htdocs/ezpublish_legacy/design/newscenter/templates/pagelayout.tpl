@@ -110,9 +110,11 @@
                             {if $zones.0.data_map.fullscreen.value}
                                 <section id="section-frontpage">
                                     <div class="container-fluid {$sitesettings.0.data_map.background_color.data_text}">
-                                        {foreach $zones as $zone}
-                                            {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-                                        {/foreach}
+                                        <div class="container">
+                                            {foreach $zones as $zone}
+                                                {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+                                            {/foreach}
+                                        </div>
                                     </div>
                                 </section>
                             {else}
