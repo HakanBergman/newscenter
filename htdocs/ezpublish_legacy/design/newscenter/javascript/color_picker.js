@@ -31,6 +31,16 @@
         if ($('.link_hover_color').length) { $('.link_hover_color').val($(this).attr('data-color')); }
     });
 
+    $('.colors .text-color').on('click', function (e) {
+        $('.text-picked-color .hex').html($(this).attr('data-hex'));
+        if ($('.text_color').length) { $('.text_color').val($(this).attr('data-color')); }
+    });
+
+    $('.colors .footer-color').on('click', function (e) {
+        $('.footer-picked-color .hex').html($(this).attr('data-hex'));
+        if ($('.text_color_footer').length) { $('.text_color_footer').val($(this).attr('data-color')); }
+    });
+
     /* Check if we are in edit mode and can pick a color */
     if ($('.background-yammr-picked-color').length) {
         var current_background_color = colortohex($('.background-yammr-saved-color input').val());

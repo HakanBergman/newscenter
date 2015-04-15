@@ -223,9 +223,8 @@
                       <div class="background-saved-color hide">{attribute_edit_gui attribute=$object.data_map.background_color}</div>
                     </div>
 
-                    {* Text color *}
-                    
-                    <div class="col-lg-12 no-margin no-padding container-padding-top clear"><label>Välj textfärg</label></div>
+                    {* Text color *}                    
+                    <div class="col-lg-12 no-margin no-padding container-padding-top clear"><label>Välj textfärg som ska användas i artiklar och vanliga sajten.</label></div>
                     <div class="col-lg-12">
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <span class="text-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-black" data-hex="#000"></span>
@@ -241,7 +240,26 @@
                         <strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span>
                       </div>
                       <div class="text-saved-color hide">{attribute_edit_gui attribute=$object.data_map.text_color}</div>
-                    </div>                    
+                    </div>      
+                      
+                    {* Text color Footer *}                    
+                    <div class="col-lg-12 no-margin no-padding container-padding-top clear"><label>Välj textfärg som ska visas ut i sidfoten.</label></div>
+                    <div class="col-lg-12">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <span class="text-color-footer thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-black" data-hex="#000"></span>
+                        <span class="text-color-footer thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-longdrink-blue" data-hex="#4BC6D1"></span>
+                        <span class="text-color-footer thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-beer-brown" data-hex="#DE910b"></span>
+                        <span class="text-color-footer thumbnail bg-dynamite-green min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-dynamite-green" data-hex="#D4D977"></span>
+                        <span class="text-color-footer thumbnail bg-beige min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-beige" data-hex="#DECC9E"></span>
+                        <span class="text-color-footer thumbnail bg-pink min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-pink" data-hex="#F9DADD"></span>
+                        <span class="text-color-footer thumbnail bg-grey min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-grey" data-hex="#EEE"></span>
+                        <span class="text-color-footer thumbnail bg-white border-solid-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="text-color-white" data-hex="#FFF"></span>
+                      </div>
+                      <div class="footer-picked-color">
+                        <strong>Vald färg</strong> <span class="color"></span> | <span class="hex"></span>
+                      </div>
+                      <div class="footer-saved-color hide">{attribute_edit_gui attribute=$object.data_map.text_color_footer}</div>
+                    </div>                                      
                     
                   </div>
                 </div>
