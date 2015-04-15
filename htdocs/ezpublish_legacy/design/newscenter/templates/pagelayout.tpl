@@ -156,7 +156,9 @@
 			{/if}
 
 			{* Main Content *}
-			{$module_result.content}
+            <div class="{$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text}">
+                {$module_result.content}
+            </div>
 
 			{if and(is_set($object)|not, is_set($edit_version)|not)}				
 
