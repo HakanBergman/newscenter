@@ -1,4 +1,4 @@
-﻿  {def $breadcrumb = fetch('content', 'node', hash('node_id', $node.node_id))}
+  {def $breadcrumb = fetch('content', 'node', hash('node_id', $node.node_id))}
     <ol class="breadcrumb">
       {foreach $breadcrumb.path_array|extract(3) as $path}
         {def $path_node = fetch('content', 'node', hash('node_id', $path))}

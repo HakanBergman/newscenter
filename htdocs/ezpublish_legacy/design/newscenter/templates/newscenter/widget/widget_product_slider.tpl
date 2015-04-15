@@ -1,4 +1,4 @@
-﻿{def $iterations = $node.children|count()|div(8)|ceil()}
+{def $iterations = $node.children|count()|div(8)|ceil()}
 	<div class="shop-category shop-current">			
 		<div class="flexslider carousel">								
 			<div class="flex-viewport">				
