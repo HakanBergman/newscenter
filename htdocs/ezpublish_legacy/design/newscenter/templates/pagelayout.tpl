@@ -132,11 +132,23 @@
 				{if $current_node_id|ne($#company.node_id)}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 1)), 'sort_by', array('priority', true()) ))}
 						{if $zones}
-							<section id="section-pre-content" class="container-padding-left container-padding-right">
-								{foreach $zones as $zone}
-									{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-								{/foreach}
-							</section>
+                            {if $zones.0.data_map.fullscreen.value}
+                                <section id="section-pre-contet">
+                                    <div class="container-fluid {$sitesettings.0.data_map.background_color.data_text}">
+                                        {foreach $zones as $zone}
+                                            {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+                                        {/foreach}
+                                    </div>
+                                </section>
+                            {else}
+                                <section id="section-pre-content" class="container-padding-left container-padding-right">
+								    <div class="container container-box-shadow {$sitesettings.0.data_map.background_color.data_text}">
+                                        {foreach $zones as $zone}
+                                            {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+                                        {/foreach}
+								    </div>
+                                </section>
+                            {/if}
 						{/if}
 					{undef $zones}
 				{/if}
@@ -152,11 +164,23 @@
 				{if $current_node_id|ne($#company.node_id)}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 2)), 'sort_by', array('priority', true()) ))}
 						{if $zones}
-							<section id="section-after-content" class="container-padding-left container-padding-right">
-								{foreach $zones as $zone}
-									{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-								{/foreach}
-							</section>
+                            {if $zones.0.data_map.fullscreen.value}
+                                <section id="section-after-content">
+                                    <div class="container-fluid {$sitesettings.0.data_map.background_color.data_text}">
+                                        {foreach $zones as $zone}
+                                            {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+                                        {/foreach}
+                                    </div>
+                                </section>
+                            {else}
+                                <section id="section-after-content" class="container-padding-left container-padding-right">
+								    <div class="container container-box-shadow {$sitesettings.0.data_map.background_color.data_text}">
+                                        {foreach $zones as $zone}
+                                            {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+                                        {/foreach}
+								    </div>
+                                </section>
+                            {/if}
 						{/if}
 					{undef $zones}
 				{/if}
