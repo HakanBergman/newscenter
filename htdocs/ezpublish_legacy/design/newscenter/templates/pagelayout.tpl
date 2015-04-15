@@ -79,7 +79,7 @@
 	</head>
 	
 	<body class="{$sitesettings.0.data_map.background_color.data_text} {$sitesettings.0.data_map.font_family.data_text} {$sitesettings.0.data_map.font_size.data_text}"{if $sitesettings.0.data_map.background_image.has_content} style="background: #fafafa url('{$sitesettings.0.data_map.background_image.content.original.full_path}') no-repeat top center fixed; background-size: cover;"{/if}>
-	<div id="fb-root"></div>
+	    <div id="fb-root"></div>
 
 		{* Include Admin Bar *}
 		{include uri="design:page_admin_bar.tpl" object=$object edit_version=$edit_version user=$user company=$#company}
@@ -91,7 +91,7 @@
 
 			{if and(is_set($object)|not, is_set($edit_version)|not)}
 				{* Include Headers *}
-				{*include uri='design:page_header.tpl'*}
+				{include uri='design:page_header.tpl'}
 			{/if}
             
 			{* Include Admin Site Bar *}
