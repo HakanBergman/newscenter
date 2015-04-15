@@ -111,16 +111,6 @@
                                 <div class="container-fluid">                                    
                                     {foreach $zones as $zone}
 										{if $zone.data_map.fullscreen.value|not}
-											<div class="col-lg-8">
-												<div class="container">
-													Test
-												</div>
-											</div>
-											<div class="col-lg-4">
-												<div class="container">
-													Test2
-												</div>
-											</div>
 											<div class="container">
 												{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 											</div>
