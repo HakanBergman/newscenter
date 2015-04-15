@@ -107,25 +107,19 @@
 				{if $current_node_id|eq($#company.node_id)}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 0)), 'sort_by', array('attribute', true(), 'zone/priority') ))}
 						{if $zones}							
-                            {if $zones.0.data_map.fullscreen.value}
-                                <section id="section-frontpage">
-                                    <div class="container-fluid {$sitesettings.0.data_map.background_color.data_text}">
-                                        <div class="container">
-                                            {foreach $zones as $zone}
-                                                {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-                                            {/foreach}
-                                        </div>
-                                    </div>
-                                </section>
-                            {else}
-                                <section id="section-frontpage" class="container-padding-left container-padding-right container-padding-top">
-								    <div class="container {$sitesettings.0.data_map.background_color.data_text}">
-                                        {foreach $zones as $zone}
-                                            {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-                                        {/foreach}
-								    </div>
-                                </section>
-                            {/if}                                    							
+                            <section id="section-frontpage">
+                                <div class="container-fluid {$sitesettings.0.data_map.background_color.data_text}">                                    
+                                    {foreach $zones as $zone}
+										{if $zone.data_map.fullscreen.value|not()}
+											<div class="container">
+												{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+											</div>
+										{else}
+											{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+										{/if}												
+                                    {/foreach}
+                                </div>
+                            </section>                                 							
 						{/if}
 					{undef $zones}
 				{/if}
