@@ -168,7 +168,7 @@
 		{if and(is_set($object)|not, is_set($edit_version)|not)}
 
 			<div class="container-fluid {$menusettings.0.data_map.background_color.data_text} nav-padding-bottom-4">
-				<div class="container">
+				<div class="container container-padding-top">
                     <footer class="{$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} {$sitesettings.0.data_map.text_color_footer.data_text} container-padding-top">
                         {* Include Footer Zone *}
                         {def $zones = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone_footer')))}
