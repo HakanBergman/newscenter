@@ -109,7 +109,16 @@
 						{if $zones}							
                             <section id="section-frontpage">
 								{for 0 to $zones|count()|sub(1) as $number}
-									{$zones.$number.name}
+									{* Verify if this is a fullscreen Zone *}
+									{if $zones.$number.data_map.fullscreen.value}
+										<div class="{$sitesettings.0.data_map.background_color.data_text}">
+											<div class="container">
+												{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+											</div>
+										</div>
+									{else}
+										Not fullscreen
+									{/if}
 								{/for}
                                 <div class="container-fluid">                                    
                                     {foreach $zones as $zone}										
