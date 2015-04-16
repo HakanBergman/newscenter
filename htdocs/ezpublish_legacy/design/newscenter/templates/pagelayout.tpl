@@ -254,7 +254,7 @@
                         <div class="col-lg-12 nav-padding-bottom-4">
                             <div class="pull-left {$#company.data_map.text_color_footer.data_text}">{'&copy; Copyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} {$sitesettings.0.data_map.site_title.data_text|wash()}</div>
                             <div class="pull-right">
-								<div class="col-lg-4>
+								<div class="col-lg-4">
 									<span class="{$#company.data_map.text_color_footer.data_text}">{$sitesettings.0.data_map.address.data_text}, {$sitesettings.0.data_map.zipcode.data_text} {$sitesettings.0.data_map.city.data_text}</span>
 								</div>
 								<div class="col-lg-3">
