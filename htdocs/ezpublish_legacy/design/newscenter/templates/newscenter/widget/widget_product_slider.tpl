@@ -11,7 +11,7 @@
 										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 {$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">											
 											<a href="{$node.children.$item.url|ezurl('no', 'full')}" title="{$node.children.$item.name|wash()}">
 												{if $node.children.$item.data_map.image.has_content}<img class="img-responsive thumbnail no-margin" alt="{$node.children.$item.name|wash()}" src="/{$node.children.$item.data_map.image.content.original.full_path}">{/if}
-												{if $node.children.$item.data_map.image.has_content|not}<img src="{'no-image.png'|ezimage('no')}" class="img-responsive thumbnail max-width-2-em float-left no-margin" alt="{$node.children.$item.name|wash()}"></img>{/if}
+												{if $node.children.$item.data_map.image.has_content|not}<img src="{'no-image.png'|ezimage('no')}" class="img-responsive thumbnail float-left no-margin" alt="{$node.children.$item.name|wash()}"></img>{/if}
 											</a>
 											<strong class="title"><a href="{$node.children.$item.url|ezurl('no', 'full')}" title="{$node.children.$item.name|wash()}">{$node.children.$item.name|wash()}</a></strong>
 										</div>
