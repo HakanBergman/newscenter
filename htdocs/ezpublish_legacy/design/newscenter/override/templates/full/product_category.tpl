@@ -1,8 +1,5 @@
-﻿
-<div class="container">
-
+﻿<div class="container">
   {include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
-
   <h2>{$node.name|wash()}</h2>
 	{if $node.children}
 		{foreach $node.children as $child}
@@ -31,8 +28,8 @@
 									{switch match=$grandchild.class_identifier}
 										{case match='product_list'}
 											<div class="row clear">
-												<div class="col-lg-12 container-padding-top-05">
-													<h4 class="container-padding-left-3 container-padding-bottom font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}">{$grandchild.name}</a></h4>
+												<div class="col-lg-12 container-padding-top-05 container-padding-left">
+													<h4 class="container-padding-left-3 container-padding-bottom font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}"><strong>{$grandchild.name}</strong></a></h4>
 													{if $grandchild.children}
 														{foreach $grandchild.children as $grandgrandchild}
 															<h5 class="container-padding-left-4 font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}">
