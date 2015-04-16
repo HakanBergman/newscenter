@@ -160,7 +160,9 @@
 													{* Verify when this is our last node *}
 													{if $zones_count|eq($zones|count()|dec(1))} TESTAR {$zone.name}{/if}
 
-												{/if}												
+												{/if}	
+											
+											{/if}											
 
 											{set $number = $number|sum(1)}
 											{$number} Number
