@@ -257,7 +257,7 @@
                                 <span class="{$#company.data_map.text_color_footer.data_text}">{$sitesettings.0.data_map.address.data_text}, {$sitesettings.0.data_map.zipcode.data_text} {$sitesettings.0.data_map.city.data_text}</span>
                                 <span class="{$#company.data_map.text_color_footer.data_text}">Tel:</span> <a href="tel:{$sitesettings.0.data_map.phone.data_text}">{$sitesettings.0.data_map.phone.data_text}</a>
                                 <span class="{$#company.data_map.text_color_footer.data_text}">E-postadress:</span> <a href="mailto:{$sitesettings.0.data_map.email.data_text}">{$sitesettings.0.data_map.email.data_text}</a>
-                                <a href="/user/login"><span class="glyphicon glyphicon-lock"></span></a>
+                                <a href="/user/login" class="font-size-10-px container-padding-left"><span class="glyphicon glyphicon-lock"></span></a>
                             </div>
                         </div>
                     </footer>
