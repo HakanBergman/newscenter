@@ -33,9 +33,9 @@
 													<h4 class="container-padding-left-3 container-padding-bottom font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}"><strong>{$grandchild.name}</strong></a></h4>
 													{if $grandchild.children}
 														{foreach $grandchild.children as $grandgrandchild}
-															<h5 class="container-padding-left-4 font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text}">
-																{if $grandgrandchild.class_identifier|eq('product')}<img class="img-responsive max-width-2-em float-left" src="/{$grandgrandchild.data_map.image.content.original.full_path}" alt="{$grandgrandchild.name|wash()}"></img>{/if}																
-																<a href="{$grandgrandchild.url|ezurl('no', 'full')}" title="{$grandgrandchild.name|wash()}" class="container-padding-left-2 font-weight-normal">{$grandgrandchild.name|wash()}</a>
+															<h5 class="container-padding-left-4 container-padding-top-05 font-size-product-link font-weight-normal no-margin {$grandchild.data_map.link_color.data_text} {$grandchild.data_map.hover_color.data_text} clear">
+                                {if $grandgrandchild.class_identifier|eq('product')}{if $grandgrandchild.data_map.image.has_content}<img class="img-responsive max-width-2-em float-left" src="/{$grandgrandchild.data_map.image.content.original.full_path}" alt="{$grandgrandchild.name|wash()}"></img>{/if}{if $product.data_map.image.has_content|not}<img src="{'no-image.png'|ezimage('no')}" class="img-responsive thumbnail max-width-2-em float-left no-margin" alt="{$product.name|wash()}"></img>{/if}{/if}
+                                <a href="{$grandgrandchild.url|ezurl('no', 'full')}" title="{$grandgrandchild.name|wash()}" class="container-padding-left-2 font-weight-normal">{$grandgrandchild.name|wash()}</a>
 															</h5>
 														{/foreach}
 													{/if}
