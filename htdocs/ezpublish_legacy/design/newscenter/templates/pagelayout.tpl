@@ -119,29 +119,53 @@
 											{* Verify what to do with our first node *}
 											{if $zones_count|eq(0)}
 												{if $zones.$zones_count.data_map.fullscreen.value}
+
 													{* Full screen Zone *}
 													<div class="{$sitesettings.0.data_map.background_color.data_text}">
 														<div class="container">
 															{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 														</div>
 													</div>
+
 												{else}
+
 													{* Normal Zone *}
-													Normal Zone
-												{/if}
-											{/if}
-
-
-												{if $zones_count.$fullscreen.data_map.fullscreen}<div class="container">{/if}
-												<div class="container">
-													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-												</div>												
-		
-												<div class="{$sitesettings.0.data_map.background_color.data_text}">
 													<div class="container">
 														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+													{set $normal_zone = 1}
+
+												{/if}
+											{else}
+
+												{* Validate the rest of the nodes *}
+												{if $zones.$zones_count.data_map.fullscreen.value}
+
+													{* Full screen Zone *}
+													{* Verify if we had a normal zone, if we do, we need to close it *}
+													{if $normal_zone}</div>{set $normal_zone = 0}{/if}
+
+													<div class="{$sitesettings.0.data_map.background_color.data_text}">
+														<div class="container">
+															{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+														</div>
 													</div>
-												</div>
+
+												{else}
+													
+													{* Normal Zone *}
+													{* Verify if we had a normal zone, if we dont, we dont need to start one *}
+													{if $normal_zone|not}<div class="container">{set $normal_zone = 1}{/if}
+
+													{* Include our template *}
+													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+
+													{* Verify when this is our last node *}
+													{$zones_count} {$zones|count()}
+
+												{/if}												
+
+											
+
 											{set $zones_count = $zones_count|sum(1)}									
 										{/foreach}
 									</div>
