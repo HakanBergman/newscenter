@@ -108,6 +108,9 @@
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 0)), 'sort_by', array('attribute', true(), 'zone/priority') ))}
 						{if $zones}							
                             <section id="section-frontpage">
+								{for 0 to $zones|count()|sub(1) as $number}
+									{$zones.$number.name}
+								{/for}
                                 <div class="container-fluid">                                    
                                     {foreach $zones as $zone}										
 										{if $zone.data_map.fullscreen.value|not}
