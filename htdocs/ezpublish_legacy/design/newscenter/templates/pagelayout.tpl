@@ -108,6 +108,7 @@
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 0)), 'sort_by', array('attribute', true(), 'zone/priority') ))}
 						{if $zones}		
 							{def $zones_count = 0}
+							{def $normal_zone = 0}
 								<section id="section-frontpage">
 									<div class="container-fluid">                                    
 										{foreach $zones as $zone}										
@@ -115,8 +116,20 @@
 											{def $previous_zone = $zones_count|dec(1)}
 											{def $next_zone = $zones_count|sum(1)}
 
-											{* Verify if this is our first node *}
-											{if $zones_count|eq(0)}{$zones.$zones_count.data_map.fullscreen.value} Value{/if}
+											{* Verify what to do with our first node *}
+											{if $zones_count|eq(0)}
+												{if $zones.$zones_count.data_map.fullscreen.value}
+													{* Full screen Zone *}
+													<div class="{$sitesettings.0.data_map.background_color.data_text}">
+														<div class="container">
+															{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+														</div>
+													</div>
+												{else}
+													{* Normal Zone *}
+													Normal Zone
+												{/if}
+											{/if}
 
 
 												{if $zones_count.$fullscreen.data_map.fullscreen}<div class="container">{/if}
@@ -133,7 +146,7 @@
 										{/foreach}
 									</div>
 								</section>     
-							{undef $zones_count}                            							
+							{undef $zones_count $normal_zone}                            							
 						{/if}
 					{undef $zones}
 				{/if}
