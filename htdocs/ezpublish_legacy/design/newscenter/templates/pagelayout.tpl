@@ -157,7 +157,7 @@
 													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 
 													{* Verify when this is our last node *}
-													{if $zones_count|eq($zones|count()|dec(1))}{$zone.name}{/if}
+													{if $zones_count|eq($zones|count()|dec(1))} TESTAR {$zone.name}{/if}
 
 												{/if}												
 
