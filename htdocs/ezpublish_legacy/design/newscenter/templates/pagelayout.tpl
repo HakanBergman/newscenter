@@ -109,6 +109,7 @@
 						{if $zones}		
 							{def $zones_count = 0}
 							{def $normal_zone = 0}
+							{def $number}
 								<section id="section-frontpage">
 									<div class="container-fluid">                                    
 										{foreach $zones as $zone}																	
@@ -161,6 +162,8 @@
 
 												{/if}												
 
+											{set $number = $number|sum(1)}
+											{$number} Number
 											{def $zones_count = $zones_count|inc(1)}	
 																		
 										{/foreach}
