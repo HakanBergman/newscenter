@@ -116,7 +116,7 @@
 											{def $next_zone = $zones_count|sum(1)}
 
 											{* Verify if this is our first node *}
-											{if $zones_count|eq(0)}{$zones.$zones_count.data_map.fullscreen.value}{/if}
+											{if $zones_count|eq(0)}{$zones.$zones_count.data_map.fullscreen.value} Value{/if}
 
 
 												{if $zones_count.$fullscreen.data_map.fullscreen}<div class="container">{/if}
