@@ -1,4 +1,5 @@
 <div class="container website container-padding-top container-padding-bottom container-padding-left-2 container-padding-left-2 {$menusettings.0.data_map.link_hover_color.data_text}">
+  M {$menusettings}
 	{include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
 	<div class="col-lg-12">
 		<article>
