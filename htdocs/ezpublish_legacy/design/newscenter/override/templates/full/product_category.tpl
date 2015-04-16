@@ -1,6 +1,7 @@
 ﻿<div class="container">
   {include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
   <h2>{$node.name|wash()}</h2>
+  <div class="{$node.data_map.background_color.data_text} max-height-1">&nbsp;</div>
 	{if $node.children}
 		{foreach $node.children as $child}
 			{switch match=$child.class_identifier}
