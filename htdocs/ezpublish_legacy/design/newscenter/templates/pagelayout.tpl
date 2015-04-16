@@ -107,7 +107,6 @@
 				{if $current_node_id|eq($#company.node_id)}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 0)), 'sort_by', array('attribute', true(), 'zone/priority') ))}
 						{if $zones}		
-							{def $fullscreen = 0}	
 							{def $zones_count = $zones_count|count()}
 								<section id="section-frontpage">
 									<div class="container-fluid">                                    
@@ -117,7 +116,7 @@
 											{def $next_zone = $zones_count|sum(1)}
 
 											{* Verify if we have a previous zone *}
-											{if $zones.$previous_zone}{$zones.$previous_zone.name}{else}Ingen zon hittad{/if}
+											{$previous_zone}
 
 
 												{if $zones_count.$fullscreen.data_map.fullscreen}<div class="container">{/if}
