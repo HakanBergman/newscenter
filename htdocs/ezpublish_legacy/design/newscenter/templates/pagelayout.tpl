@@ -133,7 +133,7 @@
 
 												{/if}
 											{else}
-
+												Zones {$zone_count}
 												{* Validate the rest of the nodes *}
 												{if $zones.$zones_count.data_map.fullscreen.value}
 
@@ -162,7 +162,7 @@
 												{/if}												
 
 											{def $zones_count = $zones_count|inc(1)}	
-											Ökar {$zones_count}								
+																		
 										{/foreach}
 									</div>
 								</section>     
