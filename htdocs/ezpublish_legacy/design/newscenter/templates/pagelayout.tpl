@@ -203,9 +203,9 @@
 			{/if}
 
 			{* Main Content *}
-            <div class="{$menusettings.0.data_map.link_hover_color.data_text}">
-                {$module_result.content}
-            </div>
+			{* {$menusettings.0.data_map.link_hover_color.data_text} *}
+			{* Use this to get default link color in templates where it will be used *}
+            {$module_result.content}
 
 			{if and(is_set($object)|not, is_set($edit_version)|not)}				
 
