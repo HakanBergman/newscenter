@@ -107,7 +107,7 @@
 				{if $current_node_id|eq($#company.node_id)}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 0)), 'sort_by', array('attribute', true(), 'zone/priority') ))}
 						{if $zones}		
-							{def $zones_count = $zones_count|count()}
+							{def $zones_count = 0}
 								<section id="section-frontpage">
 									<div class="container-fluid">                                    
 										{foreach $zones as $zone}										
