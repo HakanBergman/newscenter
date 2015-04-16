@@ -133,7 +133,7 @@
 
 												{/if}
 											{else}
-												Zones {$zone_count}
+
 												{* Validate the rest of the nodes *}
 												{if $zones.$zones_count.data_map.fullscreen.value}
 
@@ -157,7 +157,7 @@
 													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 
 													{* Verify when this is our last node *}
-													Z {$zones_count} <-> {$zones|count()}
+													{if $zones_count|eq($zones|count()|dec(1))}{$zone.name}{/if}
 
 												{/if}												
 
