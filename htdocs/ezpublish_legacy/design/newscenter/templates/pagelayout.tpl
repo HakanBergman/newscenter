@@ -113,7 +113,7 @@
 									{if $zones.$number.data_map.fullscreen.value}
 										<div class="{$sitesettings.0.data_map.background_color.data_text}">
 											<div class="container">
-												{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+												{include uri="design:newscenter/zone/zone.tpl" zone=$zone.$number}
 											</div>
 										</div>
 									{else}
