@@ -157,15 +157,14 @@
 													{* Include our template *}
 													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 
-													{* Verify when this is our last node *}
-													{if $zones_count|eq($zones|count()|dec(1))} TESTAR {$zone.name}{/if}
+													{* Verify when this is our last node and end the div *}
+													{if $zones_count|eq($zones|count()|dec(1))}</div>{/if}
 
 												{/if}	
 											
 											{/if}											
 
 											{set $number = $number|sum(1)}
-											{$number} Number
 											{def $zones_count = $zones_count|inc(1)}	
 																		
 										{/foreach}
