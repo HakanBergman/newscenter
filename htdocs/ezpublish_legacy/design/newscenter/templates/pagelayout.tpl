@@ -161,7 +161,7 @@
 
 												{/if}												
 
-											{set $zones_count = $zones_count|sum(1)}									
+											{def $zones_count = $zones_count|sum(1)}									
 										{/foreach}
 									</div>
 								</section>     
