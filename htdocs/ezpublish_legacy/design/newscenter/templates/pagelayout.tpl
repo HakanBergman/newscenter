@@ -109,12 +109,16 @@
 						{if $zones}							
                             <section id="section-frontpage">
                                 <div class="container-fluid">                                    
-                                    {foreach $zones as $zone}
+                                    {foreach $zones as $zone}										
 										{if $zone.data_map.fullscreen.value|not}
-											{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+											{run-once}<div class="container">{/run-once}
+												{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+											{run-once}</div>{/run-once}
 										{else}
 											<div class="{$sitesettings.0.data_map.background_color.data_text}">
-												{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+												{run-once}<div class="container">{/run-once}
+													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+												{run-once}</div>{/run-once}
 											</div>
 										{/if}												
                                     {/foreach}
