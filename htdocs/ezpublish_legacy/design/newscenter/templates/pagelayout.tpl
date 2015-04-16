@@ -203,7 +203,7 @@
 			{/if}
 
 			{* Main Content *}
-            {$module_result.content}
+            {$module_result.content test="testar"}
 
 			{if and(is_set($object)|not, is_set($edit_version)|not)}				
 
