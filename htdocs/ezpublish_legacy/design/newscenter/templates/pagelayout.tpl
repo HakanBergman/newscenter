@@ -251,7 +251,7 @@
                         {/foreach}
                         {/if}
                         <div class="{$#company.data_map.footer_color.data_text}">&nbsp;</div>
-                        <div class="col-lg-12 nav-padding-bottom-4">
+                        <div class="col-lg-12 nav-padding-bottom-4 {$#company.data_map.text_color_footer.data_text}">
 							<div class="col-lg-12">
 								{'&copy; Copyright'|upfirst()} {currentdate()|datetime('custom', '%Y')} {$sitesettings.0.data_map.site_title.data_text|wash()}
 							</div>                            
