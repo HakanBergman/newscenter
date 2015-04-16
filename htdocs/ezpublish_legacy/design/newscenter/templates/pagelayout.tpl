@@ -111,10 +111,7 @@
 							{def $normal_zone = 0}
 								<section id="section-frontpage">
 									<div class="container-fluid">                                    
-										{foreach $zones as $zone}										
-											{* Fetch previos and next Zones *}
-											{def $previous_zone = $zones_count|dec(1)}
-											{def $next_zone = $zones_count|sum(1)}
+										{foreach $zones as $zone}																	
 
 											{* Verify what to do with our first node *}
 											{if $zones_count|eq(0)}
@@ -160,11 +157,9 @@
 													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 
 													{* Verify when this is our last node *}
-													{$zones_count} <-> {$zones|count()}
+													Z {$zones_count} <-> {$zones|count()}
 
 												{/if}												
-
-											
 
 											{set $zones_count = $zones_count|sum(1)}									
 										{/foreach}
