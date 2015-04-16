@@ -161,7 +161,8 @@
 
 												{/if}												
 
-											{def $zones_count = $zones_count|sum(1)}									
+											{def $zones_count = $zones_count|inc(1)}	
+											Ökar {$zones_count}								
 										{/foreach}
 									</div>
 								</section>     
