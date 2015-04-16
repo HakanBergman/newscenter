@@ -160,7 +160,7 @@
 													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 
 													{* Verify when this is our last node *}
-													{$zones_count} {$zones|count()}
+													{$zones_count} <-> {$zones|count()}
 
 												{/if}												
 
