@@ -1,4 +1,4 @@
-<header class="{$#company.data_map.background_color_menu.data_text}">
+<header>
   <div class="container-fluid">
     {* Top Navigation *}
     {include uri='design:newscenter/navigation/top-navigation.tpl'}
