@@ -1,5 +1,5 @@
 {def $menusettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('menu_settings'), 'limit', 1))}
-	{$menusettings.0.data_map.menu_plugin.content|attribute(show, 1)}
+	{$menusettings.0.data_map.menu_plugin.content.0|attribute(show, 1)}
   {switch match=$menusettings.0.data_map.menu_plugin.value.0}
     {case match=0}
       {include uri="design:newscenter/navigation/yammr/yammr.tpl" menusettings=$menusettings}
