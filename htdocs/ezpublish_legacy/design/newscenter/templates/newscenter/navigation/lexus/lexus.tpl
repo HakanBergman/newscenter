@@ -1,5 +1,5 @@
-﻿
-<div class=container-fluid {$menusettings.data_map.background_color_logotype.data_text}">
+
+<div class=container-fluid {$menusettings.0.data_map.background_color_logotype.data_text}">
 </div>
 <div class="ch-header">
     <div class="c-l-container-12 header-inner clearfix">
