@@ -1,5 +1,8 @@
 
-<div class=container-fluid {$menusettings.0.data_map.background_color_logotype.data_text}">
+<div class="{$menusettings.0.data_map.background_color_logotype.data_text}">
+    <div class="container">
+        {include uri="design:page_header_logo.tpl" menusettings=$menusettings}
+    </div>
 </div>
 <div class="ch-header">
     <div class="c-l-container-12 header-inner clearfix">
