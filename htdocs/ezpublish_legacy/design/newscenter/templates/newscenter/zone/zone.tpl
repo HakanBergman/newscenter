@@ -71,9 +71,10 @@
 												<input type="hidden" name="ContentObjectID" value="{$block.contentobject_id}">							
 												<button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
 											</form>
-										</div>									
-									</div>
+										</div>
+									</div>									
 								{/if}
+								asd
 								{include uri=$included_file block=$block}
 							{else}
 								<div class="{$#block_width} no-margin no-padding">
