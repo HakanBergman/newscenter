@@ -1,4 +1,4 @@
-﻿<div class="container">
+﻿<div class="container container-padding-bottom">
   <div class="content-edit">
     <form enctype="multipart/form-data" method="post" action={concat( "/content/edit/", $object.id="", "/", $edit_version="", "/", $edit_language|not|choose=""( concat=""( $edit_language="", "/" ), '' ) )|ezurl=''}>
 
@@ -111,26 +111,25 @@
 				</div>
 
 				{* Widget Priority *}
-
-                <div class="col-lg-12 no-margin no-padding clear">
-                  <div class="pull-left"><h3 class="clear">Widgetens prioritet</h3></div>
-                </div>
-
-                <p class="clear">Ange i vilken ordning widgets ska visas ut. Låg prioritet visas ut först, dvs 1, 2, 3, 4 osv.</p>
-
-                <div class="form-group">
-                  <label>Widget prioritet</label>
-                  <div>{attribute_edit_gui attribute=$object.data_map.priority}</div>
-                </div>
+				<div class="row">
+					<div class="container">
+						<h3 class="clear">Widgetens prioritet</h3>
+						 <p class="clear">Ange i vilken ordning widgets ska visas ut. Låg prioritet visas ut först, dvs 1, 2, 3, 4 osv.</p>
+						<div class="col-lg-12">{attribute_edit_gui attribute=$object.data_map.priority}</div>
+					</div>
+				</div>
 
                 {* Save Settings *}
-
-                <div class="buttonblock pull-right container-padding-top-2 clear">
-                  <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
-                  <button type="submit" name="DiscardButton" class="btn btn-default">Avbryt</button>
-                  <input type="hidden" name="DiscardConfirm" value="0" />
-                  <input type="hidden" name="MainNodeID" value="{$main_node_id}" />
-                </div>
+				<div class="row">
+					<div class="container">
+						<div class="buttonblock pull-right container-padding-top-2 clear">
+						  <button type="submit" name="PublishButton" class="btn btn-primary">Spara ändringar</button>
+						  <button type="submit" name="DiscardButton" class="btn btn-default">Avbryt</button>
+						  <input type="hidden" name="DiscardConfirm" value="0" />
+						  <input type="hidden" name="MainNodeID" value="{$main_node_id}" />
+						</div>
+					</div>
+				</div>
 
               </div>
             </article>
