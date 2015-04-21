@@ -1,7 +1,6 @@
 ﻿$(document).ready(function () {
     $('.slidedown').on('click', function (e) {
         e.preventDefault();
-        alert(current_slider_id);
 
         $('.' + $(this).attr('data-reset') + ' a').each(function() {
             $(this).hide();
