@@ -1,8 +1,9 @@
+asd
 {* Fetch the correct Zone Size and store it in a global variable *}
 {include uri="design:newscenter/zone/zone_size.tpl" zone=$zone}
 
 	{* Print the Zone *}
-			asd
+			
 			<div class="{$#zone_width} no-margin no-padding{if $zone.data_map.background_color.has_content} {$zone.data_map.background_color.data_text}{/if}">
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					<div class="admin-panel container-padding-top hide">
