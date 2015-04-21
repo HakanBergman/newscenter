@@ -3,8 +3,8 @@
         e.preventDefault();
 
         $('.' + $(this).attr('data-reset') + ' a').each(function() { $(this).removeClass('active'); });
-        $('.' + $(this).attr('data-reset') + ' a .glyphicon-menu-down').each(function () { $(this).hide(); });
-        $('.' + $(this).attr('data-reset') + ' a .glyphicon-menu-up').each(function () { $(this).show(); });
+        $('.' + $(this).attr('data-reset') + ' a .glyphicon-menu-down').each(function () { $(this).show(); });
+        $('.' + $(this).attr('data-reset') + ' a .glyphicon-menu-up').each(function () { $(this).hide(); });
 
         if ($('.'+$(this).attr('id')).css('display') == 'none') {
             $('.' + $(this).attr('id')).slideDown('fast');
