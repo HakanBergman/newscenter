@@ -9,7 +9,7 @@
                   <div class="navbar no-margin no-padding">
                     <ul class="nav navbar-nav no-padding"> 
                         {foreach $menu_items as $item}
-                            <li>
+                            <li class="{$menusettings.0.data_map.background_color_logotype.data_text}">
                                 <a href="{$item.url|ezurl('no', 'full')}">{$item.name|wash()}</a>
                             </li>                
                         {/foreach}
