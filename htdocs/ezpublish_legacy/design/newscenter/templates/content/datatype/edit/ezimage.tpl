@@ -4,7 +4,7 @@
 		{* Current Image *}
 		<div class="col-lg-12 no-margin no-padding container-padding-top container-padding-left container-padding-bottom clear">
 			{if $attribute_content.original.is_valid}
-				<div class="col-lg-12">
+				<div class="col-lg-12 no-padding no-margin clear">
 					<div class="pull-left">
 						{attribute_view_gui image_class=ezini( 'ImageSettings', 'DefaultEditAlias', 'content.ini' ) attribute=$attribute}
 					</div>
@@ -13,18 +13,18 @@
 					</div>
 				</div>
 				{* Alternative image text. *}
-				<div class="col-lg-12">
+				<div class="col-lg-12 no-padding no-margin clear">
 					<label for="logo-text">Bildtext (Bör anges, tex företagsnamnet).</label>
 					<input id="logo-text" name="{$attribute_base}_data_imagealttext_{$attribute.id}" value="{$attribute_content.alternative_text|wash(xhtml)}" type="text" class="form-control" placeholder="Ange bildtext. Tex företagets namn, fotografens namn eller platsen den är tagen." />
 				</div>
 			{else}
 				<p class="clear">Ingen bild har laddats upp</p>
 				{* New image file for upload. *}
-				<div class="col-lg-12">
+				<div class="col-lg-12 no-margin no-padding clear">
 					<input type="hidden" name="MAX_FILE_SIZE" value="{$attribute.contentclass_attribute.data_int1|mul( 1024, 1024 )}" />
 					<input class="btn btn-info text-color-black font-weight-normal" name="{$attribute_base}_data_imagename_{$attribute.id}" type="file" />
 				</div>
-				<div class="col-lg-12 container-padding-top">
+				<div class="col-lg-12 no-margin no-padding container-padding-top´clear">
 					<input id="logo-text" name="{$attribute_base}_data_imagealttext_{$attribute.id}" value="{$attribute_content.alternative_text|wash(xhtml)}" type="text" class="form-control" placeholder="Ange bildtext. Tex företagets namn, fotografens namn eller platsen den är tagen." />
 				</div>
 			{/if}
