@@ -17,7 +17,7 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
-					<div class="min-height-108"><span class="glyphicon glyphicon-info-sign text-color-black"></span> {$#company.name|wash()}</div>				
+					<div class="min-height-108"><span class="glyphicon glyphicon-info-sign text-color-black"></span> <a href="/" title="{$#company.name|wash()}">{$#company.name|wash()}</a></div>				
 					<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-11-em">
 						<hr class="no-margin no-padding container-padding-top" />
 						<div class="edit container-padding-left-2 container-padding-top-05">
