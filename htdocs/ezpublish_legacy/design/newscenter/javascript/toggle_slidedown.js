@@ -3,7 +3,7 @@
         e.preventDefault();
 
         $('.' + $(this).attr('data-reset') + ' a').each(function() {
-            $(this).hide();
+            $(this).removeClass('active');
         });
 
         if ($('.'+$(this).attr('data-href')).css('display') == 'none') {
