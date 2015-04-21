@@ -25,7 +25,17 @@
       <div class="navbar no-min-height no-margin no-padding">
         <ul class="nav navbar-nav no-padding col-lg-12 font-family-open-sans font-size-24-px">
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
+            <a class="nav-padding-lexus no-background hover slidedown" href="#modeller" data-href="menu-slider">
+              <div class="pull-left font-weight-200">
+                Modeller
+              </div>
+              <div class="pull-right font-weight-200">
+                <span class="glyphicon glyphicon-menu-down"></span>
+              </div>
+            </a>
+          </li>
+          <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
+            <a class="nav-padding-lexus no-background hover slidedown" href="#tjaenstebilar" data-href="menu-slider">
               <div class="pull-left font-weight-200">
                 Tjänstebilar
               </div>
@@ -35,19 +45,9 @@
             </a>
           </li>
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
+            <a class="nav-padding-lexus no-background hover slidedown" href="#begagnat" data-href="menu-slider">
               <div class="pull-left font-weight-200">
-                Nya bilar
-              </div>
-              <div class="pull-right font-weight-200">
-                <span class="glyphicon glyphicon-menu-down"></span>
-              </div>
-            </a>
-          </li>
-          <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
-              <div class="pull-left font-weight-200">
-                Bilar i lager
+                Begagnade bilar
               </div>
               <div class="pull-right font-weight-200">
                 <span class="glyphicon glyphicon-menu-down"></span>
@@ -60,7 +60,7 @@
   </div>
 </div>
 
-<div class="{$menusettings.0.data_map.background_color.data_text} container-margin-bottom-1-px container-margin-top-1-px navigation-box hide-unimportent">
+<div class="{$menusettings.0.data_map.background_color.data_text} container-margin-bottom-1-px container-margin-top-1-px navigation-box hide-unimportent menu-slidedown">
   <div class="container">
     asdasd
   </div>
