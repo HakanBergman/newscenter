@@ -23,9 +23,9 @@
   <div class="container">
     <nav role="product_navigation" class="link-color-black {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case">
       <div class="navbar no-min-height no-margin no-padding">
-        <ul class="nav navbar-nav no-padding col-lg-12 font-family-open-sans font-size-24-px">
+        <ul class="nav nav-slidedown navbar-nav no-padding col-lg-12 font-family-open-sans font-size-24-px">
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover slidedown" href="#modeller" id="modeller" data-href="menu-slidedown">
+            <a class="nav-padding-lexus no-background hover slidedown" href="#modeller" id="modeller" data-href="menu-slidedown" data-reset="nav-slidedown">
               <div class="pull-left font-weight-200">
                 Bilmodeller
               </div>
@@ -36,7 +36,7 @@
             </a>
           </li>
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover slidedown" href="#tjaenstebilar" id="tjaenstebilar" data-href="menu-slidedown">
+            <a class="nav-padding-lexus no-background hover slidedown" href="#tjaenstebilar" id="tjaenstebilar" data-href="menu-slidedown" data-reset="nav-slidedown">
               <div class="pull-left font-weight-200">
                 Tjänstebilar
               </div>
@@ -47,7 +47,7 @@
             </a>
           </li>
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover slidedown" href="#begagnat" id="begagnat" data-href="menu-slidedown">
+            <a class="nav-padding-lexus no-background hover slidedown" href="#begagnat" id="begagnat" data-href="menu-slidedown" data-reset="nav-slidedown">
               <div class="pull-left font-weight-200">
                 Begagnade bilar
               </div>
