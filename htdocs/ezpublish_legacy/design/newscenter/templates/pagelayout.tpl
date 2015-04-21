@@ -122,7 +122,7 @@
 
 													{* Full screen Zone *}
 													<div class="{$sitesettings.0.data_map.background_color.data_text}">
-														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+														{*include uri="design:newscenter/zone/zone.tpl" zone=$zone*}
 													</div>
 
 												{else}
