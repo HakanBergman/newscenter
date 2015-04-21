@@ -28,7 +28,7 @@
 <script type="text/javascript">
 	{literal}
 		$(document).ready(function() {
-			$('#slides').superslides({ hashchange: true; });
+			$('#slides').superslides({ hashchange: true });
 		});
 	{/literal}
 </script>
