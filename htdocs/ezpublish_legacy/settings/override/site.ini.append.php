@@ -123,7 +123,6 @@ UserGroupClassID=3
 UserClassGroupID=2
 UserCreatorID=14
 HashType=md5_site
-SiteName=newscenter.datadelenhc.se
 UpdateHash=true
 AuthenticateMatch=login;email
 RequireUniqueEmail=true
@@ -216,7 +215,7 @@ PolicyOmitList[]=manual
 PolicyOmitList[]=oauth/authorize
 ShowAccessDeniedReason=disabled
 
-DesignLocationCache=enabled
+DesignLocationCache=disabled
 
 [FileSettings]
 TemporaryDir=/tmp/
@@ -231,18 +230,18 @@ DirDepth=3
 Debug=disabled
 ShowXHTMLCode=disabled
 ShowMethodDebug=disabled
-ShowUsedTemplates=enabled
+ShowUsedTemplates=disabled
 NodeTreeCaching=disabled
 TemplateCompile=disabled
 TemplateOptimization=disabled
 UseFormatting=disabled
-TemplateCache=enabled
+TemplateCache=disabled
 DelayedCacheBlockCleanup=enabled
 TemplateCompression=enabled
 DevelopmentMode=disabled
 
 [ContentSettings]
-ViewCaching=enabled
+ViewCaching=disabled
 CachedViewModes=full;sitemap;pdf
 EditDirtyObjectAction=usecurrent
 
