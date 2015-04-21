@@ -27,16 +27,6 @@
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
             <a class="nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
               <div class="pull-left font-weight-200">
-                Begagnade bilar
-              </div>
-              <div class="pull-right font-weight-200">
-                <span class="glyphicon glyphicon-menu-down"></span>
-              </div>
-            </a>
-          </li>
-          <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
-              <div class="pull-left font-weight-200">
                 Tjänstebilar
               </div>
               <div class="pull-right font-weight-200">
@@ -48,6 +38,16 @@
             <a class="nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
               <div class="pull-left font-weight-200">
                 Nya bilar
+              </div>
+              <div class="pull-right font-weight-200">
+                <span class="glyphicon glyphicon-menu-down"></span>
+              </div>
+            </a>
+          </li>
+          <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
+            <a class="nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
+              <div class="pull-left font-weight-200">
+                Bilar i lager
               </div>
               <div class="pull-right font-weight-200">
                 <span class="glyphicon glyphicon-menu-down"></span>
