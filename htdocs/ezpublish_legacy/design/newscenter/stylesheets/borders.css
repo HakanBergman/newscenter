@@ -1,6 +1,7 @@
 /* Borders */
 .border-solid-white { border: 1px solid #fff; }
 .border-solid-black { border: 1px solid #000; }
+.border-lexus { border-right: 1px solid #DDD;   border-left: 1px solid #DDD; }
 
 /* Bottom Borders */
 .bottom-border-solid-black { border-bottom: 0.2em solid #000; }
