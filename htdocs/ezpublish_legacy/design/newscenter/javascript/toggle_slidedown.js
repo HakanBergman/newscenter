@@ -1,20 +1,9 @@
 ﻿$(document).ready(function () {
     $('.slidedown').on('click', function (e) {
         e.preventDefault();
-        if ($($(this).attr('data-href')).is(":hidden")) {
-            $('.' + $(this).attr('data-href')).slideUp('slow');
-            alert('test');
-        } else {
-            $('.'+$(this).attr('data-href')).slideDown('slow');
+        slidedown_target = $(this).attr('data-href');
+        if ($('slidedown_target').css('display') == 'none') {
+            $('.' + $(this).attr('data-href')).slideDown('slow');
         }
-
-        /*
-        if $($(this).attr('data-href')).is(":hidden")) {
-            alert('hit');
-            $($(this).attr('data-href')).slideDown("slow");
-        } else {
-            $($(this).attr('data-href')).slideUp('slow');
-        }
-        */
     });
 });
