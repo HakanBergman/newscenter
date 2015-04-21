@@ -120,6 +120,12 @@ MatchFile=full/widget_image_list_slider.tpl
 Subdir=templates
 Match[class_identifier]=widget_image_list_slider
 
+[edit_widget_superslides]
+Source=content/edit.tpl
+MatchFile=edit/widget_superslides.tpl
+Subdir=templates
+Match[class_identifier]=widget_superslides
+
 [edit_contact]
 Source=content/edit.tpl
 MatchFile=edit/contact.tpl
