@@ -1,4 +1,4 @@
-<div class="{$menusettings.0.data_map.background_color_logotype.data_text} {$menusettings.0.data_map.background_color.data_text} navigation-box">
+<div class="{$menusettings.0.data_map.background_color_logotype.data_text} navigation-box">
     <div class="container">
         {include uri="design:page_header_logo.tpl" menusettings=$menusettings height="max-height-1-em" width="1"}
         <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 container-padding-left-4">
