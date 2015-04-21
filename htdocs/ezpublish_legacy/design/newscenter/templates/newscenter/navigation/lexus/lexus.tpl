@@ -31,6 +31,7 @@
               </div>
               <div class="pull-right font-weight-200">
                 <span class="glyphicon glyphicon-menu-down"></span>
+                <span class="glyphicon glyphicon-menu-up"></span>
               </div>
             </a>
           </li>
