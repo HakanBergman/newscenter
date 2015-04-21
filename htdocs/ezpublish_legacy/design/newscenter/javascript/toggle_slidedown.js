@@ -1,8 +1,9 @@
 ﻿$(document).ready(function () {
     $('.slidedown').on('click', function (e) {
         e.preventDefault();
-        if ($($(this).attr('data-href')).is(":visible")) {
+        if ($($(this).attr('data-href')).is(":hidden")) {
             $('.' + $(this).attr('data-href')).slideUp('slow');
+            alert('test');
         } else {
             $('.'+$(this).attr('data-href')).slideDown('slow');
         }
