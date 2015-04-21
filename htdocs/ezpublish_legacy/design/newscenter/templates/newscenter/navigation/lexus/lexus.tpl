@@ -24,7 +24,7 @@
       <div class="navbar no-margin no-padding">
         <ul class="nav navbar-nav no-padding">
               <li>
-                <a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">{$item.name|wash()}</a>
+                <a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">En länk</a>
               </li>
         </ul>
         <ul class="primary c-l-container-12 clearfix" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
