@@ -25,33 +25,35 @@
       <div class="navbar no-min-height no-margin no-padding">
         <ul class="nav navbar-nav no-padding col-lg-12 font-family-open-sans font-size-24-px">
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover slidedown" href="#modeller" data-href="menu-slidedown" id="modeller">
+            <a class="nav-padding-lexus no-background hover slidedown" href="#modeller" id="modeller" data-href="menu-slidedown">
               <div class="pull-left font-weight-200">
                 Modeller
               </div>
               <div class="pull-right font-weight-200">
                 <span class="glyphicon glyphicon-menu-down"></span>
-                <span class="glyphicon glyphicon-menu-up"></span>
+                <span class="glyphicon glyphicon-menu-up hide"></span>
               </div>
             </a>
           </li>
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover slidedown" href="#tjaenstebilar" data-href="menu-slidedown">
+            <a class="nav-padding-lexus no-background hover slidedown" href="#tjaenstebilar" id="tjaenstebilar" data-href="menu-slidedown">
               <div class="pull-left font-weight-200">
                 Tjänstebilar
               </div>
               <div class="pull-right font-weight-200">
                 <span class="glyphicon glyphicon-menu-down"></span>
+                <span class="glyphicon glyphicon-menu-up hide"></span>
               </div>
             </a>
           </li>
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover slidedown" href="#begagnat" data-href="menu-slidedown">
+            <a class="nav-padding-lexus no-background hover slidedown" href="#begagnat" id="begagnat" data-href="menu-slidedown">
               <div class="pull-left font-weight-200">
                 Begagnade bilar
               </div>
               <div class="pull-right font-weight-200">
                 <span class="glyphicon glyphicon-menu-down"></span>
+                <span class="glyphicon glyphicon-menu-up hide"></span>
               </div>
             </a>
           </li>
