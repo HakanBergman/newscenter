@@ -74,7 +74,7 @@
 										</div>
 									</div>									
 								{/if}											
-								{*include uri=$included_file block=$block*}
+								{include uri=$included_file block=$block}
 							{else}
 								<div class="{$#block_width} no-margin no-padding">
 									{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
