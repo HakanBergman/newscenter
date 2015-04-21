@@ -52,6 +52,7 @@
 					{foreach $blocks as $block}
 
 						{* Fetch the correct Block Size and store it in a global variable *}
+						asd
 						{include uri="design:newscenter/zone/zone_size.tpl" block=$block}
 
 						{def $included_file = concat('design:newscenter/widget/', $block.class_identifier, '.tpl')}
@@ -73,8 +74,7 @@
 											</form>
 										</div>
 									</div>									
-								{/if}	
-								asd							
+								{/if}											
 								{*include uri=$included_file block=$block*}
 							{else}
 								<div class="{$#block_width} no-margin no-padding">
