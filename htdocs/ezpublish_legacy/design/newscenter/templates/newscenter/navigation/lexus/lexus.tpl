@@ -23,29 +23,16 @@
     <nav role="product_navigation" class="{$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text}">
       <div class="navbar no-margin no-padding">
         <ul class="nav navbar-nav no-padding">
-              <li>
-                <a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">En länk</a>
-              </li>
-        </ul>
-        <ul class="primary c-l-container-12 clearfix" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
-          <li class="flush-grid-4 loaded">
-            <noscript>
-              &lt;a itemprop="url" data-id="CarModels_Top" href="/_nav/model-menu.tmex" class="no-js-links" target=""&gt;LEXUS MODELLER&lt;/a&gt;
-            </noscript>
-            <a data-id="CarModels_Top" href="/_nav/model-menu.tmex" data-href="/_nav/model-menu.tmex" class="js-links" target="" style="height: 34px;">LEXUS MODELLER</a>
+          <li>
+            <div class="col-lg-4">
+              <a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">En länk</a>
+            </div>
           </li>
-          <li class="flush-grid-4 loaded">
-            <noscript>
-              &lt;a itemprop="url" data-id="Tjanstebilar_Top" href="/_nav/tjanstebilar-menu.tmex" class="no-js-links" target=""&gt;TJÄNSTEBILAR&lt;/a&gt;
-            </noscript>
-            <a data-id="Tjanstebilar_Top" href="/_nav/tjanstebilar-menu.tmex" data-href="/_nav/tjanstebilar-menu.tmex" class="js-links" target="" style="height: 34px;">TJÄNSTEBILAR</a>
-          </li>
-          <li class="flush-grid-4 loaded">
-            <noscript>
-              &lt;a itemprop="url" data-id="WorldOfLexus_Top" href="/_nav/main-menu.tmex" class="no-js-links" target=""&gt;LEXUS VÄRLD&lt;/a&gt;
-            </noscript>
-            <a data-id="WorldOfLexus_Top" href="/_nav/main-menu.tmex" data-href="/_nav/main-menu.tmex" class="js-links" target="" style="height: 34px;">LEXUS VÄRLD</a>
-          </li>
+          <li>
+            <div class="col-lg-4">
+              <a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">En länk</a>
+            </div>
+          </li>          
         </ul>
       </div>
     </nav>    
