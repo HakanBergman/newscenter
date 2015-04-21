@@ -26,7 +26,7 @@
         <ul class="nav nav-slidedown navbar-nav no-padding col-lg-12 font-family-open-sans font-size-24-px">
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
             <a class="nav-padding-lexus no-background hover slidedown" href="#modeller" id="modeller" data-href="menu-slidedown" data-reset="nav-slidedown">
-              <div class="pull-left font-weight-200">
+              <div class="pull-left font-weight-200 container-padding-left">
                 Bilmodeller
               </div>
               <div class="pull-right font-weight-200">
@@ -37,10 +37,10 @@
           </li>
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
             <a class="nav-padding-lexus no-background hover slidedown" href="#tjaenstebilar" id="tjaenstebilar" data-href="menu-slidedown" data-reset="nav-slidedown">
-              <div class="pull-left font-weight-200">
+              <div class="pull-left font-weight-200 container-padding-left">
                 Tjänstebilar
               </div>
-              <div class="pull-right font-weight-200">
+              <div class="pull-right font-weight-200 container-padding-left">
                 <span class="glyphicon glyphicon-menu-down"></span>
                 <span class="glyphicon glyphicon-menu-up hide-unimportent"></span>
               </div>
