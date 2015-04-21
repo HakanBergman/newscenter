@@ -36,7 +36,7 @@
 
 						<label>Bild 1</label>
 						<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
-						<div class="col-lg-12 container-margin-left container-padding-right-3">
+						<div class="col-lg-12 no-margin no-padding">
 							<label>Bildtext:</label>
 							<div>{attribute_edit_gui attribute=$object.data_map.image_caption_one}</div>
 						</div>
