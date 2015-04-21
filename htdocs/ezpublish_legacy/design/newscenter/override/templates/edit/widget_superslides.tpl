@@ -116,16 +116,17 @@
 
 
 				{* Widget Size *}
-
-                <div class="col-lg-12 no-margin no-padding clear">
-                  <div class="pull-left"><h3 class="clear">Widgetens storlek</h3></div>
-                </div>
-
-                <p class="clear">Ange hur stor procent av sidan som zonen ska ta upp (default är 100%).</p>
+				<div class="row">
+					<div class="container">
+						<h3 class="clear">Widgetens storlek</h3>
+						<p class="clear">Ange hur stor procent av sidan som zonen ska ta upp (default är 100%).</p>
+						<div class="col-lg-12">	{attribute_edit_gui attribute=$object.data_map.widget_size}</div>
+					</div>
+				</div>
 
                 <div class="form-group">
                   <label>Widgetens storlek</label>
-                  <div>{attribute_edit_gui attribute=$object.data_map.widget_size}</div>
+                  <div></div>
                 </div>
 
 				{* Widget Priority *}
