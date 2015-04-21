@@ -11,6 +11,7 @@
             $('#' + $(this).attr('id') + ' .glyphicon-menu-down').hide();
             $('#' + $(this).attr('id') + ' .glyphicon-menu-up').show();
             $($(this)).addClass('active');
+            $($(this)).parent().addClass('bg-white');
         } else {
             $('.' + $(this).attr('id')).slideUp('fast');
             $('#' + $(this).attr('id') + ' .glyphicon-menu-up').hide();
