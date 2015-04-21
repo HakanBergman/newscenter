@@ -129,6 +129,7 @@
 
 													{* Normal Zone *}
 													<div class="container">
+														asd2
 														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 													{set $normal_zone = 1}
 
