@@ -17,7 +17,6 @@ ActiveExtensions[]=ezprestapiprovider
 ActiveExtensions[]=ezmultiupload
 ActiveExtensions[]=eztags
 ActiveExtensions[]=ezautosave
-ActiveExtensions[]=dhc
 
 [DatabaseSettings]
 DatabaseImplementation=ezmysqli
