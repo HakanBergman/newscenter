@@ -167,6 +167,7 @@ AvailableSiteAccessList[]=newscenter.drumedar.net
 AvailableSiteAccessList[]=www.maltimportoren.se
 AvailableSiteAccessList[]=www.datadelen.com
 AvailableSiteAccessList[]=webbcenter.datadelenhc.se
+AvailableSiteAccessList[]=demo.datadelenhc.com
 AvailableSiteAccessList[]=ezdemo_site_clean_admin
 
 # A list of related siteaccesses sharing the same database
@@ -174,6 +175,7 @@ RelatedSiteAccessList[]
 RelatedSiteAccessList[]=ezdemo_site_clean_admin
 RelatedSiteAccessList[]=newscenter.drumedar.net
 RelatedSiteAccessList[]=webbcenter.datadelenhc.se
+RelatedSiteAccessList[]=demo.datadelenhc.com
 RelatedSiteAccessList[]=www.maltimportoren.se
 RelatedSiteAccessList[]=www.datadelen.com
 
@@ -193,6 +195,7 @@ HostMatchRegexpItem=1
 
 HostMatchMapItems[]=maltimportoren.datadelenhc.com;www.maltimportoren.se
 HostMatchMapItems[]=webbcenter.datadelenhc.se;webbcenter.datadelenhc.se
+HostMatchMapItems[]=demo.datadelenhc.com;demo.datadelenhc.com
 HostMatchMapItems[]=maltimportoren.se;www.maltimportoren.se
 HostMatchMapItems[]=www.maltimportoren.se;www.maltimportoren.se
 HostMatchMapItems[]=datadelen.datadelenhc.com;www.datadelen.com
