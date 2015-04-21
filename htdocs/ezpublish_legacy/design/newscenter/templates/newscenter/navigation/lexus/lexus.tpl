@@ -21,8 +21,8 @@
 <div class="{$menusettings.0.data_map.background_color.data_text} navigation-box">
   <div class="container">
     <nav role="product_navigation" class="{$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text}">
-      <div class="navbar no-margin no-padding">
-        <ul class="nav navbar-nav no-min-height no-padding col-lg-12 font-family-nobel-light font-size-24-px">
+      <div class="navbar no-min-height no-margin no-padding">
+        <ul class="nav navbar-nav no-padding col-lg-12 font-family-nobel-light font-size-24-px">
           <li class="col-lg-4 no-padding no-margin border-lexus">
             <a class="font-size-nav-link font-weight-bold nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
               <div class="pull-left">
