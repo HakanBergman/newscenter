@@ -5,7 +5,7 @@
         if ($($(this).attr('data-href')).is(":visible")) {
             alert('test');
         } else {
-            alert('not visible');
+            $($(this).attr('data-href')).slideDown('slow');
         }
 
         /*
