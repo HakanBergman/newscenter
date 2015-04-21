@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-lg-12 container-padding-left-4 container-padding-right-4">
             <article>
-			  {if $object.name|wash()|eq('Ny Block - Facebook')}<h1>{$object.name|wash()}</h1>{else}<h1>Standard Zon - {$object.name|wash()}</h1>{/if}
+			  {if $object.name|wash()|eq('Ny Block - Superslides')}<h1>{$object.name|wash()}</h1>{else}<h1>Standard Zon - {$object.name|wash()}</h1>{/if}
               <h2>Widget</h2>
               <div class="form container-padding-left-2">
                                 
@@ -33,10 +33,10 @@
                 <div class="form-group container-padding-bottom container-padding-top clear">
 					<label>Bild 1</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
-          <div class="col-lg-12 container-margin-left container-padding-right-3">
-            <label>Kort beskrivning av bilden:</label>
-            <div>{attribute_edit_gui attribute=$object.data_map.image_caption_one}</div>
-          </div>
+					<div class="col-lg-12 container-margin-left container-padding-right-3">
+						<label>Kort beskrivning av bilden:</label>
+						<div>{attribute_edit_gui attribute=$object.data_map.image_caption_one}</div>
+					</div>
 					<div class="col-lg-12 container-padding-left-4 container-padding-top">
 						<p>Ange en länk om bilden ska länka till annat innehåll. Ingen länk behöver anges men måste börja på http:// eller https:// om den anges.</p>
 						<div>{attribute_edit_gui attribute=$object.data_map.link_one}</div>			
@@ -60,7 +60,19 @@
 					<div>{attribute_edit_gui attribute=$object.data_map.image_two}</div>
 					<div class="col-lg-12 container-padding-left-4 container-padding-top">
 						<p>Ange en länk om bilden ska länka till annat innehåll. Ingen länk behöver anges men måste börja på http:// eller https:// om den anges.</p>
-						<div>{attribute_edit_gui attribute=$object.data_map.link_two}</div>						
+						<div>{attribute_edit_gui attribute=$object.data_map.link_two}</div>	
+						
+						<div class="form-group">                  
+							<div class="col-lg-12">
+								<div class="pull-left">
+									<label>Kryssa i rutan om den angivna länken ska öppnas i ett nytt fönster:</label>
+								</div>
+								<div class="pull-right">
+									{attribute_edit_gui attribute=$object.data_map.new_window_two}</div>
+								</div>
+							</div>
+						</div>						
+											
 					</div>
                 </div>
 
