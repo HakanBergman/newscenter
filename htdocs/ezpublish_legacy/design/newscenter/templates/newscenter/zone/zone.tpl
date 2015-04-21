@@ -2,7 +2,7 @@
 {include uri="design:newscenter/zone/zone_size.tpl" zone=$zone}
 
 	{* Print the Zone *}
-			
+			asd
 			<div class="{$#zone_width} no-margin no-padding{if $zone.data_map.background_color.has_content} {$zone.data_map.background_color.data_text}{/if}">
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					<div class="admin-panel container-padding-top hide">
@@ -51,8 +51,7 @@
 				{if $blocks}
 					{foreach $blocks as $block}
 
-						{* Fetch the correct Block Size and store it in a global variable *}
-						asd
+						{* Fetch the correct Block Size and store it in a global variable *}						
 						{include uri="design:newscenter/zone/zone_size.tpl" block=$block}
 
 						{def $included_file = concat('design:newscenter/widget/', $block.class_identifier, '.tpl')}
