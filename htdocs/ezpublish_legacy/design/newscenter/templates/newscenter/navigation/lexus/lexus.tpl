@@ -22,17 +22,13 @@
   <div class="container">
     <nav role="product_navigation" class="{$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text}">
       <div class="navbar no-margin no-padding">
-        <ul class="nav navbar-nav no-padding">
-          <li>
-            <div class="col-lg-4">
+        <ul class="nav navbar-nav no-padding col-lg-12">
+          <li class="col-lg-4">
               <a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">En länk</a>
-            </div>
-          </li>
-          <li>
-            <div class="col-lg-4">
+          </li>  
+          <li class="col-lg-4">
               <a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">En länk</a>
-            </div>
-          </li>          
+          </li>           
         </ul>
       </div>
     </nav>    
