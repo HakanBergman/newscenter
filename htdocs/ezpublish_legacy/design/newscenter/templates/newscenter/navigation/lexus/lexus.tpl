@@ -43,6 +43,16 @@
               </div>
             </a>
           </li>
+          <li class="col-lg-4">
+            <a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">
+              <div class="pull-left">
+                En länk
+              </div>
+              <div class="pull-right">
+                <span class="glyphicon glyphicon-menu-down"></span>
+              </div>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>    
