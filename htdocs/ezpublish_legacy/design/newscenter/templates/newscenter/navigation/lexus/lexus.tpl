@@ -63,7 +63,7 @@
   </div>
 </div>
 
-<div class="{$menusettings.0.data_map.background_color.data_text} container-margin-bottom-1-px container-margin-top-1-px navigation-box hide-unimportent menu-slidedown">
+<div class="{$menusettings.0.data_map.background_color.data_text} container-margin-bottom-1-px container-margin-top-1-px navigation-box hide-unimportent modeller">
   <div class="container">
     asdasd
   </div>
