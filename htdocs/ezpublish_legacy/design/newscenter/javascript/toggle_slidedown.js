@@ -4,7 +4,7 @@
 
         $('.' + $(this).attr('data-reset') + ' a').each(function() { $(this).removeClass('active'); });
         $('.' + $(this).attr('data-reset') + ' a .glyphicon-menu-down').each(function () { $(this).removeClass('hide'); });
-        $('.' + $(this).attr('data-reset') + ' a .glyphicon-menu-down').each(function () { $(this).addClass('show'); });
+        $('.' + $(this).attr('data-reset') + ' a .glyphicon-menu-up').each(function () { $(this).addClass('show'); });
 
         if ($('.'+$(this).attr('id')).css('display') == 'none') {
             $('.' + $(this).attr('id')).slideDown('fast');
