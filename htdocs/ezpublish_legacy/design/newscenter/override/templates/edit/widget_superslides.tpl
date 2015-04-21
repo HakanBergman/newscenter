@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-lg-12 container-padding-left-4 container-padding-right-4">
             <article>
-			  {if $object.name|wash()|eq('Ny Block - Superslides')}<h1>{$object.name|wash()}</h1>{else}<h1>Standard Zon - {$object.name|wash()}</h1>{/if}
+			  <h1>{$object.name|wash()}</h1>
               <h2>Widget</h2>
               <div class="form container-padding-left-2">
                                 
