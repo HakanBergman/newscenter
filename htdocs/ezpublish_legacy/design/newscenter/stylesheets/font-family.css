@@ -1,12 +1,4 @@
-﻿@font-face {
-  font-family: "NobelWGLLight";
-  src: url("../fonts/nobel-light.ttf") format("truetype"),
-       url("../fonts/nobel-light.ttf") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
-
-.font-family-arial { font-family: Arial, Helvetica, sans-serif; }
+﻿.font-family-arial { font-family: Arial, Helvetica, sans-serif; }
 .font-family-bookman-old { font-family: "Bookman-old", serif; }
 .font-family-comic-sans { font-family: "Comic Sans MS", cursive, sans-serif; }
 .font-family-georgia { font-family: "Georgia", serif; }
@@ -15,3 +7,4 @@
 .font-family-palatino { font-family: "Palatino Linotype", "Book Antiqua", "Palatino", serif; }
 .font-family-verdana { font-family: Verdana, Geneva, sans-serif; }
 .font-family-nobel-light { font-family: Nobel Light; }
+.font-family-open-sans { font-family: 'Open Sans', sans-serif; }
