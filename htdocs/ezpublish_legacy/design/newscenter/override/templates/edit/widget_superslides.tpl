@@ -45,12 +45,10 @@
 							<p>Ange en länk om bilden ska länka till annat innehåll. Ingen länk behöver anges men måste börja på http:// eller https:// om den anges.</p>
 							<div>{attribute_edit_gui attribute=$object.data_map.link_one}</div>												
 							<div class="col-lg-12 no-padding no-margin clear">
-								<label>Kryssa i rutan om den angivna länken ska öppnas i ett nytt fönster:</label>
-								{attribute_edit_gui attribute=$object.data_map.new_window_one}
+								<div class="col-lg-9"><label>Kryssa i rutan om den angivna länken ska öppnas i ett nytt fönster:</label></div>
+								<div class="col-lg-3">{attribute_edit_gui attribute=$object.data_map.new_window_one}</div>
 							</div>
 						</div>
-
-						test
 
 						<label>Bild 1</label>
 						<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
