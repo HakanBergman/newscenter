@@ -8,9 +8,7 @@
                     <div class="navbar no-margin no-padding">
                         <ul class="nav navbar-nav no-padding"> 
                             {foreach $menu_items as $item}
-                                <li>
-                                    <a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">{$item.name|wash()}</a>
-                                </li>                
+                                <li><a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">{$item.name|wash()}</a></li>                
                             {/foreach}
                         </ul>
                     </div>
@@ -24,6 +22,11 @@
   <div class="container">
     <nav role="product_navigation" class="{$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text}">
       <div class="navbar no-margin no-padding">
+        <ul class="nav navbar-nav no-padding">
+              <li>
+                <a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">{$item.name|wash()}</a>
+              </li>
+        </ul>
         <ul class="primary c-l-container-12 clearfix" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
           <li class="flush-grid-4 loaded">
             <noscript>
