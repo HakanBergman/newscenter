@@ -103,6 +103,7 @@ a, a:visited, a:active { text-decoration: none; }
 .margin-top-1 { margin-top: 1em; }
 section .widget-margin-top { margin-top: 1em; }
 .container-margin-top { margin-top: 1em; }
+.container-margin-top-1-px { margin-top: 1px; }
 .container-margin-top-108 { margin-top: 1.8em; }
 .container-margin-top-2 { margin-top: 2em; }
 .container-margin-top-2-px { margin-top: 2px; }
@@ -111,6 +112,7 @@ section .widget-margin-top { margin-top: 1em; }
 .container-margin-top-20-percent { margin-top: 20%; }
 .container-margin-top-35-percent { margin-top: 35%; }
 .container-margin-left { margin-left: 1em; }
+.container-margin-bottom-1-px { margin-bottom: 1px; }
 .container-margin-bottom-2-px { margin-bottom: 2px; }
 .col-offset-5 { margin-left: 41.66666667%; }
 .col-offset-4 { margin-left: 31.66666667%; }
