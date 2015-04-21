@@ -6,7 +6,7 @@
             $(this).removeClass('active');
         });
 
-        if ($('.'+$(this).attr('data-href')).css('display') == 'none') {
+        if ($('.'+$(this).attr('id')).css('display') == 'none') {
             $('.' + $(this).attr('id')).slideDown('fast');
             $('#' + $(this).attr('id') + ' .glyphicon-menu-down').hide();
             $('#' + $(this).attr('id') + ' .glyphicon-menu-up').show();
