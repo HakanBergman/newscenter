@@ -27,7 +27,7 @@
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
             <a class="nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
               <div class="pull-left font-weight-200">
-                En länk
+                Begagnade bilar
               </div>
               <div class="pull-right font-weight-200">
                 <span class="glyphicon glyphicon-menu-down"></span>
@@ -37,7 +37,7 @@
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
             <a class="nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
               <div class="pull-left font-weight-200">
-                En länk
+                Tjänstebilar
               </div>
               <div class="pull-right font-weight-200">
                 <span class="glyphicon glyphicon-menu-down"></span>
@@ -47,7 +47,7 @@
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
             <a class="nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
               <div class="pull-left font-weight-200">
-                En länk
+                Nya bilar
               </div>
               <div class="pull-right font-weight-200">
                 <span class="glyphicon glyphicon-menu-down"></span>
