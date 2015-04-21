@@ -33,7 +33,7 @@
               </div>
             </a>
           </li>
-          <li class="col-lg-4 no-padding no-margin">
+          <li class="col-lg-4 no-padding no-margin border-lexus">
             <a class="font-size-nav-link font-weight-bold nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
               <div class="pull-left">
                 En länk
@@ -43,7 +43,7 @@
               </div>
             </a>
           </li>
-          <li class="col-lg-4 no-padding no-margin">
+          <li class="col-lg-4 no-padding no-margin border-lexus">
             <a class="font-size-nav-link font-weight-bold nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
               <div class="pull-left">
                 En länk
