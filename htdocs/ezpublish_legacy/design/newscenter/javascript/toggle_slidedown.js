@@ -5,7 +5,7 @@
         if ($('.'+$(this).attr('data-href')).css('display') == 'none') {
             $('.' + $(this).attr('data-href')).slideDown('fast');
             kids = $($(this)).children();
-            console.log(kids);
+            $('#'+$(this).attr('id')+' .glyphicon-menu-down').hide();
         } else {
             $('.' + $(this).attr('data-href')).slideUp('fast');
         }
