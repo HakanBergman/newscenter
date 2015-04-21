@@ -20,6 +20,6 @@
         </div>
     </div>
 </div>
-<div class="{$menusettings.0.data_map.background_color.data_text}">
+<div class="{$menusettings.0.data_map.background_color.data_text} navigation-box">
   En undermney
 </div>
