@@ -34,7 +34,7 @@
 				<div class="row">
 					<div class="container">
 
-						<label>Bild 1</label>
+						<label class="container-padding-top">Bild 1</label>
 						<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
 						<div class="col-lg-12 no-margin no-padding">
 							<label>Övrig information om bilden kan anges här:</label>
@@ -50,7 +50,7 @@
 							</div>
 						</div>
 
-						<label>Bild 2</label>
+						<label class="container-padding-top">Bild 2</label>
 						<div>{attribute_edit_gui attribute=$object.data_map.image_two}</div>
 						<div class="col-lg-12 no-margin no-padding">
 							<label>Övrig information om bilden kan anges här:</label>
@@ -66,7 +66,7 @@
 							</div>
 						</div>
 
-						<label>Bild 3</label>
+						<label class="container-padding-top">Bild 3</label>
 						<div>{attribute_edit_gui attribute=$object.data_map.image_three}</div>
 						<div class="col-lg-12 no-margin no-padding">
 							<label>Övrig information om bilden kan anges här:</label>
@@ -79,6 +79,22 @@
 							<div class="col-lg-12 no-padding no-margin clear">
 								<div class="col-lg-9"><label>Kryssa i rutan om den angivna länken ska öppnas i ett nytt fönster:</label></div>
 								<div class="col-lg-3">{attribute_edit_gui attribute=$object.data_map.new_window_three}</div>
+							</div>
+						</div>
+
+						<label class="container-padding-top">Bild 4</label>
+						<div>{attribute_edit_gui attribute=$object.data_map.image_four}</div>
+						<div class="col-lg-12 no-margin no-padding">
+							<label>Övrig information om bilden kan anges här:</label>
+							<div>{attribute_edit_gui attribute=$object.data_map.image_caption_four}</div>
+						</div>
+						
+						<div class="col-lg-12 no-margin no-padding container-padding-top">
+							<p>Ange en länk om bilden ska länka till annat innehåll. Ingen länk behöver anges men måste börja på http:// eller https:// om den anges.</p>
+							<div>{attribute_edit_gui attribute=$object.data_map.link_four}</div>												
+							<div class="col-lg-12 no-padding no-margin clear">
+								<div class="col-lg-9"><label>Kryssa i rutan om den angivna länken ska öppnas i ett nytt fönster:</label></div>
+								<div class="col-lg-3">{attribute_edit_gui attribute=$object.data_map.new_window_four}</div>
 							</div>
 						</div>
 
