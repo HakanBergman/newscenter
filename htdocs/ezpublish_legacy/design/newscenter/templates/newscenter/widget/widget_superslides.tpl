@@ -1,19 +1,19 @@
 ﻿<div id="slides">
   <ul class="slides-container">
     <li>
-      <img src="http://flickholdr.com/1000/800" alt="">
+      <img src="http://dzag5wgsqu6mr.cloudfront.net/wp-content/uploads/2014/05/NX-UK-images2.jpg" alt="">
       <div class="container">
         Slide one
       </div>
     </li>
     <li>
-      <img src="http://flickholdr.com/1000/800/space" alt="">
+      <img src="http://dzag5wgsqu6mr.cloudfront.net/wp-content/uploads/2014/05/NX-UK-images2.jpg" alt="">
       <div class="container">
         Slide two
       </div>
     </li>
     <li>
-      <img src="http://flickholdr.com/1000/800/tech" alt="">
+      <img src="http://dzag5wgsqu6mr.cloudfront.net/wp-content/uploads/2014/05/NX-UK-images2.jpg" alt="">
       <div class="container">
         Slide three
       </div>
