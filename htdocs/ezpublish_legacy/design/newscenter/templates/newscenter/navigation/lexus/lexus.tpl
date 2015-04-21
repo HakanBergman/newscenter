@@ -23,23 +23,23 @@
   <div class="container">
     <nav role="product_navigation" class="link-color-black {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case">
       <div class="navbar no-min-height no-margin no-padding">
-        <ul class="nav navbar-nav no-padding col-lg-12 font-family-opens-sans font-size-24-px font-weight-200">
+        <ul class="nav navbar-nav no-padding col-lg-12 font-family-opens-sans font-size-24-px">
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="font-weight-bold nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
-              <div class="pull-left">
+            <a class="nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
+              <div class="pull-left font-weight-200">
                 En länk
               </div>
-              <div class="pull-right">
+              <div class="pull-right font-weight-200">
                 <span class="glyphicon glyphicon-menu-down"></span>
               </div>
             </a>
           </li>
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
             <a class="font-weight-bold nav-padding-lexus no-background hover" href="{$item.url|ezurl('no', 'full')}">
-              <div class="pull-left">
+              <div class="pull-left font-weight-200">
                 En länk
               </div>
-              <div class="pull-right">
+              <div class="pull-right font-weight-200">
                 <span class="glyphicon glyphicon-menu-down"></span>
               </div>
             </a>
