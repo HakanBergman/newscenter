@@ -46,9 +46,11 @@
 							<div>{attribute_edit_gui attribute=$object.data_map.link_one}</div>												
 							<div class="col-lg-12 no-padding no-margin clear">
 								<label>Kryssa i rutan om den angivna länken ska öppnas i ett nytt fönster:</label>
-								{attribute_edit_gui attribute=$object.data_map.new_window_one}</div>
+								{attribute_edit_gui attribute=$object.data_map.new_window_one}
 							</div>
 						</div>
+
+						test
 
 						<label>Bild 1</label>
 						<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
