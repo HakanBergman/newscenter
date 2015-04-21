@@ -25,7 +25,7 @@
       <div class="navbar no-min-height no-margin no-padding">
         <ul class="nav navbar-nav no-padding col-lg-12 font-family-open-sans font-size-24-px">
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover slidedown" href="#modeller" data-href="menu-slider">
+            <a class="nav-padding-lexus no-background hover slidedown" href="#modeller" data-href="menu-slidedown">
               <div class="pull-left font-weight-200">
                 Modeller
               </div>
@@ -35,7 +35,7 @@
             </a>
           </li>
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover slidedown" href="#tjaenstebilar" data-href="menu-slider">
+            <a class="nav-padding-lexus no-background hover slidedown" href="#tjaenstebilar" data-href="menu-slidedown">
               <div class="pull-left font-weight-200">
                 Tjänstebilar
               </div>
@@ -45,7 +45,7 @@
             </a>
           </li>
           <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-            <a class="nav-padding-lexus no-background hover slidedown" href="#begagnat" data-href="menu-slider">
+            <a class="nav-padding-lexus no-background hover slidedown" href="#begagnat" data-href="menu-slidedown">
               <div class="pull-left font-weight-200">
                 Begagnade bilar
               </div>
