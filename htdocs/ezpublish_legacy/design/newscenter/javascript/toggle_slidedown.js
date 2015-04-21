@@ -8,8 +8,8 @@
             $('#' + $(this).attr('id') + ' .glyphicon-menu-up').show();
         } else {
             $('.' + $(this).attr('data-href')).slideUp('fast');
-            $('#' + $(this).attr('id') + ' .glyphicon-menu-down').hide();
-            $('#' + $(this).attr('id') + ' .glyphicon-menu-up').show();
+            $('#' + $(this).attr('id') + ' .glyphicon-menu-up').hide();
+            $('#' + $(this).attr('id') + ' .glyphicon-menu-down').show();
         }
     });
 });
