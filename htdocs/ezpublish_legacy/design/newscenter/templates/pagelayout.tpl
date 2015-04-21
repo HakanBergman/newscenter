@@ -121,8 +121,9 @@
 												{if $zones.$zones_count.data_map.fullscreen.value}
 
 													{* Full screen Zone *}
+													asdasd2
 													<div class="{$sitesettings.0.data_map.background_color.data_text}">
-														asd2
+														asd2	
 														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 													</div>
 
