@@ -23,18 +23,20 @@
                   <div>{attribute_edit_gui attribute=$object.data_map.name}</div>
                 </div>
 
-                {* Widget Title *}
+                {* Widget Images *}
                 <div class="col-lg-12 no-margin no-padding">
                   <div class="pull-left"><h3 class="clear">Bilder</h3></div>
                 </div>
 
                 <p class="clear">Välj upp till fyra (4) bilder som ska ingå i bildspelet.</p>
-
+				<div class="container">
+					adasd
+				</div>
                 <div class="form-group container-padding-bottom container-padding-top clear">
 					<label>Bild 1</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
 					<div class="col-lg-12 container-margin-left container-padding-right-3">
-						<label>Kort beskrivning av bilden:</label>
+						<label>Bildtext:</label>
 						<div>{attribute_edit_gui attribute=$object.data_map.image_caption_one}</div>
 					</div>
 					<div class="col-lg-12 container-padding-left-4 container-padding-top">
@@ -61,7 +63,7 @@
 					<label>Bild 2</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_two}</div>
 					<div class="col-lg-12 container-margin-left container-padding-right-3">
-						<label>Kort beskrivning av bilden:</label>
+						<label>Bildtext:</label>
 						<div>{attribute_edit_gui attribute=$object.data_map.image_caption_two}</div>
 					</div>
 					<div class="col-lg-12 container-padding-left-4 container-padding-top">
@@ -85,18 +87,50 @@
                 <div class="form-group container-padding-bottom container-padding-top clear">
 					<label>Bild 3</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_three}</div>
+					<div class="col-lg-12 container-margin-left container-padding-right-3">
+						<label>Bildtext:</label>
+						<div>{attribute_edit_gui attribute=$object.data_map.image_caption_three}</div>
+					</div>
 					<div class="col-lg-12 container-padding-left-4 container-padding-top">
 						<p>Ange en länk om bilden ska länka till annat innehåll. Ingen länk behöver anges men måste börja på http:// eller https:// om den anges.</p>
-						<div>{attribute_edit_gui attribute=$object.data_map.link_three}</div>						
+						<div>{attribute_edit_gui attribute=$object.data_map.link_three}</div>		
+
+						<div class="form-group">                  
+							<div class="col-lg-12">
+								<div class="pull-left">
+									<label>Kryssa i rutan om den angivna länken ska öppnas i ett nytt fönster:</label>
+								</div>
+								<div class="pull-right">
+									{attribute_edit_gui attribute=$object.data_map.new_window_three}</div>
+								</div>
+							</div>
+						</div>						
+										
 					</div>
                 </div>
 
                 <div class="form-group container-padding-bottom container-padding-top clear">
 					<label>Bild 4</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_four}</div>
+					<div class="col-lg-12 container-margin-left container-padding-right-3">
+						<label>Bildtext:</label>
+						<div>{attribute_edit_gui attribute=$object.data_map.image_caption_four}</div>
+					</div>
 					<div class="col-lg-12 container-padding-left-4 container-padding-top">
 						<p>Ange en länk om bilden ska länka till annat innehåll. Ingen länk behöver anges men måste börja på http:// eller https:// om den anges.</p>
-						<div>{attribute_edit_gui attribute=$object.data_map.link_four}</div>						
+						<div>{attribute_edit_gui attribute=$object.data_map.link_four}</div>	
+						
+						<div class="form-group">                  
+							<div class="col-lg-12">
+								<div class="pull-left">
+									<label>Kryssa i rutan om den angivna länken ska öppnas i ett nytt fönster:</label>
+								</div>
+								<div class="pull-right">
+									{attribute_edit_gui attribute=$object.data_map.new_window_four}</div>
+								</div>
+							</div>
+						</div>						
+											
 					</div>
                 </div>
 
