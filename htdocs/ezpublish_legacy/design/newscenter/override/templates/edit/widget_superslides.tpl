@@ -101,33 +101,14 @@
 					</div>
 				</div>
 
-
-				{* Widget Fullscreen *}
-				<div class="row">
-					<div class="container">
-						<h3 class="clear">Visa widget i helskärm (hela sidans bredd) (default: 1140px bred).</h3>
-						<p class="clear">Kryssa i rutan om denna widget ska visas ut för hela sidans bredd.</p>
-						<div class="col-lg-12">
-							<div class="col-lg-9">Visa ut zonen i hela sidans bredd:</div>
-							<div class="col-lg-3">{attribute_edit_gui attribute=$object.data_map.fullscreen}</div>
-						</div>
-					</div>
-				</div>
-
-
 				{* Widget Size *}
 				<div class="row">
 					<div class="container">
 						<h3 class="clear">Widgetens storlek</h3>
 						<p class="clear">Ange hur stor procent av sidan som zonen ska ta upp (default är 100%).</p>
-						<div class="col-lg-12">	{attribute_edit_gui attribute=$object.data_map.widget_size}</div>
+						<div class="col-lg-12">{attribute_edit_gui attribute=$object.data_map.widget_size}</div>
 					</div>
 				</div>
-
-                <div class="form-group">
-                  <label>Widgetens storlek</label>
-                  <div></div>
-                </div>
 
 				{* Widget Priority *}
 
