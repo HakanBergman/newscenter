@@ -4,6 +4,8 @@
         alert($(this).attr('data-href'));
         if ($($(this).attr('data-href')).is(":visible")) {
             alert('test');
+        } else {
+            alert('not visible');
         }
 
         /*
