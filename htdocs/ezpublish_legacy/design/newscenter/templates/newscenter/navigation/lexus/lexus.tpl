@@ -8,10 +8,11 @@
                 <div class="container">
                   <div class="navbar no-margin no-padding">
                     <ul class="nav navbar-nav no-padding"> 
-                                <li>
-                                    <noscript>&lt;a href="/forms/request-a-testdrive-form.aspx?houseCampaign=1" class="iframe form-slide-down no-js-links" data-id="TestDrive"&gt;Boka provkörning&lt;/a&gt;</noscript>
-                                    <a data-href="/forms/request-a-testdrive-form.aspx?houseCampaign=1" class="iframe form-slide-down js-links" data-id="TestDrive" href="/forms/request-a-testdrive-form.aspx?houseCampaign=1">Boka provkörning</a>
-                                </li>                
+                        {foreach $menu_items as $item}
+                            <li>
+                                <a href="{$item.url|ezurl('no', 'full')}">{$item.name|wash()}</a>
+                            </li>                
+                        {/foreach}
                     </ul>
                   </div>
                 </div>
