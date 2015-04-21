@@ -37,9 +37,10 @@
 						<label>Bild 1</label>
 						<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
 						<div class="col-lg-12 no-margin no-padding">
-							<label>Bildtext:</label>
+							<label>Övrig information om bilden kan anges här:</label>
 							<div>{attribute_edit_gui attribute=$object.data_map.image_caption_one}</div>
 						</div>
+						<label>Bild 1</label>
 						<div class="col-lg-12 no-margin no-padding container-padding-top">
 							<p>Ange en länk om bilden ska länka till annat innehåll. Ingen länk behöver anges men måste börja på http:// eller https:// om den anges.</p>
 							<div>{attribute_edit_gui attribute=$object.data_map.link_one}</div>												
