@@ -1,4 +1,4 @@
-﻿<div id="slides">
+<div id="slides">
   <ul class="slides-container">
     <li>
       <img src="http://dzag5wgsqu6mr.cloudfront.net/wp-content/uploads/2014/05/NX-UK-images2.jpg" alt="">
