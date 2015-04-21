@@ -19,7 +19,7 @@
     </div>
 </div>
 
-<div class="{$menusettings.0.data_map.background_color.data_text} navigation-box">
+<div class="{$menusettings.0.data_map.background_color.data_text} navigation-box container-margin-bottom-1-px">
   <div class="container">
     <nav role="product_navigation" class="link-color-black {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case">
       <div class="navbar no-min-height no-margin no-padding">
@@ -63,7 +63,7 @@
   </div>
 </div>
 
-<div class="{$menusettings.0.data_map.background_color.data_text} container-margin-bottom-1-px container-margin-top-1-px navigation-box hide-unimportent modeller">
+<div class="{$menusettings.0.data_map.background_color.data_text} container-margin-bottom-1-px navigation-box hide-unimportent modeller">
   <div class="container">
     asdasd
   </div>
