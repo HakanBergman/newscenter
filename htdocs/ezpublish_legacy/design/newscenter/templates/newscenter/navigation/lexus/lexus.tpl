@@ -24,11 +24,21 @@
       <div class="navbar no-margin no-padding">
         <ul class="nav navbar-nav no-padding col-lg-12">
           <li class="col-lg-4">
+            <div class="pull-left">
               <a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">En länk</a>
-          </li>  
+            </div>
+            <div class="pull-right">
+              <span class="glyphicon glyphicon-menu-down"></span>
+            </div>
+          </li>
           <li class="col-lg-4">
+            <div class="pull-left">
               <a class="font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover" href="{$item.url|ezurl('no', 'full')}">En länk</a>
-          </li>           
+            </div>
+            <div class="pull-right">
+              <span class="glyphicon glyphicon-menu-down"></span>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>    
