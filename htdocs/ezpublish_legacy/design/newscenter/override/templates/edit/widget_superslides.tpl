@@ -29,9 +29,35 @@
                 </div>
 
                 <p class="clear">Välj upp till fyra (4) bilder som ska ingå i bildspelet.</p>
+
+				{* Image One *}
 				<div class="container">
-					adasd
+					<label>Bild 1</label>
+					<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
+					<div class="col-lg-12 container-margin-left container-padding-right-3">
+						<label>Bildtext:</label>
+						<div>{attribute_edit_gui attribute=$object.data_map.image_caption_one}</div>
+					</div>
+					<div class="col-lg-12 container-padding-left-4 container-padding-top">
+						<p>Ange en länk om bilden ska länka till annat innehåll. Ingen länk behöver anges men måste börja på http:// eller https:// om den anges.</p>
+						<div>{attribute_edit_gui attribute=$object.data_map.link_one}</div>			
+									
+						<div class="col-lg-12 no-padding no-margin clear">
+							<div class="form-group">                  
+								<div class="col-lg-12">
+									<div class="pull-left">
+										<label>Kryssa i rutan om den angivna länken ska öppnas i ett nytt fönster:</label>
+									</div>
+									<div class="pull-right">
+										{attribute_edit_gui attribute=$object.data_map.new_window_one}</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
 				</div>
+
                 <div class="form-group container-padding-bottom container-padding-top clear">
 					<label>Bild 1</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_one}</div>
