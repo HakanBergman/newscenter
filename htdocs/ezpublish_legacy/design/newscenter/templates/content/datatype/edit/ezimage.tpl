@@ -2,7 +2,7 @@
 	{let attribute_content=$attribute.content}
 
 		{* Current Image *}
-		<div class="col-lg-12 no-margin no-padding container-padding-top container-padding-left container-padding-bottom clear">
+		<div class="col-lg-12 no-margin no-padding container-padding-top clear">
 			{if $attribute_content.original.is_valid}
 				<div class="col-lg-12 no-padding no-margin clear">
 					<div class="pull-left">
