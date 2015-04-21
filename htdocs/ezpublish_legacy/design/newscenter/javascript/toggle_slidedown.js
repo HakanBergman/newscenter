@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     $('.slidedown').on('click', function (e) {
         e.preventDefault();
-        alert('clicked');
+        alert($(this).attr('data-href');
         if ( $($(this).attr('data-href')).is( ":hidden" ) ) {
             $($(this).attr('data-href')).slideDown("slow");
         } else {
