@@ -41,7 +41,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
 					<div class="min-height-108"><span class="glyphicon glyphicon-plus text-color-black"></span> Lägg till ny</div>				
 					<div class="admin-bar hide col-lg-12 col-md-12 col-sm-12 col-xs-12 no-margin no-padding left-none bg-white absolute min-height-11-em">
 						<hr class="no-margin no-padding container-padding-top" />
@@ -80,7 +80,7 @@
 						{/switch}
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 no-padding no-margin container-padding-left-2">
 					<div class="min-height-108">
 						<div class="col-lg-4 no-margin no-padding">
 							<span class="glyphicon glyphicon-user text-color-black"></span>
