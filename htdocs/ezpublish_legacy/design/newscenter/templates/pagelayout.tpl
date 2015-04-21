@@ -121,9 +121,7 @@
 
 													{* Full screen Zone *}
 													<div class="{$sitesettings.0.data_map.background_color.data_text}">
-														<div class="container">
-															{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-														</div>
+														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 													</div>
 
 												{else}
@@ -144,9 +142,7 @@
 													{if $normal_zone}</div>{set $normal_zone = 0}{/if}
 
 													<div class="{$sitesettings.0.data_map.background_color.data_text}">
-														<div class="container">
-															{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-														</div>
+														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 													</div>
 
 												{else}
