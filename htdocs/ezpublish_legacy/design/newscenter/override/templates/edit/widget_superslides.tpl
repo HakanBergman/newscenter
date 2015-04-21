@@ -55,7 +55,7 @@
 					</div>
                 </div>
 
-                <div class="form-group container-padding-bottom container-padding-top clear">
+                <div class="form-group container-margin-left container-padding-left container-padding-bottom container-padding-top clear">
 					<label>Bild 2</label>
 					<div>{attribute_edit_gui attribute=$object.data_map.image_two}</div>
 					<div class="col-lg-12 container-padding-left-4 container-padding-top">
