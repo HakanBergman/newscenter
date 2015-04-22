@@ -26,9 +26,9 @@
 </div>
 
 <script type="text/javascript">
-	{literal}
-		$(document).ready(function() {
-			$('#slides').superslides({ play: true, animation_speed: 8000, animation_easing: 'swing', animation: 'fade', scrollable: true, pagination: true });
+  {literal}
+  $(document).ready(function() {
+  $('#slides').superslides({ play: true, inherit_height_from: window, animation_speed: 8000, animation_easing: 'swing', animation: 'fade', scrollable: true, pagination: true });
 		});
 	{/literal}
 </script>
