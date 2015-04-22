@@ -28,7 +28,7 @@
 <script type="text/javascript">
 	{literal}
 		$(document).ready(function() {
-			$('#slides').superslides({ play: true, animation_speed: 1600, animation_easing: 'swing', animation: 'fade', scrollable: true, pagination: true });
+			$('#slides').superslides({ play: true, animation_speed: 3000, animation_easing: 'swing', animation: 'fade', scrollable: true, pagination: true });
 		});
 	{/literal}
 </script>
