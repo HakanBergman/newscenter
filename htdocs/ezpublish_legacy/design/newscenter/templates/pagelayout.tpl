@@ -76,7 +76,8 @@
 		<script type="text/javascript" src={"javascript/color_picker.js"|ezdesign}></script>
 		<script type="text/javascript" src={"javascript/font_picker.js"|ezdesign}></script>		
 		<script type="text/javascript" src={"javascript/zone_picker.js"|ezdesign}></script>		
-		<script type="text/javascript" src={"javascript/preview.js"|ezdesign}></script>		
+		<script type="text/javascript" src={"javascript/preview.js"|ezdesign}></script>
+		<link rel="stylesheet" href={"javascript/superslides/dist/stylesheets/superslides.css"|ezdesign}>
 		<script type="text/javascript" src={"javascript/superslides/dist/jquery.superslides.min.js"|ezdesign}></script>
 	</head>
 	
