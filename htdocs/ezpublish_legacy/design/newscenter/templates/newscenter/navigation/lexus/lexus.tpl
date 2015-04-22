@@ -65,18 +65,18 @@
 
 <div class="{$menusettings.0.data_map.background_color.data_text} bg-white container-margin-bottom-1-px navigation-box hide-unimportent modeller">
   <div class="container">
-    asdasd
+    Data saknas
   </div>
 </div>
 
 <div class="{$menusettings.0.data_map.background_color.data_text} bg-white container-margin-bottom-1-px navigation-box hide-unimportent tjaenstebilar">
   <div class="container">
-    asdasd
+    Data saknas
   </div>
 </div>
 
 <div class="{$menusettings.0.data_map.background_color.data_text} bg-white container-margin-bottom-1-px navigation-box hide-unimportent begagnade-bilar">
   <div class="container">
-    asdasd
+    Data saknas
   </div>
 </div>
