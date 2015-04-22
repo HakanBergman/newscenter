@@ -1,4 +1,4 @@
-<div id="slides" style="max-height: 20em;">
+<div id="slides" class="max-height-20-em">
   <ul class="slides-container">
     <li>
       <img src="http://dzag5wgsqu6mr.cloudfront.net/wp-content/uploads/2014/05/NX-UK-images2.jpg" class="img-responsive" alt="" />
