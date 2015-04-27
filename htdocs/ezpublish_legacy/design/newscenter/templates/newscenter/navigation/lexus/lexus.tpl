@@ -110,8 +110,8 @@
   <nav class="cbp-hsmenu-wrapper {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case" id="cbp-hsmenu-wrapper">
     <div class="cbp-hsinner navigation-box">
       <ul class="cbp-hsmenu container">
-        <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
-          <a href="#" class="nav-padding-lexus no-background hover">
+        <li class="col-lg-4 no-padding no-margin border-lexus">
+          <a href="#" class="no-background hover">
             <div class="pull-left font-weight-200 container-padding-left">Bilmodeller</div>
             <div class="pull-right font-weight-200">
               <span class="glyphicon glyphicon-menu-down"></span>
