@@ -88,7 +88,7 @@
       <ul class="cbp-hsmenu">
         <li>
           <a href="#">Bilmodeller</a>
-          <ul class="cbp-hssubmenu {$menusettings.0.data_map.background_color.data_text} bg-white navigation-box">
+          <ul class="cbp-hssubmenu link-color-black bg-white navigation-box">
             <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
             <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
             <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
