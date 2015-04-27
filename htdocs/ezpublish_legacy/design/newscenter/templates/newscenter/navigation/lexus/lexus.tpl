@@ -132,6 +132,10 @@
   </nav>
 </div>
 
-<script>
-  var menu = new cbpHorizontalSlideOutMenu( document.getElementById( 'cbp-hsmenu-wrapper' ) );
-</script>
+{literal}
+  <script>
+    $(document).ready(function () {
+      var menu = new cbpHorizontalSlideOutMenu( document.getElementById( 'cbp-hsmenu-wrapper' ) );
+    });
+  </script>
+{/literal}
