@@ -36,7 +36,6 @@
 
 /* Main menu link style */
 .cbp-hsmenu > li > a {
-	color: #fff;
 	font-size: 1.2em;
 	line-height: 3em;
 	display: inline-block;
@@ -48,7 +47,7 @@
 .no-touch .cbp-hsmenu > li > a:hover,
 .no-touch .cbp-hsmenu > li > a:focus,
 .cbp-hsmenu > li.cbp-hsitem-open > a {
-	color: #02639d;
+	
 }
 
 /* Add an arrow to the main menu link if it has a submenu (not the only child) */
@@ -138,7 +137,6 @@
 .cbp-hssubmenu > li a {
 	display: block;
 	text-align: center;
-	color: #a2a2a2;
 	outline: none;
 	padding: 2em 1em 1em 1em;
 }
