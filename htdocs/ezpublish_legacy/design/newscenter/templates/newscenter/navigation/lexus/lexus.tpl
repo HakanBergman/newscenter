@@ -83,12 +83,12 @@
 
 
 <div class="main">
-  <nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
+  <nav class="cbp-hsmenu-wrapper {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case" id="cbp-hsmenu-wrapper">
     <div class="cbp-hsinner">
       <ul class="cbp-hsmenu">
         <li>
-          <a href="#">Lovely Spirits</a>
-          <ul class="cbp-hssubmenu">
+          <a href="#">Bilmodeller</a>
+          <ul class="cbp-hssubmenu {$menusettings.0.data_map.background_color.data_text} bg-white navigation-box">
             <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
             <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
             <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
