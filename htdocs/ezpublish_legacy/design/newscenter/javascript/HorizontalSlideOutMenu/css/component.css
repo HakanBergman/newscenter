@@ -19,10 +19,7 @@
 
 /* Main menu style */
 .cbp-hsmenu-wrapper .cbp-hsmenu {
-	width: 90%;
-	max-width: 69em;
 	margin: 0 auto;
-	padding: 0 1.875em;
 }
 
 .cbp-hsmenu > li {
