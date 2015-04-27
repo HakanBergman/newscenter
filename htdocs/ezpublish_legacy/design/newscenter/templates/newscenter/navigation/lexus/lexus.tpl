@@ -109,7 +109,7 @@
 <div class="main font-family-open-sans font-size-24-px">
   <nav class="cbp-hsmenu-wrapper {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case" id="cbp-hsmenu-wrapper">
     <div class="cbp-hsinner navigation-box">
-      <ul class="cbp-hsmenu container">
+      <ul class="cbp-hsmenu container link-color-black">
         <li>
           <a href="#" class="nav-padding-left nav-padding-right no-background hover">
             <div class="pull-left font-weight-200 container-padding-left">Bilmodeller</div>
