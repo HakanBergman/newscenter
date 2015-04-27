@@ -81,6 +81,30 @@
   </div>
 </div>
 
+<div class="{$menusettings.0.data_map.background_color.data_text} navigation-box container-margin-bottom-1-px">
+  <div class="container">
+    <nav role="product_navigation" class="link-color-black cbp-hsmenu-wrapper {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case">
+      <div class="navbar no-min-height no-margin no-padding cbp-hsinner">
+        <ul class="nav nav-slidedown navbar-nav no-padding col-lg-12 font-family-open-sans font-size-24-px cbp-hsmenu">
+          <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
+            <a href="#" class="nav-padding-lexus no-background hover">
+              <div class="pull-left font-weight-200 container-padding-left">Bilmodeller</div>
+              <div class="pull-right font-weight-200"><span class="glyphicon glyphicon-menu-down"></span></div>
+            </a>
+            <ul class="cbp-hssubmenu bg-white navigation-box">
+              <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+              <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+              <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+              <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+              <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+            </ul>            
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
 
 <div class="main">
   <nav class="cbp-hsmenu-wrapper {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case" id="cbp-hsmenu-wrapper">
