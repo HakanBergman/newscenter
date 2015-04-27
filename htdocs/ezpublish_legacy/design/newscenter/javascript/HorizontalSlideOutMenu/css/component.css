@@ -24,7 +24,6 @@
 .cbp-hsmenu > li {
 	margin-left: 4em;
 	display: inline-block;
-    padding-bottom: 0.5em;
     border-right: 1px solid #DDD;
     border-left: 1px solid #DDD;
 }
@@ -35,8 +34,7 @@
 
 /* Main menu link style */
 .cbp-hsmenu > li > a {
-	font-size: 1.2em;
-	line-height: 3em;
+	line-height: 2em;
 	display: inline-block;
 	position: relative;
 	z-index: 10000;
