@@ -111,7 +111,7 @@
     <div class="cbp-hsinner navigation-box">
       <ul class="cbp-hsmenu container">
         <li>
-          <div class="col-lg-4 no-padding no-margin border-lexus">
+          <span class="col-lg-4 no-padding no-margin border-lexus">
             <a href="#" class="no-background hover">
               <div class="pull-left font-weight-200 container-padding-left">Bilmodeller</div>
               <div class="pull-right font-weight-200">
@@ -125,7 +125,7 @@
               <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
               <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
             </ul>
-          </div>
+          </span>
         </li>        
       </ul>
     </div>
