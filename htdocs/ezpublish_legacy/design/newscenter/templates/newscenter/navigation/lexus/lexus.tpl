@@ -111,7 +111,7 @@
     <div class="cbp-hsinner navigation-box">
       <ul class="cbp-hsmenu container">
         <li class="col-lg-4">
-          <a href="#" class="nav-padding-lexus no-background hover">
+          <a href="#" class="nav-padding-left nav-padding-right no-background hover">
             <div class="pull-left font-weight-200 container-padding-left">Bilmodeller</div>
             <div class="pull-right font-weight-200">
               <span class="glyphicon glyphicon-menu-down"></span>
