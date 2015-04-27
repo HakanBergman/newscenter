@@ -108,7 +108,7 @@
 
 <div class="main">
   <nav class="cbp-hsmenu-wrapper {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case" id="cbp-hsmenu-wrapper">
-    <div class="cbp-hsinner">
+    <div class="cbp-hsinner navigation-box">
       <ul class="cbp-hsmenu container">
         <li class="col-lg-4 no-padding no-margin border-lexus nav-padding-bottom-05">
           <a href="#" class="nav-padding-lexus no-background hover">
