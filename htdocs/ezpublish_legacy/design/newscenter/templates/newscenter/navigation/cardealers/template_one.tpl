@@ -42,7 +42,7 @@
                           <div class="edit font-size-12-px link-color-black container-padding-top">
                             <div class="pull-left">
                               <form action="/content/action" method="post" class="container-padding-right">
-                                <input type="hidden" value="product" name="ClassIdentifier" />
+                                <input type="hidden" value="product_list" name="ClassIdentifier" />
                                 <input type="hidden" class="input-zone-id" value="{$submenu.node_id}" name="NodeID" />
                                 <input type="hidden" value="swe-SE" name="ContentLanguageCode" />
                                 <button type="submit" name="NewButton" class="btn btn-success glyphicon glyphicon-file container-padding-left"></button>
