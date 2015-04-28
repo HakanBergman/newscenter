@@ -114,7 +114,7 @@
           <a href="#" class="nav-padding-right no-background hover">
             <div class="pull-left font-weight-200 container-padding-left">Bilmodeller</div>
             <div class="pull-right font-weight-200">
-              <span class="glyphicon glyphicon-menu-down"></span>
+              <span class="glyphicon glyphicon-menu-down container-padding-left"></span>
             </div>
           </a>
           <ul class="cbp-hssubmenu bg-white navigation-box container-margin-top-1-px">
