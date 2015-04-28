@@ -36,15 +36,17 @@
                 <ul class="cbp-hssubmenu bg-white navigation-box container-margin-top-1-px">
                   <div class="container">
                     <div class="col-lg-12">
-                      <div class="edit font-size-12-px">
-                        <span class="glyphicon glyphicon-pencil text-primary"></span>
-                        <a href="/{concat('content/edit/', $submenu.contentobject_id)}" class="text-decoration-none container-padding-left" title="Redigera {$submenu.name|wash()}">Redigera {$submenu.name|wash()}</a>
-                        <form method="post" action="/content/action" class="float-right container-padding-left">
-                          <input type="hidden" name="TopLevelNode" value="{$current_node.node_id}" />
-                          <input type="hidden" name="ContentNodeID" value="{$current_node.node_id}" />
-                          <input type="hidden" name="ContentObjectID" value="{$current_node.contentobject_id}" />
-                          <button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
-                        </form>
+                      <div class="edit font-size-12-px container-padding-top">
+                        <div class="pull-right">
+                          <span class="glyphicon glyphicon-pencil text-primary "></span>
+                          <a href="/{concat('content/edit/', $submenu.contentobject_id)}" class="text-decoration-none container-padding-left" title="Redigera {$submenu.name|wash()}">Redigera {$submenu.name|wash()}</a>
+                          <form method="post" action="/content/action" class="float-right container-padding-left">
+                            <input type="hidden" name="TopLevelNode" value="{$current_node.node_id}" />
+                            <input type="hidden" name="ContentNodeID" value="{$current_node.node_id}" />
+                            <input type="hidden" name="ContentObjectID" value="{$current_node.contentobject_id}" />
+                            <button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
+                          </form>
+                        </div>
                       </div>
                     </div>
                   </div>
