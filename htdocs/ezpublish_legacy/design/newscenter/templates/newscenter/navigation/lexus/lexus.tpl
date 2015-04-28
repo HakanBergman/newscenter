@@ -24,7 +24,7 @@
     <div class="main font-family-open-sans font-size-24-px {$menusettings.0.data_map.background_color.data_text}">
       <nav class="cbp-hsmenu-wrapper {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case" id="cbp-hsmenu-wrapper">
         <div class="cbp-hsinner navigation-box">
-          <ul class="cbp-hsmenu container link-color-black">
+          <ul class="cbp-hsmenu container {$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text}">
             {foreach $submenu_items as $submenu}
               <li>
                 <a href="#{$submenu.name|wash()}" class="nav-padding-right no-background hover container-padding-top-05 slidedown" data-background="bg-white">
