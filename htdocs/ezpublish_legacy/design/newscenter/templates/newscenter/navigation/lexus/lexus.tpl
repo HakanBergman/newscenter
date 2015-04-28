@@ -27,7 +27,7 @@
           <ul class="cbp-hsmenu container {$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text}">
             {foreach $submenu_items as $submenu}
               <li>
-                <a href="#{$submenu.name|wash()}" id="menu_id_{$submenu.contentobject_id}" class="nav-padding-right no-background hover container-padding-top-05 slidedown" data-background="bg-white">
+                <a href="#{$submenu.name|wash()|explode(' ')|implode('')|downcase()}" id="menu_id_{$submenu.contentobject_id}" class="nav-padding-right no-background hover container-padding-top-05 slidedown" data-background="bg-white">
                   <div class="pull-left font-weight-200 container-padding-left">{$submenu.name|wash()}</div>
                   <div class="pull-right font-weight-200">
                     <span class="glyphicon glyphicon-menu-down container-padding-left"></span>
@@ -65,7 +65,7 @@
                   {def $grandchildren = fetch('content', 'list', hash('parent_node_id', $submenu.node_id))}
                     {foreach $grandchildren as $grandchild}
                       <li>
-                        <a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="line-height-1-em">
+                        <a href="{$grandchild.url|ezurl('no', 'full')|downcase()}" title="{$grandchild.name|wash()}" class="line-height-1-em">
                           <div class="col-lg-4 no-margin no-padding text-align-left">
                             <div class="container-padding-top"><strong>{$grandchild.data_map.name.data_text|wash()}</strong></div>
                             <div class="font-size-14-px font-weight-normal">{$grandchild.data_map.car_from_price.data_text} {$grandchild.data_map.extra_attribute_two.data_text}</div>
