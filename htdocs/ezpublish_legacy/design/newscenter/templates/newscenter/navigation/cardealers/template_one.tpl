@@ -71,6 +71,7 @@
                               <div class="col-lg-4 no-margin no-padding text-align-left">
                                 <div class="container-padding-top"><strong>{$grandchild.data_map.name.data_text|wash()}</strong></div>
                                 <div class="font-size-14-px font-weight-normal">från {$product.data_map.price.value}</div>
+                                {$product.data_map.price.content|attribute(show, 1)}
                               </div>
                               <div class="col-lg-8 no-margin no-padding text-align-left">
                                 <img src="/{$product.data_map.image.content.original.full_path}" class="img-responsive container-padding-bottom-05 container-padding-top-05" alt="{$product.name|wash()}"/>
