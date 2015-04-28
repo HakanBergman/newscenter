@@ -66,8 +66,8 @@
                     {foreach $grandchildren as $grandchild}
                       <li>
                         <a href="{$granchild.url|ezurl('no', 'full')}" title="{$granchild.name|wash()}">
-                          <span>{$grandchild.data_map.name.data_text|wash()}</span>                          
-                          <img src="/{$grandchild.data_map.image.content.original.full_path}" class="img-responsive" alt="{$grandchild.name|wash()}"/>
+                          {$grandchild.data_map.name.data_text|wash()}
+                          <img src="/{$grandchild.data_map.image.content.original.full_path}" class="img-responsive container-padding-bottom-05 container-padding-top-05" alt="{$grandchild.name|wash()}"/>
                           {$grandchild.data_map.extra_attribute_one.data_text}
                         </a>
                       </li>
