@@ -12,9 +12,8 @@
             /* Slide Down */
             /* Set background on active slider */
             $(this).addClass('active');
-            $('#' + $(this).id + ' .glyphicon-menu-down').addClass('hide');
-            $('#' + $(this).id + ' .glyphicon-menu-up').removeClass('hide');
-            alert($(this).attr('id'));
+            $('#' + $(this).attr('id') + ' .glyphicon-menu-down').addClass('hide');
+            $('#' + $(this).attr('id') + ' .glyphicon-menu-up').removeClass('hide');
         } else {
             /* Slide Up */
             /* Remove Active Slider */
