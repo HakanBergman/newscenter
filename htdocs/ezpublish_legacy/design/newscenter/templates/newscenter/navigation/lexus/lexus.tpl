@@ -73,7 +73,7 @@
               <input type="hidden" value="swe-SE" name="ContentLanguageCode">
                 <button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding">
                   <span class="glyphicon glyphicon-file text-primary"></span>
-                  <span class="container-padding-left">Produktkatalog</span>
+                  <span class="container-padding-left">Ny Produktkatalog</span>
                 </button>
             </form>
           </div>
