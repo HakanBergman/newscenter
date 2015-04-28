@@ -67,13 +67,14 @@
       <div class="col-lg-12">
         <div class="edit font-size-12-px container-padding-top">
           <div class="pull-right">
-            <span class="glyphicon glyphicon-pencil text-primary container-padding-top"></span>
-            <a href="/{concat('content/edit/', $submenu.contentobject_id)}" class="text-decoration-none container-padding-left container-padding-right" title="Redigera {$submenu.name|wash()}">Redigera {$submenu.name|wash()}</a>
-            <form method="post" action="/content/action" class="float-right container-padding-left">
-              <input type="hidden" name="TopLevelNode" value="{$submenu.node_id}" />
-              <input type="hidden" name="ContentNodeID" value="{$submenu.node_id}" />
-              <input type="hidden" name="ContentObjectID" value="{$submenu.contentobject_id}" />
-              <button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
+            <form action="/content/action" method="post">
+              <input type="hidden" value="product_catalogue" name="ClassIdentifier">
+              <input type="hidden" class="input-zone-id" value="{$current_node.node_id}" name="NodeID">
+              <input type="hidden" value="swe-SE" name="ContentLanguageCode">
+                <button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding">
+                  <span class="glyphicon glyphicon-file text-primary"></span>
+                  <span class="container-padding-left">Produktkatalog</span>
+                </button>
             </form>
           </div>
         </div>
