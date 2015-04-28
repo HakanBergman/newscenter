@@ -36,7 +36,6 @@
                 </a>
                 <ul class="cbp-hssubmenu bg-white navigation-box container-margin-top-1-px">                 
                   {def $user = fetch('user', 'current_user')}
-                    {$user}
                     {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
                       <div class="container admin-panel">
                         <div class="col-lg-12">
@@ -60,8 +59,9 @@
                             </div>
                           </div>
                         </div>
-                      {/if}
-                  </div>
+                      </div>
+                    {/if}
+                  {undef $user}
                   {def $grandchildren = fetch('content', 'list', hash('parent_node_id', $submenu.node_id))}
                     {foreach $grandchildren as $grandchild}
                       <li>
