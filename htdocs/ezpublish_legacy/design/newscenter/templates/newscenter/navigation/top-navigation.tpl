@@ -3,10 +3,9 @@
 		{def $menu = fetch('content', 'node', hash('node_id', $menusettings.0.data_map.menu_plugin.content.relation_list.0.node_id))}
 			{def $menu_folder = $menu.data_map.menu_folder.data_text|wash()}
 			{def $template = $menu.data_map.template.data_text|wash()}
-			{def $file_path = concat('design:newscenter/navigation/', $menu_folder, '/', $template)|wash()}
-				{include uri=$file_path menusetings=$menusettings}
-				{include uri="concat('design:newscenter/navigation/', $menu_folder, '/', $template)" menusettings=$menusettings}
-			{undef $menu_folder $template}
+			{def $template_path = concat('design:newscenter/navigation/', $menu_folder, '/', $template)|wash()}
+				{include uri=$template_path menusetings=$menusettings}
+			{undef $menu_folder $template $template_path}
 		{undef $menu}
 	{/if}
 	{def $value = $menusettings.0.data_map.menu_plugin.value.0}
