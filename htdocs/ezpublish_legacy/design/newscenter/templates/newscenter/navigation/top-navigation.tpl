@@ -4,6 +4,7 @@
 			{def $menu_folder = $menu.data_map.menu_folder.data_text}
 			{def $template = $menu.data_map.template.data_text}
 				{concat('design:newscenter/navigation/', $menu_folder, '/', $template, '.tpl')}
+				{include uri="design:newscenter/navigation/cardealers/template_one.tpl"}
 				{include uri="concat('design:newscenter/navigation/', $menu_folder, '/', $template, '.tpl')" menusettings=$menusettings}
 			{undef $menu_folder $template}
 		{undef $menu}
