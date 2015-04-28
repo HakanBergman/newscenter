@@ -58,11 +58,18 @@
                       </div>
                     </div>
                   </div>
+                  {def $grandchildren = fetch('content', 'list', hash('parent_node_id', $submenu.node_id))}
+                    {foreach $grandchildren as $grandchild}
+                      <li>{$grandchild.name|wash()}</li>
+                    {/foreach}
+                  {undef $grandchildren}
+                  {*
                   <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
                   <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
                   <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
                   <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
                   <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+                  *}
                 </ul>
             </li>
             {/foreach}
