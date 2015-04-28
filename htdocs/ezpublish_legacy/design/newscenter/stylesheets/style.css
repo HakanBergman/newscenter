@@ -11,6 +11,9 @@ p { margin: 0 0 2px; }
 .yamm .dropdown-menu { border: 0px solid rgba(0,0,0,.15); }
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover { background: none; }
 
+/* Line heights */
+.line-height-1-em { line-height: 1em; }
+
 /* Hide rules */
 .hide-unimportent { display: none; }
 
