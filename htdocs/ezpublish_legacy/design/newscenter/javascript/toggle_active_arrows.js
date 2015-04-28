@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     $('.cbp-hsmenu .slidedown').on('click', function (e) {
 
-        $('.cbp-hsmenu li').each(function () {
+        $('.cbp-hsmenu li a').each(function () {
             var element = $(this);
             console.log(element);
             $('.' + element + ' a').removeClass('active');
