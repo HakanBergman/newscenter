@@ -33,8 +33,10 @@
                 </div>
               </a>
               <ul class="cbp-hssubmenu bg-white navigation-box container-margin-top-1-px">
-                <div class="col-lg-4">
-                  <div class="pull-right">Test</div>
+                <div class="container">
+                  <div class="col-lg-12">
+                    <div class="pull-right">Test</div>
+                  </div>
                 </div>
                 <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
                 <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
