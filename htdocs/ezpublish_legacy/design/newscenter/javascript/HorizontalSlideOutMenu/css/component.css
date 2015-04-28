@@ -18,6 +18,7 @@
 /* Main menu style */
 .cbp-hsmenu-wrapper .cbp-hsmenu {
 	margin: 0 auto;
+    line-height: 0px;
 }
 
 .cbp-hsmenu > li {
