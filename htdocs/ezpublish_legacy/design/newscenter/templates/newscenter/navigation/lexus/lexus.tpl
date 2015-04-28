@@ -61,14 +61,16 @@
           </ul>
         </div>
       </nav>
-    </div>   
-  {/if}
+    </div>
+
+    {literal}
+    <script>
+      $(document).ready(function () {
+      var menu = new cbpHorizontalSlideOutMenu( document.getElementById( 'cbp-hsmenu-wrapper' ) );
+      });
+    </script>
+    {/literal}
+
+{/if}
 {undef $submenu_items}
 
-{literal}
-  <script>
-    $(document).ready(function () {
-      var menu = new cbpHorizontalSlideOutMenu( document.getElementById( 'cbp-hsmenu-wrapper' ) );
-    });
-  </script>
-{/literal}
