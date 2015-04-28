@@ -18,7 +18,7 @@
         </div>
     </div>
 </div>
-hit
+
 {def $submenu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('product_catalogue'), 'sort_by', array('priority', true()) ))}
   {if $submenu_items}
     <div class="main font-family-open-sans font-size-24-px {$menusettings.0.data_map.background_color.data_text}">
