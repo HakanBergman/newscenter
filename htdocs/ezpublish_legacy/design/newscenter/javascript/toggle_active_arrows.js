@@ -3,7 +3,7 @@
         if (!$(this).parent().attr('data-open')) {
             /* Slide Down */
             /* Set background on active slider */
-            $(this).parent().addClass('bg-white');
+            $(this).parent().delay(1000).addClass('bg-white');
         }
     });
 });
