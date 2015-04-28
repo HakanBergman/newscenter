@@ -2,7 +2,7 @@
 	{if $menusettings.0.data_map.menu_plugin.content.relation_list.0.node_id}
 		{def $menu = fetch('content', 'node', hash('node_id', $menusettings.0.data_map.menu_plugin.content.relation_list.0.node_id))}
 			{def $menu_folder = $menu.data_map.menu_folder.data_text}
-			{def $template = $menu.data_map.templet.data_text}
+			{def $template = $menu.data_map.template.data_text}
 				{concat('design:newscenter/navigation/', $menu_folder, '/', $template)}
 				{include uri="concat('design:newscenter/navigation/', $menu_folder, '/', $template)" menusettings=$menusettings}
 			{undef $menu_folder $template}
