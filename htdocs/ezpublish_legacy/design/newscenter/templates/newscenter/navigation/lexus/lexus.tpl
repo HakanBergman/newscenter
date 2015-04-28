@@ -21,7 +21,7 @@
 
 {def $submenu_items = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('product_catalogue'), 'sort_by', array('priority', true()) ))}
   {if $submenu_items}
-    <div class="main font-family-open-sans font-size-24-px">
+    <div class="main font-family-open-sans font-size-24-px {$menusettings.0.data_map.background_color.data_text}">
       <nav class="cbp-hsmenu-wrapper {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case" id="cbp-hsmenu-wrapper">
         <div class="cbp-hsinner navigation-box">
           <ul class="cbp-hsmenu container link-color-black">
