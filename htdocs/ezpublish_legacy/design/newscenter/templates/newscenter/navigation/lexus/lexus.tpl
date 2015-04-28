@@ -65,12 +65,12 @@
                   {def $grandchildren = fetch('content', 'list', hash('parent_node_id', $submenu.node_id))}
                     {foreach $grandchildren as $grandchild}
                       <li>
-                        <a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="line-height-1-em">
-                          <div class="col-lg-5 no-margin no-padding">
+                        <a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="line-height-1-em text-align-left">
+                          <div class="col-lg-4 no-margin no-padding">
                             <div class="container-padding-top"><strong>{$grandchild.data_map.name.data_text|wash()}</strong></div>
                             <div class="font-size-14-px font-weight-normal">{$grandchild.data_map.extra_attribute_one.data_text}</div>
                           </div>
-                          <div class="col-lg-7 no-margin no-padding">
+                          <div class="col-lg-8 no-margin no-padding">
                             <img src="/{$grandchild.data_map.image.content.original.full_path}" class="img-responsive container-padding-bottom-05 container-padding-top-05" alt="{$grandchild.name|wash()}"/>
                           </div>                            
                         </a>
