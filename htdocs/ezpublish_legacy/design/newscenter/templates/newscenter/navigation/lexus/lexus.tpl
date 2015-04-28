@@ -31,6 +31,7 @@
                   <div class="pull-left font-weight-200 container-padding-left">{$submenu.name|wash()}</div>
                   <div class="pull-right font-weight-200">
                     <span class="glyphicon glyphicon-menu-down container-padding-left"></span>
+                    <span class="glyphicon glyphicon-menu-up container-padding-left hide"></span>
                   </div>
                 </a>
                 <ul class="cbp-hssubmenu bg-white navigation-box container-margin-top-1-px">
