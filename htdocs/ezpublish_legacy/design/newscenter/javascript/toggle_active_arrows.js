@@ -4,16 +4,16 @@
         /* Treat all as false */
         $('.cbp-hsmenu li a').each(function () {
             $(this).removeClass('active');
-            $('.glyphicon-menu-up').hide();
-            $('.glyphicon-menu-down').show();
+            $('.glyphicon-menu-up').addClass('hide');
+            $('.glyphicon-menu-down').removeClass('hide');
         });
 
         if (!$(this).parent().attr('data-open')) {
             /* Slide Down */
             /* Set background on active slider */
             $(this).addClass('active');
-            $('.glyphicon-menu-down').hide();
-            $('.glyphicon-menu-up').show();
+            $('.glyphicon-menu-down').addClass('hide');
+            $('.glyphicon-menu-up').removeClass('hide');
         } else {
             /* Slide Up */
             /* Remove Active Slider */
