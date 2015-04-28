@@ -26,7 +26,7 @@
         <div class="cbp-hsinner navigation-box">
           <ul class="cbp-hsmenu container link-color-black">
             <li>
-              <a href="#" class="nav-padding-right no-background hover">
+              <a href="#" class="nav-padding-right no-background hover content-padding-top">
                 <div class="pull-left font-weight-200 container-padding-left">Bilmodeller</div>
                 <div class="pull-right font-weight-200">
                   <span class="glyphicon glyphicon-menu-down container-padding-left"></span>
