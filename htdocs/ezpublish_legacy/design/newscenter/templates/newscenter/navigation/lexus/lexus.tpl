@@ -38,8 +38,8 @@
                     <div class="col-lg-12">
                       <div class="edit font-size-12-px container-padding-top">
                         <div class="pull-right">
-                          <span class="glyphicon glyphicon-pencil text-primary "></span>
-                          <a href="/{concat('content/edit/', $submenu.contentobject_id)}" class="text-decoration-none container-padding-left container-padding-top" title="Redigera {$submenu.name|wash()}">Redigera {$submenu.name|wash()}</a>
+                          <span class="glyphicon glyphicon-pencil text-primary container-padding-top"></span>
+                          <a href="/{concat('content/edit/', $submenu.contentobject_id)}" class="text-decoration-none container-padding-left container-padding-right" title="Redigera {$submenu.name|wash()}">Redigera {$submenu.name|wash()}</a>
                           <form method="post" action="/content/action" class="float-right container-padding-left">
                             <input type="hidden" name="TopLevelNode" value="{$current_node.node_id}" />
                             <input type="hidden" name="ContentNodeID" value="{$current_node.node_id}" />
