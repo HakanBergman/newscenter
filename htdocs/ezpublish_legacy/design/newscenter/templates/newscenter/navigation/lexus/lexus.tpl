@@ -34,7 +34,7 @@
                   </div>
                 </a>
                 <ul class="cbp-hssubmenu bg-white navigation-box container-margin-top-1-px">
-                  <div class="container">
+                  <div class="container admin-panel">
                     <div class="col-lg-12">
                       <div class="edit font-size-12-px container-padding-top">
                         <div class="pull-right">
@@ -61,7 +61,24 @@
           </ul>
         </div>
       </nav>
-    </div>  
+    </div>
+{else}
+  <div class="container admin-panel">
+    <div class="col-lg-12">
+      <div class="edit font-size-12-px container-padding-top">
+        <div class="pull-right">
+          <span class="glyphicon glyphicon-pencil text-primary container-padding-top"></span>
+          <a href="/{concat('content/edit/', $submenu.contentobject_id)}" class="text-decoration-none container-padding-left container-padding-right" title="Redigera {$submenu.name|wash()}">Redigera {$submenu.name|wash()}</a>
+          <form method="post" action="/content/action" class="float-right container-padding-left">
+            <input type="hidden" name="TopLevelNode" value="{$submenu.node_id}" />
+            <input type="hidden" name="ContentNodeID" value="{$submenu.node_id}" />
+            <input type="hidden" name="ContentObjectID" value="{$submenu.contentobject_id}" />
+            <button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>    
   {/if}
 {undef $submenu_items}
 
