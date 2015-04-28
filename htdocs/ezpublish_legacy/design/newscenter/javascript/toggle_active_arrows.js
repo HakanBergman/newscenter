@@ -3,6 +3,7 @@
 
         $('.cbp-hsmenu li').each(function () {
             var element = $(this);
+            console.log(element);
             $('.' + element + ' a').removeClass('active');
         });
 
