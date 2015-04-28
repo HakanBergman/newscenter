@@ -126,7 +126,6 @@
 	display: block;
 	text-align: center;
 	outline: none;
-	padding: 2em 1em 1em 1em;
 }
 
 .no-touch .cbp-hssubmenu > li a:hover, .no-touch .cbp-hssubmenu > li a:focus {}
