@@ -25,35 +25,37 @@
       <nav class="cbp-hsmenu-wrapper {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case" id="cbp-hsmenu-wrapper">
         <div class="cbp-hsinner navigation-box">
           <ul class="cbp-hsmenu container link-color-black">
-            <li>
-              <a href="#" class="nav-padding-right no-background hover container-padding-top-05">
-                <div class="pull-left font-weight-200 container-padding-left">Bilmodeller</div>
-                <div class="pull-right font-weight-200">
-                  <span class="glyphicon glyphicon-menu-down container-padding-left"></span>
-                </div>
-              </a>
-              <ul class="cbp-hssubmenu bg-white navigation-box container-margin-top-1-px">
-                <div class="container">
-                  <div class="col-lg-12">
-                    <div class="edit">
-                      <span class="glyphicon glyphicon-pencil text-primary"></span>
-                      <a href="/{concat('content/edit/', $current_node.contentobject_id)}" class="text-decoration-none container-padding-left" title="Redigera {$current_node.name|wash()}">Redigera {$current_node.name|wash()}</a>
-                      <form method="post" action="/content/action" class="float-right container-padding-left">
-                        <input type="hidden" name="TopLevelNode" value="{$current_node.node_id}" />
-                        <input type="hidden" name="ContentNodeID" value="{$current_node.node_id}" />
-                        <input type="hidden" name="ContentObjectID" value="{$current_node.contentobject_id}" />
-                        <button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
-                      </form>
+            {foreach $submenu_items as $submenu}
+              <li>
+                <a href="#" class="nav-padding-right no-background hover container-padding-top-05">
+                  <div class="pull-left font-weight-200 container-padding-left">{$submenu.name|wash()}</div>
+                  <div class="pull-right font-weight-200">
+                    <span class="glyphicon glyphicon-menu-down container-padding-left"></span>
+                  </div>
+                </a>
+                <ul class="cbp-hssubmenu bg-white navigation-box container-margin-top-1-px">
+                  <div class="container">
+                    <div class="col-lg-12">
+                      <div class="edit font-size-12-px">
+                        <span class="glyphicon glyphicon-pencil text-primary"></span>
+                        <a href="/{concat('content/edit/', $submenu.contentobject_id)}" class="text-decoration-none container-padding-left" title="Redigera {$submenu.name|wash()}">Redigera {$submenu.name|wash()}</a>
+                        <form method="post" action="/content/action" class="float-right container-padding-left">
+                          <input type="hidden" name="TopLevelNode" value="{$current_node.node_id}" />
+                          <input type="hidden" name="ContentNodeID" value="{$current_node.node_id}" />
+                          <input type="hidden" name="ContentObjectID" value="{$current_node.contentobject_id}" />
+                          <button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
+                        </form>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
-                <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
-                <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
-                <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
-                <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
-              </ul>
+                  <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+                  <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+                  <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+                  <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+                  <li><a href="#"><img src="images/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+                </ul>
             </li>
+            {/foreach}
           </ul>
         </div>
       </nav>
