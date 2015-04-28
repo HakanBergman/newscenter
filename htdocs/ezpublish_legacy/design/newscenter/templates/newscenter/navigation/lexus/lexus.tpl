@@ -25,6 +25,9 @@
       <nav class="cbp-hsmenu-wrapper {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text} text-transform-upper-case" id="cbp-hsmenu-wrapper">
         <div class="cbp-hsinner navigation-box">
           <ul class="cbp-hsmenu container link-color-black">
+            <div class="col-lg-4">
+              <div class="pull-right">Test</div>
+            </div>
             <li>
               <a href="#" class="nav-padding-right no-background hover container-padding-top-05">
                 <div class="pull-left font-weight-200 container-padding-left">Bilmodeller</div>
