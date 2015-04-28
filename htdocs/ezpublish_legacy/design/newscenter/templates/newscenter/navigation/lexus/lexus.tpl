@@ -38,7 +38,6 @@
                     <div class="col-lg-12">
                       <div class="edit font-size-12-px container-padding-top">
                         <div class="pull-right">
-                          <span class="glyphicon glyphicon-pencil text-primary container-padding-top"></span>
                           <a href="/content/edit/{$submenu.contentobject_id}" title="Redigera {$submenu.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
                           <form method="post" action="/content/action" class="float-right container-padding-left">
                             <input type="hidden" name="TopLevelNode" value="{$submenu.node_id}" />
