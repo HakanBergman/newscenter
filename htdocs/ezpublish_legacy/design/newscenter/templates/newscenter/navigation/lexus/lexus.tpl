@@ -27,7 +27,7 @@
           <ul class="cbp-hsmenu container {$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text}">
             {foreach $submenu_items as $submenu}
               <li>
-                <a href="#{$submenu.name|wash()}" class="nav-padding-right no-background hover container-padding-top-05 slidedown" data-background="bg-white">
+                <a href="#{$submenu.name|wash()}" id="menu_id_{$submenu.contentobject_id}" class="nav-padding-right no-background hover container-padding-top-05 slidedown" data-background="bg-white">
                   <div class="pull-left font-weight-200 container-padding-left">{$submenu.name|wash()}</div>
                   <div class="pull-right font-weight-200">
                     <span class="glyphicon glyphicon-menu-down container-padding-left"></span>
