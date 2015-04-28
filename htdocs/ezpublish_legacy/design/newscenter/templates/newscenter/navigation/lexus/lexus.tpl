@@ -68,7 +68,7 @@
                         <a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="line-height-1-em">
                           <div class="col-lg-4 no-margin no-padding text-align-left">
                             <div class="container-padding-top"><strong>{$grandchild.data_map.name.data_text|wash()}</strong></div>
-                            <div class="font-size-14-px font-weight-normal">{$grandchild.data_map.extra_attribute_one.data_text} {$grandchild.data_map.extra_attribute_two.data_text}</div>
+                            <div class="font-size-14-px font-weight-normal">{$grandchild.data_map.car_from_price.data_text} {$grandchild.data_map.extra_attribute_two.data_text}</div>
                           </div>
                           <div class="col-lg-8 no-margin no-padding text-align-left">
                             <img src="/{$grandchild.data_map.image.content.original.full_path}" class="img-responsive container-padding-bottom-05 container-padding-top-05" alt="{$grandchild.name|wash()}"/>
