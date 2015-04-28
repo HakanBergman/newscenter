@@ -63,10 +63,12 @@
                       <li>
                         <a href="{$granchild.url|ezurl('no', 'full')}" title="{$granchild.name|wash()}">
                           <div class="col-lg-2">
-                            {$grandchild.data_map.name.data_text|wash()}
-                            {$grandchild.data_map.extra_attribute_one.data_text}
+                            <strong>{$grandchild.data_map.name.data_text|wash()}</strong>
                           </div>
-                          <div class="col-lg-10">
+                          <div class="col-lg-1">
+                            Från {$grandchild.data_map.extra_attribute_one.data_text}
+                          </div>
+                          <div class="col-lg-9">
                             <img src="/{$grandchild.data_map.image.content.original.full_path}" alt="{$grandchild.name|wash()}"/>
                           </div>
                         </a>
