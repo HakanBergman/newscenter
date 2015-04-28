@@ -100,7 +100,6 @@
 	width: 33%;
 	display: inline-block;
 	vertical-align: top;
-	box-shadow: -28px 0 0 -27px #ddd, 0 -28px 0 -27px #ddd;
 	opacity: 0;
 	-webkit-transition: opacity 0.1s 0s;
 	-moz-transition: opacity 0.1s 0s;
@@ -109,12 +108,12 @@
 
 /* First 6 items don't have upper box shadow */
 .cbp-hssubmenu > li:nth-child(-n+6) {
-	box-shadow: -28px 0 0 -27px #ddd;
+	
 } 
 
 /* Every 7th item does not have a left box shadow */
 .cbp-hssubmenu > li:nth-child(6n+1) {
-	box-shadow:  0 -28px 0 -27px #ddd;
+	
 }
 
 /* The first one does not have any box shadow */
@@ -240,17 +239,17 @@
 	/* Reset box shadows for the 6 items in row case */
 	.cbp-hssubmenu > li:nth-child(-n+6),
 	.cbp-hssubmenu > li:nth-child(6n+1) {
-		box-shadow: -28px 0 0 -27px #ddd, 0 -28px 0 -27px #ddd;
+		
 	}
 
 	/* First 4 items don't have upper box shadow */
 	.cbp-hssubmenu > li:nth-child(-n+3) {
-		box-shadow: -28px 0 0 -27px #ddd;
+		
 	} 
 
 	/* Every 5th item does not have a left box shadow */
 	.cbp-hssubmenu > li:nth-child(3n+1) {
-		box-shadow:  0 -28px 0 -27px #ddd;
+		
 	}
 
 }
