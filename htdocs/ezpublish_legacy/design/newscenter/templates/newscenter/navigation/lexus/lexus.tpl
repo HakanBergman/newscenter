@@ -65,7 +65,7 @@
                   {def $grandchildren = fetch('content', 'list', hash('parent_node_id', $submenu.node_id))}
                     {foreach $grandchildren as $grandchild}
                       <li>
-                        <a href="{$granchild.url|ezurl('no', 'full')}" title="{$granchild.name|wash()}">
+                        <a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="line-height-1-em">
                           <div class="col-lg-5">
                             <div>{$grandchild.data_map.name.data_text|wash()}</div>
                             <div>från</div>
