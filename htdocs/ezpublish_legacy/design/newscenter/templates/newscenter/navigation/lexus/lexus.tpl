@@ -35,28 +35,32 @@
                   </div>
                 </a>
                 <ul class="cbp-hssubmenu bg-white navigation-box container-margin-top-1-px">
-                  <div class="container admin-panel">
-                    <div class="col-lg-12">
-                      <div class="edit font-size-12-px link-color-black container-padding-top">
-                        <div class="pull-left">
-                          <form action="/content/action" method="post" class="container-padding-right">
-                            <input type="hidden" value="product" name="ClassIdentifier" />
-                            <input type="hidden" class="input-zone-id" value="{$submenu.node_id}" name="NodeID" />
-                            <input type="hidden" value="swe-SE" name="ContentLanguageCode" />
-                            <button type="submit" name="NewButton" class="btn btn-success glyphicon glyphicon-file container-padding-left"></button>
-                          </form>                                                     
+                  {def $user = fetch('user', 'current_user')}
+                    {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
+                      <div class="container admin-panel container-padding-bottom">
+                        <div class="col-lg-12">
+                          <div class="edit font-size-12-px link-color-black container-padding-top">
+                            <div class="pull-left">
+                              <form action="/content/action" method="post" class="container-padding-right">
+                                <input type="hidden" value="product" name="ClassIdentifier" />
+                                <input type="hidden" class="input-zone-id" value="{$submenu.node_id}" name="NodeID" />
+                                <input type="hidden" value="swe-SE" name="ContentLanguageCode" />
+                                <button type="submit" name="NewButton" class="btn btn-success glyphicon glyphicon-file container-padding-left"></button>
+                              </form>                                                     
+                            </div>
+                            <div class="pull-right">                         
+                              <a href="/content/edit/{$submenu.contentobject_id}" title="Redigera {$submenu.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
+                              <form method="post" action="/content/action" class="float-right container-padding-left">
+                                <input type="hidden" name="TopLevelNode" value="{$submenu.node_id}" />
+                                <input type="hidden" name="ContentNodeID" value="{$submenu.node_id}" />
+                                <input type="hidden" name="ContentObjectID" value="{$submenu.contentobject_id}" />
+                                <button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
+                              </form>
+                            </div>
+                          </div>
                         </div>
-                        <div class="pull-right">                         
-                          <a href="/content/edit/{$submenu.contentobject_id}" title="Redigera {$submenu.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
-                          <form method="post" action="/content/action" class="float-right container-padding-left">
-                            <input type="hidden" name="TopLevelNode" value="{$submenu.node_id}" />
-                            <input type="hidden" name="ContentNodeID" value="{$submenu.node_id}" />
-                            <input type="hidden" name="ContentObjectID" value="{$submenu.contentobject_id}" />
-                            <button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
+                    {/if}
+                  {undef $user}
                   </div>
                   {def $grandchildren = fetch('content', 'list', hash('parent_node_id', $submenu.node_id))}
                     {foreach $grandchildren as $grandchild}
