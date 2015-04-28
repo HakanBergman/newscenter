@@ -59,14 +59,14 @@
 }
 
 .cbp-hsmenu > li.cbp-hsitem-open > a:not(:only-child):before {
-	content: "\f106";
+	
 }
 
 /* Add a triangle to currently open menu item link */
 .cbp-hsmenu > li.cbp-hsitem-open > a:after {
 	top: 100%;
 	border: solid transparent;
-	content: " ";
+	
 	height: 0;
 	width: 0;
 	position: absolute;
@@ -90,7 +90,6 @@
 
 .cbp-hssubmenu:before, 
 .cbp-hssubmenu:after { 
-	content: " "; 
 	display: table; 
 }
 .cbp-hssubmenu:after { 
