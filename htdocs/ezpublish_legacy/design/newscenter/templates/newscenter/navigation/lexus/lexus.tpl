@@ -38,13 +38,15 @@
                   <div class="container admin-panel">
                     <div class="col-lg-12">
                       <div class="edit font-size-12-px link-color-black container-padding-top">
-                        <div class="pull-right">
+                        <div class="pull-left">
                           <form action="/content/action" method="post" class="container-padding-right">
                             <input type="hidden" value="product" name="ClassIdentifier" />
                             <input type="hidden" class="input-zone-id" value="{$submenu.node_id}" name="NodeID" />
                             <input type="hidden" value="swe-SE" name="ContentLanguageCode" />
-                            <button type="submit" name="ActionRemove" class="btn btn-info glyphicon glyphicon-file container-padding-left"></button>
-                          </form>                          
+                            <button type="submit" name="ActionRemove" class="btn btn-success glyphicon glyphicon-file container-padding-left"></button>
+                          </form>                                                     
+                        </div>
+                        <div class="pull-right">                         
                           <a href="/content/edit/{$submenu.contentobject_id}" title="Redigera {$submenu.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
                           <form method="post" action="/content/action" class="float-right container-padding-left">
                             <input type="hidden" name="TopLevelNode" value="{$submenu.node_id}" />
