@@ -43,7 +43,7 @@
                             <input type="hidden" value="product" name="ClassIdentifier" />
                             <input type="hidden" class="input-zone-id" value="{$submenu.node_id}" name="NodeID" />
                             <input type="hidden" value="swe-SE" name="ContentLanguageCode" />
-                            <button type="submit" name="ActionRemove" class="btn btn-success glyphicon glyphicon-file container-padding-left"></button>
+                            <button type="submit" name="NewButton" class="btn btn-success glyphicon glyphicon-file container-padding-left"></button>
                           </form>                                                     
                         </div>
                         <div class="pull-right">                         
