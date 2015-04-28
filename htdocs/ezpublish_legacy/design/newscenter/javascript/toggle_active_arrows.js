@@ -14,6 +14,7 @@
             $(this).addClass('active');
             $('#' + $(this).id + ' .glyphicon-menu-down').addClass('hide');
             $('#' + $(this).id + ' .glyphicon-menu-up').removeClass('hide');
+            alert($(this).id);
         } else {
             /* Slide Up */
             /* Remove Active Slider */
