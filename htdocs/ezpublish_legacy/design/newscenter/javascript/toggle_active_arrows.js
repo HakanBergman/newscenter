@@ -5,6 +5,10 @@
             /* Set background on active slider */
             $(this).addClass('active');
             setTimeout(function () { $(this).parent().removeClass('cbp-hsitem-open'); alert("Hello"); }, 3000);
+        } else {
+            /* Slide Up */
+            /* Remove Active Slider */
+            $(this).removeClass('active');
         }
     });
 });
