@@ -72,19 +72,8 @@
                           </div>
                           <div class="col-lg-7">
                             <div class="col-lg-12">
-                                En bild
+                              <img src="/{$grandchild.data_map.image.content.original.full_path}" alt="{$grandchild.name|wash()}"/>
                             </div>
-                          </div>
-                          <div class="col-lg-3">
-                            <div class="col-lg-4">
-                              <strong>{$grandchild.data_map.name.data_text|wash()}</strong>
-                            </div>
-                            <div class="col-lg-8">
-                              {$grandchild.data_map.extra_attribute_one.data_text}
-                            </div>
-                          </div>
-                          <div class="col-lg-9">
-                            <img src="/{$grandchild.data_map.image.content.original.full_path}" alt="{$grandchild.name|wash()}"/>
                           </div>
                         </a>
                       </li>
