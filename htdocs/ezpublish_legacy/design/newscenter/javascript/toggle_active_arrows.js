@@ -2,9 +2,7 @@
     $('.cbp-hsmenu .slidedown').on('click', function (e) {
 
         $('.cbp-hsmenu li a').each(function () {
-            var element = $(this);
-            console.log(element);
-            $('.' + element + ' a').removeClass('active');
+            $(this).removeClass('active');
         });
 
         if (!$(this).parent().attr('data-open')) {
