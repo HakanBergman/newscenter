@@ -34,8 +34,8 @@
 			<meta name="description" content="{$sitesettings.0.data_map.seo_description.data_text|wash()}" />
 			<meta name="keywords" content="{$sitesettings.0.data_map.seo_tags.data_text|wash()}" />
 		{else}
-			<meta name="description" content="{$node.data_map.seo_description.data_text|wash()} n-> {$node} o-> {$object} pd-> {$pagedata.node_id} cn -> {$current_node}" />
-			<meta name="keywords" content="{$node.data_map.seo_tags.data_text|wash()}" />
+			<meta name="description" content="{$current_node.data_map.seo_description.data_text|wash()}" />
+			<meta name="keywords" content="{$current_node.data_map.seo_tags.data_text|wash()}" />
 		{/if}
 	{undef $sitesettings}
 
