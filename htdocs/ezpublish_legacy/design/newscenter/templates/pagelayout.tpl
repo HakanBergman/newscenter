@@ -84,7 +84,7 @@
 		<script type="text/javascript" src={"javascript/HorizontalSlideOutMenu/js/cbpHorizontalSlideOutMenu.min.js"|ezdesign}></script>
 	</head>
 	
-	<body class="{$sitesettings.0.data_map.background_color.data_text} {$sitesettings.0.data_map.font_family.data_text} {$sitesettings.0.data_map.font_size.data_text}"{if $sitesettings.0.data_map.background_image.has_content} style="background: #fafafa url('{$sitesettings.0.data_map.background_image.content.original.full_path}') no-repeat top center fixed; background-size: cover;"{/if}>
+	<body class="{$sitesettings.0.data_map.background_color.data_text} {$sitesettings.0.data_map.font_family.data_text} {$sitesettings.0.data_map.font_size.data_text}"{if $sitesettings.0.data_map.background_image.has_content} style="background: #fafafa url('/{$sitesettings.0.data_map.background_image.content.original.full_path}') no-repeat top center fixed; background-size: cover;"{/if}>
 	    <div id="fb-root"></div>
 
 		{* Include Admin Bar *}
