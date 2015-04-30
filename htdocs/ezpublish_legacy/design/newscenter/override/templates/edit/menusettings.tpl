@@ -21,13 +21,17 @@
                 <div class="form-group">
                   <label>Välj den plugin som ska användas</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.menu_plugin}</div>
+                </div>
 
+                <div class="form-group">
+                  <label>Visa ut eventuell sökruta</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.show_search}</div>
                 </div>
 
                 <hr class="border-solid-black" />
 
                 {* Meny Settings *}
-                
+
                 <div class="col-lg-12 no-margin no-padding">
                   <div class="pull-left"><h3 class="clear">Logotyp</h3></div>
                   <div class="pull-right container-padding-top-2"><a class="toggle" data-href="menu-color" href="#menu-color">Visa detaljer</a></div>
