@@ -1,4 +1,11 @@
-﻿
+﻿/* Wine Red */
+.text-color-wine-red { color: #821f1f; font-weight: 700; text-decoration: none; } 
+.link-color-wine-red a { color: #821f1f; font-weight: 700; text-decoration: none; } 
+.link-color-wine-red-hover a:hover { color: #821f1f; text-decoration: none; } 
+.link-color-wine-red-active a.active { color: #821f1f; font-weight: 700; text-decoration: none; }
+.link-color-wine-red-visited a.visited { color: #821f1f; font-weight: 700; text-decoration: none; }
+
+
 /* Teal */
 .text-color-teal { color: #4bc6d1; font-weight: 700; text-decoration: none; } 
 .link-color-teal a { color: #4bc6d1; font-weight: 700; text-decoration: none; } 
