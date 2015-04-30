@@ -116,7 +116,7 @@
                         <span class="link-color thumbnail bg-wine-red min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-wine-red" data-hex="#821f1f"></span>
                         <span class="link-color thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-longdrink-blue" data-hex="#4BC6D1"></span>
                         <span class="link-color thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-beer-brown" data-hex="#DE910b"></span>
-                        <span class="active-color thumbnail bg-orange min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-dark-orange-active" data-hex="#faad41"></span>
+                        <span class="link-color thumbnail bg-orange min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-dark-orange-active" data-hex="#faad41"></span>
                         <span class="link-color thumbnail bg-dynamite-green min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-dynamite-green" data-hex="#D4D977"></span>
                         <span class="link-color thumbnail bg-beige min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-beige" data-hex="#DECC9E"></span>
                         <span class="link-color thumbnail bg-pink min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-pink" data-hex="#F9DADD"></span>
@@ -134,7 +134,7 @@
                       <label class="clear">Välj aktiv länkfärg. Denna färg används för att besökaren ska se vilken undersida de har besökt.</label>
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <span class="active-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-black-active" data-hex="#000"></span>
-                        <span class="link-color thumbnail bg-wine-red min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-wine-red" data-hex="#821f1f"></span>
+                        <span class="active-color thumbnail bg-wine-red min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-wine-red" data-hex="#821f1f"></span>
                         <span class="active-color thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-longdrink-blue-active" data-hex="#4BC6D1"></span>
                         <span class="active-color thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-beer-brown-active" data-hex="#DE910b"></span>
                         <span class="active-color thumbnail bg-orange min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-dark-orange-active" data-hex="#faad41"></span>
@@ -155,7 +155,7 @@
                       <label class="clear">Välj hover-färg. Denna färg gör att menyn ändrar färg när musen förs över länken.</label>
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <span class="hover-color thumbnail bg-black min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-black-hover" data-hex="#000"></span>
-                        <span class="link-color thumbnail bg-wine-red min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-wine-red" data-hex="#821f1f"></span>
+                        <span class="hover-color thumbnail bg-wine-red min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-wine-red" data-hex="#821f1f"></span>
                         <span class="hover-color thumbnail bg-longdrink-blue min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-longdrink-blue-hover" data-hex="#4BC6D1"></span>
                         <span class="hover-color thumbnail bg-beer-brown min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-beer-brown-hover" data-hex="#DE910b"></span>
                         <span class="hover-color thumbnail bg-orange min-height-2-em min-width-2-em max-width-2-em cursor-pointer float-left container-margin-left" data-color="link-color-dark-orange-hover" data-hex="#faad41"></span>
