@@ -2,7 +2,7 @@
   <div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
       {include uri="design:page_header_logo.tpl" menusettings=$menusettings width=2}
-      {include uri="design:page_header_searchbox.tpl"}
+      {if $menusettings.0.data_map.show_search.value}{include uri="design:page_header_searchbox.tpl"}{/if}
     </div>
   </div>
 </div>
