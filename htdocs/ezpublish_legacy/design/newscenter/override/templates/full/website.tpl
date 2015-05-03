@@ -3,6 +3,7 @@
 		{$template_node.data_map.template_folder.data_text} {$template_node.data_map.template.data_text}
 		{def $template = concat('design:newscenter/templates/full/', $template_node.data_map.template_folder.data_text, '/', $template_node.data_map.template.data_text)}
 		{$template}
+		{include uri=$template}
 	{/if}
 {undef $template_node}
 {def $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
