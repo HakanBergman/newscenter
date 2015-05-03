@@ -23,13 +23,11 @@
 									<select name="zone-node" class="form-control zone-node">
 										<option value="{$company.node_id}">{$company.name|wash()}</option>
 										{* Disabled for now - Use global instead? *}
-										{* 
 										{def $node_list = fetch('content', 'tree', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('website', 'article', 'news_list', 'news_category'), 'sort_by', array('name', true()) ))}
 											{foreach $node_list as $node}
 												<option value="{$node.node_id}">{$node.name|wash()}</option>
 											{/foreach}
 										{undef $node_list}
-										*}
 									</select>
 								</div>
 
