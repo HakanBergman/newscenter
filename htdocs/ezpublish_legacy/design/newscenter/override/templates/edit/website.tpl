@@ -24,7 +24,14 @@
                   <label>Välj den plugin som ska användas</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.template}</div>
                 </div>
-                
+
+                <p class="clear">Välj om brödsmulan ska visas ut.</p>
+
+                <div class="form-group">
+                  <label>Visa ut brödsmulan</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.show_breadcrumb}</div>
+                </div>
+
                 <hr class="border-solid-black" />
 
                 {* Website Title *}
