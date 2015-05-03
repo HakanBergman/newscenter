@@ -4,6 +4,12 @@
     <div class="container website container-padding-top container-padding-bottom container-padding-left-2 container-padding-left-2 {$menusettings.0.data_map.link_hover_color.data_text}">
 		{* Check if we want to show the breadcrumb *}
 	    {if $node.data_map.show_breadcrumb.value}{include uri="design:newscenter/widget/widget_breadcrumb.tpl"}{/if}
+		
+		{def $website_size_desktop = fetch('content', 'node', hash('node_id', $node.data_map.size_desktop.content.relation_list.node_id))}
+		{def $website_size_tablet = fetch('content', 'node', hash('node_id', $node.data_map.size_tablet.content.relation_list.node_id))}
+		{def $website_size_mobile = fetch('content', 'node', hash('node_id', $node.data_map.size_mobile.content.relation_list.node_id))}
+
+		{$website_size_desktop.data_map.widget_size_class.data_map}
 
 	    <div class="col-lg-12">
 		    <article>
