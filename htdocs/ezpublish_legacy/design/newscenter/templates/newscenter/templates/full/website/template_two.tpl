@@ -5,6 +5,9 @@
 	    {if $node.data_map.show_breadcrumb.value}
 			{include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
 		{/if}
+		<div class="col-lg-4">
+			<img src="/{$node.data_map.image.content.original.full_path}" alt="{$node.data_map.image.content.alternative_text}" class="img-responsive" />
+		</div>
 	    <div class="col-lg-12">
 		    <article>
 			    <h1>{$node.name|wash()}</h1>      
