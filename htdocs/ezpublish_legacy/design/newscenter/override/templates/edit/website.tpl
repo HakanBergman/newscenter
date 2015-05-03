@@ -10,7 +10,23 @@
 			  {if $object.name|wash()|eq('Ny Block - Webbsida')}<h1>{$object.name|wash()}</h1>{else}<h1>{$object.name|wash()}</h1>{/if}
               <h2>Webbsida</h2>
               <div class="form container-padding-left-2">
-                                
+
+                {* Website Template To Use *}
+                <div class="col-lg-12 no-margin no-padding">
+                  <div class="pull-left">
+                    <h3 class="clear">Webbsida - Välj mall</h3>
+                  </div>
+                </div>
+
+                <p class="clear">Här väljs den mall som ska användas för att visa ut innehållet.</p>
+
+                <div class="form-group">
+                  <label>Välj den plugin som ska användas</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.template}</div>
+                </div>
+                
+                <hr class="border-solid-black" />
+
                 {* Website Title *}
 
                 <div class="col-lg-12 no-margin no-padding">
