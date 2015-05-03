@@ -24,6 +24,27 @@
                   <label>Välj den plugin som ska användas</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.template}</div>
                 </div>
+                
+                <p class="clear">Storlek på en dator.</p>
+
+                <div class="form-group">
+                  <label>Välj den plugin som ska användas</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.zone_size_desktop}</div>
+                </div>
+
+                <p class="clear">Storlek på en surfplatta.</p>
+
+                <div class="form-group">
+                  <label>Välj den plugin som ska användas</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.zone_size_tablet}</div>
+                </div>
+
+                <p class="clear">Storlek på en mobiltelefon.</p>
+
+                <div class="form-group">
+                  <label>Välj den plugin som ska användas</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.zone_size_phone}</div>
+                </div>
 
                 <p class="clear">Välj om brödsmulan ska visas ut.</p>
 
