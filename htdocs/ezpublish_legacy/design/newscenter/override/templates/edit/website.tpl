@@ -28,21 +28,21 @@
                 <p class="clear">Storlek på en dator.</p>
 
                 <div class="form-group">
-                  <label>Välj hur ytan ska preseneteras när användaren surfar på en dator.</label>
+                  <label>Välj hur ytan ska presenteras när användaren surfar på en dator.</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.zone_size_desktop}</div>
                 </div>
 
                 <p class="clear">Storlek på en surfplatta.</p>
 
                 <div class="form-group">
-                  <label>Välj hur ytan ska preseneteras när användaren surfar på en surfplatta.</label>
+                  <label>Välj hur ytan ska presenteras när användaren surfar på en surfplatta.</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.zone_size_tablet}</div>
                 </div>
 
                 <p class="clear">Storlek på en mobiltelefon.</p>
 
                 <div class="form-group">
-                  <label>Välj hur ytan ska preseneteras när användaren surfar i mobilen.</label>
+                  <label>Välj hur ytan ska presenteras när användaren surfar i mobilen.</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.zone_size_phone}</div>
                 </div>
 
