@@ -164,16 +164,51 @@
 				{* Include Before Content Zones *}
 				{if $current_node_id|ne($#company.node_id)}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 1)), 'sort_by', array('priority', true()) ))}
-						{if $zones}
-                            {if $zones.0.data_map.fullscreen.value}
-                                {foreach $zones as $zone}
-                                    {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-								{/foreach}
-                            {else}
-                                {foreach $zones as $zone}
-                                    {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-                                {/foreach}
-                            {/if}
+{if $zones}		
+							{def $zones_count = 0}
+							{def $normal_zone = 0}
+							{def $number}
+								<section id="section-frontpage">
+									<div class="container-fluid">                                    
+										{foreach $zones as $zone}																	
+											{* Verify what to do with our first node *}
+											{if $zones_count|eq(0)}
+												{if $zones.$zones_count.data_map.fullscreen.value}
+													{* Full screen Zone *}
+													<div class="{$sitesettings.0.data_map.background_color.data_text}">
+														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+													</div>
+												{else}
+													{* Normal Zone *}
+													<div class="container">
+														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+													{set $normal_zone = 1}
+												{/if}
+											{else}
+												{* Validate the rest of the nodes *}
+												{if $zones.$zones_count.data_map.fullscreen.value}
+													{* Full screen Zone *}
+													{* Verify if we had a normal zone, if we do, we need to close it *}
+													{if $normal_zone}</div>{set $normal_zone = 0}{/if}
+													<div class="{$sitesettings.0.data_map.background_color.data_text}">
+														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+													</div>
+												{else}													
+													{* Normal Zone *}
+													{* Verify if we had a normal zone, if we dont, we dont need to start one *}
+													{if $normal_zone|not}<div class="container">{set $normal_zone = 1}{/if}
+													{* Include our template *}
+													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+													{* Verify when this is our last node and end the div *}
+													{if $zones_count|eq($zones|count()|dec(1))}</div>{/if}
+												{/if}												
+											{/if}											
+											{set $number = $number|sum(1)}
+											{def $zones_count = $zones_count|inc(1)}																			
+										{/foreach}
+									</div>
+								</section>     
+							{undef $zones_count $normal_zone}                            							
 						{/if}
 					{undef $zones}
 				{/if}
@@ -181,7 +216,7 @@
 			{/if}
 
 			{* Main Content *}
-            {$module_result.content test="testar"}
+            {$module_result.content}
 
 			{if and(is_set($object)|not, is_set($edit_version)|not)}				
 
