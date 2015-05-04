@@ -8,7 +8,7 @@
 					<div class="admin-panel container-padding-top hide">
 						<strong class="container-padding-left-2">{$zone.name|wash()}</strong>
 						<div class="pull-right">
-							<a href="/widgets" title="Lägg till widget" class="btn btn-info glyphicon .glyphicon-plus"></a>
+							<a href="/widgets" title="Lägg till widget" class="btn btn-success glyphicon glyphicon-plus"></a>
 							<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
 							<form method="post" action="/content/action" class="float-right container-padding-left">
 								<input type="hidden" name="TopLevelNode" value="{$zone.node_id}" />
