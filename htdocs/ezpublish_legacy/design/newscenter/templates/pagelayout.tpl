@@ -182,7 +182,11 @@
 													{* Normal Zone *}
 													<div class="container">
 														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-													{if $zones_count|sum(1)|eq($zones|count())}{$module_result.content}</div>{/if}
+													{if $zones_count|sum(1)|eq($zones|count())}
+														{* Main Content *}
+														{$module_result.content}
+													</div>
+													{/if}
 													{set $normal_zone = 1}
 												{/if}
 											{else}
@@ -210,14 +214,14 @@
 									</div>
 								</section>     
 							{undef $zones_count $normal_zone}                            							
+						{else}
+							{* Main Content *}
+							{$module_result.content}							
 						{/if}
 					{undef $zones}
 				{/if}
 
 			{/if}
-
-			{* Main Content *}
-            {$module_result.content}
 
 			{if and(is_set($object)|not, is_set($edit_version)|not)}				
 
