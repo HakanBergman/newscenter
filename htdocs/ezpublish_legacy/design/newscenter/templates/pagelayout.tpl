@@ -168,7 +168,7 @@
 							{def $zones_count = 0}
 							{def $normal_zone = 0}
 							{def $number}
-								<section id="section-frontpage">
+								<section id="section-webpage">
 									<div class="container-fluid">                                    
 										{foreach $zones as $zone}																	
 											{* Verify what to do with our first node *}
@@ -182,6 +182,7 @@
 													{* Normal Zone *}
 													<div class="container">
 														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
+														{$module_result.content}
 													{set $normal_zone = 1}
 												{/if}
 											{else}
@@ -189,7 +190,7 @@
 												{if $zones.$zones_count.data_map.fullscreen.value}
 													{* Full screen Zone *}
 													{* Verify if we had a normal zone, if we do, we need to close it *}
-													{if $normal_zone} {$module_result.content} </div>{set $normal_zone = 0}{/if}
+													{if $normal_zone} </div>{set $normal_zone = 0}{/if}
 													<div class="{$sitesettings.0.data_map.background_color.data_text}">
 														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 													</div>
@@ -200,7 +201,7 @@
 													{* Include our template *}
 													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 													{* Verify when this is our last node and end the div *}
-													{if $zones_count|eq($zones|count()|dec(1))} {$module_result.content} hit </div>{/if}
+													{if $zones_count|eq($zones|count()|dec(1))}</div>{/if}
 												{/if}												
 											{/if}											
 											{set $number = $number|sum(1)}
