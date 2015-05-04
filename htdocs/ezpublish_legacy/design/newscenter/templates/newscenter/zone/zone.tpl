@@ -9,7 +9,7 @@
 						<strong class="container-padding-left-2">{$zone.name|wash()}</strong>
 						<div class="pull-right">
 							<a href="/widgets" title="Lägg till widget" class="btn btn-success glyphicon glyphicon-plus"></a>
-							<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
+							<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}" class="btn btn-info glyphicon glyphicon-edit container-padding-left"></a>
 							<form method="post" action="/content/action" class="float-right container-padding-left">
 								<input type="hidden" name="TopLevelNode" value="{$zone.node_id}" />
 								<input type="hidden" name="ContentNodeID" value="{$zone.node_id}" />
