@@ -5,9 +5,9 @@
 		{* Check if we want to show the breadcrumb *}
 	    {if $node.data_map.show_breadcrumb.value}{include uri="design:newscenter/widget/widget_breadcrumb.tpl"}{/if}
 		
-		{def $website_size_desktop = fetch('content', 'node', hash('node_id', $node.data_map.size_desktop.content.relation_list.node_id))}
-		{def $website_size_tablet = fetch('content', 'node', hash('node_id', $node.data_map.size_tablet.content.relation_list.node_id))}
-		{def $website_size_mobile = fetch('content', 'node', hash('node_id', $node.data_map.size_mobile.content.relation_list.node_id))}
+		{def $website_size_desktop = fetch('content', 'node', hash('node_id', $node.data_map.size_desktop.content.relation_list.0.node_id))}
+		{def $website_size_tablet = fetch('content', 'node', hash('node_id', $node.data_map.size_tablet.content.relation_list.0.node_id))}
+		{def $website_size_mobile = fetch('content', 'node', hash('node_id', $node.data_map.size_mobile.content.relation_list.0.node_id))}
 
 		{$website_size_desktop.data_map.widget_size_class.data_map}
 
