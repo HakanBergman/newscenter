@@ -26,6 +26,8 @@
 
 		{* Global Variables *}
 		{def $zone_width = ""}
+		{def $zone_width_tablet = ""}
+		{def $zone_width_phone = ""}
 		{def $block_width = ""}
 		{def $company = ""}
 		{set scope='global' $zone_width = ""}
