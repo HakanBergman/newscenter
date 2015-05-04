@@ -200,7 +200,7 @@
 													{* Include our template *}
 													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 													{* Verify when this is our last node and end the div *}
-													{if $zones_count|eq($zones|count()|dec(1))} {$module_result.content} </div>{/if}
+													{if $zones_count|eq($zones|count()|dec(1))} {$module_result.content} hit </div>{/if}
 												{/if}												
 											{/if}											
 											{set $number = $number|sum(1)}
