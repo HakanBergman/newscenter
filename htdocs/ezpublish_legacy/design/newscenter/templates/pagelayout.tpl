@@ -164,7 +164,7 @@
 				{* Include Before Content Zones *}
 				{if $current_node_id|ne($#company.node_id)}
 					{def $zones = fetch('content', 'list', hash('parent_node_id', $current_node_id, 'class_filter_type', 'include', 'class_filter_array', array('zone'), 'attribute_filter', array( array('zone/zone_position', '=', 1)), 'sort_by', array('priority', true()) ))}
-{if $zones}		
+						{if $zones}		
 							{def $zones_count = 0}
 							{def $normal_zone = 0}
 							{def $number}
@@ -189,7 +189,7 @@
 												{if $zones.$zones_count.data_map.fullscreen.value}
 													{* Full screen Zone *}
 													{* Verify if we had a normal zone, if we do, we need to close it *}
-													{if $normal_zone}</div>{set $normal_zone = 0}{/if}
+													{if $normal_zone} {$module_result.content} </div>{set $normal_zone = 0}{/if}
 													<div class="{$sitesettings.0.data_map.background_color.data_text}">
 														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 													</div>
@@ -200,7 +200,7 @@
 													{* Include our template *}
 													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 													{* Verify when this is our last node and end the div *}
-													{if $zones_count|eq($zones|count()|dec(1))}</div>{/if}
+													{if $zones_count|eq($zones|count()|dec(1))} {$module_result.content} </div>{/if}
 												{/if}												
 											{/if}											
 											{set $number = $number|sum(1)}
