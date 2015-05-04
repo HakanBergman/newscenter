@@ -9,9 +9,9 @@
 		{def $website_size_tablet = fetch('content', 'node', hash('node_id', $node.data_map.size_tablet.content.relation_list.0.node_id))}
 		{def $website_size_mobile = fetch('content', 'node', hash('node_id', $node.data_map.size_mobile.content.relation_list.0.node_id))}
 
-		{$node.data_map.size_desktop.content.relation_list.0}
+		{$node.data_map.size_desktop.content.relation_list.0.node_id}
 
-		{$website_size_desktop.data_map.widget_size_class.data_map}
+		{$website_size_desktop.data_map.widget_size_class.data_text}
 
 	    <div class="col-lg-12">
 		    <article>
