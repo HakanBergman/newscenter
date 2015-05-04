@@ -8,14 +8,14 @@
 					<div class="admin-panel container-padding-top hide">
 						<strong class="container-padding-left-2">{$zone.name|wash()}</strong>
 						<div class="col-lg-12">
-							<a href="/widgets" title="Lägg till widget" class="btn btn-success glyphicon glyphicon-plus container-margin-left container-margin-right"></a>
-							<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
-							<form method="post" action="/content/action" class="container-padding-left">
+							<form method="post" action="/content/action" class="float-left container-padding-left">
 								<input type="hidden" name="TopLevelNode" value="{$zone.node_id}" />
 								<input type="hidden" name="ContentNodeID" value="{$zone.node_id}" />
 								<input type="hidden" name="ContentObjectID" value="{$zone.contentobject_id}" />							
 								<button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
 							</form>
+							<a href="/widgets" title="Lägg till widget" class="btn btn-success glyphicon glyphicon-plus container-margin-left container-margin-right"></a>
+							<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
 						</div>
 						<div class="col-lg-12 clear no-margin container-padding-top">
 							<div class="col-lg-12 clear container-padding-top no-margin">
