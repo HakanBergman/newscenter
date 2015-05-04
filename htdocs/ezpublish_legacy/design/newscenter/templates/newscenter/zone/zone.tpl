@@ -7,7 +7,7 @@
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					<div class="admin-panel container-padding-top hide">
 						<strong class="container-padding-left-2">{$zone.name|wash()}</strong>
-						<div class="pull-right">
+						<div class="col-lg-12">
 							<a href="/widgets" title="Lägg till widget" class="btn btn-success glyphicon glyphicon-plus container-margin-right"></a>
 							<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}" class="btn btn-info glyphicon glyphicon-edit"></a>
 							<form method="post" action="/content/action" class="float-right container-padding-left">
