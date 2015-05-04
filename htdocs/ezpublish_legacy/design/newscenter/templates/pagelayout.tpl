@@ -224,7 +224,7 @@
 			{/if}
 
 			{* Show Edit view in Edit Mode *}
-			{if and(is_set($object), is_set($edit_version)}
+			{if and(is_set($object), is_set($edit_version))}
 				{* Main Content *}
 				{$module_result.content}
 			{/if}
