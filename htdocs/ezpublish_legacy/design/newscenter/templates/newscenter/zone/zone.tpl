@@ -3,7 +3,7 @@
 
 	{* Print the Zone *}
 			
-			<div class="{$#zone_width} no-margin no-padding{if $zone.data_map.background_color.has_content} {$zone.data_map.background_color.data_text}{/if}">
+			<div class="{$#zone_width} {$#zone_width_tablet} {$#zone_width_phone} no-margin no-padding{if $zone.data_map.background_color.has_content} {$zone.data_map.background_color.data_text}{/if}">
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 					<div class="admin-panel container-padding-top hide">
 						<strong class="container-padding-left-2">{$zone.name|wash()}</strong>
