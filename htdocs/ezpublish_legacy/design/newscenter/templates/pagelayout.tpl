@@ -182,7 +182,7 @@
 													{* Normal Zone *}
 													<div class="container">
 														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
-														{$module_result.content}
+													{if $zones_count|sum(1)|eq($zones|count())}{$module_result.content}</div>{/if}
 													{set $normal_zone = 1}
 												{/if}
 											{else}
