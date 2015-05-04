@@ -223,6 +223,12 @@
 
 			{/if}
 
+			{* Show Edit view in Edit Mode *}
+			{if and(is_set($object), is_set($edit_version)}
+				{* Main Content *}
+				{$module_result.content}
+			{/if}
+
 			{if and(is_set($object)|not, is_set($edit_version)|not)}				
 
 				{* Include After Content Zones *}
