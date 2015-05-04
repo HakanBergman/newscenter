@@ -122,6 +122,7 @@ section .widget-margin-top { margin-top: 1em; }
 .container-margin-top-20-percent { margin-top: 20%; }
 .container-margin-top-35-percent { margin-top: 35%; }
 .container-margin-left { margin-left: 1em; }
+.container-margin-right { margin-right: 1em; }
 .container-margin-bottom-1-px { margin-bottom: 1px; }
 .container-margin-bottom-2-px { margin-bottom: 2px; }
 .col-offset-5 { margin-left: 41.66666667%; }
