@@ -1,4 +1,4 @@
-<div class="container-fluid {$menusettings.0.data_map.background_color_logotype.data_text}">
+<div class="{if $menusettings.0.data_map.show_fullscreen.value}container-fluid{else}container{/if} {$menusettings.0.data_map.background_color_logotype.data_text}">
   <div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
       {include uri="design:page_header_logo.tpl" menusettings=$menusettings width=12}
