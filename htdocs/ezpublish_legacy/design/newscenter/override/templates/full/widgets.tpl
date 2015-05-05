@@ -6,7 +6,7 @@
 					<div class="row">
 						<div class="col-lg-12 container-padding-left-4 container-padding-right-4">
 							<article>
-
+								{$view_parameters|attribute(show, 1)}
 								<h1>Skapa widget</h1>	
 								<div class="col-lg-12 clear no-margin container-padding-top">
 									<div class="col-lg-12 clear container-padding-top no-margin">
