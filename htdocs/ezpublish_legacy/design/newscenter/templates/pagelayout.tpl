@@ -182,7 +182,7 @@
 													</div>
 												{else}
 													{* Normal Zone *}
-													<div class="container">
+													<div class="container {$sitesettings.0.data_map.background_color.data_text}">
 														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 													{if $zones_count|sum(1)|eq($zones|count())}
 														{* Main Content *}
@@ -203,7 +203,7 @@
 												{else}													
 													{* Normal Zone *}
 													{* Verify if we had a normal zone, if we dont, we dont need to start one *}
-													{if $normal_zone|not}<div class="container">{set $normal_zone = 1}{/if}
+													{if $normal_zone|not}<div class="container {$sitesettings.0.data_map.background_color.data_text}">{set $normal_zone = 1}{/if}
 													{* Include our template *}
 													{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 													{* Verify when this is our last node and end the div *}
