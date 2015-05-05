@@ -17,7 +17,6 @@
 							<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}" class="btn btn-info glyphicon glyphicon-edit container-margin-left"></a>
 							<a href="/widgets/(id)/{$zone.node_id}" title="Lägg till widget" class="btn btn-success glyphicon glyphicon-plus container-margin-left"></a>
 						</div>
-						<hr class="clear border-solid-black" />
 					</div>
 				{/if}
 				{def $blocks = fetch('content', 'list', hash('parent_node_id', $zone.node_id, 'sort_by', array('priority', true()) ))}
