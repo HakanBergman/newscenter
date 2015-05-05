@@ -12,7 +12,7 @@
 										{if $node}
 											{switch match=$node.class_identifier}
 												{case match='zone'}
-													<h1>Skapa widget för zonen {$zone.name|wash()}</h1>	
+													<h1>Skapa widget för zonen {$node.name|wash()}</h1>	
 													<div class="col-lg-12 clear no-margin container-padding-top">
 														<div class="col-lg-12 clear container-padding-top no-margin">
 															<div class="float-left container-margin-left container-padding-right container-padding-left thumbnail">
