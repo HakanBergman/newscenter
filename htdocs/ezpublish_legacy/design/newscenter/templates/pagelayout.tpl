@@ -130,7 +130,7 @@
 													</div>
 												{else}
 													{* Normal Zone *}
-													<div class="container">
+													<div class="container {$sitesettings.0.data_map.background_color.data_text}">
 														{include uri="design:newscenter/zone/zone.tpl" zone=$zone}
 													{set $normal_zone = 1}
 												{/if}
