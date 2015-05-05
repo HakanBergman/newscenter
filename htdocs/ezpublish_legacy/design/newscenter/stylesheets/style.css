@@ -192,6 +192,7 @@ section .widget-margin-top { margin-top: 1em; }
 
 /* Box rules */
 .navigation-box { box-shadow: 0 6px 8px rgba(0,0,0,.175); }
+.container-box { box-shadow: 0 6px 8px rgba(0,0,0,.175); }
 
 /* UL Rules */
 ul { list-style-type: none; }
