@@ -24,6 +24,11 @@
                 </div>
 
                 <div class="form-group">
+                  <label>Använd hela sidans bredd</label>
+                  <div>{attribute_edit_gui attribute=$object.data_map.show_fullscreen}</div>
+                </div>                
+
+                <div class="form-group">
                   <label>Visa ut eventuell sökruta</label>
                   <div>{attribute_edit_gui attribute=$object.data_map.show_search}</div>
                 </div>
