@@ -8,11 +8,11 @@
 					<div class="admin-panel container-padding-top hide">
 						<strong class="container-padding-left-2">{$zone.name|wash()}</strong>
 						<div class="col-lg-12">
-							<form method="post" action="/content/action" class="float-left container-padding-left">
+							<form method="post" action="/content/action" class="float-left">
 								<input type="hidden" name="TopLevelNode" value="{$zone.node_id}" />
 								<input type="hidden" name="ContentNodeID" value="{$zone.node_id}" />
 								<input type="hidden" name="ContentObjectID" value="{$zone.contentobject_id}" />							
-								<button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
+								<button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove"></button>
 							</form>							
 							<a href="/content/edit/{$zone.contentobject_id}" title="Redigera zonen {$zone.name|wash()}" class="btn btn-info glyphicon glyphicon-edit container-margin-left"></a>
 							<a href="/widgets/(id)/{$zone.node_id}" title="Lägg till widget" class="btn btn-success glyphicon glyphicon-plus container-margin-left"></a>
