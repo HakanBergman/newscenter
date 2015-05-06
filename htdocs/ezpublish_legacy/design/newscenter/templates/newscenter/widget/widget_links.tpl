@@ -12,6 +12,7 @@
 					</form>
 				</div>
 				{if $block.data_map.show_children.value}
+					hit
 					{def $child_nodes = fetch('content', 'list', hash('parent_node_id', $block.node_id))}
 						{if $child_nodes}
 							<ul>
