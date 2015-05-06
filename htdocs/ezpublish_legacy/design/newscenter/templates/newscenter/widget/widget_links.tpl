@@ -16,7 +16,7 @@
 						{if $child_nodes}
 							<ul>
 								{foreach $child_nodes as $child}
-									<li><a href="{$child.url|ezurl('no', 'full')} alt="{$child.name}">{$child.name|wash()}</a></li>
+									<li><a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a></li>
 								{/foreach}
 							</ul>
 					{undef $child_nodes}
