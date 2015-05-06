@@ -2,7 +2,7 @@
   <div class="row widget-margin-top widget-links {$block.data_map.background_color.data_text}">
 	  <div class="{if $block.data_map.fullscreen.value}container-fluid{else}container{/if} no-margin no-padding">
 		  <article>
-				<h4 class="text-center">{$block.name|wash()}</h4>
+				<h4 class="text-center {$block.data_map.text_color.data_text}">{$block.name|wash()}</h4>
 		  </article>
 	  </div>
   </div>
