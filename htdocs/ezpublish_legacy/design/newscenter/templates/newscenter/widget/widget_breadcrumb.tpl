@@ -1,5 +1,5 @@
   {def $breadcrumb = fetch('content', 'node', hash('node_id', $node.node_id))}
-  <div class="{$desktop_size} {$tablet_size|explode('lg')|implode('md')} {$phone_size|explode('lg')|implode('sm')} container-padding-top-1-em container-padding-left no-margin no-padding">
+  <div class="{$desktop_size} {$tablet_size|explode('lg')|implode('md')} {$phone_size|explode('lg')|implode('sm')} container-padding-top container-padding-right container-padding-left no-margin no-padding">
     <ol class="breadcrumb">
       {foreach $breadcrumb.path_array|extract(3) as $path}
         {def $path_node = fetch('content', 'node', hash('node_id', $path))}
