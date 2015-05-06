@@ -3,7 +3,7 @@
 	  <div class="{if $block.data_map.fullscreen.value}container-fluid{else}container{/if} no-margin no-padding">
 		  <article>
 				<h4 class="text-center {$block.data_map.background_color.data_text} {$block.data_map.text_color.data_text} container-padding-top-05 container-padding-bottom-05">{$block.name|wash()}</h4>
-				<div class="float-left container-margin-left container-padding-right container-padding-left float-right">
+				<div class="container-margin-left container-padding-right container-padding-left float-right">
 					<form action="/content/action" method="post">
 						<input type="hidden" value="widget_link" name="ClassIdentifier">
 						<input type="hidden" class="input-zone-id" value="{$block.node_id}" name="NodeID"> 
