@@ -11,6 +11,16 @@
 						<button type="submit" name="NewButton" class="btn btn-link"><span class="glyphicon glyphicon-plus"></span></button>										
 					</form>
 				</div>
+				{if $block.data_map.show_children.value}
+					{def $child_nodes = fetch('content', 'list', hash('parent_node_id', $block.node_id))}
+						{if $child_nodes}
+							<ul>
+								{foreach $child_nodes as $child}
+									<li><a href="{$child.url|ezurl('no', 'full')} alt="{$child.name}">{$child.name|wash()}</a></li>
+								{/foreach}
+							</ul>
+					{undef $child_nodes}
+				{/if}
 		  </article>
 	  </div>
   </div>
