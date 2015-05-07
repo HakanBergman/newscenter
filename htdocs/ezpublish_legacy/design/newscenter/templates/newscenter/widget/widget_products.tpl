@@ -18,6 +18,16 @@
 					{def $products = fetch('content', 'list', hash('parent_node_id', $block.node_id))}
 						{switch match=$products|count()}
 							{case match=1}
+								{def $class = 'col-lg-12 col-md-12 col-sm-12 col-xs-12'}
+							{/case}
+							{case match=2}
+								{def $class = 'col-lg-6 col-md-6 col-sm-6 col-xs-6'}
+							{/case}
+							{case match=3}
+								{def $class = 'col-lg-4 col-md-4 col-sm-4 col-xs-4'}
+							{/case}
+							{case match=4}
+								{def $class = 'col-lg-3 col-md-3 col-sm-3 col-xs-3'}
 							{/case}
 							{case}
 								{def $class = 'col-lg-12 col-md-12 col-sm-12 col-xs-12'}
@@ -26,7 +36,7 @@
 						{foreach $products as $product}						
 							<div class="{$class}">
 								<h4>{$product.name|wash()}</h4>
-								{$product.data_map.price.content|attribute(show, 1)}
+								{$product.data_map.price.content.price} {$product.data_map.price.content.currency|l10n( 'currency' )}
 							</div>
 						{/foreach}
 					{undef $products}
