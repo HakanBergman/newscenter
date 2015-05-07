@@ -24,7 +24,9 @@
 								{/foreach}
 							</ul>
 					{undef $child_nodes}
-				{/if}
+				{else}
+          {$block.data_map.information.content|attribute(show, 1)}
+        {/if}
 		  </article>
 	  </div>
   </div>
