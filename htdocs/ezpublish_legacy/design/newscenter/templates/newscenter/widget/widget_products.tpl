@@ -6,12 +6,13 @@
 		{def $block_size_mobile = fetch('content', 'node', hash('node_id', $block.data_map.widget_size_phone.content.relation_list.0.node_id))}	
 
 			<div class="{$block_size_desktop.data_map.widget_size_class.data_text} {$block_size_tablet.data_map.widget_size_class.data_text|explode('lg')|implode('md')} {$block_size_mobile.data_map.widget_size_class.data_text|explode('lg')|implode('sm')} container-padding-top container-padding-right container-padding-left no-margin no-padding">
-			  <div class="row widget-margin-top widget-links">
+			  <div class="row widget-margin-top widget-products">
 				  <div class="{if $block.data_map.fullscreen.value}container-fluid{else}container{/if} no-margin no-padding">
 					  <article>
 							<h4 class="text-center {$block.data_map.background_color.data_text} {$block.data_map.text_color.data_text} container-padding-top-05 container-padding-bottom-05">{$block.name|wash()}</h4>
 							{if and(is_set($object)|not, is_set($edit_version)|not)}
 							  {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
+								inloggad
 								<div class="container-margin-left admin-panel container-padding-right container-padding-left float-right">
 									<form action="/content/action" method="post">
 										<input type="hidden" value="product" name="ClassIdentifier" />
@@ -22,7 +23,7 @@
 								</div>
 							  {/if}
 							{/if}
-
+							hit
 					  </article>
 				  </div>
 			  </div>
