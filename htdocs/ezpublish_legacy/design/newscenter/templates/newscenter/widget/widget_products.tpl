@@ -36,7 +36,7 @@
 						{foreach $products as $product}						
 							<div class="{$class}">
 								<h4>{$product.name|wash()}</h4>
-								{$product.data_map.price.content.price} {$product.data_map.price.content.currency|l10n( 'currency' )}
+								<strong>{$product.data_map.price.content.price} {$product.data_map.price.content.currency|l10n( 'currency' )}</strong>
 							</div>
 						{/foreach}
 					{undef $products}
