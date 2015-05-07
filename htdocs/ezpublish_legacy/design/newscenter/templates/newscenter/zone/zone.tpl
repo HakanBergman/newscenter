@@ -28,7 +28,7 @@
 						{def $block_size_mobile = fetch('content', 'node', hash('node_id', $block.data_map.widget_size_phone.content.relation_list.0.node_id))}	
 						{def $included_file = concat('design:newscenter/widget/', $block.class_identifier, '.tpl')}
 
-							<div class="{$block_size_desktop.data_map.widget_size_class.data_text} {$block_size_tablet.data_map.widget_size_class.data_text|explode('lg')|implode('md')} {$block_size_mobile.data_map.widget_size_class.data_text|explode('lg')|implode('sm')} no-margin no-padding">
+							<div class="{$block_size_desktop.data_map.widget_size_class.data_text} {$block_size_tablet.data_map.widget_size_class.data_text|explode('lg')|implode('md')} {$block_size_mobile.data_map.widget_size_class.data_text|explode('lg')|implode('sm')} no-margin no-padding container-padding-left-2">
 								{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
 									<div class="col-lg-12 admin-panel hide clear container-padding-bottom container-padding-top">
 										<div class="pull-left">
