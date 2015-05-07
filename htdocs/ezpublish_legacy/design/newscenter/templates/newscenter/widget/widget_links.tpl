@@ -31,6 +31,7 @@
             {/if}
           {undef $child_nodes}
         {else}
+          {$block.data_map.information.content.0}
           {switch match=$block.data_map.information.content.0}
             {case match=0}
             {/case}
