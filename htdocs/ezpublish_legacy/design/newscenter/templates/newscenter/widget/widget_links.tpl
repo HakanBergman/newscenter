@@ -25,7 +25,7 @@
 							</ul>
 					{undef $child_nodes}
 				{else}
-          {$block.data_map.information.contentclass_attribute.nameList|attribute(show, 1)}
+          {$block.data_map.information.contentclass_attribute.content|attribute(show, 1)}
         {/if}
 		  </article>
 	  </div>
