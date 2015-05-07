@@ -37,6 +37,7 @@
             {case match=1}
             {/case}
             {case match=2}
+              hit
               {* Fetch information from parent node *}
               {def $child_nodes = fetch('content', 'list', hash('parent_node_id', $current_node.parent.node_id, 'class_filter_type', 'include', 'class_filter_array', array('website')))}
                 {$current_node.parent.node_id} {$current_node|attribute(show, 1)}
