@@ -25,7 +25,7 @@
 							</ul>
 					{undef $child_nodes}
 				{else}
-          {def $option = $block.data_map.content.0}
+          {def $option = $block.data_map.information.content.0}
           {$option}
           {$block.data_map.information.contentclass_attribute.content.options.0}
         {/if}
