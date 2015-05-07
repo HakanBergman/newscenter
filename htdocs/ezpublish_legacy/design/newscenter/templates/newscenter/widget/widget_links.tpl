@@ -23,9 +23,9 @@
             {if $child_nodes}
               <ul>
                 {foreach $child_nodes as $child}
-                <li>
-                  <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
-                </li>
+                  <li>
+                    <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
+                  </li>
                 {/foreach}
               </ul>
             {/if}
@@ -39,12 +39,13 @@
             {case match=2}
               {* Fetch information from parent node *}
               {def $child_nodes = fetch('content', 'list', hash('parent_node_id', $current_node.parent.node_id, 'class_filter_type', 'include', 'class_filter_array', array('website')))}
+                {$current_node.parent.node_id}
                 {if $child_nodes}
                   <ul>
                     {foreach $child_nodes as $child}
-                    <li>
-                      <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
-                    </li>
+                      <li>
+                        <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
+                      </li>
                     {/foreach}
                   </ul>
                 {/if}
