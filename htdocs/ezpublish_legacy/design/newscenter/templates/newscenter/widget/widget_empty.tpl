@@ -5,7 +5,7 @@
 		{def $block_size_tablet = fetch('content', 'node', hash('node_id', $block.data_map.widget_size_tablet.content.relation_list.0.node_id))}
 		{def $block_size_mobile = fetch('content', 'node', hash('node_id', $block.data_map.widget_size_phone.content.relation_list.0.node_id))}		
 
-		{$block.data_map|attribute(show, 1)}
+		{$block.data_map.widget_size_dekstop|attribute(show, 1)}
 			<div class="{$block_size_desktop} {$block_size_tablet|explode('lg')|implode('md')} {$block_size_mobile|explode('lg')|implode('sm')} container-padding-top container-padding-right container-padding-left no-margin no-padding">
 				&nbsp;		
 			</div> 
