@@ -46,7 +46,7 @@
 									</div>
 								{/if}
 								{* Include the Block *}
-								{*include uri=$included_file block=$block*}
+								{include uri=$included_file block=$block}
 							</div>
 
 						{undef $block_size_desktop $block_size_tablet $block_size_mobile $included_file}
