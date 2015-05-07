@@ -25,9 +25,17 @@
 							</ul>
 					{undef $child_nodes}
 				{else}
-          {def $option = $block.data_map.information.content.0}
-          {$option}
-          {$block.data_map.information.contentclass_attribute.content.options.0}
+          {switch match=$block.data_map.information.content.0}
+            {case match=0}
+            {/case}
+            {case match=1}
+            {/case}
+            {case match=2}
+              {* Fetch information from parent node *}
+              {def $child_nodes = fetch('content', 'list', hash('parent_node_id', $current_node.parent.node_id))}
+              {$child_nodes|count()}
+            {/case}
+           {/switch}
         {/if}
 		  </article>
 	  </div>
