@@ -14,6 +14,23 @@
 					</div>
 					{/if}
 				{/if}
+				<aside>
+					{def $products = fetch('content', 'list', hash('parent_node_id', $block.node_id))}
+						{switch match=$products|count()}
+							{case match=1}
+							{/case}
+							{case}
+								{def $class = 'col-lg-12 col-md-12 col-sm-12 col-xs-12'}
+							{/case}
+						{/switch}
+						{foreach $products as $product}						
+							<div class="{$class}">
+								<h4>{$product.name|wash()}</h4>
+								{$product.data_map.price.content|attribute(show, 1)}
+							</div>
+						{/foreach}
+					{undef $products}
+				</aside>
 			</article>
 		</div>
 	</div>
