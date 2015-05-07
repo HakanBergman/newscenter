@@ -9,10 +9,8 @@
 			  <div class="row widget-margin-top widget-products">
 				  <div class="{if $block.data_map.fullscreen.value}container-fluid{else}container{/if} no-margin no-padding">
 					  <article>
-							<h4 class="text-center {$block.data_map.background_color.data_text} {$block.data_map.text_color.data_text} container-padding-top-05 container-padding-bottom-05">{$block.name|wash()}</h4>
 							{if and(is_set($object)|not, is_set($edit_version)|not)}
 							  {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
-								inloggad
 								<div class="container-margin-left admin-panel container-padding-right container-padding-left float-right">
 									<form action="/content/action" method="post">
 										<input type="hidden" value="product" name="ClassIdentifier" />
@@ -23,7 +21,6 @@
 								</div>
 							  {/if}
 							{/if}
-							hit
 					  </article>
 				  </div>
 			  </div>
