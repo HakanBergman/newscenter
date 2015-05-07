@@ -14,7 +14,7 @@
 					</div>
 					{/if}
 				{/if}
-				<aside>
+				<aside class="clear">
 					{def $products = fetch('content', 'list', hash('parent_node_id', $block.node_id))}
 						{switch match=$products|count()}
 							{case match=1}
