@@ -15,9 +15,9 @@
 							{foreach $child_nodes as $child}
 								<li>
 									<form method="post" action="/content/action">
-											<input type="hidden" name="TopLevelNode" value="280">
-											<input type="hidden" name="ContentNodeID" value="280">
-											<input type="hidden" name="ContentObjectID" value="331">
+											<input type="hidden" name="TopLevelNode" value="{$product.node_id}">
+											<input type="hidden" name="ContentNodeID" value="{$product.node_id}">
+											<input type="hidden" name="ContentObjectID" value="{$product.contentobject_id}">
 											<input class="button" type="submit" name="ActionAddToBasket" value="Lägg till i kundvagnen">
 											<input class="button" type="submit" name="ActionAddToWishList" value="Lägg till i önskelistan">
 									</form>
