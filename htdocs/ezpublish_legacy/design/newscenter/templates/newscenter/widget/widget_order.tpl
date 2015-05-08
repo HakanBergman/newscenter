@@ -1,0 +1,34 @@
+<div class="row widget-links">
+  <div class="{if $block.data_map.fullscreen.value}container-fluid{else}container{/if} no-margin no-padding">
+    <article>
+		<h5 class="text-center {$block.data_map.background_color.data_text} {$block.data_map.text_color.data_text} container-padding-top-05 container-padding-bottom-05">{$block.name|wash()}</h5>
+		{switch match=$block.data_map.information.content.0}
+			{case match=0}
+			{/case}
+			{case match=1}
+			{/case}
+			{case match=2}
+				{* Fetch information from parent node *}
+				{def $child_nodes = fetch('content', 'list', hash('parent_node_id', $current_node.parent.node_id, 'class_filter_type', 'include', 'class_filter_array', array('product')))}
+					{if $child_nodes}
+						<ul>
+							{foreach $child_nodes as $child}
+								<li>
+									<form method="post" action="/content/action">
+											<input type="hidden" name="TopLevelNode" value="280">
+											<input type="hidden" name="ContentNodeID" value="280">
+											<input type="hidden" name="ContentObjectID" value="331">
+											<input class="button" type="submit" name="ActionAddToBasket" value="Lägg till i kundvagnen">
+											<input class="button" type="submit" name="ActionAddToWishList" value="Lägg till i önskelistan">
+									</form>
+									<a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
+								</li>
+							{/foreach}
+						</ul>
+					{/if}
+				{undef $child_nodes}
+			{/case}
+		{/switch}
+    </article>
+  </div>
+</div>

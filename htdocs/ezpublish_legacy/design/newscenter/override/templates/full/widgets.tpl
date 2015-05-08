@@ -17,6 +17,14 @@
 														<div class="col-lg-12 clear container-padding-top no-margin">
 															<div class="float-left container-margin-left container-padding-right container-padding-left thumbnail">
 																<form action="/content/action" method="post">
+																	<input type="hidden" value="widget_order" name="ClassIdentifier">
+																	<input type="hidden" class="input-zone-id" value="{$node.node_id}" name="NodeID"> 
+																	<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 							
+																	<button type="submit" name="NewButton" class="btn btn-link"><span class="glyphicon glyphicon-picture"></span></button>										
+																</form>
+															</div>
+															<div class="float-left container-margin-left container-padding-right container-padding-left thumbnail">
+																<form action="/content/action" method="post">
 																	<input type="hidden" value="widget_text" name="ClassIdentifier">
 																	<input type="hidden" class="input-zone-id" value="{$node.node_id}" name="NodeID"> 
 																	<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 							
