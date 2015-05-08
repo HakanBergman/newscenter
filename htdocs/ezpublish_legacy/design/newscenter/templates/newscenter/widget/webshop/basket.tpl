@@ -7,8 +7,8 @@
           <span class="pull-left">Du har {$basket.items|count()} varor i varukorgen</span>
         </div>
         <div class="col-lg-4">
-          <div class="col-lg-12"><span>Totalt {$basket.total_ex_vat|l10n( currency )}</span></div>
-          <div class="col-lg-12"><span>SEK exkl moms {$basket.total_inc_vat|l10n( currency )} SEK inkl moms)</span></div>
+          <div class="col-lg-12"><span>Totalt {$basket.total_ex_vat|l10n( currency )} SEK exkl moms</span></div>
+          <div class="col-lg-12"><span>{$basket.total_inc_vat|l10n( currency )} SEK inkl moms)</span></div>
         </div>
         <div class="col-lg-4">
           <span class="pull-right"><a href="/shop/basket/" alt="Till varukorgen">Till varukorgen</a></span>
