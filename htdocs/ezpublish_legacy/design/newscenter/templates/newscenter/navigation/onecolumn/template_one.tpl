@@ -55,8 +55,8 @@
                                   <div class="col-lg-8">
                                     <div class="col-lg-12 no-margin no-padding"><strong>{$item.object_name|wash()}</strong></div>
                                     <div class="col-lg-12 no-margin no-padding">
-                                      <div class="col-lg-8">{$item.item_count} x {$item.price_ex_vat}</div>
-                                      <div class="col-lg-4">{$item.price_inc_vat}</div>
+                                      <div class="col-lg-8">{$item.item_count} x {$item.price_inc_vat}</div>
+                                      <div class="col-lg-4">{$item.item_count|mul($item.price_inc_vat)}</div>
                                     </div>
                                   </div>
                                 </div>
