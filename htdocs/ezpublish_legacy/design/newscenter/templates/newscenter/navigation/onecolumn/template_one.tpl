@@ -31,13 +31,13 @@
                       <nav id="basket">
                         {def $basket=fetch( 'shop', 'basket' )}                            
                           <div class="col-lg-12 container-padding-top-3 link-color-white link-color-white hover">
-                            <div class="col-lg-12 container-padding-bottom"><a href="#close" title="Stäng varukorg"><span class="glyphicon glyphicon-remove close-shop-menu"></span> Stäng varukorgen</a></div>
+                            <div class="col-lg-12 container-padding-bottom"><a href="#close" title="Stäng varukorg"><span class="glyphicon glyphicon-remove close-shop-menu"></span></a></div>
                             <div class="col-lg-12 container-padding-top font-size-16-px"><strong>Din varukorg</strong></div>
                             <div class="col-lg-12"><strong>X</strong> produkter i varukorgen</div>                           
-                            <div class="col-lg-12">
+                            <div class="col-lg-12 position-fixed height">
                               <hr />
-                              <div class="col-lg-4 no-padding no-margin">Totalt</div>
-                              <div class="col-lg-8">
+                              <div class="col-lg-5 no-padding no-margin">Totalt</div>
+                              <div class="col-lg-7">
                                 <div class="col-lg-12">{$basket.total_ex_vat|l10n( currency )} inkl moms</div>
                                 <div class="col-lg-12">{$basket.total_inc_vat|l10n( currency )} exkl moms</div>
                               </div>
