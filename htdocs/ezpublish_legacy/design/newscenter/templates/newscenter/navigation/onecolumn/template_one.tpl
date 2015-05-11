@@ -26,7 +26,12 @@
                   {/foreach}
             			{if $#company.data_map.webshop_active.value}
 				            {* Include Basket *}
-				            <li class="float-right"><a href="/shop/basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+				            <li class="float-right">
+                      <a href="/shop/basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                      <div class="col-lg-12">
+                        Test
+                      </div>
+                    </li>
 			            {/if}                   
               </ul>              
           </div>
