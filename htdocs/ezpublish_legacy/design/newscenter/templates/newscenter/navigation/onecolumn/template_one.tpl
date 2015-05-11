@@ -34,7 +34,7 @@
                             <div class="col-lg-12"><a href="#close" title="Stäng varukorg" class="float-right"><span class="glyphicon glyphicon-remove close-shop-menu"></span></a></div>
                             <div class="col-lg-12 container-padding-top font-size-16-px"><strong>Din varukorg</strong></div>
                             <div class="col-lg-12"><strong>X</strong> produkter i varukorgen</div>                           
-                            <div class="col-lg-12 position-fixed top-80-percent">
+                            <div class="col-lg-12 absolute top-80-percent">
                               <hr />
                               <div class="col-lg-5 no-padding no-margin">Totalt</div>
                               <div class="col-lg-7">
