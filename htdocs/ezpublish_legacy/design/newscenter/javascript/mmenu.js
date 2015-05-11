@@ -25,6 +25,11 @@ $(document).ready(function() {
         transitionDuration: 0,
     });
 
+    var API = $("#basket").data("mmenu");
+    $("#close").click(function () {
+        API.close();
+    });
+
 });
 
 
