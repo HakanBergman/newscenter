@@ -36,8 +36,8 @@
                             <div class="col-lg-12"><strong>X</strong> produkter i varukorgen</div>                           
                             <div class="col-lg-12">
                               <hr />
-                              <div class="col-lg-6 no-padding no-margin">Totalt</div>
-                              <div class="col-lg-6">
+                              <div class="col-lg-4 no-padding no-margin">Totalt</div>
+                              <div class="col-lg-8">
                                 <div class="col-lg-12">{$basket.total_ex_vat|l10n( currency )} inkl moms</div>
                                 <div class="col-lg-12">{$basket.total_inc_vat|l10n( currency )} exkl moms</div>
                               </div>
