@@ -30,7 +30,7 @@
                       <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
                       <nav id="basket">
                          <div>
-                            <span class="glyphicon glyphicon-remove close-shop-menu"></span>
+                            <a href="#close" title="Stäng varukorg"><span class="glyphicon glyphicon-remove close-shop-menu"></span></a>
                             <p>Welcome to the advanced menu. <a href="#subpanel">Open the second panel</a></p>
                             <div id="subpanel" class="Panel">
                                <p>This is the subpanel.</p>
