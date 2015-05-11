@@ -34,6 +34,13 @@
                               <div class="col-lg-12 container-padding-bottom"><a href="#close" title="Stäng varukorg"><span class="glyphicon glyphicon-remove close-shop-menu"></span> Stäng varukorgen</a></div>
                               <div class="col-lg-12 container-padding-top font-size-16-px"><strong>Din varukorg</strong></div>
                               <div class="col-lg-12"><strong>X</strong> produkter i varukorgen</div>
+                              <div class="col-lg-12">
+                                <div class="col-lg-6">Totalt</div>
+                                <div class="col-lg-6">
+                                  <div class="col-lg-12">{$basket.total_ex_vat|l10n( currency )}</div>
+                                  <div class="col-lg-12">{$basket.total_inc_vat|l10n( currency )}</div>
+                                </div>
+                              </div>
                               <nav class="navbar navbar-fixed-bottom">
                                   <div class="col-lg-12 text-center"><a href="shop/confirmorder" title="Bekräfta order"><button class="btn btn-primary min-width-80-percent">Till kassan</button></a></div>
                               </nav>                              
