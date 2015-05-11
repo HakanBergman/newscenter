@@ -27,10 +27,10 @@
             			{if $#company.data_map.webshop_active.value}
 				            {* Include Basket *}
 				            <li class="float-right">
-                      <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                      <a href="#basket" title="Varukorg" class="link-color-white link-color-white-hover"><span class="glyphicon glyphicon-shopping-cart"></span></a>
                       <nav id="basket">
                          <div>
-                            <a href="#close" title="Stäng varukorg"><span class="glyphicon glyphicon-remove close-shop-menu"></span></a>
+                            <a href="#close" title="Stäng varukorg" class=""><span class="glyphicon glyphicon-remove close-shop-menu"></span></a>
                             <p>Welcome to the advanced menu. <a href="#subpanel">Open the second panel</a></p>
                             <div id="subpanel" class="Panel">
                                <p>This is the subpanel.</p>
