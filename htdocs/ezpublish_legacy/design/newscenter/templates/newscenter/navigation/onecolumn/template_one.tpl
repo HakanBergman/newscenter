@@ -13,7 +13,7 @@
       <div class="container">
         <nav role="navigation" class="{$menusettings.0.data_map.link_color.data_text} {$menusettings.0.data_map.link_active_color.data_text} {$menusettings.0.data_map.link_hover_color.data_text}">
           <div class="navbar no-margin no-padding">
-              <ul class="nav navbar-nav no-padding"> 
+              <ul class="nav navbar-nav no-padding width-100-percent container-padding-right"> 
                   {foreach $menu_items as $item}
                       {switch match=$item.class_identifier}
                         {case match='link'}
@@ -26,7 +26,7 @@
                   {/foreach}
             			{if $#company.data_map.webshop_active.value}
 				            {* Include Basket *}
-				            <li><a href="/shop/basket" title="Varukorg" class="float-right"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+				            <li class="float-right"><a href="/shop/basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
 			            {/if}                   
               </ul>              
           </div>
