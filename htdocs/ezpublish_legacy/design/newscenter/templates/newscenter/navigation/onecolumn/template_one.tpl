@@ -28,6 +28,7 @@
 				            {* Include Basket *}
 				            <li class="float-right">
                       <a href="/shop/basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                      test
                       <nav id="mmenu">
                          <div>
                             <img src="paht/to/logo.png" />
