@@ -183,8 +183,8 @@ section .widget-margin-top { margin-top: 1em; }
 .left-none { left: 0; }
 
 /* Float */
-.float-left { float: left; }
-.float-right { float: right; }
+.float-left { float: left !important; }
+.float-right { float: right !important; }
 
 /* Vertical Alignment */
 .vertical-bottom { vertical-align: bottom; vertical-align: text-bottom; }
