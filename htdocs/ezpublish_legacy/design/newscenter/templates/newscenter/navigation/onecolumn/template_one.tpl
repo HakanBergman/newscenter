@@ -31,7 +31,7 @@
                       <nav id="basket">
                         {def $basket=fetch( 'shop', 'basket' )}                            
                             <div class="col-lg-12 container-padding-top">
-                              <h1>Din varukorg</h1>
+                              <strong>Din varukorg</strong>
                               <strong>X</strong> produkter i varukorgen
                             </div>
                          <div class="link-color-white link-color-white-hover">
