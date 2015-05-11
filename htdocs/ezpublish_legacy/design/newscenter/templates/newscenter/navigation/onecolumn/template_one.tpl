@@ -30,7 +30,7 @@
                       <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
                       <nav id="basket">
                          <div>
-                            <img src="paht/to/logo.png" />
+                            <a href="#basket" title="Varukorg"><button class="btn danger">Test</button><span class="glyphicon glyphicon-remove"></span></a>
                             <p>Welcome to the advanced menu. <a href="#subpanel">Open the second panel</a></p>
                             <div id="subpanel" class="Panel">
                                <p>This is the subpanel.</p>
