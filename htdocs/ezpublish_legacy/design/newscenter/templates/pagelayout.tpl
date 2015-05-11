@@ -289,7 +289,7 @@
 			{* Check if webshop is active *}
 			{if $#company.data_map.webshop_active.value}
 				{* Include Basket *}
-				{include uri="design:newscenter/widget/webshop/basket.tpl"}
+				{*include uri="design:newscenter/widget/webshop/basket.tpl"*}
 			{/if}
 
 		{/if}

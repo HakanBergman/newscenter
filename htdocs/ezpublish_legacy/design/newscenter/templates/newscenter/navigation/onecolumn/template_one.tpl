@@ -31,10 +31,8 @@
                       <nav id="basket">
                          <div class="link-color-white link-color-white-hover">
                             <a href="#close" title="Stäng varukorg" ><span class="glyphicon glyphicon-remove close-shop-menu"></span></a>
-                            <p>Welcome to the advanced menu. <a href="#subpanel">Open the second panel</a></p>
-                            <div id="subpanel" class="Panel">
-                               <p>This is the subpanel.</p>
-                            </div>
+                            <div class="col-lg-12"><span>Totalt {$basket.total_ex_vat|l10n( currency )} SEK exkl moms</span></div>
+                            <div class="col-lg-12"><span>Totalt {$basket.total_inc_vat|l10n( currency )} SEK inkl moms</span></div>
                          </div>
                       </nav>
                     </li>
