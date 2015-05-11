@@ -33,7 +33,17 @@
                           <div class="col-lg-12 container-padding-top-3 link-color-white link-color-white hover">
                             <div class="col-lg-12"><a href="#close" title="Stäng varukorg" class="float-right"><span class="glyphicon glyphicon-remove close-shop-menu"></span></a></div>
                             <div class="col-lg-12 container-padding-top font-size-16-px"><strong>Din varukorg</strong></div>
-                            <div class="col-lg-12"><strong>{$basket.items|count()}</strong> produkter i varukorgen</div>                           
+                            {switch match=$basket.items|count()}
+                              {case match=0}
+                                <div class="col-lg-12">Du har inga produkter i varukorgen.</div>
+                              {/case}
+                              {case match=1}
+                                <div class="col-lg-12"><strong>{$basket.items|count()}</strong> produkt i varukorgen.</div>
+                              {/case}
+                              {case}
+                                <div class="col-lg-12"><strong>{$basket.items|count()}</strong> produkter i varukorgen.</div>
+                              {/case}
+                            {/switch}
                             <div class="col-lg-12 absolute top-80-percent">
                               <hr />
                               <div class="col-lg-5 no-padding no-margin">Totalt</div>
