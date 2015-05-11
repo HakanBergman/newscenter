@@ -47,11 +47,12 @@
                             <div class="col-lg-12">
                               {foreach $basket.items as $item}
                                 <div class="col-lg-12 no-margin no-padding">
-                                  {$item.object_name|wash()}
-                                  {$item.item_object|attribute(show, 1)}
+                                  <div class="col-lg-4">{$item.item_object.data_map.image.content.original.full_path}</div>
+                                  <div class="col-lg-8">
+                                    <div class="col-lg-12 no-margin no-padding"><strong>{$item.object_name|wash()}</strong></div>
+                                    
+                                  </div>
                                 </div>
-                                {$item|attribute(show, 1)}
-                                {$item.name|wash()}
                               {/foreach}
                             </div>
                             <div class="col-lg-12 absolute top-80-percent">
