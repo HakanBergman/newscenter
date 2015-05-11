@@ -44,7 +44,7 @@
                                 <div class="col-lg-12"><strong>{$basket.items|count()}</strong> produkter i varukorgen.</div>
                               {/case}
                             {/switch}
-                            <div class="col-lg-12">
+                            <div class="col-lg-12 container-margin-top">
                               {foreach $basket.items as $item}
                                 <div class="col-lg-12 no-margin no-padding">
                                   <div class="col-lg-4">{$item.item_object.data_map.image.content.original.full_path}</div>
