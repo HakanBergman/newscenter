@@ -36,7 +36,7 @@
                               <div class="col-lg-12"><strong>X</strong> produkter i varukorgen</div>
                               <nav class="navbar navbar-default navbar-fixed-bottom">
                                 <div class="container bg-black text-color-white">
-                                  <button class="btn btn-primary">Till kassan</button>
+                                  <div class="col-lg-12"><button class="btn btn-primary">Till kassan</button></div>
                                 </div>
                               </nav>                              
                             </div>
