@@ -48,7 +48,7 @@
                               {foreach $basket.items as $item}
                                 <div class="col-lg-12 no-margin no-padding">
                                   {$item.object_name|wash()}
-                                  {$item_object|attribute(show, 1)}
+                                  {$item.item_object|attribute(show, 1)}
                                 </div>
                                 {$item|attribute(show, 1)}
                                 {$item.name|wash()}
