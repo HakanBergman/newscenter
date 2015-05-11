@@ -57,7 +57,7 @@
                                 <div class="col-lg-12">{$basket.total_ex_vat|l10n( currency )} inkl moms</div>
                                 <div class="col-lg-12">{$basket.total_inc_vat|l10n( currency )} exkl moms</div>
                               </div>
-                              <div class="col-lg-12 text-center container-padding-top no-padding no-margin"><a href="shop/confirmorder" title="Bekräfta order"><button class="btn btn-primary min-width-80-percent">Till kassan</button></a></div>                              
+                              <div class="col-lg-12 text-center container-padding-top no-padding no-margin"><a href="/shop/confirmorder" title="Bekräfta order"><button class="btn btn-primary min-width-80-percent">Till kassan</button></a></div>                              
                             </div>                            
                           </div>
                         {undef $basket}
