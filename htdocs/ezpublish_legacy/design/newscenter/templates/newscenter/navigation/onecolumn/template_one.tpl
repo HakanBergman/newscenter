@@ -24,7 +24,10 @@
                         {/case}
                       {/switch}
                   {/foreach}
-                   <li><a href="/shop/basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            			{if $#company.data_map.webshop_active.value}
+				            {* Include Basket *}
+				            <li><a href="/shop/basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+			            {/if}                   
               </ul>              
           </div>
         </nav>
