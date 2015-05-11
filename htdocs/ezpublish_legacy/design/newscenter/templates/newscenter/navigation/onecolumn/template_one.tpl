@@ -35,7 +35,8 @@
                               <div class="col-lg-12 container-padding-top font-size-16-px"><strong>Din varukorg</strong></div>
                               <div class="col-lg-12"><strong>X</strong> produkter i varukorgen</div>
                               <div class="col-lg-12">
-                                <div class="col-lg-6">Totalt</div>
+                                <hr />
+                                <div class="col-lg-6 no-padding no-margin">Totalt</div>
                                 <div class="col-lg-6">
                                   <div class="col-lg-12">{$basket.total_ex_vat|l10n( currency )}</div>
                                   <div class="col-lg-12">{$basket.total_inc_vat|l10n( currency )}</div>
