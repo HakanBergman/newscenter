@@ -46,6 +46,7 @@
                             {/switch}
                             <div class="col-lg-12">
                               {foreach $basket.items as $item}
+                                {$item|attribute(show, 1)}
                                 {$item.name|wash()}
                               {/foreach}
                             </div>
