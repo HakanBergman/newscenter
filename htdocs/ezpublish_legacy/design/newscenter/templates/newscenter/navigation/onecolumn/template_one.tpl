@@ -24,8 +24,8 @@
                         {/case}
                       {/switch}
                   {/foreach}
-              </ul>
-              <span class="glyphicon glyphicon-shopping-cart"></span>
+                   <li><a href="/shop/basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+              </ul>              
           </div>
         </nav>
       </div>
