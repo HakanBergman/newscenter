@@ -29,7 +29,7 @@
 				            <li class="float-right">
                       <a href="/shop/basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
                       test
-                      <nav id="mmenu">
+                      <nav id="mmenu2">
                          <div>
                             <img src="paht/to/logo.png" />
                             <p>Welcome to the advanced menu. <a href="#subpanel">Open the second panel</a></p>
