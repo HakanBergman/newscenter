@@ -28,9 +28,18 @@
 				            {* Include Basket *}
 				            <li class="float-right">
                       <a href="/shop/basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
-                      <div class="col-lg-12">
-                        Test
-                      </div>
+                      <nav id="mmenu">
+                         <div>
+                            <img src="paht/to/logo.png" />
+                            <p>Welcome to the advanced menu.<br />
+                               <a href="#subpanel">Open the second panel</a></p>
+
+                            <!-- subpanel -->
+                            <div id="subpanel" class="Panel">
+                               <p>This is the subpanel.</p>
+                            </div>
+                         </div>
+                      </nav>
                     </li>
 			            {/if}                   
               </ul>              
