@@ -25,6 +25,7 @@
                       {/switch}
                   {/foreach}
               </ul>
+              <span class="glyphicon glyphicon-shopping-cart"></span>
           </div>
         </nav>
       </div>
