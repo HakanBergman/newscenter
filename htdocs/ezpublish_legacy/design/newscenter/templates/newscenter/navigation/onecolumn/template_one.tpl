@@ -35,8 +35,8 @@
                               <div class="col-lg-12 container-padding-top font-size-16-px"><strong>Din varukorg</strong></div>
                               <div class="col-lg-12"><strong>X</strong> produkter i varukorgen</div>
                               <nav class="navbar navbar-default navbar-fixed-bottom">
-                                <div class="container">
-                                    FIXED BOTTOM
+                                <div class="container bg-black text-color-white">
+                                  <button class="btn btn-primary">Till kassan</button>
                                 </div>
                               </nav>                              
                             </div>
