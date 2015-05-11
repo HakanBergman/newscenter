@@ -31,10 +31,7 @@
                       <nav id="mmenu">
                          <div>
                             <img src="paht/to/logo.png" />
-                            <p>Welcome to the advanced menu.<br />
-                               <a href="#subpanel">Open the second panel</a></p>
-
-                            <!-- subpanel -->
+                            <p>Welcome to the advanced menu. <a href="#subpanel">Open the second panel</a></p>
                             <div id="subpanel" class="Panel">
                                <p>This is the subpanel.</p>
                             </div>
