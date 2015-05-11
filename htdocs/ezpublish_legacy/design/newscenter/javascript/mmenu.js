@@ -26,8 +26,7 @@ $(document).ready(function() {
     });
 
     var API = $("#basket").data("mmenu");
-    $(".close-menu").click(function () {
-        alert('test');
+    $(".close-shop-menu").click(function () {
         API.close();
     });
 
