@@ -30,6 +30,10 @@
                       <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
                       <nav id="basket">
                         {def $basket=fetch( 'shop', 'basket' )}
+                          <article>
+                            <h1>Din varukorg</h1>
+                            <div class="col-lg-12"><strong>X</strong> produkter i varukorgen</div>
+                          </article>
                          <div class="link-color-white link-color-white-hover">
                             <a href="#close" title="Stäng varukorg" ><span class="glyphicon glyphicon-remove close-shop-menu"></span></a>
                             <div class="col-lg-12"><span>Totalt {$basket.total_ex_vat|l10n( currency )} SEK exkl moms</span></div>
