@@ -55,7 +55,8 @@
                                   <div class="col-lg-8">
                                     <div class="col-lg-12 no-margin no-padding"><strong>{$item.object_name|wash()}</strong></div>
                                     <div class="col-lg-12 no-margin no-padding">
-                                      {$item.item_count} x {$item.price_ex_vat|l10n( currency )}
+                                      <div class="col-lg-8">{$item.item_count} x {$item.price_ex_vat}</div>
+                                      <div class="col-lg-4">{$item.price_inc_vat}</div>
                                     </div>
                                   </div>
                                 </div>
@@ -65,8 +66,8 @@
                               <hr />
                               <div class="col-lg-5 no-padding no-margin">Totalt</div>
                               <div class="col-lg-7">
-                                <div class="col-lg-12">{$basket.total_inc_vat|l10n(currency)} inkl moms</div>
-                                <div class="col-lg-12">Varav {$basket.total_inc_vat|dec($basket.total_ex_vat)|l10n(currency)} moms</div>
+                                <div class="col-lg-12">{$basket.total_inc_vat} inkl moms</div>
+                                <div class="col-lg-12">Varav {$basket.total_inc_vat|dec($basket.total_ex_vat)} moms</div>
                               </div>
                               <div class="col-lg-12 text-center container-padding-top no-padding no-margin"><a href="/shop/userregister" title="Bekräfta order"><button class="btn btn-primary min-width-80-percent">Till kassan</button></a></div>                              
                             </div>                            
