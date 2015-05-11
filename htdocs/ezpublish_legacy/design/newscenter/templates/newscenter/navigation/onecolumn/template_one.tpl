@@ -55,7 +55,8 @@
                                   <div class="col-lg-8">
                                     <div class="col-lg-12 no-margin no-padding"><strong>{$item.object_name|wash()}</strong></div>
                                     <div class="col-lg-12 no-margin no-padding">
-                                      {"Count"|i18n("design/ezdemo/shop/basket")} x {$item.total_ex_vat|l10n( currency )}
+                                      {$item.item_count} x {$item.total_ex_vat|l10n( currency )}
+                                      {$item|attribute(show, 1)}
                                     </div>
                                   </div>
                                 </div>
