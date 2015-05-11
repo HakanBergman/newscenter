@@ -34,6 +34,11 @@
                               <div class="col-lg-12 container-padding-bottom"><a href="#close" title="Stäng varukorg"><span class="glyphicon glyphicon-remove close-shop-menu"></span> Stäng varukorgen</a></div>
                               <div class="col-lg-12 container-padding-top font-size-16-px"><strong>Din varukorg</strong></div>
                               <div class="col-lg-12"><strong>X</strong> produkter i varukorgen</div>
+                              <nav class="navbar navbar-default navbar-fixed-bottom">
+                                <div class="container">
+                                    FIXED BOTTOM
+                                </div>
+                              </nav>                              
                             </div>
                          <div class="link-color-white link-color-white-hover">
                             <a href="#close" title="Stäng varukorg" ><span class="glyphicon glyphicon-remove close-shop-menu"></span></a>
