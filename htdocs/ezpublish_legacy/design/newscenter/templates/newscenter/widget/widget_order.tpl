@@ -15,13 +15,13 @@
 							{foreach $child_nodes as $child}
 								<li>
 									<form method="post" action="/content/action">
-											<input type="hidden" name="TopLevelNode" value="{$child.node_id}">
-											<input type="hidden" name="ContentNodeID" value="{$child.node_id}">
-											<input type="hidden" name="ContentObjectID" value="{$child.contentobject_id}">
-											<input class="button" type="submit" name="ActionAddToBasket" value="Lägg till i kundvagnen">
-											<input class="button" type="submit" name="ActionAddToWishList" value="Lägg till i önskelistan">
+											<input type="hidden" name="TopLevelNode" value="{$child.node_id}" />
+											<input type="hidden" name="ContentNodeID" value="{$child.node_id}" />
+											<input type="hidden" name="ContentObjectID" value="{$child.contentobject_id}" />
+											<input class="button" type="submit" name="ActionAddToBasket" value="Lägg till i kundvagnen" />
+											<input class="button" type="submit" name="ActionAddToWishList" value="Lägg till i önskelistan" />
 									</form>
-									<a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
+									<a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}" class="float-right">{$child.name|wash()}</a>
 								</li>
 							{/foreach}
 						</ul>
