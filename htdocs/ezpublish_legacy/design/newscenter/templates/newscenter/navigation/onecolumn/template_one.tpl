@@ -35,7 +35,7 @@
                               <div class="col-lg-12 container-padding-top font-size-16-px"><strong>Din varukorg</strong></div>
                               <div class="col-lg-12"><strong>X</strong> produkter i varukorgen</div>
                               <nav class="navbar navbar-fixed-bottom">
-                                  <div class="col-lg-12 text-center"><button class="btn btn-primary min-width-80-percent">Till kassan</button></div>
+                                  <div class="col-lg-12 text-center"><a href="shop/confirmorder" title="Bekräfta order"><button class="btn btn-primary min-width-80-percent">Till kassan</button></a></div>
                               </nav>                              
                             </div>
                          <div class="link-color-white link-color-white-hover">
