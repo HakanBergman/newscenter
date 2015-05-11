@@ -44,6 +44,11 @@
                                 <div class="col-lg-12"><strong>{$basket.items|count()}</strong> produkter i varukorgen.</div>
                               {/case}
                             {/switch}
+                            <div class="col-lg-12">
+                              {foreach $basket.items as $item}
+                                {$item.name|wash()}
+                              {/foreach}
+                            </div>
                             <div class="col-lg-12 absolute top-80-percent">
                               <hr />
                               <div class="col-lg-5 no-padding no-margin">Totalt</div>
