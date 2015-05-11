@@ -15,6 +15,16 @@ $(document).ready(function() {
 	transitionDuration: 0,
     });
 
+    $("#basket").mmenu({
+        slidingSubmenus: false,
+        offCanvas: {
+            position: "right",
+            zposition: "front"
+        }
+    }, {
+        transitionDuration: 0,
+    });
+
 });
 
 

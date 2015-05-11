@@ -27,8 +27,8 @@
             			{if $#company.data_map.webshop_active.value}
 				            {* Include Basket *}
 				            <li class="float-right">
-                      <a href="#mmenu" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
-                      <nav id="mmenu">
+                      <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                      <nav id="basket">
                          <div>
                             <img src="paht/to/logo.png" />
                             <p>Welcome to the advanced menu. <a href="#subpanel">Open the second panel</a></p>
