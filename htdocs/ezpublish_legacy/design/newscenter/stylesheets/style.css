@@ -180,6 +180,12 @@ section .widget-margin-top { margin-top: 1em; }
 /* Absolute Position */
 .absolute { position: absolute; }
 
+/* Fixed Position */
+.position-fixed { position: fixed; }
+
+/* Top Position */
+.top-80-percent { top: 80%; }
+
 /* Left */
 .left-none { left: 0; }
 
