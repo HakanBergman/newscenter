@@ -30,7 +30,7 @@
                       <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
                       <nav id="basket">
                         {def $basket=fetch( 'shop', 'basket' )}                            
-                            <div class="col-lg-12 container-padding-top-3">
+                            <div class="col-lg-12 container-padding-top-3 link-color-white link-color-white hover">
                               <div class="col-lg-12"><a href="#close" title="Stäng varukorg"><span class="glyphicon glyphicon-remove close-shop-menu"></span></a></div>
                               <div class="col-lg-12 font-size-16-px"><strong>Din varukorg</strong></div>
                               <div class="col-lg-12"><strong>X</strong> produkter i varukorgen</div>
