@@ -6,7 +6,10 @@
       <div class="container-padding-top-2">
         <p>Du kommer snart tillbaka till föregående sidan. Klicka <a href="{ezhttp().session.FromPage|ezurl('no', 'full')}">här</a> för att komma vidare</p>
         <script type="text/javascript">
-          window.location.replace({ezhttp().session.FromPage|ezurl('no', 'full')});
+          $( document ).ready(function() {
+            window.location.replace({ezhttp().session.FromPage|ezurl('no', 'full')});
+            alert("hit");
+          });
         </script>
       </div>
     </div>
