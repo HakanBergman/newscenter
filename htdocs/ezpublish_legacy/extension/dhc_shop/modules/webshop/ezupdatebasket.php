@@ -34,7 +34,7 @@ foreach ( $itemCountList as $itemCount )
     }
 }
 
-if (!isnumeric($itemCountList) || !isnumeric($itemIDList)) {
+if (!is_numeric($itemCountList) || !is_numeric($itemIDList)) {
     $error = true;
 }
 
