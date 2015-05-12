@@ -8,7 +8,10 @@ $(document).ready(function () {
         $.post("/webshop/updatebasket", { itemCountList: product_count, itemIDList: product_id }, function (data) {
             if ($.trim(data)) {
                 $('#container_id_' + product_id + ' .item_count').html(product_count);
-                $('#container_id_' + product_id + ' .total_price').html(product_count*product_price);
+                $('#container_id_' + product_id + ' .total_price').html(product_count * product_price);
+                $.each($('#webshop_cart .total_price'), function () {
+                    alert($(this));
+                });
             }
         });
     });
