@@ -122,7 +122,6 @@ if ( $http->hasPostVariable( "StoreChangesButton" ) )
     $itemCountList = $http->postVariable( "ProductItemCountList" );
     $itemIDList = $http->postVariable( "ProductItemIDList" );
     echo $itemCountList . ' ' . $itemIDList;
-    die('hit');
 
     // We should check item count, all itemcounts must be greater than 0
     foreach ( $itemCountList as $itemCount )
@@ -139,7 +138,7 @@ if ( $http->hasPostVariable( "StoreChangesButton" ) )
     $http->setSessionVariable( 'ProductItemCountList', $itemCountList );
     $http->setSessionVariable( 'ProductItemIDList', $itemIDList );
 
-    $module->redirectTo( '/shop/updatebasket/' );
+    #$module->redirectTo( '/shop/updatebasket/' );
     return;
 }
 
