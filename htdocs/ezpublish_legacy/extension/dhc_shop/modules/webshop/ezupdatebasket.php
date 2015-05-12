@@ -29,7 +29,7 @@ if (!$error) {
                                                                                    'item_id_list' => $itemIDList ) );
     $Result = array();
     $Result['pagelayout'] = '';
-    $Result['content'] = 'Success';
+    $Result['content'] = 'Success2';
     
 } else {
     $Result = array();
