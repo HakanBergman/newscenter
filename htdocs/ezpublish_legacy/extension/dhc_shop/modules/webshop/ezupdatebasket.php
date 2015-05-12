@@ -14,15 +14,11 @@ print_r($itemIDList);
 
 $http->setSessionVariable( 'ProductItemCountList', $itemCountList );
 $http->setSessionVariable( 'ProductItemIDList', $itemIDList );
-if ($operationResult = eZOperationHandler::execute( 'shop', 'updatebasket', array( 'item_count_list' => $itemCountList, 'item_id_list' => $itemIDList ) )) {
+
+$operationResult = eZOperationHandler::execute('shop', 'updatebasket', array( 'item_count_list' => $itemCountList, 'item_id_list' => $itemIDList));
     #$Result = array();
     #$Result['pagelayout'] = '';
     #$Result['content'] = $itemIDList;
-    echo "hit";
-} else {
-    echo "error";
-}
-
 #return $Result['content'];                                                                          
 
 ?>
