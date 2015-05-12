@@ -65,17 +65,11 @@
                                             <input type="text" name="ProductItemCountList[]" value="{$item.item_count}" size="5" />
                                         </div>
                                         <div class="col-lg-6 no-margin no-padding">
+                                          <button class="btn btn-primary" type="submit">Skicka mail</button>
                                           <input class="button" type="submit" name="StoreChangesButton" value="Uppdatera" />
                                         </div>
                                       </div>
-                                    </form>
-                                    <form method="post" action="/content/action">
-                                      <input type="hidden" name="TopLevelNode" value="{$child.node_id}" />
-                                      <input type="hidden" name="ContentNodeID" value="{$child.node_id}" />
-                                      <input type="hidden" name="ContentObjectID" value="{$child.contentobject_id}" />
-                                      <input class="button" type="submit" name="ActionAddToBasket" value="Lägg till i kundvagnen" />
-                                      <input class="button" type="submit" name="ActionAddToWishList" value="Lägg till i önskelistan" />
-                                    </form>                                    
+                                    </form>                                  
                                   </div>
                                 </div>
                               {/foreach}                              
