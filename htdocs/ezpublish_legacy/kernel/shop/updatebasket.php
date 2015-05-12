@@ -15,12 +15,11 @@ $itemIDList = $http->sessionVariable( 'ProductItemIDList' );
 
 $operationResult = eZOperationHandler::execute( 'shop', 'updatebasket', array( 'item_count_list' => $itemCountList,
                                                                                'item_id_list' => $itemIDList ) );
-print_r($operationResult);
+
 switch( $operationResult['status'] )
 {
     case eZModuleOperationInfo::STATUS_HALTED:
     {
-        echo "hit2";
         if ( isset( $operationResult['redirect_url'] ) )
         {
             $module->redirectTo( $operationResult['redirect_url'] );
@@ -50,7 +49,7 @@ switch( $operationResult['status'] )
        }
     }break;
 }
-die('hit');
+
 $module->redirectTo( '/shop/basket/' );
 
 ?>
