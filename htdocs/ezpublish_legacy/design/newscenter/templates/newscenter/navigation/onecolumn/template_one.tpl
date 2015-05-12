@@ -61,12 +61,12 @@
                                     <form method="post" action="/shop/basket">
                                       <div class="col-lg-12 no-margin no-padding">
                                         <div class="col-lg-6 no-margin no-padding">
-                                            {$item|attribute(show, 1)}
-                                            {$item.id}
-                                            <input type="hidden" name="ProductItemIDList[]" value="5" />
+                                            <input type="hidden" name="ProductItemIDList[]" value="{$item.id}" />
                                             <input type="text" name="ProductItemCountList[]" value="{$item.item_count}" size="5" />
                                         </div>
-                                        <div class="col-lg-6 no-margin no-padding"><input class="button" type="submit" name="StoreChangesButton" value="Uppdatera" /></div>
+                                        <div class="col-lg-6 no-margin no-padding">
+                                          <input class="button" type="submit" name="StoreChangesButton" value="Uppdatera" />
+                                        </div>
                                       </div>
                                     </form>
                                     <form method="post" action="/content/action">
