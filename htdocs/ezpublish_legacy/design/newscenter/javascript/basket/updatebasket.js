@@ -9,9 +9,11 @@ $(document).ready(function () {
             if ($.trim(data)) {
                 $('#container_id_' + product_id + ' .item_count').html(product_count);
                 $('#container_id_' + product_id + ' .total_price').html(product_count * product_price);
+                var total_sum = 0;
                 $.each($('#container_id_' + product_id + ' .total_price'), function() {
-                    alert($(this).html());
+                    total_sum += $(this).html();
                 });
+                $('#container_id_' + product_id + ' .total_sum_incl_vat').html(total_sum);
             }
         });
     });
