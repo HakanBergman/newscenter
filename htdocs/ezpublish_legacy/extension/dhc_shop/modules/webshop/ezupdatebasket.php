@@ -7,8 +7,28 @@
  */
  
 $http = eZHTTPTool::instance();
+$module = $Params['Module']; 
+ 
 $basket = eZBasket::currentBasket();
-$module = $Params['Module'];
+$basket->updatePrices();
+
+$itemCountList = $http->postVariable( "ProductItemCountList" );
+$itemIDList = $http->postVariable( "ProductItemIDList" );
+
+// We should check item count, all itemcounts must be greater than 0
+foreach ( $itemCountList as $itemCount )
+{
+    // If item count of product <= 0 we should show the error
+    if ( !is_numeric( $itemCount ) or $itemCount < 0 )
+    {
+        // Redirect to basket
+        $module->redirectTo( $module->functionURI( "basket" ) . "/(error)/invaliditemcount" );
+        return;
+    }
+}
+
+$http->setSessionVariable( 'ProductItemCountList', $itemCountList );
+$http->setSessionVariable( 'ProductItemIDList', $itemIDList );
 
 $itemCountList = $http->sessionVariable( 'ProductItemCountList' );
 $itemIDList = $http->sessionVariable( 'ProductItemIDList' );
