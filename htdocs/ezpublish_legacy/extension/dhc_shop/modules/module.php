@@ -22,7 +22,7 @@
 // ## END COPYRIGHT, LICENSE AND WARRANTY NOTICE ##
 //
 
-$Module = array('name' => 'Update Basket', 'functions' => array('use'));
+$Module = array('name' => 'Basket', 'functions' => array('updatebasket'));
 
 $ViewList = array();
 $ViewList['updatebasket'] = array( 'script' => 'ezupdatebasket.php',
