@@ -1,7 +1,7 @@
 <?php /* #?ini charset="utf-8"?
 
 [ModuleSettings]
-ExtensionRepositories[]=webshop
+ExtensionRepositories[]=dhc_shop
 ModuleList[]=webshop
 
 */ ?>
