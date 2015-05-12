@@ -15,14 +15,11 @@ $module = $Params['Module'];
 $basket = eZBasket::currentBasket();
 $basket->updatePrices();
 
-$http->setSessionVariable( 'ProductItemCountList', $itemCountList );
-$http->setSessionVariable( 'ProductItemIDList', $itemIDList );
+$http->setSessionVariable( 'ProductItemCountList', $_POST['itemCountList']);
+$http->setSessionVariable( 'ProductItemIDList', $_POST['itemIDList']);
 
-$itemCountList = $http->sessionVariable( 'ProductItemCountList' );
-$itemIDList = $http->sessionVariable( 'ProductItemIDList' );
-
-$itemCountList = $http->postVariable( "ProductItemCountList" );
-$itemIDList = $http->postVariable( "ProductItemIDList" );
+$itemCountList = $_POST['itemCountList'];
+$itemIDList = $_POST['itemIDList'];
 
 // We should check item count, all itemcounts must be greater than 0
 foreach ( $itemCountList as $itemCount )
@@ -39,24 +36,19 @@ if (!is_int($itemCountList) || !is_int($itemIDList)) {
 }
 
 if (!$error) {
-    $http->setSessionVariable( 'ProductItemCountList', $itemCountList );
-    $http->setSessionVariable( 'ProductItemIDList', $itemIDList );
-
-    $itemCountList = $http->sessionVariable( 'ProductItemCountList' );
-    $itemIDList = $http->sessionVariable( 'ProductItemIDList' );
 
     $operationResult = eZOperationHandler::execute( 'shop', 'updatebasket', array( 'item_count_list' => $itemCountList,
                                                                                    'item_id_list' => $itemIDList ) );
     $Result = array();
     $Result['pagelayout'] = '';
     $Result['content'] = 'Success';
+    
 } else {
     $Result = array();
     $Result['pagelayout'] = '';
     $Result['content'] = 'Error';    
 }
 
-#return $Result['content'];                                                                          
-return print_r($_POST);
+return $Result['content'];                                                                          
 
 ?>
