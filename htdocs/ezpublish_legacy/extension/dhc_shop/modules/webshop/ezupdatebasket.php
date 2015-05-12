@@ -36,6 +36,7 @@ foreach ( $itemCountList as $itemCount )
 
 if (!is_numeric($itemCountList) || !is_numeric($itemIDList)) {
     $error = true;
+    return "not numeric";
 }
 
 if (!$error) {
