@@ -4,6 +4,9 @@ $error = false;
 
 $http = eZHTTPTool::instance();
 $module = $Params['Module']; 
+ 
+$basket = eZBasket::currentBasket();
+$basket->updatePrices();
 
 $itemCountList = intval($_POST['itemCountList']);
 $itemIDList = intval($_POST['itemIDList']);
