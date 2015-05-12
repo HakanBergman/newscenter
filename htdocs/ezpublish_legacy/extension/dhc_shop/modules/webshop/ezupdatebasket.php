@@ -6,7 +6,7 @@ $itemIDList = array(intval($_POST['itemIDList']));
 print_r($itemCountList);
 print_r($itemIDList);
 
-$itemCountList = array(intval(4));
+$itemCountList = array(intval(3));
 $itemIDList = array(intval(9));
 
 print_r($itemCountList);
