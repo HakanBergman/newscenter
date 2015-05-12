@@ -83,6 +83,7 @@
                               <div class="col-lg-5 no-padding no-margin">Totalt</div>
                               <div class="col-lg-7">
                                 <div class="col-lg-12"><span class="total_sum_incl_vat">{$basket.total_inc_vat}</span> inkl moms</div>
+                                {$basket.total_inc_vat|mul(0.8)}
                                 <div class="col-lg-12">Varav <span class="total_sum_excl_vat">{$basket.total_inc_vat|dec($basket.total_inc_vat|mul(0.8))}</span> moms</div>
                               </div>
                               <div class="col-lg-12 text-center container-padding-top no-padding no-margin"><a href="/shop/userregister" title="Bekräfta order"><button class="btn btn-primary min-width-80-percent">Till kassan</button></a></div>                              
