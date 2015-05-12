@@ -1,7 +1,6 @@
 <?php
 
 
- 
 $itemCountList = array(intval($_POST['itemCountList']));
 $itemIDList = array(intval($_POST['itemIDList']));
 
