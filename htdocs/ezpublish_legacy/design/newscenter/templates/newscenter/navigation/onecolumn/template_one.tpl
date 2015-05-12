@@ -33,7 +33,6 @@
                           <div class="col-lg-12 container-padding-top-3 link-color-white link-color-white hover">
                             <div class="col-lg-12">
                                <a href="#close" title="Stäng varukorg" class="float-right"><span class="glyphicon glyphicon-remove close-shop-menu"></span></a>
-                               Stäng
                             </div>
                             <div class="col-lg-12 container-padding-top font-size-16-px"><strong>Din varukorg</strong></div>
                             {switch match=$basket.items|count()}
@@ -69,7 +68,7 @@
                                         </div>
                                         <div class="col-lg-6 no-margin no-padding">
                                           <button class="btn btn-primary" type="submit" name="StoreChangesButton">Uppdatera</button>
-                                          <button class="btn btn-danger" type="submit" name="StoreChangesButton"></button>
+                                          <button class="btn btn-danger glyphicon glyphicon-remove" type="submit" name="StoreChangesButton"></button>
                                         </div>
                                       </div>
                                     </form>                                  
