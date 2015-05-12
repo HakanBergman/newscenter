@@ -5,6 +5,7 @@
     <div class="container-margin-top">
       <div class="container-padding-top-2">
         <p>Du kommer snart tillbaka till föregående sidan. Klicka <a href="{ezhttp().session.FromPage|ezurl('no', 'full')}">här</a> för att komma vidare</p>
+        {ezhttp().session.FromPage|ezurl('no', 'full')}
         <script type="text/javascript">
           {literal}
             $(document ).ready(function() {
