@@ -8,9 +8,6 @@ $module = $Params['Module'];
 $basket = eZBasket::currentBasket();
 $basket->updatePrices();
 
-$http->setSessionVariable( 'ProductItemCountList', $_POST['itemCountList']);
-$http->setSessionVariable( 'ProductItemIDList', $_POST['itemIDList']);
-
 $itemCountList = intval($_POST['itemCountList']);
 $itemIDList = intval($_POST['itemIDList']);
 
@@ -29,13 +26,15 @@ if (!$error) {
                                                                                    'item_id_list' => $itemIDList ) );
     $Result = array();
     $Result['pagelayout'] = '';
-    $Result['content'] = 'Success2';
+    $Result['content'] = $operationResult;
     
 } else {
     $Result = array();
     $Result['pagelayout'] = '';
     $Result['content'] = 'Error';    
 }
+
+$basket->updatePrices();
 
 return $Result['content'];                                                                          
 
