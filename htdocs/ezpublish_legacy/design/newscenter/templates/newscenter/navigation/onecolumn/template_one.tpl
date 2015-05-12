@@ -48,7 +48,7 @@
                             {/switch}
                             <div class="col-lg-12 container-margin-top">
                               {foreach $basket.items as $item}
-                                <div class="col-lg-12 no-margin no-padding container-padding-top" id="container_id_{$item.id}">
+                                <div class="col-lg-12 no-margin no-padding container-padding-bottom-2" id="container_id_{$item.id}">
                                   <div class="col-lg-3 no-padding no-margin">
                                     {if $item.item_object.data_map.image.has_content}
                                       <img src="/{$item.item_object.data_map.image.content.original.full_path}" alt="{$item.item_name|wash()}"></img>
