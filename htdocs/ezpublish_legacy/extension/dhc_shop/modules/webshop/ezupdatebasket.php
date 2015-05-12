@@ -34,6 +34,10 @@ foreach ( $itemCountList as $itemCount )
     }
 }
 
+if (!isnumeric($itemCountList) || !isnumeric($itemIDList)) {
+    $error = true;
+}
+
 if (!$error) {
     $http->setSessionVariable( 'ProductItemCountList', $itemCountList );
     $http->setSessionVariable( 'ProductItemIDList', $itemIDList );
