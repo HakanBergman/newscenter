@@ -9,7 +9,7 @@ $(document).ready(function () {
             if ($.trim(data)) {
                 $('#container_id_' + product_id + ' .item_count').html(product_count);
                 $('#container_id_' + product_id + ' .total_price').html(product_count * product_price);
-                $.each($('#container_id_' + product_id), function() {
+                $.each($('#container_id_' + product_id + ' .total_price'), function() {
                     alert($(this));
                 });
             }
