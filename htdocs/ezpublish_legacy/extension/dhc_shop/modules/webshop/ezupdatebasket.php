@@ -57,6 +57,6 @@ if (!$error) {
 }
 
 #return $Result['content'];                                                                          
-return print_r($http);
+return print_r($_POST);
 
 ?>
