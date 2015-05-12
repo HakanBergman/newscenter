@@ -10,7 +10,7 @@ $(document).ready(function () {
                 $('#container_id_' + product_id + ' .item_count').html(product_count);
                 $('#container_id_' + product_id + ' .total_price').html(product_count * product_price);
                 var total_sum = parseInt(0);
-                $.each($('#container_id_' + product_id + ' .total_price'), function() {
+                $.each($('#basket .total_price'), function() {
                     total_sum += parseInt($(this).html());
                 });
                 $('#basket .total_sum_incl_vat').html(total_sum);
