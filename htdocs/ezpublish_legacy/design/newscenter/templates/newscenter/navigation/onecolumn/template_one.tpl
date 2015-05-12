@@ -62,6 +62,7 @@
                                       <div class="col-lg-12 no-margin no-padding">
                                         <div class="col-lg-6 no-margin no-padding">
                                             {$item|attribute(show, 1)}
+                                            {$item.id}
                                             <input type="hidden" name="ProductItemIDList[]" value="5" />
                                             <input type="text" name="ProductItemCountList[]" value="{$item.item_count}" size="5" />
                                         </div>
