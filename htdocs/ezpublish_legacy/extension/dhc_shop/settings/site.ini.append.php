@@ -3,10 +3,10 @@
 # Permissions to the specific ajax calls are handled inside the ezjscore/call
 # view, so only comment this out if you want to disable it!
 [RoleSettings]
-PolicyOmitList[]=ezjscore/updatebasket
+PolicyOmitList[]=webshop/updatebasket
 
 [SiteAccessSettings]
-AnonymousAccessList[]=ezjscore/updatebasket
+AnonymousAccessList[]=webshop/updatebasket
 
 [TemplateSettings]
 ExtensionAutoloadPath[]=dhc_shop
