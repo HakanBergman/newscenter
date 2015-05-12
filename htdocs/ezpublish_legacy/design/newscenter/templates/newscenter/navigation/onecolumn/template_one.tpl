@@ -58,7 +58,7 @@
                                     <div class="col-lg-12 no-margin no-padding"><strong>{$item.object_name|wash()}</strong></div>
                                     <div class="col-lg-12 no-margin no-padding">
                                       <div class="col-lg-6 no-margin no-padding"><span class="item_count">{$item.item_count}</span> x <span class="item_price">{$item.price_inc_vat}</span> SEK</div>
-                                      <div class="col-lg-6 no-margin no-padding"><strong>Totalt:</strong> {$item.item_count|mul($item.price_inc_vat)} SEK</div>
+                                      <div class="col-lg-6 no-margin no-padding"><strong>Totalt:</strong> <span class="total_price">{$item.item_count|mul($item.price_inc_vat)}</span> SEK</div>
                                     </div>
                                     <form method="post" action="/shop/basket">
                                       <div class="col-lg-12 no-margin no-padding">
@@ -68,7 +68,7 @@
                                             <input type="text" class="form-control" value="{$item.item_count}" name="ProductItemCountList[]" id="product_number_{$item.id}" />
                                         </div>
                                         <div class="col-lg-6 no-margin no-padding">
-                                          <button class="btn btn-primary updatebasket" product-id="{$item.id}" type="submit" name="StoreChangesButton">Uppdatera</button>
+                                          <button class="btn btn-primary updatebasket" product-id="{$item.id}" product-price="{$item.price_inc_vat}" type="submit" name="StoreChangesButton">Uppdatera</button>
                                           <input type="checkbox" name="RemoveProductItemDeleteList[]" value="{$item.id}" checked="1" class="hide" />
                                           <button class="btn btn-danger glyphicon glyphicon-remove" type="submit" name="RemoveProductItemButton"></button>
                                         </div>
