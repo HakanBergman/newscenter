@@ -60,15 +60,15 @@
                                       <div class="col-lg-6 no-margin no-padding">{$item.item_count} x {$item.price_inc_vat} SEK</div>
                                       <div class="col-lg-6 no-margin no-padding"><strong>Totalt:</strong> {$item.item_count|mul($item.price_inc_vat)} SEK</div>
                                     </div>
-                                    <form method="post" action="/webshop/updatebasket">
+                                    <form method="post" action="/webshop/updatebasket" id="form_number_{$item.id}">
                                       <div class="col-lg-12 no-margin no-padding">
                                         <div class="col-lg-6 no-margin no-padding container-padding-right">
                                             <input type="hidden" name="ProductItemIDList[]" value="{$item.id}" />
                                             <input type="hidden" name="RedirectURI" value="{$current_node.url|ezurl('no', 'full')}" />
-                                            <input type="text" class="form-control" value="{$item.item_count}" name="ProductItemCountList[]" />
+                                            <input type="text" class="form-control" value="{$item.item_count}" name="ProductItemCountList[]" product-identifier="product_number_{$item.id}" />
                                         </div>
                                         <div class="col-lg-6 no-margin no-padding">
-                                          <button class="btn btn-primary updatebasket" type="submit" name="StoreChangesButton">Uppdatera</button>
+                                          <button class="btn btn-primary updatebasket" product-id="{$item.id}" type="submit" name="StoreChangesButton">Uppdatera</button>
                                           <input type="checkbox" name="RemoveProductItemDeleteList[]" value="{$item.id}" checked="1" class="hide" />
                                           <button class="btn btn-danger glyphicon glyphicon-remove" type="submit" name="RemoveProductItemButton"></button>
                                         </div>
