@@ -58,9 +58,16 @@
                                       <div class="col-lg-6 no-margin no-padding">{$item.item_count} x {$item.price_inc_vat} SEK</div>
                                       <div class="col-lg-6 no-margin no-padding"><strong>Totalt:</strong> {$item.item_count|mul($item.price_inc_vat)} SEK</div>
                                     </div>
+                                    <form method="post" action="/content/action">
+                                      <input type="hidden" name="TopLevelNode" value="{$child.node_id}" />
+                                      <input type="hidden" name="ContentNodeID" value="{$child.node_id}" />
+                                      <input type="hidden" name="ContentObjectID" value="{$child.contentobject_id}" />
+                                      <input class="button" type="submit" name="ActionAddToBasket" value="Lägg till i kundvagnen" />
+                                      <input class="button" type="submit" name="ActionAddToWishList" value="Lägg till i önskelistan" />
+                                    </form>                                    
                                   </div>
                                 </div>
-                              {/foreach}
+                              {/foreach}                              
                             </div>
                             <div class="col-lg-12 absolute top-80-percent">
                               <hr />
