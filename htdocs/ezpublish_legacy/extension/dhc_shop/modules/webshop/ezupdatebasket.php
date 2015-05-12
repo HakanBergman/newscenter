@@ -6,6 +6,9 @@
  * @package kernel
  */
  
+ 
+$error = false;
+
 $http = eZHTTPTool::instance();
 $module = $Params['Module']; 
  
@@ -21,25 +24,28 @@ foreach ( $itemCountList as $itemCount )
     // If item count of product <= 0 we should show the error
     if ( !is_numeric( $itemCount ) or $itemCount < 0 )
     {
-        // Redirect to basket
-        $module->redirectTo( $module->functionURI( "basket" ) . "/(error)/invaliditemcount" );
-        return;
+        $error = true;
     }
 }
 
-$http->setSessionVariable( 'ProductItemCountList', $itemCountList );
-$http->setSessionVariable( 'ProductItemIDList', $itemIDList );
+if (!$error) {
+    $http->setSessionVariable( 'ProductItemCountList', $itemCountList );
+    $http->setSessionVariable( 'ProductItemIDList', $itemIDList );
 
-$itemCountList = $http->sessionVariable( 'ProductItemCountList' );
-$itemIDList = $http->sessionVariable( 'ProductItemIDList' );
+    $itemCountList = $http->sessionVariable( 'ProductItemCountList' );
+    $itemIDList = $http->sessionVariable( 'ProductItemIDList' );
 
-$operationResult = eZOperationHandler::execute( 'shop', 'updatebasket', array( 'item_count_list' => $itemCountList,
-                                                                               'item_id_list' => $itemIDList ) );
+    $operationResult = eZOperationHandler::execute( 'shop', 'updatebasket', array( 'item_count_list' => $itemCountList,
+                                                                                   'item_id_list' => $itemIDList ) );
+    $Result = array();
+    $Result['pagelayout'] = '';
+    $Result['content'] = 'Success';
+} else {
+    $Result = array();
+    $Result['pagelayout'] = '';
+    $Result['content'] = 'Error';    
+}
 
-$Result = array();
-$Result['pagelayout'] = '';
-$Result['content'] = 'Completed';
-
-return $Result['content'];                                                                               
+return $Result['content'];                                                                          
 
 ?>
