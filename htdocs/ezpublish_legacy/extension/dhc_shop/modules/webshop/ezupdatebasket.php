@@ -1,10 +1,9 @@
 <?php
  
-$itemCountList = intval($_POST['itemCountList']);
-$itemIDList = intval($_POST['itemIDList']);
+$itemCountList = array(intval($_POST['itemCountList']));
+$itemIDList = array(intval($_POST['itemIDList']));
 
-$itemCountList = 5;
-$itemIDList = 9;
+print_r($itemCountList);
 
 
     $http->setSessionVariable( 'ProductItemCountList', $itemCountList );
