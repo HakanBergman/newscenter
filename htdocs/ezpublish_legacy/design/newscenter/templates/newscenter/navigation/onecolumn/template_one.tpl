@@ -62,7 +62,7 @@
                                     </div>
                                     <form method="post" action="/shop/basket">
                                       <div class="col-lg-12 no-margin no-padding">
-                                        <div class="col-lg-6 no-margin no-padding">
+                                        <div class="col-lg-6 no-margin no-padding container-padding-right">
                                             <input type="hidden" name="ProductItemIDList[]" value="{$item.id}" />
                                             <input type="hidden" name="RedirectURI" value="{$current_node.url|ezurl('no', 'full')}" />
                                             <input type="text" class="form-control" value="{$item.item_count}" name="ProductItemCountList[]" />
