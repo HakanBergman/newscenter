@@ -19,6 +19,8 @@ if ($operationResult = eZOperationHandler::execute( 'shop', 'updatebasket', arra
     #$Result['pagelayout'] = '';
     #$Result['content'] = $itemIDList;
     echo "hit";
+} else {
+    echo "error";
 }
 
 #return $Result['content'];                                                                          
