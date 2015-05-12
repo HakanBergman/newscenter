@@ -3,6 +3,7 @@
 
 [ExtensionSettings]
 ActiveExtensions[]
+ActiveExtensions[]=dhc_shop
 ActiveExtensions[]=ezjscore
 ActiveExtensions[]=ezoe
 ActiveExtensions[]=ezformtoken
