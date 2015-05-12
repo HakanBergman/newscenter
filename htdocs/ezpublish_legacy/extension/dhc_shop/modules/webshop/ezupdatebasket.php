@@ -5,8 +5,6 @@
  * @version 2014.11.1
  * @package kernel
  */
-
- die('hit');
  
 $http = eZHTTPTool::instance();
 $basket = eZBasket::currentBasket();
