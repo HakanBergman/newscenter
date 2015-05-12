@@ -10,7 +10,7 @@ $(document).ready(function () {
                 $('#container_id_' + product_id + ' .item_count').html(product_count);
                 $('#container_id_' + product_id + ' .total_price').html(product_count * product_price);
                 $.each($('#container_id_' + product_id + ' .total_price'), function() {
-                    alert($(this));
+                    alert($(this).html());
                 });
             }
         });
