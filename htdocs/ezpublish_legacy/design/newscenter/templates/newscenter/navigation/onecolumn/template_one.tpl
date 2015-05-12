@@ -57,7 +57,7 @@
                                   <div class="col-lg-9 no-padding no-margin">
                                     <div class="col-lg-12 no-margin no-padding"><strong>{$item.object_name|wash()}</strong></div>
                                     <div class="col-lg-12 no-margin no-padding">
-                                      <div class="col-lg-6 no-margin no-padding">{$item.item_count} x {$item.price_inc_vat} SEK</div>
+                                      <div class="col-lg-6 no-margin no-padding"><span class="item_count">{$item.item_count}</span> x <span class="item_price">{$item.price_inc_vat}</span> SEK</div>
                                       <div class="col-lg-6 no-margin no-padding"><strong>Totalt:</strong> {$item.item_count|mul($item.price_inc_vat)} SEK</div>
                                     </div>
                                     <form method="post" action="/webshop/updatebasket" id="form_number_{$item.id}">
