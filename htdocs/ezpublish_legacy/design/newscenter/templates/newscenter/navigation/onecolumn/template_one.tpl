@@ -60,7 +60,7 @@
                                     </div>
                                     <form method="post" action="/shop/basket">
                                       <div class="col-lg-12 no-margin no-padding">
-                                        <div class="col-lg-6 no-margin no-padding"><input type="text" name="ProductItemCountList[]" value="1" size="5" /></div>
+                                        <div class="col-lg-6 no-margin no-padding"><input type="text" name="ProductItemCountList[]" value="{$item.item_count}" size="5" /></div>
                                         <div class="col-lg-6 no-margin no-padding"><input class="button" type="submit" name="StoreChangesButton" value="Uppdatera" /></div>
                                       </div>
                                     </form>
