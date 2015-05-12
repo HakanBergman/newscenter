@@ -4,8 +4,8 @@ $(document).ready(function () {
         e.preventDefault();
         var product_id = $(this).attr('product-id');
         alert($(this).attr('product-id'));
+        alert($('#product_number_' + id).val());
         $.post("/webshop/updatebasket", { itemCountList: 3, itemIDList: product_id }, function (data) {
-            alert(data);
             if (data == "Success") {
                 alert('Uppdateringen genomförd.');
             }

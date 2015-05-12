@@ -65,7 +65,7 @@
                                         <div class="col-lg-6 no-margin no-padding container-padding-right">
                                             <input type="hidden" name="ProductItemIDList[]" value="{$item.id}" />
                                             <input type="hidden" name="RedirectURI" value="{$current_node.url|ezurl('no', 'full')}" />
-                                            <input type="text" class="form-control" value="{$item.item_count}" name="ProductItemCountList[]" product-identifier="product_number_{$item.id}" />
+                                            <input type="text" class="form-control" value="{$item.item_count}" name="ProductItemCountList[]" id="product_number_{$item.id}" />
                                         </div>
                                         <div class="col-lg-6 no-margin no-padding">
                                           <button class="btn btn-primary updatebasket" product-id="{$item.id}" type="submit" name="StoreChangesButton">Uppdatera</button>
