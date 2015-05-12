@@ -13,6 +13,7 @@ $(document).ready(function () {
                 $.each($('#container_id_' + product_id + ' .total_price'), function() {
                     total_sum += $(this).html();
                 });
+                alert(total_sum);
                 $('#container_id_' + product_id + ' .total_sum_incl_vat').html(total_sum);
             }
         });
