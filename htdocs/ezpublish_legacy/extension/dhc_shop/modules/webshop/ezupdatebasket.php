@@ -30,7 +30,7 @@ if (!$error) {
     
     $Result = array();
     $Result['pagelayout'] = '';
-    $Result['content'] = $operationResult;
+    $Result['content'] = $itemCountList;
     
 } else {
     $Result = array();
