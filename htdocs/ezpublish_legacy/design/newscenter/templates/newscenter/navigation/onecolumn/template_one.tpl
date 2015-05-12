@@ -60,7 +60,7 @@
                                       <div class="col-lg-6 no-margin no-padding">{$item.item_count} x {$item.price_inc_vat} SEK</div>
                                       <div class="col-lg-6 no-margin no-padding"><strong>Totalt:</strong> {$item.item_count|mul($item.price_inc_vat)} SEK</div>
                                     </div>
-                                    <form method="post" action="/shop/basket/(url)/test">
+                                    <form method="post" action="/shop/basket">
                                       <div class="col-lg-12 no-margin no-padding">
                                         <div class="col-lg-6 no-margin no-padding container-padding-right">
                                             <input type="hidden" name="ProductItemIDList[]" value="{$item.id}" />

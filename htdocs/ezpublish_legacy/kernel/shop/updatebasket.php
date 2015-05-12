@@ -20,6 +20,7 @@ switch( $operationResult['status'] )
 {
     case eZModuleOperationInfo::STATUS_HALTED:
     {
+        echo "hit2";
         if ( isset( $operationResult['redirect_url'] ) )
         {
             $module->redirectTo( $operationResult['redirect_url'] );
@@ -49,7 +50,7 @@ switch( $operationResult['status'] )
        }
     }break;
 }
-
+die('hit');
 $module->redirectTo( '/shop/basket/' );
 
 ?>
