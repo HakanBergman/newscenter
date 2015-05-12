@@ -27,7 +27,7 @@ if (!$error) {
     
     $Result = array();
     $Result['pagelayout'] = '';
-    $Result['content'] = $itemIDList;
+    $Result['content'] = $itemCountList;
     
 } else {
     $Result = array();
