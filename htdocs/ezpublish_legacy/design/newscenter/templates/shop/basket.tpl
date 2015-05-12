@@ -9,7 +9,7 @@
           {literal}
             $(document ).ready(function() {
             {/literal}
-              window.location.replace({ezhttp().session.FromPage|ezurl('no', 'full')});
+              window.location.replace("{ezhttp().session.FromPage|ezurl('no', 'full')}");
               alert("hit");
             {literal}
           });
