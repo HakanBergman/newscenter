@@ -121,6 +121,8 @@ if ( $http->hasPostVariable( "StoreChangesButton" ) )
 {
     $itemCountList = $http->postVariable( "ProductItemCountList" );
     $itemIDList = $http->postVariable( "ProductItemIDList" );
+    echo $itemCountList + ' ' + $itemIDList;
+    die('hit');
 
     // We should check item count, all itemcounts must be greater than 0
     foreach ( $itemCountList as $itemCount )
