@@ -8,7 +8,6 @@ $(document).ready(function () {
             if (data == "Success") {
                 alert('Uppdateringen genomförd.');
             }
-            alert(data);
         });
     });
 });
