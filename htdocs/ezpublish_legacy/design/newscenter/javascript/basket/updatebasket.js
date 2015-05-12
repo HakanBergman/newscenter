@@ -14,7 +14,7 @@ $(document).ready(function () {
                     total_sum += parseInt($(this).html());
                 });
                 $('#basket .total_sum_incl_vat').html(total_sum);
-                $('#basket .total_sum_excl_vat').html(total_sum/1.2);
+                $('#basket .total_sum_excl_vat').html(total_sum-(total_sum*0.8));
             }
         });
     });
