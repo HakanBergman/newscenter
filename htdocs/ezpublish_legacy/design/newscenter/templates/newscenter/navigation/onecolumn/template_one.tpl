@@ -26,7 +26,7 @@
                   {/foreach}
             			{if $#company.data_map.webshop_active.value}
 				            {* Include Basket *}
-				            <li class="float-right" id="webshop_cart">
+				            <li class="float-right">
                       <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
                       <nav id="basket">
                         {def $basket=fetch( 'shop', 'basket' )}                            
