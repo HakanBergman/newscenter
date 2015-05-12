@@ -69,7 +69,7 @@
                                         </div>
                                         <div class="col-lg-6 no-margin no-padding">
                                           <button class="btn btn-primary" type="submit" name="StoreChangesButton">Uppdatera</button>
-                                          <input type="checkbox" name="RemoveProductItemDeleteList[]" value="{$item.id}" checked="1" />
+                                          <input type="checkbox" name="RemoveProductItemDeleteList[]" value="{$item.id}" checked="1" class="hide" />
                                           <button class="btn btn-danger glyphicon glyphicon-remove" type="submit" name="RemoveProductItemButton"></button>
                                         </div>
                                       </div>
