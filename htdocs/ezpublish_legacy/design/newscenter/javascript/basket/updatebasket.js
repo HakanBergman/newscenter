@@ -6,7 +6,7 @@ $(document).ready(function () {
         var product_count = $('#product_number_' + product_id).val();
         $.post("/webshop/updatebasket", { itemCountList: product_count, itemIDList: product_id }, function (data) {
             if ($.trim(data)) {
-                alert('Uppdateringen genomförd.');
+                $('#form_number_' + product_id).hide();
             }
         });
     });
