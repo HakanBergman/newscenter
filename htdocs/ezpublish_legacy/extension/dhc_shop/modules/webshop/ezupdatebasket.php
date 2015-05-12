@@ -1,11 +1,4 @@
 <?php
-/**
- * @copyright Copyright (C) eZ Systems AS. All rights reserved.
- * @license For full copyright and license information view LICENSE file distributed with this source code.
- * @version 2014.11.1
- * @package kernel
- */
- 
  
 $error = false;
 
@@ -18,21 +11,16 @@ $basket->updatePrices();
 $http->setSessionVariable( 'ProductItemCountList', $_POST['itemCountList']);
 $http->setSessionVariable( 'ProductItemIDList', $_POST['itemIDList']);
 
-$itemCountList = $_POST['itemCountList'];
-$itemIDList = $_POST['itemIDList'];
+$itemCountList = intval($_POST['itemCountList']);
+$itemIDList = intval($_POST['itemIDList']);
 
 // We should check item count, all itemcounts must be greater than 0
-foreach ( $itemCountList as $itemCount )
-{
+foreach ($itemCountList as $itemCount) {
     // If item count of product <= 0 we should show the error
-    if ( !is_numeric( $itemCount ) or $itemCount < 0 )
+    if (!is_numeric($itemCount) or $itemCount < 0)
     {
         $error = true;
     }
-}
-
-if (!is_int($itemCountList) || !is_int($itemIDList)) {
-    $error = true;
 }
 
 if (!$error) {
