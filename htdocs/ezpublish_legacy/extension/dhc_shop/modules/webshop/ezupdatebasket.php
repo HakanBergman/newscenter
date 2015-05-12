@@ -27,10 +27,9 @@ if (!$error) {
 
     $http->setSessionVariable( 'ProductItemCountList', $itemCountList );
     $http->setSessionVariable( 'ProductItemIDList', $itemIDList );
-    $operationResult = eZOperationHandler::execute( 'shop', 'updatebasket', array( 'item_count_list' => $itemCountList,
-                                                                                   'item_id_list' => $itemIDList ) );
-                                                                                   
-    print_r($http);
+    if ($operationResult = eZOperationHandler::execute( 'shop', 'updatebasket', array( 'item_count_list' => $itemCountList, 'item_id_list' => $itemIDList ) )) {
+        echo "done";
+    }
     
     $Result = array();
     $Result['pagelayout'] = '';
