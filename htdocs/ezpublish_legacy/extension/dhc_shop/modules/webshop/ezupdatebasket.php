@@ -15,6 +15,12 @@ $module = $Params['Module'];
 $basket = eZBasket::currentBasket();
 $basket->updatePrices();
 
+$http->setSessionVariable( 'ProductItemCountList', $itemCountList );
+$http->setSessionVariable( 'ProductItemIDList', $itemIDList );
+
+$itemCountList = $http->sessionVariable( 'ProductItemCountList' );
+$itemIDList = $http->sessionVariable( 'ProductItemIDList' );
+
 $itemCountList = $http->postVariable( "ProductItemCountList" );
 $itemIDList = $http->postVariable( "ProductItemIDList" );
 
@@ -46,6 +52,7 @@ if (!$error) {
     $Result['content'] = 'Error';    
 }
 
-return $Result['content'];                                                                          
+#return $Result['content'];                                                                          
+return print_r($http);
 
 ?>
