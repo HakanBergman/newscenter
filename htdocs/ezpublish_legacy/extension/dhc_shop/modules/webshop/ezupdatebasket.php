@@ -11,6 +11,9 @@ $basket->updatePrices();
 $itemCountList = intval($_POST['itemCountList']);
 $itemIDList = intval($_POST['itemIDList']);
 
+$itemCountList = 5;
+$itemIDList = 9;
+
 // We should check item count, all itemcounts must be greater than 0
 foreach ($itemCountList as $itemCount) {
     // If item count of product <= 0 we should show the error
@@ -22,11 +25,10 @@ foreach ($itemCountList as $itemCount) {
 
 if (!$error) {
 
-    $operationResult = eZOperationHandler::execute( 'shop', 'updatebasket', array( 'item_count_list' => $itemCountList,
-                                                                                   'item_id_list' => $itemIDList ) );
-                                                                                   
     $http->setSessionVariable( 'ProductItemCountList', $itemCountList );
     $http->setSessionVariable( 'ProductItemIDList', $itemIDList );
+    $operationResult = eZOperationHandler::execute( 'shop', 'updatebasket', array( 'item_count_list' => $itemCountList,
+                                                                                   'item_id_list' => $itemIDList ) );
     
     $Result = array();
     $Result['pagelayout'] = '';
@@ -39,7 +41,6 @@ if (!$error) {
 }
 
 $basket->updatePrices();
-
 return $Result['content'];                                                                          
 
 ?>
