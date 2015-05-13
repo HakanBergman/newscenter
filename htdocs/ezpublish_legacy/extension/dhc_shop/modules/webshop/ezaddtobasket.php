@@ -2,6 +2,7 @@
 
 print_r($basket);
 
+/*
 $quantity = $_POST['quantity'];
 if (!is_numeric($quantity) or $quantity <= 0 ) { $quantity = 1; }
 if (!is_numeric($ObjectID)) { $error = true; }
@@ -18,6 +19,8 @@ $operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'b
                                                                               'object_id' => $ObjectID,
                                                                               'quantity' => $quantity,
                                                                               'option_list' => $OptionList));
+                                                                              
+*/
 
 #$Result['content'] = $resultContent;
 #return $Result;
