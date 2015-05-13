@@ -34,7 +34,15 @@ if ( $error !== eZError::SHOP_OK )
     return $Module->handleError( $error, 'shop' );
 
 $OptionList = $http->sessionVariable( "AddToBasket_OptionList_" . $ObjectID );
-
+echo "B";
+print_r($basket);
+echo "O";
+print_r($ObjectID);
+echo "Q";
+print_r($quantity);
+echo "OPT";
+print_r($OptionList);
+die('hit');
 $operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'basket_id' => $basket->attribute( 'id' ),
                                                                               'object_id' => $ObjectID,
                                                                               'quantity' => $quantity,
