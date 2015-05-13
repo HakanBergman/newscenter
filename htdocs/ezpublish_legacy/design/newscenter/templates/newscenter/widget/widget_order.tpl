@@ -21,10 +21,10 @@
                       <div class="col-lg-12">
                         <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-lg-2 no-padding no-margin">
                         <input type="text" class="form-control" placeholder="1" value="1" name="quantity" />
                       </div>
-                      <div class="col-lg-8">
+                      <div class="col-lg-10 no-padding no-margin">
                         <button type="submit" class="btn btn-primary glyphicon glyphicon-plus addtobasket" ame="ActionAddToBasket" product-id="{$child.id}" product-price="{$child.price_inc_vat}"></button>
                       </div>
 									</form>									
