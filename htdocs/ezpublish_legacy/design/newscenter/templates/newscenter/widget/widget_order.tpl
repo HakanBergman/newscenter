@@ -18,7 +18,8 @@
 											<input type="hidden" name="TopLevelNode" value="{$child.node_id}" />
 											<input type="hidden" name="ContentNodeID" value="{$child.node_id}" />
 											<input type="hidden" name="ContentObjectID" value="{$child.contentobject_id}" />
-											<input class="button addtobasket" type="submit" name="ActionAddToBasket" value="Lägg till i kundvagnen" product-id="{$child.id}" product-price="{$child.price_inc_vat}" />
+                      <input type="text" class="form-control" placeholder="1" value="1" name="quantity" />
+                      <button type="submit" class="btn btn-primary glyphicon .glyphicon-plus addtobasket" ame="ActionAddToBasket" product-id="{$child.id}" product-price="{$child.price_inc_vat}"></button>
 											<input class="button" type="submit" name="ActionAddToWishList" value="Lägg till i önskelistan" />
 									</form>
 									<a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}" class="float-right">{$child.name|wash()}</a>
