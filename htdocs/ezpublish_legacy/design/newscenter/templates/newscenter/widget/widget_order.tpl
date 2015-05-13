@@ -11,7 +11,7 @@
 				{* Fetch information from parent node *}
 				{def $child_nodes = fetch('content', 'tree', hash('parent_node_id', $current_node.parent.node_id, 'class_filter_type', 'include', 'class_filter_array', array('product')))}
 					{if $child_nodes}
-						<ul class="nav nav-pills">
+						<ul class="nav">
 							{foreach $child_nodes as $child}
 								<li>
 									<form method="post" action="/content/action">                      
@@ -25,7 +25,7 @@
                         <input type="text" class="form-control" placeholder="1" value="1" name="quantity" />
                       </div>
                       <div class="col-lg-8">
-                        <button type="submit" class="btn btn-primary glyphicon .glyphicon-plus addtobasket" ame="ActionAddToBasket" product-id="{$child.id}" product-price="{$child.price_inc_vat}"></button>
+                        <button type="submit" class="btn btn-primary glyphicon glyphicon-plus addtobasket" ame="ActionAddToBasket" product-id="{$child.id}" product-price="{$child.price_inc_vat}"></button>
                       </div>
 									</form>									
 								</li>
