@@ -28,7 +28,7 @@
 				            {* Include Basket *}
 				            <li class="float-right">
                       {def $basket=fetch( 'shop', 'basket' )} 
-                      <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"> <span class="total_items">{$basket.items|count()}</span></span></a>
+                      <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"><span class="total_items">{$basket.items|count()}</span></span></a>
                       <nav id="basket">                                                   
                           <div class="col-lg-12 container-padding-top-3 link-color-white link-color-white hover">
                             <div class="col-lg-12">
