@@ -32,7 +32,7 @@
 							{/case}
 						{/switch}
 						{foreach $products as $product}						
-							<div class="{$class}">
+							<div class="{$class} no-margin no-padding">
 								<h4>{$product.name|wash()}</h4>
                 <form method="post" action="/shop/basket" class="form_number_{$product.object.id}">
                   <input type="hidden" name="TopLevelNode" value="{$product.node_id}" />

@@ -248,7 +248,7 @@
                                     </div>
                                 </section>
                             {else}
-                                <section id="section-after-content" class="container-padding-left container-padding-right">
+                                <section id="section-after-content">
 								    <div class="container container-padding-left-2 container-padding-bottom no-padding {$sitesettings.0.data_map.background_color.data_text}">
                                         {foreach $zones as $zone}
                                             {include uri="design:newscenter/zone/zone.tpl" zone=$zone}
