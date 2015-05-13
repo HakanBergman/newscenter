@@ -38,8 +38,8 @@
                   <input type="hidden" name="TopLevelNode" value="{$product.node_id}" />
                   <input type="hidden" name="ContentNodeID" value="{$product.node_id}" />
                   <input type="hidden" name="ContentObjectID" value="{$product.contentobject_id}" />
-                  <div class="col-lg-4"><strong>{$product.data_map.price.content.price} {$product.data_map.price.content.currency|l10n( 'currency' )}</strong></div>
-                  <div class="col-lg-2"><input type="text" class="form-control" placeholder="1" value="1" name="quantity" /></div>
+                  <div class="col-lg-4 no-margin no-padding"><strong>{$product.data_map.price.content.price} {$product.data_map.price.content.currency|l10n( 'currency' )}</strong></div>
+                  <div class="col-lg-2 no-margin no-padding"><input type="text" class="form-control" placeholder="1" value="1" name="quantity" /></div>
                   <div class="col-lg-6"><button type="submit" class="btn btn-primary glyphicon glyphicon-plus addtobasket" name="ActionAddToBasket" product-id="{$product.id}" product-price="{$product.price_inc_vat}"></button></div>
                 </form>
               </div>
