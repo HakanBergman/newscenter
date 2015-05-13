@@ -1,4 +1,4 @@
-﻿/* Make the Menu bar toggle */
+﻿/* Update Basket */
 $(document).ready(function () {
     $('.updatebasket').on('click', function(e) {
         e.preventDefault();
