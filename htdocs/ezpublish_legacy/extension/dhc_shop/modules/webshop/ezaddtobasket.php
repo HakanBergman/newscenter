@@ -24,7 +24,7 @@ if (!$error) {
                                                                                   'object_id' => $ObjectID,
                                                                                   'quantity' => $quantity,
                                                                                   'option_list' => $OptionList));
-    $Result['content'] =  null;
+    $Result['content'] =  'Success';
 } else {
     $Result['content'] = null;
 }
