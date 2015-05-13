@@ -1,5 +1,6 @@
 <?php
 
+$basket = eZBasket::currentBasket();
 print_r($basket);
 
 /*
