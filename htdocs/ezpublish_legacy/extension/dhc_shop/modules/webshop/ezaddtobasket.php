@@ -29,6 +29,7 @@ if (!$error) {
     $Result['content'] = null;
 }
 
+$Result['pagelayout'] = '';
 return $Result;
 
 ?>
