@@ -34,11 +34,11 @@
 						{foreach $products as $product}						
 							<div class="{$class}">
 								<h4>{$product.name|wash()}</h4>
-								<strong>{$product.data_map.price.content.price} {$product.data_map.price.content.currency|l10n( 'currency' )}</strong>
                 <form method="post" action="/content/action">
                   <input type="hidden" name="TopLevelNode" value="{$product.node_id}" />
                   <input type="hidden" name="ContentNodeID" value="{$product.node_id}" />
                   <input type="hidden" name="ContentObjectID" value="{$product.contentobject_id}" />
+                  <strong>{$product.data_map.price.content.price} {$product.data_map.price.content.currency|l10n( 'currency' )}</strong>
                   <input type="text" class="form-control" placeholder="1" value="1" name="quantity" />
                   <button type="submit" class="btn btn-primary glyphicon glyphicon-plus addtobasket" name="ActionAddToBasket" product-id="{$product.id}" product-price="{$product.price_inc_vat}"></button>
                 </form>
