@@ -28,7 +28,7 @@
 				            {* Include Basket *}
 				            <li class="float-right">
                       {def $basket=fetch( 'shop', 'basket' )} 
-                      <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"> <span class="total_items">{$basket.items|count()}</span></span></a>
+                      <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"> <span class="cart_total_items">{$basket.items|count()}</span></span></a>
                       <nav id="basket">                                                   
                           <div class="col-lg-12 container-padding-top-3 link-color-white link-color-white hover">
                             <div class="col-lg-12">
@@ -37,7 +37,7 @@
                             <div class="col-lg-12 container-padding-top font-size-16-px"><strong>Din varukorg</strong></div>
                             {switch match=$basket.items|count()}
                               {case match=0}
-                                <div class="col-lg-12">Du har inga produkter i varukorgen.</div>
+                                <div class="col-lg-12">Du har 0 produkter i varukorgen.</div>
                               {/case}
                               {case match=1}
                                 <div class="col-lg-12"><strong>{$basket.items|count()}</strong> produkt i varukorgen.</div>
