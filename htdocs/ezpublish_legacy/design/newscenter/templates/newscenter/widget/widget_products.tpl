@@ -38,9 +38,9 @@
                   <input type="hidden" name="TopLevelNode" value="{$product.node_id}" />
                   <input type="hidden" name="ContentNodeID" value="{$product.node_id}" />
                   <input type="hidden" name="ContentObjectID" value="{$product.contentobject_id}" />
-                  <div class="col-lg-4 no-margin no-padding"><strong>{$product.data_map.price.content.price} {$product.data_map.price.content.currency|l10n( 'currency' )}</strong></div>
-                  <div class="col-lg-2 no-margin no-padding"><input type="text" class="form-control quantity_number_{$product.object.id}" placeholder="1" value="1" name="quantity" /></div>
-                  <div class="col-lg-6"><button type="submit" class="btn btn-primary glyphicon glyphicon-plus addtobasket" name="ActionAddToBasket" product-id="{$product.object.id}" product-price="{$product.object.price_inc_vat}"></button></div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 no-margin no-padding"><strong>{$product.data_map.price.content.price} {$product.data_map.price.content.currency|l10n( 'currency' )}</strong></div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 no-margin no-padding"><input type="text" class="form-control quantity_number_{$product.object.id}" placeholder="1" value="1" name="quantity" /></div>
+                  <div class="col-lg-6 col-md-6 col-md-6 col-xs-6"><button type="submit" class="btn btn-primary glyphicon glyphicon-plus addtobasket" name="ActionAddToBasket" product-id="{$product.object.id}" product-price="{$product.object.price_inc_vat}"></button></div>
                 </form>
               </div>
 						{/foreach}
