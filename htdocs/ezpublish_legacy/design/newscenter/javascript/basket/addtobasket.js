@@ -5,6 +5,6 @@ $(document).ready(function () {
         var product_id = $(this).attr('product-id');
         var product_price = $(this).attr('product-price');
         var product_count = $('#product_number_' + product_id).val();
-        alert($('#basket span.total_items').html());
+        alert($('#basket').html());
     });
 });
