@@ -39,15 +39,8 @@
                   <input type="hidden" name="TopLevelNode" value="{$product.node_id}" />
                   <input type="hidden" name="ContentNodeID" value="{$product.node_id}" />
                   <input type="hidden" name="ContentObjectID" value="{$product.contentobject_id}" />
-                  <div class="col-lg-12">
-                    <a href="{$child.url|ezurl('no', 'full')}" alt="{$product.name}">{$child.name|wash()}</a>
-                  </div>
-                  <div class="col-lg-1 no-padding no-margin">
-                    <input type="text" class="form-control" placeholder="1" value="1" name="quantity" />
-                  </div>
-                  <div class="col-lg-11">
-                    <button type="submit" class="btn btn-primary glyphicon glyphicon-plus addtobasket" name="ActionAddToBasket" product-id="{$product.id}" product-price="{$product.price_inc_vat}"></button>
-                  </div>
+                  <input type="text" class="form-control" placeholder="1" value="1" name="quantity" />
+                  <button type="submit" class="btn btn-primary glyphicon glyphicon-plus addtobasket" name="ActionAddToBasket" product-id="{$product.id}" product-price="{$product.price_inc_vat}"></button>
                 </form>
               </div>
 						{/foreach}
