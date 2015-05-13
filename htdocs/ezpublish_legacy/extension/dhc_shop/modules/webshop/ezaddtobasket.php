@@ -18,11 +18,12 @@ if (!$error) {
 
 
 $OptionList = $http->sessionVariable( "AddToBasket_OptionList_" . $ObjectID);
+/*
 $operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'basket_id' => $basket->attribute('id'),
                                                                               'object_id' => $ObjectID,
                                                                               'quantity' => $quantity,
                                                                               'option_list' => $OptionList));                                                                             
-
+*/
 #$Result['content'] = $resultContent;
 #return $Result;
 
