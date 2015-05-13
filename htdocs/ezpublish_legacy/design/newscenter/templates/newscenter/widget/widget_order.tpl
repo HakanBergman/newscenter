@@ -11,7 +11,7 @@
 				{* Fetch information from parent node *}
 				{def $child_nodes = fetch('content', 'tree', hash('parent_node_id', $current_node.parent.node_id, 'class_filter_type', 'include', 'class_filter_array', array('product')))}
 					{if $child_nodes}
-						<ul>
+						<ul class="nav nav-pills">
 							{foreach $child_nodes as $child}
 								<li>
 									<form method="post" action="/content/action">                      
