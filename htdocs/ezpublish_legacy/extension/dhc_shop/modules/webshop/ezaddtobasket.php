@@ -1,101 +1,25 @@
 <?php
 
-$quantity = (int)$module->NamedParameters["Quantity"];
-if ( !is_numeric( $quantity ) or $quantity <= 0 )
-{
-    $quantity = 1;
-}
-// Verify the ObjectID input
-if ( !is_numeric( $ObjectID ) )
-    return $module->handleError( eZError::KERNEL_NOT_AVAILABLE, 'kernel' );
+print_r($basket);
 
-// Check if the object exists on disc
-if ( !eZContentObject::exists( $ObjectID ) )
-    return $module->handleError( eZError::KERNEL_NOT_AVAILABLE, 'kernel' );
+$quantity = $_POST['quantity'];
+if (!is_numeric($quantity) or $quantity <= 0 ) { $quantity = 1; }
+if (!is_numeric($ObjectID)) { $error = true; }
+if (!eZContentObject::exists($ObjectID)) { $error = true; }
 
-// Check if the user can read the object
 $object = eZContentObject::fetch( $ObjectID );
-if ( !$object->canRead() )
-    return $Module->handleError( eZError::KERNEL_ACCESS_DENIED, 'kernel', array( 'AccessList' => $object->accessList( 'read' ) ) );
+if (!$object->canRead()) { $error = true; }
 
-// Check if the object has a price datatype, if not it cannot be used in the basket
 $error = $basket->canAddProduct( $object );
-if ( $error !== eZError::SHOP_OK )
-    return $Module->handleError( $error, 'shop' );
+if ($error !== eZError::SHOP_OK) { $error = true; }
 
-$OptionList = $http->sessionVariable( "AddToBasket_OptionList_" . $ObjectID );
-
-$operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'basket_id' => $basket->attribute( 'id' ),
+$OptionList = $http->sessionVariable( "AddToBasket_OptionList_" . $ObjectID);
+$operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'basket_id' => $basket->attribute('id'),
                                                                               'object_id' => $ObjectID,
                                                                               'quantity' => $quantity,
-                                                                              'option_list' => $OptionList ) );
+                                                                              'option_list' => $OptionList));
 
-switch( $operationResult['status'] )
-{
-    case eZModuleOperationInfo::STATUS_HALTED:
-    {
-        if ( isset( $operationResult['redirect_url'] ) )
-        {
-            $module->redirectTo( $operationResult['redirect_url'] );
-            return;
-        }
-        else if ( isset( $operationResult['result'] ) )
-        {
-            $result = $operationResult['result'];
-            $resultContent = false;
-            if ( is_array( $result ) )
-            {
-                if ( isset( $result['content'] ) )
-                {
-                    $resultContent = $result['content'];
-                }
-                if ( isset( $result['path'] ) )
-                {
-                    $Result['path'] = $result['path'];
-                }
-            }
-            else
-            {
-                $resultContent = $result;
-            }
-            $Result['content'] = $resultContent;
-            return $Result;
-       }
-    }break;
-    case eZModuleOperationInfo::STATUS_CANCELLED:
-    {
-        if ( isset( $operationResult['reason'] ) &&  $operationResult['reason'] == 'validation' )
-        {
-            $http = eZHTTPTool::instance();
-            $http->setSessionVariable( "BasketError", $operationResult['error_data'] );
-            $module->redirectTo( $module->functionURI( "basket" ) . "/(error)/options" );
-            return;
-        }
-        else if ( isset( $operationResult['result'] ) )
-        {
-            $result = $operationResult['result'];
-            $resultContent = false;
-            if ( is_array( $result ) )
-            {
-                if ( isset( $result['content'] ) )
-                {
-                    $resultContent = $result['content'];
-                }
-                if ( isset( $result['path'] ) )
-                {
-                    $Result['path'] = $result['path'];
-                }
-            }
-            else
-            {
-                $resultContent = $result;
-            }
-            $Result['content'] = $resultContent;
-            return $Result;
-       }
-    }break;
-
-}
-
+#$Result['content'] = $resultContent;
+#return $Result;
 
 ?>
