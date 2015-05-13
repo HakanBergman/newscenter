@@ -27,9 +27,9 @@
             			{if $#company.data_map.webshop_active.value}
 				            {* Include Basket *}
 				            <li class="float-right">
-                      <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"></span></a>
-                      <nav id="basket">
-                        {def $basket=fetch( 'shop', 'basket' )}                            
+                      {def $basket=fetch( 'shop', 'basket' )} 
+                      <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"> {$basket.items|count()}</span></a>
+                      <nav id="basket">                                                   
                           <div class="col-lg-12 container-padding-top-3 link-color-white link-color-white hover">
                             <div class="col-lg-12">
                                <a href="#close" title="Stäng varukorg" class="float-right"><span class="glyphicon glyphicon-remove close-shop-menu"></span></a>
@@ -87,9 +87,9 @@
                               </div>
                               <div class="col-lg-12 text-center container-padding-top no-padding no-margin"><a href="/shop/userregister" title="Bekräfta order"><button class="btn btn-primary min-width-80-percent">Till kassan</button></a></div>                              
                             </div>                            
-                          </div>
-                        {undef $basket}
+                          </div>                        
                       </nav>
+                      {undef $basket}
                     </li>
 			            {/if}                   
               </ul>              
