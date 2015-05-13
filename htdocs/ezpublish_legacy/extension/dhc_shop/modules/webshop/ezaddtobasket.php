@@ -1,5 +1,6 @@
 <?php
 
+$http = eZHTTPTool::instance();
 $basket = eZBasket::currentBasket();
 
 $quantity = $_POST['quantity'];
@@ -15,7 +16,6 @@ if (!$error) {
     $error = $basket->canAddProduct($object);
     if ($error !== eZError::SHOP_OK) { $error = true; }
 }
-
 
 $OptionList = $http->sessionVariable( "AddToBasket_OptionList_" . $ObjectID);
 /*
