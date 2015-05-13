@@ -14,18 +14,20 @@
 						<ul>
 							{foreach $child_nodes as $child}
 								<li>
-									<form method="post" action="/content/action">
+									<form method="post" action="/content/action">                      
 											<input type="hidden" name="TopLevelNode" value="{$child.node_id}" />
 											<input type="hidden" name="ContentNodeID" value="{$child.node_id}" />
 											<input type="hidden" name="ContentObjectID" value="{$child.contentobject_id}" />
+                      <div class="col-lg-12">
+                        <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}" class="float-right">{$child.name|wash()}</a>
+                      </div>
                       <div class="col-lg-4">
                         <input type="text" class="form-control" placeholder="1" value="1" name="quantity" />
                       </div>
                       <div class="col-lg-8">
                         <button type="submit" class="btn btn-primary glyphicon .glyphicon-plus addtobasket" ame="ActionAddToBasket" product-id="{$child.id}" product-price="{$child.price_inc_vat}"></button>
                       </div>
-									</form>
-									<a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}" class="float-right">{$child.name|wash()}</a>
+									</form>									
 								</li>
 							{/foreach}
 						</ul>
