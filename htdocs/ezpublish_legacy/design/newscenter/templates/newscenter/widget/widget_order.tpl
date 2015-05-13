@@ -19,7 +19,7 @@
 											<input type="hidden" name="ContentNodeID" value="{$child.node_id}" />
 											<input type="hidden" name="ContentObjectID" value="{$child.contentobject_id}" />
                       <div class="col-lg-12">
-                        <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}" class="float-right">{$child.name|wash()}</a>
+                        <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
                       </div>
                       <div class="col-lg-4">
                         <input type="text" class="form-control" placeholder="1" value="1" name="quantity" />
