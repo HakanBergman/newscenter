@@ -2,6 +2,7 @@
 
 $http = eZHTTPTool::instance();
 $basket = eZBasket::currentBasket();
+$module = $Params['Module'];
 
 $Result['pagelayout'] = '';
 $Result['content'] = null;
@@ -26,10 +27,6 @@ $operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'b
                                                                                   'option_list' => $OptionList));                                                                                  
 
                                                                                   
-$ini = eZINI::instance();
-if ( $ini->variable( 'ShopSettings', 'RedirectAfterAddToBasket' ) == 'reload' )
-    $module->redirectTo( $http->sessionVariable( "FromPage" ) );
-else
-    $module->redirectTo( "/shop/basket/" );                                                                                  
+$module->redirectTo($_POST['url']);
 
 ?>
