@@ -108,7 +108,6 @@ switch( $operationResult['status'] )
 
 
 $ini = eZINI::instance();
-die($ini->variable( 'ShopSettings', 'RedirectAfterAddToBasket' ) . ' ' . $http->sessionVariable( "FromPage" ));
 if ( $ini->variable( 'ShopSettings', 'RedirectAfterAddToBasket' ) == 'reload' )
     $module->redirectTo( $http->sessionVariable( "FromPage" ) );
 else
