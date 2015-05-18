@@ -24,7 +24,12 @@ $operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'b
                                                                                   'object_id' => $ObjectID,
                                                                                   'quantity' => $quantity,
                                                                                   'option_list' => $OptionList));                                                                                  
-$Result['content'] =  trim('Success');
-return $Result;
+
+                                                                                  
+$ini = eZINI::instance();
+if ( $ini->variable( 'ShopSettings', 'RedirectAfterAddToBasket' ) == 'reload' )
+    $module->redirectTo( $http->sessionVariable( "FromPage" ) );
+else
+    $module->redirectTo( "/shop/basket/" );                                                                                  
 
 ?>
