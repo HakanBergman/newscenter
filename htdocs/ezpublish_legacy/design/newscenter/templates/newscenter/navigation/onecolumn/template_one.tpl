@@ -29,6 +29,7 @@
 				            <li class="float-right">
                       {def $basket=fetch( 'shop', 'basket' )} 
                       <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"> <span class="cart_total_items">{$basket.items|count()}</span></span></a>
+                      {$basket|attribute(show, 1)}
                       <nav id="basket">                                                   
                           <div class="col-lg-12 container-padding-top-3 link-color-white link-color-white hover">
                             <div class="col-lg-12">
