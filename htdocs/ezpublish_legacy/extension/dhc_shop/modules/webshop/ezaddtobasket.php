@@ -1,7 +1,9 @@
 <?php
 
 $http = eZHTTPTool::instance();
+$module = $Params['Module'];
 $basket = eZBasket::currentBasket();
+$basket->updatePrices();
 
 $Result['pagelayout'] = '';
 $Result['content'] = null;
@@ -19,7 +21,7 @@ if (!$object->canRead()) { return $Result; }
 $error = $basket->canAddProduct($object);
 if ($error !== eZError::SHOP_OK) { return $Result; }
 
-$OptionList = $http->sessionVariable( "AddToBasket_OptionList_" . $ObjectID);
+$optionList = array();
 $operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'basket_id' => $basket->attribute('id'),
                                                                                   'object_id' => $ObjectID,
                                                                                   'quantity' => $quantity,
