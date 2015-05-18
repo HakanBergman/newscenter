@@ -1,6 +1,5 @@
 <div class="row widget-links">
   <div class="{if $block.data_map.fullscreen.value}container-fluid{else}container{/if} no-margin no-padding">
-    <article>
       <h5 class="text-center {$block.data_map.background_color.data_text} {$block.data_map.text_color.data_text} container-padding-top-05 container-padding-bottom-05">{$block.name|wash()}</h5>
       {if and(is_set($object)|not, is_set($edit_version)|not)}
         {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($#company.node_id))}
@@ -39,13 +38,13 @@
             {* Fetch information from parent node *}
             {def $child_nodes = fetch('content', 'list', hash('parent_node_id', $current_node.parent.node_id, 'class_filter_type', 'include', 'class_filter_array', array('website')))}
               {if $child_nodes}
-                <ul>
+                <ul class="navbar">
                   {foreach $child_nodes as $child}
                     <li>
                       <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
                       {def $grandchilds = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form')))}
                         {if $grandchilds}
-                          <ul>
+                          <ul class="navbar">
                             {foreach $grandchilds as $grandchild}
                               <li>{$grandchild.name|wash()}</li>
                             {/foreach}
@@ -60,6 +59,5 @@
           {/case}
         {/switch}
       {/if}
-    </article>
   </div>
 </div>
