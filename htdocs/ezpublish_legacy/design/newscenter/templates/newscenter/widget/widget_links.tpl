@@ -46,7 +46,7 @@
                         {if $grandchilds}
                           <ul class="navbar no-padding">
                             {foreach $grandchilds as $grandchild}
-                              <li><a href="{$granchild.url|ezurl('no', 'full')}" title="{$granchild.name|wash()}">{$grandchild.name|wash()}</a></li>
+                              <li class="container-padding-left"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}">{$grandchild.name|wash()}</a></li>
                             {/foreach}
                           </ul>  
                         {/if}
