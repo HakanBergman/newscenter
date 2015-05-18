@@ -33,7 +33,7 @@
                       {def $total_items = 0}
                         {foreach $basket.items as $items}
                           {$items|attribute(show, 1)}
-                          {$total_items = $total_items|sum($items.item_count)}
+                          {set $total_items = $total_items|sum($items.item_count)}
                         {/foreach}
                         {$total_items}
                       
