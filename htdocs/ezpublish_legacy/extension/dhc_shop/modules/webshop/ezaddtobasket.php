@@ -7,7 +7,7 @@ $Result['pagelayout'] = '';
 $Result['content'] = null;
 
 $quantity = $_POST['quantity'];
-$ObjectID = 3311;
+$ObjectID = 331;
 if (!is_numeric($quantity) or $quantity <= 0 ) { $quantity = 1; }
 if (!is_numeric($ObjectID)) { return $Result; }
 if (!eZContentObject::exists($ObjectID)) { return $Result; }
