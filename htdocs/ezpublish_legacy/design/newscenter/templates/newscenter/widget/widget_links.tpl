@@ -43,7 +43,7 @@
                   {foreach $child_nodes as $child}
                     <li>
                       <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
-                      {def $grandchilds = fetch('content', 'list', hash('parent_node_id', $child.node_id))}
+                      {def $grandchilds = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form')))}
                         {if $grandchilds}
                           <ul>
                             {foreach $grandchilds as $grandchild}
