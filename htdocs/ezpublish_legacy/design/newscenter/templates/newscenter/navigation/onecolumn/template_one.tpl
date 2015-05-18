@@ -29,7 +29,13 @@
 				            <li class="float-right">
                       {def $basket=fetch( 'shop', 'basket' )} 
                       <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"> <span class="cart_total_items">{$basket.items|count()}</span></span></a>
-                      {$basket.items.0|attribute(show, 1)}
+                      {$basket.items.0.item_count}
+                      {def $total_items = 0}
+                        {foreach $basket.items as $items}
+                          {$total_items = $total_items|sum($items.item_count)}
+                        {/foreach}
+                        {$total_items}
+                      
                       <nav id="basket">                                                   
                           <div class="col-lg-12 container-padding-top-3 link-color-white link-color-white hover">
                             <div class="col-lg-12">
