@@ -3,11 +3,14 @@
 $http = eZHTTPTool::instance();
 $basket = eZBasket::currentBasket();
 
+$Result['pagelayout'] = '';
+$Result['content'] = null;
+
 $quantity = $_POST['quantity'];
 $ObjectID = 3311;
 if (!is_numeric($quantity) or $quantity <= 0 ) { $quantity = 1; }
-if (!is_numeric($ObjectID)) { return; }
-if (!eZContentObject::exists($ObjectID)) { return; }
+if (!is_numeric($ObjectID)) { return $Result; }
+if (!eZContentObject::exists($ObjectID)) { return $Result; }
 
 
 $object = eZContentObject::fetch($ObjectID);
@@ -25,11 +28,8 @@ if (!$error) {
                                                                                   'quantity' => $quantity,
                                                                                   'option_list' => $OptionList));
     $Result['content'] =  trim('Success');
-} else {
-    $Result['content'] = null;
 }
 
-$Result['pagelayout'] = '';
 return $Result;
 
 ?>
