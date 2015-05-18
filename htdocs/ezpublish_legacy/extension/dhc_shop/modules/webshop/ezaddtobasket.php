@@ -20,14 +20,16 @@ $error = $basket->canAddProduct($object);
 if ($error !== eZError::SHOP_OK) { return $Result; }
 
 $OptionList = $http->sessionVariable( "AddToBasket_OptionList_" . $ObjectID);
-if (!$error) {
-    $operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'basket_id' => $basket->attribute('id'),
+$operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'basket_id' => $basket->attribute('id'),
                                                                                   'object_id' => $ObjectID,
                                                                                   'quantity' => $quantity,
                                                                                   'option_list' => $OptionList));
-    $Result['content'] =  trim('Success');
-}
-
+                                                                                  
+print_r($basket);
+print_r($ObjectID);
+print_r($quantity);
+print_r($OptionList);
+$Result['content'] =  trim('Success');
 return $Result;
 
 ?>
