@@ -27,6 +27,6 @@ $operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'b
                                                                                   'option_list' => $OptionList));                                                                                  
 
                                                                                   
-$module->redirectTo($_POST['url']);
+header('Location: '.$_POST['url']);
 
 ?>
