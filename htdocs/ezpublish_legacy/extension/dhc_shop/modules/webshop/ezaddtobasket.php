@@ -6,8 +6,8 @@ $basket = eZBasket::currentBasket();
 $quantity = $_POST['quantity'];
 $ObjectID = 3311;
 if (!is_numeric($quantity) or $quantity <= 0 ) { $quantity = 1; }
-if (!is_numeric($ObjectID)) { $error = true; }
-if (!eZContentObject::exists($ObjectID)) { $error = true; }
+if (!is_numeric($ObjectID)) { return; }
+if (!eZContentObject::exists($ObjectID)) { return; }
 
 
 $object = eZContentObject::fetch($ObjectID);
