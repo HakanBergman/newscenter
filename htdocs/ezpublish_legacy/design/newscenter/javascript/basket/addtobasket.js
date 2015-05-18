@@ -5,6 +5,13 @@ $(document).ready(function () {
         var product_id = $(this).attr('product-id');
         var product_price = $(this).attr('product-price');
         var quantity = $('.form_number_' + product_id + ' .quantity_number_' + product_id).val();
-        $.post("/webshop/addtobasket", { quantity: quantity, objectid: product_id, url: window.location.href }, function (data) { });
+        $.post("/webshop/addtobasket", { quantity: quantity, objectid: product_id, url: window.location.href }, function (data) {
+            if ($.trim(data) == 'Success') {
+                $('.form_number_' + product_id + ' .quantity_number_' + product_id).val('1');
+                $('.form_number_' + product_id).slideUp('fast');
+                $('.form_number_' + product_id).slideDown('slow');
+                location.reload(true);
+            }
+        });
     });
 });

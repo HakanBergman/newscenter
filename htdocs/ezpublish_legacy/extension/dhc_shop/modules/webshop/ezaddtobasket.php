@@ -2,7 +2,6 @@
 
 $http = eZHTTPTool::instance();
 $basket = eZBasket::currentBasket();
-$module = $Params['Module'];
 
 $Result['pagelayout'] = '';
 $Result['content'] = null;
@@ -25,8 +24,7 @@ $operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'b
                                                                                   'object_id' => $ObjectID,
                                                                                   'quantity' => $quantity,
                                                                                   'option_list' => $OptionList));                                                                                  
-
-                                                                                  
-header('Location: '.$_POST['url']);
+$Result['content'] =  trim('Success');
+return $Result;
 
 ?>
