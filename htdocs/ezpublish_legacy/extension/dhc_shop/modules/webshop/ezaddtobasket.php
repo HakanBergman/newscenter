@@ -14,12 +14,10 @@ if (!eZContentObject::exists($ObjectID)) { return $Result; }
 
 
 $object = eZContentObject::fetch($ObjectID);
-if (!$object->canRead()) { $error = true; }
-if (!$error) {
-    $error = $basket->canAddProduct($object);
-    if ($error !== eZError::SHOP_OK) { $error = true; }
-}
+if (!$object->canRead()) { return $Result; }
 
+$error = $basket->canAddProduct($object);
+if ($error !== eZError::SHOP_OK) { return $Result; }
 
 $OptionList = $http->sessionVariable( "AddToBasket_OptionList_" . $ObjectID);
 if (!$error) {
