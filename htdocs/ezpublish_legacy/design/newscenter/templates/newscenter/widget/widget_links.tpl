@@ -40,7 +40,7 @@
               {if $child_nodes}
                 <ul class="navbar">
                   {foreach $child_nodes as $child}
-                    <li>
+                    <li class="link-color-black">
                       <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
                       {def $grandchilds = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form')))}
                         {if $grandchilds}
