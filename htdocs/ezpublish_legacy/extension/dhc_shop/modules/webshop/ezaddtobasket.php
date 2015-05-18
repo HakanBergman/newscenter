@@ -6,9 +6,9 @@ $basket = eZBasket::currentBasket();
 $Result['pagelayout'] = '';
 $Result['content'] = null;
 
-$quantity = $_POST['quantity'];
-$ObjectID = 331;
-if (!is_numeric($quantity) or $quantity <= 0 ) { $quantity = 1; }
+$quantity = (int)$_POST['quantity'];
+$ObjectID = (int)$_POST['ContentObjectID'];
+if (!is_numeric($quantity) or $quantity <= 0) { $quantity = 1; }
 if (!is_numeric($ObjectID)) { return $Result; }
 if (!eZContentObject::exists($ObjectID)) { return $Result; }
 
@@ -23,12 +23,7 @@ $OptionList = $http->sessionVariable( "AddToBasket_OptionList_" . $ObjectID);
 $operationResult = eZOperationHandler::execute( 'shop', 'addtobasket', array( 'basket_id' => $basket->attribute('id'),
                                                                                   'object_id' => $ObjectID,
                                                                                   'quantity' => $quantity,
-                                                                                  'option_list' => $OptionList));
-                                                                                  
-print_r($basket);
-print_r($ObjectID);
-print_r($quantity);
-print_r($OptionList);
+                                                                                  'option_list' => $OptionList));                                                                                  
 $Result['content'] =  trim('Success');
 return $Result;
 
