@@ -27,16 +27,12 @@
             			{if $#company.data_map.webshop_active.value}
 				            {* Include Basket *}
 				            <li class="float-right">
-                      {def $basket=fetch( 'shop', 'basket' )} 
-                      <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"> <span class="cart_total_items">{$basket.items|count()}</span></span></a>
-                      {$basket.items.0.item_count}
+                      {def $basket=fetch( 'shop', 'basket' )}
                       {def $total_items = 0}
                         {foreach $basket.items as $items}
-                          {$items|attribute(show, 1)}
                           {set $total_items = $total_items|sum($items.item_count)}
                         {/foreach}
-                        {$total_items}
-                      
+                      <a href="#basket" title="Varukorg"><span class="glyphicon glyphicon-shopping-cart"> <span class="cart_total_items">{$basket.items|count()} ({$total_items})</span></span></a>                      
                       <nav id="basket">                                                   
                           <div class="col-lg-12 container-padding-top-3 link-color-white link-color-white hover">
                             <div class="col-lg-12">
@@ -48,10 +44,10 @@
                                 <div class="col-lg-12">Du har 0 produkter i varukorgen.</div>
                               {/case}
                               {case match=1}
-                                <div class="col-lg-12"><strong>{$basket.items|count()}</strong> produkt i varukorgen.</div>
+                                <div class="col-lg-12"><strong>{$basket.items|count()} ({$total_items})</strong> produkt i varukorgen.</div>
                               {/case}
                               {case}
-                                <div class="col-lg-12"><strong>{$basket.items|count()}</strong> produkter i varukorgen.</div>
+                                <div class="col-lg-12"><strong>{$basket.items|count()} ({$total_items})</strong> produkter i varukorgen.</div>
                               {/case}
                             {/switch}
                             <div class="col-lg-12 container-margin-top">
@@ -97,7 +93,7 @@
                             </div>                            
                           </div>                        
                       </nav>
-                      {undef $basket}
+                      {undef $basket $total_items}
                     </li>
 			            {/if}                   
               </ul>              
