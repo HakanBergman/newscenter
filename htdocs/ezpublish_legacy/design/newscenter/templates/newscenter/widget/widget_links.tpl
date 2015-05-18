@@ -38,7 +38,7 @@
             {* Fetch information from parent node *}
             {def $child_nodes = fetch('content', 'list', hash('parent_node_id', $current_node.parent.node_id, 'class_filter_type', 'include', 'class_filter_array', array('website')))}
               {if $child_nodes}
-                <ul class="navbar">
+                <ul class="navbar no-padding container-padding-left">
                   {foreach $child_nodes as $child}
                     <li class="link-color-black link-color-wine-red-active link-color-wine-red-hover">
                       <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
