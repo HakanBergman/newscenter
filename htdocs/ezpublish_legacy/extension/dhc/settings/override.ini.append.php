@@ -6,6 +6,12 @@ MatchFile=full/company_name.tpl
 Subdir=templates
 Match[class_identifier]=company_name
 
+[full_form]
+Source=node/view/full.tpl
+MatchFile=full/form.tpl
+Subdir=templates
+Match[class_identifier]=form
+
 [full_product_country]
 Source=node/view/full.tpl
 MatchFile=full/product_country.tpl
