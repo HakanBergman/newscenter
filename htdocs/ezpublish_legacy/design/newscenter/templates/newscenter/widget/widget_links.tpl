@@ -41,12 +41,12 @@
                 <ul class="navbar no-padding container-padding-left">
                   {foreach $child_nodes as $child}
                     <li class="link-color-black link-color-wine-red-active link-color-wine-red-hover">
-                      <a href="{$child.url|ezurl('no', 'full')}" alt="{$child.name}">{$child.name|wash()}</a>
+                      <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name}" class="font-weight-normal">{$child.name|wash()}</a>
                       {def $grandchilds = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form')))}
                         {if $grandchilds}
                           <ul class="navbar no-padding link-color-wine-red-active link-color-wine-red-hover">
                             {foreach $grandchilds as $grandchild}
-                              <li class="container-padding-left"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}">{$grandchild.name|wash()}</a></li>
+                              <li class="container-padding-left"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="font-weight-normal">{$grandchild.name|wash()}</a></li>
                             {/foreach}
                           </ul>  
                         {/if}
