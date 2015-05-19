@@ -55,7 +55,7 @@
                         {if $grandchilds}
                           <ul class="navbar no-padding">
                             {foreach $grandchilds as $grandchild}
-                              <li class="container-padding-left"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="font-weight-normal">{$grandchild.name|wash()}</a></li>
+                              <li class="container-padding-left"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="font-weight-normal{if $current_node.node_id|eq($grandchild.node_id)} active{/if}">{$grandchild.name|wash()}</a></li>
                             {/foreach}
                           </ul>  
                         {/if}
