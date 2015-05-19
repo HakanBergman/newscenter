@@ -1,6 +1,7 @@
 ﻿<div class="container container-padding-top">
 	{include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
-	<div class="col-lg-12 container-padding-top no-padding no-margin">
-		Test
-	</div>
+		<article>
+			<h1>{$current_node.name|wash()}</h1>
+			{attribute_view_gui attribute=$current_node.data_map.body}
+	</article>
 </div>
