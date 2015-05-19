@@ -221,7 +221,9 @@
 						{else}
 							{* Main Content *}
 							<div class="container container-box container-margin-top-1-px {$sitesettings.0.data_map.background_color.data_text}">
-								{$module_result.content}							
+								<div class="col-lg-12">
+									{$module_result.content}							
+								</div>
 							</div>
 						{/if}
 					{undef $zones}
