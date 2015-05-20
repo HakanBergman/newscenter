@@ -52,7 +52,7 @@
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="3"></div>
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="4"></div>
 							</div>
-							<hr />
+							<hr class="clear no-margin no-padding" />
 							{set $number = $number|inc(1)}
 						{/foreach}
 						<div class="col-lg-12 container-margin-top no-margin no-padding">
