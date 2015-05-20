@@ -14,11 +14,9 @@
           </form>
         </div>
         {/if}
-      {/if}
+      {/if}       
         
-      {$block.data_map.target_node.data_text}
-        
-      {def $child_nodes = fetch('content', 'list', hash('parent_node_id', $current_node.node_id, 'class_filter_type', 'include', 'class_filter_array', array('website')))}
+      {def $child_nodes = fetch('content', 'list', hash('parent_node_id', $block.data_map.target_node.data_text, 'class_filter_type', 'include', 'class_filter_array', array('website')))}
         {if $child_nodes}
           <ul class="navbar no-padding container-padding-left">
             {foreach $child_nodes as $child}
