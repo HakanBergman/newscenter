@@ -139,6 +139,12 @@ MatchFile=full/widget_superslides.tpl
 Subdir=templates
 Match[class_identifier]=widget_superslides
 
+[edit_widget_links]
+Source=content/edit.tpl
+MatchFile=edit/widget_links.tpl
+Subdir=templates
+Match[class_identifier]=widget_links
+
 [edit_widget_superslides]
 Source=content/edit.tpl
 MatchFile=edit/widget_superslides.tpl
