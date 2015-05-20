@@ -8,7 +8,7 @@
 	{* Check if we want to show the breadcrumb *}
 	{if $node.data_map.show_breadcrumb.value}{include uri="design:newscenter/widget/widget_breadcrumb.tpl" desktop_size=$website_size_desktop.data_map.widget_size_class.data_text tablet_size=$website_size_tablet.data_map.widget_size_class.data_text phone_size=$website_size_mobile.data_map.widget_size_class.data_text }{/if}
 
-	<div class="container-padding-left {$menusettings.0.data_map.link_hover_color.data_text} {$website_size_desktop.data_map.widget_size_class.data_text} {$website_size_tablet.data_map.widget_size_class.data_text|explode('lg')|implode('md')} {$website_size_mobile.data_map.widget_size_class.data_text|explode('lg')|implode('sm')}">
+	<div class="container-padding-left container-padding-bottom {$menusettings.0.data_map.link_hover_color.data_text} {$website_size_desktop.data_map.widget_size_class.data_text} {$website_size_tablet.data_map.widget_size_class.data_text|explode('lg')|implode('md')} {$website_size_mobile.data_map.widget_size_class.data_text|explode('lg')|implode('sm')}">
 		<article>
 			<h1>{$node.name|wash()}</h1>
 			<div class="col-lg-12">{attribute_view_gui attribute=$node.data_map.body}</div>
@@ -27,7 +27,7 @@
 			{def $questions = fetch('content', 'list', hash('parent_node_id', $node.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form_question')))}
 				{if $questions}
 					{def $number = 1}
-						<div class="col-lg-12">
+						<div class="col-lg-12 text-center">
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
 							<div class="col-lg-7 col-md-8 col-sm-8 col-xs-8">&nbsp;</div>
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">Nästan aldrig</div>
@@ -35,7 +35,7 @@
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">Nästan alltid</div>
 						</div>
-						<div class="col-lg-12">
+						<div class="col-lg-12 text-center">
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
 							<div class="col-lg-7 col-md-8 col-sm-8 col-xs-8">&nbsp;</div>
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><strong>1</strong></div>
@@ -45,7 +45,7 @@
 						</div>
 						<ul class="navbar no-margin no-padding">
 							{foreach $questions as $question}
-								<div class="col-lg-12">
+								<div class="col-lg-12 container-margin-top">
 									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><strong>{$number}.</strong></div>
 									<div class="col-lg-7 col-md-8 col-sm-8 col-xs-8">{$question.name|wash()}</div>
 									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
