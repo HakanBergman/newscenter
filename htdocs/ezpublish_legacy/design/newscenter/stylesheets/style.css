@@ -207,6 +207,9 @@ section .widget-margin-top { margin-top: 1em; }
 ul { list-style-type: none; }
 ul.submenu { position: absolute; z-index: 1000; float: left; list-style: none; text-align: left; right: 0; left: 0; padding: 0; display: none; }
 
+/* LI Rules */
+.list-style-type-none { list-style-type: none !important; }
+
 /* Font Weights */
 .font-weight-bold { font-weight: 700 !important; }
 .font-weight-normal { font-weight: normal !important; }

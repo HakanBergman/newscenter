@@ -22,11 +22,14 @@
 			</div>
 			{def $questions = fetch('content', 'list', hash('parent_node_id', $node.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form_question')))}
 				{if $questions}
-					<ul class="navbar no-margin no-padding">
-						{foreach $questions as $question}
-							<li>{$question.name|wash()}</li>
-						{/foreach}
-					</ul>
+					{def $number = 1}
+						<ul class="navbar no-margin no-padding">
+							{foreach $questions as $question}
+								<li class="list-style-type-none"><strong class="container-padding-right">{$number}.</strong> {$question.name|wash()}</li>
+								{set $number = $number|inc(1)}
+							{/foreach}
+						</ul>
+					{undef $number}
 				{/if}
 			{undef $questions}
 		</article>
