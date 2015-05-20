@@ -20,6 +20,15 @@
 					<button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding"><span class="glyphicon glyphicon-file text-primary"></span> <span class="container-padding-left">Lägg till fråga</span></button>
 				</form>
 			</div>
+			{def $questions = fetch('content', 'list', hash('parent_node_id', $node.node_id))}
+				{if $questions}
+					<ul>
+						{foreach $questions as $question}
+							<li>{$question.name|wash()}</li>
+						{/foreach}
+					</ul>
+				{/if}
+			{undef $questions}
 		</article>
 	</div>
 
