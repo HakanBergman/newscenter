@@ -48,7 +48,7 @@
 								<div class="col-lg-12 container-margin-top no-margin no-padding">
 									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><strong>{$number}.</strong></div>
 									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">{$question.name|wash()}</div>
-									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><input type="radio" value="1" name="question_{$question.contentobject_id}" class="form-control"></div>
+									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 input-group"><span class="input-group-addon"><input type="radio" aria-label="Radio button for following text input"></span></div>
 									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><input type="radio" value="1" name="question_{$question.contentobject_id}" class="form-control"></div>
 									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><input type="radio" value="1" name="question_{$question.contentobject_id}" class="form-control"></div>
 									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><input type="radio" value="1" name="question_{$question.contentobject_id}" class="form-control"></div>
