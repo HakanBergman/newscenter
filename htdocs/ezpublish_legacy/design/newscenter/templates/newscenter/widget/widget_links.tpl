@@ -16,57 +16,28 @@
         {/if}
       {/if}
         
-      {if $block.data_map.show_children.value}
-        {def $child_nodes = fetch('content', 'list', hash('parent_node_id', $current_node.node_id, 'class_filter_type', 'include', 'class_filter_array', array('website')))}
-          {if $child_nodes}
-            <ul class="navbar no-padding container-padding-left">
-              {foreach $child_nodes as $child}
-                <li class="link-color-black link-color-wine-red-active link-color-wine-red-hover">
-                  <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name}" class="font-weight-normal">{$child.name|wash()}</a>
-                    {def $grandchilds = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form')))}
-                      {if $grandchilds}
-                        <ul class="navbar no-padding">
-                          {foreach $grandchilds as $grandchild}
-                            <li class="container-padding-left"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="font-weight-normal">{$grandchild.name|wash()}</a></li>
-                          {/foreach}
-                        </ul>  
-                      {/if}
-                    {undef $grandchilds}                  
-                </li>
-              {/foreach}
-            </ul>
-          {/if}
-        {undef $child_nodes}
-      {else}
-        {switch match=$block.data_map.information.content.0}
-          {case match=0}
-          {/case}
-          {case match=1}
-          {/case}
-          {case match=2}
-            {* Fetch information from parent node *}
-            {def $child_nodes = fetch('content', 'list', hash('parent_node_id', $current_node.parent.node_id, 'class_filter_type', 'include', 'class_filter_array', array('website')))}
-              {if $child_nodes}
-                <ul class="navbar no-padding container-padding-left">
-                  {foreach $child_nodes as $child}
-                    <li class="link-color-black link-color-wine-red-active link-color-wine-red-hover">
-                      <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name}" class="font-weight-normal{if $current_node.node_id|eq($child.node_id)} active{/if}">{$child.name|wash()}</a>
-                      {def $grandchilds = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form')))}
-                        {if $grandchilds}
-                          <ul class="navbar no-padding">
-                            {foreach $grandchilds as $grandchild}
-                              <li class="container-padding-left"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="font-weight-normal{if $current_node.node_id|eq($grandchild.node_id)} active{/if}">{$grandchild.name|wash()}</a></li>
-                            {/foreach}
-                          </ul>  
-                        {/if}
-                     {undef $grandchilds}
-                    </li>
-                  {/foreach}
-                </ul>
-              {/if}
-            {undef $child_nodes}
-          {/case}
-        {/switch}
+      {$block.data_map.target_node.data_text}
+        
+      {def $child_nodes = fetch('content', 'list', hash('parent_node_id', $current_node.node_id, 'class_filter_type', 'include', 'class_filter_array', array('website')))}
+        {if $child_nodes}
+          <ul class="navbar no-padding container-padding-left">
+            {foreach $child_nodes as $child}
+              <li class="link-color-black link-color-wine-red-active link-color-wine-red-hover">
+                <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name}" class="font-weight-normal">{$child.name|wash()}</a>
+                  {def $grandchilds = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form')))}
+                    {if $grandchilds}
+                      <ul class="navbar no-padding">
+                        {foreach $grandchilds as $grandchild}
+                          <li class="container-padding-left"><a href="{$grandchild.url|ezurl('no', 'full')}" title="{$grandchild.name|wash()}" class="font-weight-normal">{$grandchild.name|wash()}</a></li>
+                        {/foreach}
+                      </ul>  
+                    {/if}
+                  {undef $grandchilds}                  
+              </li>
+            {/foreach}
+          </ul>
       {/if}
+    {undef $child_nodes}
+    
   </div>
 </div>
