@@ -43,19 +43,22 @@
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><strong>3</strong></div>
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><strong>4</strong></div>
 						</div>
-						<ul class="navbar no-margin no-padding">
-							{foreach $questions as $question}
-								<div class="col-lg-12 container-margin-top no-margin no-padding">
-									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><strong>{$number}.</strong></div>
-									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">{$question.name|wash()}</div>
-									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="1"></div>
-									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="2"></div>
-									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="3"></div>
-									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="4"></div>
-								</div>
-								{set $number = $number|inc(1)}
-							{/foreach}
-						</ul>
+						{foreach $questions as $question}
+							<div class="col-lg-12 container-margin-top no-margin no-padding">
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><strong>{$number}.</strong></div>
+								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">{$question.name|wash()}</div>
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="1"></div>
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="2"></div>
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="3"></div>
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="4"></div>
+							</div>
+							{set $number = $number|inc(1)}
+						{/foreach}
+						<div class="col-lg-12 container-margin-top no-margin no-padding">
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">&nbsp;</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button class="btn btn-primary">Svara</button></div>
+						</div>
 					{undef $number}
 				{/if}
 			{undef $questions}
