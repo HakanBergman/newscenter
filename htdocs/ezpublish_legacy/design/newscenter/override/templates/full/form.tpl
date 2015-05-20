@@ -45,8 +45,8 @@
 						</div>
 						{foreach $questions as $question}
 							<div class="col-lg-12 no-margin no-padding">
-								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><strong>{$number}.</strong></div>
-								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-3">{$question.name|wash()}</div>
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><strong>{$number}.</strong></div>
+								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8">{$question.name|wash()}</div>
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="1"></div>
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="2"></div>
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center"><input type="radio" name="question_{$question.contentobject_id}" value="3"></div>
