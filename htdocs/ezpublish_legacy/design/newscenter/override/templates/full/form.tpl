@@ -28,7 +28,7 @@
 				{if $questions}
 					{def $number = 1}
 						<div class="col-lg-12">
-							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbps;</div>
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
 							<div class="col-lg-7 col-md-8 col-sm-8 col-xs-8">&nbsp;</div>
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">Nästan aldrig</div>
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
@@ -36,7 +36,7 @@
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">Nästan alltid</div>
 						</div>
 						<div class="col-lg-12">
-							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbps;</div>
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
 							<div class="col-lg-7 col-md-8 col-sm-8 col-xs-8">&nbsp;</div>
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><strong>1</strong></div>
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><strong>2</strong></div>
