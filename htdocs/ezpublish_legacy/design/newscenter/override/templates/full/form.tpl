@@ -55,9 +55,8 @@
 							{set $number = $number|inc(1)}
 						{/foreach}
 						<div class="col-lg-12 container-margin-top no-margin no-padding">
-							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
-							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">&nbsp;</div>
-							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button class="btn btn-primary">Svara</button></div>
+							<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">&nbsp;</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><div class="pull-right"><button class="btn btn-primary">Svara</button></div></div>
 						</div>
 					{undef $number}
 				{/if}
