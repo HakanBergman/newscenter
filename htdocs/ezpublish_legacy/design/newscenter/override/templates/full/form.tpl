@@ -12,14 +12,18 @@
 		<article>
 			<h1>{$node.name|wash()}</h1>
 			<div class="col-lg-12">{attribute_view_gui attribute=$node.data_map.body}</div>
-			<div class="edit container-padding-left-2 container-padding-top-05">
-				<form action="/content/action" method="post">
-					<input type="hidden" value="form_question" name="ClassIdentifier">
-					<input type="hidden" value="{$node.node_id}" name="NodeID"> 
-					<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 
-					<button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding"><span class="glyphicon glyphicon-file text-primary"></span> <span class="container-padding-left">Lägg till fråga</span></button>
-				</form>
-			</div>
+			{if and(is_set($object)|not, is_set($edit_version)|not)}
+				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
+					<div class="edit admin-panel container-padding-left container-padding-top-05 hide">
+						<form action="/content/action" method="post">
+							<input type="hidden" value="form_question" name="ClassIdentifier">
+							<input type="hidden" value="{$node.node_id}" name="NodeID"> 
+							<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 
+							<button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding"><span class="glyphicon glyphicon-file text-primary"></span> <span class="container-padding-left">Lägg till fråga</span></button>
+						</form>
+					</div>
+				{/if}
+			{/if}
 			{def $questions = fetch('content', 'list', hash('parent_node_id', $node.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form_question')))}
 				{if $questions}
 					{def $number = 1}
