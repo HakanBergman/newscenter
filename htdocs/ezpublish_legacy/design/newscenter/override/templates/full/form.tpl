@@ -55,8 +55,8 @@
 							{delimiter}<hr class="clear no-margin no-padding" />{/delimiter}
 							{set $number = $number|inc(1)}
 						{/foreach}
-						<div class="col-lg-12 container-padding-top container-padding-bottom no-margin no-padding">
-								<div class="pull-right"><button class="btn btn-primary">Svara</button></div>
+						<div class="col-lg-12 container-margin-top container-padding-top container-padding-bottom no-margin no-padding clear">
+							<div class="text-right"><button class="btn btn-primary">Svara</button></div>
 						</div>
 					{undef $number}
 				{/if}
