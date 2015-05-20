@@ -1,4 +1,4 @@
-﻿{def $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
+{def $company = fetch('content', 'node', hash('node_id', ezini('SiteSettings', 'homenode', 'site.ini.append.php')))}
   {def $menusettings = fetch('content', 'list', hash('parent_node_id', $company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('menu_settings'), 'limit', 1))}
 	
 	{def $website_size_desktop = fetch('content', 'node', hash('node_id', $node.data_map.size_desktop.content.relation_list.0.node_id))}
@@ -12,7 +12,7 @@
 		<article>
 			<h1>{$node.name|wash()}</h1>
 			<div class="col-lg-12">{attribute_view_gui attribute=$node.data_map.body}</div>
-			{if and(is_set($object)|not, is_set($edit_version)|not)}
+			{def $user = fetch('user', 'current_user')}
 				{if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
 					<div class="edit admin-panel container-padding-left container-padding-top-05 hide">
 						<form action="/content/action" method="post">
@@ -23,7 +23,7 @@
 						</form>
 					</div>
 				{/if}
-			{/if}
+			{undef $user}
 			{def $questions = fetch('content', 'list', hash('parent_node_id', $node.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form_question')))}
 				{if $questions}
 					{def $number = 1}
