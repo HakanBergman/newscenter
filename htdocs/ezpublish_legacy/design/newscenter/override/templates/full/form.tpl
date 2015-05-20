@@ -45,7 +45,14 @@
 						</div>
 						<ul class="navbar no-margin no-padding">
 							{foreach $questions as $question}
-								<li class="list-style-type-none"><strong class="container-padding-right">{$number}.</strong> {$question.name|wash()}</li>
+								<div class="col-lg-12">
+									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"><strong>{$number}.</strong></div>
+									<div class="col-lg-7 col-md-8 col-sm-8 col-xs-8">{$question.name|wash()}</div>
+									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+								</div>
 								{set $number = $number|inc(1)}
 							{/foreach}
 						</ul>
