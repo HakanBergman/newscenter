@@ -32,7 +32,6 @@ class eZCreateForecast
               $json_decode = json_decode($json);
               print_r($json_decode->weather);
               var_dump(json_decode($json));
-              var_dump(json_
             } break;
         }
     }
