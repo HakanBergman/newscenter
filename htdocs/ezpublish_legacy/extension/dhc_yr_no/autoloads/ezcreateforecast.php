@@ -46,7 +46,7 @@ class eZCreateForecast
               $weather['description'] = $json_decode->weather->description;
               $weather['icon'] = $json_decode->weather->icon;
 
-              $operatorValue = array($temperature, $humidity, $weather);
+              $operatorValue = array(array($temperature), array($humidity), array($weather));
 
             } break;
         }
