@@ -29,12 +29,8 @@ class eZCreateForecast
             case 'ezcreateforecast':
             {   
             
-              /* Named Parameters */
-              print_r($namedParameters);
-              echo $namedParameters['url'];
-              die();
               /* Fetch Weather Information from JSON API */
-              $json = file_get_contents("http://api.openweathermap.org/data/2.5/weather?lat=57.723152&lon=11.767669");
+              $json = file_get_contents($namedParameters[0]);
               $json_decode = json_decode($json);
               
               /* Temperature */
