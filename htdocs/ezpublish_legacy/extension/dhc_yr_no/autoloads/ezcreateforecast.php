@@ -34,17 +34,17 @@ class eZCreateForecast
               $json_decode = json_decode($json);
               
               /* Temperature */
-              $operatorValue['temperature']['current'] = $json_decode->main->temp;
-              $operatorValue['temperature']['min'] = $json_decode->main->temp_min;
-              $operatorValue['temperature']['max'] = $json_decode->main->temp_max;
+              $operatorValue['temperature_current'] = $json_decode->main->temp;
+              $operatorValue['temperature_min'] = $json_decode->main->temp_min;
+              $operatorValue['temperature_max'] = $json_decode->main->temp_max;
               
               /* Humidity */
               $operatorValue['humidity'] = $json_decode->main->humidity;
               
               /* Weather */
-              $operatorValue['weather']['main'] = $json_decode->weather->main;
-              $operatorValue['weather']['description'] = $json_decode->weather->description;
-              $operatorValue['weather']['icon'] = $json_decode->weather->icon;
+              $operatorValue['main'] = $json_decode->weather->main;
+              $operatorValue['description'] = $json_decode->weather->description;
+              $operatorValue['icon'] = $json_decode->weather->icon;
               
               /* Name */
               $operatorValue['name'] = $json_decode->name;
