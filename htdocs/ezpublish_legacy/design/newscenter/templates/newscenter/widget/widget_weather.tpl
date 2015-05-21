@@ -4,7 +4,7 @@
 		{def $weather = ezcreateforecast($block.data_map.weather_link.data_text)}
 		{def $kelvin = "273"}
 			<div class="col-lg-6"><h5>{$weather.temperature_current|sub($kelvin)|round()} &deg;C</h5></div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 container-padding-right">
 				<img src="http://openweathermap.org/img/w/{$weather.icon}.png" alt="{$weather.description}" class="img-responsive" />
 			</div>
 		{undef $weather $kelvin}
