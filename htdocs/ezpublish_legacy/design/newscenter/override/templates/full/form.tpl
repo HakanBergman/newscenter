@@ -10,9 +10,6 @@
 
 	<div class="container-padding-left container-padding-bottom {$menusettings.0.data_map.link_hover_color.data_text} {$website_size_desktop.data_map.widget_size_class.data_text} {$website_size_tablet.data_map.widget_size_class.data_text|explode('lg')|implode('md')} {$website_size_mobile.data_map.widget_size_class.data_text|explode('lg')|implode('sm')}">
 		<article>
-			{def $weather = ezcreateforecast('http://api.openweathermap.org/data/2.5/weather?lat=57.723152&lon=11.767669')}
-			{$weather|attribute(show, 1)}
-			<img src="http://openweathermap.org/img/w/{$weather.icon}.png" class="img-responsive" />
 			<h1>{$node.name|wash()}</h1>
 			<div class="col-lg-12">{attribute_view_gui attribute=$node.data_map.body}</div>
 			{def $user = fetch('user', 'current_user')}
