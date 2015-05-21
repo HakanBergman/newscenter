@@ -35,7 +35,9 @@ class eZCreateForecast
                 #printf("Temp: %s %s \n", $forecast->getTemperature(), $forecast->getTemperature('unit'));
                 #printf("Wind: %smps %s\n", $forecast->getWindSpeed(), $forecast->getWindDirection('name'));            
                 #echo "This will send an email";
-                echo dirname(__FILE__);
+                $extension_folder = str_replace('autoloads', '', dirname(__FILE__));
+                echo $extension_folder;
+  
                 #$operatorValue = $_COOKIE["captcha"];                
             } break;
         }
