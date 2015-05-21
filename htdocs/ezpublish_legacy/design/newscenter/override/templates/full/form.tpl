@@ -12,6 +12,7 @@
 		<article>
 			{def $weather = ezcreateforecast('http://api.openweathermap.org/data/2.5/weather?lat=57.723152&lon=11.767669')}
 			{$weather|attribute(show, 1)}
+			<img src="{$weather.weather.icon}" class="img-responsive" />
 			<h1>{$node.name|wash()}</h1>
 			<div class="col-lg-12">{attribute_view_gui attribute=$node.data_map.body}</div>
 			{def $user = fetch('user', 'current_user')}
