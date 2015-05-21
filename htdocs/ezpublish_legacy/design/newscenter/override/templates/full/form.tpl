@@ -43,6 +43,7 @@
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 no-margin no-padding text-center"><strong>3</strong></div>
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 no-margin no-padding text-center"><strong>4</strong></div>
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 no-margin no-padding text-center"><strong>5</strong></div>
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 no-margin no-padding text-center"><strong>6</strong></div>
 						</div>
 						{foreach $questions as $question}
 							<div class="col-lg-12 no-margin no-padding container-padding-left">
