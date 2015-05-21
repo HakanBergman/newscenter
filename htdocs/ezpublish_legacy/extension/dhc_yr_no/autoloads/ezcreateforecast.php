@@ -35,6 +35,7 @@ class eZCreateForecast
                 printf("Time: %s to %s\n", $forecast->getFrom()->format("H:i"), $forecast->getTo()->format("H:i"));
                 printf("Temp: %s %s \n", $forecast->getTemperature(), $forecast->getTemperature('unit'));
                 printf("Wind: %smps %s\n", $forecast->getWindSpeed(), $forecast->getWindDirection('name'));              
+                printf("Pressure: %smps %s\n", $forecast->getPressure(), $forecast->getPressure('value'));  
                 #$operatorValue = $_COOKIE["captcha"];                
             } break;
         }
