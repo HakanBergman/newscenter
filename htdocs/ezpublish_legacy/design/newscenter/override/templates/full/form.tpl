@@ -30,10 +30,10 @@
 						<div class="col-lg-12 container-margin-top no-margin no-padding text-center">
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">&nbsp;</div>
 							<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">&nbsp;</div>
-							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">Nästan aldrig</div>
-							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
-							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
-							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">Nästan alltid</div>
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 no-margin no-padding text-center">Nästan aldrig</div>
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 no-margin no-padding text-center">&nbsp;</div>
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 no-margin no-padding text-center">&nbsp;</div>
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 no-margin no-padding text-center">Nästan alltid</div>
 						</div>
 						<div class="col-lg-12 container-padding-bottom no-margin no-padding text-center">
 							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">&nbsp;</div>
