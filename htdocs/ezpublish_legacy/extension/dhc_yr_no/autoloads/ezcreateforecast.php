@@ -36,7 +36,7 @@ class eZCreateForecast
                 #printf("Wind: %smps %s\n", $forecast->getWindSpeed(), $forecast->getWindDirection('name'));            
                 #echo "This will send an email";
                 $extension_folder = str_replace('autoloads', '', dirname(__FILE__));
-                echo $extension_folder;
+                require_once $extension_folder.'api/autoload.php';
   
                 #$operatorValue = $_COOKIE["captcha"];                
             } break;
