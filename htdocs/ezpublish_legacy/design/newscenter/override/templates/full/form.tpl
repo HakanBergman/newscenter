@@ -6,6 +6,7 @@
 	{def $website_size_mobile = fetch('content', 'node', hash('node_id', $node.data_map.size_phone.content.relation_list.0.node_id))}	
 
 	{* Check if we want to show the breadcrumb *}
+	{$node.data_map|attribute(show, 1)}
 	{if $node.data_map.show_breadcrumb.value}test {include uri="design:newscenter/widget/widget_breadcrumb.tpl" desktop_size=$website_size_desktop.data_map.widget_size_class.data_text tablet_size=$website_size_tablet.data_map.widget_size_class.data_text phone_size=$website_size_mobile.data_map.widget_size_class.data_text }{/if}
 
 	<div class="container-padding-left container-padding-bottom {$menusettings.0.data_map.link_hover_color.data_text} {$website_size_desktop.data_map.widget_size_class.data_text} {$website_size_tablet.data_map.widget_size_class.data_text|explode('lg')|implode('md')} {$website_size_mobile.data_map.widget_size_class.data_text|explode('lg')|implode('sm')}">
@@ -45,7 +46,7 @@
 						</div>
 						{foreach $questions as $question}
 							<div class="col-lg-12 no-margin no-padding">
-								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 no-margin no-padding"><strong>{$number}.</strong></div>
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 container-padding-left no-margin no-padding"><strong>{$number}.</strong></div>
 								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 no-margin no-padding">{$question.name|wash()}</div>
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 no-margin no-padding text-center"><input type="radio" name="question_{$question.contentobject_id}" value="1"></div>
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 no-margin no-padding text-center"><input type="radio" name="question_{$question.contentobject_id}" value="2"></div>
