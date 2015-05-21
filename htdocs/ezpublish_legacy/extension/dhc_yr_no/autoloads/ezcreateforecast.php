@@ -45,6 +45,9 @@ class eZCreateForecast
               $operatorValue['weather']['main'] = $json_decode->weather->main;
               $operatorValue['weather']['description'] = $json_decode->weather->description;
               $operatorValue['weather']['icon'] = $json_decode->weather->icon;
+              
+              /* Name */
+              $operatorValue['name'] = $json_decode->name;
 
             } break;
         }
