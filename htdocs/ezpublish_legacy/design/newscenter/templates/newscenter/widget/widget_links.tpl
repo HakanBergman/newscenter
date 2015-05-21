@@ -22,7 +22,7 @@
             {foreach $child_nodes as $child}
               <li class="link-color-black link-color-wine-red-active link-color-wine-red-hover">
                 <a href="{$child.url|ezurl('no', 'full')}" title="{$child.name}" class="font-weight-normal{if $child.node_id|eq($current_node.node_id)} active{/if}">{$child.name|wash()}</a>
-                  {def $grandchilds = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form')))}
+                  {def $grandchilds = fetch('content', 'list', hash('parent_node_id', $child.node_id, 'class_filter_type', 'include', 'class_filter_array', array('form', 'website')))}
                     {if $grandchilds}
                       <ul class="navbar no-padding">
                         {foreach $grandchilds as $grandchild}
