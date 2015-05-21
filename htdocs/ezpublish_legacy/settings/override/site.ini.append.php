@@ -3,6 +3,7 @@
 
 [ExtensionSettings]
 ActiveExtensions[]
+ActiveExtensions[]=dhc_yr_no
 ActiveExtensions[]=dhc_shop
 ActiveExtensions[]=ezjscore
 ActiveExtensions[]=ezoe
