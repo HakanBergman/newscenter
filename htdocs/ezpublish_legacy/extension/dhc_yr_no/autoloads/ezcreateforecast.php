@@ -30,6 +30,7 @@ class eZCreateForecast
             {   
             
               /* Named Parameters */
+              print_r($namedParameters);
               echo $namedParameters['url'];
               die();
               /* Fetch Weather Information from JSON API */
