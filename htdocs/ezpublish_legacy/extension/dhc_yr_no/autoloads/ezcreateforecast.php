@@ -42,11 +42,9 @@ class eZCreateForecast
               $operatorValue['humidity'] = $json_decode->main->humidity;
               
               /* Weather */
-              $operatorValue['main'] = $json_decode->weather->main;
-              $operatorValue['description'] = $json_decode->weather->description;
-              $operatorValue['icon'] = $json_decode->weather[0]->icon;
-              
-              print_r($json_decode->weather);
+              $operatorValue['main'] = $json_decode->weather[0]->main;
+              $operatorValue['description'] = $json_decode->weather[0]->description;
+              $operatorValue['icon'] = $json_decode->weather[0]->icon;              
               
               /* Name */
               $operatorValue['name'] = $json_decode->name;
