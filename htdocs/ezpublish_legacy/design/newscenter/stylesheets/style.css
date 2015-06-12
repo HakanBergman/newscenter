@@ -100,7 +100,7 @@ p { margin: 0 0 2px; }
 .nav-tabs>li { margin: 0; }
 
 /* Link Rules */
-a, a:visited, a:active { text-decoration: none; }
+a, a:visited, a:active, a:hover { text-decoration: none !important; }
 
 /* Input Rules */
 .input-group-addon { text-align: left; }
