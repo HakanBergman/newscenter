@@ -165,6 +165,7 @@ RequireUserLogin=false
 AvailableSiteAccessList[]
 AvailableSiteAccessList[]=newscenter.drumedar.net
 AvailableSiteAccessList[]=www.maltimportoren.se
+AvailableSiteAccessList[]=www.datadelenhc.se
 AvailableSiteAccessList[]=www.datadelen.com
 AvailableSiteAccessList[]=webbcenter.datadelenhc.se
 AvailableSiteAccessList[]=demo.datadelenhc.com
@@ -177,6 +178,7 @@ RelatedSiteAccessList[]=newscenter.drumedar.net
 RelatedSiteAccessList[]=webbcenter.datadelenhc.se
 RelatedSiteAccessList[]=demo.datadelenhc.com
 RelatedSiteAccessList[]=www.maltimportoren.se
+RelatedSiteAccessList[]=www.datadelenhc.se
 RelatedSiteAccessList[]=www.datadelen.com
 
 # A list of module or module/views that don't require user login
@@ -198,6 +200,9 @@ HostMatchMapItems[]=webbcenter.datadelenhc.se;webbcenter.datadelenhc.se
 HostMatchMapItems[]=demo.datadelenhc.com;demo.datadelenhc.com
 HostMatchMapItems[]=maltimportoren.se;www.maltimportoren.se
 HostMatchMapItems[]=www.maltimportoren.se;www.maltimportoren.se
+HostMatchMapItems[]=datadelenhc.se;www.datadelenhc.se
+HostMatchMapItems[]=www.datadelenhc.se;www.datadelenhc.se
+HostMatchMapItems[]=dev.datadelenhc.se;www.datadelenhc.se
 HostMatchMapItems[]=datadelen.datadelenhc.com;www.datadelen.com
 HostMatchMapItems[]=datadelen.com;www.datadelen.com
 HostMatchMapItems[]=www.datadelen.com;www.datadelen.com
