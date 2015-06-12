@@ -23,7 +23,7 @@
 				{if $blocks}
 					{foreach $blocks as $block}
 
-						{def $block_size_desktop = fetch('content', 'node', hash('node_id', $block.data_map.widget_size_dekstop.content.relation_list.0.node_id))}
+						{def $block_size_desktop = fetch('content', 'node', hash('node_id', $block.data_map.widget_size_desktop.content.relation_list.0.node_id))}
 						{def $block_size_tablet = fetch('content', 'node', hash('node_id', $block.data_map.widget_size_tablet.content.relation_list.0.node_id))}
 						{def $block_size_mobile = fetch('content', 'node', hash('node_id', $block.data_map.widget_size_phone.content.relation_list.0.node_id))}	
 						{def $included_file = concat('design:newscenter/widget/', $block.class_identifier, '.tpl')}
