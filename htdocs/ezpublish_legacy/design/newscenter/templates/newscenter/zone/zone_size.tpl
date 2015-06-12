@@ -1,5 +1,5 @@
 {* Zone Size Desktop *}
-{switch match=$zone.data_map.zone_size_desktop.content.0}
+{switch match=$zone.data_map.zone_size.content.0}
 	{case match=0}
 		{* 100% *}
 		{set scope='global' $zone_width = "col-lg-12"}
