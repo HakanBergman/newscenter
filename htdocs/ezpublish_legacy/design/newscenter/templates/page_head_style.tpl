@@ -1,6 +1,7 @@
 {* Load Bootstrap *}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">	
+<link rel="stylesheet" href="{'stylesheets/flags/flags.css'|ezdesign('no')}">
 
 {* Load Google Web Fonts *}
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400' rel='stylesheet' type='text/css'>
