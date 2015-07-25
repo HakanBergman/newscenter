@@ -117,7 +117,7 @@
 										<input type="hidden" value="product_country" name="ClassIdentifier">
 										<input type="hidden" class="input-zone-id" value="{$current_node.node_id}" name="NodeID"> 
 										<input type="hidden" value="swe-SE" name="ContentLanguageCode"> 
-										<button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding"><span class="glyphicon glyphicon-file text-primary"></span> <span class="container-padding-left">Produktkatalog</span></button>
+										<button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding"><span class="glyphicon glyphicon-file text-primary"></span> <span class="container-padding-left">Skapa land</span></button>
 									</form>
 								</div>
 							{/case}
