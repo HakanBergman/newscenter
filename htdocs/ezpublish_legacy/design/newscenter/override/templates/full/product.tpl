@@ -10,7 +10,6 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><strong><span aria-hidden="true">&times;</span></strong></button>
               <a href="#close" class="float-right font-weight-bold text-color-black font-size-18-px" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove font-size-18-px"></span></a>
               <h4 class="modal-title" id="myModalLabel">{$node.data_map.name.data_text}</h4>
             </div>
