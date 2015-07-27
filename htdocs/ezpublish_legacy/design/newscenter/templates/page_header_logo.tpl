@@ -1,4 +1,4 @@
-<div class="col-lg-{$width} col-md-{$width} col-sm-{$width} col-xs-5 no-padding no-margin">
+<div class="col-lg-{$width} col-md-{$width} col-sm-{$width} col-xs-4 no-padding no-margin">
   <h1 class="no-padding no-margin">
     {if $menusettings.0.data_map.logotype.has_content}
       {def $sitesettings = fetch('content', 'list', hash('parent_node_id', $#company.node_id, 'class_filter_type', 'include', 'class_filter_array', array('site_settings'), 'limit', 1))}
