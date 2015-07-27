@@ -120,6 +120,7 @@ section .widget-margin-top { margin-top: 1em; }
 .container-margin-top-2 { margin-top: 2em; }
 .container-margin-top-2-px { margin-top: 2px; }
 .container-margin-top-3 { margin-top: 3em; }
+.container-margin-top-5-percent { margin-top: 5%; }
 .container-margin-top-10-percent { margin-top: 10%; }
 .container-margin-top-20-percent { margin-top: 20%; }
 .container-margin-top-35-percent { margin-top: 35%; }
