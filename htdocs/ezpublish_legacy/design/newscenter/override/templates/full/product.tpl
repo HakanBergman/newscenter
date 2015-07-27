@@ -2,7 +2,14 @@
 	{include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
   <div class="row container-margin-top clear container-margin-left-05 container-margin-bottom">
 	  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-      <span class="glyphicon glyphicon-zoom-in"></span>
+      <span class="glyphicon glyphicon-zoom-in" style="position: absolute;
+    right: 16px;
+    top: 1px;
+    min-width: 2em;
+    min-height: 2em;
+    background-color: blue;
+    padding-left: 7px;
+    padding-top: 5px;"></span>
 		  <img src="/{$node.data_map.image.content.original.full_path}" class="img-responsive thumbnail no-margin" alt="{$node.name|wash()}"></img>
       <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
