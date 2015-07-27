@@ -180,6 +180,9 @@ section .widget-margin-top { margin-top: 1em; }
 .container-padding-right-3 { padding-right: 3em; }
 .container-padding-right-4 { padding-right: 4em; }
 
+/* Right position */
+.right-16-px { right: 16px; }
+
 /* Absolute Position */
 .absolute { position: absolute; }
 

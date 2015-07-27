@@ -3,12 +3,10 @@
   <div class="row container-margin-top clear container-margin-left-05 container-margin-bottom">
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
       <a href="#" data-toggle="modal" data-target="#myModal">
-        <span class="glyphicon glyphicon-zoom-in" style="position: absolute;
-    right: 16px;
+        <span class="glyphicon glyphicon-zoom-in thumbnail absolute" style="right: 16px;
     top: 1px;
     min-width: 2em;
     min-height: 2em;
-    background-color: blue;
     padding-left: 7px;
     padding-top: 5px;"></span>
       </a>
