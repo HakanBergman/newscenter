@@ -11,6 +11,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><strong><span aria-hidden="true">&times;</span></strong></button>
+              <a href="#close" class="close" data-dismiss="modal" aria-label="Close"><strong><span aria-hidden="true">&times;</span></strong></a>
               <h4 class="modal-title" id="myModalLabel">{$node.data_map.name.data_text}</h4>
             </div>
             <div class="modal-body"><img src="/{$node.data_map.image.content.original.full_path}" class="img-responsive thumbnail no-margin width-100-percent" alt="{$node.name|wash()}"></img></div>
