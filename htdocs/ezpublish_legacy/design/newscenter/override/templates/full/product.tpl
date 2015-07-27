@@ -6,11 +6,11 @@
         <span class="glyphicon glyphicon-zoom-in thumbnail absolute right-16-px top-1-px min-width-2-em min-height-2-em container-padding-left-7-px container-padding-top-3-px"></span>
       </a>
       <img src="/{$node.data_map.image.content.original.full_path}" class="img-responsive thumbnail no-margin" alt="{$node.name|wash()}"></img>
-      <!-- Button trigger modal -->
+      {* Button trigger modal *}
       <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
         Launch demo modal
       </button>
-      <!-- Modal -->
+      {* Modal *}
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -18,7 +18,7 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              <h4 class="modal-title" id="myModalLabel">{$node.data_map.name.data_text}</h4>
             </div>
             <div class="modal-body">
               ...
