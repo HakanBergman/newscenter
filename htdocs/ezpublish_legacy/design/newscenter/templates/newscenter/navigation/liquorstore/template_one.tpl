@@ -20,8 +20,8 @@
                     <a href="{$item.url|ezurl('no', 'full')}" {if $subitems|count()}data-toggle="dropdown" {/if}class="{if $subitems|count()}dropdown-toggle {/if}font-size-nav-link font-weight-bold nav-padding-right-3 no-background hover{if $current_node.path_array|contains($item.node_id)} active{/if}" title="{$item.name|wash()|explode(' ')|implode('-')}">{$item.name|wash()}{if $subitems|count()} <span class="caret"></span>{/if}</a>
                     {if $subitems|count()}
                       <ul class="dropdown-menu {$menusettings.0.data_map.background_color_yammr.data_text} no-margin no-padding">
-                        <div class="col-lg-12 no-margin">
-                          <div class="nav-padding-left-4 nav-padding-right-3 nav-padding-top no-margin">
+                        <div class="col-lg-12 no-margin no-padding">
+                          <div class="nav-padding-left-1 nav-padding-right-3 nav-padding-top no-margin">
                             <h2 class="no-margin no-padding {$menusettings.0.data_map.background_color_yammr.data_text}"><a href="{$item.url|ezurl('no', 'full')}" title="{$item.name|wash()}">{$item.name|wash()}</a></h2>
                           </div>
                         </div>
