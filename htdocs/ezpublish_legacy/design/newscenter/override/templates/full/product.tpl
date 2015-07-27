@@ -1,7 +1,7 @@
 <div class="container container-padding-top">
 	{include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
   <div class="row container-margin-top clear container-margin-left-05 container-margin-bottom">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
       {* Trigger Modal Window *}
       <a href="#" data-toggle="modal" data-target="#image"><span class="glyphicon glyphicon-zoom-in thumbnail absolute right-16-px top-1-px min-width-2-em min-height-2-em container-padding-left-7-px container-padding-top-3-px"></span></a>
       <img src="/{$node.data_map.image.content.original.full_path}" class="img-responsive thumbnail no-margin" alt="{$node.name|wash()}"></img>
@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-	  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+	  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
       <h2 class="no-margin no-padding">{$node.data_map.name.data_text}</h2>
 		  {attribute_view_gui attribute=$node.data_map.description}
 		  {attribute_view_gui attribute=$node.data_map.short_description}
