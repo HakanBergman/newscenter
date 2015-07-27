@@ -14,7 +14,6 @@
               <h4 class="modal-title" id="myModalLabel">{$node.data_map.name.data_text}</h4>
             </div>
             <div class="modal-body"><img src="/{$node.data_map.image.content.original.full_path}" class="img-responsive thumbnail no-margin width-100-percent" alt="{$node.name|wash()}"></img></div>
-            <div class="modal-footer">&nbsp;</div>
           </div>
         </div>
       </div>
