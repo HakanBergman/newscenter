@@ -170,6 +170,7 @@ section .widget-margin-top { margin-top: 1em; }
 .container-padding-bottom-05 { padding-bottom: 0.5em; }
 .container-padding-bottom-2 { padding-bottom: 2em; }
 .container-padding-left { padding-left: 1em; }
+.container-padding-left-05 { padding-left: 0.5em; }
 .container-padding-left-2 { padding-left: 2em; }
 .container-padding-left-3 { padding-left: 3em; }
 .container-padding-left-4 { padding-left: 4em; }
