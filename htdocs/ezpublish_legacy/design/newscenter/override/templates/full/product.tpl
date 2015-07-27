@@ -16,11 +16,10 @@
               <h4 class="modal-title" id="myModalLabel">{$node.data_map.name.data_text}</h4>
             </div>
             <div class="modal-body">
-              <img src="/{$node.data_map.image.content.original.full_path}" class="img-responsive thumbnail no-margin" alt="{$node.name|wash()}"></img>
+              <img src="/{$node.data_map.image.content.original.full_path}" class="img-responsive thumbnail no-margin width-100-percent" alt="{$node.name|wash()}"></img>
             </div>
             <div class="modal-footer">              
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Stäng</button>
             </div>
           </div>
         </div>
