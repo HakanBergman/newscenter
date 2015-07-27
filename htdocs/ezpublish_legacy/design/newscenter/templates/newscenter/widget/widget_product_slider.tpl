@@ -2,7 +2,7 @@
 	<div class="shop-category shop-current">			
 		<div class="flexslider carousel">								
 			<div class="flex-viewport">				
-				<ul class="slides">	
+				<ul class="slides" class="no-margin no-padding">	
 					{for 1 to $iterations as $iteration}
 						<li>
 							{if $iterations|eq(1)}
