@@ -24,6 +24,7 @@
               ...
             </div>
             <div class="modal-footer">
+              <h2>{$node.data_map.name.data_text}</h2>
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               <button type="button" class="btn btn-primary">Save changes</button>
             </div>
