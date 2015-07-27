@@ -27,7 +27,7 @@
       </div>
     </div>
 	  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-      <h2>{$node.data_map.name.data_text}</h2>
+      <h2 class="no-margin no-padding">{$node.data_map.name.data_text}</h2>
 		  {attribute_view_gui attribute=$node.data_map.description}
 		  {attribute_view_gui attribute=$node.data_map.short_description}
 	  </div>
