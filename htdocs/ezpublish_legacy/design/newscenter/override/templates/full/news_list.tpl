@@ -21,7 +21,12 @@
 			<div class="{$column_size} container-padding-top"> 
 				<h2 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">{$newslist.name|wash()}</h2>			
         {if $newslist.children}
-				  {foreach $newslist.children as $news}            
+				  {foreach $newslist.children as $news}     
+            {switch match=$news.class_identifier}
+              {case match='news_widget'}
+                Widget
+              {/case}
+            {/switch}
             {if $newslist.class_identifier|eq('news_category')}
 					    <div class="container-padding-left-2">        
 						    <span class="glyphicon glyphicon-file"></span>
