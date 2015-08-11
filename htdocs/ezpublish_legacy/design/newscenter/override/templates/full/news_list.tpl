@@ -11,15 +11,15 @@
             {def $user = fetch('user', 'current_user')}
               {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
                 <div class="edit admin-panel container-padding-top-05">
-                    <form action="/content/action" method="post">
-                      <input type="hidden" value="news_post" name="ClassIdentifier" />
-                      <input type="hidden" class="input-zone-id" value="{$newslist.node_id}" name="NodeID" />
-                      <input type="hidden" value="swe-SE" name="ContentLanguageCode" />
-                      <button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding" >
-                        <span class="glyphicon glyphicon-file text-primary"></span>
-                        <span class="container-padding-left">Lägg till Nyhet</span>
-                      </button>
-                    </form>
+                  <form action="/content/action" method="post">
+                    <input type="hidden" value="news_post" name="ClassIdentifier" />
+                    <input type="hidden" class="input-zone-id" value="{$newslist.node_id}" name="NodeID" />
+                    <input type="hidden" value="swe-SE" name="ContentLanguageCode" />
+                    <button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding" >
+                      <span class="glyphicon glyphicon-file text-primary"></span>
+                      <span class="container-padding-left">Lägg till Nyhet</span>
+                    </button>
+                  </form>
                 </div>
              {/if}
             {undef $user}
@@ -36,9 +36,21 @@
                       </div>
                       {def $user = fetch('user', 'current_user')}
                         {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
-                          <div class="clear">
-                            <a href="/content/edit/{$news.contentobject_id}" title="Redigera {$news.name|wash()}">Redigera {$news.name|wash()}</a>
-                          </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                              <div class="clear">
+                                <a href="/content/edit/{$news.contentobject_id}" title="Redigera {$news.name|wash()}">Redigera {$news.name|wash()}</a>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                              <div class="edit admin-panel container-padding-top-05">
+                                <form method="post" action="/content/action" class="float-right container-padding-left">
+                                  <input type="hidden" name="TopLevelNode" value="{$" />
+                                  <input type="hidden" name="ContentNodeID" value="347" />
+                                  <input type="hidden" name="ContentObjectID" value="412" />
+                                  <button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
+                                </form>
+                              </div> 
+                            </div>                              
                         {/if}
                       {undef $user}
                       <hr class="clear border-solid-black" />
