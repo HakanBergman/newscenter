@@ -20,7 +20,7 @@
                       {def $user = fetch('user', 'current_user')}
                         {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
                           <div class="clear">
-                            <a href="/content/edit/{$news.contentobject_id}" title="Redigera {$news.name|wash()}">Redigera {$node.name|wash()}</a>
+                            <a href="/content/edit/{$news.contentobject_id}" title="Redigera {$news.name|wash()}">Redigera {$news.name|wash()}</a>
                           </div>
                         {/if}
                       {undef $user}
