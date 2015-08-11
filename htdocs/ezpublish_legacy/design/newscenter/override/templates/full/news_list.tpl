@@ -12,7 +12,7 @@
               {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
                 <div class="edit admin-panel container-padding-top-05">
                     <form action="/content/action" method="post">
-                      <input type="hidden" value="news" name="ClassIdentifier" />
+                      <input type="hidden" value="news_post" name="ClassIdentifier" />
                       <input type="hidden" class="input-zone-id" value="{$newslist.node_id}" name="NodeID" />
                       <input type="hidden" value="swe-SE" name="ContentLanguageCode" />
                       <button type="submit" name="NewButton" class="btn btn-link text-decoration-none no-margin no-padding" >
