@@ -16,10 +16,15 @@
 				{def $column_size = "col-lg-12 col-md-12 col-sm-12 col-xs-12"}
 			{/case}
 		{/switch}	
+    {foreach $node.children as $newslist}
+      {if $newslist.class_identifier|eq('widget_facebook')}
+        asdsad
+      {/if}
+    {/foreach}
 		{foreach $node.children as $newslist}
       {if $newslist.class_identifier|eq('news_category')}
 			  <div class="{$column_size} container-padding-top"> 
-				  <h2 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}"><a href="{$newslist.url|ezurl('no', 'full')}" title="{$newslist.name|wash()}">{$newslist.name|wash()}</a></h2>
+				  <h2 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">{$newslist.name|wash()}</h2>
 			  </div>
           {if $newslist.children}
 				    {foreach $newslist.children as $news}
