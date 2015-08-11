@@ -8,19 +8,18 @@
         {if $newslist.children}
 				  {foreach $newslist.children as $news}     
             {switch match=$news.class_identifier}
-              {case match='news_
+              {case match='news_post'}
+					      <div class="container-padding-left-2">        
+						      <span class="glyphicon glyphicon-file"></span>
+						      <a href="{$news.url|ezurl('no', 'full')}" class="font-weight-normal container-padding-left" title="{$news.name|wash()}">
+							      {$news.name|wash()}
+						      </a>
+					      </div>                
+              {/case}
               {case}
                 {include uri="design:newscenter/widget/widget_facebook.tpl" block=$news}
               {/case}
             {/switch}
-            {if $newslist.class_identifier|eq('news_category')}
-					    <div class="container-padding-left-2">        
-						    <span class="glyphicon glyphicon-file"></span>
-						    <a href="{$news.url|ezurl('no', 'full')}" class="font-weight-normal container-padding-left" title="{$news.name|wash()}">
-							    {$news.name|wash()} {$news.class_identifier}
-						    </a>
-					    </div>
-            {/if}
 				  {/foreach}
         {/if}   
       </div>
