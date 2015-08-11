@@ -14,10 +14,17 @@
                   {if $newsposts|le($number_of_posts)}
 					          <div class="container-padding-left container-margin-top">        
 						          <h4><span class="glyphicon glyphicon-file"></span> {$news.name|wash()}</h4>
-                      <div class="clear">
+                      <div class="clear container-padding-top">
                         {attribute_view_gui attribute=$news.data_map.body}
                       </div>
-                      <hr class="clear no-margin no-padding" />
+                      {def $user = fetch('user', 'current_user')}
+                        {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
+                          <div class="clear">
+                            <a href="/content/edit/{$news.contentobject_id}" title="Redigera {$news.name|wash()}">Redigera {$node.name|wash()}</a>
+                          </div>
+                        {/if}
+                      {undef $user}
+                      <hr class="clear border-solid-black" />
 					          </div>   
                   {/if}
                 {/case}
