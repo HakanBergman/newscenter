@@ -53,7 +53,14 @@
                 <label><a href="mailto:{$employee.data_map.email.value}" title="{$employee.data_map.email.value}">{$employee.data_map.email.value}</a></label>
               </div>
               <h5 class="clear container-padding-left">{$employee.data_map.title.data_text}</h5>
-            </div>
+              {def $user = fetch('user', 'current_user')}
+                {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
+                  <div class="clear container-padding-top container-padding-left">
+                    <a href="/content/edit/{$user.contentobject.id}" title="Redigera {$employee.name|wash()}">Redigera {$employee.name|wash()}</a>
+                  </div>
+                {/if}
+               {undef $user}
+          </div>
           {/foreach}
         </div>
       {/foreach}
