@@ -10,7 +10,7 @@
           {if $newslist.data_map.allow_news_posts.value}
             {def $user = fetch('user', 'current_user')}
               {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
-                <div class="edit admin-panel container-padding-left-2 container-padding-top-05">
+                <div class="edit admin-panel container-padding-top-05">
                     <form action="/content/action" method="post">
                       <input type="hidden" value="news" name="ClassIdentifier" />
                       <input type="hidden" class="input-zone-id" value="{$newslist.node_id}" name="NodeID" />
