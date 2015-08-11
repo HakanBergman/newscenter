@@ -6,7 +6,7 @@
     {def $number_of_posts = 1}
 		  {foreach $node.children as $newslist}      
 			  <div class="{$newslist.data_map.column_size.data_text}"> 
-				  <h3 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">{$newslist.name|wash()}</h3>			        
+				  <h4 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">{$newslist.name|wash()}</h4>			        
           {if $newslist.children}
 				    {foreach $newslist.children as $news}     
               {switch match=$news.class_identifier}
