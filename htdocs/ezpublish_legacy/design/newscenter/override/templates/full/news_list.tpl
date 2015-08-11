@@ -37,14 +37,14 @@
                       {def $user = fetch('user', 'current_user')}
                         {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
                             <div class="clear container-margin-bottom">
-                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 no-margin no-padding">
                                 <div class="clear">
                                   <a href="/content/edit/{$news.contentobject_id}" title="Redigera {$news.name|wash()}">Redigera {$news.name|wash()}</a>
                                 </div>
                               </div>
-                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 no-margin no-padding">
                                 <div class="edit admin-panel container-padding-top-05">
-                                  <form method="post" action="/content/action" class="float-right container-padding-left">
+                                  <form method="post" action="/content/action" class="float-right container-padding-left container-margin-bottom">
                                     <input type="hidden" name="TopLevelNode" value="{$news.node_id}" />
                                     <input type="hidden" name="ContentNodeID" value="{$news.node_id}" />
                                     <input type="hidden" name="ContentObjectID" value="{$news.contentobject_id}" />
