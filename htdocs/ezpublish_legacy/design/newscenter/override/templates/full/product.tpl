@@ -20,10 +20,10 @@
     </div>
 	  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
       <div class="clear">        
-        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12"><h2 class="no-margin no-padding">{$node.data_map.name.data_text}</h2></div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"><h2 class="no-margin no-padding">{$node.data_map.name.data_text}</h2></div>
         {def $user = fetch('user', 'current_user')}
           {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 block-right text-right"><a href="/content/remove/{$node.contentobject_id}" title="Radera {$node.name|wash()}">Radera {$node.name|wash()}</a></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 block-right text-right"><a href="/content/remove/{$node.contentobject_id}" title="Radera {$node.name|wash()}">Radera {$node.name|wash()}</a></div>
           {/if}
         {undef $user}
       </div>
