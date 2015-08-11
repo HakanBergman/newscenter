@@ -16,27 +16,21 @@
 				{def $column_size = "col-lg-12 col-md-12 col-sm-12 col-xs-12"}
 			{/case}
 		{/switch}	
-    {foreach $node.children as $newslist}
-      {if $newslist.class_identifier|eq('widget_facebook')}
-        asdsad
-      {/if}
-    {/foreach}
-		{foreach $node.children as $newslist}
-      {if $newslist.class_identifier|eq('news_category')}
-			  <div class="{$column_size} container-padding-top"> 
-				  <h2 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">{$newslist.name|wash()}</h2>
-			  </div>
-          {if $newslist.children}
-				    {foreach $newslist.children as $news}
-					    <div class="container-padding-left-2">        
-						    <span class="glyphicon glyphicon-file"></span>
-						    <a href="{$news.url|ezurl('no', 'full')}" class="font-weight-normal container-padding-left" title="{$news.name|wash()}">
-							    {$news.name|wash()}
-						    </a>
-					    </div>
-				    {/foreach}
-          {/if}
-      {/if}       
+
+		{foreach $node.children as $newslist}      
+			<div class="{$column_size} container-padding-top"> 
+				<h2 class="{$node.data_map.link_color.data_text} {$node.data_map.hover_color.data_text}">{$newslist.name|wash()}</h2>
+			</div>
+        {if $newslist.children}
+				  {foreach $newslist.children as $news}
+					  <div class="container-padding-left-2">        
+						  <span class="glyphicon glyphicon-file"></span>
+						  <a href="{$news.url|ezurl('no', 'full')}" class="font-weight-normal container-padding-left" title="{$news.name|wash()}">
+							  {$news.name|wash()}
+						  </a>
+					  </div>
+				  {/foreach}
+        {/if}      
 		{/foreach}
 	</div>
 </div>
