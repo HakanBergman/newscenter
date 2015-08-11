@@ -23,8 +23,9 @@
         {if $newslist.children}
 				  {foreach $newslist.children as $news}     
             {switch match=$news.class_identifier}
-              {case match='news_widget'}
+              {case}
                 Widget
+                {include uri="design:newscenter/widget/widget_facebook.tpl" block=$news}
               {/case}
             {/switch}
             {if $newslist.class_identifier|eq('news_category')}
