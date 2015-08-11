@@ -44,9 +44,9 @@
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                               <div class="edit admin-panel container-padding-top-05">
                                 <form method="post" action="/content/action" class="float-right container-padding-left">
-                                  <input type="hidden" name="TopLevelNode" value="{$" />
-                                  <input type="hidden" name="ContentNodeID" value="347" />
-                                  <input type="hidden" name="ContentObjectID" value="412" />
+                                  <input type="hidden" name="TopLevelNode" value="{$news.node_id}" />
+                                  <input type="hidden" name="ContentNodeID" value="{$news.node_id}" />
+                                  <input type="hidden" name="ContentObjectID" value="{$news.contentobject_id}" />
                                   <button type="submit" name="ActionRemove" class="btn btn-danger glyphicon glyphicon-remove container-padding-left"></button>
                                 </form>
                               </div> 
