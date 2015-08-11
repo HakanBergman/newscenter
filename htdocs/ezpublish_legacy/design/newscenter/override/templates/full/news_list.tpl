@@ -12,11 +12,12 @@
               {switch match=$news.class_identifier}
                 {case match='news_post'}
                   {if $newsposts|le($number_of_posts)}
-					          <div class="container-padding-left">        
+					          <div class="container-padding-left container-margin-top">        
 						          <h4><span class="glyphicon glyphicon-file"></span> {$news.name|wash()}</h4>
                       <div class="clear">
                         {attribute_view_gui attribute=$news.data_map.body}
                       </div>
+                      <hr class="clear no-margin no-padding" />
 					          </div>   
                   {/if}
                 {/case}
