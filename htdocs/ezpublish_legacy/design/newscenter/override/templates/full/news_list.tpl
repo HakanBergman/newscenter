@@ -1,6 +1,6 @@
 ﻿<div class="container">
   {include uri="design:newscenter/widget/widget_breadcrumb.tpl"}
-  <h2>{$node.name|wash()}</h2>
+  <h2 class="container-padding-left">{$node.name|wash()}</h2>
 	<div class="col-lg-12 clear">
 		{foreach $node.children as $newslist}      
 			<div class="{$newslist.data_map.column_size.data_text} container-padding-top"> 
