@@ -23,7 +23,7 @@
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><h2 class="no-margin no-padding">{$node.data_map.name.data_text}</h2></div>
         {def $user = fetch('user', 'current_user')}
           {if and($user.is_logged_in, $user.contentobject.current.parent_nodes.0|contains($company.node_id))}
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 block-right text-right"><a href="/content/remove/{$node.contentobject_id}" title="Radera {$node.name|wash()}">Radera {$node.name|wash()}</a></div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 block-right text-right"><a href="/content/removeobject/{$node.contentobject_id}" title="Radera {$node.name|wash()}">Radera {$node.name|wash()}</a></div>
           {/if}
         {undef $user}
       </div>
